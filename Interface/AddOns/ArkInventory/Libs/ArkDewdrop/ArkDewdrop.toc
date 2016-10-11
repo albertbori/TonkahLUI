@@ -1,0 +1,21 @@
+﻿## Interface: 70000
+## X-Curse-Packaged-Version: 3.07.15
+## X-Curse-Project-Name: ArkInventory
+## X-Curse-Project-ID: ark-inventory
+## X-Curse-Repository-ID: wow/ark-inventory/mainline
+
+## Title: ArkDewdrop [30102]
+## Author: Arkayenro
+## Email: arkayenro at gmail dot com
+## Version: 30102
+## DefaultState: Disabled
+## LoadOnDemand: 0
+
+## X-Category: Library
+
+## LoadManagers: AddonLoader
+## X-LoadOn-Always:delayed
+
+LibStub.lua
+
+ArkDewdrop.lua

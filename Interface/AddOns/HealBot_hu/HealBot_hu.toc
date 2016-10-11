@@ -1,0 +1,9 @@
+## Interface: 70000
+## Title: HealBot Hungarian Localization
+## Author: Required
+## Notes: HealBot Localization for huHU
+## RequiredDeps: HealBot
+## LoadOnDemand: 1
+## Version: 6.2.0.0
+
+HealBot_Localization.hu.lua

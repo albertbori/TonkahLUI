@@ -1,0 +1,20 @@
+﻿## Interface: 70000
+## X-Curse-Packaged-Version: 3.07.15
+## X-Curse-Project-Name: ArkInventory
+## X-Curse-Project-ID: ark-inventory
+## X-Curse-Repository-ID: wow/ark-inventory/mainline
+
+## Title: Ark Inventory [Search]
+## Author: Arkayenro - Khaz'goroth
+## Email: arkayenro at gmail dot com
+## Version: 10001
+
+## Notes: Search for ArkInventory
+
+## DefaultState: Enabled
+## LoadOnDemand: 1
+## RequiredDeps: ArkInventory
+
+
+ArkInventorySearch.lua
+ArkInventorySearch.xml

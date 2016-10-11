@@ -1,0 +1,8 @@
+2016-10-01  yellowfive  <yellowfive>
+
+[e0ddd02d6555] [v45]
+* AskMrRobot-Serializer/AskMrRobot-Serializer.lua, AskMrRobot.toc, TeamOptimizer.lua:
+
+tweak to ignore some junk in team optimizer loot export
+
+

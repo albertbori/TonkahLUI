@@ -1,0 +1,550 @@
+Timothy Minahan:
+	- 1.4.4. TOC
+	- Fix for #103
+	- Code Cleanup for #86
+	- Code Cleanup for #86
+	- Revert "COde Cleanup for #86"
+	This reverts commit f3a9193259ff22a9091a323c52aec359f723fff2.
+	- COde Cleanup for #86
+	- remove AceLocale from SequenceEditor
+	- More Travis identified fixes. #102
+	- Travis fix for #102
+	- Add if casting another spell to debug window #102
+	- Fix for Sequence Editor #100
+	- Fix the unexpected StepFunction Change #100
+	- Missing LibStuB Reference
+	- TOC update for SharedMedia
+	- 1.4.1 toc
+	- Toc Verification
+	- Updates to DB_RetAOE Macros for #97
+	- Updates to DB_Ret Macros for #97
+	- Change StepFunction without reloading. #94
+	- Reset on exit Combat #96
+	- Reset Macro when out of combat #96
+	- Bug Fixes #93
+	- Localization Framework for Mod Strings #95
+	- Tooltip Quirks - #93
+	- Travis fix #93
+	- Travis fix #93
+	- LDB Tooltip  for #93
+	- Transmission Send Status Message #93
+	- User feedback changes for receiving a transmission #93
+	- Autocomplete Send To Dialog #93
+	- Finish #94
+	- Dont Save Debug State #94
+	- Dont Save Sequence Debug State #94
+	- TOC update
+	- Grumble mutter mutter
+	- Transmission bug fixes #34
+	- Change Saved Variables Scoping
+	- Sequence Transmission via GUI #92
+	- Transmission Send Gui #92
+	- First Cut of Transmission Interface #92
+	- Editor Save, Seperate close buttons
+	- .docmeta for luadoc API #86
+	- Debug Window Complete #92
+	- Debug update for #92
+	- Spam fixes for #92
+	- Add Fel barrage to Spell List #89
+	- LDB Post fixes #92
+	- Debug Window post Bug Fixes
+	- LibDataBroker config for #92
+	- source correction  for #86
+	- First attempt at luadoc for #86
+	- Debug GUI Window for  #92
+	- TOC and Mage Macro Update
+	- Add Neck #90
+	- Add Neck #90
+	- Add Neck #90
+	- Add Neck #90
+	- Add Neck #90
+	- nil check for debug.
+	- I hate this!!!!
+	- Race Conditions
+	- Change WTF value
+	- Last int Race Condition
+	- More international fixes
+	- refactor for international.
+	- 1.3.9 Change default and fix timing.
+	- Default Sequence Output to off
+	- GCD added to SequenceDebug #85
+	- Make Strings for SequenceDebug clearer.
+	- StepFunction is immutable.  Need to do a reloadui for the change to take effect. #88
+	- Refactoring startup.lua for luadoc #86
+	- Sequence Debugging #85
+	- TOC updates for #87
+	- Rename so it works #87
+	- Preinit for #87
+	- Move init to own file. #87
+	- Post language check for foreign #87
+	- Refactor Language Init for #87
+	- Move debug Button to core.lua #85
+	- Move debug Button to core.lua #85
+	Deduplicate code smells
+	- Add reset to close out colour for error message #84
+	- Version Check record to allor for SendMessage to be resuable #34
+	- update debug output for #82
+	- Change whitespace for #83
+	- GSDebugDumpButton api for #82
+	- TOC Changes
+	- Initial send/receive sequence via internal comm channel #34
+	- More localisation fixes #77
+	- Macro Updates
+	- Translations Updates for #77
+	- missing Entries added to localisation from /showspec #81
+	- Chagne to pairs(versionlibrary) due to hotfix #80
+	- 1.3.5 toc updates
+	- Changes to autocreate macros #76
+	- Fix for #78
+	- Hunter ! passthrough #79
+	- Better sound prevention for #74
+	- Fix for creating new macros and a reorganise of the manage version tab to be more obvious #53
+	- 1.3.3a GUI Packager fix
+	- 1.3.3a fix for Sequence Editor
+	- Update lib.xml path
+	- Version Check in #69
+	- Belt slot is 6 not 5 #72
+	- TOC format change to integer #69
+	- #69 Debugguing
+	- Fix for #55
+	- Revert "disable transmission to get a test version of 1.3.3 out"
+	This reverts commit 967f5141fafd511a0ed8c1411c10504990df73e3.
+	- disable transmission to get a test version of 1.3.3 out
+	- Debugging for #69
+	- Compare Sequence check for #53
+	- #53 reverting moving to 1.4
+	- #53 Fixes
+	- #69 Fixes
+	- Language Updates for #58 #66 #54
+	- Control Belt Items from GS Global Options #72
+	- API for GSDisableSequence(SequenceName) for Mod Authors #71
+	- Attempt to fix #55
+	- #70
+	- Refactor for #70
+	- version check for #69
+	- check for untranslatable sequence #66
+	- TOC Updates
+	- fix error messages #34
+	- Transmission Version Check
+	- #34 debug
+	- #34 initial transmission work.
+	- #53 Use libcompress and serializer to check if sequence has changed.
+	- more fixes for #63
+	- Force specID to be a number #63
+	- Further work on #68
+	- Post testing fix for #64
+	- fix for #64
+	- #68 store sequence cleanly in WTF
+	- Moved to their own repository
+	- Fix for #60
+	- TOC Changes
+	- #62 Fix for missing the S
+	- Final checks for #57
+	- #49 Complete!
+	- #49 checking travis for build problem
+	- Bug Fixes for initial phase of #49
+	- #61 Travis fixes
+	- #61 Delay Print
+	- #49 Travis fix
+	- #49 Travis fix
+	- first cut at disabling and enabling sequences #49
+	- #57 Added a New button to create new sequences.
+	- #59 Differentiation of Restoration spec for Shaman and Druid
+	- #53
+	- #56 Active Version is now updating correctly
+	- 1.3.1 Fixes for Languages
+	- Fixes for #52 Translation issues
+	- Final Fixes for #41 and storage working as intended for #33
+	- #53 Added Dirty Editor Valur to only save a new version when a change has been made.
+	- Travis Fixes
+	- #33 #41 Add specid=0 to SequenceEditor
+	- #33 #41 In the editor change SpecID from radio buttons to a drop down list of classes and specs.
+	- #41 Code checks.
+	When creating or importing a sequence it will now set some defaults
+	about the code.  The fun part is that if you import with the wrong
+	sequence we need a way to correct that.
+	- #33 Keep specid if editing a sequence that already has a specid
+	- #33 Check Create Macro when creating a new sequence
+	- #33 Correct Filter Options
+	- #33 Bug Fixes
+	- #33 Updated Help files and added default option to delete ann non mod files on logout.
+	- #33 More Editor Cleanup
+	- fix travis
+	- #33 cleanup for new sequence
+	- authorversion foe #33
+	- #33 more delete protection
+	- #33 reset active sequence val in case the active is deleted.
+	- #33 Change Sequence Delete protection.
+	You can delete a local version but cannot delete a version that has come
+	from a mod as reloading will reload from that mod. In 1.4 allow for a
+	version to be disabled
+	- THe options are selectable for the sequence filter but not showing
+	- Language updates for 1.3
+	- #33 Update Manage Versions
+	- #33 fix source and author
+	- #33 remove unnecessary prints
+	- #33 Filtering for Spec
+	- Global Option Cleanup
+	- #33 Storage and Debugging cleanup
+	- #33 Functionally complete needs refinement
+	- Travis code error
+	- Bulk of code for #33
+	- #33 Storage collisions complete
+	- #33 More fixes for the editor
+	- Travis fix.
+	- #44 Versioning fuinctioning properly
+	- #33 Import via the SequenceViewer
+	- Attempt to solve #28
+	- New Monk Tanking Macros
+	- #33 Button Bar for Improt
+	- Clean non current versions of sequences for #44 if clean temporary macros is on.
+	- #33 import function
+	- CHanges for #12
+	- Change for #46
+	- More WIP for #44
+	- Ok the Core is now stable again #44
+	- This is broken but want Travis to find the error #44
+	- #44 Bugfixes in core now to the editor
+	- 1.3 TOC changes
+	- #44 bug fixes
+	- #44 more bug fixes
+	- #44 more bug fixes
+	- #44 more bug fixes
+	- #44 bug fixes
+	- Completed the storage refactor and GUI changes for #44
+	- First changes for #44 The GUI rework remains.
+quicksylver:
+	- Update Shaman.lua
+	/startattack was causing "You don't have a target" error sound even with sound option disabled.  Fixed mouseover, cleanup, can now cast Riptide on actual mouseover person.
+Timothy Minahan:
+	- Update readme.MD
+	Curse packager is now building the binary.  Updating this file to reflect those changes.
+	- #43 Change to .pkgmeta renames
+	Change
+	- Refactor for #43
+	- Changes for #42
+	- Sequence Editor Mod Localisation for #39
+	- Updates for 1.2.3
+	- Significant refactor for #39 and 1.2.2 bug fixes
+	- Short form of /gs clean #40
+	- Begin Localisation for #39
+	Translations for the GS-Core. and sample file for ptBR
+	- Fixes for 1.2.1
+	- Fix for 1.2
+	- Translator reconfigure and #22
+	- #37 Fixes for Translation Problem
+	- #38
+	- Refactoring for #22
+	- More on #22
+	- INitial work on #36
+	- More work on #5 and #19
+	- Fix for #26 Turnin on the Translator needs a reloadui to take effect.
+	- #35 #22
+	- Refactoring for #22 and #35
+	- #22 Initial changes
+	- Update README.md
+	- Added CI value
+	- #25 disabling this for the moment.  Will try again after the translator engine is merged.
+	- #25 one last attempt at this
+	- #25 more attempts at unittesting
+	- #25 i have no idea if this will work
+	- #25 fixes for Unittesting
+	- #25 more Unittesting
+	- #25 more globals for luacheck
+	- #25 unittesting for startup.lua
+	- #25 More Unittesting
+	- #22 THis needs the Translator though as that already does all the work.
+	- #6 Sequence Editor will create a new sequence now
+	- FIxes for #30 Colours now working
+	- Fixes for #18
+	- Fixes and debugging for #30
+	- #25 #31 isempty update #
+	- #25 I will make you work one day Travis
+	- #25 even more stuff
+	- #25 even more travis
+	- #25 More travis stuff
+	- Saved Variables for Colours for the Editor for #30 and #22
+	- TOC increments
+	- #18 Too many macros - Overflow added
+	- #9 Check if in combat.
+	- #22 More syntax stuff
+	- #22 Added ForAllIndentsAndPurposes Library for editing scripts
+	- Macro Fixes
+	- #31 refactor isempty() to be a global.
+	- #30 Colour Selection
+	- #29
+	- #25 More debugging
+	- PreMacro and PostMacro Fixes
+	- #27 If the option is there when creating a macro use the ?
+	- #10 and 1.1.5 changes
+	- #10 Code changes ready to release to close out this issue
+	- #25 once more into the breach once more
+	- #25 you evil thing travis
+	- #25 attempt z
+	- more #25 stuff
+	- wowmock #25 mark 2
+	- wowmock #25
+	- more #25 unit test stuff
+	- Fixes for rare /gs hang
+	- #25 corrected paths
+	- #25 try without wowmock
+	- path to spec #25
+	- Another attempt at #25 and a unittest
+	- #25 Even More unittesting
+	- #25 Trying a stub
+	- more attempts at #25
+	- #25 trying to mock seterrorhandler
+	- #25 More Tests
+	- More for #25
+	- even more unit testing
+	- Paladin DV_Prefix
+	- More Unit Tests
+	- Unit tests for travis
+	- Palading Tanking Sequences by @LPNV
+	- test 2
+	- More output
+	- rename to see if it is found
+	- more travis stuff
+	- trying to get a unit test to work
+	- and more travis
+	- more travis
+	- reverting
+	- travis
+	- more ci
+	- unittesting
+	- Trying to setup travis and wowmock
+	- added modules
+	- Travis-ci framework
+	- Fix Nano Macros.
+	- Added edit warning for DraikMacros files.
+	- Beginning of cleanup for #22
+	- Fixes for 1.1.4a
+	Trying to get things to translate i broke stuff
+	- Moved to TimothyLuke/GSE-Utils
+	- Sequence Translator moved to TimothyLuke/GS-SequenceTranslator
+	- Toc Files update to 1.1.4
+	- #24 stuff and test suite start
+	- Many fixes for #24
+	only need to fix pre nad post macro handling now
+	- Changes to sequences to fix #24
+	- 1.1.3 typo error
+	- toc increments
+	- Fixing Nil error when there is no translator #10
+	- HP_enhST from Rocktris added to HP Macros
+	- Bug fixes for 1.1.1 #10
+	- Final Commits for #10
+	- Updating readme - going to get it to point at the wiki,.
+	- #10 Language files courtesy of @lesland  The sequence editor is this close
+	- added ptBR for #10.  Thanks to @LNPV
+	- Updated Hunter Macro
+	- #10 load speed significantly reduced.
+	- #10 Reduced load times by 75% next step is to translate by spec and on demand
+	- #10 Performance Improvements
+	- #10 Fix typo on name of option.
+	- Update Language Extract for #10
+	This will create forward and reverse look up for a spell.
+	- Clarify Confusing Names
+	- #20 Target Hopping Prevention OPtions
+	- #10 Working.
+	I am still not happy with the load time but that can be solved by two
+	means.
+	1 - Decrease the number of entries in enUS.lua
+	2 - WHen recreating enUS.lua create a hash table so that you have
+	["Red Aura"] = 66602, as well as [66602,0 = "Red Aura"
+	- #10 working translator
+	this needs some improvements but it works
+	- #10 need to sort out this function function GSTRGetConditionalsFromString(str)
+	local leftstr = string.find("str", "/\[/g")
+	local rightstr = string.find("str", "/\]/g")
+	- more for #10 Its "this much" away
+	almost there
+	- Debugging and code checks for #19
+	- next attempt of a translator for #10
+	The original approach was too intensive  It started with the list of
+	words and tried a straight regex find replace.  This will work but
+	extracting the list of spells and cleaning it up will be annoying.
+	
+	The new approach to use GSTranslateString instead iterates over the
+	words of the macro instead.
+	- #10 Cutting some abilities out
+	- Bug fix for #10 esMX
+	- Local Extractor for #10
+	The extractor is a stand alone lua file that takes a dump of all the
+	spells by id and then removes the duplicates and the nil values.  This
+	should need to be run again.
+	- more work for #10
+	- #10 While this works it takes way too long to log in with.  Need to adjust enUS.lua and esMX.lua but make it a repeatable process.
+	- #10 Trying to extract via a text box didnt work.  Instead created a GSE-LanguageExtractor
+	- hook #10 to the core
+	- Set the translaters default state to be disabled. #10
+	- #10 dont need to check for useTranslater as that is for macro edits rather than this display option.
+	- Initial Output gui for #10
+	- Ambergreens Rogue and Mage Macros
+	- More work on #10
+	- #10 More Translator and spelling stuff
+	- Update to Status text to highlight Close button as Save.
+	- Initial frame for #10
+	- Typo
+	- Love for DeathKnights, Priests, Rogues, Shaman, Warlocks.
+	- Druid Resto and Balance Macros
+	- Macro Icon for the Editor
+	The Sequence Editor will now show the Macro Icon if selected from the
+	macro interface
+	- Add icon selector to GSSE and update toc files ready for 1.0.6
+	- #17 Global debug options
+	- #17 more Debug options
+	GSMasterOptions.sendDebugOutputToChat = true
+	GSMasterOptions.sendDebugOutputGSDebugOutput = false
+	
+	GSDebugOutput can be picked up by another addon and displayed for copy
+	paste.
+	- #17 Debugging changes and hopefully the end of /gs hangs.
+	- Updated TOC files
+	- DB_MMS Macro - Name not in quiotes
+	- Extra information added to #14 and #16 , Debug Mode and Regression for options.
+	- #14 Priest Update
+	- Fixes for #13
+	- #14 remove debug
+	- SHaman Elemental macros
+	- Changes for #14 specID now also accepts ClassID (1-13)
+	The Sequence Editor has a radio toggle for class wide macros.
+	Sequences with a specID between 1 and 13 will apply to all specs on that
+	class.
+	- Change the Export Author tag to be a " set instead of ' as it would break when a user was on a server or had an ' in their name
+	- Subtlty and Assassination Sequences
+	- Trying to troubleshoot #13
+	- KillTheNoise' Disc Macros
+	- More Hunter Fixes + new Survival Macros
+	- Fix from Spectre via Curse for the Frosty Macro
+	- Fix for #11
+	- Options fixes
+	- Updated Warrior Arms Macro from denzel777
+	- Fix for #11
+	- dialog cleanup
+	- Options Cleanup
+	- #5 change defaults to turn all these options off. and more information about turning them on.
+	- myMacros Addin SHell
+	- Whitespace
+	- Fix export of Sequence specid
+	- #8 finished.
+	- need to troubleshoot lines 100 - the two are not matching #8
+	- more fixes for #8
+	- #8 and #5 fixesd
+	- Clean Up Options
+	- First cut of Orphaned Macro removal for #8
+	- TOC updates of versions to 1.0
+	- Newline in description
+	- Reparse Sequences when Options Change.
+	Added in comments of what needs to change to explore how to change it
+	for #5
+	- fix target line in HP Hunter macro
+	- Utility Icons
+	- Removed words PTR, Test and Legion from Macro names and added a Mage Frost Sequence
+	- First cut of High Performance Macros addin.
+	This only contains John's Beast Mastery ones so far.
+	- Revert "Attempt to change background ready for skinning"
+	This reverts commit 5ce14eacb9059907ffd424574e2d285d504959da.
+	- Attempt to change background ready for skinning
+	- updated Marksmanship macro
+	- Normalising the bundled macros to all begin with DB_
+	In getting ready for launch, I want to normalise the names of all the
+	bundled macros so people can see which macros they have. I could do this
+	via code but want the sequence to be still readable and identifiable.
+	- Cleanup of Sequences
+	WIll need to do an update when the options are changed.
+	- Marking as 0.7
+	- #4 in and ready for testing.
+	- Options for #4 working.  Now to test if they work
+	- GUI for #4
+	- bug fixes for #4
+	- more for #4
+	- Changes for #4 I will need to build a GUI
+	GnomeOptions.cleanTempMacro = true
+	GnomeOptions.hideSoundErrors = false
+	GnomeOptions.hideUIErrors = true
+	GnomeOptions.clearUIErrors = false
+	GnomeOptions.seedInitialMacro = false
+	GnomeOptions.initialised = true
+	- Getting Ready for launch
+	- Refactor bug.
+	- remove script warning
+	Scripts with /run sfx=GetCVar("Sound_EnableSFX"); in them trigger a
+	warning in legion.
+	- CRLF
+	- Normalize all the line endings
+	- Fix PreMacro and PostMacro in editor
+	- Nano's hunter macros
+	- StepFunction Handling for #3
+	Note this will not handle random step functions.
+	- Removing unused Ace3 imports
+	- #3 is now feature complete
+	- #3 getting closer.
+	- #3 the macro Edit button now copies the current macro to a new "LiveTest" macro.
+	- typo
+	- LLoska's feral macros
+	- Helptext for #3
+	- more checkins for #3
+	- Cleanup for #3
+	Still need a way to convert the string back to a table.
+	- #3 Fixes.  The export part works.
+	- #3 path correction
+	- Refactor fix finally
+	- #3 for macros created ingame this sets the author to Character@Realm
+	- #3 this creates a macro called "LiveTest" that can be used to test a sequence.
+	- Fix refactor problem
+	- Demon Hunter Vengence and Havok Updates
+	- Initial Dialog Box to display and edit a sequence for #3
+	This just shows the macro at the moment via /gsse
+	- Initial boilerplate and Ace Framework for #3
+	- Semantics and make a couple of functions global for #3
+	- Formatting
+	- Paladin Macro Fixes
+	- #3 ability to export a sequence -- eg /gs export Ret
+	- Mage Fire Macro
+	- #3 first functions
+	Create a function to store a new macro and also to export an existing
+	macro.  This is experimental code for 0.5
+	- Updated Monk Macro and DemonHunter Tank macro
+	- First Monk Legion Sequence
+	- Intro Video Update
+	- SHaman Deeps
+	- Boomer Mode Resto DPS
+	- Disc and Holy DPS Macros
+	- Paladin Holy DPS
+	- #2 Passed testing
+	- Removed Sequences.lua so as not to overwrite any local changes.
+	- First attempt at #2
+	- Update README.md
+	- Tiger's Fury is not part of Balance so removed.
+	- First cut at a balance sequence
+	- Better Notes for GS-DraikMacros
+	- Better descriptor
+	- Change from Sanctified Wrath to Crusade
+	- Correct Errorhandler error
+	http://www.wowinterface.com/portal_admin.php?id=1154&a=viewbugreport&bugid=8470
+	
+	Wowinterface Bug 8470
+	- Bug fixes and updates
+	- Updated BM - Intimidation is not part of the BM Spec in Legion - thanks renderwurx
+	- Update README
+	- Update README.md
+	- Example on how to specify an icon for a macro
+	icon = "INV_Sword_2H_AshbringerCorrupt",
+	- Some loose bugs and Issue #1
+	- Fixed!  /gs will now add personal macros for found spec matches.
+	- /gs adding a personal macro works but it doesnt recognise that the macro already exists.
+	- First cut at auto load macro on a /gs command.  Also attempt to clean up a in Combat check.
+	- Enhancement Macro by lloskka
+	- DeathKnight, Hunter, Priest, Shaman and Warlock updates
+	- warlock
+	- Update to Read me
+	- INitial Arcane Mage Macro
+	- Experimental Change Sequential Step Function to Static
+	StepFunction = GSStaticPriority,
+	- Typos and stuff
+	- Prot Warrior
+	- Druid Guardian and Feral
+	- More DK, DH, Hunter, Rogue, Shaman and Warrior Macros
+	- file updates
+	- Readme for repository
+	- PTR/Legion Release 0.2

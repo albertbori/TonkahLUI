@@ -1,0 +1,41 @@
+------------------------------------------------------------------------
+r784 | chaoslux | 2016-09-22 22:59:32 +0000 (Thu, 22 Sep 2016) | 1 line
+Changed paths:
+   M /trunk/modules/merchant.lua
+
+Merchant: Fixed an issue when items do not have a quality. It will not sell those items.
+------------------------------------------------------------------------
+r783 | chaoslux | 2016-09-07 01:36:38 +0000 (Wed, 07 Sep 2016) | 1 line
+Changed paths:
+   M /trunk/modules/tooltip.lua
+
+- Tooltips: Fixed WorldQuests tooltips not being skinned properly.
+------------------------------------------------------------------------
+r782 | chaoslux | 2016-09-06 20:56:15 +0000 (Tue, 06 Sep 2016) | 1 line
+Changed paths:
+   M /trunk/modules/threatbar.lua
+
+- Threat/ExpBar: Hide RestedXP bar while tracking reputation. 
+------------------------------------------------------------------------
+r780 | chaoslux | 2016-08-30 17:20:06 +0000 (Tue, 30 Aug 2016) | 1 line
+Changed paths:
+   M /trunk/unitframes/plugins/oUF_CombatFeedback.lua
+
+- Remove invisible non-breaking space that is causing WoW to go crazy. 
+------------------------------------------------------------------------
+r778 | chaoslux | 2016-08-30 06:41:55 +0000 (Tue, 30 Aug 2016) | 3 lines
+Changed paths:
+   M /trunk/LUI.toc
+   M /trunk/LUI.xml
+   M /trunk/unitframes/plugins/oUF_CombatFeedback.lua
+
+- Added extra check to prevent more errors from the combatfeedback error I thought was fixed a long time ago.
+- Removed Vengeance module as it is not needed anymore.
+- Bumped to 3.9.10 to fix the "Please update" issue with version an "a" version.
+------------------------------------------------------------------------
+r777 | chaoslux | 2016-08-12 08:54:26 +0000 (Fri, 12 Aug 2016) | 1 line
+Changed paths:
+   M /trunk/modules/bags.lua
+
+- Bags: Another attempt at fixing sort freezes.
+------------------------------------------------------------------------

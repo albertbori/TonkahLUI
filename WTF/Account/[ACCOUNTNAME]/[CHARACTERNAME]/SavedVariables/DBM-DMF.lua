@@ -1,0 +1,2 @@
+
+DBMWorldDMF_SavedStats = nil
