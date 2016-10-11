@@ -18,7 +18,7 @@ ChatterDB = {
 						[0] = false,
 					},
 				},
-				["Custom LUI"] = {
+				["Tonkah LUI"] = {
 					["guildranks"] = {
 						false, -- [1]
 						false, -- [2]
@@ -43,7 +43,7 @@ ChatterDB = {
 						["invite"] = "invite",
 					},
 				},
-				["Custom LUI"] = {
+				["Tonkah LUI"] = {
 					["words"] = {
 						["inv"] = "inv",
 						["invite"] = "invite",
@@ -142,7 +142,7 @@ ChatterDB = {
 						},
 					},
 				},
-				["Custom LUI"] = {
+				["Tonkah LUI"] = {
 					["colors"] = {
 						["Guild"] = {
 							["r"] = 0.250980406999588,
@@ -305,7 +305,7 @@ ChatterDB = {
 					["fontsize"] = 12,
 					["font"] = "Arial Narrow",
 				},
-				["Custom LUI"] = {
+				["Tonkah LUI"] = {
 					["font"] = "Arial Narrow",
 					["fontsize"] = 12,
 				},
@@ -315,9 +315,9 @@ ChatterDB = {
 		},
 	},
 	["profileKeys"] = {
-		["Holyshnizzle - Doomhammer"] = "Custom LUI",
+		["Holyshnizzle - Doomhammer"] = "Tonkah LUI",
 		["Alfalpha - Doomhammer"] = "Default",
-		["Taunkah - Doomhammer"] = "Custom LUI",
+		["Taunkah - Doomhammer"] = "Tonkah LUI",
 		["Nilrum - Doomhammer"] = "Default",
 		["Bartholamue - Doomhammer"] = "Default",
 		["Marmit - Doomhammer"] = "Default",
@@ -329,7 +329,7 @@ ChatterDB = {
 			},
 			["welcomeMessaged"] = true,
 		},
-		["Custom LUI"] = {
+		["Tonkah LUI"] = {
 			["modules"] = {
 				["Borders/Background"] = false,
 			},

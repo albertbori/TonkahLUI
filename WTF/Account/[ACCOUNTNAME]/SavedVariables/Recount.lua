@@ -1,9 +1,9 @@
 
 RecountDB = {
 	["profileKeys"] = {
-		["Holyshnizzle - Doomhammer"] = "Custom LUI",
+		["Holyshnizzle - Doomhammer"] = "Tonkah LUI",
 		["Alfalpha - Doomhammer"] = "Alfalpha - Doomhammer",
-		["Taunkah - Doomhammer"] = "Custom LUI",
+		["Taunkah - Doomhammer"] = "Tonkah LUI",
 		["Brooslee - Doomhammer"] = "Brooslee - Doomhammer",
 		["Marmit - Doomhammer"] = "Marmit - Doomhammer",
 		["Bartholamue - Doomhammer"] = "Bartholamue - Doomhammer",
@@ -608,7 +608,7 @@ RecountDB = {
 			},
 			["CurDataSet"] = "OverallData",
 		},
-		["Custom LUI"] = {
+		["Tonkah LUI"] = {
 			["GraphWindowY"] = 0,
 			["MainWindow"] = {
 				["Position"] = {

@@ -21,7 +21,7 @@ LUIDB = {
 						["Width"] = 810,
 					},
 				},
-				["Custom LUI"] = {
+				["Tonkah LUI"] = {
 					["General"] = {
 						["Y"] = 0,
 						["Width"] = 810,
@@ -79,7 +79,7 @@ LUIDB = {
 						["CoordX"] = 1470.52331542969,
 					},
 				},
-				["Custom LUI"] = {
+				["Tonkah LUI"] = {
 					["Enable"] = false,
 					["Bags"] = {
 						["CoordX"] = 1484.33764648438,
@@ -700,7 +700,7 @@ LUIDB = {
 						},
 					},
 				},
-				["Custom LUI"] = {
+				["Tonkah LUI"] = {
 					["Party"] = {
 						["ShowInRealPartys"] = true,
 						["Portrait"] = {
@@ -914,7 +914,7 @@ LUIDB = {
 						["Point"] = "BOTTOMLEFT",
 					},
 				},
-				["Custom LUI"] = {
+				["Tonkah LUI"] = {
 					["General"] = {
 						["Point"] = "BOTTOMLEFT",
 					},
@@ -949,7 +949,7 @@ LUIDB = {
 					["modules"] = {
 					},
 				},
-				["Custom LUI"] = {
+				["Tonkah LUI"] = {
 					["modules"] = {
 					},
 				},
@@ -1023,7 +1023,7 @@ LUIDB = {
 						["AlwaysShow"] = false,
 					},
 				},
-				["Custom LUI"] = {
+				["Tonkah LUI"] = {
 					["Tps"] = {
 						["IsShown"] = true,
 						["OffsetX"] = 3,
@@ -1540,7 +1540,7 @@ LUIDB = {
 						0.4, -- [4]
 					},
 				},
-				["Custom LUI"] = {
+				["Tonkah LUI"] = {
 					["micromenu_btn"] = {
 						0.901960784313726, -- [1]
 						0.901960784313726, -- [2]
@@ -1726,7 +1726,7 @@ LUIDB = {
 						["Size"] = 65,
 					},
 				},
-				["Custom LUI"] = {
+				["Tonkah LUI"] = {
 					["Debuffs"] = {
 						["Size"] = 65,
 					},
@@ -1766,7 +1766,7 @@ LUIDB = {
 						["IsOpen"] = true,
 					},
 				},
-				["Custom LUI"] = {
+				["Tonkah LUI"] = {
 					["SidebarLeft1"] = {
 						["IsOpen"] = true,
 						["Enable"] = true,
@@ -1781,7 +1781,7 @@ LUIDB = {
 		},
 		["Cooldown"] = {
 			["profiles"] = {
-				["Custom LUI"] = {
+				["Tonkah LUI"] = {
 					["Text"] = {
 						["Size"] = 14,
 						["YOffset"] = -9,
@@ -1806,8 +1806,8 @@ LUIDB = {
 	},
 	["profileKeys"] = {
 		["Marmit - Doomhammer"] = "Marmit - Doomhammer",
-		["Taunkah - Doomhammer"] = "Custom LUI",
-		["Holyshnizzle - Doomhammer"] = "Custom LUI",
+		["Taunkah - Doomhammer"] = "Tonkah LUI",
+		["Holyshnizzle - Doomhammer"] = "Tonkah LUI",
 	},
 	["global"] = {
 		["luiconfig"] = {
@@ -1935,7 +1935,7 @@ LUIDB = {
 				},
 			},
 		},
-		["Custom LUI"] = {
+		["Tonkah LUI"] = {
 			["modules"] = {
 				["Merchant"] = false,
 			},

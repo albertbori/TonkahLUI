@@ -361,7 +361,7 @@ ARKINVDB = {
 							},
 						},
 						["used"] = "Y",
-						["name"] = "Custom LUI",
+						["name"] = "Tonkah LUI",
 					},
 				},
 				["next"] = 1001,

@@ -1,9 +1,9 @@
 
 Omen3DB = {
 	["profileKeys"] = {
-		["Holyshnizzle - Doomhammer"] = "Custom LUI",
+		["Holyshnizzle - Doomhammer"] = "Tonkah LUI",
 		["Alfalpha - Doomhammer"] = "Alfalpha - Doomhammer",
-		["Taunkah - Doomhammer"] = "Custom LUI",
+		["Taunkah - Doomhammer"] = "Tonkah LUI",
 		["Nilrum - Doomhammer"] = "Nilrum - Doomhammer",
 		["Bartholamue - Doomhammer"] = "Bartholamue - Doomhammer",
 		["Marmit - Doomhammer"] = "Marmit - Doomhammer",
@@ -194,7 +194,7 @@ Omen3DB = {
 			["PositionY"] = 569.5,
 			["PositionX"] = 766.000061035156,
 		},
-		["Custom LUI"] = {
+		["Tonkah LUI"] = {
 			["PositionW"] = 198.886001586914,
 			["Shown"] = true,
 			["PositionH"] = 196.984924316406,

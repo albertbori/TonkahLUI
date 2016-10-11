@@ -1629,7 +1629,7 @@ Bartender4DB = {
 						},
 					},
 				},
-				["Custom LUI"] = {
+				["Tonkah LUI"] = {
 					["actionbars"] = {
 						{
 							["skin"] = {
@@ -3227,7 +3227,7 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Custom LUI"] = {
+				["Tonkah LUI"] = {
 					["position"] = {
 						["y"] = -197.983779907227,
 						["x"] = -31.4999389648438,
@@ -3333,7 +3333,7 @@ Bartender4DB = {
 						["y"] = 41.75,
 					},
 				},
-				["Custom LUI"] = {
+				["Tonkah LUI"] = {
 					["skin"] = {
 						["Colors"] = {
 							["Normal"] = {
@@ -3417,7 +3417,7 @@ Bartender4DB = {
 						["scale"] = 0.9,
 					},
 				},
-				["Custom LUI"] = {
+				["Tonkah LUI"] = {
 					["position"] = {
 						["y"] = 218.971488047664,
 						["x"] = 398.390317150055,
@@ -3465,7 +3465,7 @@ Bartender4DB = {
 						["point"] = "LEFT",
 					},
 				},
-				["Custom LUI"] = {
+				["Tonkah LUI"] = {
 					["position"] = {
 						["y"] = 10.0000305175781,
 						["x"] = 463.395568847656,
@@ -3527,7 +3527,7 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Custom LUI"] = {
+				["Tonkah LUI"] = {
 					["position"] = {
 						["y"] = 100,
 						["x"] = -41.6044158935547,
@@ -3688,7 +3688,7 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Custom LUI"] = {
+				["Tonkah LUI"] = {
 					["skin"] = {
 						["Colors"] = {
 							["Normal"] = {
@@ -3990,7 +3990,7 @@ Bartender4DB = {
 						["point"] = "CENTER",
 					},
 				},
-				["Custom LUI"] = {
+				["Tonkah LUI"] = {
 					["fadeoutdelay"] = 1,
 					["version"] = 3,
 					["position"] = {
@@ -4318,7 +4318,7 @@ Bartender4DB = {
 						["point"] = "CENTER",
 					},
 				},
-				["Custom LUI"] = {
+				["Tonkah LUI"] = {
 					["fadeoutalpha"] = 1,
 					["version"] = 3,
 					["position"] = {
@@ -4638,7 +4638,7 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Custom LUI"] = {
+				["Tonkah LUI"] = {
 					["rows"] = 2,
 					["fadeoutalpha"] = 0,
 					["skin"] = {
@@ -4808,7 +4808,7 @@ Bartender4DB = {
 						["point"] = "LEFT",
 					},
 				},
-				["Custom LUI"] = {
+				["Tonkah LUI"] = {
 					["position"] = {
 						["y"] = 9.99997877283215,
 						["x"] = 361.714377491161,
@@ -4837,8 +4837,8 @@ Bartender4DB = {
 	},
 	["profileKeys"] = {
 		["Marmit - Doomhammer"] = "Marmit",
-		["Taunkah - Doomhammer"] = "Custom LUI",
-		["Holyshnizzle - Doomhammer"] = "Custom LUI",
+		["Taunkah - Doomhammer"] = "Tonkah LUI",
+		["Holyshnizzle - Doomhammer"] = "Tonkah LUI",
 	},
 	["profiles"] = {
 		["Holyshnizzle - Doomhammer"] = {
@@ -4867,7 +4867,7 @@ Bartender4DB = {
 			["blizzardVehicle"] = true,
 			["outofrange"] = "hotkey",
 		},
-		["Custom LUI"] = {
+		["Tonkah LUI"] = {
 			["minimapIcon"] = {
 				["minimapPos"] = 268,
 				["radius"] = 80,

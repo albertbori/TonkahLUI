@@ -1,9 +1,9 @@
 
 TomTomDB = {
 	["profileKeys"] = {
-		["Holyshnizzle - Doomhammer"] = "Custom LUI",
+		["Holyshnizzle - Doomhammer"] = "Tonkah LUI",
 		["Alfalpha - Doomhammer"] = "Default",
-		["Taunkah - Doomhammer"] = "Custom LUI",
+		["Taunkah - Doomhammer"] = "Tonkah LUI",
 		["Nilrum - Doomhammer"] = "Default",
 		["Bartholamue - Doomhammer"] = "Default",
 		["Marmit - Doomhammer"] = "Default",
@@ -11,7 +11,7 @@ TomTomDB = {
 	["profiles"] = {
 		["Default"] = {
 		},
-		["Custom LUI"] = {
+		["Tonkah LUI"] = {
 		},
 	},
 }
