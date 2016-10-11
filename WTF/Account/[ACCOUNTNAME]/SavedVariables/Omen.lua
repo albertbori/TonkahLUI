@@ -195,11 +195,11 @@ Omen3DB = {
 			["PositionX"] = 766.000061035156,
 		},
 		["Tonkah LUI"] = {
-			["PositionW"] = 198.886001586914,
+			["PositionW"] = 198.885940551758,
 			["Shown"] = true,
 			["PositionH"] = 196.984924316406,
 			["VGrip2"] = 155.316689874038,
-			["PositionY"] = 232.201217651367,
+			["PositionY"] = 235.20133972168,
 			["Locked"] = true,
 			["Background"] = {
 				["EdgeSize"] = 9,
@@ -230,7 +230,7 @@ Omen3DB = {
 				["HideInPVP"] = false,
 			},
 			["VGrip1"] = 155.316689874038,
-			["PositionX"] = 1525.62658691406,
+			["PositionX"] = 1481.62646484375,
 			["Warnings"] = {
 				["Sound"] = false,
 			},
