@@ -1,0 +1,16 @@
+.DS_Store
+*.bak
+
+#Individual files
+/WTF/Account/\[ACCOUNTNAME\]/SavedVariables/AskMrRobot.lua
+/WTF/Account/\[ACCOUNTNAME\]/\[SERVERNAME\]/\[CHARACTERNAME\]/SavedVariables/WorldQuestTracker.lua
+/WTF/Account/\[ACCOUNTNAME\]/SavedVariables/TomTom.lua
+/WTF/Account/\[ACCOUNTNAME\]/SavedVariables/TradeSkillMaster_Accounting.lua
+/WTF/Account/\[ACCOUNTNAME\]/SavedVariables/TradeSkillMaster_AppHelper.lua
+/WTF/Account/\[ACCOUNTNAME\]/SavedVariables/TradeSkillMaster_AuctionDB.lua
+/WTF/Account/\[ACCOUNTNAME\]/SavedVariables/TradeSkillMaster_Crafting.lua
+/WTF/Account/\[ACCOUNTNAME\]/SavedVariables/TradeSkillMaster.lua
+/WTF/Account/\[ACCOUNTNAME\]/SavedVariables/WorldQuestTracker.lua
+/WTF/Account/\[ACCOUNTNAME\]/SavedVariables/Pawn.lua
+/WTF/Account/\[ACCOUNTNAME\]/SavedVariables/\!BugGrabber.lua
+/WTF/Account/\[ACCOUNTNAME\]/SavedVariables/Auctionator.lua

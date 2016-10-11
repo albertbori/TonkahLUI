@@ -8,9 +8,9 @@ RecountPerCharDB = {
 				["TimeHeal"] = 487599.055,
 				["Healing"] = 487599.055,
 				["DamageTaken"] = 487598.061,
-				["HOT_Time"] = 487599.055,
-				["HealingTaken"] = 487599.055,
 				["Overhealing"] = 487573.053,
+				["HealingTaken"] = 487599.055,
+				["HOT_Time"] = 487599.055,
 				["ActiveTime"] = 487599.055,
 				["TimeDamage"] = 487599.055,
 				["OVERALL"] = 487599.055,
@@ -71,17 +71,17 @@ RecountPerCharDB = {
 						[0] = "Vehicle-0-3778-1220-5784-102665-00007B3D0F",
 					},
 				},
+				["Mountain Prowler"] = {
+					["LatestGuardian"] = 0,
+					["GUIDs"] = {
+						[0] = "Vehicle-0-3778-1220-5784-96628-00007B3E68",
+					},
+				},
 				["Rageshard"] = {
 					["LatestGuardian"] = 1,
 					["GUIDs"] = {
 						"Vehicle-0-3778-1220-5784-102665-00007B3DFB", -- [1]
 						[0] = "Vehicle-0-3778-1220-5784-102665-00007B3DB2",
-					},
-				},
-				["Mountain Prowler"] = {
-					["LatestGuardian"] = 0,
-					["GUIDs"] = {
-						[0] = "Vehicle-0-3778-1220-5784-96628-00007B3E68",
 					},
 				},
 			},
@@ -94,8 +94,7 @@ RecountPerCharDB = {
 				"Bolas Launcher <Holyshnizzle>", -- [5]
 			},
 			["Name"] = "Holyshnizzle",
-			["LastActive"] = 487605.059,
-			["UnitLockout"] = 485163.576,
+			["LastAbility"] = 569912.069,
 			["Fights"] = {
 				["LastFightData"] = {
 					["DOTs"] = {
@@ -117,8 +116,8 @@ RecountPerCharDB = {
 					["ElementHitsTaken"] = {
 						["Melee"] = {
 							["Details"] = {
-								["Miss"] = {
-									["count"] = 1,
+								["Hit"] = {
+									["count"] = 21,
 								},
 								["Dodge"] = {
 									["count"] = 1,
@@ -126,19 +125,19 @@ RecountPerCharDB = {
 								["Crit"] = {
 									["count"] = 1,
 								},
-								["Hit"] = {
-									["count"] = 21,
+								["Miss"] = {
+									["count"] = 1,
 								},
 							},
 							["amount"] = 24,
 						},
 						["Physical"] = {
 							["Details"] = {
-								["Miss"] = {
-									["count"] = 1,
-								},
 								["Hit"] = {
 									["count"] = 5,
+								},
+								["Miss"] = {
+									["count"] = 1,
 								},
 							},
 							["amount"] = 6,
@@ -146,13 +145,6 @@ RecountPerCharDB = {
 					},
 					["DeathCount"] = 0,
 					["HOT_Time"] = 54,
-					["ElementTakenBlock"] = {
-					},
-					["RunicPowerGain"] = 0,
-					["ElementTaken"] = {
-						["Melee"] = 826146,
-						["Physical"] = 163768,
-					},
 					["HOTs"] = {
 						["Renew"] = {
 							["Details"] = {
@@ -171,6 +163,12 @@ RecountPerCharDB = {
 							["amount"] = 24,
 						},
 					},
+					["ManaGain"] = 0,
+					["ElementTaken"] = {
+						["Melee"] = 826146,
+						["Physical"] = 163768,
+					},
+					["DOT_Time"] = 3,
 					["Damage"] = 1913740,
 					["ElementDoneAbsorb"] = {
 					},
@@ -180,64 +178,33 @@ RecountPerCharDB = {
 					["Dispels"] = 0,
 					["PartialBlock"] = {
 					},
-					["DamagedWho"] = {
-						["Bilgefin Scavenger"] = {
-							["Details"] = {
-								["Holy Fire"] = {
-									["count"] = 46040,
-								},
-								["Holy Fire (DoT)"] = {
-									["count"] = 12661,
-								},
-								["Holy Nova"] = {
-									["count"] = 425870,
-								},
-								["Holy Word: Chastise"] = {
-									["count"] = 345303,
-								},
-								["Divine Star"] = {
-									["count"] = 166900,
-								},
-							},
-							["amount"] = 996774,
-						},
-						["Bilgefin Invader"] = {
-							["Details"] = {
-								["Holy Nova"] = {
-									["count"] = 805700,
-								},
-								["Divine Star"] = {
-									["count"] = 111266,
-								},
-							},
-							["amount"] = 916966,
-						},
+					["FDamagedWho"] = {
 					},
 					["FAttacks"] = {
 					},
-					["HealingTaken"] = 1107616,
+					["RageGain"] = 0,
 					["ElementDone"] = {
 						["Holy"] = 1913740,
+					},
+					["ManaGainedFrom"] = {
 					},
 					["ElementHitsDone"] = {
 						["Holy"] = {
 							["Details"] = {
-								["Tick"] = {
-									["count"] = 1,
+								["Hit"] = {
+									["count"] = 18,
 								},
 								["Crit"] = {
 									["count"] = 10,
 								},
-								["Hit"] = {
-									["count"] = 18,
+								["Tick"] = {
+									["count"] = 1,
 								},
 							},
 							["amount"] = 29,
 						},
 					},
-					["ManaGainedFrom"] = {
-					},
-					["CCBroken"] = {
+					["RageGained"] = {
 					},
 					["WhoDamaged"] = {
 						["Bilgefin Scavenger"] = {
@@ -271,9 +238,8 @@ RecountPerCharDB = {
 					},
 					["EnergyGainedFrom"] = {
 					},
+					["Dispelled"] = 0,
 					["RunicPowerGainedFrom"] = {
-					},
-					["RunicPowerGained"] = {
 					},
 					["ElementDoneBlock"] = {
 					},
@@ -286,17 +252,30 @@ RecountPerCharDB = {
 								["Divine Star"] = {
 									["count"] = 2.27,
 								},
-								["Echo of Light"] = {
-									["count"] = 4.98,
-								},
 								["Flash Heal"] = {
 									["count"] = 3.5,
+								},
+								["Echo of Light"] = {
+									["count"] = 4.98,
 								},
 							},
 							["amount"] = 22.76,
 						},
 					},
-					["Dispelled"] = 0,
+					["OverHeals"] = {
+						["Echo of Light"] = {
+							["Details"] = {
+								["Tick"] = {
+									["max"] = 19057,
+									["min"] = 19057,
+									["count"] = 1,
+									["amount"] = 19057,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 19057,
+						},
+					},
 					["WhoHealed"] = {
 						["Holyshnizzle"] = {
 							["Details"] = {
@@ -306,42 +285,18 @@ RecountPerCharDB = {
 								["Divine Star"] = {
 									["count"] = 145031,
 								},
-								["Echo of Light"] = {
-									["count"] = 331735,
-								},
 								["Flash Heal"] = {
 									["count"] = 352094,
+								},
+								["Echo of Light"] = {
+									["count"] = 331735,
 								},
 							},
 							["amount"] = 1107616,
 						},
 					},
-					["HealedWho"] = {
-						["Holyshnizzle"] = {
-							["Details"] = {
-								["Renew"] = {
-									["count"] = 278756,
-								},
-								["Divine Star"] = {
-									["count"] = 145031,
-								},
-								["Echo of Light"] = {
-									["count"] = 331735,
-								},
-								["Flash Heal"] = {
-									["count"] = 352094,
-								},
-							},
-							["amount"] = 1107616,
-						},
-					},
-					["CCBreak"] = 0,
-					["ElementTakenAbsorb"] = {
-					},
-					["FDamage"] = 0,
 					["EnergyGain"] = 0,
-					["ManaGained"] = {
-					},
+					["CCBreak"] = 0,
 					["PartialAbsorb"] = {
 						["Throw Spear"] = {
 							["Details"] = {
@@ -381,134 +336,6 @@ RecountPerCharDB = {
 						},
 					},
 					["ActiveTime"] = 32.44,
-					["Overhealing"] = 19057,
-					["TimeSpent"] = {
-						["Bilgefin Invader"] = {
-							["Details"] = {
-								["Holy Nova"] = {
-									["count"] = 0,
-								},
-								["Divine Star"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Bilgefin Scavenger"] = {
-							["Details"] = {
-								["Holy Fire"] = {
-									["count"] = 1.06,
-								},
-								["Holy Fire (DoT)"] = {
-									["count"] = 0.4,
-								},
-								["Holy Nova"] = {
-									["count"] = 6.53,
-								},
-								["Holy Word: Chastise"] = {
-									["count"] = 0.43,
-								},
-								["Divine Star"] = {
-									["count"] = 1.26,
-								},
-							},
-							["amount"] = 9.68,
-						},
-						["Holyshnizzle"] = {
-							["Details"] = {
-								["Renew"] = {
-									["count"] = 12.01,
-								},
-								["Divine Star"] = {
-									["count"] = 2.27,
-								},
-								["Echo of Light"] = {
-									["count"] = 4.98,
-								},
-								["Flash Heal"] = {
-									["count"] = 3.5,
-								},
-							},
-							["amount"] = 22.76,
-						},
-					},
-					["WhoDispelled"] = {
-					},
-					["InterruptData"] = {
-					},
-					["ElementTakenResist"] = {
-					},
-					["Heals"] = {
-						["Renew"] = {
-							["Details"] = {
-								["Tick"] = {
-									["max"] = 21272,
-									["min"] = 2222,
-									["count"] = 8,
-									["amount"] = 151126,
-								},
-								["Crit"] = {
-									["max"] = 42544,
-									["min"] = 42543,
-									["count"] = 2,
-									["amount"] = 85087,
-								},
-								["Hit"] = {
-									["max"] = 21272,
-									["min"] = 21271,
-									["count"] = 2,
-									["amount"] = 42543,
-								},
-							},
-							["count"] = 12,
-							["amount"] = 278756,
-						},
-						["Divine Star"] = {
-							["Details"] = {
-								["Crit"] = {
-									["max"] = 58012,
-									["min"] = 58012,
-									["count"] = 1,
-									["amount"] = 58012,
-								},
-								["Hit"] = {
-									["max"] = 29007,
-									["min"] = 29006,
-									["count"] = 3,
-									["amount"] = 87019,
-								},
-							},
-							["count"] = 4,
-							["amount"] = 145031,
-						},
-						["Echo of Light"] = {
-							["Details"] = {
-								["Tick"] = {
-									["max"] = 102429,
-									["min"] = 6592,
-									["count"] = 8,
-									["amount"] = 331735,
-								},
-							},
-							["count"] = 8,
-							["amount"] = 331735,
-						},
-						["Flash Heal"] = {
-							["Details"] = {
-								["Crit"] = {
-									["max"] = 352094,
-									["min"] = 352094,
-									["count"] = 1,
-									["amount"] = 352094,
-								},
-							},
-							["count"] = 1,
-							["amount"] = 352094,
-						},
-					},
-					["Interrupts"] = 0,
-					["EnergyGained"] = {
-					},
 					["PartialResist"] = {
 						["Throw Spear"] = {
 							["Details"] = {
@@ -547,22 +374,162 @@ RecountPerCharDB = {
 							["amount"] = 4,
 						},
 					},
-					["Healing"] = 1107616,
-					["OverHeals"] = {
-						["Echo of Light"] = {
+					["ManaGained"] = {
+					},
+					["ElementTakenAbsorb"] = {
+					},
+					["Interrupts"] = 0,
+					["Overhealing"] = 19057,
+					["ElementTakenResist"] = {
+					},
+					["InterruptData"] = {
+					},
+					["WhoDispelled"] = {
+					},
+					["TimeSpent"] = {
+						["Bilgefin Invader"] = {
 							["Details"] = {
+								["Holy Nova"] = {
+									["count"] = 0,
+								},
+								["Divine Star"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Bilgefin Scavenger"] = {
+							["Details"] = {
+								["Holy Fire"] = {
+									["count"] = 1.06,
+								},
+								["Holy Fire (DoT)"] = {
+									["count"] = 0.4,
+								},
+								["Holy Nova"] = {
+									["count"] = 6.53,
+								},
+								["Divine Star"] = {
+									["count"] = 1.26,
+								},
+								["Holy Word: Chastise"] = {
+									["count"] = 0.43,
+								},
+							},
+							["amount"] = 9.68,
+						},
+						["Holyshnizzle"] = {
+							["Details"] = {
+								["Renew"] = {
+									["count"] = 12.01,
+								},
+								["Divine Star"] = {
+									["count"] = 2.27,
+								},
+								["Flash Heal"] = {
+									["count"] = 3.5,
+								},
+								["Echo of Light"] = {
+									["count"] = 4.98,
+								},
+							},
+							["amount"] = 22.76,
+						},
+					},
+					["Heals"] = {
+						["Renew"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 21272,
+									["min"] = 21271,
+									["count"] = 2,
+									["amount"] = 42543,
+								},
+								["Crit"] = {
+									["max"] = 42544,
+									["min"] = 42543,
+									["count"] = 2,
+									["amount"] = 85087,
+								},
 								["Tick"] = {
-									["max"] = 19057,
-									["min"] = 19057,
+									["max"] = 21272,
+									["min"] = 2222,
+									["count"] = 8,
+									["amount"] = 151126,
+								},
+							},
+							["count"] = 12,
+							["amount"] = 278756,
+						},
+						["Divine Star"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 58012,
+									["min"] = 58012,
 									["count"] = 1,
-									["amount"] = 19057,
+									["amount"] = 58012,
+								},
+								["Hit"] = {
+									["max"] = 29007,
+									["min"] = 29006,
+									["count"] = 3,
+									["amount"] = 87019,
+								},
+							},
+							["count"] = 4,
+							["amount"] = 145031,
+						},
+						["Flash Heal"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 352094,
+									["min"] = 352094,
+									["count"] = 1,
+									["amount"] = 352094,
 								},
 							},
 							["count"] = 1,
-							["amount"] = 19057,
+							["amount"] = 352094,
+						},
+						["Echo of Light"] = {
+							["Details"] = {
+								["Tick"] = {
+									["max"] = 102429,
+									["min"] = 6592,
+									["count"] = 8,
+									["amount"] = 331735,
+								},
+							},
+							["count"] = 8,
+							["amount"] = 331735,
 						},
 					},
-					["RageGained"] = {
+					["FDamage"] = 0,
+					["EnergyGained"] = {
+					},
+					["HealedWho"] = {
+						["Holyshnizzle"] = {
+							["Details"] = {
+								["Renew"] = {
+									["count"] = 278756,
+								},
+								["Divine Star"] = {
+									["count"] = 145031,
+								},
+								["Flash Heal"] = {
+									["count"] = 352094,
+								},
+								["Echo of Light"] = {
+									["count"] = 331735,
+								},
+							},
+							["amount"] = 1107616,
+						},
+					},
+					["Healing"] = 1107616,
+					["CCBroken"] = {
+					},
+					["RunicPowerGained"] = {
 					},
 					["Attacks"] = {
 						["Holy Fire"] = {
@@ -607,18 +574,6 @@ RecountPerCharDB = {
 							["count"] = 20,
 							["amount"] = 1231570,
 						},
-						["Holy Word: Chastise"] = {
-							["Details"] = {
-								["Crit"] = {
-									["max"] = 345303,
-									["min"] = 345303,
-									["count"] = 1,
-									["amount"] = 345303,
-								},
-							},
-							["count"] = 1,
-							["amount"] = 345303,
-						},
 						["Divine Star"] = {
 							["Details"] = {
 								["Crit"] = {
@@ -637,9 +592,52 @@ RecountPerCharDB = {
 							["count"] = 6,
 							["amount"] = 278166,
 						},
+						["Holy Word: Chastise"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 345303,
+									["min"] = 345303,
+									["count"] = 1,
+									["amount"] = 345303,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 345303,
+						},
 					},
-					["RageGain"] = 0,
-					["FDamagedWho"] = {
+					["HealingTaken"] = 1107616,
+					["DamagedWho"] = {
+						["Bilgefin Scavenger"] = {
+							["Details"] = {
+								["Holy Fire"] = {
+									["count"] = 46040,
+								},
+								["Holy Fire (DoT)"] = {
+									["count"] = 12661,
+								},
+								["Holy Nova"] = {
+									["count"] = 425870,
+								},
+								["Divine Star"] = {
+									["count"] = 166900,
+								},
+								["Holy Word: Chastise"] = {
+									["count"] = 345303,
+								},
+							},
+							["amount"] = 996774,
+						},
+						["Bilgefin Invader"] = {
+							["Details"] = {
+								["Holy Nova"] = {
+									["count"] = 805700,
+								},
+								["Divine Star"] = {
+									["count"] = 111266,
+								},
+							},
+							["amount"] = 916966,
+						},
 					},
 					["TimeDamage"] = 9.68,
 					["TimeDamaging"] = {
@@ -654,11 +652,11 @@ RecountPerCharDB = {
 								["Holy Nova"] = {
 									["count"] = 6.53,
 								},
-								["Holy Word: Chastise"] = {
-									["count"] = 0.43,
-								},
 								["Divine Star"] = {
 									["count"] = 1.26,
+								},
+								["Holy Word: Chastise"] = {
+									["count"] = 0.43,
 								},
 							},
 							["amount"] = 9.68,
@@ -675,8 +673,9 @@ RecountPerCharDB = {
 							["amount"] = 0,
 						},
 					},
-					["ManaGain"] = 0,
-					["DOT_Time"] = 3,
+					["RunicPowerGain"] = 0,
+					["ElementTakenBlock"] = {
+					},
 					["DispelledWho"] = {
 					},
 				},
@@ -693,13 +692,12 @@ RecountPerCharDB = {
 					},
 					["DeathCount"] = 0,
 					["HOT_Time"] = 0,
-					["ElementTakenBlock"] = {
-					},
-					["RunicPowerGain"] = 0,
-					["ElementTaken"] = {
-					},
 					["HOTs"] = {
 					},
+					["ManaGain"] = 0,
+					["ElementTaken"] = {
+					},
+					["DOT_Time"] = 0,
 					["Damage"] = 0,
 					["ElementDoneAbsorb"] = {
 					},
@@ -709,77 +707,78 @@ RecountPerCharDB = {
 					["Dispels"] = 0,
 					["PartialBlock"] = {
 					},
-					["DamagedWho"] = {
+					["FDamagedWho"] = {
 					},
 					["FAttacks"] = {
 					},
-					["HealingTaken"] = 0,
+					["RageGain"] = 0,
 					["ElementDone"] = {
-					},
-					["ElementHitsDone"] = {
 					},
 					["ManaGainedFrom"] = {
 					},
-					["CCBroken"] = {
+					["ElementHitsDone"] = {
+					},
+					["RageGained"] = {
 					},
 					["WhoDamaged"] = {
 					},
 					["EnergyGainedFrom"] = {
 					},
+					["Dispelled"] = 0,
 					["RunicPowerGainedFrom"] = {
-					},
-					["RunicPowerGained"] = {
 					},
 					["ElementDoneBlock"] = {
 					},
 					["TimeHealing"] = {
 					},
-					["Dispelled"] = 0,
+					["OverHeals"] = {
+					},
 					["WhoHealed"] = {
 					},
-					["HealedWho"] = {
-					},
-					["CCBreak"] = 0,
-					["ElementTakenAbsorb"] = {
-					},
-					["FDamage"] = 0,
 					["EnergyGain"] = 0,
-					["ManaGained"] = {
-					},
+					["CCBreak"] = 0,
 					["PartialAbsorb"] = {
 					},
 					["ActiveTime"] = 0,
-					["Overhealing"] = 0,
-					["TimeSpent"] = {
+					["PartialResist"] = {
 					},
-					["WhoDispelled"] = {
+					["ManaGained"] = {
+					},
+					["ElementTakenAbsorb"] = {
+					},
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["ElementTakenResist"] = {
 					},
 					["InterruptData"] = {
 					},
-					["ElementTakenResist"] = {
+					["WhoDispelled"] = {
+					},
+					["TimeSpent"] = {
 					},
 					["Heals"] = {
 					},
-					["Interrupts"] = 0,
+					["FDamage"] = 0,
 					["EnergyGained"] = {
 					},
-					["PartialResist"] = {
+					["HealedWho"] = {
 					},
 					["Healing"] = 0,
-					["OverHeals"] = {
+					["CCBroken"] = {
 					},
-					["RageGained"] = {
+					["RunicPowerGained"] = {
 					},
 					["Attacks"] = {
 					},
-					["RageGain"] = 0,
-					["FDamagedWho"] = {
+					["HealingTaken"] = 0,
+					["DamagedWho"] = {
 					},
 					["TimeDamage"] = 0,
 					["TimeDamaging"] = {
 					},
-					["ManaGain"] = 0,
-					["DOT_Time"] = 0,
+					["RunicPowerGain"] = 0,
+					["ElementTakenBlock"] = {
+					},
 					["DispelledWho"] = {
 					},
 				},
@@ -799,11 +798,11 @@ RecountPerCharDB = {
 								["Holy Word: Serenity"] = {
 									["count"] = 3.01,
 								},
-								["Echo of Light"] = {
-									["count"] = 35.66,
-								},
 								["Holy Word: Sanctify"] = {
 									["count"] = 3.6,
+								},
+								["Echo of Light"] = {
+									["count"] = 35.66,
 								},
 							},
 							["amount"] = 151,
@@ -843,14 +842,14 @@ RecountPerCharDB = {
 								["Holy Word: Chastise"] = {
 									["count"] = 3.5,
 								},
-								["Smite"] = {
-									["count"] = 4.87,
+								["Holy Fire (DoT)"] = {
+									["count"] = 4.2,
 								},
 								["Holy Fire"] = {
 									["count"] = 0,
 								},
-								["Holy Fire (DoT)"] = {
-									["count"] = 4.2,
+								["Smite"] = {
+									["count"] = 4.87,
 								},
 							},
 							["amount"] = 14.35,
@@ -869,11 +868,11 @@ RecountPerCharDB = {
 								["Holy Word: Serenity"] = {
 									["count"] = 3.01,
 								},
-								["Echo of Light"] = {
-									["count"] = 35.66,
-								},
 								["Holy Word: Sanctify"] = {
 									["count"] = 3.6,
+								},
+								["Echo of Light"] = {
+									["count"] = 35.66,
 								},
 							},
 							["amount"] = 151,
@@ -886,14 +885,14 @@ RecountPerCharDB = {
 								["Holy Fire (DoT)"] = {
 									["count"] = 48.11,
 								},
-								["Holy Fire"] = {
-									["count"] = 5.68,
+								["Holy Word: Chastise"] = {
+									["count"] = 6.66,
 								},
 								["Smite"] = {
 									["count"] = 27.06,
 								},
-								["Holy Word: Chastise"] = {
-									["count"] = 6.66,
+								["Holy Fire"] = {
+									["count"] = 5.68,
 								},
 							},
 							["amount"] = 89.46,
@@ -917,14 +916,14 @@ RecountPerCharDB = {
 								["Smite"] = {
 									["count"] = 17.66,
 								},
-								["Divine Star"] = {
-									["count"] = 2.32,
+								["Holy Word: Chastise"] = {
+									["count"] = 0,
 								},
 								["Holy Fire (DoT)"] = {
 									["count"] = 7.59,
 								},
-								["Holy Word: Chastise"] = {
-									["count"] = 0,
+								["Divine Star"] = {
+									["count"] = 2.32,
 								},
 							},
 							["amount"] = 27.57,
@@ -937,25 +936,25 @@ RecountPerCharDB = {
 							},
 							["amount"] = 0.1,
 						},
-						["Durguth"] = {
+						["Tideskorn Beastbreaker"] = {
 							["Details"] = {
 								["Holy Fire"] = {
-									["count"] = 1.69,
+									["count"] = 0.7,
 								},
 								["Holy Word: Chastise"] = {
-									["count"] = 3.5,
+									["count"] = 0.89,
 								},
-								["Focus in the Light"] = {
-									["count"] = 0,
-								},
-								["Holy Fire (DoT)"] = {
-									["count"] = 10.06,
+								["Divine Star"] = {
+									["count"] = 0.15,
 								},
 								["Smite"] = {
-									["count"] = 0,
+									["count"] = 4.83,
+								},
+								["Holy Fire (DoT)"] = {
+									["count"] = 10.73,
 								},
 							},
-							["amount"] = 15.25,
+							["amount"] = 17.3,
 						},
 						["Bilgefin Scavenger"] = {
 							["Details"] = {
@@ -968,34 +967,34 @@ RecountPerCharDB = {
 								["Holy Nova"] = {
 									["count"] = 16.19,
 								},
-								["Holy Fire (DoT)"] = {
-									["count"] = 0.4,
-								},
 								["Divine Star"] = {
 									["count"] = 2.24,
+								},
+								["Holy Fire (DoT)"] = {
+									["count"] = 0.4,
 								},
 							},
 							["amount"] = 20.32,
 						},
-						["Tideskorn Beastbreaker"] = {
+						["Durguth"] = {
 							["Details"] = {
 								["Holy Fire"] = {
-									["count"] = 0.7,
+									["count"] = 1.69,
 								},
 								["Holy Word: Chastise"] = {
-									["count"] = 0.89,
+									["count"] = 3.5,
 								},
-								["Holy Fire (DoT)"] = {
-									["count"] = 10.73,
+								["Focus in the Light"] = {
+									["count"] = 0,
 								},
 								["Smite"] = {
-									["count"] = 4.83,
+									["count"] = 0,
 								},
-								["Divine Star"] = {
-									["count"] = 0.15,
+								["Holy Fire (DoT)"] = {
+									["count"] = 10.06,
 								},
 							},
-							["amount"] = 17.3,
+							["amount"] = 15.25,
 						},
 					},
 					["DamageTaken"] = 13812107,
@@ -1072,18 +1071,6 @@ RecountPerCharDB = {
 							["count"] = 0,
 							["amount"] = 1,
 						},
-						["Clumsy Slash"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 25,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 25,
-						},
 						["Triumphant Roar"] = {
 							["Details"] = {
 								["No Resist"] = {
@@ -1095,6 +1082,18 @@ RecountPerCharDB = {
 							},
 							["count"] = 0,
 							["amount"] = 1,
+						},
+						["Clumsy Slash"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 25,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 25,
 						},
 						["Flurry"] = {
 							["Details"] = {
@@ -1108,18 +1107,6 @@ RecountPerCharDB = {
 							["count"] = 0,
 							["amount"] = 90,
 						},
-						["Throw Spear"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 14,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 14,
-						},
 						["Overhead Slash"] = {
 							["Details"] = {
 								["No Resist"] = {
@@ -1131,6 +1118,18 @@ RecountPerCharDB = {
 							},
 							["count"] = 0,
 							["amount"] = 2,
+						},
+						["Throw Spear"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 14,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 14,
 						},
 						["Eruption"] = {
 							["Details"] = {
@@ -1145,42 +1144,72 @@ RecountPerCharDB = {
 							["amount"] = 6,
 						},
 					},
-					["ElementHitsTaken"] = {
-						["Physical"] = {
+					["OverHeals"] = {
+						["Renew"] = {
 							["Details"] = {
-								["Miss"] = {
-									["count"] = 1,
-								},
-								["Hit"] = {
-									["count"] = 151,
-								},
-							},
-							["amount"] = 152,
-						},
-						["Melee"] = {
-							["Details"] = {
-								["Hit"] = {
-									["count"] = 224,
-								},
-								["Miss"] = {
-									["count"] = 14,
-								},
 								["Crit"] = {
-									["count"] = 12,
+									["max"] = 42544,
+									["min"] = 42544,
+									["count"] = 2,
+									["amount"] = 85088,
 								},
-								["Dodge"] = {
-									["count"] = 10,
+								["Tick"] = {
+									["max"] = 21272,
+									["min"] = 1180,
+									["count"] = 16,
+									["amount"] = 253122,
 								},
 							},
-							["amount"] = 260,
+							["count"] = 18,
+							["amount"] = 338210,
 						},
-						["Nature"] = {
+						["Divine Star"] = {
 							["Details"] = {
+								["Crit"] = {
+									["max"] = 58013,
+									["min"] = 48343,
+									["count"] = 2,
+									["amount"] = 106356,
+								},
 								["Hit"] = {
-									["count"] = 6,
+									["max"] = 29007,
+									["min"] = 14001,
+									["count"] = 7,
+									["amount"] = 188039,
 								},
 							},
-							["amount"] = 6,
+							["count"] = 9,
+							["amount"] = 294395,
+						},
+						["Flash Heal"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 89681,
+									["min"] = 89681,
+									["count"] = 1,
+									["amount"] = 89681,
+								},
+								["Hit"] = {
+									["max"] = 176047,
+									["min"] = 176047,
+									["count"] = 1,
+									["amount"] = 176047,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 265728,
+						},
+						["Echo of Light"] = {
+							["Details"] = {
+								["Tick"] = {
+									["max"] = 73627,
+									["min"] = 6591,
+									["count"] = 24,
+									["amount"] = 504989,
+								},
+							},
+							["count"] = 24,
+							["amount"] = 504989,
 						},
 					},
 					["PartialAbsorb"] = {
@@ -1256,18 +1285,6 @@ RecountPerCharDB = {
 							["count"] = 1,
 							["amount"] = 0,
 						},
-						["Clumsy Slash"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 25,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 25,
-							["amount"] = 0,
-						},
 						["Triumphant Roar"] = {
 							["Details"] = {
 								["No Absorb"] = {
@@ -1278,6 +1295,18 @@ RecountPerCharDB = {
 								},
 							},
 							["count"] = 1,
+							["amount"] = 0,
+						},
+						["Clumsy Slash"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 25,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 25,
 							["amount"] = 0,
 						},
 						["Flurry"] = {
@@ -1292,18 +1321,6 @@ RecountPerCharDB = {
 							["count"] = 90,
 							["amount"] = 0,
 						},
-						["Throw Spear"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 14,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 14,
-							["amount"] = 0,
-						},
 						["Overhead Slash"] = {
 							["Details"] = {
 								["No Absorb"] = {
@@ -1314,6 +1331,18 @@ RecountPerCharDB = {
 								},
 							},
 							["count"] = 2,
+							["amount"] = 0,
+						},
+						["Throw Spear"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 14,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 14,
 							["amount"] = 0,
 						},
 						["Eruption"] = {
@@ -1330,31 +1359,7 @@ RecountPerCharDB = {
 						},
 					},
 					["ActiveTime"] = 354.54,
-					["HealedWho"] = {
-						["Holyshnizzle"] = {
-							["Details"] = {
-								["Renew"] = {
-									["count"] = 1403577,
-								},
-								["Divine Star"] = {
-									["count"] = 836852,
-								},
-								["Flash Heal"] = {
-									["count"] = 4487536,
-								},
-								["Holy Word: Serenity"] = {
-									["count"] = 1418036,
-								},
-								["Echo of Light"] = {
-									["count"] = 2426504,
-								},
-								["Holy Word: Sanctify"] = {
-									["count"] = 851109,
-								},
-							},
-							["amount"] = 11423614,
-						},
-					},
+					["Overhealing"] = 1403322,
 					["ElementTaken"] = {
 						["Physical"] = 3759188,
 						["Melee"] = 10049358,
@@ -1379,53 +1384,15 @@ RecountPerCharDB = {
 						},
 					},
 					["Damage"] = 24823059,
-					["WhoHealed"] = {
-						["Holyshnizzle"] = {
-							["Details"] = {
-								["Renew"] = {
-									["count"] = 1403577,
-								},
-								["Divine Star"] = {
-									["count"] = 836852,
-								},
-								["Flash Heal"] = {
-									["count"] = 4487536,
-								},
-								["Holy Word: Serenity"] = {
-									["count"] = 1418036,
-								},
-								["Echo of Light"] = {
-									["count"] = 2426504,
-								},
-								["Holy Word: Sanctify"] = {
-									["count"] = 851109,
-								},
-							},
-							["amount"] = 11423614,
-						},
-						["T'uure <Holyshnizzle>"] = {
-							["Details"] = {
-								["Dazzling Lights"] = {
-									["count"] = 46040,
-								},
-								["Healing Light"] = {
-									["count"] = 383668,
-								},
-								["Tranquil Light"] = {
-									["count"] = 110503,
-								},
-							},
-							["amount"] = 540211,
-						},
-					},
+					["DOT_Time"] = 372,
 					["Heals"] = {
 						["Renew"] = {
 							["Details"] = {
-								["Hit"] = {
+								["Tick"] = {
 									["max"] = 21272,
-									["min"] = 21271,
-									["count"] = 8,
-									["amount"] = 170174,
+									["min"] = 1953,
+									["count"] = 44,
+									["amount"] = 850510,
 								},
 								["Crit"] = {
 									["max"] = 42544,
@@ -1433,11 +1400,11 @@ RecountPerCharDB = {
 									["count"] = 9,
 									["amount"] = 382893,
 								},
-								["Tick"] = {
+								["Hit"] = {
 									["max"] = 21272,
-									["min"] = 1953,
-									["count"] = 44,
-									["amount"] = 850510,
+									["min"] = 21271,
+									["count"] = 8,
+									["amount"] = 170174,
 								},
 							},
 							["count"] = 61,
@@ -1491,18 +1458,6 @@ RecountPerCharDB = {
 							["count"] = 2,
 							["amount"] = 1418036,
 						},
-						["Echo of Light"] = {
-							["Details"] = {
-								["Tick"] = {
-									["max"] = 120838,
-									["min"] = 3625,
-									["count"] = 56,
-									["amount"] = 2426504,
-								},
-							},
-							["count"] = 56,
-							["amount"] = 2426504,
-						},
 						["Holy Word: Sanctify"] = {
 							["Details"] = {
 								["Crit"] = {
@@ -1521,269 +1476,185 @@ RecountPerCharDB = {
 							["count"] = 3,
 							["amount"] = 851109,
 						},
-					},
-					["WhoDamaged"] = {
-						["Goldsnuffle Lookout"] = {
+						["Echo of Light"] = {
 							["Details"] = {
-								["Melee"] = {
-									["count"] = 1089407,
-								},
-								["Flurry"] = {
-									["count"] = 423145,
+								["Tick"] = {
+									["max"] = 120838,
+									["min"] = 3625,
+									["count"] = 56,
+									["amount"] = 2426504,
 								},
 							},
-							["amount"] = 1512552,
-						},
-						["Tideskorn Raider"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 322716,
-								},
-								["Overhead Slash"] = {
-									["count"] = 56377,
-								},
-							},
-							["amount"] = 379093,
-						},
-						["Durguth"] = {
-							["Details"] = {
-								["Club Slam"] = {
-									["count"] = 353797,
-								},
-								["Melee"] = {
-									["count"] = 1537704,
-								},
-								["Triumphant Roar"] = {
-									["count"] = 722572,
-								},
-							},
-							["amount"] = 2614073,
-						},
-						["Bilgefin Invader"] = {
-							["Details"] = {
-								["Throw Spear"] = {
-									["count"] = 403753,
-								},
-								["Melee"] = {
-									["count"] = 3619284,
-								},
-								["Clumsy Slash"] = {
-									["count"] = 531253,
-								},
-							},
-							["amount"] = 4554290,
-						},
-						["Stout Highlands Runehorn"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 335348,
-								},
-								["Thrashing Horns"] = {
-									["count"] = 48967,
-								},
-							},
-							["amount"] = 384315,
-						},
-						["Tideskorn Beastbreaker"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 198452,
-								},
-								["Wild Punch"] = {
-									["count"] = 29265,
-								},
-							},
-							["amount"] = 227717,
-						},
-						["Goldsnuffle Scavenger"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 894152,
-								},
-								["Junk Toss"] = {
-									["count"] = 698270,
-								},
-							},
-							["amount"] = 1592422,
-						},
-						["Hannval the Butcher"] = {
-							["Details"] = {
-								["Carve Off"] = {
-									["count"] = 279927,
-								},
-								["Melee"] = {
-									["count"] = 176137,
-								},
-								["Eruption"] = {
-									["count"] = 3561,
-								},
-							},
-							["amount"] = 459625,
-						},
-						["Bilgefin Scavenger"] = {
-							["Details"] = {
-								["Throw Spear"] = {
-									["count"] = 72058,
-								},
-								["Melee"] = {
-									["count"] = 1006013,
-								},
-								["Clumsy Slash"] = {
-									["count"] = 139804,
-								},
-							},
-							["amount"] = 1217875,
-						},
-						["Goldsnuffle Taskmaster"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 870145,
-								},
-							},
-							["amount"] = 870145,
+							["count"] = 56,
+							["amount"] = 2426504,
 						},
 					},
-					["TimeHeal"] = 151,
-					["DamagedWho"] = {
-						["Tideskorn Raider"] = {
-							["Details"] = {
-								["Divine Star"] = {
-									["count"] = 222750,
-								},
-								["Holy Word: Chastise"] = {
-									["count"] = 172652,
-								},
-								["Smite"] = {
-									["count"] = 691501,
-								},
-								["Holy Fire"] = {
-									["count"] = 115250,
-								},
-								["Holy Fire (DoT)"] = {
-									["count"] = 88726,
-								},
-							},
-							["amount"] = 1290879,
-						},
-						["Bilgefin Invader"] = {
-							["Details"] = {
-								["Holy Nova"] = {
-									["count"] = 7308859,
-								},
-								["Divine Star"] = {
-									["count"] = 1279559,
-								},
-							},
-							["amount"] = 8588418,
-						},
-						["Stout Highlands Runehorn"] = {
-							["Details"] = {
-								["Holy Fire"] = {
-									["count"] = 115100,
-								},
-								["Smite"] = {
-									["count"] = 1640175,
-								},
-								["Divine Star"] = {
-									["count"] = 278165,
-								},
-								["Holy Fire (DoT)"] = {
-									["count"] = 149119,
-								},
-								["Holy Word: Chastise"] = {
-									["count"] = 690606,
-								},
-							},
-							["amount"] = 2873165,
-						},
+					["TimeDamaging"] = {
 						["Black-Footed Fox Kit"] = {
 							["Details"] = {
 								["Divine Star"] = {
-									["count"] = 55634,
+									["count"] = 0.1,
 								},
 							},
-							["amount"] = 55634,
+							["amount"] = 0.1,
 						},
-						["Durguth"] = {
+						["Bilgefin Invader"] = {
 							["Details"] = {
-								["Holy Word: Chastise"] = {
-									["count"] = 172652,
-								},
-								["Holy Fire"] = {
-									["count"] = 172650,
-								},
-								["Holy Fire (DoT)"] = {
-									["count"] = 234934,
-								},
-								["Smite"] = {
-									["count"] = 86325,
-								},
-							},
-							["amount"] = 666561,
-						},
-						["Hannval the Butcher"] = {
-							["Details"] = {
-								["Divine Star"] = {
-									["count"] = 556330,
-								},
-								["Holy Fire (DoT)"] = {
-									["count"] = 1275948,
-								},
-								["Holy Fire"] = {
-									["count"] = 561113,
-								},
-								["Smite"] = {
-									["count"] = 3970960,
-								},
-								["Holy Word: Chastise"] = {
-									["count"] = 1251723,
-								},
-							},
-							["amount"] = 7616074,
-						},
-						["Bilgefin Scavenger"] = {
-							["Details"] = {
-								["Holy Fire"] = {
-									["count"] = 46040,
-								},
-								["Holy Word: Chastise"] = {
-									["count"] = 690606,
-								},
 								["Holy Nova"] = {
-									["count"] = 863251,
-								},
-								["Holy Fire (DoT)"] = {
-									["count"] = 12661,
+									["count"] = 18.04,
 								},
 								["Divine Star"] = {
-									["count"] = 322672,
+									["count"] = 1.15,
 								},
 							},
-							["amount"] = 1935230,
+							["amount"] = 19.19,
+						},
+						["Stout Highlands Runehorn"] = {
+							["Details"] = {
+								["Holy Fire"] = {
+									["count"] = 0,
+								},
+								["Smite"] = {
+									["count"] = 17.66,
+								},
+								["Holy Word: Chastise"] = {
+									["count"] = 0,
+								},
+								["Holy Fire (DoT)"] = {
+									["count"] = 7.59,
+								},
+								["Divine Star"] = {
+									["count"] = 2.32,
+								},
+							},
+							["amount"] = 27.57,
 						},
 						["Tideskorn Beastbreaker"] = {
 							["Details"] = {
 								["Holy Fire"] = {
-									["count"] = 287750,
+									["count"] = 0.7,
 								},
 								["Holy Word: Chastise"] = {
-									["count"] = 172652,
-								},
-								["Holy Fire (DoT)"] = {
-									["count"] = 417813,
-								},
-								["Smite"] = {
-									["count"] = 863250,
+									["count"] = 0.89,
 								},
 								["Divine Star"] = {
-									["count"] = 55633,
+									["count"] = 0.15,
+								},
+								["Smite"] = {
+									["count"] = 4.83,
+								},
+								["Holy Fire (DoT)"] = {
+									["count"] = 10.73,
 								},
 							},
-							["amount"] = 1797098,
+							["amount"] = 17.3,
+						},
+						["Hannval the Butcher"] = {
+							["Details"] = {
+								["Divine Star"] = {
+									["count"] = 1.95,
+								},
+								["Holy Fire (DoT)"] = {
+									["count"] = 48.11,
+								},
+								["Holy Word: Chastise"] = {
+									["count"] = 6.66,
+								},
+								["Smite"] = {
+									["count"] = 27.06,
+								},
+								["Holy Fire"] = {
+									["count"] = 5.68,
+								},
+							},
+							["amount"] = 89.46,
+						},
+						["Durguth"] = {
+							["Details"] = {
+								["Holy Fire"] = {
+									["count"] = 1.69,
+								},
+								["Holy Word: Chastise"] = {
+									["count"] = 3.5,
+								},
+								["Focus in the Light"] = {
+									["count"] = 0,
+								},
+								["Smite"] = {
+									["count"] = 0,
+								},
+								["Holy Fire (DoT)"] = {
+									["count"] = 10.06,
+								},
+							},
+							["amount"] = 15.25,
+						},
+						["Bilgefin Scavenger"] = {
+							["Details"] = {
+								["Holy Fire"] = {
+									["count"] = 1.06,
+								},
+								["Holy Word: Chastise"] = {
+									["count"] = 0.43,
+								},
+								["Holy Nova"] = {
+									["count"] = 16.19,
+								},
+								["Divine Star"] = {
+									["count"] = 2.24,
+								},
+								["Holy Fire (DoT)"] = {
+									["count"] = 0.4,
+								},
+							},
+							["amount"] = 20.32,
+						},
+						["Tideskorn Raider"] = {
+							["Details"] = {
+								["Divine Star"] = {
+									["count"] = 1.78,
+								},
+								["Holy Word: Chastise"] = {
+									["count"] = 3.5,
+								},
+								["Holy Fire (DoT)"] = {
+									["count"] = 4.2,
+								},
+								["Holy Fire"] = {
+									["count"] = 0,
+								},
+								["Smite"] = {
+									["count"] = 4.87,
+								},
+							},
+							["amount"] = 14.35,
+						},
+					},
+					["TimeHeal"] = 151,
+					["ElementHitsDone"] = {
+						["Holy"] = {
+							["Details"] = {
+								["Tick"] = {
+									["count"] = 96,
+								},
+								["Immune"] = {
+									["count"] = 3,
+								},
+								["Crit"] = {
+									["count"] = 92,
+								},
+								["Hit"] = {
+									["count"] = 211,
+								},
+							},
+							["amount"] = 402,
 						},
 					},
 					["Healing"] = 11423614,
 					["HOT_Time"] = 426,
+					["ElementDone"] = {
+						["Holy"] = 24823059,
+					},
 					["Attacks"] = {
 						["Holy Fire"] = {
 							["Details"] = {
@@ -1803,27 +1674,23 @@ RecountPerCharDB = {
 							["count"] = 19,
 							["amount"] = 1297903,
 						},
-						["Holy Word: Chastise"] = {
+						["Divine Star"] = {
 							["Details"] = {
-								["Immune"] = {
-									["count"] = 1,
-									["amount"] = 0,
-								},
 								["Crit"] = {
-									["max"] = 345303,
-									["min"] = 345303,
-									["count"] = 6,
-									["amount"] = 2071818,
+									["max"] = 166899,
+									["min"] = 44507,
+									["count"] = 9,
+									["amount"] = 923509,
 								},
 								["Hit"] = {
-									["max"] = 258978,
-									["min"] = 43162,
-									["count"] = 6,
-									["amount"] = 1079073,
+									["max"] = 55706,
+									["min"] = 22253,
+									["count"] = 35,
+									["amount"] = 1847234,
 								},
 							},
-							["count"] = 13,
-							["amount"] = 3150891,
+							["count"] = 44,
+							["amount"] = 2770743,
 						},
 						["Holy Fire (DoT)"] = {
 							["Details"] = {
@@ -1889,275 +1756,1680 @@ RecountPerCharDB = {
 							["count"] = 74,
 							["amount"] = 7252211,
 						},
-						["Divine Star"] = {
+						["Holy Word: Chastise"] = {
 							["Details"] = {
+								["Immune"] = {
+									["count"] = 1,
+									["amount"] = 0,
+								},
 								["Crit"] = {
-									["max"] = 166899,
-									["min"] = 44507,
-									["count"] = 9,
-									["amount"] = 923509,
+									["max"] = 345303,
+									["min"] = 345303,
+									["count"] = 6,
+									["amount"] = 2071818,
 								},
 								["Hit"] = {
-									["max"] = 55706,
-									["min"] = 22253,
-									["count"] = 35,
-									["amount"] = 1847234,
+									["max"] = 258978,
+									["min"] = 43162,
+									["count"] = 6,
+									["amount"] = 1079073,
 								},
 							},
-							["count"] = 44,
-							["amount"] = 2770743,
+							["count"] = 13,
+							["amount"] = 3150891,
 						},
-					},
-					["ElementDone"] = {
-						["Holy"] = 24823059,
 					},
 					["HealingTaken"] = 11963825,
-					["ElementHitsDone"] = {
-						["Holy"] = {
-							["Details"] = {
-								["Hit"] = {
-									["count"] = 211,
-								},
-								["Immune"] = {
-									["count"] = 3,
-								},
-								["Crit"] = {
-									["count"] = 92,
-								},
-								["Tick"] = {
-									["count"] = 96,
-								},
-							},
-							["amount"] = 402,
-						},
-					},
-					["TimeDamage"] = 203.54,
-					["TimeDamaging"] = {
-						["Tideskorn Raider"] = {
+					["DamagedWho"] = {
+						["Black-Footed Fox Kit"] = {
 							["Details"] = {
 								["Divine Star"] = {
-									["count"] = 1.78,
-								},
-								["Holy Word: Chastise"] = {
-									["count"] = 3.5,
-								},
-								["Smite"] = {
-									["count"] = 4.87,
-								},
-								["Holy Fire"] = {
-									["count"] = 0,
-								},
-								["Holy Fire (DoT)"] = {
-									["count"] = 4.2,
+									["count"] = 55634,
 								},
 							},
-							["amount"] = 14.35,
+							["amount"] = 55634,
 						},
 						["Bilgefin Invader"] = {
 							["Details"] = {
 								["Holy Nova"] = {
-									["count"] = 18.04,
+									["count"] = 7308859,
 								},
 								["Divine Star"] = {
-									["count"] = 1.15,
+									["count"] = 1279559,
 								},
 							},
-							["amount"] = 19.19,
+							["amount"] = 8588418,
 						},
 						["Stout Highlands Runehorn"] = {
 							["Details"] = {
 								["Holy Fire"] = {
-									["count"] = 0,
+									["count"] = 115100,
 								},
 								["Smite"] = {
-									["count"] = 17.66,
-								},
-								["Divine Star"] = {
-									["count"] = 2.32,
-								},
-								["Holy Fire (DoT)"] = {
-									["count"] = 7.59,
+									["count"] = 1640175,
 								},
 								["Holy Word: Chastise"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 27.57,
-						},
-						["Black-Footed Fox Kit"] = {
-							["Details"] = {
-								["Divine Star"] = {
-									["count"] = 0.1,
-								},
-							},
-							["amount"] = 0.1,
-						},
-						["Durguth"] = {
-							["Details"] = {
-								["Holy Fire"] = {
-									["count"] = 1.69,
-								},
-								["Holy Word: Chastise"] = {
-									["count"] = 3.5,
-								},
-								["Focus in the Light"] = {
-									["count"] = 0,
+									["count"] = 690606,
 								},
 								["Holy Fire (DoT)"] = {
-									["count"] = 10.06,
-								},
-								["Smite"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 15.25,
-						},
-						["Hannval the Butcher"] = {
-							["Details"] = {
-								["Divine Star"] = {
-									["count"] = 1.95,
-								},
-								["Holy Fire (DoT)"] = {
-									["count"] = 48.11,
-								},
-								["Holy Fire"] = {
-									["count"] = 5.68,
-								},
-								["Smite"] = {
-									["count"] = 27.06,
-								},
-								["Holy Word: Chastise"] = {
-									["count"] = 6.66,
-								},
-							},
-							["amount"] = 89.46,
-						},
-						["Bilgefin Scavenger"] = {
-							["Details"] = {
-								["Holy Fire"] = {
-									["count"] = 1.06,
-								},
-								["Holy Word: Chastise"] = {
-									["count"] = 0.43,
-								},
-								["Holy Nova"] = {
-									["count"] = 16.19,
-								},
-								["Holy Fire (DoT)"] = {
-									["count"] = 0.4,
+									["count"] = 149119,
 								},
 								["Divine Star"] = {
-									["count"] = 2.24,
+									["count"] = 278165,
 								},
 							},
-							["amount"] = 20.32,
+							["amount"] = 2873165,
 						},
 						["Tideskorn Beastbreaker"] = {
 							["Details"] = {
 								["Holy Fire"] = {
-									["count"] = 0.7,
+									["count"] = 287750,
 								},
 								["Holy Word: Chastise"] = {
-									["count"] = 0.89,
-								},
-								["Holy Fire (DoT)"] = {
-									["count"] = 10.73,
-								},
-								["Smite"] = {
-									["count"] = 4.83,
+									["count"] = 172652,
 								},
 								["Divine Star"] = {
-									["count"] = 0.15,
+									["count"] = 55633,
+								},
+								["Smite"] = {
+									["count"] = 863250,
+								},
+								["Holy Fire (DoT)"] = {
+									["count"] = 417813,
 								},
 							},
-							["amount"] = 17.3,
+							["amount"] = 1797098,
+						},
+						["Hannval the Butcher"] = {
+							["Details"] = {
+								["Divine Star"] = {
+									["count"] = 556330,
+								},
+								["Holy Fire (DoT)"] = {
+									["count"] = 1275948,
+								},
+								["Holy Word: Chastise"] = {
+									["count"] = 1251723,
+								},
+								["Smite"] = {
+									["count"] = 3970960,
+								},
+								["Holy Fire"] = {
+									["count"] = 561113,
+								},
+							},
+							["amount"] = 7616074,
+						},
+						["Durguth"] = {
+							["Details"] = {
+								["Smite"] = {
+									["count"] = 86325,
+								},
+								["Holy Fire"] = {
+									["count"] = 172650,
+								},
+								["Holy Fire (DoT)"] = {
+									["count"] = 234934,
+								},
+								["Holy Word: Chastise"] = {
+									["count"] = 172652,
+								},
+							},
+							["amount"] = 666561,
+						},
+						["Bilgefin Scavenger"] = {
+							["Details"] = {
+								["Holy Fire"] = {
+									["count"] = 46040,
+								},
+								["Holy Word: Chastise"] = {
+									["count"] = 690606,
+								},
+								["Holy Nova"] = {
+									["count"] = 863251,
+								},
+								["Divine Star"] = {
+									["count"] = 322672,
+								},
+								["Holy Fire (DoT)"] = {
+									["count"] = 12661,
+								},
+							},
+							["amount"] = 1935230,
+						},
+						["Tideskorn Raider"] = {
+							["Details"] = {
+								["Divine Star"] = {
+									["count"] = 222750,
+								},
+								["Holy Word: Chastise"] = {
+									["count"] = 172652,
+								},
+								["Holy Fire (DoT)"] = {
+									["count"] = 88726,
+								},
+								["Holy Fire"] = {
+									["count"] = 115250,
+								},
+								["Smite"] = {
+									["count"] = 691501,
+								},
+							},
+							["amount"] = 1290879,
 						},
 					},
-					["DOT_Time"] = 372,
-					["Overhealing"] = 1403322,
-					["OverHeals"] = {
-						["Renew"] = {
+					["TimeDamage"] = 203.54,
+					["WhoDamaged"] = {
+						["Goldsnuffle Lookout"] = {
 							["Details"] = {
-								["Crit"] = {
-									["max"] = 42544,
-									["min"] = 42544,
-									["count"] = 2,
-									["amount"] = 85088,
+								["Melee"] = {
+									["count"] = 1089407,
 								},
-								["Tick"] = {
-									["max"] = 21272,
-									["min"] = 1180,
-									["count"] = 16,
-									["amount"] = 253122,
+								["Flurry"] = {
+									["count"] = 423145,
 								},
 							},
-							["count"] = 18,
-							["amount"] = 338210,
+							["amount"] = 1512552,
 						},
-						["Divine Star"] = {
+						["Tideskorn Raider"] = {
 							["Details"] = {
+								["Melee"] = {
+									["count"] = 322716,
+								},
+								["Overhead Slash"] = {
+									["count"] = 56377,
+								},
+							},
+							["amount"] = 379093,
+						},
+						["Durguth"] = {
+							["Details"] = {
+								["Triumphant Roar"] = {
+									["count"] = 722572,
+								},
+								["Melee"] = {
+									["count"] = 1537704,
+								},
+								["Club Slam"] = {
+									["count"] = 353797,
+								},
+							},
+							["amount"] = 2614073,
+						},
+						["Bilgefin Invader"] = {
+							["Details"] = {
+								["Throw Spear"] = {
+									["count"] = 403753,
+								},
+								["Melee"] = {
+									["count"] = 3619284,
+								},
+								["Clumsy Slash"] = {
+									["count"] = 531253,
+								},
+							},
+							["amount"] = 4554290,
+						},
+						["Stout Highlands Runehorn"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 335348,
+								},
+								["Thrashing Horns"] = {
+									["count"] = 48967,
+								},
+							},
+							["amount"] = 384315,
+						},
+						["Tideskorn Beastbreaker"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 198452,
+								},
+								["Wild Punch"] = {
+									["count"] = 29265,
+								},
+							},
+							["amount"] = 227717,
+						},
+						["Goldsnuffle Scavenger"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 894152,
+								},
+								["Junk Toss"] = {
+									["count"] = 698270,
+								},
+							},
+							["amount"] = 1592422,
+						},
+						["Goldsnuffle Taskmaster"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 870145,
+								},
+							},
+							["amount"] = 870145,
+						},
+						["Bilgefin Scavenger"] = {
+							["Details"] = {
+								["Throw Spear"] = {
+									["count"] = 72058,
+								},
+								["Melee"] = {
+									["count"] = 1006013,
+								},
+								["Clumsy Slash"] = {
+									["count"] = 139804,
+								},
+							},
+							["amount"] = 1217875,
+						},
+						["Hannval the Butcher"] = {
+							["Details"] = {
+								["Carve Off"] = {
+									["count"] = 279927,
+								},
+								["Melee"] = {
+									["count"] = 176137,
+								},
+								["Eruption"] = {
+									["count"] = 3561,
+								},
+							},
+							["amount"] = 459625,
+						},
+					},
+					["WhoHealed"] = {
+						["T'uure <Holyshnizzle>"] = {
+							["Details"] = {
+								["Dazzling Lights"] = {
+									["count"] = 46040,
+								},
+								["Healing Light"] = {
+									["count"] = 383668,
+								},
+								["Tranquil Light"] = {
+									["count"] = 110503,
+								},
+							},
+							["amount"] = 540211,
+						},
+						["Holyshnizzle"] = {
+							["Details"] = {
+								["Renew"] = {
+									["count"] = 1403577,
+								},
+								["Divine Star"] = {
+									["count"] = 836852,
+								},
+								["Flash Heal"] = {
+									["count"] = 4487536,
+								},
+								["Holy Word: Serenity"] = {
+									["count"] = 1418036,
+								},
+								["Holy Word: Sanctify"] = {
+									["count"] = 851109,
+								},
+								["Echo of Light"] = {
+									["count"] = 2426504,
+								},
+							},
+							["amount"] = 11423614,
+						},
+					},
+					["HealedWho"] = {
+						["Holyshnizzle"] = {
+							["Details"] = {
+								["Renew"] = {
+									["count"] = 1403577,
+								},
+								["Divine Star"] = {
+									["count"] = 836852,
+								},
+								["Flash Heal"] = {
+									["count"] = 4487536,
+								},
+								["Holy Word: Serenity"] = {
+									["count"] = 1418036,
+								},
+								["Holy Word: Sanctify"] = {
+									["count"] = 851109,
+								},
+								["Echo of Light"] = {
+									["count"] = 2426504,
+								},
+							},
+							["amount"] = 11423614,
+						},
+					},
+					["ElementHitsTaken"] = {
+						["Physical"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 151,
+								},
+								["Miss"] = {
+									["count"] = 1,
+								},
+							},
+							["amount"] = 152,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Dodge"] = {
+									["count"] = 10,
+								},
+								["Miss"] = {
+									["count"] = 14,
+								},
 								["Crit"] = {
-									["max"] = 58013,
-									["min"] = 48343,
-									["count"] = 2,
-									["amount"] = 106356,
+									["count"] = 12,
 								},
 								["Hit"] = {
-									["max"] = 29007,
-									["min"] = 14001,
-									["count"] = 7,
-									["amount"] = 188039,
+									["count"] = 224,
 								},
 							},
-							["count"] = 9,
-							["amount"] = 294395,
+							["amount"] = 260,
 						},
-						["Echo of Light"] = {
+						["Nature"] = {
 							["Details"] = {
-								["Tick"] = {
-									["max"] = 73627,
-									["min"] = 6591,
-									["count"] = 24,
-									["amount"] = 504989,
-								},
-							},
-							["count"] = 24,
-							["amount"] = 504989,
-						},
-						["Flash Heal"] = {
-							["Details"] = {
-								["Crit"] = {
-									["max"] = 89681,
-									["min"] = 89681,
-									["count"] = 1,
-									["amount"] = 89681,
-								},
 								["Hit"] = {
-									["max"] = 176047,
-									["min"] = 176047,
-									["count"] = 1,
-									["amount"] = 176047,
+									["count"] = 6,
 								},
 							},
-							["count"] = 2,
-							["amount"] = 265728,
+							["amount"] = 6,
 						},
 					},
 				},
 			},
-			["LastAbility"] = 488188.2,
+			["UnitLockout"] = 485163.576,
+			["LastActive"] = 487605.059,
+		},
+		["Mountain Prowler <Holyshnizzle>"] = {
+			["GUID"] = "Vehicle-0-3778-1220-5784-96628-00007B3E68",
+			["type"] = "Pet",
+			["TimeLast"] = {
+				["ActiveTime"] = 486074.586,
+				["TimeDamage"] = 486074.586,
+				["OVERALL"] = 486074.586,
+				["DamageTaken"] = 486074.586,
+				["Damage"] = 486074.586,
+			},
+			["LastAttackedBy"] = "Pinerock Hunter",
+			["TimeWindows"] = {
+				["Damage"] = {
+					83859621, -- [1]
+				},
+				["TimeDamage"] = {
+					60.24, -- [1]
+				},
+				["DamageTaken"] = {
+					903079, -- [1]
+				},
+				["ActiveTime"] = {
+					60.24, -- [1]
+				},
+			},
+			["enClass"] = "PET",
+			["LastDamageTaken"] = 129467,
+			["LastAbility"] = 569912.069,
+			["LastDamageAbility"] = "Melee",
+			["Name"] = "Mountain Prowler",
+			["LastActive"] = 486074.586,
+			["Fights"] = {
+				["LastFightData"] = {
+					["DOTs"] = {
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 0,
+					["RageGainedFrom"] = {
+					},
+					["ElementHitsTaken"] = {
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["HOTs"] = {
+					},
+					["ManaGain"] = 0,
+					["ElementTaken"] = {
+					},
+					["DOT_Time"] = 0,
+					["Damage"] = 0,
+					["ElementDoneAbsorb"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["PartialBlock"] = {
+					},
+					["FDamagedWho"] = {
+					},
+					["FAttacks"] = {
+					},
+					["RageGain"] = 0,
+					["ElementDone"] = {
+					},
+					["ManaGainedFrom"] = {
+					},
+					["ElementHitsDone"] = {
+					},
+					["RageGained"] = {
+					},
+					["WhoDamaged"] = {
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["Dispelled"] = 0,
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDoneBlock"] = {
+					},
+					["TimeHealing"] = {
+					},
+					["OverHeals"] = {
+					},
+					["WhoHealed"] = {
+					},
+					["EnergyGain"] = 0,
+					["CCBreak"] = 0,
+					["PartialAbsorb"] = {
+					},
+					["ActiveTime"] = 0,
+					["PartialResist"] = {
+					},
+					["ManaGained"] = {
+					},
+					["ElementTakenAbsorb"] = {
+					},
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["ElementTakenResist"] = {
+					},
+					["InterruptData"] = {
+					},
+					["WhoDispelled"] = {
+					},
+					["TimeSpent"] = {
+					},
+					["Heals"] = {
+					},
+					["FDamage"] = 0,
+					["EnergyGained"] = {
+					},
+					["HealedWho"] = {
+					},
+					["Healing"] = 0,
+					["CCBroken"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["Attacks"] = {
+					},
+					["HealingTaken"] = 0,
+					["DamagedWho"] = {
+					},
+					["TimeDamage"] = 0,
+					["TimeDamaging"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["ElementTakenBlock"] = {
+					},
+					["DispelledWho"] = {
+					},
+				},
+				["CurrentFightData"] = {
+					["DOTs"] = {
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 0,
+					["RageGainedFrom"] = {
+					},
+					["ElementHitsTaken"] = {
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["HOTs"] = {
+					},
+					["ManaGain"] = 0,
+					["ElementTaken"] = {
+					},
+					["DOT_Time"] = 0,
+					["Damage"] = 0,
+					["ElementDoneAbsorb"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["PartialBlock"] = {
+					},
+					["FDamagedWho"] = {
+					},
+					["FAttacks"] = {
+					},
+					["RageGain"] = 0,
+					["ElementDone"] = {
+					},
+					["ManaGainedFrom"] = {
+					},
+					["ElementHitsDone"] = {
+					},
+					["RageGained"] = {
+					},
+					["WhoDamaged"] = {
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["Dispelled"] = 0,
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDoneBlock"] = {
+					},
+					["TimeHealing"] = {
+					},
+					["OverHeals"] = {
+					},
+					["WhoHealed"] = {
+					},
+					["EnergyGain"] = 0,
+					["CCBreak"] = 0,
+					["PartialAbsorb"] = {
+					},
+					["ActiveTime"] = 0,
+					["PartialResist"] = {
+					},
+					["ManaGained"] = {
+					},
+					["ElementTakenAbsorb"] = {
+					},
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["ElementTakenResist"] = {
+					},
+					["InterruptData"] = {
+					},
+					["WhoDispelled"] = {
+					},
+					["TimeSpent"] = {
+					},
+					["Heals"] = {
+					},
+					["FDamage"] = 0,
+					["EnergyGained"] = {
+					},
+					["HealedWho"] = {
+					},
+					["Healing"] = 0,
+					["CCBroken"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["Attacks"] = {
+					},
+					["HealingTaken"] = 0,
+					["DamagedWho"] = {
+					},
+					["TimeDamage"] = 0,
+					["TimeDamaging"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["ElementTakenBlock"] = {
+					},
+					["DispelledWho"] = {
+					},
+				},
+				["OverallData"] = {
+					["PartialBlock"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Blocked"] = {
+									["max"] = 21387,
+									["min"] = 21387,
+									["count"] = 1,
+									["amount"] = 21387,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 21387,
+						},
+					},
+					["TimeSpent"] = {
+						["Pinerock Hunter"] = {
+							["Details"] = {
+								["Bite"] = {
+									["count"] = 35.74,
+								},
+								["Pounce"] = {
+									["count"] = 21,
+								},
+								["Predatory Roar"] = {
+									["count"] = 3.5,
+								},
+							},
+							["amount"] = 60.24,
+						},
+					},
+					["DamageTaken"] = 903079,
+					["PartialResist"] = {
+						["Melee"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 14,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 14,
+						},
+					},
+					["PartialAbsorb"] = {
+						["Melee"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 14,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 14,
+							["amount"] = 0,
+						},
+					},
+					["ActiveTime"] = 60.24,
+					["ElementTaken"] = {
+						["Melee"] = 903079,
+					},
+					["ElementTakenBlock"] = {
+						["Melee"] = 21387,
+					},
+					["ElementDone"] = {
+						["Physical"] = 83859621,
+					},
+					["Attacks"] = {
+						["Bite"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 3220176,
+									["min"] = 2819122,
+									["count"] = 23,
+									["amount"] = 69682769,
+								},
+							},
+							["count"] = 23,
+							["amount"] = 69682769,
+						},
+						["Pounce"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 2097284,
+									["min"] = 1991439,
+									["count"] = 6,
+									["amount"] = 12309344,
+								},
+							},
+							["count"] = 6,
+							["amount"] = 12309344,
+						},
+						["Predatory Roar"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 1867508,
+									["min"] = 1867508,
+									["count"] = 1,
+									["amount"] = 1867508,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 1867508,
+						},
+					},
+					["DamagedWho"] = {
+						["Pinerock Hunter"] = {
+							["Details"] = {
+								["Bite"] = {
+									["count"] = 69682769,
+								},
+								["Pounce"] = {
+									["count"] = 12309344,
+								},
+								["Predatory Roar"] = {
+									["count"] = 1867508,
+								},
+							},
+							["amount"] = 83859621,
+						},
+					},
+					["ElementHitsDone"] = {
+						["Physical"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 30,
+								},
+							},
+							["amount"] = 30,
+						},
+					},
+					["TimeDamage"] = 60.24,
+					["TimeDamaging"] = {
+						["Pinerock Hunter"] = {
+							["Details"] = {
+								["Bite"] = {
+									["count"] = 35.74,
+								},
+								["Pounce"] = {
+									["count"] = 21,
+								},
+								["Predatory Roar"] = {
+									["count"] = 3.5,
+								},
+							},
+							["amount"] = 60.24,
+						},
+					},
+					["Damage"] = 83859621,
+					["WhoDamaged"] = {
+						["Pinerock Hunter"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 903079,
+								},
+							},
+							["amount"] = 903079,
+						},
+					},
+					["ElementHitsTaken"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Miss"] = {
+									["count"] = 1,
+								},
+								["Block"] = {
+									["count"] = 1,
+								},
+								["Crit"] = {
+									["count"] = 1,
+								},
+								["Hit"] = {
+									["count"] = 12,
+								},
+							},
+							["amount"] = 15,
+						},
+					},
+				},
+			},
+			["level"] = 1,
+			["UnitLockout"] = 485924.581,
+			["LastFightIn"] = 22,
+		},
+		["Bolas Launcher <Holyshnizzle>"] = {
+			["GUID"] = "Vehicle-0-3778-1220-5784-110814-00007B1DD4",
+			["type"] = "Pet",
+			["TimeLast"] = {
+				["Damage"] = 486892.418,
+				["OVERALL"] = 486892.418,
+				["TimeDamage"] = 486892.418,
+				["ActiveTime"] = 486892.418,
+			},
+			["TimeWindows"] = {
+				["Damage"] = {
+					8116676, -- [1]
+				},
+				["TimeDamage"] = {
+					33.22, -- [1]
+				},
+				["ActiveTime"] = {
+					33.22, -- [1]
+				},
+			},
+			["enClass"] = "PET",
+			["LastAbility"] = 569912.069,
+			["Name"] = "Bolas Launcher",
+			["Fights"] = {
+				["LastFightData"] = {
+					["DOTs"] = {
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 0,
+					["RageGainedFrom"] = {
+					},
+					["ElementHitsTaken"] = {
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["HOTs"] = {
+					},
+					["ManaGain"] = 0,
+					["ElementTaken"] = {
+					},
+					["DOT_Time"] = 0,
+					["Damage"] = 0,
+					["ElementDoneAbsorb"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["PartialBlock"] = {
+					},
+					["FDamagedWho"] = {
+					},
+					["FAttacks"] = {
+					},
+					["RageGain"] = 0,
+					["ElementDone"] = {
+					},
+					["ManaGainedFrom"] = {
+					},
+					["ElementHitsDone"] = {
+					},
+					["RageGained"] = {
+					},
+					["WhoDamaged"] = {
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["Dispelled"] = 0,
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDoneBlock"] = {
+					},
+					["TimeHealing"] = {
+					},
+					["OverHeals"] = {
+					},
+					["WhoHealed"] = {
+					},
+					["EnergyGain"] = 0,
+					["CCBreak"] = 0,
+					["PartialAbsorb"] = {
+					},
+					["ActiveTime"] = 0,
+					["PartialResist"] = {
+					},
+					["ManaGained"] = {
+					},
+					["ElementTakenAbsorb"] = {
+					},
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["ElementTakenResist"] = {
+					},
+					["InterruptData"] = {
+					},
+					["WhoDispelled"] = {
+					},
+					["TimeSpent"] = {
+					},
+					["Heals"] = {
+					},
+					["FDamage"] = 0,
+					["EnergyGained"] = {
+					},
+					["HealedWho"] = {
+					},
+					["Healing"] = 0,
+					["CCBroken"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["Attacks"] = {
+					},
+					["HealingTaken"] = 0,
+					["DamagedWho"] = {
+					},
+					["TimeDamage"] = 0,
+					["TimeDamaging"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["ElementTakenBlock"] = {
+					},
+					["DispelledWho"] = {
+					},
+				},
+				["CurrentFightData"] = {
+					["DOTs"] = {
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 0,
+					["RageGainedFrom"] = {
+					},
+					["ElementHitsTaken"] = {
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["HOTs"] = {
+					},
+					["ManaGain"] = 0,
+					["ElementTaken"] = {
+					},
+					["DOT_Time"] = 0,
+					["Damage"] = 0,
+					["ElementDoneAbsorb"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["PartialBlock"] = {
+					},
+					["FDamagedWho"] = {
+					},
+					["FAttacks"] = {
+					},
+					["RageGain"] = 0,
+					["ElementDone"] = {
+					},
+					["ManaGainedFrom"] = {
+					},
+					["ElementHitsDone"] = {
+					},
+					["RageGained"] = {
+					},
+					["WhoDamaged"] = {
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["Dispelled"] = 0,
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDoneBlock"] = {
+					},
+					["TimeHealing"] = {
+					},
+					["OverHeals"] = {
+					},
+					["WhoHealed"] = {
+					},
+					["EnergyGain"] = 0,
+					["CCBreak"] = 0,
+					["PartialAbsorb"] = {
+					},
+					["ActiveTime"] = 0,
+					["PartialResist"] = {
+					},
+					["ManaGained"] = {
+					},
+					["ElementTakenAbsorb"] = {
+					},
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["ElementTakenResist"] = {
+					},
+					["InterruptData"] = {
+					},
+					["WhoDispelled"] = {
+					},
+					["TimeSpent"] = {
+					},
+					["Heals"] = {
+					},
+					["FDamage"] = 0,
+					["EnergyGained"] = {
+					},
+					["HealedWho"] = {
+					},
+					["Healing"] = 0,
+					["CCBroken"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["Attacks"] = {
+					},
+					["HealingTaken"] = 0,
+					["DamagedWho"] = {
+					},
+					["TimeDamage"] = 0,
+					["TimeDamaging"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["ElementTakenBlock"] = {
+					},
+					["DispelledWho"] = {
+					},
+				},
+				["OverallData"] = {
+					["TimeSpent"] = {
+						["Stormwing Drake"] = {
+							["Details"] = {
+								["Launch Bolas"] = {
+									["count"] = 29.72,
+								},
+								["Flaming Bolas"] = {
+									["count"] = 3.5,
+								},
+							},
+							["amount"] = 33.22,
+						},
+					},
+					["ElementDone"] = {
+						["Fire"] = 1933036,
+						["Nature"] = 6183640,
+					},
+					["ElementHitsDone"] = {
+						["Fire"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 1,
+								},
+							},
+							["amount"] = 1,
+						},
+						["Nature"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 10,
+								},
+							},
+							["amount"] = 10,
+						},
+					},
+					["DamagedWho"] = {
+						["Stormwing Drake"] = {
+							["Details"] = {
+								["Launch Bolas"] = {
+									["count"] = 6183640,
+								},
+								["Flaming Bolas"] = {
+									["count"] = 1933036,
+								},
+							},
+							["amount"] = 8116676,
+						},
+					},
+					["TimeDamage"] = 33.22,
+					["TimeDamaging"] = {
+						["Stormwing Drake"] = {
+							["Details"] = {
+								["Launch Bolas"] = {
+									["count"] = 29.72,
+								},
+								["Flaming Bolas"] = {
+									["count"] = 3.5,
+								},
+							},
+							["amount"] = 33.22,
+						},
+					},
+					["Attacks"] = {
+						["Launch Bolas"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 654738,
+									["min"] = 592382,
+									["count"] = 10,
+									["amount"] = 6183640,
+								},
+							},
+							["count"] = 10,
+							["amount"] = 6183640,
+						},
+						["Flaming Bolas"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 1933036,
+									["min"] = 1933036,
+									["count"] = 1,
+									["amount"] = 1933036,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 1933036,
+						},
+					},
+					["ActiveTime"] = 33.22,
+					["Damage"] = 8116676,
+				},
+			},
+			["LastActive"] = 486892.418,
+			["level"] = 1,
+			["UnitLockout"] = 486796.418,
+			["LastFightIn"] = 25,
+		},
+		["Rageshard <Holyshnizzle>"] = {
+			["GUID"] = "Vehicle-0-3778-1220-5784-102665-00007B3DFB",
+			["type"] = "Pet",
+			["TimeLast"] = {
+				["DeathCount"] = 485792.579,
+				["ActiveTime"] = 485815.582,
+				["TimeDamage"] = 485815.582,
+				["OVERALL"] = 485848.585,
+				["DamageTaken"] = 485848.585,
+				["Damage"] = 485815.582,
+			},
+			["LastAttackedBy"] = "Mountain Prowler",
+			["LastFightIn"] = 13,
+			["TimeWindows"] = {
+				["DeathCount"] = {
+					2, -- [1]
+				},
+				["ActiveTime"] = {
+					130.34, -- [1]
+				},
+				["TimeDamage"] = {
+					130.34, -- [1]
+				},
+				["DamageTaken"] = {
+					3936870, -- [1]
+				},
+				["Damage"] = {
+					94719370, -- [1]
+				},
+			},
+			["enClass"] = "PET",
+			["LastDamageTaken"] = 20145,
+			["LastDamageAbility"] = "Melee",
+			["Fights"] = {
+				["LastFightData"] = {
+					["DOTs"] = {
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 0,
+					["RageGainedFrom"] = {
+					},
+					["ElementHitsTaken"] = {
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["HOTs"] = {
+					},
+					["ManaGain"] = 0,
+					["ElementTaken"] = {
+					},
+					["DOT_Time"] = 0,
+					["Damage"] = 0,
+					["ElementDoneAbsorb"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["PartialBlock"] = {
+					},
+					["FDamagedWho"] = {
+					},
+					["FAttacks"] = {
+					},
+					["RageGain"] = 0,
+					["ElementDone"] = {
+					},
+					["ManaGainedFrom"] = {
+					},
+					["ElementHitsDone"] = {
+					},
+					["RageGained"] = {
+					},
+					["WhoDamaged"] = {
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["Dispelled"] = 0,
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDoneBlock"] = {
+					},
+					["TimeHealing"] = {
+					},
+					["OverHeals"] = {
+					},
+					["WhoHealed"] = {
+					},
+					["EnergyGain"] = 0,
+					["CCBreak"] = 0,
+					["PartialAbsorb"] = {
+					},
+					["ActiveTime"] = 0,
+					["PartialResist"] = {
+					},
+					["ManaGained"] = {
+					},
+					["ElementTakenAbsorb"] = {
+					},
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["ElementTakenResist"] = {
+					},
+					["InterruptData"] = {
+					},
+					["WhoDispelled"] = {
+					},
+					["TimeSpent"] = {
+					},
+					["Heals"] = {
+					},
+					["FDamage"] = 0,
+					["EnergyGained"] = {
+					},
+					["HealedWho"] = {
+					},
+					["Healing"] = 0,
+					["CCBroken"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["Attacks"] = {
+					},
+					["HealingTaken"] = 0,
+					["DamagedWho"] = {
+					},
+					["TimeDamage"] = 0,
+					["TimeDamaging"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["ElementTakenBlock"] = {
+					},
+					["DispelledWho"] = {
+					},
+				},
+				["CurrentFightData"] = {
+					["DOTs"] = {
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 0,
+					["RageGainedFrom"] = {
+					},
+					["ElementHitsTaken"] = {
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["HOTs"] = {
+					},
+					["ManaGain"] = 0,
+					["ElementTaken"] = {
+					},
+					["DOT_Time"] = 0,
+					["Damage"] = 0,
+					["ElementDoneAbsorb"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["PartialBlock"] = {
+					},
+					["FDamagedWho"] = {
+					},
+					["FAttacks"] = {
+					},
+					["RageGain"] = 0,
+					["ElementDone"] = {
+					},
+					["ManaGainedFrom"] = {
+					},
+					["ElementHitsDone"] = {
+					},
+					["RageGained"] = {
+					},
+					["WhoDamaged"] = {
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["Dispelled"] = 0,
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDoneBlock"] = {
+					},
+					["TimeHealing"] = {
+					},
+					["OverHeals"] = {
+					},
+					["WhoHealed"] = {
+					},
+					["EnergyGain"] = 0,
+					["CCBreak"] = 0,
+					["PartialAbsorb"] = {
+					},
+					["ActiveTime"] = 0,
+					["PartialResist"] = {
+					},
+					["ManaGained"] = {
+					},
+					["ElementTakenAbsorb"] = {
+					},
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["ElementTakenResist"] = {
+					},
+					["InterruptData"] = {
+					},
+					["WhoDispelled"] = {
+					},
+					["TimeSpent"] = {
+					},
+					["Heals"] = {
+					},
+					["FDamage"] = 0,
+					["EnergyGained"] = {
+					},
+					["HealedWho"] = {
+					},
+					["Healing"] = 0,
+					["CCBroken"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["Attacks"] = {
+					},
+					["HealingTaken"] = 0,
+					["DamagedWho"] = {
+					},
+					["TimeDamage"] = 0,
+					["TimeDamaging"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["ElementTakenBlock"] = {
+					},
+					["DispelledWho"] = {
+					},
+				},
+				["OverallData"] = {
+					["PartialBlock"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Blocked"] = {
+									["max"] = 13829,
+									["min"] = 1765,
+									["count"] = 4,
+									["amount"] = 29633,
+								},
+							},
+							["count"] = 4,
+							["amount"] = 29633,
+						},
+					},
+					["TimeSpent"] = {
+						["Darkshard Crawler"] = {
+							["Details"] = {
+								["Crystalline Cleave"] = {
+									["count"] = 5.39,
+								},
+								["Crushing Leap"] = {
+									["count"] = 7,
+								},
+							},
+							["amount"] = 12.39,
+						},
+						["Engourged Ambershard"] = {
+							["Details"] = {
+								["Crystalline Cleave"] = {
+									["count"] = 30.17,
+								},
+								["Crushing Leap"] = {
+									["count"] = 24.95,
+								},
+								["Melee"] = {
+									["count"] = 2.97,
+								},
+								["Chuck Crystal"] = {
+									["count"] = 59.86,
+								},
+							},
+							["amount"] = 117.95,
+						},
+					},
+					["DamageTaken"] = 3936870,
+					["PartialResist"] = {
+						["Melee"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 113,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 113,
+						},
+					},
+					["DeathCount"] = 2,
+					["PartialAbsorb"] = {
+						["Melee"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 113,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 113,
+							["amount"] = 0,
+						},
+					},
+					["ActiveTime"] = 130.34,
+					["ElementTaken"] = {
+						["Melee"] = 3936870,
+					},
+					["Damage"] = 94719370,
+					["ElementTakenBlock"] = {
+						["Melee"] = 29633,
+					},
+					["Attacks"] = {
+						["Crystalline Cleave"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 1094184,
+									["min"] = 780638,
+									["count"] = 22,
+									["amount"] = 20761469,
+								},
+							},
+							["count"] = 22,
+							["amount"] = 20761469,
+						},
+						["Crushing Leap"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 1365457,
+									["min"] = 928680,
+									["count"] = 27,
+									["amount"] = 30590500,
+								},
+							},
+							["count"] = 27,
+							["amount"] = 30590500,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 253609,
+									["min"] = 221786,
+									["count"] = 2,
+									["amount"] = 475395,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 475395,
+						},
+						["Chuck Crystal"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 4229983,
+									["min"] = 3689091,
+									["count"] = 2,
+									["amount"] = 7919074,
+								},
+								["Hit"] = {
+									["max"] = 2320592,
+									["min"] = 1620205,
+									["count"] = 18,
+									["amount"] = 34972932,
+								},
+							},
+							["count"] = 20,
+							["amount"] = 42892006,
+						},
+					},
+					["DamagedWho"] = {
+						["Darkshard Crawler"] = {
+							["Details"] = {
+								["Crystalline Cleave"] = {
+									["count"] = 7873652,
+								},
+								["Crushing Leap"] = {
+									["count"] = 15057644,
+								},
+							},
+							["amount"] = 22931296,
+						},
+						["Engourged Ambershard"] = {
+							["Details"] = {
+								["Crystalline Cleave"] = {
+									["count"] = 12887817,
+								},
+								["Crushing Leap"] = {
+									["count"] = 15532856,
+								},
+								["Melee"] = {
+									["count"] = 475395,
+								},
+								["Chuck Crystal"] = {
+									["count"] = 42892006,
+								},
+							},
+							["amount"] = 71788074,
+						},
+					},
+					["ElementHitsDone"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 2,
+								},
+							},
+							["amount"] = 2,
+						},
+						["Physical"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 49,
+								},
+							},
+							["amount"] = 49,
+						},
+					},
+					["TimeDamage"] = 130.34,
+					["TimeDamaging"] = {
+						["Darkshard Crawler"] = {
+							["Details"] = {
+								["Crystalline Cleave"] = {
+									["count"] = 5.39,
+								},
+								["Crushing Leap"] = {
+									["count"] = 7,
+								},
+							},
+							["amount"] = 12.39,
+						},
+						["Engourged Ambershard"] = {
+							["Details"] = {
+								["Crystalline Cleave"] = {
+									["count"] = 30.17,
+								},
+								["Crushing Leap"] = {
+									["count"] = 24.95,
+								},
+								["Melee"] = {
+									["count"] = 2.97,
+								},
+								["Chuck Crystal"] = {
+									["count"] = 59.86,
+								},
+							},
+							["amount"] = 117.95,
+						},
+					},
+					["ElementDone"] = {
+						["Melee"] = 475395,
+						["Physical"] = 51351969,
+					},
+					["WhoDamaged"] = {
+						["Darkshard Crawler"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 226823,
+								},
+							},
+							["amount"] = 226823,
+						},
+						["Engourged Ambershard"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 3689902,
+								},
+							},
+							["amount"] = 3689902,
+						},
+						["Mountain Prowler"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 20145,
+								},
+							},
+							["amount"] = 20145,
+						},
+					},
+					["ElementHitsTaken"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 101,
+								},
+								["Dodge"] = {
+									["count"] = 4,
+								},
+								["Block"] = {
+									["count"] = 4,
+								},
+								["Crit"] = {
+									["count"] = 6,
+								},
+								["Parry"] = {
+									["count"] = 2,
+								},
+							},
+							["amount"] = 117,
+						},
+					},
+				},
+			},
+			["Name"] = "Rageshard",
+			["LastFlags"] = 2600,
+			["LastAbility"] = 569912.069,
+			["level"] = 1,
+			["UnitLockout"] = 485580.581,
+			["LastActive"] = 485848.585,
 		},
 		["T'uure <Holyshnizzle>"] = {
 			["GUID"] = "Creature-0-3133-1220-2178-99904-00007B4463",
 			["type"] = "Pet",
 			["TimeLast"] = {
-				["Overhealing"] = 486589.421,
-				["TimeHeal"] = 487452.055,
 				["HOT_Time"] = 486583.431,
+				["TimeHeal"] = 487452.055,
+				["Overhealing"] = 486589.421,
 				["ActiveTime"] = 487452.055,
-				["TimeDamage"] = 487448.059,
 				["OVERALL"] = 487452.055,
 				["Healing"] = 487452.055,
+				["TimeDamage"] = 487448.059,
 				["Damage"] = 487448.059,
 			},
 			["TimeWindows"] = {
@@ -2184,12 +3456,7 @@ RecountPerCharDB = {
 				},
 			},
 			["enClass"] = "PET",
-			["LastFightIn"] = 25,
-			["UnitLockout"] = 485191.585,
-			["Name"] = "T'uure",
-			["LastActive"] = 487452.055,
-			["LastFlags"] = 2600,
-			["level"] = 1,
+			["LastAbility"] = 569912.069,
 			["Fights"] = {
 				["LastFightData"] = {
 					["DOTs"] = {
@@ -2204,13 +3471,12 @@ RecountPerCharDB = {
 					},
 					["DeathCount"] = 0,
 					["HOT_Time"] = 0,
-					["ElementTakenBlock"] = {
-					},
-					["RunicPowerGain"] = 0,
-					["ElementTaken"] = {
-					},
 					["HOTs"] = {
 					},
+					["ManaGain"] = 0,
+					["ElementTaken"] = {
+					},
+					["DOT_Time"] = 0,
 					["Damage"] = 0,
 					["ElementDoneAbsorb"] = {
 					},
@@ -2220,77 +3486,78 @@ RecountPerCharDB = {
 					["Dispels"] = 0,
 					["PartialBlock"] = {
 					},
-					["DamagedWho"] = {
+					["FDamagedWho"] = {
 					},
 					["FAttacks"] = {
 					},
-					["HealingTaken"] = 0,
+					["RageGain"] = 0,
 					["ElementDone"] = {
-					},
-					["ElementHitsDone"] = {
 					},
 					["ManaGainedFrom"] = {
 					},
-					["CCBroken"] = {
+					["ElementHitsDone"] = {
+					},
+					["RageGained"] = {
 					},
 					["WhoDamaged"] = {
 					},
 					["EnergyGainedFrom"] = {
 					},
+					["Dispelled"] = 0,
 					["RunicPowerGainedFrom"] = {
-					},
-					["RunicPowerGained"] = {
 					},
 					["ElementDoneBlock"] = {
 					},
 					["TimeHealing"] = {
 					},
-					["Dispelled"] = 0,
+					["OverHeals"] = {
+					},
 					["WhoHealed"] = {
 					},
-					["HealedWho"] = {
-					},
-					["CCBreak"] = 0,
-					["ElementTakenAbsorb"] = {
-					},
-					["FDamage"] = 0,
 					["EnergyGain"] = 0,
-					["ManaGained"] = {
-					},
+					["CCBreak"] = 0,
 					["PartialAbsorb"] = {
 					},
 					["ActiveTime"] = 0,
-					["Overhealing"] = 0,
-					["TimeSpent"] = {
+					["PartialResist"] = {
 					},
-					["WhoDispelled"] = {
+					["ManaGained"] = {
+					},
+					["ElementTakenAbsorb"] = {
+					},
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["ElementTakenResist"] = {
 					},
 					["InterruptData"] = {
 					},
-					["ElementTakenResist"] = {
+					["WhoDispelled"] = {
+					},
+					["TimeSpent"] = {
 					},
 					["Heals"] = {
 					},
-					["Interrupts"] = 0,
+					["FDamage"] = 0,
 					["EnergyGained"] = {
 					},
-					["PartialResist"] = {
+					["HealedWho"] = {
 					},
 					["Healing"] = 0,
-					["OverHeals"] = {
+					["CCBroken"] = {
 					},
-					["RageGained"] = {
+					["RunicPowerGained"] = {
 					},
 					["Attacks"] = {
 					},
-					["RageGain"] = 0,
-					["FDamagedWho"] = {
+					["HealingTaken"] = 0,
+					["DamagedWho"] = {
 					},
 					["TimeDamage"] = 0,
 					["TimeDamaging"] = {
 					},
-					["ManaGain"] = 0,
-					["DOT_Time"] = 0,
+					["RunicPowerGain"] = 0,
+					["ElementTakenBlock"] = {
+					},
 					["DispelledWho"] = {
 					},
 				},
@@ -2307,13 +3574,12 @@ RecountPerCharDB = {
 					},
 					["DeathCount"] = 0,
 					["HOT_Time"] = 0,
-					["ElementTakenBlock"] = {
-					},
-					["RunicPowerGain"] = 0,
-					["ElementTaken"] = {
-					},
 					["HOTs"] = {
 					},
+					["ManaGain"] = 0,
+					["ElementTaken"] = {
+					},
+					["DOT_Time"] = 0,
 					["Damage"] = 0,
 					["ElementDoneAbsorb"] = {
 					},
@@ -2323,77 +3589,78 @@ RecountPerCharDB = {
 					["Dispels"] = 0,
 					["PartialBlock"] = {
 					},
-					["DamagedWho"] = {
+					["FDamagedWho"] = {
 					},
 					["FAttacks"] = {
 					},
-					["HealingTaken"] = 0,
+					["RageGain"] = 0,
 					["ElementDone"] = {
-					},
-					["ElementHitsDone"] = {
 					},
 					["ManaGainedFrom"] = {
 					},
-					["CCBroken"] = {
+					["ElementHitsDone"] = {
+					},
+					["RageGained"] = {
 					},
 					["WhoDamaged"] = {
 					},
 					["EnergyGainedFrom"] = {
 					},
+					["Dispelled"] = 0,
 					["RunicPowerGainedFrom"] = {
-					},
-					["RunicPowerGained"] = {
 					},
 					["ElementDoneBlock"] = {
 					},
 					["TimeHealing"] = {
 					},
-					["Dispelled"] = 0,
+					["OverHeals"] = {
+					},
 					["WhoHealed"] = {
 					},
-					["HealedWho"] = {
-					},
-					["CCBreak"] = 0,
-					["ElementTakenAbsorb"] = {
-					},
-					["FDamage"] = 0,
 					["EnergyGain"] = 0,
-					["ManaGained"] = {
-					},
+					["CCBreak"] = 0,
 					["PartialAbsorb"] = {
 					},
 					["ActiveTime"] = 0,
-					["Overhealing"] = 0,
-					["TimeSpent"] = {
+					["PartialResist"] = {
 					},
-					["WhoDispelled"] = {
+					["ManaGained"] = {
+					},
+					["ElementTakenAbsorb"] = {
+					},
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["ElementTakenResist"] = {
 					},
 					["InterruptData"] = {
 					},
-					["ElementTakenResist"] = {
+					["WhoDispelled"] = {
+					},
+					["TimeSpent"] = {
 					},
 					["Heals"] = {
 					},
-					["Interrupts"] = 0,
+					["FDamage"] = 0,
 					["EnergyGained"] = {
 					},
-					["PartialResist"] = {
+					["HealedWho"] = {
 					},
 					["Healing"] = 0,
-					["OverHeals"] = {
+					["CCBroken"] = {
 					},
-					["RageGained"] = {
+					["RunicPowerGained"] = {
 					},
 					["Attacks"] = {
 					},
-					["RageGain"] = 0,
-					["FDamagedWho"] = {
+					["HealingTaken"] = 0,
+					["DamagedWho"] = {
 					},
 					["TimeDamage"] = 0,
 					["TimeDamaging"] = {
 					},
-					["ManaGain"] = 0,
-					["DOT_Time"] = 0,
+					["RunicPowerGain"] = 0,
+					["ElementTakenBlock"] = {
+					},
 					["DispelledWho"] = {
 					},
 				},
@@ -2606,40 +3873,7 @@ RecountPerCharDB = {
 							["amount"] = 1626748,
 						},
 					},
-					["DamagedWho"] = {
-						["Durguth"] = {
-							["Details"] = {
-								["Searing Light"] = {
-									["count"] = 322280,
-								},
-							},
-							["amount"] = 322280,
-						},
-						["Bilgefin Invader"] = {
-							["Details"] = {
-								["Light Eruption"] = {
-									["count"] = 1503975,
-								},
-							},
-							["amount"] = 1503975,
-						},
-						["Bilgefin Scavenger"] = {
-							["Details"] = {
-								["Light Eruption"] = {
-									["count"] = 122773,
-								},
-							},
-							["amount"] = 122773,
-						},
-						["Stout Highlands Runehorn"] = {
-							["Details"] = {
-								["Searing Light"] = {
-									["count"] = 161140,
-								},
-							},
-							["amount"] = 161140,
-						},
-					},
+					["HOT_Time"] = 24,
 					["ElementHitsDone"] = {
 						["Holy"] = {
 							["Details"] = {
@@ -2655,13 +3889,13 @@ RecountPerCharDB = {
 					},
 					["TimeDamage"] = 25.66,
 					["TimeDamaging"] = {
-						["Durguth"] = {
+						["Bilgefin Scavenger"] = {
 							["Details"] = {
-								["Searing Light"] = {
-									["count"] = 10.48,
+								["Light Eruption"] = {
+									["count"] = 11.68,
 								},
 							},
-							["amount"] = 10.48,
+							["amount"] = 11.68,
 						},
 						["Bilgefin Invader"] = {
 							["Details"] = {
@@ -2671,14 +3905,6 @@ RecountPerCharDB = {
 							},
 							["amount"] = 0,
 						},
-						["Bilgefin Scavenger"] = {
-							["Details"] = {
-								["Light Eruption"] = {
-									["count"] = 11.68,
-								},
-							},
-							["amount"] = 11.68,
-						},
 						["Stout Highlands Runehorn"] = {
 							["Details"] = {
 								["Searing Light"] = {
@@ -2687,1287 +3913,61 @@ RecountPerCharDB = {
 							},
 							["amount"] = 3.5,
 						},
+						["Durguth"] = {
+							["Details"] = {
+								["Searing Light"] = {
+									["count"] = 10.48,
+								},
+							},
+							["amount"] = 10.48,
+						},
 					},
+					["TimeHeal"] = 14.7,
 					["ElementDone"] = {
 						["Holy"] = 2110168,
 					},
-					["TimeHeal"] = 14.7,
-					["HOT_Time"] = 24,
-				},
-			},
-			["LastAbility"] = 488188.2,
-		},
-		["Rageshard <Holyshnizzle>"] = {
-			["GUID"] = "Vehicle-0-3778-1220-5784-102665-00007B3DFB",
-			["type"] = "Pet",
-			["TimeLast"] = {
-				["DeathCount"] = 485792.579,
-				["ActiveTime"] = 485815.582,
-				["TimeDamage"] = 485815.582,
-				["OVERALL"] = 485848.585,
-				["DamageTaken"] = 485848.585,
-				["Damage"] = 485815.582,
-			},
-			["LastAttackedBy"] = "Mountain Prowler",
-			["LastActive"] = 485848.585,
-			["TimeWindows"] = {
-				["DeathCount"] = {
-					2, -- [1]
-				},
-				["ActiveTime"] = {
-					130.34, -- [1]
-				},
-				["TimeDamage"] = {
-					130.34, -- [1]
-				},
-				["DamageTaken"] = {
-					3936870, -- [1]
-				},
-				["Damage"] = {
-					94719370, -- [1]
-				},
-			},
-			["enClass"] = "PET",
-			["LastDamageTaken"] = 20145,
-			["UnitLockout"] = 485580.581,
-			["Fights"] = {
-				["LastFightData"] = {
-					["DOTs"] = {
-					},
-					["ElementDoneResist"] = {
-					},
-					["Ressed"] = 0,
-					["DamageTaken"] = 0,
-					["RageGainedFrom"] = {
-					},
-					["ElementHitsTaken"] = {
-					},
-					["DeathCount"] = 0,
-					["HOT_Time"] = 0,
-					["ElementTakenBlock"] = {
-					},
-					["RunicPowerGain"] = 0,
-					["ElementTaken"] = {
-					},
-					["HOTs"] = {
-					},
-					["Damage"] = 0,
-					["ElementDoneAbsorb"] = {
-					},
-					["TimeHeal"] = 0,
-					["RessedWho"] = {
-					},
-					["Dispels"] = 0,
-					["PartialBlock"] = {
-					},
 					["DamagedWho"] = {
-					},
-					["FAttacks"] = {
-					},
-					["HealingTaken"] = 0,
-					["ElementDone"] = {
-					},
-					["ElementHitsDone"] = {
-					},
-					["ManaGainedFrom"] = {
-					},
-					["CCBroken"] = {
-					},
-					["WhoDamaged"] = {
-					},
-					["EnergyGainedFrom"] = {
-					},
-					["RunicPowerGainedFrom"] = {
-					},
-					["RunicPowerGained"] = {
-					},
-					["ElementDoneBlock"] = {
-					},
-					["TimeHealing"] = {
-					},
-					["Dispelled"] = 0,
-					["WhoHealed"] = {
-					},
-					["HealedWho"] = {
-					},
-					["CCBreak"] = 0,
-					["ElementTakenAbsorb"] = {
-					},
-					["FDamage"] = 0,
-					["EnergyGain"] = 0,
-					["ManaGained"] = {
-					},
-					["PartialAbsorb"] = {
-					},
-					["ActiveTime"] = 0,
-					["Overhealing"] = 0,
-					["TimeSpent"] = {
-					},
-					["WhoDispelled"] = {
-					},
-					["InterruptData"] = {
-					},
-					["ElementTakenResist"] = {
-					},
-					["Heals"] = {
-					},
-					["Interrupts"] = 0,
-					["EnergyGained"] = {
-					},
-					["PartialResist"] = {
-					},
-					["Healing"] = 0,
-					["OverHeals"] = {
-					},
-					["RageGained"] = {
-					},
-					["Attacks"] = {
-					},
-					["RageGain"] = 0,
-					["FDamagedWho"] = {
-					},
-					["TimeDamage"] = 0,
-					["TimeDamaging"] = {
-					},
-					["ManaGain"] = 0,
-					["DOT_Time"] = 0,
-					["DispelledWho"] = {
-					},
-				},
-				["CurrentFightData"] = {
-					["DOTs"] = {
-					},
-					["ElementDoneResist"] = {
-					},
-					["Ressed"] = 0,
-					["DamageTaken"] = 0,
-					["RageGainedFrom"] = {
-					},
-					["ElementHitsTaken"] = {
-					},
-					["DeathCount"] = 0,
-					["HOT_Time"] = 0,
-					["ElementTakenBlock"] = {
-					},
-					["RunicPowerGain"] = 0,
-					["ElementTaken"] = {
-					},
-					["HOTs"] = {
-					},
-					["Damage"] = 0,
-					["ElementDoneAbsorb"] = {
-					},
-					["TimeHeal"] = 0,
-					["RessedWho"] = {
-					},
-					["Dispels"] = 0,
-					["PartialBlock"] = {
-					},
-					["DamagedWho"] = {
-					},
-					["FAttacks"] = {
-					},
-					["HealingTaken"] = 0,
-					["ElementDone"] = {
-					},
-					["ElementHitsDone"] = {
-					},
-					["ManaGainedFrom"] = {
-					},
-					["CCBroken"] = {
-					},
-					["WhoDamaged"] = {
-					},
-					["EnergyGainedFrom"] = {
-					},
-					["RunicPowerGainedFrom"] = {
-					},
-					["RunicPowerGained"] = {
-					},
-					["ElementDoneBlock"] = {
-					},
-					["TimeHealing"] = {
-					},
-					["Dispelled"] = 0,
-					["WhoHealed"] = {
-					},
-					["HealedWho"] = {
-					},
-					["CCBreak"] = 0,
-					["ElementTakenAbsorb"] = {
-					},
-					["FDamage"] = 0,
-					["EnergyGain"] = 0,
-					["ManaGained"] = {
-					},
-					["PartialAbsorb"] = {
-					},
-					["ActiveTime"] = 0,
-					["Overhealing"] = 0,
-					["TimeSpent"] = {
-					},
-					["WhoDispelled"] = {
-					},
-					["InterruptData"] = {
-					},
-					["ElementTakenResist"] = {
-					},
-					["Heals"] = {
-					},
-					["Interrupts"] = 0,
-					["EnergyGained"] = {
-					},
-					["PartialResist"] = {
-					},
-					["Healing"] = 0,
-					["OverHeals"] = {
-					},
-					["RageGained"] = {
-					},
-					["Attacks"] = {
-					},
-					["RageGain"] = 0,
-					["FDamagedWho"] = {
-					},
-					["TimeDamage"] = 0,
-					["TimeDamaging"] = {
-					},
-					["ManaGain"] = 0,
-					["DOT_Time"] = 0,
-					["DispelledWho"] = {
-					},
-				},
-				["OverallData"] = {
-					["PartialBlock"] = {
-						["Melee"] = {
+						["Bilgefin Scavenger"] = {
 							["Details"] = {
-								["Blocked"] = {
-									["max"] = 13829,
-									["min"] = 1765,
-									["count"] = 4,
-									["amount"] = 29633,
+								["Light Eruption"] = {
+									["count"] = 122773,
 								},
 							},
-							["count"] = 4,
-							["amount"] = 29633,
+							["amount"] = 122773,
 						},
-					},
-					["TimeSpent"] = {
-						["Darkshard Crawler"] = {
+						["Bilgefin Invader"] = {
 							["Details"] = {
-								["Crystalline Cleave"] = {
-									["count"] = 5.39,
-								},
-								["Crushing Leap"] = {
-									["count"] = 7,
+								["Light Eruption"] = {
+									["count"] = 1503975,
 								},
 							},
-							["amount"] = 12.39,
+							["amount"] = 1503975,
 						},
-						["Engourged Ambershard"] = {
+						["Stout Highlands Runehorn"] = {
 							["Details"] = {
-								["Crystalline Cleave"] = {
-									["count"] = 30.17,
-								},
-								["Chuck Crystal"] = {
-									["count"] = 59.86,
-								},
-								["Melee"] = {
-									["count"] = 2.97,
-								},
-								["Crushing Leap"] = {
-									["count"] = 24.95,
+								["Searing Light"] = {
+									["count"] = 161140,
 								},
 							},
-							["amount"] = 117.95,
+							["amount"] = 161140,
 						},
-					},
-					["DamageTaken"] = 3936870,
-					["PartialResist"] = {
-						["Melee"] = {
+						["Durguth"] = {
 							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 113,
-									["amount"] = 0,
+								["Searing Light"] = {
+									["count"] = 322280,
 								},
 							},
-							["count"] = 0,
-							["amount"] = 113,
+							["amount"] = 322280,
 						},
-					},
-					["DeathCount"] = 2,
-					["PartialAbsorb"] = {
-						["Melee"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 113,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 113,
-							["amount"] = 0,
-						},
-					},
-					["ActiveTime"] = 130.34,
-					["ElementTaken"] = {
-						["Melee"] = 3936870,
-					},
-					["Damage"] = 94719370,
-					["ElementHitsTaken"] = {
-						["Melee"] = {
-							["Details"] = {
-								["Hit"] = {
-									["count"] = 101,
-								},
-								["Dodge"] = {
-									["count"] = 4,
-								},
-								["Block"] = {
-									["count"] = 4,
-								},
-								["Crit"] = {
-									["count"] = 6,
-								},
-								["Parry"] = {
-									["count"] = 2,
-								},
-							},
-							["amount"] = 117,
-						},
-					},
-					["Attacks"] = {
-						["Crystalline Cleave"] = {
-							["Details"] = {
-								["Hit"] = {
-									["max"] = 1094184,
-									["min"] = 780638,
-									["count"] = 22,
-									["amount"] = 20761469,
-								},
-							},
-							["count"] = 22,
-							["amount"] = 20761469,
-						},
-						["Chuck Crystal"] = {
-							["Details"] = {
-								["Crit"] = {
-									["max"] = 4229983,
-									["min"] = 3689091,
-									["count"] = 2,
-									["amount"] = 7919074,
-								},
-								["Hit"] = {
-									["max"] = 2320592,
-									["min"] = 1620205,
-									["count"] = 18,
-									["amount"] = 34972932,
-								},
-							},
-							["count"] = 20,
-							["amount"] = 42892006,
-						},
-						["Melee"] = {
-							["Details"] = {
-								["Hit"] = {
-									["max"] = 253609,
-									["min"] = 221786,
-									["count"] = 2,
-									["amount"] = 475395,
-								},
-							},
-							["count"] = 2,
-							["amount"] = 475395,
-						},
-						["Crushing Leap"] = {
-							["Details"] = {
-								["Hit"] = {
-									["max"] = 1365457,
-									["min"] = 928680,
-									["count"] = 27,
-									["amount"] = 30590500,
-								},
-							},
-							["count"] = 27,
-							["amount"] = 30590500,
-						},
-					},
-					["WhoDamaged"] = {
-						["Darkshard Crawler"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 226823,
-								},
-							},
-							["amount"] = 226823,
-						},
-						["Engourged Ambershard"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 3689902,
-								},
-							},
-							["amount"] = 3689902,
-						},
-						["Mountain Prowler"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 20145,
-								},
-							},
-							["amount"] = 20145,
-						},
-					},
-					["DamagedWho"] = {
-						["Darkshard Crawler"] = {
-							["Details"] = {
-								["Crystalline Cleave"] = {
-									["count"] = 7873652,
-								},
-								["Crushing Leap"] = {
-									["count"] = 15057644,
-								},
-							},
-							["amount"] = 22931296,
-						},
-						["Engourged Ambershard"] = {
-							["Details"] = {
-								["Crystalline Cleave"] = {
-									["count"] = 12887817,
-								},
-								["Chuck Crystal"] = {
-									["count"] = 42892006,
-								},
-								["Melee"] = {
-									["count"] = 475395,
-								},
-								["Crushing Leap"] = {
-									["count"] = 15532856,
-								},
-							},
-							["amount"] = 71788074,
-						},
-					},
-					["TimeDamage"] = 130.34,
-					["TimeDamaging"] = {
-						["Darkshard Crawler"] = {
-							["Details"] = {
-								["Crystalline Cleave"] = {
-									["count"] = 5.39,
-								},
-								["Crushing Leap"] = {
-									["count"] = 7,
-								},
-							},
-							["amount"] = 12.39,
-						},
-						["Engourged Ambershard"] = {
-							["Details"] = {
-								["Crystalline Cleave"] = {
-									["count"] = 30.17,
-								},
-								["Chuck Crystal"] = {
-									["count"] = 59.86,
-								},
-								["Melee"] = {
-									["count"] = 2.97,
-								},
-								["Crushing Leap"] = {
-									["count"] = 24.95,
-								},
-							},
-							["amount"] = 117.95,
-						},
-					},
-					["ElementDone"] = {
-						["Melee"] = 475395,
-						["Physical"] = 51351969,
-					},
-					["ElementHitsDone"] = {
-						["Melee"] = {
-							["Details"] = {
-								["Hit"] = {
-									["count"] = 2,
-								},
-							},
-							["amount"] = 2,
-						},
-						["Physical"] = {
-							["Details"] = {
-								["Hit"] = {
-									["count"] = 49,
-								},
-							},
-							["amount"] = 49,
-						},
-					},
-					["ElementTakenBlock"] = {
-						["Melee"] = 29633,
 					},
 				},
 			},
-			["Name"] = "Rageshard",
-			["LastAbility"] = 488188.2,
+			["Name"] = "T'uure",
+			["LastActive"] = 487452.055,
 			["LastFlags"] = 2600,
 			["level"] = 1,
-			["LastDamageAbility"] = "Melee",
-			["LastFightIn"] = 13,
-		},
-		["Bolas Launcher <Holyshnizzle>"] = {
-			["GUID"] = "Vehicle-0-3778-1220-5784-110814-00007B1DD4",
-			["type"] = "Pet",
-			["TimeLast"] = {
-				["ActiveTime"] = 486892.418,
-				["OVERALL"] = 486892.418,
-				["TimeDamage"] = 486892.418,
-				["Damage"] = 486892.418,
-			},
-			["TimeWindows"] = {
-				["ActiveTime"] = {
-					33.22, -- [1]
-				},
-				["TimeDamage"] = {
-					33.22, -- [1]
-				},
-				["Damage"] = {
-					8116676, -- [1]
-				},
-			},
-			["enClass"] = "PET",
+			["UnitLockout"] = 485191.585,
 			["LastFightIn"] = 25,
-			["Name"] = "Bolas Launcher",
-			["UnitLockout"] = 486796.418,
-			["LastActive"] = 486892.418,
-			["level"] = 1,
-			["Fights"] = {
-				["LastFightData"] = {
-					["DOTs"] = {
-					},
-					["ElementDoneResist"] = {
-					},
-					["Ressed"] = 0,
-					["DamageTaken"] = 0,
-					["RageGainedFrom"] = {
-					},
-					["ElementHitsTaken"] = {
-					},
-					["DeathCount"] = 0,
-					["HOT_Time"] = 0,
-					["ElementTakenBlock"] = {
-					},
-					["RunicPowerGain"] = 0,
-					["ElementTaken"] = {
-					},
-					["HOTs"] = {
-					},
-					["Damage"] = 0,
-					["ElementDoneAbsorb"] = {
-					},
-					["TimeHeal"] = 0,
-					["RessedWho"] = {
-					},
-					["Dispels"] = 0,
-					["PartialBlock"] = {
-					},
-					["DamagedWho"] = {
-					},
-					["FAttacks"] = {
-					},
-					["HealingTaken"] = 0,
-					["ElementDone"] = {
-					},
-					["ElementHitsDone"] = {
-					},
-					["ManaGainedFrom"] = {
-					},
-					["CCBroken"] = {
-					},
-					["WhoDamaged"] = {
-					},
-					["EnergyGainedFrom"] = {
-					},
-					["RunicPowerGainedFrom"] = {
-					},
-					["RunicPowerGained"] = {
-					},
-					["ElementDoneBlock"] = {
-					},
-					["TimeHealing"] = {
-					},
-					["Dispelled"] = 0,
-					["WhoHealed"] = {
-					},
-					["HealedWho"] = {
-					},
-					["CCBreak"] = 0,
-					["ElementTakenAbsorb"] = {
-					},
-					["FDamage"] = 0,
-					["EnergyGain"] = 0,
-					["ManaGained"] = {
-					},
-					["PartialAbsorb"] = {
-					},
-					["ActiveTime"] = 0,
-					["Overhealing"] = 0,
-					["TimeSpent"] = {
-					},
-					["WhoDispelled"] = {
-					},
-					["InterruptData"] = {
-					},
-					["ElementTakenResist"] = {
-					},
-					["Heals"] = {
-					},
-					["Interrupts"] = 0,
-					["EnergyGained"] = {
-					},
-					["PartialResist"] = {
-					},
-					["Healing"] = 0,
-					["OverHeals"] = {
-					},
-					["RageGained"] = {
-					},
-					["Attacks"] = {
-					},
-					["RageGain"] = 0,
-					["FDamagedWho"] = {
-					},
-					["TimeDamage"] = 0,
-					["TimeDamaging"] = {
-					},
-					["ManaGain"] = 0,
-					["DOT_Time"] = 0,
-					["DispelledWho"] = {
-					},
-				},
-				["CurrentFightData"] = {
-					["DOTs"] = {
-					},
-					["ElementDoneResist"] = {
-					},
-					["Ressed"] = 0,
-					["DamageTaken"] = 0,
-					["RageGainedFrom"] = {
-					},
-					["ElementHitsTaken"] = {
-					},
-					["DeathCount"] = 0,
-					["HOT_Time"] = 0,
-					["ElementTakenBlock"] = {
-					},
-					["RunicPowerGain"] = 0,
-					["ElementTaken"] = {
-					},
-					["HOTs"] = {
-					},
-					["Damage"] = 0,
-					["ElementDoneAbsorb"] = {
-					},
-					["TimeHeal"] = 0,
-					["RessedWho"] = {
-					},
-					["Dispels"] = 0,
-					["PartialBlock"] = {
-					},
-					["DamagedWho"] = {
-					},
-					["FAttacks"] = {
-					},
-					["HealingTaken"] = 0,
-					["ElementDone"] = {
-					},
-					["ElementHitsDone"] = {
-					},
-					["ManaGainedFrom"] = {
-					},
-					["CCBroken"] = {
-					},
-					["WhoDamaged"] = {
-					},
-					["EnergyGainedFrom"] = {
-					},
-					["RunicPowerGainedFrom"] = {
-					},
-					["RunicPowerGained"] = {
-					},
-					["ElementDoneBlock"] = {
-					},
-					["TimeHealing"] = {
-					},
-					["Dispelled"] = 0,
-					["WhoHealed"] = {
-					},
-					["HealedWho"] = {
-					},
-					["CCBreak"] = 0,
-					["ElementTakenAbsorb"] = {
-					},
-					["FDamage"] = 0,
-					["EnergyGain"] = 0,
-					["ManaGained"] = {
-					},
-					["PartialAbsorb"] = {
-					},
-					["ActiveTime"] = 0,
-					["Overhealing"] = 0,
-					["TimeSpent"] = {
-					},
-					["WhoDispelled"] = {
-					},
-					["InterruptData"] = {
-					},
-					["ElementTakenResist"] = {
-					},
-					["Heals"] = {
-					},
-					["Interrupts"] = 0,
-					["EnergyGained"] = {
-					},
-					["PartialResist"] = {
-					},
-					["Healing"] = 0,
-					["OverHeals"] = {
-					},
-					["RageGained"] = {
-					},
-					["Attacks"] = {
-					},
-					["RageGain"] = 0,
-					["FDamagedWho"] = {
-					},
-					["TimeDamage"] = 0,
-					["TimeDamaging"] = {
-					},
-					["ManaGain"] = 0,
-					["DOT_Time"] = 0,
-					["DispelledWho"] = {
-					},
-				},
-				["OverallData"] = {
-					["TimeSpent"] = {
-						["Stormwing Drake"] = {
-							["Details"] = {
-								["Launch Bolas"] = {
-									["count"] = 29.72,
-								},
-								["Flaming Bolas"] = {
-									["count"] = 3.5,
-								},
-							},
-							["amount"] = 33.22,
-						},
-					},
-					["ElementDone"] = {
-						["Nature"] = 6183640,
-						["Fire"] = 1933036,
-					},
-					["DamagedWho"] = {
-						["Stormwing Drake"] = {
-							["Details"] = {
-								["Launch Bolas"] = {
-									["count"] = 6183640,
-								},
-								["Flaming Bolas"] = {
-									["count"] = 1933036,
-								},
-							},
-							["amount"] = 8116676,
-						},
-					},
-					["ElementHitsDone"] = {
-						["Nature"] = {
-							["Details"] = {
-								["Hit"] = {
-									["count"] = 10,
-								},
-							},
-							["amount"] = 10,
-						},
-						["Fire"] = {
-							["Details"] = {
-								["Hit"] = {
-									["count"] = 1,
-								},
-							},
-							["amount"] = 1,
-						},
-					},
-					["TimeDamage"] = 33.22,
-					["TimeDamaging"] = {
-						["Stormwing Drake"] = {
-							["Details"] = {
-								["Launch Bolas"] = {
-									["count"] = 29.72,
-								},
-								["Flaming Bolas"] = {
-									["count"] = 3.5,
-								},
-							},
-							["amount"] = 33.22,
-						},
-					},
-					["ActiveTime"] = 33.22,
-					["Attacks"] = {
-						["Launch Bolas"] = {
-							["Details"] = {
-								["Hit"] = {
-									["max"] = 654738,
-									["min"] = 592382,
-									["count"] = 10,
-									["amount"] = 6183640,
-								},
-							},
-							["count"] = 10,
-							["amount"] = 6183640,
-						},
-						["Flaming Bolas"] = {
-							["Details"] = {
-								["Hit"] = {
-									["max"] = 1933036,
-									["min"] = 1933036,
-									["count"] = 1,
-									["amount"] = 1933036,
-								},
-							},
-							["count"] = 1,
-							["amount"] = 1933036,
-						},
-					},
-					["Damage"] = 8116676,
-				},
-			},
-			["LastAbility"] = 488188.2,
-		},
-		["Mountain Prowler <Holyshnizzle>"] = {
-			["GUID"] = "Vehicle-0-3778-1220-5784-96628-00007B3E68",
-			["type"] = "Pet",
-			["TimeLast"] = {
-				["ActiveTime"] = 486074.586,
-				["TimeDamage"] = 486074.586,
-				["OVERALL"] = 486074.586,
-				["DamageTaken"] = 486074.586,
-				["Damage"] = 486074.586,
-			},
-			["LastAttackedBy"] = "Pinerock Hunter",
-			["TimeWindows"] = {
-				["ActiveTime"] = {
-					60.24, -- [1]
-				},
-				["TimeDamage"] = {
-					60.24, -- [1]
-				},
-				["DamageTaken"] = {
-					903079, -- [1]
-				},
-				["Damage"] = {
-					83859621, -- [1]
-				},
-			},
-			["enClass"] = "PET",
-			["LastDamageTaken"] = 129467,
-			["LastFightIn"] = 22,
-			["UnitLockout"] = 485924.581,
-			["Name"] = "Mountain Prowler",
-			["LastActive"] = 486074.586,
-			["Fights"] = {
-				["LastFightData"] = {
-					["DOTs"] = {
-					},
-					["ElementDoneResist"] = {
-					},
-					["Ressed"] = 0,
-					["DamageTaken"] = 0,
-					["RageGainedFrom"] = {
-					},
-					["ElementHitsTaken"] = {
-					},
-					["DeathCount"] = 0,
-					["HOT_Time"] = 0,
-					["ElementTakenBlock"] = {
-					},
-					["RunicPowerGain"] = 0,
-					["ElementTaken"] = {
-					},
-					["HOTs"] = {
-					},
-					["Damage"] = 0,
-					["ElementDoneAbsorb"] = {
-					},
-					["TimeHeal"] = 0,
-					["RessedWho"] = {
-					},
-					["Dispels"] = 0,
-					["PartialBlock"] = {
-					},
-					["DamagedWho"] = {
-					},
-					["FAttacks"] = {
-					},
-					["HealingTaken"] = 0,
-					["ElementDone"] = {
-					},
-					["ElementHitsDone"] = {
-					},
-					["ManaGainedFrom"] = {
-					},
-					["CCBroken"] = {
-					},
-					["WhoDamaged"] = {
-					},
-					["EnergyGainedFrom"] = {
-					},
-					["RunicPowerGainedFrom"] = {
-					},
-					["RunicPowerGained"] = {
-					},
-					["ElementDoneBlock"] = {
-					},
-					["TimeHealing"] = {
-					},
-					["Dispelled"] = 0,
-					["WhoHealed"] = {
-					},
-					["HealedWho"] = {
-					},
-					["CCBreak"] = 0,
-					["ElementTakenAbsorb"] = {
-					},
-					["FDamage"] = 0,
-					["EnergyGain"] = 0,
-					["ManaGained"] = {
-					},
-					["PartialAbsorb"] = {
-					},
-					["ActiveTime"] = 0,
-					["Overhealing"] = 0,
-					["TimeSpent"] = {
-					},
-					["WhoDispelled"] = {
-					},
-					["InterruptData"] = {
-					},
-					["ElementTakenResist"] = {
-					},
-					["Heals"] = {
-					},
-					["Interrupts"] = 0,
-					["EnergyGained"] = {
-					},
-					["PartialResist"] = {
-					},
-					["Healing"] = 0,
-					["OverHeals"] = {
-					},
-					["RageGained"] = {
-					},
-					["Attacks"] = {
-					},
-					["RageGain"] = 0,
-					["FDamagedWho"] = {
-					},
-					["TimeDamage"] = 0,
-					["TimeDamaging"] = {
-					},
-					["ManaGain"] = 0,
-					["DOT_Time"] = 0,
-					["DispelledWho"] = {
-					},
-				},
-				["CurrentFightData"] = {
-					["DOTs"] = {
-					},
-					["ElementDoneResist"] = {
-					},
-					["Ressed"] = 0,
-					["DamageTaken"] = 0,
-					["RageGainedFrom"] = {
-					},
-					["ElementHitsTaken"] = {
-					},
-					["DeathCount"] = 0,
-					["HOT_Time"] = 0,
-					["ElementTakenBlock"] = {
-					},
-					["RunicPowerGain"] = 0,
-					["ElementTaken"] = {
-					},
-					["HOTs"] = {
-					},
-					["Damage"] = 0,
-					["ElementDoneAbsorb"] = {
-					},
-					["TimeHeal"] = 0,
-					["RessedWho"] = {
-					},
-					["Dispels"] = 0,
-					["PartialBlock"] = {
-					},
-					["DamagedWho"] = {
-					},
-					["FAttacks"] = {
-					},
-					["HealingTaken"] = 0,
-					["ElementDone"] = {
-					},
-					["ElementHitsDone"] = {
-					},
-					["ManaGainedFrom"] = {
-					},
-					["CCBroken"] = {
-					},
-					["WhoDamaged"] = {
-					},
-					["EnergyGainedFrom"] = {
-					},
-					["RunicPowerGainedFrom"] = {
-					},
-					["RunicPowerGained"] = {
-					},
-					["ElementDoneBlock"] = {
-					},
-					["TimeHealing"] = {
-					},
-					["Dispelled"] = 0,
-					["WhoHealed"] = {
-					},
-					["HealedWho"] = {
-					},
-					["CCBreak"] = 0,
-					["ElementTakenAbsorb"] = {
-					},
-					["FDamage"] = 0,
-					["EnergyGain"] = 0,
-					["ManaGained"] = {
-					},
-					["PartialAbsorb"] = {
-					},
-					["ActiveTime"] = 0,
-					["Overhealing"] = 0,
-					["TimeSpent"] = {
-					},
-					["WhoDispelled"] = {
-					},
-					["InterruptData"] = {
-					},
-					["ElementTakenResist"] = {
-					},
-					["Heals"] = {
-					},
-					["Interrupts"] = 0,
-					["EnergyGained"] = {
-					},
-					["PartialResist"] = {
-					},
-					["Healing"] = 0,
-					["OverHeals"] = {
-					},
-					["RageGained"] = {
-					},
-					["Attacks"] = {
-					},
-					["RageGain"] = 0,
-					["FDamagedWho"] = {
-					},
-					["TimeDamage"] = 0,
-					["TimeDamaging"] = {
-					},
-					["ManaGain"] = 0,
-					["DOT_Time"] = 0,
-					["DispelledWho"] = {
-					},
-				},
-				["OverallData"] = {
-					["PartialBlock"] = {
-						["Melee"] = {
-							["Details"] = {
-								["Blocked"] = {
-									["max"] = 21387,
-									["min"] = 21387,
-									["count"] = 1,
-									["amount"] = 21387,
-								},
-							},
-							["count"] = 1,
-							["amount"] = 21387,
-						},
-					},
-					["TimeSpent"] = {
-						["Pinerock Hunter"] = {
-							["Details"] = {
-								["Bite"] = {
-									["count"] = 35.74,
-								},
-								["Predatory Roar"] = {
-									["count"] = 3.5,
-								},
-								["Pounce"] = {
-									["count"] = 21,
-								},
-							},
-							["amount"] = 60.24,
-						},
-					},
-					["DamageTaken"] = 903079,
-					["PartialResist"] = {
-						["Melee"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 14,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 14,
-						},
-					},
-					["PartialAbsorb"] = {
-						["Melee"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 14,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 14,
-							["amount"] = 0,
-						},
-					},
-					["ActiveTime"] = 60.24,
-					["ElementTaken"] = {
-						["Melee"] = 903079,
-					},
-					["ElementTakenBlock"] = {
-						["Melee"] = 21387,
-					},
-					["ElementHitsTaken"] = {
-						["Melee"] = {
-							["Details"] = {
-								["Hit"] = {
-									["count"] = 12,
-								},
-								["Block"] = {
-									["count"] = 1,
-								},
-								["Crit"] = {
-									["count"] = 1,
-								},
-								["Miss"] = {
-									["count"] = 1,
-								},
-							},
-							["amount"] = 15,
-						},
-					},
-					["ElementDone"] = {
-						["Physical"] = 83859621,
-					},
-					["WhoDamaged"] = {
-						["Pinerock Hunter"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 903079,
-								},
-							},
-							["amount"] = 903079,
-						},
-					},
-					["DamagedWho"] = {
-						["Pinerock Hunter"] = {
-							["Details"] = {
-								["Bite"] = {
-									["count"] = 69682769,
-								},
-								["Predatory Roar"] = {
-									["count"] = 1867508,
-								},
-								["Pounce"] = {
-									["count"] = 12309344,
-								},
-							},
-							["amount"] = 83859621,
-						},
-					},
-					["TimeDamage"] = 60.24,
-					["TimeDamaging"] = {
-						["Pinerock Hunter"] = {
-							["Details"] = {
-								["Bite"] = {
-									["count"] = 35.74,
-								},
-								["Predatory Roar"] = {
-									["count"] = 3.5,
-								},
-								["Pounce"] = {
-									["count"] = 21,
-								},
-							},
-							["amount"] = 60.24,
-						},
-					},
-					["Damage"] = 83859621,
-					["ElementHitsDone"] = {
-						["Physical"] = {
-							["Details"] = {
-								["Hit"] = {
-									["count"] = 30,
-								},
-							},
-							["amount"] = 30,
-						},
-					},
-					["Attacks"] = {
-						["Bite"] = {
-							["Details"] = {
-								["Hit"] = {
-									["max"] = 3220176,
-									["min"] = 2819122,
-									["count"] = 23,
-									["amount"] = 69682769,
-								},
-							},
-							["count"] = 23,
-							["amount"] = 69682769,
-						},
-						["Predatory Roar"] = {
-							["Details"] = {
-								["Hit"] = {
-									["max"] = 1867508,
-									["min"] = 1867508,
-									["count"] = 1,
-									["amount"] = 1867508,
-								},
-							},
-							["count"] = 1,
-							["amount"] = 1867508,
-						},
-						["Pounce"] = {
-							["Details"] = {
-								["Hit"] = {
-									["max"] = 2097284,
-									["min"] = 1991439,
-									["count"] = 6,
-									["amount"] = 12309344,
-								},
-							},
-							["count"] = 6,
-							["amount"] = 12309344,
-						},
-					},
-				},
-			},
-			["level"] = 1,
-			["LastDamageAbility"] = "Melee",
-			["LastAbility"] = 488188.2,
 		},
 	},
 	["FightNum"] = 28,

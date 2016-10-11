@@ -11,6 +11,173 @@ RecountDB = {
 		["Nilrum - Doomhammer"] = "Nilrum - Doomhammer",
 	},
 	["profiles"] = {
+		["Tonkah LUI"] = {
+			["GraphWindowY"] = 0,
+			["MainWindow"] = {
+				["Position"] = {
+					["y"] = -413.097122192383,
+					["x"] = 853.895629882813,
+					["w"] = 196.999893188477,
+					["h"] = 245,
+				},
+				["ShowScrollbar"] = false,
+				["Buttons"] = {
+					["CloseButton"] = false,
+				},
+				["RowHeight"] = 26,
+				["BarText"] = {
+					["NumFormat"] = 3,
+					["Percent"] = false,
+				},
+			},
+			["ConfirmDeleteInstance"] = false,
+			["ReportLines"] = 4,
+			["MainWindowHeight"] = 245,
+			["SegmentBosses"] = true,
+			["Colors"] = {
+				["Other Windows"] = {
+					["Background"] = {
+						["r"] = 0,
+						["g"] = 0,
+						["b"] = 0,
+					},
+					["Title"] = {
+						["r"] = 0.298,
+						["g"] = 0.305,
+						["b"] = 0.298,
+					},
+				},
+				["Class"] = {
+					["HUNTER"] = {
+						["r"] = 0.368,
+						["g"] = 0.368,
+						["b"] = 0.368,
+					},
+					["WARRIOR"] = {
+						["r"] = 0.368,
+						["g"] = 0.368,
+						["b"] = 0.368,
+					},
+					["PALADIN"] = {
+						["r"] = 0.368,
+						["g"] = 0.368,
+						["b"] = 0.368,
+					},
+					["MAGE"] = {
+						["r"] = 0.368,
+						["g"] = 0.368,
+						["b"] = 0.368,
+					},
+					["PRIEST"] = {
+						["r"] = 0.592,
+						["g"] = 0.592,
+						["b"] = 0.592,
+					},
+					["ROGUE"] = {
+						["r"] = 0.368,
+						["g"] = 0.368,
+						["b"] = 0.368,
+					},
+					["DEATHKNIGHT"] = {
+						["r"] = 0.368,
+						["g"] = 0.368,
+						["b"] = 0.368,
+					},
+					["WARLOCK"] = {
+						["r"] = 0.368,
+						["g"] = 0.368,
+						["b"] = 0.368,
+					},
+					["PET"] = {
+						["r"] = 0.368,
+						["g"] = 0.368,
+						["b"] = 0.368,
+					},
+					["MOB"] = {
+						["r"] = 0.368,
+						["g"] = 0.368,
+						["b"] = 0.368,
+					},
+					["DRUID"] = {
+						["r"] = 0.368,
+						["g"] = 0.368,
+						["b"] = 0.368,
+					},
+					["MONK"] = {
+						["a"] = 1,
+						["b"] = 0.368,
+						["g"] = 0.368,
+						["r"] = 0.368,
+					},
+					["SHAMAN"] = {
+						["r"] = 0.368,
+						["g"] = 0.368,
+						["b"] = 0.368,
+					},
+				},
+				["Window"] = {
+					["Background"] = {
+						["a"] = 0,
+						["r"] = 0,
+						["g"] = 0,
+						["b"] = 0,
+					},
+					["Title"] = {
+						["a"] = 0,
+						["r"] = 0.133,
+						["g"] = 0.133,
+						["b"] = 0.133,
+					},
+					["Title Text"] = {
+						["a"] = 0,
+						["r"] = 0.133,
+						["g"] = 0.133,
+						["b"] = 0.133,
+					},
+				},
+				["Bar"] = {
+					["Bar Text"] = {
+						["a"] = 1,
+						["r"] = 0.776,
+						["g"] = 0.776,
+						["b"] = 0.776,
+					},
+					["Total Bar"] = {
+						["a"] = 1,
+						["r"] = 0.776,
+						["g"] = 0.776,
+						["b"] = 0.776,
+					},
+				},
+			},
+			["DetailWindowY"] = -303.171356201172,
+			["ConfirmDeleteGroup"] = false,
+			["DetailWindowX"] = 711.821533203125,
+			["GraphWindowX"] = 0,
+			["Locked"] = true,
+			["Filters"] = {
+				["Show"] = {
+					["Pet"] = true,
+					["Ungrouped"] = false,
+				},
+				["TrackDeaths"] = {
+					["Self"] = false,
+					["Pet"] = false,
+					["Boss"] = false,
+					["Grouped"] = false,
+				},
+				["Data"] = {
+					["Boss"] = false,
+					["Unknown"] = false,
+				},
+			},
+			["BarTextColorSwap"] = false,
+			["BarTexture"] = "Minimalist",
+			["ConfirmDeleteRaid"] = false,
+			["CurDataSet"] = "OverallData",
+			["LastInstanceName"] = "Alterac Valley",
+			["MainWindowWidth"] = 197,
+		},
 		["Marmit - Doomhammer"] = {
 			["GraphWindowY"] = 0,
 			["MainWindow"] = {
@@ -607,173 +774,6 @@ RecountDB = {
 				},
 			},
 			["CurDataSet"] = "OverallData",
-		},
-		["Tonkah LUI"] = {
-			["GraphWindowY"] = 0,
-			["MainWindow"] = {
-				["Position"] = {
-					["y"] = -413.097122192383,
-					["x"] = 853.895690917969,
-					["w"] = 197.000045776367,
-					["h"] = 245,
-				},
-				["ShowScrollbar"] = false,
-				["Buttons"] = {
-					["CloseButton"] = false,
-				},
-				["RowHeight"] = 26,
-				["BarText"] = {
-					["NumFormat"] = 3,
-					["Percent"] = false,
-				},
-			},
-			["ConfirmDeleteInstance"] = false,
-			["ReportLines"] = 4,
-			["MainWindowHeight"] = 245,
-			["SegmentBosses"] = true,
-			["Colors"] = {
-				["Other Windows"] = {
-					["Background"] = {
-						["r"] = 0,
-						["g"] = 0,
-						["b"] = 0,
-					},
-					["Title"] = {
-						["r"] = 0.298,
-						["g"] = 0.305,
-						["b"] = 0.298,
-					},
-				},
-				["Class"] = {
-					["HUNTER"] = {
-						["r"] = 0.368,
-						["g"] = 0.368,
-						["b"] = 0.368,
-					},
-					["WARRIOR"] = {
-						["r"] = 0.368,
-						["g"] = 0.368,
-						["b"] = 0.368,
-					},
-					["PALADIN"] = {
-						["r"] = 0.368,
-						["g"] = 0.368,
-						["b"] = 0.368,
-					},
-					["MAGE"] = {
-						["r"] = 0.368,
-						["g"] = 0.368,
-						["b"] = 0.368,
-					},
-					["PRIEST"] = {
-						["r"] = 0.592,
-						["g"] = 0.592,
-						["b"] = 0.592,
-					},
-					["ROGUE"] = {
-						["r"] = 0.368,
-						["g"] = 0.368,
-						["b"] = 0.368,
-					},
-					["DEATHKNIGHT"] = {
-						["r"] = 0.368,
-						["g"] = 0.368,
-						["b"] = 0.368,
-					},
-					["WARLOCK"] = {
-						["r"] = 0.368,
-						["g"] = 0.368,
-						["b"] = 0.368,
-					},
-					["PET"] = {
-						["r"] = 0.368,
-						["g"] = 0.368,
-						["b"] = 0.368,
-					},
-					["MOB"] = {
-						["r"] = 0.368,
-						["g"] = 0.368,
-						["b"] = 0.368,
-					},
-					["DRUID"] = {
-						["r"] = 0.368,
-						["g"] = 0.368,
-						["b"] = 0.368,
-					},
-					["MONK"] = {
-						["a"] = 1,
-						["b"] = 0.368,
-						["g"] = 0.368,
-						["r"] = 0.368,
-					},
-					["SHAMAN"] = {
-						["r"] = 0.368,
-						["g"] = 0.368,
-						["b"] = 0.368,
-					},
-				},
-				["Window"] = {
-					["Background"] = {
-						["a"] = 0,
-						["r"] = 0,
-						["g"] = 0,
-						["b"] = 0,
-					},
-					["Title"] = {
-						["a"] = 0,
-						["r"] = 0.133,
-						["g"] = 0.133,
-						["b"] = 0.133,
-					},
-					["Title Text"] = {
-						["a"] = 0,
-						["r"] = 0.133,
-						["g"] = 0.133,
-						["b"] = 0.133,
-					},
-				},
-				["Bar"] = {
-					["Bar Text"] = {
-						["a"] = 1,
-						["r"] = 0.776,
-						["g"] = 0.776,
-						["b"] = 0.776,
-					},
-					["Total Bar"] = {
-						["a"] = 1,
-						["r"] = 0.776,
-						["g"] = 0.776,
-						["b"] = 0.776,
-					},
-				},
-			},
-			["DetailWindowY"] = -303.171356201172,
-			["ConfirmDeleteGroup"] = false,
-			["DetailWindowX"] = 711.821533203125,
-			["GraphWindowX"] = 0,
-			["Locked"] = true,
-			["Filters"] = {
-				["Show"] = {
-					["Pet"] = true,
-					["Ungrouped"] = false,
-				},
-				["TrackDeaths"] = {
-					["Self"] = false,
-					["Pet"] = false,
-					["Boss"] = false,
-					["Grouped"] = false,
-				},
-				["Data"] = {
-					["Boss"] = false,
-					["Unknown"] = false,
-				},
-			},
-			["BarTextColorSwap"] = false,
-			["BarTexture"] = "Minimalist",
-			["ConfirmDeleteRaid"] = false,
-			["CurDataSet"] = "OverallData",
-			["LastInstanceName"] = "Alterac Valley",
-			["MainWindowWidth"] = 197,
 		},
 		["Taose - Doomhammer"] = {
 			["MainWindow"] = {
