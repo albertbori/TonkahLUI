@@ -15,17 +15,22 @@ Master branch is 1920x1080 by default. Due to some addons not fully supporting p
 
 1. Download source
 1. Open terminal and navigate to extracted source folder
-1. Run `sh install-mac.sh` (Contributors: pass `-link` param to this script after forking and cloning to create symlinks)
+1. Run `sh install-mac.sh` and then follow instructions.
 1. Launch WoW and configure each addon to use (or copy from) the `Taunkah LUI` profile
 1. Tweak further as you see fit
 
 #### Windows
 
-(Installer coming soon™)
-
-1. Backup your WoW `Interface` and `WTF` folders
-1. Copy the Interface folder over your existing Interface folder
-1. Copy `WTF\Account\[ACCOUNTNAME]\[SERVERNAME]\[CHARACTERNAME]\ServerVariables` folder over your existing appropriate folder
-1. Copy `WTF\Account\[ACCOUNTNAME]\ServerVariables` folder over your existing appropriate folder
+1. Download source
+1. Right-click `install-windows.bat` and select "Run as Administrator" and then follow instructions.
 1. Launch WoW and configure each addon to use (or copy from) the `Taunkah LUI` profile
 1. Tweak further as you see fit
+
+#### Contributors
+
+Your installation instructions will be pretty much the same except that you'll want to fork/clone instead of just download. Then, you should have the installer create symlinks instead of copying the addons and profiles into your WoW folder. This can be accomplished by:
+
+- **Mac:** Pass `-link` parameter when installing.
+- **Windows:** Instead of running the batch file, run powershell as adminstrator, then run `install-windows.ps1 -link`.
+
+Once the symlinks are created, you'll be able to easily use git to create branches, try new UI configs, screen resolutions, profile-sets, etc.
