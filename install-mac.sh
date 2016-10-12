@@ -60,7 +60,7 @@ function install {
         read -p "Installing to WoW folder located at: '$TARGET_DIRECTORY'. Is this correct? y/n: " yn
         case $yn in
             [Yy]* ) break;;
-            [Nn]* ) promptDirectory;; return;;
+            [Nn]* ) promptDirectory; return;;
             * ) echo "Please answer yes or no.";;
         esac
     done
