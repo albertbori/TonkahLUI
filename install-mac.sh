@@ -4,14 +4,14 @@ SCRIPT_DIRECTORY="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 DEFAULT_DIRECTORY="/Applications/World of Warcraft"
 USE_SYMLINKS=false
 
-if [ ! -z "$0" ] && [[ "$TARGET_DIRECTORY" =~ "World of Warcraft$" ]] && [ -d "$TARGET_DIRECTORY" ] ; then
+if [ ! -z "$0" ] && [[ "$0" =~ "World of Warcraft$" ]] && [ -d "$0" ] ; then
     TARGET_DIRECTORY="$0"
 elif [ -d "$DEFAULT_DIRECTORY" ]; then
     TARGET_DIRECTORY="$DEFAULT_DIRECTORY"
 fi
 
 if [[ "$@" == "-link" ]] ; then
-    echo "Symlink mode enabled..."
+    echo "Symlink mode enabled. Symlinks will be created to the source folder instead of copying files to the World of Warcraft install directory."
     USE_SYMLINKS=true
 fi
 
@@ -31,7 +31,7 @@ function verifyInfo {
         read yn
         case $yn in
             [Yy]* ) checkDirectory; break;;
-            [Nn]* ) promptDirectory;;
+            [Nn]* ) promptInfo;;
             * ) echo "Please answer yes or no.";;
         esac
     done
@@ -60,7 +60,7 @@ function install {
         read -p "Installing to WoW folder located at: '$TARGET_DIRECTORY'. Is this correct? y/n: " yn
         case $yn in
             [Yy]* ) break;;
-            [Nn]* ) promptDirectory;;
+            [Nn]* ) promptDirectory;; return;;
             * ) echo "Please answer yes or no.";;
         esac
     done
@@ -87,18 +87,16 @@ function install {
         echo "Setting up profiles symlink..."
         rm -rf "$TARGET_DIRECTORY/WTF"
         mkdir -p "$TARGET_DIRECTORY/WTF/Account/$ACCOUNT_NAME/$SERVER_NAME/$CHARACTER_NAME"
-        ln -s "$SCRIPT_DIRECTORY/WTF/Account/[ACCOUNTNAME]/[SERVERNAME]/[CHARACTERNAME]/SavedVariables" "$TARGET_DIRECTORY/WTF/Account/$ACCOUNT_NAME/$SERVER_NAME/$CHARACTER_NAME/SavedVariables"
-        mkdir -p "$TARGET_DIRECTORY/WTF/Account/$ACCOUNT_NAME"
-        ln -s "$SCRIPT_DIRECTORY/WTF/Account/[ACCOUNTNAME]/SavedVariables" "$TARGET_DIRECTORY/WTF/Account/$ACCOUNT_NAME/SavedVariables" 
+        ln -s "$SCRIPT_DIRECTORY/WTF/Account/ACCOUNTNAME/SERVERNAME/CHARACTERNAME/SavedVariables" "$TARGET_DIRECTORY/WTF/Account/$ACCOUNT_NAME/$SERVER_NAME/$CHARACTER_NAME/SavedVariables"
+        ln -s "$SCRIPT_DIRECTORY/WTF/Account/ACCOUNTNAME/SavedVariables" "$TARGET_DIRECTORY/WTF/Account/$ACCOUNT_NAME/SavedVariables" 
     else
         echo "Installing addons..."
         cp -rf "$SCRIPT_DIRECTORY/Interface" "$TARGET_DIRECTORY/Interface"
         
         echo "Installing profiles..."
         mkdir -p "$TARGET_DIRECTORY/WTF/Account/$ACCOUNT_NAME/$SERVER_NAME/$CHARACTER_NAME"
-        cp -rf "$SCRIPT_DIRECTORY/WTF/Account/[ACCOUNTNAME]/[SERVERNAME]/[CHARACTERNAME]/SavedVariables" "$TARGET_DIRECTORY/WTF/Account/$ACCOUNT_NAME/$SERVER_NAME/$CHARACTER_NAME/SavedVariables"
-        mkdir -p "$TARGET_DIRECTORY/WTF/Account/$ACCOUNT_NAME"
-        cp -rf "$SCRIPT_DIRECTORY/WTF/Account/[ACCOUNTNAME]/SavedVariables" "$TARGET_DIRECTORY/WTF/Account/$ACCOUNT_NAME/SavedVariables"        
+        cp -rf "$SCRIPT_DIRECTORY/WTF/Account/ACCOUNTNAME/SERVERNAME/CHARACTERNAME/SavedVariables" "$TARGET_DIRECTORY/WTF/Account/$ACCOUNT_NAME/$SERVER_NAME/$CHARACTER_NAME/SavedVariables"
+        cp -rf "$SCRIPT_DIRECTORY/WTF/Account/ACCOUNTNAME/SavedVariables" "$TARGET_DIRECTORY/WTF/Account/$ACCOUNT_NAME/SavedVariables"        
     fi
 
     echo "Installation complete."
