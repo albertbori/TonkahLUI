@@ -1,5 +1,0 @@
-
-LUICONFIG = {
-	["Versions"] = {
-	},
-}
