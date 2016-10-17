@@ -327,13 +327,13 @@ Para más información sobre como personalizar Pawn, por favor lee el archivo (R
 	},
 	UI = {
 		AboutHeader = "Acerca de Pawn",
+		AboutMrRobot = "Default stat weights are provided by the generous Mr. Robot.  They’re a great starting point for characters with typical talents and artifact traits in typical fights.  You can get more accurate, customized stat weights for your character using the Ask Mr. Robot simulator at askmrrobot.com.", -- Requires localization
 		AboutReadme = "Nuevo en Pawn? Mira la pestaña de primeros pasos para una introducción básica.",
 		AboutTab = "Acerca de",
 		AboutTranslation = "Traducción al Castellano por Minimoncho y Grimngor",
 		AboutVersion = "Versión %s",
-		AboutWebsite = [=[Para otros addons de Vger, visita vgermods.com. 
-
-Valores de atributos de Wowhead usados con permiso—porfavor dirigir el feedback sobre los valores por defecto de las escalas a Wowhead.]=],
+		AboutWebsite = "Para otros addons de Vger, visita vgermods.com.", -- Needs review
+		AskMrRobotProvider = "Ask Mr. Robot scales", -- Requires localization
 		CompareClearItems = "Limpiar",
 		CompareClearItemsTooltip = "Quitar ambos objetos de la comparación.",
 		CompareColoredSockets = "Ranuras de color",
@@ -384,7 +384,7 @@ Pawn viene con escalas pre-fabricadas para cada clase y especialización.  Tambi
  • Haz click-derecho en la ventana de link al chat de un objeto para ver la comparación con tu objeto actual. 
  • Haz una copia de una de tus escalas en la pestaña de Escalas, y personaliza los valores de los atributos en la pesaña de Valores. 
  • Busca más escalas para tu clase en internet. 
- • Echa un vistazo al archivo leeme para aprender más acerca de las características avanzadas de Pawn.]=],
+ • Echa un vistazo al archivo leeme para aprender más acerca de las características avanzadas de Pawn.]=], -- Needs review
 		InterfaceOptionsBody = "Haz click en el botón de Pawn para ir allí.  También puedes abrir Pawn desde tu ventana de personaje, o estableciendo un atajo de teclado a Pawn.",
 		InterfaceOptionsWelcome = "Las opciones de Pawn se encuentran en la IU de Pawn.",
 		InventoryButtonTooltip = "Haz click para abrir Pawn.",
@@ -395,6 +395,12 @@ Pawn viene con escalas pre-fabricadas para cada clase y especialización.  Tambi
 		OptionsAdvisorHeader = "Opciones del consejero",
 		OptionsAlignRight = "Alinea los valores al lado derecho del tooltip",
 		OptionsAlignRightTooltip = "Activa ésta opción para alinear tus valores de Pawn y la información de mejora al lado derecho del tooltip en vez de al izquierdo.",
+		OptionsBagUpgradeAdvisor = "Show bag upgrade advisor",
+		OptionsBagUpgradeAdvisorTooltip = [=[Enable this option to have Pawn take over the in-bag upgrade arrows.
+
+If checked, Pawn will find upgrades in your bags and mark items that are an upgrade for any of your active scales with green arrows. 
+
+If unchecked, WoW will mark items with a higher item level than what you're currently wearing, and Pawn will not interfere with the built-in feature.]=],
 		OptionsBlankLine = "Añade una línea en blanco antes de los valores",
 		OptionsBlankLineTooltip = "Mantén tus tooltips de objetos super ordenados activando ésta opción, que añade una línea en blanco antes de los valores de Pawn.",
 		OptionsButtonHidden = "Esconder",
@@ -431,7 +437,7 @@ Si está deseleccionado, Pawn calculará valores para objetos como si tuvieran l
 Si esta marcado, Pawn tratará los objetos mejorables como son actualmente y no asumirá que usarás Valor y Fragmentos Apexis Mejorados para mejorar el objeto al determinar si el objeto es mejor que el que tienes actualmente.
 
 Si no esta marcado, Pawn tratará esos objetos asumiendo que maximizaras su potencial con Valor y Fragmentos Apexis Mejorados. Esto podría causar que un objeto torvo de nivel 650 apareciera como una mejora notable respecto a un objeto nivel 670 de Fundición Rocanegra, ya que el objeto torvo podría mejorarse potencialmente hasta el nivel 705 a través de Valor y Apexis.]=], -- Needs review
-		OptionsInventoryIcon = "Mostrar iconos de inventario",
+		OptionsInventoryIcon = "Mostrar iconos de inventario", -- Needs review
 		OptionsInventoryIconTooltip = "Habilita ésta opción para mostrar el incono de los objetos enlazados en el chat.",
 		OptionsItemIDs = "Mostrar IDs de objetos",
 		OptionsItemIDsTooltip = [=[Habilita ésta opción para uqe Pawn muestre los números de ID de todos los objetos que encuentres, asi como las IDs de todos los encantamientos y gemas. 
@@ -525,12 +531,13 @@ Atajo: Shift+click en una escala]=],
 		SocketingAdvisorButtonTooltip = "Haz click para abrir la pestaña de Gemas de Pawn, en la que podrás ver más información sobre las gemas que Pawn recomienda.",
 		SocketingAdvisorHeader = "El asesor de ranuras de Pawn sugiere:",
 		SocketingAdvisorIgnoreThisItem = "No merece la pena añadir gemas a éste objeto de bajo nivel.  Pero si lo haces, usa éstas:",
+		StarterProvider = "Escalas por defecto", -- Needs review
 		ValuesDoNotShowUpgradesFor1H = "No mostrar mejoras para objectos de Una Mano",
 		ValuesDoNotShowUpgradesFor2H = "No mostrar mejoras para objetos de Dos Manos",
 		ValuesDoNotShowUpgradesTooltip = "Habilita ésta opción para no mostrar las mejoras de este tipo de objeto.  Por ejemplo, aunque los tanques paladín pueden usar armas de dos manos, un arma de dos manos nunca en una \"mejora\" para un set de paladín tanque, de forma que Pawn no debería mostrar notificaciones de mejora para esas armas.  De forma similar, los paladines reprensión pueden usar armas de una mano, pero éstas nunca son mejoras.",
 		ValuesFollowSpecialization = "Sólo mostrar mejoras para mi especialización de armadura tras el nivel 50",
 		ValuesFollowSpecializationTooltip = "Habilita ésta opción para no mostrar mejoras para armaduras que no se corresponden con la especialización de tu clase tras el nivel 50.  Por ejemplo. al nivel 50 los paladines sagrados aprenden Especialización en Placas, que incrementa su intelecto un 5% cuando equipan sólo armaduras de placas.  Cuando se elige ésta opción Pawn nunca considerará tela, cuero o malla como mejoras para paladines sagrados de nivel 50 o más.",
-		ValuesHeader = "Valores de escala para %s",
+		ValuesHeader = "Valores de escala para %s", -- Needs review
 		ValuesIgnoreStat = "Los objetos con éste atributo son inutilizables",
 		ValuesIgnoreStatTooltip = "Habilita ésta opción para que cualquier objeto con éste atributo no tenga un valor para ésta escala.  Por ejemplo, los chamanes no pueden equipar placas, asi que en una escala diseñada para un chaman se podría marcar placas como inutilizable de forma que las armaduras de placas no reciban un valor para esa escala.",
 		ValuesNormalize = "Normalizar valores (como en Wowhead)",
@@ -539,14 +546,10 @@ Atajo: Shift+click en una escala]=],
 Para más información sobre éstas opciones, consulta el archivo leeme.]=],
 		ValuesRemove = "Borrar",
 		ValuesRemoveTooltip = "Borra éste atributo de la escala.",
-		ValuesTab = "Valores",
-		ValuesWelcome = "Puedes personalizar los valores asignados a cada atributo para ésta escala. Para administrar tus escalas o añadir nuevas escalas, usa la pestaña de Escala.",
+		ValuesTab = "Valores", -- Needs review
+		ValuesWelcome = "Puedes personalizar los valores asignados a cada atributo para ésta escala. Para administrar tus escalas o añadir nuevas escalas, usa la pestaña de Escala.", -- Needs review
 		ValuesWelcomeNoScales = "No has seleccionado ninguna escala.  Para comenzar, ve a la pestaña de Escala y crea una nueva escala o cópiala de internet.",
-		ValuesWelcomeReadOnly = "La escala que has seleccionado no se puede modificar.  Para cambiar estos valores, ve a la pestaña de Escala y haz una copia de ésta escala o crea una escala nueva.",
-	},
-	Wowhead = {
-		Provider = "Escalas Wowhead",
-		ProviderStarter = "Escalas por defecto",
+		ValuesWelcomeReadOnly = "La escala que has seleccionado no se puede modificar.  Para cambiar estos valores, ve a la pestaña de Escala y haz una copia de ésta escala o crea una escala nueva.", -- Needs review
 	},
 }
 end 

@@ -3,6 +3,11 @@
 <head>
 <title>Pawn</title>
 <link rel="stylesheet" type="text/css" href="VgerCore/VgerCore.css" />
+<style type="text/css">
+.auto-style1 {
+	text-decoration: underline;
+}
+</style>
 </head>
 <body>
 
@@ -142,7 +147,7 @@ every stat.</p>
 <p>So, let&#39;s make some changes.&nbsp; Let&#39;s start with a new default scale 
 and delete the stats that we don&#39;t care 
 about.&nbsp; Go to the <strong>Scale </strong>tab and click <strong>Empty</strong> 
-and give it a name to create a new one.&nbsp; Now you&#39;re on the <strong>Values</strong> 
+and give it a name to create a new one.&nbsp; Now you&#39;re on the <b>Weights</b> 
 tab and can customize the numbers.&nbsp; If you&#39;re a melee class, you can get rid of intellect and spirit.&nbsp; 
 To do this, click on Intellect in the list on the left (it&#39;s near the top).&nbsp; 
 When you click on a stat, you see a little description about the stat to the 
@@ -376,19 +381,13 @@ numbers in the tens.</p>
 		Crit = 1 ), then Wowhead would divide the item&#39;s total value by 4.&nbsp; 
 		An item with 10 Stamina, 10 Intellect, and 20 Crit would have a value 
 		of 50 with this option off, and 12.5 with this option on.</p>
-<h3>Special effects ◊</h3>
-<p>It&#39;s normal for certain special item effects to be listed with a ◊ 
-(diamond) icon.&nbsp; 
-You need to decide how important that effect is to you yourself.&nbsp; For 
-example, Pawn doesn&#39;t have a value for &quot;Equip: Increases the effect that healing 
-and mana potions have on the wearer by 40%&quot; because only a few items do that.&nbsp; 
-You&#39;ll need to decide how to adjust that item&#39;s value yourself, based on how 
-much benefit you receive from that special effect.</p>
-<h4>Set bonuses</h4>
-<p>Set bonuses are completely ignored by Pawn, and they won't get the special 
-effect icon.  You'll need
-to take them into account when deciding between an item that would give you a set bonus
-and an item that would not.</p>
+<h3>Special effects and set bonuses</h3>
+<p>Pawn doesn&#39;t have a value, for example, for "Equip: Increases the effect 
+that healing and mana potions have on the wearer by 40%" because only a few 
+items do that.&nbsp; Also, set bonuses are completely ignored by Pawn.&nbsp;  You'll need
+to take those special effects into account manually when deciding between an item that would give you a 
+bonus and an item that would not, as they won't be factored into the upgrade % 
+numbers shown by Pawn.</p>
 	<h2>Mod support</h2>
 <p>Have a favorite mod that doesn&#39;t seem to work with Pawn?&nbsp; Let me know.&nbsp; 
 I may not be able to add support for your favorite, but I might be able to 
@@ -429,19 +428,21 @@ and Pawn.</p>
 	<li>tekKompare</li>
 	<li>TipTac (*reported to no longer work November 2014)</li>
 </ul>
-<h3>Incompatible addons</h3>
+<h3><span class="auto-style1">In</span>compatible addons</h3>
 <ul>
-	<li>FreeUI (and maybe ElvUI?) (prevents Pawn from reading certain stats on 
-	tooltips)<ul>
+	<li>FreeUI<ul>
 		<li>(FreeUI changes a bunch of text on tooltips that makes it impossible 
 		for Pawn to read some stats off of them anymore.&nbsp; For example, it 
 		redefines ITEM_MOD_CRIT_RATING so that what would normally be "+25 
 		Critical Strike" shows up as "Crit +25".)</li>
 	</ul>
 	</li>
-	<li>Undermine Journal (may prevent you from selecting scales in the Pawn UI)</li>
+	<li>Undermine Journal<ul>
+		<li>May prevent you from selecting scales in the Pawn UI.</li>
+	</ul>
+	</li>
 </ul>
-<h2>Known issues</h2>
+<h2>Top known issues</h2>
 <ul>
 	<li>Pawn is currently saving too much information about the built-in scales 
 	in your SavedVariables, like names, spec IDs, and so on.&nbsp; That stuff 
@@ -455,16 +456,13 @@ and Pawn.</p>
 </ul>
 <h3>Features I might add soon</h3>
 <ul>
-	<li>I should add a feature to the Values tab to import Ask Mr. Robot stat 
-	weights.&nbsp; (They can be exported from the AMR character page: click the 
-	green arrow button, then Best in Slot, then Edit Weights, then Share.)<ul>
-		<li>Import from SimulationCraft shouldn't be too hard either.</li>
-		<li>First, I'll probably add a way to merge an imported scale with the 
+	<li>I plan to add a way to merge an imported scale with the 
 		Pawn template, to get things like weapon types added to the scale 
 		automatically.&nbsp; (Maybe "Class=SHAMAN, Spec=1" can be added to the 
 		import string?)</li>
-	</ul>
-	</li>
+	<li>A way to choose a spec icon to show on your item tooltips for custom 
+	scales.&nbsp; (Informal polling suggests that no one wants the ability to 
+	use a totally custom icon.)</li>
 	<li>I've gotten a bunch of feedback on the way that Pawn makes assumptions 
 	about gems today.&nbsp; I may replace the existing low-level gems option with two 
 	new ones: "assume I won't use gems on anything below this level" (currently 
@@ -477,176 +475,75 @@ and Pawn.</p>
 	would get you.&nbsp; (That wouldn't integrate with your scales in any way, 
 	and Pawn doesn't normally do much of anything with item level, but it does 
 	seem potentially handy.)</li>
+	<li>In addition to upgrades, show "minor upgrade" (&lt;1%), "identical" (0%), 
+	"X% downgrade" (&gt;-20%).&nbsp; Probably don't ever show anything on grey or 
+	white items.&nbsp; Maybe add an option to show downgrades as low as -99%.</li>
+	<li>A way to detect if you're using FreeUI, and show a message warning you 
+	that Pawn is incompatible if you are.</li>
 </ul>
 <h2>Updates</h2>
-<h3>Version 2.0.14</h3>
+<h3>Version 2.1.1</h3>
 <ul>
-	<li>The previous version of Pawn fixed Latin American Spanish while breaking 
-	European Spanish.&nbsp; This version should hopefully work for both.&nbsp; 
-	(There's a new difference in the way that numbers are displayed between the 
-	two versions of WoW that I wasn't aware of previously.&nbsp; Sorry!)</li>
-</ul>
-<h3>Version 2.0.13</h3>
-<ul>
-	<li>Hopefully fixed a problem when Pawn is used in Spanish where stats 1,000 
-	and up would be massively undervalued.</li>
-	<li>When choosing between relics as quest rewards, Pawn's Quest Upgrade 
-	Advisor will now show the same (?) icon that it does for trinkets, instead 
-	of showing you which one to choose to vendor.</li>
-</ul>
-<h3>Version 2.0.12</h3>
-<ul>
-	<li>Pawn's Quest Upgrade Advisor will now also help you identify upgrades 
-	rewarded by world quests.</li>
-</ul>
-<h3>Version 2.0.11</h3>
-<ul>
-	<li>Updated the values of Broken Isles gems again after the recent hotfix.&nbsp;
-	<i>FFS, Blizzard.</i></li>
-</ul>
-<h3>Version 2.0.10</h3>
-<ul>
-	<li>The "ignore gems while leveling" feature will now ignore sockets on 
-	items below ilvl 800.</li>
-	<li>Made a small tweak to work around a problem that was reported where an 
-	error occurred when trying to sell a battle pet.</li>
-</ul>
-<h3>Version 2.0.9</h3>
-<ul>
-	<li>Updated the values of Broken Isles gems.&nbsp; Pawn will no longer 
-	vastly overvalue sockets on Broken Isles gear.</li>
-</ul>
-<h3>Version 2.0.8</h3>
-<ul>
-	<li>Fixes to the French translation.</li>
-</ul>
-<h3>Version 2.0.7</h3>
-<ul>
-	<li>Fixed a problem that could occur on some new items where Pawn would 
-	display an error message about not expecting an item with 5 bonus IDs.</li>
-	<li>Minor update to the Simplified Chinese translation.</li>
-</ul>
-<h3>Version 2.0.6</h3>
-<ul>
-	<li>Fixed a problem where one-handed weapons could show up as huge upgrades 
-	for characters who can't dual-wield.&nbsp; (They were being compared against 
-	the character's off-hand frill item or shield.)</li>
-	<li>Updated Korean translation.</li>
-</ul>
-<h3>Version 2.0.5</h3>
-<ul>
-	<li>Pawn will now show "your best" and "your second best" on tooltips of 
-	equipped rings and dual-wielded weapons when using the default settings.</li>
-	<li>When the item on the left side of the Compare tab is better, its upgrade 
-	arrow will now be green like all other upgrade arrows in Pawn.</li>
-</ul>
-<h3>Version 2.0.4</h3>
-<ul>
-	<li>By popular demand, the Ignore Valor and Baleful Upgrades option has 
-	returned.&nbsp; It's on by default, but you can turn it off to better 
-	compare new gear.<ul>
-		<li>I'll wait to remove this option until Legion actually launches.</li>
-	</ul>
-	</li>
-	<li>A few more translation updates for Russian.</li>
-</ul>
-<h3>Version 2.0.3</h3>
-<ul>
-	<li>Made a hopefully-better fix for the problems on the Russian version of 
-	WoW.</li>
-	<li>Updated translation for Russian.</li>
-</ul>
-<h3>Version 2.0.2</h3>
-<ul>
-	<li>Fixed a bug where one-handed weapons would appear to be upgrades for 
-	dual-wielding characters far too often.</li>
-	<li>Hopefully fixed a problem where numbers 1,000 and up were being 
-	calculated incorrectly in the Russian version of WoW.</li>
-	<li>Updated translations for Italian, Korean, Portuguese, Russian, Spanish, 
-	Simplified Chinese, and Traditional Chinese.</li>
-</ul>
-<h3>Version 2.0.1</h3>
-<ul>
-	<li>Adjusted the value of gems to account for a difference in the values of 
-	Draenor gems on the live version of the patch versus what they had on beta.</li>
-	<li>Increased the item level threshold at which Pawn will start suggesting 
-	that you use Legion gems so that you shouldn't see that happen on your 
-	Mythic Hellfire Citadel gear.&nbsp; <i>(Looks at own gear and weeps softly)</i></li>
-	<li>Updated translations for Spanish and Italian.</li>
-</ul>
-<h3>Version 2.0</h3>
-<p>Pawn 2.0 only works on World of Warcraft 7.0, the Legion prepatch.</p>
-<h4>New features and big changes</h4>
-<ul>
-	<li>By default, Pawn will now automatically make suggestions based on your 
-	current spec and nothing else, and it will automatically switch its 
-	suggestions whenever you change specs.&nbsp; If you prefer to show multiple 
-	specs on your tooltips and customize them, just go to the Scale tab and 
-	switch to Manual.</li>
-	<li>To keep things simple, when deciding whether a new item is an upgrade, 
-	Pawn will now just compare it against what you currently have equipped.&nbsp; 
-	This should be more straightforward now that gear works for all specs, and 
-	better mimics the way that other RPGs with similar features (like Diablo) 
-	work.&nbsp; You can return to the previous Pawn behavior if you prefer by 
-	switching to Manual mode on the Scale tab, and then checking "track for each 
-	scale" on the Options tab.</li>
-	<li>All of the built-in scales have been rebuilt from scratch.&nbsp; For 
-	now, the stat values are simplified and are not coming from Wowhead, but I 
-	expect to resume getting expert advice from them in the coming weeks.<ul>
-		<li>Please report any bugs you find with incorrect item types marked as 
-		not being usable, and so on!</li>
+	<li>Pawn will now take over the new WoW 7.1 feature that puts green arrows 
+	on items in your bags.&nbsp; Normally the feature shows you items that are a 
+	higher item level than what you have equipped.&nbsp; Pawn will change the 
+	feature so that it shows items that are an upgrade to your 
+	currently-equipped gear for any of your active scales.&nbsp; (For example, 
+	if you're in the default Automatic mode, it'll put upgrade arrows next to 
+	items that are better for your current spec, but not for other specs.)<ul>
+		<li>This feature has no effect on the WoW 7.0 live realms.</li>
+		<li>If you don't like this, and would rather go back to the old 
+		behavior, uncheck "Show bag upgrade advisor" on Pawn's Options tab.</li>
 	</ul>
 	</li>
 </ul>
-<h4>Other less exciting stuff</h4>
+<h4>Developer features</h4>
+<p>These features are primarily useful for people developing guides and 
+simulators.</p>
 <ul>
-	<li>This version now supports all of the languages that Pawn 1.9 
-	supported—special thanks to the Pawn translation volunteers!<ul>
-		<li>Not all 
-	translations are complete yet, but if you do notice something completely 
-	broken, please let me know what, and which language.</li>
+	<li>Pawn scale tags, used with the Import and Export feature on the Scale 
+	tab, can now specify a class and spec, such as "Class=Mage, Spec=1".&nbsp;
+	<ul>
+		<li>The spec number in the scale tag is the order in which it displays 
+		in the UI.&nbsp; (That spec number is also used internally by the game 
+		in a variety of situations.)&nbsp; For example, the specs appear as 
+		Arcane, Fire, Frost in the Mage UI, so Arcane is 1, Fire is 2, and Frost 
+		is 3.</li>
+		<li>When class and spec are included in a scale tag, Pawn will 
+		automatically add the appropriate list of unusable item types to the 
+		scale without having to painstakingly list them all out in the scale tag 
+		(IsPolearm = -10000000, etc.).</li>
+		<li>When scales that have a class and spec associated with them are 
+		exported, the resulting scale tag will be smaller than in previous 
+		versions.&nbsp; Importing those scales into old versions of Pawn will 
+		mostly work okay, but old versions of Pawn will ignore Class and Spec, 
+		so there will be subtle differences.</li>
 	</ul>
 	</li>
-	<li>The Pawn UI visuals have now been slightly tainted by the Fel.</li>
-	<li>Pawn will now show spec icons on your tooltips (only for default 
-	scales), which should make them easier to find and tell apart.&nbsp; You can 
-	turn this off on the Options tab.</li>
-	<li>Built-in scales that are designed for only your current class will no 
-	longer show the class name on item tooltips.&nbsp; For example, "Havoc: +14% 
-	upgrade" instead of "Demon Hunter: Havoc: +14% upgrade".</li>
-	<li>Pawn's gem database has been fully updated to account for the stat 
-	changes in patch 7.0.</li>
-	<li>To keep the suggestions manageable, Pawn will no longer consider 
-	multi-stat (green, orange, or purple) gems on low-level items.</li>
-	<li>The Gems tab has been simplified, and will no longer show each gem three 
-	times (under red, yellow, and blue gems).</li>
-	<li>The "Defaults" button on the Scale tab has been removed.&nbsp; A new 
-	"Template" button has been added, which creates a more useful scale to start 
-	from for your current spec.</li>
-	<li>Pawn's Socketing Advisor now gives a full list of gems when you have 
-	Automatic mode enabled (which is the default).</li>
-	<li>Pawn's features for assuming that you'll use Valor and Baleful tokens to 
-	upgrade your items have been removed.</li>
-	<li>Removed support for Bonus Armor, Spirit, Multistrike, Spell Power, and 
-	colored sockets, as those stats have been removed from the game.</li>
-	<li>Removed support for meta sockets, PvP Resilience, and PvP Power, as 
-	those stats are not relevant on any current gear (though they do still exist 
-	in-game, such as on the Dreadful Gladiator sets).</li>
-	<li>Dodge and Parry on low-level items and tank heirlooms will now be 
-	interpreted as if it were Stamina.</li>
-	<li>Attack Power on low-level items will now be interpreted as if it were 
-	Strength or Agility, whichever your scale values most.</li>
-	<li>I expect that for most players, Pawn's memory usage will decline 
-	significantly.</li>
 </ul>
-<h4>Bug fixes and minor tweaks for 7.0</h4>
+<h3>Version 2.1</h3>
 <ul>
-	<li>I improved the "getting started" text that probably nobody reads.&nbsp; 
-	Now it'll take even less time for people to not read it.</li>
-	<li>The Pawn UI now opens to the Compare tab by default (except the first 
-	time you open it).</li>
-	<li>Fixed a rare division by zero error that could occur when wearing 
-	cosmetic armor with no stats.</li>
+	<li>Pawn's default stat weights now come from Ask Mr. Robot!&nbsp; The 
+	existing Wowhead placeholder scales have been removed, and the Ask Mr. Robot 
+	scales work automatically in the same was as the previous placeholders, but 
+	now have more appropriate and helpful advice for each specialization.<ul>
+		<li>If you'd like advice for more than one spec at once, switch to 
+		Manual mode on the Scales tab, and then you can show and hide additional 
+		scales from there.</li>
+		<li>You may notice that items in your bags or bank that weren't upgrades 
+		before version 2.1 are now showing up as upgrades—that's to be expected, 
+		as some of the new stat weights in this version are vastly different 
+		than before.</li>
+	</ul>
+	</li>
+	<li>In the English version, the Values tab has been renamed to Weights, to 
+	better match the generally accepted terminology.</li>
+	<li>The item level display on the Compare tab will no longer show the 
+	difference between the two levels ("+15" etc.).&nbsp; I'm hoping that this 
+	makes it clearer that the item level isn't used in calculations.</li>
+	<li>Pawn will no longer add orange diamonds to special effects that it 
+	doesn't understand on items.&nbsp; I felt that in modern versions of Pawn, 
+	those were just clutter, and didn't really provide useful information.</li>
 </ul>
 <h3>Older versions and future improvements</h3>
 <p>See the <a href="Version%20history.htm">version history</a> document for 

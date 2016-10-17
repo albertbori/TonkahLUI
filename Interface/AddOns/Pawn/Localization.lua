@@ -326,13 +326,13 @@ For more information on customizing Pawn, please see the help file (Readme.htm) 
 	},
 	UI = {
 		AboutHeader = "About Pawn",
+		AboutMrRobot = "Default stat weights are provided by the generous Mr. Robot.  They’re a great starting point for characters with typical talents and artifact traits in typical fights.  You can get more accurate, customized stat weights for your character using the Ask Mr. Robot simulator at askmrrobot.com.",
 		AboutReadme = "New to Pawn?  See the getting started tab for a basic introduction.",
 		AboutTab = "About",
 		AboutTranslation = "Official English version",
 		AboutVersion = "Version %s",
-		AboutWebsite = [=[For other mods by Vger, visit vgermods.com.
-
-Wowhead stat weights used with permission—please direct feedback on the default scale values to Wowhead.]=],
+		AboutWebsite = "For other mods by Vger, visit vgermods.com.",
+		AskMrRobotProvider = "Ask Mr. Robot scales",
 		CompareClearItems = "Clear",
 		CompareClearItemsTooltip = "Remove both comparison items.",
 		CompareColoredSockets = "Sockets",
@@ -381,7 +381,7 @@ When you earn quest rewards or dungeon loot that may be better than your current
  • Compare the stats of two items by using Pawn's Compare tab.
  • Right-click on an item link popup to see how it compares to your current item.
  • On the Scale tab, switch to Manual mode to show suggestions for more than one spec at a time.
- • Customize Pawn's scales or import one that you find on the internet.]=],
+ • Use the Ask Mr. Robot simulator and build a custom scale for your character to get customized advice.]=],
 		InterfaceOptionsBody = "Click the Pawn button to go there.  You can also open Pawn from your inventory page, or by binding a key to it.",
 		InterfaceOptionsWelcome = "Pawn options are found in the Pawn UI.",
 		InventoryButtonTooltip = "Click to open Pawn.",
@@ -392,6 +392,12 @@ When you earn quest rewards or dungeon loot that may be better than your current
 		OptionsAdvisorHeader = "Advisor options",
 		OptionsAlignRight = "Align values to right edge of tooltip",
 		OptionsAlignRightTooltip = "Enable this option to align your Pawn values and upgrade information to the right edge of the tooltip instead of the left.",
+		OptionsBagUpgradeAdvisor = "Show bag upgrade advisor",
+		OptionsBagUpgradeAdvisorTooltip = [=[Enable this option to have Pawn take over the in-bag upgrade arrows.
+
+If checked, Pawn will find upgrades in your bags and mark items that are an upgrade for any of your active scales with green arrows. 
+
+If unchecked, WoW will mark items with a higher item level than what you're currently wearing, and Pawn will not interfere with the built-in feature.]=],
 		OptionsBlankLine = "Add a blank line before values",
 		OptionsBlankLineTooltip = "Keep your item tooltips extra tidy by enabling this option, which adds a blank line before the Pawn values.",
 		OptionsButtonHidden = "Hide it",
@@ -522,12 +528,13 @@ Shortcut: Shift+click a scale]=],
 		SocketingAdvisorButtonTooltip = "Click to open Pawn's Gems tab, where you can see more information about the gems that Pawn recommends.",
 		SocketingAdvisorHeader = "Pawn Socketing Advisor suggests:",
 		SocketingAdvisorIgnoreThisItem = "Don't bother adding gems to this low-level item.  But if you do, use these:",
+		StarterProvider = "Starter scales",
 		ValuesDoNotShowUpgradesFor1H = "Don't show upgrades for 1H items",
 		ValuesDoNotShowUpgradesFor2H = "Don't show upgrades for 2H items",
 		ValuesDoNotShowUpgradesTooltip = "Enable this option to hide upgrades of this type of item.  For example, even though paladin tanks can use two-handed weapons, a two-handed weapon is never an \"upgrade\" for a paladin tanking set, so Pawn should not show upgrade notifications for them.  Similarly, retribution paladins can use one-handed weapons, but they are never upgrades.",
 		ValuesFollowSpecialization = "Only show upgrades for my best armor type after level 50",
 		ValuesFollowSpecializationTooltip = "Enable this option to hide upgrades for armor that your class does not specialize in after level 50.  For example, at level 50 holy paladins learn Plate Specialization, which increases their intellect by 5% when wearing only plate armor.  When this option is chosen Pawn will never consider cloth, leather, or mail to be upgrades for level 50+ holy paladins.",
-		ValuesHeader = "Scale values for %s",
+		ValuesHeader = "Stat weights for %s",
 		ValuesIgnoreStat = "Items with this are unusable",
 		ValuesIgnoreStatTooltip = "Enable this option to cause any item with this stat to not get a value for this scale.  For example, shamans can't wear plate, so a scale designed for a shaman can mark plate as unusable so that plate armor doesn't get a value for that scale.",
 		ValuesNormalize = "Normalize values (like Wowhead)",
@@ -536,14 +543,10 @@ Shortcut: Shift+click a scale]=],
 For more information on this setting, see the readme file.]=],
 		ValuesRemove = "Remove",
 		ValuesRemoveTooltip = "Remove this stat from the scale.",
-		ValuesTab = "Values",
-		ValuesWelcome = "You can customize the values that are assigned to each stat for this scale.  To manage your scales and add new ones, use Manual mode on the Scale tab.",
+		ValuesTab = "Weights",
+		ValuesWelcome = "You can customize the weights that are assigned to each stat for this scale.  To manage your scales and add new ones, use Manual mode on the Scale tab.",
 		ValuesWelcomeNoScales = "You have no scale selected.  To get started, go to the Scale tab and start a new scale or paste one from the internet.",
-		ValuesWelcomeReadOnly = "This built-in scale can't be changed.  If you'd like to customize these values, go to the Scale tab, enable Manual mode, and make a copy of this scale.",
-	},
-	Wowhead = {
-		Provider = "Wowhead scales",
-		ProviderStarter = "Starter scales",
+		ValuesWelcomeReadOnly = "This built-in scale can't be changed.  If you'd like to customize these weights, go to the Scale tab, enable Manual mode, and make a copy of this scale.",
 	},
 }
 end

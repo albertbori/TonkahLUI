@@ -324,13 +324,13 @@ Weitere Informationen zur Anpassung von Pawn findet ihr in der Hilfedatei (Readm
 	},
 	UI = {
 		AboutHeader = "Über Pawn",
+		AboutMrRobot = "Default stat weights are provided by the generous Mr. Robot.  They’re a great starting point for characters with typical talents and artifact traits in typical fights.  You can get more accurate, customized stat weights for your character using the Ask Mr. Robot simulator at askmrrobot.com.", -- Requires localization
 		AboutReadme = "Neu bei Pawn? Schau dir den \"Los geht's\" Reiter für eine erste Info an.  Mehr Informationen findest du in der mitgelieferten README Datei!",
 		AboutTab = "Über",
 		AboutTranslation = "Deutsche Übersetzung von Sandmahn",
 		AboutVersion = "Version %s",
-		AboutWebsite = [=[Für andere Addons von Vger, besuche vgermods.com.
-
-Wowhead Bewertungsgewichtungen mit Erlaubnis benutzt.  Sende Feedback zu den Profilwerten bitte direkt an Wowhead.]=],
+		AboutWebsite = "Für andere Addons von Vger, besuche vgermods.com.",
+		AskMrRobotProvider = "Ask Mr. Robot scales", -- Requires localization
 		CompareClearItems = "Zurücksetzen",
 		CompareClearItemsTooltip = "Setzt beide Gegenstandsfelder zurück.",
 		CompareColoredSockets = "Farbiger Sockel",
@@ -391,6 +391,12 @@ Pawn enthält Bewertungsprofile von Wowhead für jede Klasse und Spezialisierung
 		OptionsAdvisorHeader = "Ratgeber Optionen",
 		OptionsAlignRight = "Wertungen im Tooltip rechts ausrichten",
 		OptionsAlignRightTooltip = "Aktiviere diese Option um Pawn-Wertungen und Upgradeinformationen an der rechten anstatt der linken Seite des Tooltips auszurichten.",
+		OptionsBagUpgradeAdvisor = "Show bag upgrade advisor",
+		OptionsBagUpgradeAdvisorTooltip = [=[Enable this option to have Pawn take over the in-bag upgrade arrows.
+
+If checked, Pawn will find upgrades in your bags and mark items that are an upgrade for any of your active scales with green arrows. 
+
+If unchecked, WoW will mark items with a higher item level than what you're currently wearing, and Pawn will not interfere with the built-in feature.]=],
 		OptionsBlankLine = "Leerzeile vor Wertungen",
 		OptionsBlankLineTooltip = "Halte die Tooltips übersichtlich, in dem du eine extra Leerzeile vor den Pawn-Wertungen einführst.",
 		OptionsButtonHidden = "verstecken",
@@ -425,7 +431,7 @@ If unchecked, Pawn will calculate values for items as if they were socketed in t
 If checked, Pawn will treat upgradeable items as they are and will not assume that you would use Valor and Empowered Apexis Fragments to improve the item when determining whether an item is better than what you currently have.
 
 If unchecked, Pawn will treat those items assuming that you would maximize their potential with Valor and Empowered Apexis Fragments.  This could cause a level 650 baleful item to appear as a significant upgrade over a level 670 item from Blackrock Foundry, since the baleful item could potentially be improved to level 705 through valor and Apexis.]=], -- Requires localization
-		OptionsInventoryIcon = "Inventar-Icons anzeigen",
+		OptionsInventoryIcon = "Inventar-Icons anzeigen", -- Needs review
 		OptionsInventoryIconTooltip = "Aktiviere diese Option um Inventar-Icons neben Gegenstandsfenstern anzuzeigen.",
 		OptionsItemIDs = "Gegenstands-ID anzeigen",
 		OptionsItemIDsTooltip = [=[Aktiviere diese Option um die Item-ID im Gegenstandstooltip anzuzeigen.
@@ -520,12 +526,13 @@ Shortcut: Shift+click auf ein Bewertungsprofil]=],
 		SocketingAdvisorButtonTooltip = "Klicken um Pawn's \"Edelsteine\" Reiter zu öffnen, wo du mehr Informationen über Edelsteine, die Pawn empfiehlt, bekommst.",
 		SocketingAdvisorHeader = "Pawn's Edelstein-Ratgeber empfiehlt:",
 		SocketingAdvisorIgnoreThisItem = "Kümmern Sie sich nicht Hinzufügen von Edelsteinen zu Low-Level. Aber wenn Sie dies tun, verwenden Sie diese:", -- Needs review
+		StarterProvider = "Starter", -- Needs review
 		ValuesDoNotShowUpgradesFor1H = "Verbesserungen für 1Hand ausblenden",
 		ValuesDoNotShowUpgradesFor2H = "Verbesserungen für 2Hand ausblenden",
 		ValuesDoNotShowUpgradesTooltip = "Aktiviere diese Option um Verbesserungen für die gewählten Gegenstände auszublenden. Obwohl Tank-Paladine Zweihandwaffen verwenden können sind diese niemals eine Verbesserung, also sollte keine Verbesserung angezeigt werden. Ähnlich ist es für Vergelter-Paladine, bei denen eine Einhandwaffe niemals eine Verbesserung darstellt.",
 		ValuesFollowSpecialization = "Zeige nur Upgrades für meinen besten Rüstungstyp ab Level 50",
 		ValuesFollowSpecializationTooltip = "Aktiviere diese Option um Rüstungsupgrades zu verstecken für die deine Klasse nicht spezialisiert ist (ab Level 50).  Zum Beispiel lernt ein Heilig-Paladin ab Level 50 Plattenspezialisierung, die seine Intelligenz um 5% erhöht wenn er nur Plattenrüstung trägt.  Wenn diese Option ausgewählt ist wird Pawn keine Stoff, Leder oder Kettenrüstung als Upgrades für Level 50+ Heilig-Paladine berücksichtigen.",
-		ValuesHeader = "Werte für Profil %s",
+		ValuesHeader = "Werte für Profil %s", -- Needs review
 		ValuesIgnoreStat = "Unbenutzbar-Markierung für Gegenstände",
 		ValuesIgnoreStatTooltip = "Aktiviere diese Option um zu verhindern das unbenutzbare Gegenstände eine Wertung erhalten.  Schamanen können zum Beispiel keine Plattenrüstung tragen. Einen Schamanen-Profil kann Plattenrüstung als unbenutzbar markieren, so dass Plattenrüstung keine Wertung für dieses Profil erhält.",
 		ValuesNormalize = "Werte normalisieren (ähnlich Wowhead)",
@@ -534,14 +541,10 @@ Shortcut: Shift+click auf ein Bewertungsprofil]=],
 Für weitere Informationen hierzu siehe readme.htm.]=],
 		ValuesRemove = "Entfernen",
 		ValuesRemoveTooltip = "Entferne diese Wertung aus dem Bewertungsprofil.",
-		ValuesTab = "Werte",
-		ValuesWelcome = "Du kannst die Wertungen in den Bewertungsprofilen anpassen. Um die Bewertungsprofile zu verwalten oder neue hinzuzufügen, benutze den \"Bewertungsprofile\" Reiter.",
+		ValuesTab = "Werte", -- Needs review
+		ValuesWelcome = "Du kannst die Wertungen in den Bewertungsprofilen anpassen. Um die Bewertungsprofile zu verwalten oder neue hinzuzufügen, benutze den \"Bewertungsprofile\" Reiter.", -- Needs review
 		ValuesWelcomeNoScales = "Es wurde kein Bewertungsprofil ausgewählt. Wähle ein Bewertungsprofil im Reiter \"Bewertungsprofile\" aus oder kopiere Werte aus dem Internet.",
-		ValuesWelcomeReadOnly = "Das ausgewählte Bewertungsprofil ist nicht editierbar. Erstelle im Reiter \"Bewertungsprofile\" ein neues Profil oder erstelle eine Kopie des gewählten Profils.",
-	},
-	Wowhead = {
-		Provider = "Wowhead Wertungen",
-		ProviderStarter = "Starter", -- Needs review
+		ValuesWelcomeReadOnly = "Das ausgewählte Bewertungsprofil ist nicht editierbar. Erstelle im Reiter \"Bewertungsprofile\" ein neues Profil oder erstelle eine Kopie des gewählten Profils.", -- Needs review
 	},
 }
 end

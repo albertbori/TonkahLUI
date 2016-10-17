@@ -1287,7 +1287,7 @@ function PawnUI_CompareItems()
 			PawnUI_AddComparisonHeaderLine(LastFoundHeader)
 			LastFoundHeader = nil
 		end
-		PawnUI_AddComparisonStatLineNumbers(PawnLocal.ItemLevelTooltipLine, Level1, Level2)
+		PawnUI_AddComparisonStatLineStrings(PawnLocal.ItemLevelTooltipLine, Level1, Level2)
 	end
 	
 	-- Add asterisk indicator.
@@ -1724,6 +1724,11 @@ function PawnUIOptionsTabPage_OnShow()
 	PawnUIFrame_EnchantedValuesCheck:SetChecked(PawnCommon.ShowEnchanted)
 	
 	-- Advisor options
+	if PawnOriginalIsContainerItemAnUpgrade == nil then
+		-- On WoW 7.0, hide the bag upgrade advisor checkbox since that feature doesn't work yet.
+		PawnUIFrame_ShowBagUpgradeAdvisorCheck:Disable()
+	end 
+	PawnUIFrame_ShowBagUpgradeAdvisorCheck:SetChecked(PawnCommon.ShowBagUpgradeAdvisor)
 	PawnUIFrame_ShowLootUpgradeAdvisorCheck:SetChecked(PawnCommon.ShowLootUpgradeAdvisor)
 	PawnUIFrame_ShowQuestUpgradeAdvisorCheck:SetChecked(PawnCommon.ShowQuestUpgradeAdvisor)
 	PawnUIFrame_ShowSocketingAdvisorCheck:SetChecked(PawnCommon.ShowSocketingAdvisor)
@@ -1792,6 +1797,17 @@ end
 function PawnUIFrame_EnchantedValuesCheck_OnClick()
 	PawnCommon.ShowEnchanted = PawnUIFrame_EnchantedValuesCheck:GetChecked()
 	PawnResetTooltips()
+end
+
+function PawnUIFrame_ShowBagUpgradeAdvisorCheck_OnClick()
+	PawnCommon.ShowBagUpgradeAdvisor = PawnUIFrame_ShowBagUpgradeAdvisorCheck:GetChecked()
+
+	-- When toggling this option, refresh all bags.
+	local BagIndex
+	for BagIndex = 1, NUM_CONTAINER_FRAMES, 1 do
+		local BagFrame = _G["ContainerFrame" .. BagIndex];
+		if BagFrame:IsShown() then ContainerFrame_UpdateItemUpgradeIcons(BagFrame) end
+	end
 end
 
 function PawnUIFrame_ShowLootUpgradeAdvisorCheck_OnClick()

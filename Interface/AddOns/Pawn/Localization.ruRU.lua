@@ -325,13 +325,13 @@ For more information on customizing Pawn, please see the help file (Readme.htm) 
 	},
 	UI = {
 		AboutHeader = "О Pawn",
+		AboutMrRobot = "Default stat weights are provided by the generous Mr. Robot.  They’re a great starting point for characters with typical talents and artifact traits in typical fights.  You can get more accurate, customized stat weights for your character using the Ask Mr. Robot simulator at askmrrobot.com.", -- Requires localization
 		AboutReadme = "Новичёк в Pawn? Для ознакомления загляните на страницу \"Помощь\"",
 		AboutTab = "О Аддоне",
 		AboutTranslation = "Официальная русская версия от Warr.",
 		AboutVersion = "Версия %s",
-		AboutWebsite = [=[Для других модов Vger, посетите vgermods.com.
-
-Шкалы Wowhead используются с разрешения—свои отзывы по ним отправляйте на Wowhead.]=],
+		AboutWebsite = "Для других модов Vger, посетите vgermods.com.",
+		AskMrRobotProvider = "Ask Mr. Robot scales", -- Requires localization
 		CompareClearItems = "Очистить",
 		CompareClearItemsTooltip = "Убрать обе сравниваемые вещи",
 		CompareColoredSockets = "Цветные гнезда",
@@ -382,7 +382,7 @@ Pawn поставляется со шкалами с сайта Wowhead для �
  • Shift-правый-клик на вещи с сокетами для получения советов по камням.
  • Сделайте копия одной из существующих шкал для изменения значений на закладке Значения.
  • Вы можете найти множество шкал для вашего класса в интернете.
- • Взгляните в readme файл для подробного описаний возможностей Pawn.]=],
+ • Взгляните в readme файл для подробного описаний возможностей Pawn.]=], -- Needs review
 		InterfaceOptionsBody = "Нажмите на кнопку Pawn чтобы попать сюда.  Вы также можете открыть Pawn со страницы инвентаря, или назначить клавишу.",
 		InterfaceOptionsWelcome = "Pawn options are found in the Pawn UI.",
 		InventoryButtonTooltip = "Нажмите чтобы открыть Pawn.",
@@ -393,6 +393,12 @@ Pawn поставляется со шкалами с сайта Wowhead для �
 		OptionsAdvisorHeader = "Опции советника",
 		OptionsAlignRight = "Выравнивать значения по правому краю",
 		OptionsAlignRightTooltip = "Включите данную опцию чтобы Pawn выравнял ваши значения и информацию по улучшениям по правому краю всплывающего сообщения.",
+		OptionsBagUpgradeAdvisor = "Show bag upgrade advisor",
+		OptionsBagUpgradeAdvisorTooltip = [=[Enable this option to have Pawn take over the in-bag upgrade arrows.
+
+If checked, Pawn will find upgrades in your bags and mark items that are an upgrade for any of your active scales with green arrows. 
+
+If unchecked, WoW will mark items with a higher item level than what you're currently wearing, and Pawn will not interfere with the built-in feature.]=],
 		OptionsBlankLine = "Добавить пустую строку перед значениями",
 		OptionsBlankLineTooltip = "Позволяет добавить пустую строку перед значениями Pawn. Это позволяет сделать сообщения более читаемыми.",
 		OptionsButtonHidden = "не отображать",
@@ -429,7 +435,7 @@ Pawn поставляется со шкалами с сайта Wowhead для �
 Если опция включена, Pawn будет подсчитывать вещи НЕ предполагая что вы будете улучшать вещи каким либо образом при определении более лучшей вещи чем ваша.
 
 Если опция выключена, Pawn будет подсчитывать вещи предполагая что вы будете максимально использовать их потенциал со всеми возможными улучшениями. Это может привести к тому что пагубная вещь 650 уровня будет отображаться как значительное улучшение по сравнению с вещью 670 уровня из Литейной Клана Черной Горы, т.к. пагубную вещь потенциально можно улучшить до 705 уровня.]=],
-		OptionsInventoryIcon = "Отображать иконку вещи",
+		OptionsInventoryIcon = "Отображать иконку вещи", -- Needs review
 		OptionsInventoryIconTooltip = "Включите опцию для отображения иконки вещи.",
 		OptionsItemIDs = "Отображать ID вещи",
 		OptionsItemIDsTooltip = [=[Enable this option to have Pawn display the item ID of every item you come across, as well as the IDs of all enchantments and gems.
@@ -523,12 +529,13 @@ Shortcut: Shift+click a scale]=],
 		SocketingAdvisorButtonTooltip = "Нажмите для открытия закладки камней в Pawn",
 		SocketingAdvisorHeader = "Pawn советник по камням рекомендует:",
 		SocketingAdvisorIgnoreThisItem = "Не беспокойтесь о добавлении ювелирных камней на эту низко-уровневую вещь. Но если очень хочется то:",
+		StarterProvider = "Начальные шкалы", -- Needs review
 		ValuesDoNotShowUpgradesFor1H = "Не отображать улучшения для одноручного оружия",
 		ValuesDoNotShowUpgradesFor2H = "Не отображать улучшения для двуручного оружия",
 		ValuesDoNotShowUpgradesTooltip = "Enable this option to hide upgrades of this type of item.  For example, even though paladin tanks can use two-handed weapons, a two-handed weapon is never an \"upgrade\" for a paladin tanking set, so Pawn should not show upgrade notifications for them.  Similarly, retribution paladins can use one-handed weapons, but they are never upgrades.",
 		ValuesFollowSpecialization = "Отображать улучшения для специализации по броне после 50 уровня",
 		ValuesFollowSpecializationTooltip = "Enable this option to hide upgrades for armor that your class does not specialize in after level 50.  For example, at level 50 holy paladins learn Plate Specialization, which increases their intellect by 5% when wearing only plate armor.  When this option is chosen Pawn will never consider cloth, leather, or mail to be upgrades for level 50+ holy paladins.",
-		ValuesHeader = "Значения шкалы для %s",
+		ValuesHeader = "Значения шкалы для %s", -- Needs review
 		ValuesIgnoreStat = "Не используемое",
 		ValuesIgnoreStatTooltip = "Enable this option to cause any item with this stat to not get a value for this scale.  For example, shamans can't wear plate, so a scale designed for a shaman can mark plate as unusable so that plate armor doesn't get a value for that scale.",
 		ValuesNormalize = "Нормализовать значения (как Wowhead)",
@@ -537,14 +544,10 @@ Shortcut: Shift+click a scale]=],
 For more information on this setting, see the readme file.]=],
 		ValuesRemove = "Удалить",
 		ValuesRemoveTooltip = "Remove this stat from the scale.",
-		ValuesTab = "Значения",
-		ValuesWelcome = "Вы можете изменять веса параметров для шкалы.  Для управления шкалами перейдите на закладку Шкалы.",
+		ValuesTab = "Значения", -- Needs review
+		ValuesWelcome = "Вы можете изменять веса параметров для шкалы.  Для управления шкалами перейдите на закладку Шкалы.", -- Needs review
 		ValuesWelcomeNoScales = "Шкала не выбрана.  Для начала создайте шкалу.",
-		ValuesWelcomeReadOnly = "Выбранная шкала не может быть изменена.  Если вы хотите поменять значения, сделайте копию текущей шкалы.",
-	},
-	Wowhead = {
-		Provider = "Шкалы Wowhead",
-		ProviderStarter = "Начальные шкалы",
+		ValuesWelcomeReadOnly = "Выбранная шкала не может быть изменена.  Если вы хотите поменять значения, сделайте копию текущей шкалы.", -- Needs review
 	},
 }
 end

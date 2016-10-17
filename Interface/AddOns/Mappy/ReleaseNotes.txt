@@ -1,0 +1,60 @@
+-----------------------------------------------------
+New in 2.0
+
+- Save and load different minimap configs (size, position, transparancy, etc.)
+- Automatic button stacking can now be disabled
+- Minimap can be 'ghosted' so that clicks pass through it
+
+Here are the new commands:
+
+/mappy ghost Makes clicks on the minimap pass through to whatever is behind it
+/mappy unghost Makes clicks on the minimap work like normal
+
+/mappy default Loads your normal Mappy size, position, transparancy, etc.
+/mappy save mysettingsname Saves the current minimap configuration under the name mysettingsname
+/mappy load mysettingsname Restores the saved configuration named mysettingsname
+
+I've included one built-in set which gatherers may find useful (I know I do). Try this:
+
+/mappy load gather
+
+and you will get a large, completely transparant minimap centered on your screen with clicks set to pass through it.  What this does is gives you just the yellow node dots in a HUD which makes cruising around looking for mats pretty nice.
+-----------------------------------------------------
+
+Future changes
+
+- FEATURE: Increase settings dialog/slider width for better control over size
+- BUGFIX: Disable button stacking doesn't work
+- FEATURE: Add '/mappy reset' command or fix positioning code to ensure the minimap is within the screen bounds (or both)
+- FEATURE/BUGFIX: Ensure standard Blizzard UI buttons are stacked in a logical order
+- FEATURE: Option to remove arrows and 'N' indicator from the map
+- BUGFIX: Verify mouseover tooltips are working for POI arrows
+
+2.0b5 Changes
+
+- Fixed rotation support
+- Fixed Hide North Arrow feature
+
+2.0b4 Changes
+
+- Removed player arrow scaling
+- Added check for TimeManager frames to be present before attempting to arrange them
+- Added option to hide North label
+- Made menu/sliders wider for finer control over the Size setting
+- Fixed errors when attempting to use the settings menu in WotLK
+- Finished implementing support for disabling button stacking
+- Settings menu will show the correct current settings when it's opened
+
+2.0b3 Changes
+
+- The new mini-clock is positioned correctly
+- The Blizzard feedback button on WotLK is positioned correctly
+- Probably other fixes too, but I'm really lazy about documenting Mappy changes, sorry about that :)
+
+2.0b2 Changes
+
+- The new WoW clock is positioned correctly
+- Landmark arrows no longer fade with the minimap alpha
+- '/mappy default' command is now '/mappy normal'
+- Saved minimap configs can be loaded by using their name as a command. For example '/mappy raid' will load a saved configuration named raid (previous versions required the longer '/mappy load raid' to do the same thing)
+

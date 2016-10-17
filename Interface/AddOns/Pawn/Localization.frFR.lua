@@ -327,13 +327,13 @@ Pour plus d'information sur la Personnalisation de Pawn, regarder le fichier d'a
 	},
 	UI = {
 		AboutHeader = "\195\160 propos de Pawn", -- Needs review
+		AboutMrRobot = "Default stat weights are provided by the generous Mr. Robot.  They\226\128\153re a great starting point for characters with typical talents and artifact traits in typical fights.  You can get more accurate, customized stat weights for your character using the Ask Mr. Robot simulator at askmrrobot.com.", -- Requires localization
 		AboutReadme = "Nouveau avec pawn ? Regardez la section D\195\169buter (getting started) pour une introduction basique", -- Needs review
 		AboutTab = "\195\160 propos de", -- Needs review
 		AboutTranslation = "Version francaise par Othor-eitrigg", -- Needs review
 		AboutVersion = "Version %s", -- Needs review
-		AboutWebsite = "Pour d'autres mods par Vger, visitez vgermods.com.\
-\
-Les poids de stat Wowhead sont utilis\195\169s avec permission\226\128\148S'il vous pla\195\174t dirigez les retours sur les valeurs d'echelle par d\195\169faut \195\160 Wowhead.", -- Needs review
+		AboutWebsite = "Pour d'autres mods par Vger, visitez vgermods.com.",
+		AskMrRobotProvider = "Ask Mr. Robot scales", -- Requires localization
 		CompareClearItems = "Effacer", -- Needs review
 		CompareClearItemsTooltip = "Retirer la comparaison des deux items", -- Needs review
 		CompareColoredSockets = "Ch\195\162sse color\195\169e", -- Needs review
@@ -385,7 +385,7 @@ Pawn vient avec les \195\169chelles de Wowhead pour chaque classe et sp\195\169.
  \226\128\162 shift-Clic-droit un item avec emplacement de gemme pour que pawn vous suggere une gemme\
  \226\128\162 Faites une copie d'une de vos formules dans l'onglet d'echelle, et personnalisez les valeurs de stat dans l'onglet valeur.\
  \226\128\162 Trouvez plus de formules pour votre classe sur internet\
- \226\128\162 lisez le fichier readme pour en apprendre plus sur les fonctionnalit\195\169s avanc\195\169es de Pawn",
+ \226\128\162 lisez le fichier readme pour en apprendre plus sur les fonctionnalit\195\169s avanc\195\169es de Pawn", -- Needs review
 		InterfaceOptionsBody = "Cliquez sur le bouton Pawn pour y aller. vous  pouvez aussi ouvrir Pawn \195\160 partir de votre page d'inventaire, ou en y associant une touche.",
 		InterfaceOptionsWelcome = "Les options de Pawn se trouve dans le Pawn UI (interface utilisateur)",
 		InventoryButtonTooltip = "Clic pour ouvrir Pawn",
@@ -396,6 +396,12 @@ Pawn vient avec les \195\169chelles de Wowhead pour chaque classe et sp\195\169.
 		OptionsAdvisorHeader = "Options conseill\195\169es",
 		OptionsAlignRight = "Aligne les valeurs sur le bord droit du tooltips",
 		OptionsAlignRightTooltip = "Cette option permet d'aligner les valeurs de Pawn et vos informations d'information sur le bord droit du tooltips au lieu de la gauche",
+		OptionsBagUpgradeAdvisor = "Show bag upgrade advisor",
+		OptionsBagUpgradeAdvisorTooltip = [=[Enable this option to have Pawn take over the in-bag upgrade arrows.
+
+If checked, Pawn will find upgrades in your bags and mark items that are an upgrade for any of your active scales with green arrows. 
+
+If unchecked, WoW will mark items with a higher item level than what you're currently wearing, and Pawn will not interfere with the built-in feature.]=],
 		OptionsBlankLine = "Ajoute une ligne vide avant les valeurs",
 		OptionsBlankLineTooltip = "Cette option permet de s\195\169parer les informations de Pawn, en ajoutant une ligne vide",
 		OptionsButtonHidden = "Cach\195\169",
@@ -431,7 +437,7 @@ Si non coch\195\169, Pawn calculera les valeurs pour les \195\169l\195\169ments 
 si valid\195\169, Pawn traitera les pi\195\168ces pouvant \195\170tre am\195\169lior\195\169 tels qu'ils sont et ne consid\195\169rera pas que vous pouvez utiliser des Fragments Apexis de Vaillance ou Torve afin d'am\195\169liorer la pi\195\168ce au moment de d\195\169terminer si une pi\195\168ce est meilleur que celle en votre possession.\
 si non-valid\195\169, Pawn traitera ces pi\195\168ces en assumant que vous les am\195\169liorerez au maximum avec des Fragments Apexis de Vaillance ou Torve. Cela pourrait faire qu'un \195\169quipement Torve de niveau 650 apparaisse comme une am\195\169lioration significative par rapport \195\160 un niveau 670 de la Fonderie de Blackrock, comme la pi\195\168ce Torve pourrait \195\170tre am\195\169lior\195\169 au niveau 705 grave aux Vaillances et Apexis\
 ",
-		OptionsInventoryIcon = "Affiche une ic\195\180ne d'inventaire",
+		OptionsInventoryIcon = "Affiche une ic\195\180ne d'inventaire", -- Needs review
 		OptionsInventoryIconTooltip = "Cette option permet d'afficher l'ic\195\180ne d'inventaire \195\160 cot\195\169 de la fen\195\170tre de lien de l item",
 		OptionsItemIDs = "Affiche les ID des items", -- Needs review
 		OptionsItemIDsTooltip = "Cette option permet d'afficher l'id de l'item ainsi que les ids de tous les enchantements et gemmes.\
@@ -521,26 +527,23 @@ Cette commande ne peut etre d\195\169faite!",
 		SocketingAdvisorButtonTooltip = "Clic pour ouvrir l onglet Gemmes de Pawn, ou vous pouvez trouver plus d'informations sur les gemmes que Pawn recommande.",
 		SocketingAdvisorHeader = "Suggestions de Pawn pour les ch\195\162sses:",
 		SocketingAdvisorIgnoreThisItem = "Ne vous emb\195\170tez pas a ajouter des gemmes sur cet objet de bas niveau. Mais si vous le faites, utilisez :",
+		StarterProvider = "Echelle de d\195\169marrage", -- Needs review
 		ValuesDoNotShowUpgradesFor1H = "Ne pas afficher d'am\195\169lioration pour les items a 1 main", -- Needs review
 		ValuesDoNotShowUpgradesFor2H = "Ne pas afficher d'am\195\169lioration pour les items a 2 mains", -- Needs review
 		ValuesDoNotShowUpgradesTooltip = "Cette option permet de cacher les am\195\169liorations pour ce type d'item. Par exemple, m\195\170me si les tanks paladin peuvent utiliser des armes a deux mains, une arme \195\160 deux mains n'est jamais une \"am\195\169lioration\" pour un ensemble de paladin tank, aussi Pawn ne devrait pas afficher informations d am\195\169lioration pour eux. De m\195\170me, les Paladin Vindicte peuvent utiliser des armes a une main, mais ce n'est jamais une am\195\169lioration.",
 		ValuesFollowSpecialization = "Affiche seulement les am\195\169liorations pour mon meilleur type d'armure apr\195\168s le niveau 50", -- Needs review
 		ValuesFollowSpecializationTooltip = "Cette option permet de cacher les am\195\169liorations d'armure dans laquelle votre classe n est pas sp\195\169cialis\195\169 apr\195\168s le niveau 50. Par exemple, au niveau 50 les Paladin Sacr\195\169 apprennent la sp\195\169cialisation plaque, ce qui augmente leur intelligence de 5% quand ils portent seulement de la plaque. Quand cette option est choisie, Pawn ne tiendra jamais compte du tissu, cuir, ou maille comme des am\195\169liorations pour des paladins sacr\195\169 au dessus du niveau 50",
-		ValuesHeader = "Valeur d'echelle pour %s",
+		ValuesHeader = "Valeur d'echelle pour %s", -- Needs review
 		ValuesIgnoreStat = "Les items avec ceci sont inutilisables",
 		ValuesIgnoreStatTooltip = "Cette option fait que chaque items avec cette stat n'aura pas de valeurs pour cette \195\169chelle. Par exemple, les shamans ne peuvent pas porter de la plaque, donc une \195\169chelle (formule) con\195\167ue pour un shaman peut marquer la plaque comme inutilisable ainsi les armures de plaques ne recevront aucune valeur",
 		ValuesNormalize = "Normalise les valeurs (comme Wowhead)",
 		ValuesNormalizeTooltip = "Cette option permet de diviser la valeur finale calcul\195\169e d'un item par la somme de tous les stats dans votre \195\169chelle, comme le font Wowhead et lootzor. Cela aide dans des situations ou des \195\169chelle (formule) ont des valeurs de stat autour de 1 et une autre autour de 5. Ca aide aussi a garder des petits nombres",
 		ValuesRemove = "Supprimer",
 		ValuesRemoveTooltip = "Supprime cette stat de l'echelle (formule)",
-		ValuesTab = "Valeur",
-		ValuesWelcome = "Vous pouvez personnaliser les valeurs qui sont assign\195\169s \195\160 chaque stats pour cette \195\169chelle. Pour gerer vos \195\169chelles et en ajouter de nouvelles, utilisez l'onglet Echelle",
+		ValuesTab = "Valeur", -- Needs review
+		ValuesWelcome = "Vous pouvez personnaliser les valeurs qui sont assign\195\169s \195\160 chaque stats pour cette \195\169chelle. Pour gerer vos \195\169chelles et en ajouter de nouvelles, utilisez l'onglet Echelle", -- Needs review
 		ValuesWelcomeNoScales = "Vous n'avez s\195\169lectionn\195\169 aucune \195\169chelle. Pour commencer, aller a l onglet Echelle et crees-en une nouvelle ou coller une depuis Internet",
-		ValuesWelcomeReadOnly = "L'echelle que vous avez s\195\169lectionn\195\169 ne peut etre modifi\195\169e. Si vous voulez changer ces valeurs, allez dans l'onglet Echelle et faites une copie de cette \195\169chelle ou commencez une nouvelle.",
-	},
-	Wowhead = {
-		Provider = "echelles Wowhead ", -- Needs review
-		ProviderStarter = "Echelle de d\195\169marrage", -- Needs review
+		ValuesWelcomeReadOnly = "L'echelle que vous avez s\195\169lectionn\195\169 ne peut etre modifi\195\169e. Si vous voulez changer ces valeurs, allez dans l'onglet Echelle et faites une copie de cette \195\169chelle ou commencez une nouvelle.", -- Needs review
 	},
 }
 end

@@ -1,13 +1,12 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0013,
+	["LastVersion"] = 2.01,
 	["LastPlayerFullName"] = "Holyshnizzle-Doomhammer",
 	["AutoSelectScales"] = false,
 	["UpgradeTracking"] = false,
 	["LastKeybindingsSet"] = 1,
 }
-PawnMrRobotScaleProviderOptions = nil
-PawnWowheadScaleProviderOptions = {
+PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "PRIEST",
-	["LastAdded"] = 5,
+	["LastAdded"] = 1,
 }

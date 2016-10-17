@@ -325,13 +325,13 @@ Pawn 사용자 설정의 더 자세한 정보는, 애드온에 포함된 help �
 	},
 	UI = {
 		AboutHeader = "Pawn 정보",
+		AboutMrRobot = "Default stat weights are provided by the generous Mr. Robot.  They’re a great starting point for characters with typical talents and artifact traits in typical fights.  You can get more accurate, customized stat weights for your character using the Ask Mr. Robot simulator at askmrrobot.com.", -- Requires localization
 		AboutReadme = "Pawn을 처음 사용하세요? 시작하기 탭에서 기본 소개를 확인하세요.",
 		AboutTab = "정보",
 		AboutTranslation = "한글화: 적셔줄게@데스윙",
 		AboutVersion = "버전 %s",
-		AboutWebsite = [=[vgermods.com 을 방문하여 Vger의 다른 애드온을 확인하세요.
-
-허가받은 Wowhead 능력치 점수 사용—기본 능력치 비율 값의 피드백을 와우헤드에 직접해주세요.]=],
+		AboutWebsite = "vgermods.com 을 방문하여 Vger의 다른 애드온을 확인하세요.",
+		AskMrRobotProvider = "Mr. Robot 능력치 비율", -- Needs review
 		CompareClearItems = "비우기",
 		CompareClearItemsTooltip = "양쪽 비교 아이템을 제거합니다.",
 		CompareColoredSockets = "보석 홈",
@@ -379,7 +379,7 @@ Pawn 사용자 설정의 더 자세한 정보는, 애드온에 포함된 help �
  • Pawn의 비교 탭을 사용해 두 아이템의 능력치를 비교해보세요.
  • 아이템 링크 창을 오른쪽 클릭하여 현재 장비와 어떻게 비교되는지 확인하세요.
  • 능력치 비율 탭에서, 수동 모드로 변경하면 동시에 둘 이상의 전문화에 대한 제안을 표시할 수 있습니다.
- • Pawn의 능력치 비율을 개별 설정하거나 인터넷에서 발견한 능력치 비율을 가져오기 해보세요.]=],
+ • Pawn의 능력치 비율을 개별 설정하거나 인터넷에서 발견한 능력치 비율을 가져오기 해보세요.]=], -- Needs review
 		InterfaceOptionsBody = "Pawn 버튼을 클릭하여 이동합니다. 또한 인벤토리 페이지에서 Pawn을 열수 있으며, 단축키를 지정할수도 있습니다.",
 		InterfaceOptionsWelcome = "Pawn 옵션은 Pawn UI에 있습니다.",
 		InventoryButtonTooltip = "Pawn을 열려면 클릭하세요.",
@@ -390,6 +390,12 @@ Pawn 사용자 설정의 더 자세한 정보는, 애드온에 포함된 help �
 		OptionsAdvisorHeader = "조언가 옵션",
 		OptionsAlignRight = "툴팁 오른쪽 끝으로 수치 정렬",
 		OptionsAlignRightTooltip = "이 옵션을 켜면 Pawn 수치와 향상 정보를 툴팁 왼쪽 대신 오른쪽 끝에 정렬합니다.",
+		OptionsBagUpgradeAdvisor = "Show bag upgrade advisor",
+		OptionsBagUpgradeAdvisorTooltip = [=[Enable this option to have Pawn take over the in-bag upgrade arrows.
+
+If checked, Pawn will find upgrades in your bags and mark items that are an upgrade for any of your active scales with green arrows. 
+
+If unchecked, WoW will mark items with a higher item level than what you're currently wearing, and Pawn will not interfere with the built-in feature.]=],
 		OptionsBlankLine = "값 위에 빈 줄 추가",
 		OptionsBlankLineTooltip = "이 옵션을 켜면 Pawn 값 위에 빈 줄을 추가해 아이템 툴팁을 깔끔하게 정리할 수 있습니다.",
 		OptionsButtonHidden = "숨기기",
@@ -426,7 +432,7 @@ Pawn 사용자 설정의 더 자세한 정보는, 애드온에 포함된 help �
 체크하면, 업그레이드 가능한 아이템을 당신이 가지고 있는 것보다 더 좋은지 판단할 때 용맹 점수 강화나 힘이 깃든 에펙시스 파편을 사용하지 않은 것으로 가정합니다.
 
 체크하지 않으면, 업그레이드 할 수 있는 아이템들의 잠재성을 용맹 점수나 힘이 깃든 에펙시스 파편으로 극대화시킨 것으로 가정합니다. 불길한 장비는 용맹 점수와 에펙시스를 통해 705 레벨까지 강화할 수 있기 때문에 650 레벨의 불길한 장비가 670 레벨의 검은바위 용광로 아이템보다 더 좋은 아이템으로 나타나게 됩니다.]=],
-		OptionsInventoryIcon = "인벤토리 아이콘 표시",
+		OptionsInventoryIcon = "인벤토리 아이콘 표시", -- Needs review
 		OptionsInventoryIconTooltip = "이 옵션을 켜면 아이템 링크 창 옆에 인벤토리 아이콘을 표시합니다.",
 		OptionsItemIDs = "아이템 ID 표시",
 		OptionsItemIDsTooltip = [=[이 옵션을 켜면 Pawn이 모든 아이템의 아이템 ID를 표시하게 하며, 모든 마법부여와 보석의 ID까지 표시됩니다.
@@ -520,26 +526,23 @@ Pawn이 상점에 판매했거나, 파괴했거나, 다른 방법으로 더이�
 		SocketingAdvisorButtonTooltip = "클릭하여 Pawn의 보석 탭을 엽니다, Pawn이 추천하는 보석에 대한 정보를 더 볼 수 있습니다.",
 		SocketingAdvisorHeader = "Pawn 보석 장착 조언가 추천:",
 		SocketingAdvisorIgnoreThisItem = "낮은 레벨 아이템에 보석 추가하지 않기. 가능하다면, 이것을 사용하기:",
+		StarterProvider = "초보자 능력치 비율", -- Needs review
 		ValuesDoNotShowUpgradesFor1H = "한손 아이템의 향상 정보 보지 않기",
 		ValuesDoNotShowUpgradesFor2H = "양손 아이템의 향상 정보 보지 않기",
 		ValuesDoNotShowUpgradesTooltip = "이 옵션을 켜면 이 아이템 형식의 향상 정보를 숨깁니다. 예를 들어, 성기사 탱커는 양손 무기를 사용할 수 있지만, 양손 무기는 성기사 탱커 세트를 \"향상\"시키지 않습니다, 따라서 Pawn은 이에 따른 향상 정보를 표시하지 않습니다. 유사하게, 징벌 성기사는 한손 무기를 사용할 수 있지만, 능력치를 향상 시키지 않습니다.",
 		ValuesFollowSpecialization = "레벨 50 이후의 최상의 방어구 종류의 업그레이드만 표시하기",
 		ValuesFollowSpecializationTooltip = "이 옵션을 켜면 레벨 50 이후 직업 별 전문화되지 않는 방어구에 대한 향상 정보를 숨깁니다. 예를 들어, 신성 성기사는 레벨 50에 판금 전문화를 배웁니다, 이것은 판금 방어구를 착용했을 때만 지능을 5% 증가시킵니다. 이 옵션을 선택하면 Pawn은 레벨 50+ 신성 성기사에게 천, 가죽, 또는 사슬 아이템을 향상 아이템으로 고려하지 않습니다.",
-		ValuesHeader = "%s의 능력치 비율 값",
+		ValuesHeader = "%s의 능력치 비율 값", -- Needs review
 		ValuesIgnoreStat = "포함된 아이템 사용불가",
 		ValuesIgnoreStatTooltip = "이 옵션을 켜면 능력치 비율에 따른 능력치 값을 가져오지 않습니다. 예를 들어, 주술사는 판금을 착용할 수 없으며, 판금이 사용불가능 하게 디자인된 주술사의 능력치 비율은 판금 방어구로부터 값을 가져오지 않습니다.",
 		ValuesNormalize = "값 일반화 (Wowhead 처럼)",
 		ValuesNormalizeTooltip = "이 옵션을 켜면 능력치 비율의 모든 능력치 값을 합산한 값과 아이템의 최종 계산 값을 분할합니다, Wowhead와 Lootzor이 그러하듯이. 이 것은 1을 기준으로 한 능력치 크기와 5를 기준으로 한 능력치 크기의 값을 균일하게 하는데 유용합니다. 또한 숫자를 작게 관리할 수 있게 도와줍니다.",
 		ValuesRemove = "제거",
 		ValuesRemoveTooltip = "능력치 비율에서 이 능력치 제거",
-		ValuesTab = "수치",
-		ValuesWelcome = "이 능력치 비율의 각 능력치 별로 할당할 값을 개인 설정할 수 있습니다. 능력치 비율을 관리하거나 추가하려면, 능력치 비율 탭을 이용하세요.",
+		ValuesTab = "수치", -- Needs review
+		ValuesWelcome = "이 능력치 비율의 각 능력치 별로 할당할 값을 개인 설정할 수 있습니다. 능력치 비율을 관리하거나 추가하려면, 능력치 비율 탭을 이용하세요.", -- Needs review
 		ValuesWelcomeNoScales = "능력치 비율을 선택하지 않았습니다. 시작하려면, 능력치 비율 탭으로 가서 새로운 능력치 비율을 만들거나 인터넷에서 붙여 넣으세요.",
-		ValuesWelcomeReadOnly = "선택된 능력치 비율은 변경할 수 없습니다. 이 값들을 변경하고 싶다면, 능력치 비율 탭으로 가서 이 능력치 비율을 복사하거나 새로운 것을 만드세요.",
-	},
-	Wowhead = {
-		Provider = "Wowhead 능력치 비율",
-		ProviderStarter = "초보자 능력치 비율",
+		ValuesWelcomeReadOnly = "선택된 능력치 비율은 변경할 수 없습니다. 이 값들을 변경하고 싶다면, 능력치 비율 탭으로 가서 이 능력치 비율을 복사하거나 새로운 것을 만드세요.", -- Needs review
 	},
 }
 end

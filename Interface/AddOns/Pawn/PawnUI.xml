@@ -1417,8 +1417,16 @@
 
 					<!-- Advisor options -->
 					
-					<CheckButton name="PawnUIFrame_ShowLootUpgradeAdvisorCheck" inherits="PawnUICheckboxTemplate">
+					<CheckButton name="PawnUIFrame_ShowBagUpgradeAdvisorCheck" inherits="PawnUICheckboxTemplate">
 						<Anchors><Anchor point="TOPLEFT"><Offset><AbsDimension x="300" y="-85" /></Offset></Anchor></Anchors>
+						<Layers><Layer level="ARTWORK">
+							<FontString name="$parent_Label" inherits="PawnUICheckboxLabelTemplate" text="PawnUIFrame_ShowBagUpgradeAdvisorCheck_Text" />
+						</Layer></Layers>
+						<Scripts><OnClick function="PawnUIFrame_ShowBagUpgradeAdvisorCheck_OnClick" /></Scripts>
+					</CheckButton>
+					
+					<CheckButton name="PawnUIFrame_ShowLootUpgradeAdvisorCheck" inherits="PawnUICheckboxTemplate">
+						<Anchors><Anchor point="TOPLEFT"><Offset><AbsDimension x="300" y="-110" /></Offset></Anchor></Anchors>
 						<Layers><Layer level="ARTWORK">
 							<FontString name="$parent_Label" inherits="PawnUICheckboxLabelTemplate" text="PawnUIFrame_ShowLootUpgradeAdvisorCheck_Text" />
 						</Layer></Layers>
@@ -1426,7 +1434,7 @@
 					</CheckButton>
 					
 					<CheckButton name="PawnUIFrame_ShowQuestUpgradeAdvisorCheck" inherits="PawnUICheckboxTemplate">
-						<Anchors><Anchor point="TOPLEFT"><Offset><AbsDimension x="300" y="-110" /></Offset></Anchor></Anchors>
+						<Anchors><Anchor point="TOPLEFT"><Offset><AbsDimension x="300" y="-135" /></Offset></Anchor></Anchors>
 						<Layers><Layer level="ARTWORK">
 							<FontString name="$parent_Label" inherits="PawnUICheckboxLabelTemplate" text="PawnUIFrame_ShowQuestUpgradeAdvisorCheck_Text" />
 						</Layer></Layers>
@@ -1434,7 +1442,7 @@
 					</CheckButton>
 					
 					<CheckButton name="PawnUIFrame_ShowSocketingAdvisorCheck" inherits="PawnUICheckboxTemplate">
-						<Anchors><Anchor point="TOPLEFT"><Offset><AbsDimension x="300" y="-135" /></Offset></Anchor></Anchors>
+						<Anchors><Anchor point="TOPLEFT"><Offset><AbsDimension x="300" y="-160" /></Offset></Anchor></Anchors>
 						<Layers><Layer level="ARTWORK">
 							<FontString name="$parent_Label" inherits="PawnUICheckboxLabelTemplate" text="PawnUIFrame_ShowSocketingAdvisorCheck_Text" />
 						</Layer></Layers>
@@ -1442,7 +1450,7 @@
 					</CheckButton>
 					
 					<CheckButton name="PawnUIFrame_IgnoreGemsWhileLevelingCheck" inherits="PawnUICheckboxTemplate">
-						<Anchors><Anchor point="TOPLEFT"><Offset><AbsDimension x="300" y="-160" /></Offset></Anchor></Anchors>
+						<Anchors><Anchor point="TOPLEFT"><Offset><AbsDimension x="300" y="-185" /></Offset></Anchor></Anchors>
 						<Layers><Layer level="ARTWORK">
 							<FontString name="$parent_Label" inherits="PawnUICheckboxLabelTemplate" text="PawnUIFrame_IgnoreGemsWhileLevelingCheck_Text" />
 						</Layer></Layers>
@@ -1450,7 +1458,7 @@
 					</CheckButton>
 
 					<CheckButton name="PawnUIFrame_IgnoreItemUpgradesCheck" inherits="PawnUICheckboxTemplate">
-						<Anchors><Anchor point="TOPLEFT"><Offset><AbsDimension x="300" y="-185" /></Offset></Anchor></Anchors>
+						<Anchors><Anchor point="TOPLEFT"><Offset><AbsDimension x="300" y="-210" /></Offset></Anchor></Anchors>
 						<Layers><Layer level="ARTWORK">
 							<FontString name="$parent_Label" inherits="PawnUICheckboxLabelTemplate" text="PawnUIFrame_IgnoreItemUpgradesCheck_Text" />
 						</Layer></Layers>
@@ -1542,7 +1550,15 @@
 						</FontString>
 						<FontString name="PawnUIFrame_WebsiteLabel" inherits="GameFontNormal" justifyH="LEFT" justifyV="TOP" text="PawnUIFrame_WebsiteLabel_Text">
 							<Anchors><Anchor point="TOPLEFT"><Offset><AbsDimension x="25" y="-160" /></Offset></Anchor></Anchors>
-							<Size><AbsDimension x="550" y="160" /></Size>
+							<Size><AbsDimension x="550" y="40" /></Size>
+						</FontString>
+						<Texture file="Interface\AddOns\Pawn\Textures\MrRobot">
+							<Anchors><Anchor point="TOPLEFT"><Offset><AbsDimension x="25" y="-210" /></Offset></Anchor></Anchors>
+							<Size><AbsDimension x="100" y="100" /></Size>
+						</Texture>
+						<FontString name="PawnUIFrame_MrRobotLabel" inherits="GameFontNormal" justifyH="LEFT" justifyV="TOP" text="PawnUIFrame_MrRobotLabel_Text">
+							<Anchors><Anchor point="TOPLEFT"><Offset><AbsDimension x="125" y="-210" /></Offset></Anchor></Anchors>
+							<Size><AbsDimension x="450" y="120" /></Size>
 						</FontString>
 
 					</Layer>

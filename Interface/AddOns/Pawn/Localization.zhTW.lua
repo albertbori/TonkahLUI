@@ -327,14 +327,13 @@ PawnLocal =
 	},
 	UI = {
 		AboutHeader = "關於 Pawn",
+		AboutMrRobot = "Default stat weights are provided by the generous Mr. Robot.  They’re a great starting point for characters with typical talents and artifact traits in typical fights.  You can get more accurate, customized stat weights for your character using the Ask Mr. Robot simulator at askmrrobot.com.", -- Requires localization
 		AboutReadme = "剛開始用 Pawn 嗎？請參閱[入門]頁面取得基本介紹。",
 		AboutTab = "關於",
 		AboutTranslation = "正體中文: scars 2014/10/21",
 		AboutVersion = "版本: %s",
-		AboutWebsite = [=[請至 vgermods.com 檢視由 Vger 製作的其他插件
-
-預設權重僅為略估，若 Wowhead 更新了最新的權重計算，
-我們會依其資料更新。]=],
+		AboutWebsite = "請至 vgermods.com 檢視由 Vger 製作的其他插件", -- Needs review
+		AskMrRobotProvider = "Ask Mr. Robot scales", -- Requires localization
 		CompareClearItems = "清除",
 		CompareClearItemsTooltip = "移除兩件比較中的物品.",
 		CompareColoredSockets = "有色插槽",
@@ -377,7 +376,7 @@ Pawn會與你身上的裝備比較]=],
  • 在一件物品鏈接上點擊右鍵來查看它與你當前物品的比較。
  • 用Shift-右鍵點擊一件有插槽的物品，可讓 Pawn 為它提供寶石建議。
  • 在權重頁面上為你的一個權重做備份，並在編輯頁面上自訂屬性。
- • 查看說明文件了解更多 Pawn 的相關進階功能。]=],
+ • 查看說明文件了解更多 Pawn 的相關進階功能。]=], -- Needs review
 		InterfaceOptionsBody = "點擊 Pawn 按鈕到達此處。你也可從角色資訊頁面打開 Pawn ，或者為它綁定一個按鍵。",
 		InterfaceOptionsWelcome = "Pawn 設置位於 Pawn 介面中",
 		InventoryButtonTooltip = "點擊顯示 Pawn 介面.",
@@ -388,6 +387,12 @@ Pawn會與你身上的裝備比較]=],
 		OptionsAdvisorHeader = "建議選項",
 		OptionsAlignRight = "將數值對齊右方",
 		OptionsAlignRightTooltip = "讓Pawn的數值在物品提示欄對齊右方，而非左方",
+		OptionsBagUpgradeAdvisor = "Show bag upgrade advisor",
+		OptionsBagUpgradeAdvisorTooltip = [=[Enable this option to have Pawn take over the in-bag upgrade arrows.
+
+If checked, Pawn will find upgrades in your bags and mark items that are an upgrade for any of your active scales with green arrows. 
+
+If unchecked, WoW will mark items with a higher item level than what you're currently wearing, and Pawn will not interfere with the built-in feature.]=],
 		OptionsBlankLine = "數值前加一個空白行",
 		OptionsBlankLineTooltip = "在 Pawn 數值前加入空白行，讓你的提示訊息更整齊",
 		OptionsButtonHidden = "不顯示",
@@ -437,7 +442,7 @@ Pawn會與你身上的裝備比較]=],
 選中後，插件只會計算裝備當前狀態的屬性評估。
 
 未選中的情況下，插件會計算本件裝備最大提升後潛在的屬性評估，即用勇氣點數等升級滿裝備裝等後的屬性。此屬性將顯示包含在裝備當前屬性後的括號內。]=],
-		OptionsInventoryIcon = "顯示物品圖標",
+		OptionsInventoryIcon = "顯示物品圖標", -- Needs review
 		OptionsInventoryIconTooltip = "開啟此選項以在物品連結視窗旁顯示物品圖標",
 		OptionsItemIDs = "顯示物品ID",
 		OptionsItemIDsTooltip = [=[開啟此選項，使 Pawn 顯示物品ID、附魔ID以及寶石ID。
@@ -539,12 +544,13 @@ WoW中所有的物件都有個ID，通常只有寫插件的人才需要這些資
 		SocketingAdvisorButtonTooltip = "點擊顯示Pawn珠寶介面, 此處你可看到 Pawn 為每種權重推薦的寶石,和更換至更高或更低品質的寶石.",
 		SocketingAdvisorHeader = "Pawn 插槽建議:",
 		SocketingAdvisorIgnoreThisItem = "不需要特地為這個低等裝備嵌入寶石，但如果你真的要的話，可使用以下建議:",
+		StarterProvider = "預設權重", -- Needs review
 		ValuesDoNotShowUpgradesFor1H = "不要顯示單手裝備的提升",
 		ValuesDoNotShowUpgradesFor2H = "不要顯示雙手裝備的提升",
 		ValuesDoNotShowUpgradesTooltip = "啟用該選項來隱藏此類型裝備的提升。比如，雖然坦騎可以用雙手武器，但是對坦騎設定來說一件雙手武器從來都不是一個 \"提升\"，因此Pawn將不會為它們顯示提升訊息。同樣，懲戒騎可以使用單手武器，但它們從不是一個提升。",
 		ValuesFollowSpecialization = "50等以後只顯示最佳護甲類型",
 		ValuesFollowSpecializationTooltip = "啟用該選項來隱藏50等以後非職業專精的護甲類型。比如，神聖聖騎在50等學到了鎧甲專精, 當只裝備鎧甲時增加智力5%。當此選項選擇時Pawn將不會考慮布、皮及鎖甲對50等以上神聖聖騎士的提升",
-		ValuesHeader = "調整 %s 權重",
+		ValuesHeader = "調整 %s 權重", -- Needs review
 		ValuesIgnoreStat = "帶此屬性的物品沒有用處。",
 		ValuesIgnoreStatTooltip = "啟用這個選項讓此物品不計分數。例如，薩滿不能裝備鎧甲，所以為薩滿設計的權重可以標記鎧甲為不可用的，鎧甲即不計分。",
 		ValuesNormalize = "數值標準化 (像 Wowhead)",
@@ -553,16 +559,12 @@ WoW中所有的物件都有個ID，通常只有寫插件的人才需要這些資
 取得此項設定的更多資訊，請看說明檔案。]=],
 		ValuesRemove = "移除",
 		ValuesRemoveTooltip = "從權重中移除此屬性。",
-		ValuesTab = "分數",
+		ValuesTab = "分數", -- Needs review
 		ValuesWelcome = [=[你可以為該權重決定分配給每項屬性的分數。
-若要管理你的權重和增加新權重，請用權重頁面。]=],
+若要管理你的權重和增加新權重，請用權重頁面。]=], -- Needs review
 		ValuesWelcomeNoScales = "你還未選擇權重。若要啟動，請去權重頁面啟動一個新權重或者從網上複製一個。",
 		ValuesWelcomeReadOnly = [=[所選擇的權重無法更改。
-若你想改變這些分數，請至權重頁面複製或創建一個新權重。]=],
-	},
-	Wowhead = {
-		Provider = "Wowhead 權重",
-		ProviderStarter = "預設權重",
+若你想改變這些分數，請至權重頁面複製或創建一個新權重。]=], -- Needs review
 	},
 }
 end

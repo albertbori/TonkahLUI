@@ -324,15 +324,15 @@ PawnLocal =
 	},
 	UI = {
 		AboutHeader = "关于 Pawn",
+		AboutMrRobot = "现在Pawn插件的属性权重标准是参考了Ask Mr. Robot网站提供的标准属性权重，这个网站提供了根据你角色的天赋和现有装备计算如何提升和现阶段的属性权重。有兴趣可以去askmrrobot.com尝试使用。（译者注，似乎不支持国服，尝试国服角色总是报错）",
 		AboutReadme = "新手？看看“准备开始”标签。",
 		AboutTab = "关于",
 		AboutTranslation = "国服简中汉化：五十五颗土豆#5630",
 		AboutVersion = "版本 %s",
 		AboutWebsite = [=[想要更多作者Vger的插件，请访问vgermods.com。
 
-默认属性权重的统计与设定来自于Wowhead。
-
 国服简中汉化：五十五颗土豆#5630   |   NGA论坛ID：bigbamboo  如果有汉化问题反馈请联系我]=],
+		AskMrRobotProvider = "Ask Mr. Robot 标准属性权重",
 		CompareClearItems = "清除",
 		CompareClearItemsTooltip = "移除两件对照的物品.",
 		CompareColoredSockets = "彩色插槽",
@@ -373,7 +373,7 @@ Pawn 会将它与你装备的物品进行对比.]=],
 
  •  你可以在相关标签，对每一项评分标准进行显示和隐藏操作。
 
-Pawn插件默认已经参考Wowhead给所有职业的专精建立了标准评分规则。你也可以根据自己的需求来建立或更改自己的评分标准，无论是从网站、工会等其他途径获得的评分标准。
+Pawn插件默认已经参考AskMrRobot给所有职业的专精建立了标准评分规则。你也可以根据自己的需求来建立或更改自己的评分标准，无论是从网站、工会等其他途径获得的评分标准。
 
 |cff8ec3e6试试这些功能：|r
  •  通过Pawn的比较标签来比较两件装备是如何进行计算评分和比较收益的。
@@ -391,6 +391,12 @@ Pawn插件默认已经参考Wowhead给所有职业的专精建立了标准评分
 		OptionsAdvisorHeader = "建议选项",
 		OptionsAlignRight = "排列数值到提示栏右边.",
 		OptionsAlignRightTooltip = "让数值靠最右边显示，而不是放在属性权重项目名称的后面。",
+		OptionsBagUpgradeAdvisor = "Show bag upgrade advisor", -- Requires localization
+		OptionsBagUpgradeAdvisorTooltip = [=[Enable this option to have Pawn take over the in-bag upgrade arrows.
+
+If checked, Pawn will find upgrades in your bags and mark items that are an upgrade for any of your active scales with green arrows. 
+
+If unchecked, WoW will mark items with a higher item level than what you're currently wearing, and Pawn will not interfere with the built-in feature.]=], -- Requires localization
 		OptionsBlankLine = "数值前加一个空白行",
 		OptionsBlankLineTooltip = "在Pawn的数据信息之前加一个空格，让显示更清爽。",
 		OptionsButtonHidden = "隐藏",
@@ -455,7 +461,7 @@ Pawn插件默认已经参考Wowhead给所有职业的专精建立了标准评分
 
 |cff8ec3e6奥法:  123.4
 火法:  156.7 |TInterface\AddOns\Pawn\Textures\UpgradeArrow:0|t |cff00ff00+10% 提升|r]=],
-		OptionsTooltipValuesOnly = "只显示比重数值,不显示提升%",
+		OptionsTooltipValuesOnly = "只显示属性权重评分数值，不显示提升%",
 		OptionsTooltipValuesOnlyTooltip = [=[只显示装备在你选择的属性权重下的分值，不显示属性的提升。例如：
 
 |cff8ec3e6奥法:  123.4
@@ -513,6 +519,7 @@ Pawn插件默认已经参考Wowhead给所有职业的专精建立了标准评分
 		SocketingAdvisorButtonTooltip = "点击显示Pawn珠宝界面, 你可看到 Pawn 为每种属性权重推荐的宝石.",
 		SocketingAdvisorHeader = "Pawn 插槽建议:",
 		SocketingAdvisorIgnoreThisItem = "不需要特地为这个低等装备去镶嵌宝石，但如果你真的要这么做的话，可参考以下建议：",
+		StarterProvider = "各职业标准属性权重：",
 		ValuesDoNotShowUpgradesFor1H = "请不要显示单手装备的提升",
 		ValuesDoNotShowUpgradesFor2H = "请不要显示双手装备的提升",
 		ValuesDoNotShowUpgradesTooltip = "启用该选项来隐藏此类型装备的提升。比如，虽然坦骑可以用双手武器，但是对坦骑设定来说一件双手武器从来都不是一个\"提升\"，因此Pawn将不会为它们显示提升信息。同样，惩戒骑可以使用单手武器，但它们从不是一个提升。",
@@ -528,11 +535,7 @@ Pawn插件默认已经参考Wowhead给所有职业的专精建立了标准评分
 		ValuesTab = "数值",
 		ValuesWelcome = "你可以为该属性权重自定义每项属性的数值.  若要管理你的自定义项目和增加新的项目,请用属性权重页面.",
 		ValuesWelcomeNoScales = "你还未选择属性权重. 若要启用,请去属性权重页面并启动一个新属性权重或者从网上粘贴一个.",
-		ValuesWelcomeReadOnly = "已被选择的该属性权重不能被更改.若你想改变这些数值,请去属性权重页面生成一份备份或者启用一个新的比重.",
-	},
-	Wowhead = {
-		Provider = "Wowhead 属性权重",
-		ProviderStarter = "各职业标准属性权重：",
+		ValuesWelcomeReadOnly = "已被选择的该属性权重不能被更改.若你想改变这些数值,请去属性权重页面生成一份备份或者启用一个新的属性权重.",
 	},
 }
 end

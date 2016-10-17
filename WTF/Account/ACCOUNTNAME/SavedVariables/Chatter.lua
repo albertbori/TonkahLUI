@@ -263,38 +263,38 @@ ChatterDB = {
 			["realm"] = {
 				["Doomhammer"] = {
 					["history"] = {
-						"/gsse", -- [1]
-						"/gsse", -- [2]
-						"/bartender", -- [3]
-						"/omen config", -- [4]
-						"/macro", -- [5]
-						"/macro", -- [6]
-						"/macro", -- [7]
-						"/macro", -- [8]
-						"/macro", -- [9]
-						"/macro", -- [10]
-						"/macro", -- [11]
-						"/macro", -- [12]
-						"/macro", -- [13]
-						"/macro", -- [14]
-						"/bartender", -- [15]
-						"/healbot", -- [16]
-						"/lui", -- [17]
-						"/lui", -- [18]
-						"/reload", -- [19]
-						"/lui", -- [20]
-						"/lui", -- [21]
-						"/lui", -- [22]
-						"/lui", -- [23]
-						"/reload", -- [24]
-						"/lui", -- [25]
-						"/reload", -- [26]
-						"/lui", -- [27]
-						"/recount config", -- [28]
-						"/omen config", -- [29]
-						"/omen", -- [30]
-						"/omen test", -- [31]
-						"/omen config", -- [32]
+						" I'm not going to DPS on this character. I don't like how shadow dps works. I made this guy to heal.", -- [1]
+						" Dave is partially AFK watching kids.", -- [2]
+						" I'm leveling a warlock for max-level dps", -- [3]
+						" I'm not sure, he didn't tell me. He just said that tonight wasn't a good night for him.", -- [4]
+						"/who Defiant", -- [5]
+						" Are you not running world quests?", -- [6]
+						" yea, this expansion is super not alt friendly", -- [7]
+						" So much work", -- [8]
+						" What monitor do you use for gaming?", -- [9]
+						" I'm thinking about jumping to a 27\" 4k", -- [10]
+						" and a GTX 1080", -- [11]
+						" hi frend", -- [12]
+						"/g GRATS!", -- [13]
+						"/i left here?", -- [14]
+						"/macro", -- [15]
+						"/macro", -- [16]
+						"/i where is this guardian guy?", -- [17]
+						"/i cool", -- [18]
+						"/i wait... that wasn't him?", -- [19]
+						"/i it didnt' complete it for me :-/", -- [20]
+						"/shrug", -- [21]
+						"/i yea, maybe", -- [22]
+						"/i queue again?", -- [23]
+						"/i again?", -- [24]
+						"/i swim down for Guardian of the deep", -- [25]
+						"/i yup", -- [26]
+						"/i I'm ready", -- [27]
+						"/i I'm game", -- [28]
+						"/i pandaria is for  quitters :P", -- [29]
+						"/i thanks", -- [30]
+						"/i same", -- [31]
+						"/i I'm good for more", -- [32]
 					},
 				},
 			},
@@ -302,12 +302,12 @@ ChatterDB = {
 		["ChatFont"] = {
 			["profiles"] = {
 				["Default"] = {
-					["fontsize"] = 12,
 					["font"] = "Arial Narrow",
+					["fontsize"] = 12,
 				},
 				["Tonkah LUI"] = {
-					["font"] = "Arial Narrow",
 					["fontsize"] = 12,
+					["font"] = "Arial Narrow",
 				},
 			},
 		},
@@ -320,6 +320,7 @@ ChatterDB = {
 		["Taunkah - Doomhammer"] = "Tonkah LUI",
 		["Nilrum - Doomhammer"] = "Default",
 		["Bartholamue - Doomhammer"] = "Default",
+		["Bahlar - Doomhammer"] = "Tonkah LUI",
 		["Marmit - Doomhammer"] = "Default",
 	},
 	["profiles"] = {

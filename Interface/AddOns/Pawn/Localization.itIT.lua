@@ -325,13 +325,13 @@ Per maggiori informazioni su come personalizzare Pawn, per favore leggere il fil
 	},
 	UI = {
 		AboutHeader = "Informazioni su Pawn",
+		AboutMrRobot = "I pesi predefiniti delle caratteristiche sono forniti dal generoso Mr. Robot. Sono un ottimo punto iniziale per personaggi con talenti e tratti dell'artefatto tipici in un combattimento tipico. Puoi ottenere dei pesi delle caratteristiche più accurati e personalizzati per il tuo personaggio usando il simulatore Ask Mr. Robot su askmrrobot.com.",
 		AboutReadme = "Prima volta che utilizzi Pawn? Dai un'occhiata alla sezione Introduzione per avere delle informazioni di base.",
 		AboutTab = "Informazioni su...",
 		AboutTranslation = "Versione Italiana a cura di Licen",
 		AboutVersion = "Versione %s",
-		AboutWebsite = [=[Per altri mods di Vger, visita vgermods.com.
-
-Ottenuto il permesso di usare i pesi delle statistiche di Wowhead - si prega di dare il feedback sui valori di default direttamente a Wowhead.]=],
+		AboutWebsite = "Per altri mods di Vger, visita vgermods.com.",
+		AskMrRobotProvider = "Formule di Ask Mr. Robot",
 		CompareClearItems = "Azzera",
 		CompareClearItemsTooltip = "Rimuovi entrambi gli oggetti da comparare.",
 		CompareColoredSockets = "Incavo colorato",
@@ -366,23 +366,21 @@ Per esempio, se impostato a "463", Pawn suggerirà gemme adatte per oggetti di l
 		GemsWelcome = "Seleziona una formula sulla sinistra per vedere le gemme che Pawn consiglia.",
 		HelpHeader = "Benvenuto su Pawn!",
 		HelpTab = "Introduzione",
-		HelpText = [=[Pawn calcola i punteggi per i tuoi oggetti basandosi sulle statistiche possedute dall'oggetto. Utilizza questi punteggi per determinare quale oggetto è migliore, ed identifica gli oggetti che potrebbero migliorare il tuo equipaggiamento.
+		HelpText = [=[Pawn ti aiuta a trovare il miglior equipaggiamento adatto a te ed identifica i miglioramenti che incontri.
 
 
-Ogni oggetto avrà un punteggio per ogni "formula" attiva per il tuo personaggio. Una formula ha la lista delle statistiche importanti per te, e quanti punti vale ogni statistica. In genere hai una formula per ogni specializzazione o ruolo della tua classe. I punteggi sono generalmente nascosti, ma puoi vedere come il punteggio per un oggetto è stato calcolato attraverso la sezione Compara.
+Quando ricevi ricompense da una missione o bottino da una spedizione che può essere migliore dell'equipaggiamento indossato, Pawn te lo indicherà con una freccia verde. Controlla anche altre informazioni utili al fondo del dialogo dell'oggetto.
 
- • Puoi attivare o disattivare una formula facendo shift-click su di essa nella lista della sezione Formula.
+    |cff8ec3e6Fire:|r  |TInterface\AddOns\Pawn\Textures\UpgradeArrow:0|t |cff00ff00+10% di miglioramento|r
 
-
-Pawn esce con una formula pre-costruita per ogni classe e specializzazione. Puoi anche creare la tua versione assegnando valori ad ogni statistica, importando una formula da internet o da uno strumento di simulazione, oppure condividere la formula con i compagni di gilda.
 
 
 |cff8ec3e6Prova queste funzionalità una volta che avrai imparato le basi:|r
+
  • Compara le statistiche di due oggetti usando la sezione Compara di Pawn.
  • Fai tasto destro su di un link ad un oggetto per vedere come viene paragonato al tuo attuale oggetto.
- • Fai una copia di una delle tue formule dalla sezione Formula, e personalizza i valori delle statistiche dalla sezione Valori.
- • Trova nuove formule per la tua classe attraverso internet.
- • Controlla il file readme per imparare di più sulle funzioni avanzate di Pawn.]=],
+ • Nella scheda Formula, passa a modalità Manuale per mostrare suggerimenti per più di una specializzazione alla volta.
+ • Usa il simulatore Ask Mr. Robot e costruisci una formula personalizzata per il tuo personaggio per ottenere suggerimenti più specifici.]=],
 		InterfaceOptionsBody = "Clicca sul pulsante di Pawn per aprirlo. Puoi anche aprire Pawn dall'inventario o associando un tasto ad esso.",
 		InterfaceOptionsWelcome = "Le opzioni di Pawn si trovano nella relativa interfaccia di Pawn.",
 		InventoryButtonTooltip = "Clicca per aprire Pawn.",
@@ -393,6 +391,12 @@ Pawn esce con una formula pre-costruita per ogni classe e specializzazione. Puoi
 		OptionsAdvisorHeader = "Opzioni avvisi",
 		OptionsAlignRight = "Allinea i valori a destra",
 		OptionsAlignRightTooltip = "Abilita questa opzione per allineare i valori di Pawn e le informazioni di miglioramento al bordo destro della tooltip invece che a sinistra.",
+		OptionsBagUpgradeAdvisor = "Show bag upgrade advisor",
+		OptionsBagUpgradeAdvisorTooltip = [=[Enable this option to have Pawn take over the in-bag upgrade arrows.
+
+If checked, Pawn will find upgrades in your bags and mark items that are an upgrade for any of your active scales with green arrows. 
+
+If unchecked, WoW will mark items with a higher item level than what you're currently wearing, and Pawn will not interfere with the built-in feature.]=],
 		OptionsBlankLine = "Aggiungi una riga vuota prima dei valori",
 		OptionsBlankLineTooltip = "Mantieni la tooltip dei tuoi oggetti estremamente ordinata abilitando questa opzione. Essa aggiungerà una riga vuota prima dei valori di Pawn.",
 		OptionsButtonHidden = "Nascondilo",
@@ -429,7 +433,7 @@ Se disattivata, Pawn calcolerà il valore per gli oggetti come se fossero incast
 Se abilitata, Pawn tratterà gli oggetti migliorabili così come sono, e non terrà conto che potresti usare i punti Valore o il Frammento Apexis Potenziato per migliorare l'oggetto quando determina se un oggetto è migliore di quello che attualmente indossi.
 
 Se disabilitata, Pawn tratterà questi oggetti assumento che tu massimizzi il loro potenziale con i punti Valore e il Frammento Apexis Potenziato. Questo potrebbe causare che un oggetto bieco livello 650 appaia come un miglioramento sostanziale rispetto ad un oggetto 670 di Fonderia dei Roccianera, visto che l'oggetto bieco può potenzialmente essere migliorato fino al livello 705 attraverso i punti Valore e i cristalli Apexis.]=],
-		OptionsInventoryIcon = "Show inventory icons",
+		OptionsInventoryIcon = "Show inventory icons", -- Needs review
 		OptionsInventoryIconTooltip = "Enable this option to show inventory icons next to item link windows.",
 		OptionsItemIDs = "Mostra ID oggetti",
 		OptionsItemIDsTooltip = [=[Abilita questa optione per permettere a Pawn di mostrare gli ID degli oggetti che incontri, così come gli ID degli incantamenti e delle gemme.
@@ -523,12 +527,13 @@ Scorciatoia: Shift+click su una formula]=],
 		SocketingAdvisorButtonTooltip = "Clicca per aprire la scheda delle Gemme di Pawn, dove puoi avere maggiori informazioni sulle gemme che Pawn consiglia.",
 		SocketingAdvisorHeader = "L'avviso d'Incavo di Pawn suggerisce:",
 		SocketingAdvisorIgnoreThisItem = "Non disturbarti ad aggiungere gemme agli oggetti di basso livello. Ma se proprio vuoi, usa queste:",
+		StarterProvider = "Formule per iniziare",
 		ValuesDoNotShowUpgradesFor1H = "Non mostrare miglioramenti per oggetti ad 1 mano",
 		ValuesDoNotShowUpgradesFor2H = "Non mostrare miglioramenti per oggetti a 2 mani",
 		ValuesDoNotShowUpgradesTooltip = "Abilita questa opzione per nascondere i miglioramenti di questo tipo di oggetto. Per esempio, anche se un difensore paladino può usare armi a 2 mani, un'arma a 2 mano non è mai un \"miglioramento\" per un paladino in assetto da difensore, quindi Pawn non dovrebbe mostrare la notifica di miglioramento per queste. In maniera similare, i paladini castigo possono usare armi ad 1 mano, ma non sono mai miglioramenti.",
 		ValuesFollowSpecialization = "Mostra solo i miglioramenti per il mio miglior tipo di armatura dopo il livello 50",
 		ValuesFollowSpecializationTooltip = "Abilita questa opzione per nascondere i miglioramenti dell'armatura in cui la tua classe non è specializzata dopo il livello 50. Per esempio, al livello 50 un paladino sacro impara Specializzazione: Armature a Piastre, che aumenta il proprio intelletto del 5% quando indossa solo armature in piastre. Quando questa opzione è selezionata Pawn non considererà mai stoffa, pelle o maglia come miglioramenti per paladini sacri di livello 50+.",
-		ValuesHeader = "Valori della formula per %s",
+		ValuesHeader = "Pesi della formula per %s", -- Needs review
 		ValuesIgnoreStat = "Gli oggetti con questa sono inutilizzabili",
 		ValuesIgnoreStatTooltip = "Abilita questa opzione per far in modo che ogni oggetto con questa statistica non ottenga valore per questa formula. Per esempio, gli sciamani non possono indossare piastre, quindi una formula per uno sciamano può impostare piastre come inutilizzabile così che quelle armature non ottengano valore per quella formula.",
 		ValuesNormalize = "Normalizza valori (come Wowhead)",
@@ -537,14 +542,10 @@ Scorciatoia: Shift+click su una formula]=],
 Per maggiori informazioni su questa impostazione, leggere il file di readme.]=],
 		ValuesRemove = "Rimuovi",
 		ValuesRemoveTooltip = "Rimuovi questa statistica dalla formula.",
-		ValuesTab = "Valori",
-		ValuesWelcome = "Puoi personalizzare i valori che sono assegnati ad ogni statistica in questa formula. Per gestire le tue formule e aggiungerne di nuove, utilizza la scheda Formula.",
+		ValuesTab = "Pesi",
+		ValuesWelcome = "Puoi personalizzare i pesi che sono assegnati ad ogni caratteristica in questa formula. Per gestire le tue formule e aggiungerne di nuove, utilizza la modalità manuale nella scheda Formula.",
 		ValuesWelcomeNoScales = "Non hai alcuna formula selezionata. Per iniziare, vai alla scheda Formula e crea una nuova formula o incollane una da internet.",
-		ValuesWelcomeReadOnly = "La formula che hai selezionato non può essere cambiata. Se desideri cambiare questi valori, vai nella scheda Formula e fanne una copia o creane una nuova.",
-	},
-	Wowhead = {
-		Provider = "Formule di Wowhead",
-		ProviderStarter = "Formule per iniziare",
+		ValuesWelcomeReadOnly = "Questa formula predefinita non può essere cambiata. Se desideri cambiare questi valori, vai nella scheda Formula, abilita la modalità Manuale, e fai una copia di questa formula.",
 	},
 }
 end

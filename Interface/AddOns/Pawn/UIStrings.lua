@@ -255,6 +255,8 @@ PawnUIFrame_UpgradeTrackingOnRadio_Text = L.OptionsUpgradeTrackingOn
 PawnUIFrame_UpgradeTrackingOnRadio_Tooltip = L.OptionsUpgradeTrackingOnTooltip
 
 PawnUIFrame_AdvisorOptionsHeaderLabel_Text = L.OptionsAdvisorHeader
+PawnUIFrame_ShowBagUpgradeAdvisorCheck_Text = L.OptionsBagUpgradeAdvisor
+PawnUIFrame_ShowBagUpgradeAdvisorCheck_Tooltip = L.OptionsBagUpgradeAdvisorTooltip
 PawnUIFrame_ShowLootUpgradeAdvisorCheck_Text = L.OptionsLootAdvisor
 PawnUIFrame_ShowLootUpgradeAdvisorCheck_Tooltip = L.OptionsLootAdvisorTooltip
 PawnUIFrame_ShowQuestUpgradeAdvisorCheck_Text = L.OptionsQuestUpgradeAdvisor
@@ -290,6 +292,7 @@ PawnUIFrame_AboutVersionLabel_Text = L.AboutVersion
 PawnUIFrame_AboutTranslationLabel_Text = L.AboutTranslation -- Translators: credit yourself here... "Klingon translation by Stovokor"
 PawnUIFrame_ReadmeLabel_Text = L.AboutReadme
 PawnUIFrame_WebsiteLabel_Text = L.AboutWebsite
+PawnUIFrame_MrRobotLabel_Text = L.AboutMrRobot
 
 -- Configuration UI, Help tab
 PawnUIFrame_HelpTab_Text = L.HelpTab
