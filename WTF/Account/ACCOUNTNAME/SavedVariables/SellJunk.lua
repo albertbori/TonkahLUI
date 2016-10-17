@@ -24,8 +24,8 @@ SellJunkDB = {
 	},
 	["profileKeys"] = {
 		["Holyshnizzle - Doomhammer"] = "Holyshnizzle - Doomhammer",
-		["Nilrum - Doomhammer"] = "Nilrum - Doomhammer",
 		["Bahlar - Doomhammer"] = "Bahlar - Doomhammer",
 		["Taunkah - Doomhammer"] = "Taunkah - Doomhammer",
+		["Nilrum - Doomhammer"] = "Nilrum - Doomhammer",
 	},
 }

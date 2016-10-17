@@ -12,14 +12,14 @@ GnomeOptions = {
 			{
 				["source"] = "Local",
 				["author"] = "Alfalpha@Doomhammer",
-				["PostMacro"] = "/cast [combat] Summon Gargoyle\n/cast [combat] Dark Transformation\n",
-				["lang"] = "enUS",
+				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][noharm][dead]\n",
+				["icon"] = "INV_MISC_QUESTIONMARK",
 				["version"] = 1,
 				["StepFunction"] = "  limit = limit or 1\n  if step == limit then\n    limit = limit % #macros + 1\n    step = 1\n  else\n    step = step % #macros + 1\n  end\n",
 				["helpTxt"] = "Talents: 1221233",
 				["specID"] = 252,
-				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][noharm][dead]\n",
-				["icon"] = "INV_MISC_QUESTIONMARK",
+				["lang"] = "enUS",
+				["PostMacro"] = "/cast [combat] Summon Gargoyle\n/cast [combat] Dark Transformation\n",
 			}, -- [1]
 			{
 				"/cast Outbreak", -- [1]
@@ -30,14 +30,14 @@ GnomeOptions = {
 				"/cast Death Coil", -- [6]
 				["source"] = "Local",
 				["author"] = "Alfalpha@Doomhammer",
-				["PostMacro"] = "/cast [combat] Summon Gargoyle\n/cast [combat] Dark Transformation\n",
-				["lang"] = "enUS",
+				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][noharm][dead]\n",
+				["icon"] = "INV_MISC_QUESTIONMARK",
 				["version"] = 2,
 				["StepFunction"] = "  limit = limit or 1\n  if step == limit then\n    limit = limit % #macros + 1\n    step = 1\n  else\n    step = step % #macros + 1\n  end\n",
 				["helpTxt"] = "Talents: 1221233",
 				["specID"] = 252,
-				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][noharm][dead]\n",
-				["icon"] = "INV_MISC_QUESTIONMARK",
+				["lang"] = "enUS",
+				["PostMacro"] = "/cast [combat] Summon Gargoyle\n/cast [combat] Dark Transformation\n",
 			}, -- [2]
 			{
 				"/cast Outbreak", -- [1]
@@ -48,14 +48,14 @@ GnomeOptions = {
 				"/cast Death Coil", -- [6]
 				["source"] = "Local",
 				["author"] = "Alfalpha@Doomhammer",
-				["PostMacro"] = "/cast [combat] Dark Transformation\n/cast [combat] Summon Gargoyle\n",
-				["lang"] = "enUS",
+				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][noharm][dead]\n",
+				["icon"] = "INV_MISC_QUESTIONMARK",
 				["version"] = 3,
 				["StepFunction"] = "  limit = limit or 1\n  if step == limit then\n    limit = limit % #macros + 1\n    step = 1\n  else\n    step = step % #macros + 1\n  end\n",
 				["helpTxt"] = "Talents: 1221233",
 				["specID"] = 252,
-				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][noharm][dead]\n",
-				["icon"] = "INV_MISC_QUESTIONMARK",
+				["lang"] = "enUS",
+				["PostMacro"] = "/cast [combat] Dark Transformation\n/cast [combat] Summon Gargoyle\n",
 			}, -- [3]
 			{
 				"/cast [nochanneling] Outbreak", -- [1]
@@ -68,13 +68,13 @@ GnomeOptions = {
 				"/cast [nochanneling] Death Coil", -- [8]
 				["source"] = "Local",
 				["author"] = "Alfalpha@Doomhammer",
-				["PostMacro"] = "",
+				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][noharm][dead]\n",
 				["version"] = 4,
-				["lang"] = "enUS",
+				["icon"] = "INV_MISC_QUESTIONMARK",
 				["helpTxt"] = "Talents: 1221233",
 				["specID"] = 252,
-				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][noharm][dead]\n",
-				["icon"] = "INV_MISC_QUESTIONMARK",
+				["lang"] = "enUS",
+				["PostMacro"] = "",
 			}, -- [4]
 			{
 				"/cast [nochanneling] Outbreak", -- [1]
@@ -86,13 +86,13 @@ GnomeOptions = {
 				"/cast [nochanneling,nomod] Death Coil; Death Strike", -- [7]
 				["source"] = "Local",
 				["author"] = "Alfalpha@Doomhammer",
-				["PostMacro"] = "",
+				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][noharm][dead]\n",
 				["version"] = 5,
-				["lang"] = "enUS",
+				["icon"] = "INV_MISC_QUESTIONMARK",
 				["helpTxt"] = "Talents: 1221233",
 				["specID"] = 252,
-				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][noharm][dead]\n",
-				["icon"] = "INV_MISC_QUESTIONMARK",
+				["lang"] = "enUS",
+				["PostMacro"] = "",
 			}, -- [5]
 			{
 				"/cast [nochanneling] Apocalypse", -- [1]
@@ -105,13 +105,13 @@ GnomeOptions = {
 				"/cast [nochanneling,nomod] Death Coil; Death Strike", -- [8]
 				["source"] = "Local",
 				["author"] = "Alfalpha@Doomhammer",
-				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][noharm][dead]\n",
+				["PostMacro"] = "",
 				["version"] = 6,
-				["icon"] = "INV_MISC_QUESTIONMARK",
+				["lang"] = "enUS",
 				["helpTxt"] = "Talents: 1221233",
 				["specID"] = 252,
-				["lang"] = "enUS",
-				["PostMacro"] = "",
+				["icon"] = "INV_MISC_QUESTIONMARK",
+				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][noharm][dead]\n",
 			}, -- [6]
 		},
 		["HolyDPS"] = {
@@ -122,14 +122,14 @@ GnomeOptions = {
 				"/cast Smite", -- [4]
 				["source"] = "Local",
 				["author"] = "Holyshnizzle@Doomhammer",
-				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][help][dead]\n",
-				["icon"] = "INV_MISC_QUESTIONMARK",
+				["PostMacro"] = "",
+				["lang"] = "enUS",
 				["version"] = 1,
 				["StepFunction"] = "  limit = limit or 1\n  if step == limit then\n    limit = limit % #macros + 1\n    step = 1\n  else\n    step = step % #macros + 1\n  end\n",
 				["helpTxt"] = "Talents: 2333222",
 				["specID"] = 258,
-				["lang"] = "enUS",
-				["PostMacro"] = "",
+				["icon"] = "INV_MISC_QUESTIONMARK",
+				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][help][dead]\n",
 			}, -- [1]
 			{
 				"/cast Holy Word: Chastise", -- [1]
@@ -138,13 +138,13 @@ GnomeOptions = {
 				"/cast Smite", -- [4]
 				["source"] = "Local",
 				["author"] = "Holyshnizzle@Doomhammer",
-				["icon"] = "INV_MISC_QUESTIONMARK",
+				["PostMacro"] = "",
 				["version"] = 2,
-				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][help][dead]\n",
+				["lang"] = "enUS",
 				["helpTxt"] = "Talents: 2333222",
 				["specID"] = 258,
-				["lang"] = "enUS",
-				["PostMacro"] = "",
+				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][help][dead]\n",
+				["icon"] = "INV_MISC_QUESTIONMARK",
 			}, -- [2]
 			{
 				"/cast Holy Word: Chastise", -- [1]
@@ -153,13 +153,13 @@ GnomeOptions = {
 				"/cast Smite", -- [4]
 				["source"] = "Local",
 				["author"] = "Holyshnizzle@Doomhammer",
-				["icon"] = "INV_MISC_QUESTIONMARK",
+				["PostMacro"] = "",
 				["version"] = 3,
-				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][help][dead]\n",
+				["lang"] = "enUS",
 				["helpTxt"] = "Talents: 2333222",
 				["specID"] = 258,
-				["lang"] = "enUS",
-				["PostMacro"] = "",
+				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][help][dead]\n",
+				["icon"] = "INV_MISC_QUESTIONMARK",
 			}, -- [3]
 			{
 				"/cast Holy Word: Chastise", -- [1]
@@ -168,13 +168,13 @@ GnomeOptions = {
 				"/cast Smite", -- [4]
 				["source"] = "Local",
 				["author"] = "Holyshnizzle@Doomhammer",
-				["PostMacro"] = "",
+				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][noharm][dead]\n",
 				["version"] = 4,
-				["lang"] = "enUS",
+				["icon"] = "INV_MISC_QUESTIONMARK",
 				["helpTxt"] = "Talents: 2333222",
 				["specID"] = 257,
-				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][noharm][dead]\n",
-				["icon"] = "INV_MISC_QUESTIONMARK",
+				["lang"] = "enUS",
+				["PostMacro"] = "",
 			}, -- [4]
 		},
 		["ShadowDPS"] = {
@@ -182,14 +182,14 @@ GnomeOptions = {
 				"/cast [reset=12] Shadow Word: Pain", -- [1]
 				["source"] = "Local",
 				["author"] = "Holyshnizzle@Doomhammer",
-				["PostMacro"] = "",
-				["lang"] = "enUS",
+				["PreMacro"] = "",
+				["icon"] = "INV_MISC_QUESTIONMARK",
 				["version"] = 1,
 				["StepFunction"] = "  limit = limit or 1\n  if step == limit then\n    limit = limit % #macros + 1\n    step = 1\n  else\n    step = step % #macros + 1\n  end\n",
 				["helpTxt"] = "Talents: 1322233",
 				["specID"] = 258,
-				["PreMacro"] = "",
-				["icon"] = "INV_MISC_QUESTIONMARK",
+				["lang"] = "enUS",
+				["PostMacro"] = "",
 			}, -- [1]
 			{
 				"/cast Mindbender", -- [1]
@@ -199,14 +199,14 @@ GnomeOptions = {
 				"/cast [nochanneling] Mind Flay", -- [5]
 				["source"] = "Local",
 				["author"] = "Holyshnizzle@Doomhammer",
-				["PostMacro"] = "",
-				["lang"] = "enUS",
+				["PreMacro"] = "",
+				["icon"] = "INV_MISC_QUESTIONMARK",
 				["version"] = 2,
 				["StepFunction"] = "  limit = limit or 1\n  if step == limit then\n    limit = limit % #macros + 1\n    step = 1\n  else\n    step = step % #macros + 1\n  end\n",
 				["helpTxt"] = "Talents: 1322233",
 				["specID"] = 258,
-				["PreMacro"] = "",
-				["icon"] = "INV_MISC_QUESTIONMARK",
+				["lang"] = "enUS",
+				["PostMacro"] = "",
 			}, -- [2]
 			{
 				"/castsequence [reset=12] Shadow Word: Pain, Vampiric Touch", -- [1]
@@ -217,14 +217,14 @@ GnomeOptions = {
 				"/cast [nochanneling] Mind Flay", -- [6]
 				["source"] = "Local",
 				["author"] = "Holyshnizzle@Doomhammer",
-				["PostMacro"] = "",
-				["lang"] = "enUS",
+				["PreMacro"] = "",
+				["icon"] = "INV_MISC_QUESTIONMARK",
 				["version"] = 3,
 				["StepFunction"] = "  limit = limit or 1\n  if step == limit then\n    limit = limit % #macros + 1\n    step = 1\n  else\n    step = step % #macros + 1\n  end\n",
 				["helpTxt"] = "Talents: 1322231",
 				["specID"] = 258,
-				["PreMacro"] = "",
-				["icon"] = "INV_MISC_QUESTIONMARK",
+				["lang"] = "enUS",
+				["PostMacro"] = "",
 			}, -- [3]
 			{
 				"/cast Mindbender", -- [1]
@@ -234,13 +234,13 @@ GnomeOptions = {
 				"/castsequence [nochanneling,reset=12] Shadow Word: Pain, Vampiric Touch, Mind Flay, Mind Flay", -- [5]
 				["source"] = "Local",
 				["author"] = "Holyshnizzle@Doomhammer",
-				["PreMacro"] = "",
+				["PostMacro"] = "",
 				["version"] = 4,
-				["icon"] = "INV_MISC_QUESTIONMARK",
+				["lang"] = "enUS",
 				["helpTxt"] = "Talents: 1322231",
 				["specID"] = 258,
-				["lang"] = "enUS",
-				["PostMacro"] = "",
+				["icon"] = "INV_MISC_QUESTIONMARK",
+				["PreMacro"] = "",
 			}, -- [4]
 			{
 				"/cast Mindbender", -- [1]
@@ -250,13 +250,13 @@ GnomeOptions = {
 				"/castsequence [nochanneling,reset=12] Shadow Word: Pain, Vampiric Touch, Mind Flay, Mind Flay", -- [5]
 				["source"] = "Local",
 				["author"] = "Holyshnizzle@Doomhammer",
-				["PostMacro"] = "",
+				["icon"] = "INV_MISC_QUESTIONMARK",
 				["version"] = 5,
-				["lang"] = "enUS",
+				["PreMacro"] = "",
 				["helpTxt"] = "Talents: 1322231",
 				["specID"] = 258,
-				["icon"] = "INV_MISC_QUESTIONMARK",
-				["PreMacro"] = "",
+				["lang"] = "enUS",
+				["PostMacro"] = "",
 			}, -- [5]
 			{
 				"/cast Mindbender", -- [1]
@@ -266,13 +266,13 @@ GnomeOptions = {
 				"/castsequence [nochanneling,reset=12] Shadow Word: Pain, Vampiric Touch, Mind Flay, Mind Flay", -- [5]
 				["source"] = "Local",
 				["author"] = "Holyshnizzle@Doomhammer",
-				["PostMacro"] = "",
+				["icon"] = "INV_MISC_QUESTIONMARK",
 				["version"] = 6,
-				["lang"] = "enUS",
+				["PreMacro"] = "/target [@focustarget,nohelp,nodead]\n/targetenemy [@target,help,dead]\n",
 				["helpTxt"] = "Talents: 1322231",
 				["specID"] = 258,
-				["icon"] = "INV_MISC_QUESTIONMARK",
-				["PreMacro"] = "/target [@focustarget,nohelp,nodead]\n/targetenemy [@target,help,dead]\n",
+				["lang"] = "enUS",
+				["PostMacro"] = "",
 			}, -- [6]
 			{
 				"/cast Mindbender", -- [1]
@@ -282,13 +282,13 @@ GnomeOptions = {
 				"/castsequence [nochanneling,reset=12] Shadow Word: Pain, Vampiric Touch, Mind Flay, Mind Flay", -- [5]
 				["source"] = "Local",
 				["author"] = "Holyshnizzle@Doomhammer",
-				["icon"] = "INV_MISC_QUESTIONMARK",
+				["PostMacro"] = "",
 				["version"] = 7,
-				["PreMacro"] = "/target [@focustarget,nohelp,nodead]\n/targetenemy [@target,help,dead]\n",
+				["lang"] = "enUS",
 				["helpTxt"] = "Talents: 1322231",
 				["specID"] = 258,
-				["lang"] = "enUS",
-				["PostMacro"] = "",
+				["PreMacro"] = "/target [@focustarget,nohelp,nodead]\n/targetenemy [@target,help,dead]\n",
+				["icon"] = "INV_MISC_QUESTIONMARK",
 			}, -- [7]
 			{
 				"/cast Mindbender", -- [1]
@@ -298,13 +298,13 @@ GnomeOptions = {
 				"/castsequence [nochanneling,reset=12] Shadow Word: Pain, Vampiric Touch, Mind Flay, Mind Flay", -- [5]
 				["source"] = "Local",
 				["author"] = "Holyshnizzle@Doomhammer",
-				["icon"] = "INV_MISC_QUESTIONMARK",
+				["PostMacro"] = "",
 				["version"] = 8,
-				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][help][dead]\n",
+				["lang"] = "enUS",
 				["helpTxt"] = "Talents: 1322231",
 				["specID"] = 258,
-				["lang"] = "enUS",
-				["PostMacro"] = "",
+				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][help][dead]\n",
+				["icon"] = "INV_MISC_QUESTIONMARK",
 			}, -- [8]
 			{
 				"/cast Mindbender", -- [1]
@@ -314,13 +314,13 @@ GnomeOptions = {
 				"/castsequence [nochanneling] reset=combat/target/12  Shadow Word: Pain, Vampiric Touch, Mind Flay, Mind Flay, Mind Flay, Mind Flay, Mind Flay", -- [5]
 				["source"] = "Local",
 				["author"] = "Holyshnizzle@Doomhammer",
-				["PostMacro"] = "",
+				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][help][dead]\n",
 				["version"] = 9,
-				["lang"] = "enUS",
+				["icon"] = "INV_MISC_QUESTIONMARK",
 				["helpTxt"] = "Talents: 1322231",
 				["specID"] = 258,
-				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][help][dead]\n",
-				["icon"] = "INV_MISC_QUESTIONMARK",
+				["lang"] = "enUS",
+				["PostMacro"] = "",
 			}, -- [9]
 			{
 				"/cast [nochanneling] Mindbender", -- [1]
@@ -330,13 +330,13 @@ GnomeOptions = {
 				"/castsequence [nochanneling] reset=combat/target/12  Shadow Word: Pain, Vampiric Touch, Mind Flay, Mind Flay, Mind Flay, Mind Flay, Mind Flay", -- [5]
 				["source"] = "Local",
 				["author"] = "Holyshnizzle@Doomhammer",
-				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][help][dead]\n",
+				["PostMacro"] = "",
 				["version"] = 10,
-				["icon"] = "INV_MISC_QUESTIONMARK",
+				["lang"] = "enUS",
 				["helpTxt"] = "Talents: 1322231",
 				["specID"] = 258,
-				["lang"] = "enUS",
-				["PostMacro"] = "",
+				["icon"] = "INV_MISC_QUESTIONMARK",
+				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][help][dead]\n",
 			}, -- [10]
 			{
 				"/cast [nochanneling] Mindbender", -- [1]
@@ -346,13 +346,13 @@ GnomeOptions = {
 				"/castsequence [nochanneling] reset=combat/target/12  Shadow Word: Pain, Vampiric Touch, Mind Flay, Mind Flay, Mind Flay", -- [5]
 				["source"] = "Local",
 				["author"] = "Holyshnizzle@Doomhammer",
-				["PostMacro"] = "",
+				["icon"] = "INV_MISC_QUESTIONMARK",
 				["version"] = 11,
-				["lang"] = "enUS",
+				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][help][dead]\n",
 				["helpTxt"] = "Talents: 1322231",
 				["specID"] = 258,
-				["icon"] = "INV_MISC_QUESTIONMARK",
-				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][help][dead]\n",
+				["lang"] = "enUS",
+				["PostMacro"] = "",
 			}, -- [11]
 			{
 				"/cast Mindbender", -- [1]
@@ -362,13 +362,13 @@ GnomeOptions = {
 				"/castsequence [nochanneling] reset=combat/target/12  Shadow Word: Pain, Vampiric Touch, Mind Flay, Mind Flay, Mind Flay, Mind Flay, Mind Flay", -- [5]
 				["source"] = "Local",
 				["author"] = "Holyshnizzle@Doomhammer",
-				["icon"] = "INV_MISC_QUESTIONMARK",
+				["PostMacro"] = "",
 				["version"] = 12,
-				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][help][dead]\n",
+				["lang"] = "enUS",
 				["helpTxt"] = "Talents: 1322231",
 				["specID"] = 258,
-				["lang"] = "enUS",
-				["PostMacro"] = "",
+				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][help][dead]\n",
+				["icon"] = "INV_MISC_QUESTIONMARK",
 			}, -- [12]
 			{
 				"/cast Vampiric Embrace", -- [1]
@@ -379,13 +379,13 @@ GnomeOptions = {
 				"/castsequence [nochanneling] reset=combat/target/12  Shadow Word: Pain, Vampiric Touch, Mind Flay, Mind Flay, Mind Flay, Mind Flay, Mind Flay", -- [6]
 				["source"] = "Local",
 				["author"] = "Holyshnizzle@Doomhammer",
-				["icon"] = "INV_MISC_QUESTIONMARK",
+				["PostMacro"] = "",
 				["version"] = 13,
-				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][help][dead]\n",
+				["lang"] = "enUS",
 				["helpTxt"] = "Talents: 1322231",
 				["specID"] = 258,
-				["lang"] = "enUS",
-				["PostMacro"] = "",
+				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][help][dead]\n",
+				["icon"] = "INV_MISC_QUESTIONMARK",
 			}, -- [13]
 			{
 				"/cast Vampiric Embrace", -- [1]
@@ -397,13 +397,13 @@ GnomeOptions = {
 				"/castsequence [nochanneling] reset=combat/target/12  Shadow Word: Pain, Vampiric Touch, Mind Flay, Mind Flay, Mind Flay, Mind Flay, Mind Flay", -- [7]
 				["source"] = "Local",
 				["author"] = "Holyshnizzle@Doomhammer",
-				["PostMacro"] = "",
+				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][help][dead]\n",
 				["version"] = 14,
-				["lang"] = "enUS",
+				["icon"] = "INV_MISC_QUESTIONMARK",
 				["helpTxt"] = "Talents: 1322231",
 				["specID"] = 258,
-				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][help][dead]\n",
-				["icon"] = "INV_MISC_QUESTIONMARK",
+				["lang"] = "enUS",
+				["PostMacro"] = "",
 			}, -- [14]
 			{
 				"/cast [nochanneling:Void Torrent] Vampiric Embrace", -- [1]
@@ -415,13 +415,13 @@ GnomeOptions = {
 				"/castsequence [nochanneling] reset=combat/target/12  Shadow Word: Pain, Vampiric Touch, Mind Flay, Mind Flay, Mind Flay, Mind Flay, Mind Flay", -- [7]
 				["source"] = "Local",
 				["author"] = "Holyshnizzle@Doomhammer",
-				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][help][dead]\n",
+				["PostMacro"] = "",
 				["version"] = 15,
-				["icon"] = "INV_MISC_QUESTIONMARK",
+				["lang"] = "enUS",
 				["helpTxt"] = "Talents: 1322231",
 				["specID"] = 258,
-				["lang"] = "enUS",
-				["PostMacro"] = "",
+				["icon"] = "INV_MISC_QUESTIONMARK",
+				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][help][dead]\n",
 			}, -- [15]
 			{
 				"/cast [nochanneling:Void Torrent] Vampiric Embrace", -- [1]
@@ -433,13 +433,13 @@ GnomeOptions = {
 				"/castsequence [nochanneling] reset=combat/target/12  Shadow Word: Pain, Vampiric Touch, Mind Flay, Mind Flay, Mind Flay, Mind Flay, Mind Flay", -- [7]
 				["source"] = "Local",
 				["author"] = "Holyshnizzle@Doomhammer",
-				["PostMacro"] = "",
+				["icon"] = "INV_MISC_QUESTIONMARK",
 				["version"] = 16,
-				["lang"] = "enUS",
+				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][help][dead]\n",
 				["helpTxt"] = "Talents: 1322231",
 				["specID"] = 258,
-				["icon"] = "INV_MISC_QUESTIONMARK",
-				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][help][dead]\n",
+				["lang"] = "enUS",
+				["PostMacro"] = "",
 			}, -- [16]
 			{
 				"/cast [nochanneling:Void Torrent] Vampiric Embrace", -- [1]
@@ -451,13 +451,13 @@ GnomeOptions = {
 				"/castsequence [nochanneling] reset=combat/target/12  Shadow Word: Pain, Vampiric Touch, Mind Flay, Mind Flay, Mind Flay, Mind Flay, Mind Flay", -- [7]
 				["source"] = "Local",
 				["author"] = "Holyshnizzle@Doomhammer",
-				["icon"] = "INV_MISC_QUESTIONMARK",
+				["PostMacro"] = "",
 				["version"] = 17,
-				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][help][dead]\n",
+				["lang"] = "enUS",
 				["helpTxt"] = "Talents: 1322231",
 				["specID"] = 258,
-				["lang"] = "enUS",
-				["PostMacro"] = "",
+				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][help][dead]\n",
+				["icon"] = "INV_MISC_QUESTIONMARK",
 			}, -- [17]
 			{
 				"/cast [nochanneling:Void Torrent] Power Word: Shield", -- [1]
@@ -470,13 +470,13 @@ GnomeOptions = {
 				"/castsequence [nochanneling] reset=combat/target/12  Shadow Word: Pain, Vampiric Touch, Mind Flay, Mind Flay, Mind Flay, Mind Flay, Mind Flay", -- [8]
 				["source"] = "Local",
 				["author"] = "Holyshnizzle@Doomhammer",
-				["PostMacro"] = "",
+				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][help][dead]\n",
 				["version"] = 18,
-				["lang"] = "enUS",
+				["icon"] = "INV_MISC_QUESTIONMARK",
 				["helpTxt"] = "Talents: 1322231",
 				["specID"] = 258,
-				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][help][dead]\n",
-				["icon"] = "INV_MISC_QUESTIONMARK",
+				["lang"] = "enUS",
+				["PostMacro"] = "",
 			}, -- [18]
 			{
 				"/cast [nochanneling:Void Torrent] Power Word: Shield", -- [1]
@@ -489,13 +489,13 @@ GnomeOptions = {
 				"/castsequence [nochanneling] reset=combat/target/12  Shadow Word: Pain, Vampiric Touch, Mind Flay, Mind Flay, Mind Flay, Mind Flay, Mind Flay", -- [8]
 				["source"] = "Local",
 				["author"] = "Holyshnizzle@Doomhammer",
-				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][help][dead]\n",
+				["PostMacro"] = "",
 				["version"] = 19,
-				["icon"] = "INV_MISC_QUESTIONMARK",
+				["lang"] = "enUS",
 				["helpTxt"] = "Talents: 2333222",
 				["specID"] = 258,
-				["lang"] = "enUS",
-				["PostMacro"] = "",
+				["icon"] = "INV_MISC_QUESTIONMARK",
+				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][help][dead]\n",
 			}, -- [19]
 			{
 				"/cast [nochanneling:Void Torrent] Power Word: Shield", -- [1]
@@ -508,14 +508,14 @@ GnomeOptions = {
 				"/castsequence [nochanneling] reset=combat/target/12  Shadow Word: Pain, Vampiric Touch, Mind Flay, Mind Flay, Mind Flay, Mind Flay, Mind Flay", -- [8]
 				["source"] = "Local",
 				["author"] = "Holyshnizzle@Doomhammer",
-				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][help][dead]\n",
-				["icon"] = "INV_MISC_QUESTIONMARK",
+				["PostMacro"] = "",
+				["lang"] = "enUS",
 				["version"] = 20,
 				["StepFunction"] = "  limit = limit or 1\n  if step == limit then\n    limit = limit % #macros + 1\n    step = 1\n  else\n    step = step % #macros + 1\n  end\n",
 				["helpTxt"] = "Talents: 2333222",
 				["specID"] = 258,
-				["lang"] = "enUS",
-				["PostMacro"] = "",
+				["icon"] = "INV_MISC_QUESTIONMARK",
+				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][help][dead]\n",
 			}, -- [20]
 			{
 				"/cast [nochanneling:Void Torrent] Power Word: Shield", -- [1]
@@ -528,13 +528,13 @@ GnomeOptions = {
 				"/castsequence [nochanneling] reset=combat/target/12  Shadow Word: Pain, Vampiric Touch, Mind Flay, Mind Flay, Mind Flay, Mind Flay, Mind Flay", -- [8]
 				["source"] = "Local",
 				["author"] = "Holyshnizzle@Doomhammer",
-				["icon"] = "INV_MISC_QUESTIONMARK",
+				["PostMacro"] = "",
 				["version"] = 21,
-				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][help][dead]\n",
+				["lang"] = "enUS",
 				["helpTxt"] = "Talents: 2333222",
 				["specID"] = 258,
-				["lang"] = "enUS",
-				["PostMacro"] = "",
+				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][help][dead]\n",
+				["icon"] = "INV_MISC_QUESTIONMARK",
 			}, -- [21]
 			{
 				"/cast [nochanneling:Void Torrent] Power Word: Shield", -- [1]
@@ -547,13 +547,13 @@ GnomeOptions = {
 				"/castsequence [nochanneling] reset=combat/target/12  Shadow Word: Pain, Vampiric Touch, Mind Flay, Mind Flay, Mind Flay, Mind Flay, Mind Flay", -- [8]
 				["source"] = "Local",
 				["author"] = "Holyshnizzle@Doomhammer",
-				["PostMacro"] = "",
+				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][noharm][dead]\n",
 				["version"] = 22,
-				["lang"] = "enUS",
+				["icon"] = "INV_MISC_QUESTIONMARK",
 				["helpTxt"] = "Talents: 2333222",
 				["specID"] = 258,
-				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][noharm][dead]\n",
-				["icon"] = "INV_MISC_QUESTIONMARK",
+				["lang"] = "enUS",
+				["PostMacro"] = "",
 			}, -- [22]
 			{
 				"/cast [nochanneling:Void Torrent] Power Word: Shield", -- [1]
@@ -567,13 +567,13 @@ GnomeOptions = {
 				"/cast [nochanneling,mod:alt] Mind Flay", -- [9]
 				["source"] = "Local",
 				["author"] = "Holyshnizzle@Doomhammer",
-				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][noharm][dead]\n",
+				["PostMacro"] = "",
 				["version"] = 23,
-				["icon"] = "INV_MISC_QUESTIONMARK",
+				["lang"] = "enUS",
 				["helpTxt"] = "Talents: 2333222",
 				["specID"] = 258,
-				["lang"] = "enUS",
-				["PostMacro"] = "",
+				["icon"] = "INV_MISC_QUESTIONMARK",
+				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][noharm][dead]\n",
 			}, -- [23]
 		},
 		["ShadowDPSAoE"] = {
@@ -586,13 +586,13 @@ GnomeOptions = {
 				"/castsequence [nochanneling] reset=combat/target/12  Shadow Word: Pain, Vampiric Touch, Mind Sear, Mind Sear, Mind Sear, Mind Sear, Mind Sear", -- [6]
 				["source"] = "Local",
 				["author"] = "Holyshnizzle@Doomhammer",
-				["icon"] = "INV_MISC_QUESTIONMARK",
+				["PostMacro"] = "",
 				["version"] = 1,
-				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][help][dead]\n",
+				["lang"] = "enUS",
 				["helpTxt"] = "Talents: 1322231",
 				["specID"] = 258,
-				["lang"] = "enUS",
-				["PostMacro"] = "",
+				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][help][dead]\n",
+				["icon"] = "INV_MISC_QUESTIONMARK",
 			}, -- [1]
 			{
 				"/cast Vampiric Embrace", -- [1]
@@ -604,13 +604,13 @@ GnomeOptions = {
 				"/castsequence [nochanneling] reset=combat/target/12  Shadow Word: Pain, Vampiric Touch, Mind Sear, Mind Sear, Mind Sear, Mind Sear, Mind Sear", -- [7]
 				["source"] = "Local",
 				["author"] = "Holyshnizzle@Doomhammer",
-				["PostMacro"] = "",
+				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][help][dead]\n",
 				["version"] = 2,
-				["lang"] = "enUS",
+				["icon"] = "INV_MISC_QUESTIONMARK",
 				["helpTxt"] = "Talents: 1322231",
 				["specID"] = 258,
-				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][help][dead]\n",
-				["icon"] = "INV_MISC_QUESTIONMARK",
+				["lang"] = "enUS",
+				["PostMacro"] = "",
 			}, -- [2]
 			{
 				"/cast [nochanneling:Void Torrent] Vampiric Embrace", -- [1]
@@ -622,13 +622,13 @@ GnomeOptions = {
 				"/castsequence [nochanneling] reset=combat/target/12  Shadow Word: Pain, Vampiric Touch, Mind Sear, Mind Sear, Mind Sear, Mind Sear, Mind Sear", -- [7]
 				["source"] = "Local",
 				["author"] = "Holyshnizzle@Doomhammer",
-				["icon"] = "INV_MISC_QUESTIONMARK",
+				["PostMacro"] = "",
 				["version"] = 3,
-				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][help][dead]\n",
+				["lang"] = "enUS",
 				["helpTxt"] = "Talents: 1322231",
 				["specID"] = 258,
-				["lang"] = "enUS",
-				["PostMacro"] = "",
+				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][help][dead]\n",
+				["icon"] = "INV_MISC_QUESTIONMARK",
 			}, -- [3]
 			{
 				"/cast [nochanneling:Void Torrent] Power Word: Shield", -- [1]
@@ -641,13 +641,13 @@ GnomeOptions = {
 				"/castsequence [nochanneling] reset=combat/target/12  Shadow Word: Pain, Vampiric Touch, Mind Sear, Mind Sear, Mind Sear, Mind Sear, Mind Sear", -- [8]
 				["source"] = "Local",
 				["author"] = "Holyshnizzle@Doomhammer",
-				["PostMacro"] = "",
+				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][help][dead]\n",
 				["version"] = 4,
-				["lang"] = "enUS",
+				["icon"] = "INV_MISC_QUESTIONMARK",
 				["helpTxt"] = "Talents: 1322231",
 				["specID"] = 258,
-				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][help][dead]\n",
-				["icon"] = "INV_MISC_QUESTIONMARK",
+				["lang"] = "enUS",
+				["PostMacro"] = "",
 			}, -- [4]
 			{
 				"/cast [nochanneling:Void Torrent] Power Word: Shield", -- [1]
@@ -660,13 +660,13 @@ GnomeOptions = {
 				"/castsequence [nochanneling] reset=combat/target/12  Shadow Word: Pain, Vampiric Touch, Mind Sear, Mind Sear, Mind Sear, Mind Sear, Mind Sear", -- [8]
 				["source"] = "Local",
 				["author"] = "Holyshnizzle@Doomhammer",
-				["icon"] = "INV_MISC_QUESTIONMARK",
+				["PostMacro"] = "",
 				["version"] = 5,
-				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][help][dead]\n",
+				["lang"] = "enUS",
 				["helpTxt"] = "Talents: 2333222",
 				["specID"] = 258,
-				["lang"] = "enUS",
-				["PostMacro"] = "",
+				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][help][dead]\n",
+				["icon"] = "INV_MISC_QUESTIONMARK",
 			}, -- [5]
 			{
 				"/cast [nochanneling:Void Torrent] Power Word: Shield", -- [1]
@@ -679,13 +679,13 @@ GnomeOptions = {
 				"/castsequence [nochanneling] reset=combat/target/12  Shadow Word: Pain, Vampiric Touch, Mind Sear, Mind Sear, Mind Sear, Mind Sear, Mind Sear", -- [8]
 				["source"] = "Local",
 				["author"] = "Holyshnizzle@Doomhammer",
-				["PostMacro"] = "",
+				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][noharm][dead]\n",
 				["version"] = 6,
-				["lang"] = "enUS",
+				["icon"] = "INV_MISC_QUESTIONMARK",
 				["helpTxt"] = "Talents: 2333222",
 				["specID"] = 258,
-				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][noharm][dead]\n",
-				["icon"] = "INV_MISC_QUESTIONMARK",
+				["lang"] = "enUS",
+				["PostMacro"] = "",
 			}, -- [6]
 		},
 		["HolyDPSAoE"] = {
@@ -694,40 +694,40 @@ GnomeOptions = {
 				"/cast Holy Nova", -- [2]
 				["source"] = "Local",
 				["author"] = "Holyshnizzle@Doomhammer",
-				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][help][dead]\n",
-				["icon"] = "INV_MISC_QUESTIONMARK",
+				["PostMacro"] = "",
+				["lang"] = "enUS",
 				["version"] = 1,
 				["StepFunction"] = "  limit = limit or 1\n  if step == limit then\n    limit = limit % #macros + 1\n    step = 1\n  else\n    step = step % #macros + 1\n  end\n",
 				["helpTxt"] = "Talents: 2333222",
 				["specID"] = 258,
-				["lang"] = "enUS",
-				["PostMacro"] = "",
+				["icon"] = "INV_MISC_QUESTIONMARK",
+				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][help][dead]\n",
 			}, -- [1]
 			{
 				"/cast Divine Star", -- [1]
 				"/cast Holy Nova", -- [2]
 				["source"] = "Local",
 				["author"] = "Holyshnizzle@Doomhammer",
-				["icon"] = "INV_MISC_QUESTIONMARK",
+				["PostMacro"] = "",
 				["version"] = 2,
-				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][help][dead]\n",
+				["lang"] = "enUS",
 				["helpTxt"] = "Talents: 2333222",
 				["specID"] = 258,
-				["lang"] = "enUS",
-				["PostMacro"] = "",
+				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][help][dead]\n",
+				["icon"] = "INV_MISC_QUESTIONMARK",
 			}, -- [2]
 			{
 				"/cast Divine Star", -- [1]
 				"/cast Holy Nova", -- [2]
 				["source"] = "Local",
 				["author"] = "Holyshnizzle@Doomhammer",
-				["PostMacro"] = "",
+				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][noharm][dead]\n",
 				["version"] = 3,
-				["lang"] = "enUS",
+				["icon"] = "INV_MISC_QUESTIONMARK",
 				["helpTxt"] = "Talents: 2333222",
 				["specID"] = 257,
-				["PreMacro"] = "/target [@focustarget]\n/targetenemy [noexists][noharm][dead]\n",
-				["icon"] = "INV_MISC_QUESTIONMARK",
+				["lang"] = "enUS",
+				["PostMacro"] = "",
 			}, -- [3]
 		},
 	},
@@ -748,14 +748,14 @@ GnomeOptions = {
 	["initialised"] = true,
 	["filterList"] = {
 		["Spec"] = true,
-		["Class"] = true,
 		["All"] = false,
+		["Class"] = true,
 	},
 	["DebugModules"] = {
 		["GS-SequenceTranslator"] = false,
-		["GS-Core"] = true,
-		["GS-SequenceEditor"] = false,
 		["Transmission"] = false,
+		["GS-SequenceEditor"] = false,
+		["GS-Core"] = true,
 	},
 	["INDENT"] = "|cffccaa88",
 	["DisabledSequences"] = {

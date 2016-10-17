@@ -1,14 +1,5 @@
 
 Postal3DB = {
-	["profileKeys"] = {
-		["Holyshnizzle - Doomhammer"] = "Holyshnizzle - Doomhammer",
-		["Alfalpha - Doomhammer"] = "Alfalpha - Doomhammer",
-		["Taunkah - Doomhammer"] = "Taunkah - Doomhammer",
-		["Marmit - Doomhammer"] = "Marmit - Doomhammer",
-		["Bartholamue - Doomhammer"] = "Bartholamue - Doomhammer",
-		["Bahlar - Doomhammer"] = "Bahlar - Doomhammer",
-		["Nilrum - Doomhammer"] = "Nilrum - Doomhammer",
-	},
 	["global"] = {
 		["BlackBook"] = {
 			["alts"] = {
@@ -18,9 +9,18 @@ Postal3DB = {
 				"Holyshnizzle|Doomhammer|Alliance|110|PRIEST", -- [4]
 				"Marmit|Doomhammer|Alliance|100|HUNTER", -- [5]
 				"Nilrum|Doomhammer|Alliance|5|MAGE", -- [6]
-				"Taunkah|Doomhammer|Alliance|103|WARRIOR", -- [7]
+				"Taunkah|Doomhammer|Alliance|104|WARRIOR", -- [7]
 			},
 		},
+	},
+	["profileKeys"] = {
+		["Holyshnizzle - Doomhammer"] = "Holyshnizzle - Doomhammer",
+		["Alfalpha - Doomhammer"] = "Alfalpha - Doomhammer",
+		["Taunkah - Doomhammer"] = "Taunkah - Doomhammer",
+		["Marmit - Doomhammer"] = "Marmit - Doomhammer",
+		["Nilrum - Doomhammer"] = "Nilrum - Doomhammer",
+		["Bahlar - Doomhammer"] = "Bahlar - Doomhammer",
+		["Bartholamue - Doomhammer"] = "Bartholamue - Doomhammer",
 	},
 	["profiles"] = {
 		["Holyshnizzle - Doomhammer"] = {
@@ -51,10 +51,13 @@ Postal3DB = {
 		},
 		["Marmit - Doomhammer"] = {
 		},
-		["Bartholamue - Doomhammer"] = {
+		["Nilrum - Doomhammer"] = {
 			["BlackBook"] = {
 				["recent"] = {
-					"Nilrum|Doomhammer|Alliance", -- [1]
+					"Holyshnizzle|Doomhammer|Alliance", -- [1]
+					"Bahlar|Doomhammer|Alliance", -- [2]
+					"Taunkah|Doomhammer|Alliance", -- [3]
+					"Marmit|Doomhammer|Alliance", -- [4]
 				},
 			},
 		},
@@ -65,13 +68,10 @@ Postal3DB = {
 				},
 			},
 		},
-		["Nilrum - Doomhammer"] = {
+		["Bartholamue - Doomhammer"] = {
 			["BlackBook"] = {
 				["recent"] = {
-					"Holyshnizzle|Doomhammer|Alliance", -- [1]
-					"Bahlar|Doomhammer|Alliance", -- [2]
-					"Taunkah|Doomhammer|Alliance", -- [3]
-					"Marmit|Doomhammer|Alliance", -- [4]
+					"Nilrum|Doomhammer|Alliance", -- [1]
 				},
 			},
 		},
