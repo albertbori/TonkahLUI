@@ -1457,14 +1457,6 @@
 						<Scripts><OnClick function="PawnUIFrame_IgnoreGemsWhileLevelingCheck_OnClick" /></Scripts>
 					</CheckButton>
 
-					<CheckButton name="PawnUIFrame_IgnoreItemUpgradesCheck" inherits="PawnUICheckboxTemplate">
-						<Anchors><Anchor point="TOPLEFT"><Offset><AbsDimension x="300" y="-210" /></Offset></Anchor></Anchors>
-						<Layers><Layer level="ARTWORK">
-							<FontString name="$parent_Label" inherits="PawnUICheckboxLabelTemplate" text="PawnUIFrame_IgnoreItemUpgradesCheck_Text" />
-						</Layer></Layers>
-						<Scripts><OnClick function="PawnUIFrame_IgnoreItemUpgradesCheck_OnClick" /></Scripts>
-					</CheckButton>
-
 					<!-- Other options -->
 					
 					<CheckButton name="PawnUIFrame_DebugCheck" inherits="PawnUICheckboxTemplate">

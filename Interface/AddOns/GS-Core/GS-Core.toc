@@ -5,7 +5,7 @@
 ## Version: 144
 ## SavedVariables: GnomeOptions
 ## OptionalDeps: WeakAuras
-## X-Curse-Packaged-Version: r20161025175019
+## X-Curse-Packaged-Version: r20161026032723
 ## X-Curse-Project-Name: GnomeSequencer - Enhanced : Advanced Macros
 ## X-Curse-Project-ID: gnomesequencer-enhanced
 ## X-Curse-Repository-ID: wow/gnomesequencer-enhanced/mainline

@@ -7,7 +7,7 @@
 -- Main non-UI code
 ------------------------------------------------------------
 
-PawnVersion = 2.0103
+PawnVersion = 2.0104
 
 -- Pawn requires this version of VgerCore:
 local PawnVgerCoreVersionRequired = 1.09
@@ -547,6 +547,9 @@ function PawnInitializeOptions()
 	-- Some features were deleted in WoW 6.0.
 	PawnCommon.ShowReforgingAdvisor = nil
 
+	-- And some more in WoW 7.1.
+	PawnCommon.IgnoreItemUpgrades = nil
+
 	-- Any new stuff since the last version they used?
 	if (not PawnCommon.LastVersion) or (PawnCommon.LastVersion < 1.9) then
 		-- When upgrading to 1.9, enable the "ignore sockets on low-level items" option.
@@ -559,10 +562,6 @@ function PawnInitializeOptions()
 	if (not PawnOptions.LastVersion) or (PawnOptions.LastVersion < 2.0000) then
 		-- When upgrading each character to 2.0, turn on the auto-scale option, but just once.
 		PawnOptions.AutoSelectScales = true
-	end
-	if (not PawnCommon.LastVersion) or (PawnCommon.LastVersion < 2.0004) then
-		-- The baleful/valor upgrade option returned temporarily in 2.0.4, and it's on by default. 
-		PawnCommon.IgnoreItemUpgrades = true
 	end
 	if (not PawnCommon.LastVersion) or (PawnCommon.LastVersion < 2.01) then
 		-- The default scales changed in 2.1 when we switched from Wowhead to Ask Mr. Robot, so reset all upgrade data.
@@ -2239,7 +2238,7 @@ end
 -- (But if EvenIfNotEnchanted is true, the item link will be processed even if the item wasn't enchanted.)
 function PawnUnenchantItemLink(ItemLink, EvenIfNotEnchanted)
 	local TrimmedItemLink = PawnStripLeftOfItemLink(ItemLink)
-	local Pos, _, ItemID, EnchantID, GemID1, GemID2, GemID3, GemID4, SuffixID, MoreInfo, ViewAtLevel, SpecializationID, UpgradeLevel1, Difficulty, NumBonusIDs, BonusID1, BonusID2, BonusID3, BonusID4, BonusID5, BonusID6 = strfind(TrimmedItemLink, "^item:(%-?%d+):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%-?%d*):?(%-?%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*)")
+	local Pos, _, ItemID, EnchantID, GemID1, GemID2, GemID3, GemID4, SuffixID, MoreInfo, ViewAtLevel, SpecializationID, UpgradeLevel1, Difficulty, NumBonusIDs, BonusID1, BonusID2, BonusID3, BonusID4, BonusID5, BonusID6, BonusID7, BonusID8 = strfind(TrimmedItemLink, "^item:(%-?%d+):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%-?%d*):?(%-?%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*)")
 	-- Note: After the specified number of bonus IDs would be UpgradeLevel2, which could be the level at which the item was acquired for timewarped items, or
 	-- the Valor upgrade level.
 
@@ -2248,78 +2247,9 @@ function PawnUnenchantItemLink(ItemLink, EvenIfNotEnchanted)
 		-- If this is a valor-upgradeable item that isn't fully upgraded, for purposes of calculation we always assume a fully-upgraded item is the "base."
 		-- The upgrade value will always come after the list of bonus IDs, as UpgradeLevel2.
 		NumBonusIDs = tonumber(NumBonusIDs) or 0
-		local WasUpgraded
-		
-		if not PawnCommon.IgnoreItemUpgrades then
-			if NumBonusIDs == 0 then
-				if BonusID1 == "529" or BonusID1 == "530" then
-					BonusID1 = "531"
-					WasUpgraded = true
-				end
-			elseif NumBonusIDs == 1 then
-				if BonusID2 == "529" or BonusID2 == "530" then
-					BonusID2 = "531"
-					WasUpgraded = true
-				end
-			elseif NumBonusIDs == 2 then
-				if BonusID3 == "529" or BonusID3 == "530" then
-					BonusID3 = "531"
-					WasUpgraded = true
-				end
-			elseif NumBonusIDs == 3 then
-				if BonusID4 == "529" or BonusID4 == "530" then
-					BonusID4 = "531"
-					WasUpgraded = true
-				end
-			elseif NumBonusIDs == 4 then
-				if BonusID5 == "529" or BonusID5 == "530" then
-					BonusID5 = "531"
-					WasUpgraded = true
-				end
-			elseif NumBonusIDs == 5 then
-				if BonusID6 == "529" or BonusID6 == "530" then
-					BonusID6 = "531"
-					WasUpgraded = true
-				end
-			else
-				VgerCore.Fail("Pawn didn't expect to find an item with " .. tostring(NumBonusIDs) .. " bonus IDs.  Some of them were ignored.")
-			end
-			-- FUTURE: This function is currently the only place that could correctly calculate the number to add to the GetItemInfo function's returned
-			-- item level to make it correct—when the bonus ID is 529/530/531, this function could return 0/5/10 and then PawnGetItemData could add that
-			-- when setting Item.Level.
-			
-			-- If this is a Baleful item that isn't fully empowered, empower it too.
-			if NumBonusIDs >= 3 then
-				local BalefulID1 = tonumber(BonusID2)
-				local BalefulID2 = tonumber(BonusID3)
-				if BalefulID2 < BalefulID1 then
-					-- Sometimes the bonus IDs are specified in reverse order.  To simplify the comparisons, sort them here.
-					local BalefulIDTemp = BalefulID1
-					BalefulID1 = BalefulID2
-					BalefulID2 = BalefulIDTemp
-				end
-				-- If 653 is the lower ID, it's equivalent to if it's 652.  (The only known exceptions are if it's a lower number and 653.)
-				if BalefulID1 == 653 then BalefulID1 = 652 end
-			
-				if
-					(BalefulID1 == 647 and BalefulID2 == 652) or -- ilvl 650
-					(BalefulID1 == 647 and BalefulID2 == 653) or -- ilvl 650
-					(BalefulID1 == 652 and BalefulID2 == 761) or -- ilvl 660
-					(BalefulID1 == 652 and BalefulID2 == 762) or -- ilvl 665
-					(BalefulID1 == 652 and BalefulID2 == 763) or -- ilvl 670
-					(BalefulID1 == 651 and BalefulID2 == 652) or -- ilvl 675
-					(BalefulID1 == 652 and BalefulID2 == 764) or -- ilvl 680
-					(BalefulID1 == 651 and BalefulID2 == 653) or -- ilvl 685
-					(BalefulID1 == 652 and BalefulID2 == 765) or -- ilvl 685
-					(BalefulID1 == 652 and BalefulID2 == 766) -- ilvl 690
-				then
-					BonusID2 = "652"
-					BonusID3 = "648"
-					WasUpgraded = true 
-				end
-			end -- NumBonusIDs >= 3
-		end -- not PawnCommon.IgnoreItemUpgrades
-		
+		VgerCore.Assert(NumBonusIDs <= 8, "Didn't expect to find " .. tostring(NumBonusIDs) .. " bonus IDs on an item. Item stats may not be correct.")
+		local WasUpgraded = false -- This feature was removed in Pawn 2.1.4.
+
 		if
 			EvenIfNotEnchanted or
 			EnchantID ~= "0" or EnchantID == "" or EnchantID == nil or
@@ -2341,7 +2271,10 @@ function PawnUnenchantItemLink(ItemLink, EvenIfNotEnchanted)
 			if BonusID3 == nil or BonusID3 == "" then BonusID3 = "0" end
 			if BonusID4 == nil or BonusID4 == "" then BonusID4 = "0" end
 			if BonusID5 == nil or BonusID5 == "" then BonusID5 = "0" end
-			return "item:" .. ItemID .. ":0:0:0:0:0:" .. SuffixID .. ":" .. MoreInfo .. ":" .. 0 .. ":" .. SpecializationID .. ":" .. UpgradeLevel1 .. ":" .. Difficulty .. ":" .. NumBonusIDs .. ":" .. BonusID1 .. ":" .. BonusID2 .. ":" .. BonusID3 .. ":" .. BonusID4 .. ":" .. BonusID5 .. ":" .. BonusID6, WasUpgraded
+			if BonusID6 == nil or BonusID6 == "" then BonusID6 = "0" end
+			if BonusID7 == nil or BonusID7 == "" then BonusID7 = "0" end
+			if BonusID8 == nil or BonusID8 == "" then BonusID8 = "0" end
+			return "item:" .. ItemID .. ":0:0:0:0:0:" .. SuffixID .. ":" .. MoreInfo .. ":" .. 0 .. ":" .. SpecializationID .. ":" .. UpgradeLevel1 .. ":" .. Difficulty .. ":" .. NumBonusIDs .. ":" .. BonusID1 .. ":" .. BonusID2 .. ":" .. BonusID3 .. ":" .. BonusID4 .. ":" .. BonusID5 .. ":" .. BonusID6 .. ":" .. BonusID7 .. ":" .. BonusID8, WasUpgraded
 		else
 			-- This item is not enchanted.  Return nil.
 			return nil

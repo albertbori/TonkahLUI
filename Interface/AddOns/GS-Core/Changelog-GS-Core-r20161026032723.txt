@@ -1,4 +1,6 @@
 Timothy Minahan:
+	- more packaging fixes
+	- 7.1 Packaging Fix
 	- 7.1 toc Changes #109
 	- Updated Source Language files for #98
 	- Typo from Travis #107

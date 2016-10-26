@@ -1,6 +1,6 @@
 ﻿## Interface: 70100
 ## Title: Pawn
-## Version: 2.1.3
+## Version: 2.1.4
 ## Notes: Pawn calculates scores for items that let you easily see which one is better for you.
 ## OptionalDependencies: AtlasLoot, EQCompare, EquipCompare, LinkWrangler, MobInfo2, MultiTips, Outfitter
 ## SavedVariables: PawnCommon
