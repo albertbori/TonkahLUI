@@ -2,8 +2,8 @@
 
 License: All Rights Reserved, (c) 2006-2016
 
-$Revision: 1739 $
-$Date: 2016-10-01 22:06:44 +1000 (Sat, 01 Oct 2016) $
+$Revision: 1743 $
+$Date: 2016-10-21 17:13:53 +1100 (Fri, 21 Oct 2016) $
 
 ]]--
 
@@ -19,6 +19,9 @@ local CreateFrame = _G.CreateFrame
 
 
 ArkInventory.Localise = LibStub( "AceLocale-3.0" ):GetLocale( "ArkInventory" )
+
+ArkInventory.Const.Soulbound = { ArkInventory.Localise["WOW_TOOLTIP_ITEM_SOULBOUND"], ArkInventory.Localise["WOW_TOOLTIP_ITEM_BIND_ON_PICKUP"] }
+ArkInventory.Const.Accountbound = { ArkInventory.Localise["WOW_TOOLTIP_ITEM_ACCOUNTBOUND"], ArkInventory.Localise["WOW_TOOLTIP_ITEM_BIND_TO_ACCOUNT"], ArkInventory.Localise["WOW_TOOLTIP_ITEM_BIND_TO_BNETACCOUNT"], ArkInventory.Localise["WOW_TOOLTIP_ITEM_BNETACCOUNTBOUND"] }
 
 ArkInventory.Const.Category = {
 	
@@ -2517,8 +2520,8 @@ end
 
 function ArkInventory.StripColourCodes( txt )
 	local txt = txt or ""
-	gsub( txt, "|c........", "" )
-	gsub( txt, "|r", "" )
+	txt = gsub( txt, "|c........", "" )
+	txt = gsub( txt, "|r", "" )
 	return txt
 end
 
@@ -2750,11 +2753,11 @@ function ArkInventory.ItemSortKeyGenerate( i, bar_id )
 		
 		
 		-- id
-		local id = "!"
+		local id = 0
 		if i.h and sorting.active.id then
-			id = ArkInventory.ObjectIDCount( i.h )
+			id = info.id
 		end
-		s["id"] = string.format( "%s", id )
+		s["id"] = string.format( "%s:%010i:%02i", info.class, id, info.sb )
 
 		
 		-- build key
@@ -3204,7 +3207,7 @@ function ArkInventory.ItemCategoryGetDefaultActual( i )
 	if codex.player.data.info.isplayer then
 		
 		-- class requirement (via tooltip)
-		local _, _, req = ArkInventory.TooltipFind( ArkInventory.Global.Tooltip.Scan, ArkInventory.Localise["WOW_TOOLTIP_CLASS"], false, true, true, 0, true )
+		local _, _, req = ArkInventory.TooltipFind( ArkInventory.Global.Tooltip.Scan, ArkInventory.Localise["WOW_TOOLTIP_REQUIRES_CLASS"], false, true, true, 0, true )
 		if req and string.find( req, codex.player.data.info.class_local ) then
 			return ArkInventory.CategoryGetSystemID( string.format( "CLASS_%s", codex.player.data.info.class ) )
 		end

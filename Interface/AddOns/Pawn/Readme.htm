@@ -453,13 +453,12 @@ and Pawn.</p>
 	<li>It's been reported that Pawn's item level display when inspecting other 
 	players is wrong, and it was suggested that it was because the off-hand 
 	artifact was always being counted as ilvl 750.</li>
+	<li>Having more legendary items than you can equip at once can cause 
+	interesting problems if the "track upgrades for each scale" option is used.&nbsp; 
+	I'm not sure what a good solution for this would be.</li>
 </ul>
 <h3>Features I might add soon</h3>
 <ul>
-	<li>I plan to add a way to merge an imported scale with the 
-		Pawn template, to get things like weapon types added to the scale 
-		automatically.&nbsp; (Maybe "Class=SHAMAN, Spec=1" can be added to the 
-		import string?)</li>
 	<li>A way to choose a spec icon to show on your item tooltips for custom 
 	scales.&nbsp; (Informal polling suggests that no one wants the ability to 
 	use a totally custom icon.)</li>
@@ -470,18 +469,38 @@ and Pawn.</p>
 	I'll use the very best gems on anything at least this level" (currently the 
 	gem table's final threshold), and then make it 
 	fully customizable.</li>
-	<li>Integration with Storyline</li>
 	<li>Something on relics to show you how much of an ilvl upgrade the relic 
 	would get you.&nbsp; (That wouldn't integrate with your scales in any way, 
 	and Pawn doesn't normally do much of anything with item level, but it does 
 	seem potentially handy.)</li>
 	<li>In addition to upgrades, show "minor upgrade" (&lt;1%), "identical" (0%), 
 	"X% downgrade" (&gt;-20%).&nbsp; Probably don't ever show anything on grey or 
-	white items.&nbsp; Maybe add an option to show downgrades as low as -99%.</li>
+	white items.&nbsp; Maybe add an option to show downgrades as low as -99%.<ul>
+		<li>This would help people decide on secondary items due to the lack of 
+		stat cap features.</li>
+	</ul>
+	</li>
 	<li>A way to detect if you're using FreeUI, and show a message warning you 
 	that Pawn is incompatible if you are.</li>
+	<li>Integration with Storyline</li>
 </ul>
 <h2>Updates</h2>
+<h3>Version 2.1.3</h3>
+<ul>
+	<li>Updated translations.</li>
+</ul>
+<h3>Version 2.1.2</h3>
+<ul>
+	<li>The Compare tab will no longer show the differential between the sockets 
+	and socket value on the left item versus the right item.&nbsp; (For example, 
+	if one item has no socket, and the other has a socket worth 1,250 points, it 
+	will no longer show "+1,250".)&nbsp; After this change, the green and red 
+	numbers shown will always only be stats, which should make them easier for 
+	new people to understand.</li>
+	<li>Fixed a bug where it was no longer possible to export some scales 
+	(generally, scales that were created using the "empty" button or importing, 
+	rather than copying an existing scale or starting from a template).</li>
+</ul>
 <h3>Version 2.1.1</h3>
 <ul>
 	<li>Pawn will now take over the new WoW 7.1 feature that puts green arrows 

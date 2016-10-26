@@ -71,7 +71,7 @@ function mod:Decorate(frame)
 	frame.downButton = button
 	-- Adjust the menu buttons
 	self:ApplyFrameChanges(frame)
-	if(self.db.profile.scrollReminder) then self:ApplyBottomButton(frame) end
+	-- if(self.db.profile.scrollReminder) then self:ApplyBottomButton(frame) end
 end
 
 function mod:FCF_RestorePositionAndDimensions(chatFrame)
@@ -96,8 +96,6 @@ end
 function mod:OnEnable()
 	ChatFrameMenuButton:Hide()
 	ChatFrameMenuButton:SetScript("OnShow", hide)
-	FriendsMicroButton:Hide()
-	FriendsMicroButton:SetScript("OnShow", hide)
 	for i = 1, NUM_CHAT_WINDOWS do
 		local f = _G["ChatFrame" .. i]
 		self:Decorate(f)
@@ -152,7 +150,7 @@ function mod:ApplyBottomButton(frame)
 	self:Hook(frame, "ScrollDown", true)
 	self:Hook(frame, "ScrollToBottom", "ScrollDownForce", true)
 	self:Hook(frame, "PageDown", "ScrollDown", true)
-	if frame:GetCurrentScroll() ~= 0 then
+	if not frame:AtBottom() then
 		frame.downButton:Show()
 	end
 	if frame ~= COMBATLOG then
@@ -213,7 +211,7 @@ function mod:ScrollUp(frame)
 end
 
 function mod:ScrollDown(frame)
-	if frame:GetCurrentScroll() == 0 then
+	if frame:AtBottom() then
 		frame.downButton:Hide()
 		frame.downButton:UnlockHighlight()
 	end
@@ -225,7 +223,7 @@ function mod:ScrollDownForce(frame)
 end
 
 function mod:AddMessage(frame, text, ...)
-	if frame:GetCurrentScroll() > 0 then
+	if not frame:AtBottom() then
 		frame.downButton:Show()
 		frame.downButton:LockHighlight()
 	else

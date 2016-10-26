@@ -431,9 +431,6 @@ ArkInventory.Const = { -- constants
 
 	DatabaseDefaults = { },
 	
-	Soulbound = { ITEM_SOULBOUND, ITEM_BIND_ON_PICKUP },
-	Accountbound = { ITEM_ACCOUNTBOUND, ITEM_BIND_TO_ACCOUNT, ITEM_BIND_TO_BNETACCOUNT, ITEM_BNETACCOUNTBOUND },
-	
 	MountTypes = {
 		["l"] = 0x01, -- land
 		["a"] = 0x02, -- air

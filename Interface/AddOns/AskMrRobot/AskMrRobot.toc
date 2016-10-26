@@ -1,11 +1,11 @@
-## Interface: 70000
+## Interface: 70100
 ## Title: Ask Mr. Robot
 ## Author: Team Robot, Inc.
-## Version: 45
+## Version: 46
 ## Notes: Gear import/export, combat logging, and more.
 ## URL: www.askmrrobot.com
 ## SavedVariables: AskMrRobotDb3
-## X-Curse-Packaged-Version: v45
+## X-Curse-Packaged-Version: v46
 ## X-Curse-Project-Name: AskMrRobot
 ## X-Curse-Project-ID: askmrrobot
 ## X-Curse-Repository-ID: wow/askmrrobot/mainline

@@ -1,0 +1,29 @@
+## Interface: 70100
+## Title: WeakAuras Templates
+## Author: Infus
+## Version: 2.2.1.9
+## Notes: Templates for WeakAuras
+## X-Category: Interface Enhancements
+## DefaultState: Enabled
+## LoadOnDemand: 1
+## Dependencies: WeakAuras, WeakAurasOptions
+## X-Curse-Packaged-Version: 2.2.1.9
+## X-Curse-Project-Name: WeakAuras 2
+## X-Curse-Project-ID: weakauras-2
+## X-Curse-Repository-ID: wow/weakauras-2/mainline
+
+Localization-enUS.lua
+Localization-deDE.lua
+Localization-esES.lua
+Localization-esMX.lua
+Localization-frFR.lua
+Localization-koKR.lua
+Localization-ptBR.lua
+Localization-ruRU.lua
+Localization-zhCN.lua
+Localization-zhTW.lua
+
+TriggerTemplates.lua
+TriggerTemplatesData.lua
+
+AceGUI-Widgets\AceGUIContainer-WeakAurasTemplateGroup.lua

@@ -175,28 +175,46 @@ L["VIEW"] = VIEW or true
 L["WEEKLY"] = CALENDAR_REPEAT_WEEKLY or true
 L["YES"] = YES or true
 
-
-local function ConvertToCapture( text )
-	text = string.gsub( text, "%d%$", "" ) -- remove 1$ / 2$
+function FormatForRegex( text )
+	local text = text
+	text = string.gsub( text, "%.", "%%%." ) -- replace . with %.
+	text = string.gsub( text, "%*", "%%%*" ) -- replace * with %*
+	text = string.gsub( text, "%+", "%%%+" ) -- replace + with %+
+	text = string.gsub( text, "%-", "%%%-" ) -- replace - with %-
+	text = string.gsub( text, "%?", "%%%?" ) -- replace ? with %?
 	text = string.gsub( text, "%(", "%%%(" ) -- replace ( with %(
 	text = string.gsub( text, "%)", "%%%)" ) -- replace ) with %)
+	return text
+end
+
+local function FormatForCapture( text )
+	local text = FormatForRegex( text )
+	text = string.gsub( text, "%d%$", "" ) -- remove 1$ / 2$
 	text = string.gsub( text, "%%s", "(.+)" ) -- replace %s with (.+)
 	text = string.gsub( text, "%%d", "%(%%d+%)" ) -- replace %d with (%d+)
 	return string.format( "^%s$", text )
 end
 
 -- calculated
-L["WOW_TOOLTIP_REQUIRES_SKILL"] = ConvertToCapture( ITEM_MIN_SKILL )
-L["WOW_TOOLTIP_REQUIRES_LEVEL"] = ConvertToCapture( ITEM_MIN_LEVEL )
-L["WOW_TOOLTIP_REQUIRES_CLASS"] = ConvertToCapture( ITEM_CLASSES_ALLOWED )
-L["WOW_TOOLTIP_REQUIRES"] = ConvertToCapture( ITEM_REQ_SKILL )
-L["WOW_TOOLTIP_ITEMUPGRADELEVEL"] = ConvertToCapture( ITEM_UPGRADE_TOOLTIP_FORMAT )
-L["WOW_TOOLTIP_ITEM_LEVEL"] = ConvertToCapture( ITEM_LEVEL )
-L["WOW_TOOLTIP_ANCIENT_MANA"] = string.format( "%%d %s", ( GetCurrencyInfo( 1155 ) ) )
-L["WOW_TOOLTIP_ARTIFACT_POWER"] = ARTIFACT_POWER
-L["WOW_TOOLTIP_CRAFTING_REAGENT"] = PROFESSIONS_USED_IN_COOKING
 
-L["WOW_TOOLTIP_CLASS"] = string.format( "^%s", string.gsub( ITEM_CLASSES_ALLOWED, "%%s", "(.+)", 1 ) )
+L["WOW_TOOLTIP_ITEM_SOULBOUND"] = FormatForCapture( ITEM_SOULBOUND )
+L["WOW_TOOLTIP_ITEM_BIND_ON_PICKUP"] = FormatForCapture( ITEM_BIND_ON_PICKUP )
+
+L["WOW_TOOLTIP_ITEM_ACCOUNTBOUND"] = FormatForCapture( ITEM_ACCOUNTBOUND )
+L["WOW_TOOLTIP_ITEM_BIND_TO_ACCOUNT"] = FormatForCapture( ITEM_BIND_TO_ACCOUNT )
+L["WOW_TOOLTIP_ITEM_BIND_TO_BNETACCOUNT"] = FormatForCapture( ITEM_BIND_TO_BNETACCOUNT )
+L["WOW_TOOLTIP_ITEM_BNETACCOUNTBOUND"] = FormatForCapture( ITEM_BNETACCOUNTBOUND )
+
+L["WOW_TOOLTIP_REQUIRES_SKILL"] = FormatForCapture( ITEM_MIN_SKILL )
+L["WOW_TOOLTIP_REQUIRES_LEVEL"] = FormatForCapture( ITEM_MIN_LEVEL )
+L["WOW_TOOLTIP_REQUIRES_CLASS"] = FormatForCapture( ITEM_CLASSES_ALLOWED )
+L["WOW_TOOLTIP_REQUIRES"] = FormatForCapture( ITEM_REQ_SKILL )
+L["WOW_TOOLTIP_ITEMUPGRADELEVEL"] = FormatForCapture( ITEM_UPGRADE_TOOLTIP_FORMAT )
+L["WOW_TOOLTIP_ITEM_LEVEL"] = FormatForCapture( ITEM_LEVEL )
+L["WOW_TOOLTIP_ANCIENT_MANA"] = string.format( "%%d %s", ( FormatForRegex( ( GetCurrencyInfo( 1155 ) ) ) ) )
+L["WOW_TOOLTIP_ARTIFACT_POWER"] = FormatForCapture( ARTIFACT_POWER )
+L["WOW_TOOLTIP_CRAFTING_REAGENT"] = FormatForCapture( PROFESSIONS_USED_IN_COOKING )
+
 L["PET_BATTLE_BOUND"] = string.format( "%s (%s)", TOOLTIP_BATTLE_PET, ITEM_ACCOUNTBOUND )
 L["PET_COMPANION_BOUND"] = string.format( "%s (%s)", PET, ITEM_ACCOUNTBOUND )
 L["PET_CANNOT_BATTLE"] = string.gsub( BATTLE_PET_CANNOT_BATTLE, "\n", " " )

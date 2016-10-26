@@ -1,9 +1,9 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0101,
+	["LastVersion"] = 2.0103,
 	["LastPlayerFullName"] = "Holyshnizzle-Doomhammer",
 	["AutoSelectScales"] = false,
-	["UpgradeTracking"] = false,
+	["UpgradeTracking"] = true,
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {

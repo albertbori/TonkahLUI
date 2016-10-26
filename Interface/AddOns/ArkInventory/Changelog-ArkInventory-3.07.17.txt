@@ -1,0 +1,116 @@
+------------------------------------------------------------------------
+r611 | arkayenro | 2016-10-26 00:26:10 +0000 (Wed, 26 Oct 2016) | 1 line
+Changed paths:
+   A /tags/3.07.17 (from /trunk:610)
+
+Tagging as 3.07.17
+------------------------------------------------------------------------
+r610 | arkayenro | 2016-10-26 00:24:00 +0000 (Wed, 26 Oct 2016) | 4 lines
+Changed paths:
+   M /trunk/ArkInventory.toc
+   M /trunk/ArkInventoryStorage.lua
+   M /trunk/Modules/ArkInventoryConfig/ArkInventoryConfig.toc
+   M /trunk/Modules/ArkInventoryRules/ArkInventoryRules.toc
+   M /trunk/Modules/ArkInventoryRules_Example/ArkInventoryRules_Example.toc
+   M /trunk/Modules/ArkInventorySearch/ArkInventorySearch.toc
+   M /trunk/VersionHistory.txt
+
+*3.07.17 (26-OCT-2016)*
+ * changed - toc updated to 70100
+ * workaround - issue with increased item level due to GetItemInfo returning a slightly different hyperlink than the one passed in (only seems to impact artifacts).  presumably blizzard will fix it at some point
+
+------------------------------------------------------------------------
+r609 | arkayenro | 2016-10-21 08:47:19 +0000 (Fri, 21 Oct 2016) | 5 lines
+Changed paths:
+   M /trunk/ArkInventory.lua
+   M /trunk/ArkInventory.toc
+   M /trunk/ArkInventory.xml
+   M /trunk/ArkInventoryConst.lua
+   M /trunk/ArkInventoryStorage.lua
+   M /trunk/ArkInventoryTooltip.lua
+   M /trunk/Locale/enUS.lua
+   M /trunk/Locale/game.lua
+   M /trunk/Modules/ArkInventoryRules/ArkInventoryRules.lua
+   M /trunk/VersionHistory.txt
+
+*3.07.16 (21-OCT-2016)*
+ * fixed - issue with regex matching against some of the globalstrings that contain special regex characters
+ * fixed - issue with sorting by id as id was not a zero padded in the string
+ * fixed - issue where the window would recalculate whenever leaving combat
+
+------------------------------------------------------------------------
+r607 | arkayenro | 2016-10-01 22:38:50 +0000 (Sat, 01 Oct 2016) | 3 lines
+Changed paths:
+   M /trunk/ArkInventory.toc
+   M /trunk/Modules/ArkInventoryRules/ArkInventoryRules.lua
+   M /trunk/VersionHistory.txt
+
+*3.07.15 (02-OCT-2016)*
+ * fixed - rule function: itemstring
+
+------------------------------------------------------------------------
+r605 | arkayenro | 2016-10-01 12:08:17 +0000 (Sat, 01 Oct 2016) | 9 lines
+Changed paths:
+   M /trunk/ArkInventory.lua
+   M /trunk/ArkInventory.toc
+   M /trunk/ArkInventory.xml
+   M /trunk/ArkInventoryJunk.lua
+   M /trunk/ArkInventoryMenu.lua
+   M /trunk/ArkInventoryRestack.lua
+   M /trunk/ArkInventoryStorage.lua
+   M /trunk/ArkInventoryTooltip.lua
+   M /trunk/ArkInventoryTranslate.lua
+   M /trunk/Locale/enUS.lua
+   M /trunk/Locale/game.lua
+   M /trunk/Modules/ArkInventoryRules/ArkInventoryRules.lua
+   M /trunk/VersionHistory.txt
+
+*3.07.14 (01-OCT-2016)*
+ * fixed - issue with sell junk notification not always displaying
+ * fixed - issue with sort category equip location
+ * fixed - issue with artifact power items not getting categorised properly when colorblind mode is enabled
+ * removed - rule function: id()
+ * added - rule function: itemstring()
+ * added - sorting: slot type
+ * fixed - restack function should no longer be able to stall, should also not lock up the game while it does it
+
+------------------------------------------------------------------------
+r603 | arkayenro | 2016-09-25 23:47:48 +0000 (Sun, 25 Sep 2016) | 3 lines
+Changed paths:
+   M /trunk/ArkInventory.toc
+   M /trunk/VersionHistory.txt
+
+*3.07.13 (26-SEP-2016)*
+ * fixed - removed debug output
+
+------------------------------------------------------------------------
+r601 | arkayenro | 2016-09-25 23:26:50 +0000 (Sun, 25 Sep 2016) | 7 lines
+Changed paths:
+   M /trunk/ArkInventory.lua
+   M /trunk/ArkInventory.toc
+   M /trunk/ArkInventory.xml
+   M /trunk/ArkInventoryCollectionPet.lua
+   M /trunk/ArkInventoryJunk.lua
+   M /trunk/ArkInventoryRestack.lua
+   M /trunk/ArkInventoryStorage.lua
+   M /trunk/Locale/deDE.lua
+   M /trunk/Locale/enUS.lua
+   M /trunk/Locale/esES.lua
+   M /trunk/Locale/esMX.lua
+   M /trunk/Locale/frFR.lua
+   M /trunk/Locale/itIT.lua
+   M /trunk/Locale/koKR.lua
+   M /trunk/Locale/ptBR.lua
+   M /trunk/Locale/ruRU.lua
+   M /trunk/Locale/zhCN.lua
+   M /trunk/Locale/zhTW.lua
+   M /trunk/VersionHistory.txt
+
+*3.07.12 (xx-SEP-2016)*
+ * changed - co-routine code rewritten to remove the possibility of item updates in between a yield/resume being ignored (redraws may now take longer to complete under some circumstances)
+ * changed - bag rescan timer for zero slot bug lowered from 10 to 2 seconds
+ * fixed - objectstringdecode function to handle new itemstring format
+ * fixed - issue with restack code and positioning of profession bags
+ * changed - sell junk also displays number if items destroyed (if any)
+
+------------------------------------------------------------------------

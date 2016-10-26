@@ -1,0 +1,13 @@
+tag 2.2.1.9
+e243226c227d5e90b2daba542f44497abc0adca3
+Benjamin Staneck <staneck@gmail.com>
+2016-10-25 19:00:13 +0200
+
+
+
+--------------------
+
+Benjamin Staneck:
+	- TOC update for Patch 7.1
+	- add CHAT_MSG_MONSTER_WHISPER to types
+	- add Trial of Valor bosses to encounter ID tooltip

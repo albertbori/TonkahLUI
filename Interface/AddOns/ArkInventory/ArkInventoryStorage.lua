@@ -1657,7 +1657,7 @@ function ArkInventory.ScanBag( blizzard_id )
 			end
 			
 			for _, v in pairs( ArkInventory.Const.Accountbound ) do
-				if v and ArkInventory.TooltipContains( ArkInventory.Global.Tooltip.Scan, string.format( "^%s$", v ), false, false, false, true ) then
+				if v and ArkInventory.TooltipContains( ArkInventory.Global.Tooltip.Scan, v, false, false, false, true ) then
 					ab = 1
 					sb = 1
 					break
@@ -1666,7 +1666,7 @@ function ArkInventory.ScanBag( blizzard_id )
 			
 			if not ab then
 				for _, v in pairs( ArkInventory.Const.Soulbound ) do
-					if v and ArkInventory.TooltipContains( ArkInventory.Global.Tooltip.Scan, string.format( "^%s$", v ), false, false, false, true ) then
+					if v and ArkInventory.TooltipContains( ArkInventory.Global.Tooltip.Scan, v, false, false, false, true ) then
 						sb = 1
 						break
 					end
@@ -2031,7 +2031,7 @@ function ArkInventory.ScanWearing( )
 			end
 			
 			for _, v in pairs( ArkInventory.Const.Accountbound ) do
-				if v and ArkInventory.TooltipContains( ArkInventory.Global.Tooltip.Scan, string.format( "^%s$", v ), false, false, false, true ) then
+				if v and ArkInventory.TooltipContains( ArkInventory.Global.Tooltip.Scan, v, false, false, false, true ) then
 					ab = 1
 					sb = 1
 					break
@@ -2040,7 +2040,7 @@ function ArkInventory.ScanWearing( )
 			
 			if ( not sb ) then
 				for _, v in pairs( ArkInventory.Const.Soulbound ) do
-					if v and ArkInventory.TooltipContains( ArkInventory.Global.Tooltip.Scan, string.format( "^%s$", v ), false, false, false, true ) then
+					if v and ArkInventory.TooltipContains( ArkInventory.Global.Tooltip.Scan, v, false, false, false, true ) then
 						sb = 1
 						break
 					end
@@ -3587,7 +3587,7 @@ function ArkInventory.ObjectInfoArray( h, i )
 	info.class = info.osd.class
 	info.id = info.osd.id
 	
-	info.h = ""
+	info.h = info.osd.h
 	info.name = ""
 	info.q = 1
 	info.ilvl = 0
@@ -3605,7 +3605,8 @@ function ArkInventory.ObjectInfoArray( h, i )
 		
 		info.info = { GetItemInfo( info.osd.h ) }
 		
-		info.h = info.info[2] or info.h
+		-- broken in 7.1 for artifacts
+		-- info.h = info.info[2] or info.h
 		
 		info.name = info.info[1] or info.name
 		if not info.name or info.name == "" then
@@ -3615,16 +3616,26 @@ function ArkInventory.ObjectInfoArray( h, i )
 		info.q = info.info[3] or info.q
 		
 		info.ilvl = info.info[4] or info.ilvl
+		
+--		if info.id == 128872 then
+--			ArkInventory.Output( "[ ", gsub( gsub( info.info[2], "\124", " " ), ":", " : " ), " ]" )
+--			ArkInventory.Output( "[ ", gsub( gsub( info.osd.h, "\124", " " ), ":", " : " ), " ]" )
+--			ArkInventory.Output( "[ ", gsub( gsub( info.h, "\124", " " ), ":", " : " ), " ]" )
+--		end
+		
 		if info.osd.upgradeid > 0 or info.osd.bonusids then
 			
 			-- upgradable or has bonusId that may not adjust the itemlevel return value (eg 615/timewarped), so get item level from tooltip
 			
+			--ArkInventory.TooltipSetHyperlink( ArkInventory.Global.Tooltip.Scan, info.h )
 			ArkInventory.TooltipSetHyperlink( ArkInventory.Global.Tooltip.Scan, info.h )
-			local _, _, ilvl = ArkInventory.TooltipFind( ArkInventory.Global.Tooltip.Scan, ArkInventory.Localise["WOW_TOOLTIP_ITEM_LEVEL"], false, true, true, 0, true )
+			local _, _, ilvl = ArkInventory.TooltipFind( ArkInventory.Global.Tooltip.Scan, ArkInventory.Localise["WOW_TOOLTIP_ITEM_LEVEL"], false, true, true, 4, true )
 			
 			info.ilvl = tonumber( ilvl ) or info.ilvl
 			
-			--ArkInventory.Output( h, " / ", info.info[4], " / ", ilvl, " / ", info.osd.upgradeid, " / ", info.osd.bonusids )
+--			if info.ilvl ~= info.info[4] then
+--				ArkInventory.Output( h, " / ", info.info[4], " / ", ilvl, " / ", info.osd.upgradeid, " / ", info.osd.bonusids )
+--			end
 			
 		end
 		

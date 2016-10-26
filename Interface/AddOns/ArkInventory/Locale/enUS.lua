@@ -499,8 +499,8 @@ if not L then return end
 	L["CONFIG_SORTING_INCLUDE_ITEMAGE_TEXT"] = "include item age when sorting."
 	L["CONFIG_SORTING_INCLUDE_VENDORPRICE"] = "vendor price"
 	L["CONFIG_SORTING_INCLUDE_VENDORPRICE_TEXT"] = "include vendor price (per current stack size) when sorting."
-	L["CONFIG_SORTING_INCLUDE_ID"] = "internal id"
-	L["CONFIG_SORTING_INCLUDE_ID_TEXT"] = "include internal id (class:id:soulbound) when sorting."
+	L["CONFIG_SORTING_INCLUDE_ID"] = "id"
+	L["CONFIG_SORTING_INCLUDE_ID_TEXT"] = "include id when sorting."
 	L["CONFIG_SORTING_INCLUDE_SLOTTYPE"] = "slot type"
 	L["CONFIG_SORTING_INCLUDE_SLOTTYPE_TEXT"] = "include slot type when sorting."
 	

@@ -12,6 +12,15 @@
  
 
 
+*3.07.17 (26-OCT-2016)*
+ * changed - toc updated to 70100
+ * workaround - issue with increased item level due to GetItemInfo returning a slightly different hyperlink than the one passed in (only seems to impact artifacts).  presumably blizzard will fix it at some point
+
+*3.07.16 (21-OCT-2016)*
+ * fixed - issue with regex matching against some of the globalstrings that contain special regex characters
+ * fixed - issue with sorting by id as id was not a zero padded in the string
+ * fixed - issue where the window would recalculate whenever leaving combat
+
 *3.07.15 (02-OCT-2016)*
  * fixed - rule function: itemstring
  

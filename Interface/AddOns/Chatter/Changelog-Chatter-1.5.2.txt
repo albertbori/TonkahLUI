@@ -1,0 +1,12 @@
+tag 1.5.2
+5c156ffbe07e63f70e6b55b6cd4a9b129859a198
+Chris Heald <cheald@gmail.com>
+2016-10-25 12:00:34 -0700
+
+Release 1.5.2
+
+
+--------------------
+
+Chris Heald:
+	- Fixes for 7.1 deprecations

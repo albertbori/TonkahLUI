@@ -405,7 +405,7 @@ function ArkInventory.TooltipFind( tooltip, TextToFind, IgnoreLeft, IgnoreRight,
 				end
 				
 				if not IgnoreLeft then
-
+					
 					if not CaseSensitive then
 						txt = string.lower( txt )
 					end
@@ -447,18 +447,6 @@ function ArkInventory.TooltipFind( tooltip, TextToFind, IgnoreLeft, IgnoreRight,
 	end
 	
 	return
-	
-end
-
-function ArkInventory.TooltipFindExact( tooltip, TextToFind, IgnoreLeft, IgnoreRight, CaseSensitive, maxDepth, BaseOnly )
-	
-	local TextToFind = TextToFind
-	if not TextToFind or string.trim( TextToFind ) == "" then
-		return false
-	end
-	
-	TextToFind = string.format( "^%s$", TextToFind )
-	return ArkInventory.TooltipFind( tooltip, TextToFind, IgnoreLeft, IgnoreRight, CaseSensitive, maxDepth, BaseOnly )
 	
 end
 

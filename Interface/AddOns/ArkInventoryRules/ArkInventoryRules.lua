@@ -2,8 +2,8 @@
 
 License: All Rights Reserved, (c) 2009-2016
 
-$Revision: 1740 $
-$Date: 2016-10-02 09:37:35 +1100 (Sun, 02 Oct 2016) $
+$Revision: 1742 $
+$Date: 2016-10-21 17:13:43 +1100 (Fri, 21 Oct 2016) $
 
 ]]--
 
@@ -649,11 +649,17 @@ function ArkInventoryRules.System.tooltipgeneric( ... )
 		end
 		
 		if type( arg ) ~= "string" then
-			error( string.format( ArkInventory.Localise["RULE_FAILED_ARGUMENT_IS_NOT"], fn, ax, ArkInventory.Localise["STRING"] ), 0 )
+			arg = tostring( arg ) or arg
+			if type( arg ) ~= "string" then
+				error( string.format( ArkInventory.Localise["RULE_FAILED_ARGUMENT_IS_NOT"], fn, ax, ArkInventory.Localise["STRING"] ), 0 )
+			end
 		end
 		
-		if ArkInventory.TooltipContains( ArkInventoryRules.Tooltip, string.trim( arg ) ) then
-			return true
+		arg = string.trim( arg )
+		if arg ~= "" then
+			if ArkInventory.TooltipContains( ArkInventoryRules.Tooltip, arg ) then
+				return true
+			end
 		end
 	
 	end

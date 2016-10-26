@@ -11,6 +11,7 @@ local importStr = ""
 local otherversionlistboxvalue = ""
 local frame = AceGUI:Create("Frame")
 local editframe = AceGUI:Create("Frame")
+local recordframe = AceGUI:Create("Frame")
 
 local sequenceboxtext = AceGUI:Create("MultiLineEditBox")
 local remotesequenceboxtext = AceGUI:Create("MultiLineEditBox")
@@ -32,6 +33,7 @@ function GSSE:parsetext(editbox)
     editbox:SetCursorPosition(string.len(returntext)+2)
   end
 end
+
 
 
 function GSSE:getSequenceNames()
@@ -154,6 +156,12 @@ function GSSE:drawstandardwindow(container)
   eOptionsbutton:SetCallback("OnClick", function() GSSE:OptionsGuiDebugView() end)
   buttonGroup:AddChild(eOptionsbutton)
 
+  local recordwindowbutton = AceGUI:Create("Button")
+  recordwindowbutton:SetText(L["Record Macro"])
+  recordwindowbutton:SetWidth(150)
+  recordwindowbutton:SetCallback("OnClick", function() frame:Hide(); recordframe:Show() end)
+  buttonGroup:AddChild(recordwindowbutton)
+
   container:AddChild(buttonGroup)
 
   sequenceboxtext = sequencebox
@@ -234,6 +242,12 @@ end
 
 local stepvalue = 1
 
+editscroll = AceGUI:Create("ScrollFrame")
+editscroll:SetLayout("Flow") -- probably?
+editscroll:SetFullWidth(true)
+editscroll:SetHeight(340)
+
+
 local headerGroup = AceGUI:Create("SimpleGroup")
 headerGroup:SetFullWidth(true)
 headerGroup:SetLayout("Flow")
@@ -246,7 +260,6 @@ editframe:SetTitle(L["Sequence Editor"])
 --editframe:SetStatusText(L["Gnome Sequencer: Sequence Editor."])
 editframe:SetCallback("OnClose", function (self) editframe:Hide();  frame:Show(); end)
 editframe:SetLayout("List")
-
 
 local nameeditbox = AceGUI:Create("EditBox")
 nameeditbox:SetLabel(L["Sequence Name"])
@@ -311,7 +324,7 @@ premacrobox:DisableButton(true)
 premacrobox:SetFullWidth(true)
 --premacrobox.editBox:SetScript("OnLeave", OnTextChanged)
 
-editframe:AddChild(premacrobox)
+editscroll:AddChild(premacrobox)
 premacrobox.editBox:SetScript( "OnLeave",  function(self) GSSE:parsetext(self) end)
 premacrobox.editBox:SetScript("OnTextChanged", function () end)
 
@@ -322,7 +335,35 @@ spellbox:DisableButton(true)
 spellbox:SetFullWidth(true)
 spellbox.editBox:SetScript( "OnLeave",  function(self) GSSE:parsetext(self) end)
 spellbox.editBox:SetScript("OnTextChanged", function () end)
-editframe:AddChild(spellbox)
+
+local loopGroup = AceGUI:Create("SimpleGroup")
+loopGroup:SetFullWidth(true)
+loopGroup:SetLayout("Flow")
+
+editscroll:AddChild(loopGroup)
+
+local loopstart = AceGUI:Create("EditBox")
+loopstart:SetLabel(L["Inner Loop Start"])
+loopstart:DisableButton(true)
+loopstart:SetMaxLetters(3)
+loopstart.editbox:SetNumeric()
+loopGroup:AddChild(loopstart)
+
+local loopstop = AceGUI:Create("EditBox")
+loopstop:SetLabel(L["Inner Loop End"])
+loopstop:DisableButton(true)
+loopstop:SetMaxLetters(3)
+loopstop.editbox:SetNumeric()
+loopGroup:AddChild(loopstop)
+
+local looplimit = AceGUI:Create("EditBox")
+looplimit:SetLabel(L["Inner Loop Limit"])
+looplimit:DisableButton(true)
+looplimit:SetMaxLetters(4)
+looplimit.editbox:SetNumeric()
+loopGroup:AddChild(looplimit)
+editscroll:AddChild(spellbox)
+
 
 local postmacrobox = AceGUI:Create("MultiLineEditBox")
 postmacrobox:SetLabel(L["PostMacro"])
@@ -332,7 +373,8 @@ postmacrobox:SetFullWidth(true)
 postmacrobox.editBox:SetScript( "OnLeave",  function(self) GSSE:parsetext(self) end)
 postmacrobox.editBox:SetScript("OnTextChanged", function () end)
 
-editframe:AddChild(postmacrobox)
+editscroll:AddChild(postmacrobox)
+editframe:AddChild(editscroll)
 
 local editButtonGroup = AceGUI:Create("SimpleGroup")
 editButtonGroup:SetWidth(302)
@@ -416,12 +458,67 @@ end)
 othersequencebuttonGroup:AddChild(delbutton)
 
 
-
 versionframe:AddChild(othersequencebuttonGroup)
+-- Record Frame
+
+recordframe:SetTitle(L["Record Macro"])
+recordframe:SetStatusText(L["Gnome Sequencer: Record your rotation to a macro."])
+recordframe:SetCallback("OnClose", function(widget)  frame:Hide(); end)
+recordframe:SetLayout("List")
+
+local recordsequencebox = AceGUI:Create("MultiLineEditBox")
+recordsequencebox:SetLabel(L["Actions"])
+recordsequencebox:SetNumLines(20)
+recordsequencebox:DisableButton(true)
+recordsequencebox:SetFullWidth(true)
+recordframe:AddChild(recordsequencebox)
+
+local recButtonGroup = AceGUI:Create("SimpleGroup")
+recButtonGroup:SetLayout("Flow")
+
+
+local recbutton = AceGUI:Create("Button")
+recbutton:SetText(L["Record"])
+recbutton:SetWidth(150)
+recbutton:SetCallback("OnClick", function() GSSE:ManageRecord() end)
+recButtonGroup:AddChild(recbutton)
+
+local createmacrobutton = AceGUI:Create("Button")
+createmacrobutton:SetText(L["Create Macro"])
+createmacrobutton:SetWidth(150)
+createmacrobutton:SetCallback("OnClick", function() GSSE:SaveRecordMacro() end)
+createmacrobutton:SetDisabled(true)
+recButtonGroup:AddChild(createmacrobutton)
+
+recordframe:AddChild(recButtonGroup)
+
 
 -- Slash Commands
 
 GSSE:RegisterChatCommand("gsse", "GSSlash")
+
+function GSSE:SaveRecordMacro()
+  GSSE:LoadEditor( nil, recordsequencebox:GetText())
+  recordframe:Hide()
+
+end
+local recbuttontext = L["Record"]
+function GSSE:ManageRecord()
+  if recbuttontext == L["Record"] then
+    GSSE:RegisterEvent('UNIT_SPELLCAST_SUCCEEDED')
+    recbuttontext = L["Stop"]
+    createmacrobutton:SetDisabled(false)
+  else
+    recbuttontext = L["Record"]
+    GSSE:UnregisterEvent('UNIT_SPELLCAST_SUCCEEDED')
+  end
+  recbutton:SetText(recbuttontext)
+end
+
+function GSSE:UNIT_SPELLCAST_SUCCEEDED(event, unit, spell)
+  if unit ~= "player" then  return end
+  recordsequencebox:SetText(recordsequencebox:GetText() .. "/cast " .. spell .. "\n")
+end
 
 -- Functions
 function GSSE:SetActiveSequence(key)
@@ -525,7 +622,7 @@ function GSSE:toggleClasses(buttonname)
   end
 end
 
-function GSSE:LoadEditor(SequenceName)
+function GSSE:LoadEditor(SequenceName, recordstring)
   if not GSisEmpty(SequenceName) then
     nameeditbox:SetText(SequenceName)
     if GSisEmpty(GSMasterOptions.SequenceLibrary[SequenceName][GSGetActiveSequenceVersion(SequenceName)].StepFunction) then
@@ -561,6 +658,20 @@ function GSSE:LoadEditor(SequenceName)
     GSPrintDebugMessage("SequenceName: " .. SequenceName, GNOME)
     speciddropdown:SetValue(GSSpecIDList[GSMasterOptions.SequenceLibrary[SequenceName][GSGetActiveSequenceVersion(SequenceName)].specID])
     specdropdownvalue = GSSpecIDList[GSMasterOptions.SequenceLibrary[SequenceName][GSGetActiveSequenceVersion(SequenceName)].specID]
+    if not GSisEmpty(GSMasterOptions.SequenceLibrary[SequenceName][GSGetActiveSequenceVersion(SequenceName)].loopstart) then
+      loopstart:SetText(GSMasterOptions.SequenceLibrary[SequenceName][GSGetActiveSequenceVersion(SequenceName)].loopstart)
+    end
+    if not GSisEmpty(GSMasterOptions.SequenceLibrary[SequenceName][GSGetActiveSequenceVersion(SequenceName)].loopstop) then
+      loopstop:SetText(GSMasterOptions.SequenceLibrary[SequenceName][GSGetActiveSequenceVersion(SequenceName)].loopstop)
+    end
+    if not GSisEmpty(GSMasterOptions.SequenceLibrary[SequenceName][GSGetActiveSequenceVersion(SequenceName)].looplimit) then
+      looplimit:SetText(GSMasterOptions.SequenceLibrary[SequenceName][GSGetActiveSequenceVersion(SequenceName)].looplimit)
+    end
+  elseif not GSisEmpty(recordstring) then
+    iconpicker:SetImage("Interface\\Icons\\INV_MISC_QUESTIONMARK")
+    currentSequence = ""
+    helpeditbox:SetText("Talents: " .. GSSE:getCurrentTalents())
+    spellbox:SetText(recordstring)
   else
     GSPrintDebugMessage(L["No Sequence Icon setting to "] , GNOME)
     iconpicker:SetImage("Interface\\Icons\\INV_MISC_QUESTIONMARK")
@@ -593,6 +704,15 @@ function GSSE:UpdateSequenceDefinition(SequenceName)
     sequence.helpTxt = helpeditbox:GetText()
     if not tonumber(sequence.icon) then
       sequence.icon = "INV_MISC_QUESTIONMARK"
+    end
+    if not GSisEmpty(loopstart:GetText()) then
+      sequence.loopstart = loopstart:GetText()
+    end
+    if not GSisEmpty(loopstop:GetText()) then
+      sequence.loopstop = loopstop:GetText()
+    end
+    if not GSisEmpty(looplimit:GetText()) then
+      sequence.looplimit = looplimit:GetText()
     end
     sequence.PostMacro = postmacrobox:GetText()
     sequence.version = nextVal
@@ -633,6 +753,8 @@ end
 function GSSE:GSSlash(input)
     if input == "hide" then
       frame:Hide()
+    elseif input == "record" then
+      recordframe:Show()
     elseif input == "debug" then
       GSShowDebugWindow()
     else
@@ -643,6 +765,7 @@ end
 
 
 function GSSE:OnInitialize()
+    recordframe:Hide()
     versionframe:Hide()
     editframe:Hide()
     frame:Hide()

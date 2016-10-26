@@ -391,12 +391,12 @@ Quando ricevi ricompense da una missione o bottino da una spedizione che può es
 		OptionsAdvisorHeader = "Opzioni avvisi",
 		OptionsAlignRight = "Allinea i valori a destra",
 		OptionsAlignRightTooltip = "Abilita questa opzione per allineare i valori di Pawn e le informazioni di miglioramento al bordo destro della tooltip invece che a sinistra.",
-		OptionsBagUpgradeAdvisor = "Show bag upgrade advisor",
+		OptionsBagUpgradeAdvisor = "Show bag upgrade advisor", -- Requires localization
 		OptionsBagUpgradeAdvisorTooltip = [=[Enable this option to have Pawn take over the in-bag upgrade arrows.
 
 If checked, Pawn will find upgrades in your bags and mark items that are an upgrade for any of your active scales with green arrows. 
 
-If unchecked, WoW will mark items with a higher item level than what you're currently wearing, and Pawn will not interfere with the built-in feature.]=],
+If unchecked, WoW will mark items with a higher item level than what you're currently wearing, and Pawn will not interfere with the built-in feature.]=], -- Requires localization
 		OptionsBlankLine = "Aggiungi una riga vuota prima dei valori",
 		OptionsBlankLineTooltip = "Mantieni la tooltip dei tuoi oggetti estremamente ordinata abilitando questa opzione. Essa aggiungerà una riga vuota prima dei valori di Pawn.",
 		OptionsButtonHidden = "Nascondilo",
@@ -433,7 +433,7 @@ Se disattivata, Pawn calcolerà il valore per gli oggetti come se fossero incast
 Se abilitata, Pawn tratterà gli oggetti migliorabili così come sono, e non terrà conto che potresti usare i punti Valore o il Frammento Apexis Potenziato per migliorare l'oggetto quando determina se un oggetto è migliore di quello che attualmente indossi.
 
 Se disabilitata, Pawn tratterà questi oggetti assumento che tu massimizzi il loro potenziale con i punti Valore e il Frammento Apexis Potenziato. Questo potrebbe causare che un oggetto bieco livello 650 appaia come un miglioramento sostanziale rispetto ad un oggetto 670 di Fonderia dei Roccianera, visto che l'oggetto bieco può potenzialmente essere migliorato fino al livello 705 attraverso i punti Valore e i cristalli Apexis.]=],
-		OptionsInventoryIcon = "Show inventory icons", -- Needs review
+		OptionsInventoryIcon = "Mostra icone accanto ai dialoghi",
 		OptionsInventoryIconTooltip = "Enable this option to show inventory icons next to item link windows.",
 		OptionsItemIDs = "Mostra ID oggetti",
 		OptionsItemIDsTooltip = [=[Abilita questa optione per permettere a Pawn di mostrare gli ID degli oggetti che incontri, così come gli ID degli incantamenti e delle gemme.
@@ -533,7 +533,7 @@ Scorciatoia: Shift+click su una formula]=],
 		ValuesDoNotShowUpgradesTooltip = "Abilita questa opzione per nascondere i miglioramenti di questo tipo di oggetto. Per esempio, anche se un difensore paladino può usare armi a 2 mani, un'arma a 2 mano non è mai un \"miglioramento\" per un paladino in assetto da difensore, quindi Pawn non dovrebbe mostrare la notifica di miglioramento per queste. In maniera similare, i paladini castigo possono usare armi ad 1 mano, ma non sono mai miglioramenti.",
 		ValuesFollowSpecialization = "Mostra solo i miglioramenti per il mio miglior tipo di armatura dopo il livello 50",
 		ValuesFollowSpecializationTooltip = "Abilita questa opzione per nascondere i miglioramenti dell'armatura in cui la tua classe non è specializzata dopo il livello 50. Per esempio, al livello 50 un paladino sacro impara Specializzazione: Armature a Piastre, che aumenta il proprio intelletto del 5% quando indossa solo armature in piastre. Quando questa opzione è selezionata Pawn non considererà mai stoffa, pelle o maglia come miglioramenti per paladini sacri di livello 50+.",
-		ValuesHeader = "Pesi della formula per %s", -- Needs review
+		ValuesHeader = "Pesi delle caratteristice per %s",
 		ValuesIgnoreStat = "Gli oggetti con questa sono inutilizzabili",
 		ValuesIgnoreStatTooltip = "Abilita questa opzione per far in modo che ogni oggetto con questa statistica non ottenga valore per questa formula. Per esempio, gli sciamani non possono indossare piastre, quindi una formula per uno sciamano può impostare piastre come inutilizzabile così che quelle armature non ottengano valore per quella formula.",
 		ValuesNormalize = "Normalizza valori (come Wowhead)",

@@ -1258,7 +1258,7 @@ function PawnUI_CompareItems()
 			PawnUI_AddComparisonHeaderLine(LastFoundHeader)
 			LastFoundHeader = nil
 		end
-		PawnUI_AddComparisonStatLineNumbers(PawnLocal.UI.CompareColoredSockets, HasSockets1, HasSockets2)
+		PawnUI_AddComparisonStatLineNumbers(PawnLocal.UI.CompareColoredSockets, HasSockets1, HasSockets2, false) -- hide differential
 	end
 
 	local _, TotalSocketValue1 = PawnGetItemValue(ItemStats1, Item1.Level, ItemSocketBonusStats1, PawnUICurrentScale, false, true)
@@ -1270,7 +1270,7 @@ function PawnUI_CompareItems()
 			PawnUI_AddComparisonHeaderLine(LastFoundHeader)
 			LastFoundHeader = nil
 		end
-		PawnUI_AddComparisonStatLineNumbers(PawnLocal.UI.CompareGemTotalValue, TotalSocketValue1, TotalSocketValue2)
+		PawnUI_AddComparisonStatLineNumbers(PawnLocal.UI.CompareGemTotalValue, TotalSocketValue1, TotalSocketValue2, false) -- hide differential
 	end
 
 	-- Everything else below this point goes under an "Other" header.
@@ -1287,7 +1287,7 @@ function PawnUI_CompareItems()
 			PawnUI_AddComparisonHeaderLine(LastFoundHeader)
 			LastFoundHeader = nil
 		end
-		PawnUI_AddComparisonStatLineStrings(PawnLocal.ItemLevelTooltipLine, Level1, Level2)
+		PawnUI_AddComparisonStatLineNumbers(PawnLocal.ItemLevelTooltipLine, Level1, Level2, false) -- hide differential
 	end
 	
 	-- Add asterisk indicator.
@@ -1388,16 +1388,20 @@ end
 
 -- Adds a stat line to the comparison stat area, passing in the numbers to use.  It is acceptable to use nil for either or both
 -- of the numbers.  Differences are calculated automatically.
-function PawnUI_AddComparisonStatLineNumbers(StatNameAndValue, Quantity1, Quantity2)
+function PawnUI_AddComparisonStatLineNumbers(StatNameAndValue, Quantity1, Quantity2, ShowDifference)
+	if ShowDifference == nil then ShowDifference = true end -- default value
+
 	local QuantityString1 = VgerCore.FormatCompactDecimal(Quantity1)
 	local QuantityString2 = VgerCore.FormatCompactDecimal(Quantity2)
 	local Difference1, Difference2
 	if not Quantity1 then Quantity1 = 0 end
 	if not Quantity2 then Quantity2 = 0 end
-	if Quantity1 > Quantity2 then
-		Difference1 = "(+" .. VgerCore.FormatCompactDecimal(Quantity1 - Quantity2) .. ")"
-	elseif Quantity2 > Quantity1 then
-		Difference2 = "(+" .. VgerCore.FormatCompactDecimal(Quantity2 - Quantity1) .. ")"
+	if ShowDifference then
+		if Quantity1 > Quantity2 then
+			Difference1 = "(+" .. VgerCore.FormatCompactDecimal(Quantity1 - Quantity2) .. ")"
+		elseif Quantity2 > Quantity1 then
+			Difference2 = "(+" .. VgerCore.FormatCompactDecimal(Quantity2 - Quantity1) .. ")"
+		end
 	end
 	
 	PawnUI_AddComparisonStatLineStrings(StatNameAndValue, QuantityString1, QuantityString2, Difference1, Difference2)

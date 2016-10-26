@@ -220,10 +220,19 @@ local function renderGear(spec, container)
 				Amr.GetItemInfo(optimalItemLink, function(obj, name, link, quality, iLevel)					
 					-- set item name, tooltip, and ilvl
 					obj.nameLabel:SetText(link:gsub("%[", ""):gsub("%]", ""))
+					
+					-- not quite right but whatever... close enough
+					if quality == 6 then
+						local tmprel = optimalItem.relicBonusIds
+						optimalItem.relicBonusIds = nil
+						link = Amr.CreateItemLink(optimalItem)
+						optimalItem.relicBonusIds = tmprel
+					end
+					
 					Amr:SetItemTooltip(obj.nameLabel, link)
 					
 					-- the game's info gives the wrong item level, so we have to scan for it
-					iLevel = (quality ~= 6 or optimalItem.relicBonusIds) and Amr.GetItemLevel(nil, nil, link) or ""
+					--iLevel = (quality ~= 6 or optimalItem.relicBonusIds) and Amr.GetItemLevel(nil, nil, link) or ""
 					obj.ilvlLabel:SetText(iLevel)			
 					
 				end, { ilvlLabel = lblIlvl, nameLabel = lblItem })

@@ -62,6 +62,7 @@ GSStaticCleanStrings = {
 }
 
 GSStaticStringRESET = "|r"
+GSStaticCoreLoadedMessage = "GS-CoreLoaded"
 
 -- Sety defaults.  THese will be overriden once the addon is marked as loaded.
 GSAddInPacks = {}
@@ -193,6 +194,93 @@ GSStaticPriority = [[
     step = step % #macros + 1
   end
 ]]
+
+--- <code>GSStaticLoopPriority</code> is a static step function that goes 1121231234123451234561234567
+--    but it does this within an internal loop.  So more like 123343456
+--    If the macro has loopstart or loopstop defined then it will use this instead of GSStaticPriority
+GSStaticLoopPriority = [[
+  if step == #macros then
+    step = 1
+    self:SetAttribute('loopiter', 1)
+  elseif step < loopstart then
+    step = step + 1
+  elseif looplimit <= 1 then
+    -- when we get to the end reset to loopstart
+    limit = limit or loopstart
+    if step == limit then
+      limit = limit % loopstop + 1
+      step = loopstart
+      if limit == loopiter then
+        loopiter = loopiter + 1
+        self:SetAttribute('loopiter', loopiter)
+      end
+    else
+      step = step + 1
+    end
+  elseif step > looplimit then
+    step = step + 1
+  elseif loopiter == looplimit then
+    step = loopstop + 1
+  else
+    limit = limit or loopstart
+    if step == limit then
+      limit = limit % loopstop + 1
+      step = loopstart
+      if limit == loopiter then
+        loopiter = loopiter + 1
+        self:SetAttribute('loopiter', loopiter)
+      end
+    else
+      step = step + 1
+    end
+  end
+]]
+
+--- <code>GSStaticLoopPriority</code> is a static step function that
+--    operates in a sequential mode but with an internal loop.
+--    eg 12342345
+GSStaticLoopSequential = [[
+  if step == #macros  then
+    -- I am at the very end reset
+    --print(step .. " I am at the very end reset")
+    step = 1
+    self:SetAttribute('loopiter', 1)
+    print(step .. " I am at the very end reset")
+  elseif step < loopstart then
+    -- I am before the loop increment to next step.
+    --print(step .. " I am before the loop increment to next step.")
+    step = step + 1
+  elseif looplimit <= 1 then
+    -- when we get to the end reset to loopstart
+    --print(step .. " When we get to the end reset to loopstart")
+    if step == loopstop then
+      step = loopstart
+      loopiter = loopiter + 1
+      self:SetAttribute('loopiter', loopiter)
+    else
+      step = step + 1
+    end
+  elseif step > looplimit then
+    -- I am outside the loop
+    --print(step .. " I am outside the loop")
+    step = step + 1
+  elseif loopiter == looplimit then
+    -- I am at the outside bound of the loop
+    --print(step .. " I am at the outside bound of the loop")
+    step = step + 1
+  else
+    -- I am in the middle
+    --print(step .. " I am in the middle")
+    if step == loopend then
+      step = loopstart
+      loopiter = loopiter + 1
+      self:SetAttribute('loopiter', loopiter)
+    else
+      step = step + 1
+    end
+  end
+]]
+
 
 --- Experimental attempt to load a WeakAuras string.
 function GSLoadWeakauras(str)

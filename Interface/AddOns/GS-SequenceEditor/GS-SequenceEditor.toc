@@ -1,18 +1,18 @@
-## Interface: 70000
+## Interface: 70100
 ## Title: |cffff0000GS-E:|r |cFF00D1FFSequence Editor|r
 ## Notes: This addon allows you to edit GnomeSequenced-Enhanced sequences in game.
 ## Author: Draik
 ## Version: 1.4
 ## RequiredDeps: GS-Core
 ## OptionalDeps: GS-SequenceTranslator LibCompress LibActionButton-1.0
-## X-Curse-Packaged-Version: r20161006215510
+## X-Curse-Packaged-Version: r20161025175019
 ## X-Curse-Project-Name: GnomeSequencer - Enhanced : Advanced Macros
 ## X-Curse-Project-ID: gnomesequencer-enhanced
 ## X-Curse-Repository-ID: wow/gnomesequencer-enhanced/mainline
 
 #libs
 embeds.xml
-lib\LibDataBroker-1-1\LibDataBroker-1-1.lua
+lib\LibDataBroker-1.1\LibDataBroker-1.1.lua
 lib\LibQTip-1.0\LibQTip-1.0.lua
 lib\AceGUI-3.0-Completing-EditBox\AceGUI-3.0-Completing-EditBox.lua
 lib\LibSharedMedia-3.0\LibSharedMedia-3.0\LibSharedMedia-3.0.lua

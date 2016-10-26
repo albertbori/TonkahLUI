@@ -2,7 +2,7 @@
 ebenable = nil
 ebfishingmode = nil
 ebname = "Holy"
-eblastset = "Holy"
+eblastset = "Shadow"
 ebname2 = "Holy"
 ebname3 = "Shadow"
 ebname4 = nil

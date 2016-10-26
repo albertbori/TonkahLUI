@@ -1,0 +1,47 @@
+tag 7.1.0
+75dedcd9ca68e1e8e2d321828c6baf2645c0e3a9
+subversion <svn@deadlybossmods.com>
+2016-10-25 17:15:14 +0200
+
+Tagging as 7.1.0
+
+
+--------------------
+
+subversion:
+	- increment version number to 7.1.0
+	- Omega via svn r15404: Fix incorrect spell warning name
+	- Omega via svn r15403: Fix spam Bump TOCs
+	- Omega via svn r15402: Massively buff kara trash mods Enable more things in some encounters in kara
+	- Omega via svn r15401: Push rest of kara
+	- ultrashining via svn r15400: zhTW update
+	- Omega via svn r15399: updated moroes and huntsman Added nightbane combat detect
+	- Omega via svn r15398: Push first 4 of karazhan
+	- Omega via svn r15397: Finally Add Mark timer
+	- Omega via svn r15396: tweaks, variable is variable :\
+	- Omega via svn r15395: Few more ranges. Mostly really high ones i ignored before but should be added to support large distance checks for event filtering (such as boat vs not boat)
+	- Omega via svn r15394: Remove print Change cenarius to work in normal too. while some of us consider it trivial, others do not.
+	- Omega via svn r15393: Can I get a hel ya Remove restrictions mode feature
+	- Omega via svn r15392: move tostring
+	- Omega via svn r15391: Add trash mod for trial of valor
+	- Omega via svn r15390: Odyn and Guarm updates from LFR data. I?\226?\128?\153ll do helya tomorrow.
+	- Omega via svn r15389: Cleanup core debug, it was useless. whatever is causing this to happen is on users end and there is no fix DBM can do to resolve it. Instead, just force whatever EJ returns into a string to eliminate all lua errors and just report boss names as table hashes when users have bad returns.
+	- Omega via svn r15388: Fixes to spy helper
+	- Omega via svn r15387: KR update
+	- Omega via svn r15386: Add a note
+	- Omega via svn r15385: Enable this info frame on heroic too.
+	- Omega via svn r15384: Kill icons and sort entirely
+	- Omega via svn r15383: Minor fix. Still don?\226?\128?\153t know if hang is resolved, because don?\226?\128?\153t know source of it.
+	- Omega via svn r15382: another attempt
+	- Omega via svn r15381: This might fix it
+	- Omega via svn r15380: comment out for now, it?\226?\128?\153s really broken
+	- Omega via svn r15379: Option text
+	- Omega via svn r15378: Fix lua error and CoS event helper cancel
+	- Omega via svn r15377: Cleanup some redundancy
+	- Omega via svn r15376: Change a couple dragons timers to short text
+	- Omega via svn r15375: Fix first error
+	- Omega via svn r15374: Push experimental and probably broken infoframe to dragons for testing tonight Combined marks options into 1 to reduce redundancy and added voice option. Push a not broken infoframe to cenarius
+	- Omega via svn r15373: Add auto ooze marking and infection marking to dragons Some cleanups to hopefully prevent double warnings/timer starts from the syncing redundancies for dragon rotations
+	- Omega via svn r15372: Sync important timers/dragon rotations on nightmare dragons so people dealing with lumbering have them when they return Disable breath timers for shades Added interrupt warning for collapsing nightmare Added respawn time. Disable shadow burst yells by default
+	Removed volatile winds taunt warning from renferal entirely.
+	- tandanu via svn r15371: increment alpha version

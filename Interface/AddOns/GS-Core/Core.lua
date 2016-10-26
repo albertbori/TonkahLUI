@@ -4,11 +4,28 @@ local GNOME, _ = ...
 
 local currentclassDisplayName, currentenglishclass, currentclassId = UnitClass("player")
 local L = LibStub("AceLocale-3.0"):GetLocale("GS-E")
+local AceEvent = LibStub("AceEvent-3.0")
 
 local GCD, GCD_Update_Timer
 
+local function GSisLoopSequence(sequence)
+  local loopcheck = false
+  if not GSisEmpty(sequence.loopstart) then
+    loopcheck = true
+  end
+  if not GSisEmpty(sequence.loopstop) then
+    loopcheck = true
+  end
+  if not GSisEmpty(sequence.looplimit) then
+    loopcheck = true
+  end
+  return loopcheck
+end
+
+
 local function GSTraceSequence(button, step, task)
   if GSDebugSequenceEx then
+    -- Note to self do i care if its a loop sequence?
     local isUsable, notEnoughMana = IsUsableSpell(task)
     local usableOutput, manaOutput, GCDOutput, CastingOutput
     if isUsable then
@@ -116,6 +133,15 @@ end
 
 local OnClick = [=[
 local step = self:GetAttribute('step')
+local loopstart = self:GetAttribute('loopstart') or 1
+local loopstop = self:GetAttribute('loopstop') or #macros + 1
+local loopiter = self:GetAttribute('loopiter') or 1
+local looplimit = self:GetAttribute('looplimit') or 1
+loopstart = tonumber(loopstart)
+loopstop = tonumber(loopstop)
+loopiter = tonumber(loopiter)
+looplimit = tonumber(looplimit)
+step = tonumber(step)
 self:SetAttribute('macrotext', self:GetAttribute('PreMacro') .. macros[step] .. self:GetAttribute('PostMacro'))
 %s
 if not step or not macros[step] then -- User attempted to write a step method that doesn't work, reset to 1
@@ -157,7 +183,24 @@ local function createButton(name, sequence)
   GSPrintDebugMessage(L["createButton PreMacro: "] .. button:GetAttribute('PreMacro'))
   button:SetAttribute('PostMacro', '\n' .. preparePostMacro(sequence.PostMacro or ''))
   GSPrintDebugMessage(L["createButton PostMacro: "] .. button:GetAttribute('PostMacro'))
-  button:WrapScript(button, 'OnClick', format(OnClick, sequence.StepFunction or 'step = step % #macros + 1'))
+  if GSisLoopSequence(sequence) then
+    if GSisEmpty(sequence.StepFunction) then
+      button:WrapScript(button, 'OnClick', format(OnClick, GSStaticLoopSequential))
+    else
+      button:WrapScript(button, 'OnClick', format(OnClick, GSStaticLoopPriority))
+    end
+    if not GSisEmpty(sequence.loopstart) then
+      button:SetAttribute('loopstart', sequence.loopstart)
+    end
+    if not GSisEmpty(sequence.loopstop) then
+      button:SetAttribute('loopstop', sequence.loopstop)
+    end
+    if not GSisEmpty(sequence.looplimit) then
+      button:SetAttribute('looplimit', sequence.looplimit)
+    end
+  else
+    button:WrapScript(button, 'OnClick', format(OnClick, sequence.StepFunction or 'step = step % #macros + 1'))
+  end
   button.UpdateIcon = UpdateIcon
 end
 
@@ -389,6 +432,7 @@ local function processAddonLoaded()
   GSPrintDebugMessage(L["I am loaded"])
   GSReloadSequences()
   GnomeOptions = GSMasterOptions
+  AceEvent:SendMessage(GSStaticCoreLoadedMessage)
 end
 
 local function processUnitSpellcast(addon)
@@ -405,6 +449,7 @@ local function ResetButtons()
     if GSisSpecIDForCurrentClass(GSMasterOptions.SequenceLibrary[k][v].specID) then
       button = _G[k]
       button:SetAttribute("step",1)
+      UpdateIcon(button)
     end
   end
 end
@@ -472,8 +517,21 @@ function GSExportSequencebySeq(sequence, sequenceName)
      steps = "StepFunction = [[" .. GSMasterOptions.EQUALS .. sequence.StepFunction .. GSStaticStringRESET .. "]],\n"
     end
   end
+  local internalloop = ""
+  if GSisLoopSequence(sequence) then
+    if not GSisEmpty(sequence.loopstart) then
+      internalloop = internalloop .. "loopstart=" .. GSMasterOptions.EQUALS .. sequence.loopstart .. GSStaticStringRESET .. ",\n"
+    end
+    if not GSisEmpty(sequence.loopstop) then
+      internalloop = internalloop .. "loopstop=" .. GSMasterOptions.EQUALS .. sequence.loopstop .. GSStaticStringRESET .. ",\n"
+    end
+    if not GSisEmpty(sequence.looplimit) then
+      internalloop = internalloop .. "looplimit=" .. GSMasterOptions.EQUALS .. sequence.looplimit .. GSStaticStringRESET .. ",\n"
+    end
+  end
+
   --local returnVal = ("Sequences['" .. sequenceName .. "'] = {\n" .."author=\"".. sequence.author .."\",\n" .."specID="..sequence.specID ..",\n" .. helptext .. steps )
-  local returnVal = (disabledseq .. "Sequences['" .. GSMasterOptions.EmphasisColour .. sequenceName .. GSStaticStringRESET .. "'] = {\nauthor=\"" .. GSMasterOptions.AuthorColour .. (GSisEmpty(sequence.author) and "Unknown Author" or sequence.author) .. GSStaticStringRESET .. "\",\n" .. (GSisEmpty(sequence.specID) and "-- Unknown specID.  This could be a GS sequence and not a GS-E one.  Care will need to be taken. \n" or "specID=" .. GSMasterOptions.NUMBER  .. sequence.specID .. GSStaticStringRESET ..",\n") .. specversion .. source .. helptext .. steps )
+  local returnVal = (disabledseq .. "Sequences['" .. GSMasterOptions.EmphasisColour .. sequenceName .. GSStaticStringRESET .. "'] = {\nauthor=\"" .. GSMasterOptions.AuthorColour .. (GSisEmpty(sequence.author) and "Unknown Author" or sequence.author) .. GSStaticStringRESET .. "\",\n" .. (GSisEmpty(sequence.specID) and "-- Unknown specID.  This could be a GS sequence and not a GS-E one.  Care will need to be taken. \n" or "specID=" .. GSMasterOptions.NUMBER  .. sequence.specID .. GSStaticStringRESET ..",\n") .. specversion .. source .. helptext .. steps .. internalloop)
   if not GSisEmpty(sequence.icon) then
      returnVal = returnVal .. "icon=" .. GSMasterOptions.CONCAT .. (tonumber(sequence.icon) and sequence.icon or "'".. sequence.icon .. "'") .. GSStaticStringRESET ..",\n"
   end
@@ -529,7 +587,24 @@ function GSUpdateSequence(name,sequence)
       button:SetAttribute('PostMacro', '\n' .. preparePostMacro(sequence.PostMacro or ''))
       GSPrintDebugMessage(L["GSUpdateSequence PostMacro updated to: "] .. button:GetAttribute('PostMacro'))
       button:UnwrapScript(button,'OnClick')
-      button:WrapScript(button, 'OnClick', format(OnClick, sequence.StepFunction or 'step = step % #macros + 1'))
+      if GSisLoopSequence(sequence) then
+        if GSisEmpty(sequence.StepFunction) then
+          button:WrapScript(button, 'OnClick', format(OnClick, GSStaticLoopSequential))
+        else
+          button:WrapScript(button, 'OnClick', format(OnClick, GSStaticLoopPriority))
+        end
+      else
+        button:WrapScript(button, 'OnClick', format(OnClick, sequence.StepFunction or 'step = step % #macros + 1'))
+      end
+      if not GSisEmpty(sequence.loopstart) then
+        button:SetAttribute('loopstart', sequence.loopstart)
+      end
+      if not GSisEmpty(sequence.loopstop) then
+        button:SetAttribute('loopstop', sequence.loopstop)
+      end
+      if not GSisEmpty(sequence.looplimit) then
+        button:SetAttribute('looplimit', sequence.looplimit)
+      end
     end
 end
 
