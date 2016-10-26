@@ -2,22 +2,22 @@
 WQTrackerDB = {
 	["profileKeys"] = {
 		["Nilrum - Doomhammer"] = "Default",
-		["Holyshnizzle - Doomhammer"] = "Default",
-		["Bahlar - Doomhammer"] = "Default",
 		["Taunkah - Doomhammer"] = "Default",
+		["Bahlar - Doomhammer"] = "Default",
+		["Holyshnizzle - Doomhammer"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
 			["AlertTutorialStep"] = 5,
 			["GotTutorial"] = true,
 			["quests_tracked"] = {
-				["Player-1190-092C8FE0"] = {
+				["Player-1190-07578C7A"] = {
 				},
 				["Player-1190-075136D8"] = {
 				},
 				["Player-1190-07513746"] = {
 				},
-				["Player-1190-07578C7A"] = {
+				["Player-1190-092C8FE0"] = {
 				},
 			},
 			["quests_all_characters"] = {
@@ -67,10 +67,10 @@ WQTrackerDB = {
 						["rewardAmount"] = 1800,
 						["rewardTexture"] = "Interface\\AddOns\\WorldQuestTracker\\media\\icon_artifactpower_red_roundT",
 					},
-					[41264] = {
-						["expireAt"] = 1477386074,
-						["rewardAmount"] = "30",
-						["rewardTexture"] = 1387364,
+					[44021] = {
+						["expireAt"] = 1477364475,
+						["rewardAmount"] = 2175,
+						["rewardTexture"] = "Interface\\AddOns\\WorldQuestTracker\\media\\icon_artifactpower_red_roundT",
 					},
 					[42160] = {
 						["expireAt"] = 1477429274,
@@ -82,20 +82,20 @@ WQTrackerDB = {
 						["rewardAmount"] = 3800,
 						["rewardTexture"] = "Interface\\AddOns\\WorldQuestTracker\\media\\icon_artifactpower_red_roundT",
 					},
-					[41451] = {
-						["expireAt"] = 1477342866,
-						["rewardAmount"] = 1850,
-						["rewardTexture"] = "Interface\\AddOns\\WorldQuestTracker\\media\\icon_artifactpower_red_roundT",
-					},
-					[42101] = {
-						["expireAt"] = 1477450874,
-						["rewardAmount"] = 1425,
-						["rewardTexture"] = "Interface\\AddOns\\WorldQuestTracker\\media\\icon_artifactpower_red_roundT",
-					},
 					[41265] = {
 						["expireAt"] = 1477321266,
 						["rewardAmount"] = "20",
 						["rewardTexture"] = 1387364,
+					},
+					[41264] = {
+						["expireAt"] = 1477386074,
+						["rewardAmount"] = "30",
+						["rewardTexture"] = 1387364,
+					},
+					[41451] = {
+						["expireAt"] = 1477342866,
+						["rewardAmount"] = 1850,
+						["rewardTexture"] = "Interface\\AddOns\\WorldQuestTracker\\media\\icon_artifactpower_red_roundT",
 					},
 					[43617] = {
 						["expireAt"] = 1477299666,
@@ -117,9 +117,9 @@ WQTrackerDB = {
 						["rewardAmount"] = 2000,
 						["rewardTexture"] = "Interface\\AddOns\\WorldQuestTracker\\media\\icon_artifactpower_red_roundT",
 					},
-					[42174] = {
-						["expireAt"] = 1477386074,
-						["rewardAmount"] = 1650,
+					[43786] = {
+						["expireAt"] = 1477450814,
+						["rewardAmount"] = 1625,
 						["rewardTexture"] = "Interface\\AddOns\\WorldQuestTracker\\media\\icon_artifactpower_red_roundT",
 					},
 					[42108] = {
@@ -142,9 +142,9 @@ WQTrackerDB = {
 						["rewardAmount"] = "2",
 						["rewardTexture"] = 1417744,
 					},
-					[43786] = {
-						["expireAt"] = 1477450814,
-						["rewardAmount"] = 1625,
+					[42174] = {
+						["expireAt"] = 1477386074,
+						["rewardAmount"] = 1650,
 						["rewardTexture"] = "Interface\\AddOns\\WorldQuestTracker\\media\\icon_artifactpower_red_roundT",
 					},
 					[40966] = {
@@ -157,17 +157,17 @@ WQTrackerDB = {
 						["rewardAmount"] = "1",
 						["rewardTexture"] = 1417744,
 					},
-					[44021] = {
-						["expireAt"] = 1477364475,
-						["rewardAmount"] = 2175,
+					[42101] = {
+						["expireAt"] = 1477450874,
+						["rewardAmount"] = 1425,
 						["rewardTexture"] = "Interface\\AddOns\\WorldQuestTracker\\media\\icon_artifactpower_red_roundT",
 					},
 				},
 			},
 			["player_names"] = {
-				["Player-1190-092C8FE0"] = {
-					["class"] = "WARLOCK",
-					["name"] = "Bahlar",
+				["Player-1190-07578C7A"] = {
+					["class"] = "WARRIOR",
+					["name"] = "Taunkah",
 					["realm"] = "Doomhammer",
 				},
 				["Player-1190-075136D8"] = {
@@ -180,13 +180,141 @@ WQTrackerDB = {
 					["name"] = "Nilrum",
 					["realm"] = "Doomhammer",
 				},
-				["Player-1190-07578C7A"] = {
-					["class"] = "WARRIOR",
-					["name"] = "Taunkah",
+				["Player-1190-092C8FE0"] = {
+					["class"] = "WARLOCK",
+					["name"] = "Bahlar",
 					["realm"] = "Doomhammer",
 				},
 			},
 			["history"] = {
+				["period"] = {
+					["global"] = {
+						["161024"] = {
+							["quest"] = 9,
+							["artifact"] = 3325,
+						},
+						["161015"] = {
+							["artifact"] = 7925,
+							["resource"] = 440,
+							["quest"] = 9,
+							["profession"] = {
+								[124112] = 1,
+								[128597] = 1,
+							},
+						},
+						["161019"] = {
+							["artifact"] = 7150,
+							["resource"] = 450,
+							["quest"] = 13,
+							["gold"] = 6768800,
+						},
+						["161022"] = {
+							["artifact"] = 20400,
+							["resource"] = 355,
+							["gold"] = 3148100,
+							["quest"] = 20,
+							["profession"] = {
+								[124111] = 1,
+							},
+						},
+						["161016"] = {
+							["quest"] = 1,
+						},
+						["161014"] = {
+							["quest"] = 1,
+						},
+						["161017"] = {
+							["quest"] = 1,
+						},
+						["161021"] = {
+							["artifact"] = 1125,
+							["resource"] = 410,
+							["profession"] = {
+								[141872] = 1,
+							},
+							["quest"] = 8,
+							["gold"] = 2539100,
+						},
+						["161018"] = {
+							["quest"] = 2,
+							["gold"] = 1855200,
+						},
+						["161020"] = {
+							["artifact"] = 6525,
+							["quest"] = 14,
+							["gold"] = 1679100,
+						},
+						["161025"] = {
+							["artifact"] = 8600,
+							["quest"] = 4,
+							["gold"] = 18350,
+						},
+					},
+					["character"] = {
+						["Player-1190-075136D8"] = {
+							["161024"] = {
+								["quest"] = 9,
+								["artifact"] = 3325,
+							},
+							["161015"] = {
+								["artifact"] = 7925,
+								["resource"] = 440,
+								["quest"] = 9,
+								["profession"] = {
+									[124112] = 1,
+									[128597] = 1,
+								},
+							},
+							["161019"] = {
+								["artifact"] = 7150,
+								["resource"] = 450,
+								["quest"] = 13,
+								["gold"] = 6768800,
+							},
+							["161022"] = {
+								["artifact"] = 20400,
+								["resource"] = 355,
+								["gold"] = 3148100,
+								["quest"] = 20,
+								["profession"] = {
+									[124111] = 1,
+								},
+							},
+							["161016"] = {
+								["quest"] = 1,
+							},
+							["161014"] = {
+								["quest"] = 1,
+							},
+							["161017"] = {
+								["quest"] = 1,
+							},
+							["161021"] = {
+								["artifact"] = 1125,
+								["resource"] = 410,
+								["profession"] = {
+									[141872] = 1,
+								},
+								["quest"] = 8,
+								["gold"] = 2539100,
+							},
+							["161018"] = {
+								["quest"] = 2,
+								["gold"] = 1855200,
+							},
+							["161020"] = {
+								["artifact"] = 6525,
+								["quest"] = 14,
+								["gold"] = 1679100,
+							},
+							["161025"] = {
+								["artifact"] = 8600,
+								["quest"] = 4,
+								["gold"] = 18350,
+							},
+						},
+					},
+				},
 				["quest"] = {
 					["global"] = {
 						[41122] = 1,
@@ -219,49 +347,49 @@ WQTrackerDB = {
 						["total"] = 82,
 						[41692] = 1,
 						[41950] = 1,
-						[43807] = 3,
-						[42880] = 2,
-						[44290] = 1,
-						[43583] = 1,
+						[42077] = 1,
+						[41864] = 1,
+						[42277] = 1,
+						[44033] = 1,
 						[42859] = 1,
 						[41095] = 1,
 						[42105] = 1,
 						[43633] = 1,
-						[41865] = 1,
+						[42969] = 1,
 						[44002] = 2,
 						[43772] = 1,
 						[41617] = 1,
 						[41992] = 1,
-						[44304] = 1,
-						[43610] = 1,
-						[41252] = 1,
 						[42145] = 1,
+						[42086] = 1,
+						[41252] = 1,
+						[44304] = 1,
 						[42022] = 1,
-						[43327] = 1,
+						[41695] = 1,
 						[43427] = 1,
 						[41272] = 1,
 						[43943] = 4,
-						[42177] = 1,
-						[43951] = 1,
 						[43193] = 1,
+						[43951] = 1,
+						[42177] = 1,
 						[41927] = 1,
 						[43709] = 1,
-						[43091] = 1,
-						[41308] = 1,
-						[43721] = 1,
 						[41705] = 1,
+						[43721] = 1,
+						[41308] = 1,
+						[43091] = 1,
 						[41824] = 1,
-						[41695] = 1,
-						[42086] = 1,
+						[43327] = 1,
+						[43610] = 1,
 						[42725] = 1,
 						[40951] = 1,
 						[41844] = 1,
-						[42969] = 1,
+						[41865] = 1,
 						[42106] = 1,
-						[44033] = 1,
-						[42277] = 1,
-						[41864] = 1,
-						[42077] = 1,
+						[43583] = 1,
+						[44290] = 1,
+						[42880] = 2,
+						[43807] = 3,
 					},
 					["character"] = {
 						["Player-1190-075136D8"] = {
@@ -295,203 +423,75 @@ WQTrackerDB = {
 							["total"] = 82,
 							[41692] = 1,
 							[41950] = 1,
-							[43807] = 3,
-							[42880] = 2,
-							[44290] = 1,
-							[43583] = 1,
+							[42077] = 1,
+							[41864] = 1,
+							[42277] = 1,
+							[44033] = 1,
 							[42859] = 1,
 							[41095] = 1,
 							[42105] = 1,
 							[43633] = 1,
-							[41865] = 1,
+							[42969] = 1,
 							[44002] = 2,
 							[43772] = 1,
 							[41617] = 1,
 							[41992] = 1,
-							[44304] = 1,
-							[43610] = 1,
-							[41252] = 1,
 							[42145] = 1,
+							[42086] = 1,
+							[41252] = 1,
+							[44304] = 1,
 							[42022] = 1,
-							[43327] = 1,
+							[41695] = 1,
 							[43427] = 1,
 							[41272] = 1,
 							[43943] = 4,
-							[42177] = 1,
-							[43951] = 1,
 							[43193] = 1,
+							[43951] = 1,
+							[42177] = 1,
 							[41927] = 1,
 							[43709] = 1,
-							[43091] = 1,
-							[41308] = 1,
-							[43721] = 1,
 							[41705] = 1,
+							[43721] = 1,
+							[41308] = 1,
+							[43091] = 1,
 							[41824] = 1,
-							[41695] = 1,
-							[42086] = 1,
+							[43327] = 1,
+							[43610] = 1,
 							[42725] = 1,
 							[40951] = 1,
 							[41844] = 1,
-							[42969] = 1,
+							[41865] = 1,
 							[42106] = 1,
-							[44033] = 1,
-							[42277] = 1,
-							[41864] = 1,
-							[42077] = 1,
-						},
-					},
-				},
-				["period"] = {
-					["global"] = {
-						["161024"] = {
-							["quest"] = 9,
-							["artifact"] = 3325,
-						},
-						["161015"] = {
-							["artifact"] = 7925,
-							["quest"] = 9,
-							["resource"] = 440,
-							["profession"] = {
-								[124112] = 1,
-								[128597] = 1,
-							},
-						},
-						["161019"] = {
-							["artifact"] = 7150,
-							["quest"] = 13,
-							["resource"] = 450,
-							["gold"] = 6768800,
-						},
-						["161022"] = {
-							["artifact"] = 20400,
-							["resource"] = 355,
-							["gold"] = 3148100,
-							["quest"] = 20,
-							["profession"] = {
-								[124111] = 1,
-							},
-						},
-						["161016"] = {
-							["quest"] = 1,
-						},
-						["161014"] = {
-							["quest"] = 1,
-						},
-						["161017"] = {
-							["quest"] = 1,
-						},
-						["161025"] = {
-							["artifact"] = 8600,
-							["quest"] = 4,
-							["gold"] = 18350,
-						},
-						["161020"] = {
-							["artifact"] = 6525,
-							["quest"] = 14,
-							["gold"] = 1679100,
-						},
-						["161018"] = {
-							["quest"] = 2,
-							["gold"] = 1855200,
-						},
-						["161021"] = {
-							["artifact"] = 1125,
-							["resource"] = 410,
-							["profession"] = {
-								[141872] = 1,
-							},
-							["quest"] = 8,
-							["gold"] = 2539100,
-						},
-					},
-					["character"] = {
-						["Player-1190-075136D8"] = {
-							["161024"] = {
-								["quest"] = 9,
-								["artifact"] = 3325,
-							},
-							["161015"] = {
-								["artifact"] = 7925,
-								["quest"] = 9,
-								["resource"] = 440,
-								["profession"] = {
-									[124112] = 1,
-									[128597] = 1,
-								},
-							},
-							["161019"] = {
-								["artifact"] = 7150,
-								["quest"] = 13,
-								["resource"] = 450,
-								["gold"] = 6768800,
-							},
-							["161022"] = {
-								["artifact"] = 20400,
-								["resource"] = 355,
-								["gold"] = 3148100,
-								["quest"] = 20,
-								["profession"] = {
-									[124111] = 1,
-								},
-							},
-							["161016"] = {
-								["quest"] = 1,
-							},
-							["161014"] = {
-								["quest"] = 1,
-							},
-							["161017"] = {
-								["quest"] = 1,
-							},
-							["161025"] = {
-								["artifact"] = 8600,
-								["quest"] = 4,
-								["gold"] = 18350,
-							},
-							["161020"] = {
-								["artifact"] = 6525,
-								["quest"] = 14,
-								["gold"] = 1679100,
-							},
-							["161018"] = {
-								["quest"] = 2,
-								["gold"] = 1855200,
-							},
-							["161021"] = {
-								["artifact"] = 1125,
-								["resource"] = 410,
-								["profession"] = {
-									[141872] = 1,
-								},
-								["quest"] = 8,
-								["gold"] = 2539100,
-							},
+							[43583] = 1,
+							[44290] = 1,
+							[42880] = 2,
+							[43807] = 3,
 						},
 					},
 				},
 				["reward"] = {
 					["global"] = {
 						["artifact"] = 55050,
-						["profession"] = {
-							[141872] = 1,
-							[124111] = 1,
-							[128597] = 1,
-							[124112] = 1,
-						},
-						["resource"] = 1655,
 						["gold"] = 16008650,
+						["resource"] = 1655,
+						["profession"] = {
+							[128597] = 1,
+							[124111] = 1,
+							[124112] = 1,
+							[141872] = 1,
+						},
 					},
 					["character"] = {
 						["Player-1190-075136D8"] = {
 							["artifact"] = 55050,
-							["profession"] = {
-								[141872] = 1,
-								[124111] = 1,
-								[128597] = 1,
-								[124112] = 1,
-							},
-							["resource"] = 1655,
 							["gold"] = 16008650,
+							["resource"] = 1655,
+							["profession"] = {
+								[128597] = 1,
+								[124111] = 1,
+								[124112] = 1,
+								[141872] = 1,
+							},
 						},
 					},
 				},

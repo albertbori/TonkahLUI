@@ -1,14 +1,5 @@
 
 Postal3DB = {
-	["profileKeys"] = {
-		["Holyshnizzle - Doomhammer"] = "Holyshnizzle - Doomhammer",
-		["Alfalpha - Doomhammer"] = "Alfalpha - Doomhammer",
-		["Taunkah - Doomhammer"] = "Taunkah - Doomhammer",
-		["Marmit - Doomhammer"] = "Marmit - Doomhammer",
-		["Bartholamue - Doomhammer"] = "Bartholamue - Doomhammer",
-		["Bahlar - Doomhammer"] = "Bahlar - Doomhammer",
-		["Nilrum - Doomhammer"] = "Nilrum - Doomhammer",
-	},
 	["global"] = {
 		["BlackBook"] = {
 			["alts"] = {
@@ -21,6 +12,15 @@ Postal3DB = {
 				"Taunkah|Doomhammer|Alliance|107|WARRIOR", -- [7]
 			},
 		},
+	},
+	["profileKeys"] = {
+		["Holyshnizzle - Doomhammer"] = "Holyshnizzle - Doomhammer",
+		["Alfalpha - Doomhammer"] = "Alfalpha - Doomhammer",
+		["Taunkah - Doomhammer"] = "Taunkah - Doomhammer",
+		["Marmit - Doomhammer"] = "Marmit - Doomhammer",
+		["Nilrum - Doomhammer"] = "Nilrum - Doomhammer",
+		["Bartholamue - Doomhammer"] = "Bartholamue - Doomhammer",
+		["Bahlar - Doomhammer"] = "Bahlar - Doomhammer",
 	},
 	["profiles"] = {
 		["Holyshnizzle - Doomhammer"] = {
@@ -53,6 +53,17 @@ Postal3DB = {
 		},
 		["Marmit - Doomhammer"] = {
 		},
+		["Nilrum - Doomhammer"] = {
+			["BlackBook"] = {
+				["recent"] = {
+					"Bahlar|Doomhammer|Alliance", -- [1]
+					"Tareva|Doomhammer|Alliance", -- [2]
+					"Holyshnizzle|Doomhammer|Alliance", -- [3]
+					"Taunkah|Doomhammer|Alliance", -- [4]
+					"Marmit|Doomhammer|Alliance", -- [5]
+				},
+			},
+		},
 		["Bartholamue - Doomhammer"] = {
 			["BlackBook"] = {
 				["recent"] = {
@@ -65,17 +76,6 @@ Postal3DB = {
 				["recent"] = {
 					"Nilrum|Doomhammer|Alliance", -- [1]
 					"Holyshnizzle|Doomhammer|Alliance", -- [2]
-				},
-			},
-		},
-		["Nilrum - Doomhammer"] = {
-			["BlackBook"] = {
-				["recent"] = {
-					"Bahlar|Doomhammer|Alliance", -- [1]
-					"Tareva|Doomhammer|Alliance", -- [2]
-					"Holyshnizzle|Doomhammer|Alliance", -- [3]
-					"Taunkah|Doomhammer|Alliance", -- [4]
-					"Marmit|Doomhammer|Alliance", -- [5]
 				},
 			},
 		},

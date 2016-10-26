@@ -1,8 +1,8 @@
 
 TradeSkillMaster_CraftingDB = {
 	["f@Alliance - Doomhammer@mats"] = {
-		["i:52721"] = {
-			["name"] = "Heavenly Shard",
+		["i:109118"] = {
+			["name"] = "Blackrock Ore",
 		},
 		["i:2996"] = {
 			["name"] = "Bolt of Linen Cloth",
@@ -34,8 +34,8 @@ TradeSkillMaster_CraftingDB = {
 		["i:4625"] = {
 			["name"] = "Firebloom",
 		},
-		["i:124116"] = {
-			["name"] = "Felhide",
+		["i:124106"] = {
+			["name"] = "Felwort",
 		},
 		["i:7972"] = {
 			["name"] = "Ichor of Undeath",
@@ -43,14 +43,15 @@ TradeSkillMaster_CraftingDB = {
 		["i:52326"] = {
 			["name"] = "Volatile Water",
 		},
-		["i:123918"] = {
-			["name"] = "Leystone Ore",
+		["i:74247"] = {
+			["name"] = "Ethereal Shard",
+			["customValue"] = "min(dbmarket, vendorbuy, convert(dbmarket))",
 		},
 		["i:109126"] = {
 			["name"] = "Gorgrond Flytrap",
 		},
-		["i:124112"] = {
-			["name"] = "Black Barracuda",
+		["i:124442"] = {
+			["name"] = "Chaos Crystal",
 		},
 		["i:2447"] = {
 			["name"] = "Peacebloom",
@@ -58,8 +59,8 @@ TradeSkillMaster_CraftingDB = {
 		["i:7909"] = {
 			["name"] = "Aquamarine",
 		},
-		["i:128304"] = {
-			["name"] = "Yseralline Seed",
+		["i:22790"] = {
+			["name"] = "Ancient Lichen",
 		},
 		["i:13463"] = {
 			["name"] = "Dreamfoil",
@@ -86,15 +87,15 @@ TradeSkillMaster_CraftingDB = {
 		["i:36905"] = {
 			["name"] = "Lichbloom",
 		},
-		["i:124442"] = {
-			["name"] = "Chaos Crystal",
+		["i:22578"] = {
+			["name"] = "Mote of Water",
 		},
 		["i:74249"] = {
 			["name"] = "Spirit Dust",
 			["customValue"] = "min(dbmarket, vendorbuy, convert(dbmarket))",
 		},
-		["i:16203"] = {
-			["name"] = "Greater Eternal Essence",
+		["i:36903"] = {
+			["name"] = "Adder's Tongue",
 		},
 		["i:36929"] = {
 			["name"] = "Huge Citrine",
@@ -102,17 +103,17 @@ TradeSkillMaster_CraftingDB = {
 		["i:10998"] = {
 			["name"] = "Lesser Astral Essence",
 		},
-		["i:118"] = {
-			["name"] = "Minor Healing Potion",
+		["i:36930"] = {
+			["name"] = "Monarch Topaz",
 		},
-		["i:13422"] = {
-			["name"] = "Stonescale Eel",
+		["i:124102"] = {
+			["name"] = "Dreamleaf",
 		},
 		["i:52984"] = {
 			["name"] = "Stormvine",
 		},
-		["i:36903"] = {
-			["name"] = "Adder's Tongue",
+		["i:8845"] = {
+			["name"] = "Ghost Mushroom",
 		},
 		["i:37663"] = {
 			["name"] = "Titansteel Bar",
@@ -123,8 +124,8 @@ TradeSkillMaster_CraftingDB = {
 		["i:7080"] = {
 			["name"] = "Essence of Water",
 		},
-		["i:3821"] = {
-			["name"] = "Goldthorn",
+		["i:22447"] = {
+			["name"] = "Lesser Planar Essence",
 		},
 		["i:124437"] = {
 			["name"] = "Shal'dorei Silk",
@@ -132,26 +133,26 @@ TradeSkillMaster_CraftingDB = {
 		["i:22785"] = {
 			["name"] = "Felweed",
 		},
-		["i:124124"] = {
-			["name"] = "Blood of Sargeras",
+		["i:2320"] = {
+			["name"] = "Coarse Thread",
+		},
+		["i:13467"] = {
+			["name"] = "Icecap",
+		},
+		["i:12359"] = {
+			["name"] = "Thorium Bar",
 		},
 		["i:2324"] = {
 			["name"] = "Bleach",
 		},
-		["i:22446"] = {
-			["name"] = "Greater Planar Essence",
-		},
-		["i:34056"] = {
-			["name"] = "Lesser Cosmic Essence",
-		},
-		["i:36906"] = {
-			["name"] = "Icethorn",
+		["i:22794"] = {
+			["name"] = "Fel Lotus",
 		},
 		["i:52986"] = {
 			["name"] = "Heartblossom",
 		},
-		["i:22794"] = {
-			["name"] = "Fel Lotus",
+		["i:36906"] = {
+			["name"] = "Icethorn",
 		},
 		["i:124441"] = {
 			["name"] = "Leylight Shard",
@@ -174,11 +175,12 @@ TradeSkillMaster_CraftingDB = {
 		["i:11134"] = {
 			["name"] = "Lesser Mystic Essence",
 		},
-		["i:13467"] = {
-			["name"] = "Icecap",
+		["i:34056"] = {
+			["name"] = "Lesser Cosmic Essence",
 		},
-		["i:127834"] = {
-			["name"] = "Ancient Healing Potion",
+		["i:36860"] = {
+			["name"] = "Eternal Fire",
+			["customValue"] = "min(dbmarket, vendorbuy, convert(dbmarket))",
 		},
 		["i:22449"] = {
 			["name"] = "Large Prismatic Shard",
@@ -190,21 +192,23 @@ TradeSkillMaster_CraftingDB = {
 		["i:3371"] = {
 			["name"] = "Crystal Vial",
 		},
-		["i:109139"] = {
-			["name"] = "Fat Sleeper Flesh",
+		["i:109127"] = {
+			["name"] = "Starflower",
 		},
-		["i:22447"] = {
-			["name"] = "Lesser Planar Essence",
+		["i:22446"] = {
+			["name"] = "Greater Planar Essence",
 		},
-		["i:22578"] = {
-			["name"] = "Mote of Water",
+		["i:127835"] = {
+			["name"] = "Ancient Mana Potion",
 		},
-		["i:36860"] = {
-			["name"] = "Eternal Fire",
-			["customValue"] = "min(dbmarket, vendorbuy, convert(dbmarket))",
+		["i:3358"] = {
+			["name"] = "Khadgar's Whisker",
 		},
 		["i:12808"] = {
 			["name"] = "Essence of Undeath",
+		},
+		["i:11177"] = {
+			["name"] = "Small Radiant Shard",
 		},
 		["i:124440"] = {
 			["name"] = "Arkhana",
@@ -212,11 +216,8 @@ TradeSkillMaster_CraftingDB = {
 		["i:20725"] = {
 			["name"] = "Nexus Crystal",
 		},
-		["i:56850"] = {
-			["name"] = "Deepstone Oil",
-		},
-		["i:33448"] = {
-			["name"] = "Runic Mana Potion",
+		["i:109139"] = {
+			["name"] = "Fat Sleeper Flesh",
 		},
 		["i:52555"] = {
 			["name"] = "Hypnotic Dust",
@@ -224,11 +225,11 @@ TradeSkillMaster_CraftingDB = {
 		["i:53065"] = {
 			["name"] = "Albino Cavefish",
 		},
-		["i:12359"] = {
-			["name"] = "Thorium Bar",
+		["i:33448"] = {
+			["name"] = "Runic Mana Potion",
 		},
-		["i:52983"] = {
-			["name"] = "Cinderbloom",
+		["i:37704"] = {
+			["name"] = "Crystallized Life",
 		},
 		["i:8153"] = {
 			["name"] = "Wildvine",
@@ -236,35 +237,35 @@ TradeSkillMaster_CraftingDB = {
 		["i:3369"] = {
 			["name"] = "Grave Moss",
 		},
-		["i:3358"] = {
-			["name"] = "Khadgar's Whisker",
+		["i:56850"] = {
+			["name"] = "Deepstone Oil",
 		},
 		["i:51950"] = {
 			["name"] = "Pyrium Bar",
 		},
-		["i:109127"] = {
-			["name"] = "Starflower",
+		["i:22452"] = {
+			["name"] = "Primal Earth",
 		},
 		["i:76140"] = {
 			["name"] = "Vermilion Onyx",
 		},
-		["i:22790"] = {
-			["name"] = "Ancient Lichen",
+		["i:128304"] = {
+			["name"] = "Yseralline Seed",
 		},
-		["i:36921"] = {
-			["name"] = "Autumn's Glow",
+		["i:36933"] = {
+			["name"] = "Forest Emerald",
 		},
 		["i:36913"] = {
 			["name"] = "Saronite Bar",
 		},
-		["i:16202"] = {
-			["name"] = "Lesser Eternal Essence",
+		["i:36932"] = {
+			["name"] = "Dark Jade",
 		},
 		["i:36901"] = {
 			["name"] = "Goldclover",
 		},
-		["i:6370"] = {
-			["name"] = "Blackmouth Oil",
+		["i:16204"] = {
+			["name"] = "Illusion Dust",
 		},
 		["i:124113"] = {
 			["name"] = "Stonehide Leather",
@@ -272,8 +273,8 @@ TradeSkillMaster_CraftingDB = {
 		["i:52179"] = {
 			["name"] = "Alicite",
 		},
-		["i:37704"] = {
-			["name"] = "Crystallized Life",
+		["i:52983"] = {
+			["name"] = "Cinderbloom",
 		},
 		["i:11083"] = {
 			["name"] = "Soul Dust",
@@ -281,26 +282,26 @@ TradeSkillMaster_CraftingDB = {
 		["i:10938"] = {
 			["name"] = "Lesser Magic Essence",
 		},
-		["i:8838"] = {
-			["name"] = "Sungrass",
+		["i:10939"] = {
+			["name"] = "Greater Magic Essence",
 		},
 		["i:11174"] = {
 			["name"] = "Lesser Nether Essence",
 		},
-		["i:52186"] = {
-			["name"] = "Elementium Bar",
+		["i:124105"] = {
+			["name"] = "Starlight Rose",
 		},
 		["i:124108"] = {
 			["name"] = "Mossgill Perch",
 		},
-		["i:52722"] = {
-			["name"] = "Maelstrom Crystal",
+		["i:41814"] = {
+			["name"] = "Glassfin Minnow",
 		},
-		["i:40195"] = {
-			["name"] = "Pygmy Oil",
+		["i:127834"] = {
+			["name"] = "Ancient Healing Potion",
 		},
-		["i:6371"] = {
-			["name"] = "Fire Oil",
+		["i:124112"] = {
+			["name"] = "Black Barracuda",
 		},
 		["i:109144"] = {
 			["name"] = "Blackwater Whiptail Flesh",
@@ -323,15 +324,14 @@ TradeSkillMaster_CraftingDB = {
 		["i:124119"] = {
 			["name"] = "Big Gamy Ribs",
 		},
-		["i:10939"] = {
-			["name"] = "Greater Magic Essence",
+		["i:8838"] = {
+			["name"] = "Sungrass",
 		},
 		["i:58094"] = {
 			["name"] = "Elixir of Impossible Accuracy",
 		},
-		["i:74247"] = {
-			["name"] = "Ethereal Shard",
-			["customValue"] = "min(dbmarket, vendorbuy, convert(dbmarket))",
+		["i:123918"] = {
+			["name"] = "Leystone Ore",
 		},
 		["i:6359"] = {
 			["name"] = "Firefin Snapper",
@@ -339,14 +339,14 @@ TradeSkillMaster_CraftingDB = {
 		["i:9262"] = {
 			["name"] = "Black Vitriol",
 		},
-		["i:16204"] = {
-			["name"] = "Illusion Dust",
+		["i:34057"] = {
+			["name"] = "Abyss Crystal",
 		},
-		["i:765"] = {
-			["name"] = "Silverleaf",
+		["i:36921"] = {
+			["name"] = "Autumn's Glow",
 		},
-		["i:21884"] = {
-			["name"] = "Primal Fire",
+		["i:3821"] = {
+			["name"] = "Goldthorn",
 		},
 		["i:58086"] = {
 			["name"] = "Flask of the Draconic Mind",
@@ -354,11 +354,11 @@ TradeSkillMaster_CraftingDB = {
 		["i:40199"] = {
 			["name"] = "Pygmy Suckerfish",
 		},
-		["i:8839"] = {
-			["name"] = "Blindweed",
-		},
 		["i:72238"] = {
 			["name"] = "Golden Lotus",
+		},
+		["i:8839"] = {
+			["name"] = "Blindweed",
 		},
 		["i:124107"] = {
 			["name"] = "Cursed Queenfish",
@@ -378,8 +378,8 @@ TradeSkillMaster_CraftingDB = {
 		["i:39354"] = {
 			["name"] = "Light Parchment",
 		},
-		["i:109118"] = {
-			["name"] = "Blackrock Ore",
+		["i:52721"] = {
+			["name"] = "Heavenly Shard",
 		},
 		["i:58088"] = {
 			["name"] = "Flask of Titanic Strength",
@@ -429,8 +429,8 @@ TradeSkillMaster_CraftingDB = {
 		["i:22793"] = {
 			["name"] = "Mana Thistle",
 		},
-		["i:109128"] = {
-			["name"] = "Nagrand Arrowbloom",
+		["i:22787"] = {
+			["name"] = "Ragveil",
 		},
 		["i:58142"] = {
 			["name"] = "Deathblood Venom",
@@ -457,8 +457,8 @@ TradeSkillMaster_CraftingDB = {
 		["i:109143"] = {
 			["name"] = "Abyssal Gulper Eel Flesh",
 		},
-		["i:11138"] = {
-			["name"] = "Small Glowing Shard",
+		["i:22792"] = {
+			["name"] = "Nightmare Vine",
 		},
 		["i:109137"] = {
 			["name"] = "Crescent Saberfish Flesh",
@@ -475,8 +475,8 @@ TradeSkillMaster_CraftingDB = {
 		["i:52988"] = {
 			["name"] = "Whiptail",
 		},
-		["i:11178"] = {
-			["name"] = "Large Radiant Shard",
+		["i:109129"] = {
+			["name"] = "Talador Orchid",
 		},
 		["i:36924"] = {
 			["name"] = "Sky Sapphire",
@@ -520,8 +520,8 @@ TradeSkillMaster_CraftingDB = {
 		["i:11137"] = {
 			["name"] = "Vision Dust",
 		},
-		["i:109129"] = {
-			["name"] = "Talador Orchid",
+		["i:11178"] = {
+			["name"] = "Large Radiant Shard",
 		},
 		["i:35627"] = {
 			["name"] = "Eternal Shadow",
@@ -530,8 +530,8 @@ TradeSkillMaster_CraftingDB = {
 		["i:3818"] = {
 			["name"] = "Fadeleaf",
 		},
-		["i:22792"] = {
-			["name"] = "Nightmare Vine",
+		["i:11138"] = {
+			["name"] = "Small Glowing Shard",
 		},
 		["i:2452"] = {
 			["name"] = "Swiftthistle",
@@ -557,8 +557,8 @@ TradeSkillMaster_CraftingDB = {
 		["i:2453"] = {
 			["name"] = "Bruiseweed",
 		},
-		["i:22787"] = {
-			["name"] = "Ragveil",
+		["i:109128"] = {
+			["name"] = "Nagrand Arrowbloom",
 		},
 		["i:52325"] = {
 			["name"] = "Volatile Fire",
@@ -578,14 +578,14 @@ TradeSkillMaster_CraftingDB = {
 		["i:109124"] = {
 			["name"] = "Frostweed",
 		},
-		["i:124106"] = {
-			["name"] = "Felwort",
+		["i:124116"] = {
+			["name"] = "Felhide",
 		},
 		["i:52328"] = {
 			["name"] = "Volatile Air",
 		},
-		["i:34057"] = {
-			["name"] = "Abyss Crystal",
+		["i:6370"] = {
+			["name"] = "Blackmouth Oil",
 		},
 		["i:10978"] = {
 			["name"] = "Small Glimmering Shard",
@@ -610,8 +610,8 @@ TradeSkillMaster_CraftingDB = {
 		["i:8831"] = {
 			["name"] = "Purple Lotus",
 		},
-		["i:36933"] = {
-			["name"] = "Forest Emerald",
+		["i:765"] = {
+			["name"] = "Silverleaf",
 		},
 		["i:11084"] = {
 			["name"] = "Large Glimmering Shard",
@@ -625,8 +625,8 @@ TradeSkillMaster_CraftingDB = {
 		["i:124111"] = {
 			["name"] = "Runescale Koi",
 		},
-		["i:2320"] = {
-			["name"] = "Coarse Thread",
+		["i:124124"] = {
+			["name"] = "Blood of Sargeras",
 		},
 		["i:37921"] = {
 			["name"] = "Deadnettle",
@@ -634,23 +634,23 @@ TradeSkillMaster_CraftingDB = {
 		["i:33447"] = {
 			["name"] = "Runic Healing Potion",
 		},
-		["i:127835"] = {
-			["name"] = "Ancient Mana Potion",
+		["i:52722"] = {
+			["name"] = "Maelstrom Crystal",
 		},
-		["i:41814"] = {
-			["name"] = "Glassfin Minnow",
+		["i:52186"] = {
+			["name"] = "Elementium Bar",
 		},
-		["i:124105"] = {
-			["name"] = "Starlight Rose",
+		["i:118"] = {
+			["name"] = "Minor Healing Potion",
 		},
-		["i:36930"] = {
-			["name"] = "Monarch Topaz",
+		["i:13422"] = {
+			["name"] = "Stonescale Eel",
 		},
-		["i:124102"] = {
-			["name"] = "Dreamleaf",
+		["i:40195"] = {
+			["name"] = "Pygmy Oil",
 		},
-		["i:8845"] = {
-			["name"] = "Ghost Mushroom",
+		["i:6371"] = {
+			["name"] = "Fire Oil",
 		},
 		["i:13464"] = {
 			["name"] = "Golden Sansam",
@@ -673,17 +673,17 @@ TradeSkillMaster_CraftingDB = {
 		["i:34055"] = {
 			["name"] = "Greater Cosmic Essence",
 		},
-		["i:11177"] = {
-			["name"] = "Small Radiant Shard",
+		["i:124103"] = {
+			["name"] = "Foxflower",
 		},
 		["i:124439"] = {
 			["name"] = "Unbroken Tooth",
 		},
-		["i:36932"] = {
-			["name"] = "Dark Jade",
+		["i:16202"] = {
+			["name"] = "Lesser Eternal Essence",
 		},
-		["i:76139"] = {
-			["name"] = "Wild Jade",
+		["i:16203"] = {
+			["name"] = "Greater Eternal Essence",
 		},
 		["i:11175"] = {
 			["name"] = "Greater Nether Essence",
@@ -691,30 +691,30 @@ TradeSkillMaster_CraftingDB = {
 		["i:785"] = {
 			["name"] = "Mageroyal",
 		},
-		["i:22452"] = {
-			["name"] = "Primal Earth",
+		["i:21884"] = {
+			["name"] = "Primal Fire",
 		},
 		["i:36907"] = {
 			["name"] = "Talandra's Rose",
 		},
-		["i:124103"] = {
-			["name"] = "Foxflower",
+		["i:76139"] = {
+			["name"] = "Wild Jade",
 		},
 	},
 	["f@Alliance - Doomhammer@crafts"] = {
 		[20008] = {
 			["mats"] = {
-				["i:38682"] = 1,
 				["i:16202"] = 3,
+				["i:38682"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Greater Intellect",
+			["itemString"] = "i:38852",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38852",
+			["name"] = "Greater Intellect",
 		},
 		[25126] = {
 			["mats"] = {
@@ -723,27 +723,27 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Lesser Wizard Oil",
+			["itemString"] = "i:20746",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:20746",
+			["name"] = "Lesser Wizard Oil",
 		},
 		[228409] = {
 			["mats"] = {
 				["i:124441"] = 12,
-				["i:38682"] = 1,
 				["i:124442"] = 12,
+				["i:38682"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Mark of the Ancient Priestess",
+			["itemString"] = "i:141910",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:141910",
+			["name"] = "Mark of the Ancient Priestess",
 		},
 		[80479] = {
 			["mats"] = {
@@ -752,13 +752,13 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 2,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:58142",
+			["name"] = "Deathblood Venom",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Deathblood Venom",
+			["itemString"] = "i:58142",
 		},
 		[13637] = {
 			["mats"] = {
@@ -768,12 +768,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Lesser Agility",
+			["itemString"] = "i:38807",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38807",
+			["name"] = "Lesser Agility",
 		},
 		[33996] = {
 			["mats"] = {
@@ -782,12 +782,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Assault",
+			["itemString"] = "i:38934",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38934",
+			["name"] = "Assault",
 		},
 		[17557] = {
 			["mats"] = {
@@ -797,27 +797,27 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:13453",
+			["name"] = "Elixir of Brute Force",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Elixir of Brute Force",
+			["itemString"] = "i:13453",
 		},
 		[60616] = {
 			["mats"] = {
-				["i:38682"] = 1,
 				["i:34054"] = 4,
+				["i:38682"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Assault",
+			["itemString"] = "i:38971",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38971",
+			["name"] = "Assault",
 		},
 		[17573] = {
 			["mats"] = {
@@ -827,13 +827,13 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:13454",
+			["name"] = "Greater Arcane Elixir",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Greater Arcane Elixir",
+			["itemString"] = "i:13454",
 		},
 		[13661] = {
 			["mats"] = {
@@ -842,12 +842,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Strength",
+			["itemString"] = "i:38817",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38817",
+			["name"] = "Strength",
 		},
 		[63746] = {
 			["mats"] = {
@@ -857,12 +857,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Lesser Accuracy",
+			["itemString"] = "i:45628",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:45628",
+			["name"] = "Lesser Accuracy",
 		},
 		[104401] = {
 			["mats"] = {
@@ -871,12 +871,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Greater Protection",
+			["itemString"] = "i:74711",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:74711",
+			["name"] = "Greater Protection",
 		},
 		[80480] = {
 			["mats"] = {
@@ -886,13 +886,13 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:58089",
+			["name"] = "Elixir of the Naga",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Elixir of the Naga",
+			["itemString"] = "i:58089",
 		},
 		[13693] = {
 			["mats"] = {
@@ -902,12 +902,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Striking",
+			["itemString"] = "i:38821",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38821",
+			["name"] = "Striking",
 		},
 		[33741] = {
 			["mats"] = {
@@ -917,13 +917,13 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:28104",
+			["name"] = "Elixir of Mastery",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Elixir of Mastery",
+			["itemString"] = "i:28104",
 		},
 		[44488] = {
 			["mats"] = {
@@ -932,29 +932,29 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Precision",
+			["itemString"] = "i:38953",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38953",
+			["name"] = "Precision",
 		},
 		[54213] = {
 			["mats"] = {
 				["i:3371"] = 1,
-				["i:40195"] = 3,
 				["i:36906"] = 7,
+				["i:40195"] = 3,
 				["i:36908"] = 1,
 			},
 			["numResult"] = 2,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:46378",
+			["name"] = "Flask of Pure Mojo",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Flask of Pure Mojo",
+			["itemString"] = "i:46378",
 		},
 		[188299] = {
 			["mats"] = {
@@ -963,13 +963,13 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:127834",
+			["name"] = "Ancient Healing Potion",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Ancient Healing Potion",
+			["itemString"] = "i:127834",
 		},
 		[74189] = {
 			["mats"] = {
@@ -978,12 +978,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Earthen Vitality",
+			["itemString"] = "i:52743",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:52743",
+			["name"] = "Earthen Vitality",
 		},
 		[44584] = {
 			["mats"] = {
@@ -993,12 +993,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Greater Vitality",
+			["itemString"] = "i:38974",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38974",
+			["name"] = "Greater Vitality",
 		},
 		[27961] = {
 			["mats"] = {
@@ -1007,12 +1007,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Major Armor",
+			["itemString"] = "i:38914",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38914",
+			["name"] = "Major Armor",
 		},
 		[80481] = {
 			["mats"] = {
@@ -1022,13 +1022,13 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:58091",
+			["name"] = "Volcanic Potion",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Volcanic Potion",
+			["itemString"] = "i:58091",
 		},
 		[28544] = {
 			["mats"] = {
@@ -1038,13 +1038,13 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:22824",
+			["name"] = "Elixir of Major Strength",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Elixir of Major Strength",
+			["itemString"] = "i:22824",
 		},
 		[188301] = {
 			["mats"] = {
@@ -1053,13 +1053,13 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:127835",
+			["name"] = "Ancient Mana Potion",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Ancient Mana Potion",
+			["itemString"] = "i:127835",
 		},
 		[14807] = {
 			["mats"] = {
@@ -1068,12 +1068,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Greater Magic Wand",
+			["itemString"] = "i:11288",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:11288",
+			["name"] = "Greater Magic Wand",
 		},
 		[15833] = {
 			["mats"] = {
@@ -1082,13 +1082,13 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:12190",
+			["name"] = "Dreamless Sleep Potion",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Dreamless Sleep Potion",
+			["itemString"] = "i:12190",
 		},
 		[74254] = {
 			["mats"] = {
@@ -1099,12 +1099,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Mighty Strength",
+			["itemString"] = "i:52783",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:52783",
+			["name"] = "Mighty Strength",
 		},
 		[80482] = {
 			["mats"] = {
@@ -1113,13 +1113,13 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:57194",
+			["name"] = "Potion of Concentration",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Potion of Concentration",
+			["itemString"] = "i:57194",
 		},
 		[114751] = {
 			["mats"] = {
@@ -1128,13 +1128,13 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:76094",
+			["name"] = "Alchemist's Rejuvenation",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Alchemist's Rejuvenation",
+			["itemString"] = "i:76094",
 		},
 		[44489] = {
 			["mats"] = {
@@ -1144,12 +1144,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Dodge",
+			["itemString"] = "i:38954",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38954",
+			["name"] = "Dodge",
 		},
 		[25127] = {
 			["mats"] = {
@@ -1159,27 +1159,27 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Lesser Mana Oil",
+			["itemString"] = "i:20747",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:20747",
+			["name"] = "Lesser Mana Oil",
 		},
 		[74223] = {
 			["mats"] = {
 				["i:52328"] = 6,
-				["i:38682"] = 1,
 				["i:52721"] = 6,
+				["i:38682"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Hurricane",
+			["itemString"] = "i:52760",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:52760",
+			["name"] = "Hurricane",
 		},
 		[20033] = {
 			["mats"] = {
@@ -1189,12 +1189,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Unholy Weapon",
+			["itemString"] = "i:38872",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38872",
+			["name"] = "Unholy Weapon",
 		},
 		[44633] = {
 			["mats"] = {
@@ -1204,12 +1204,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Exceptional Agility",
+			["itemString"] = "i:38995",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38995",
+			["name"] = "Exceptional Agility",
 		},
 		[188304] = {
 			["mats"] = {
@@ -1218,13 +1218,13 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:127836",
+			["name"] = "Ancient Rejuvenation Potion",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Ancient Rejuvenation Potion",
+			["itemString"] = "i:127836",
 		},
 		[114752] = {
 			["mats"] = {
@@ -1233,28 +1233,28 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:76097",
+			["name"] = "Master Healing Potion",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Master Healing Potion",
+			["itemString"] = "i:76097",
 		},
 		[13378] = {
 			["mats"] = {
 				["i:38682"] = 1,
-				["i:10998"] = 1,
 				["i:10940"] = 2,
+				["i:10998"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Minor Stamina",
+			["itemString"] = "i:38787",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38787",
+			["name"] = "Minor Stamina",
 		},
 		[38070] = {
 			["mats"] = {
@@ -1264,13 +1264,13 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:31080",
+			["name"] = "Mercurial Stone",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Mercurial Stone",
+			["itemString"] = "i:31080",
 		},
 		[13905] = {
 			["mats"] = {
@@ -1280,12 +1280,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Greater Versatility",
+			["itemString"] = "i:38839",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38839",
+			["name"] = "Greater Versatility",
 		},
 		[13917] = {
 			["mats"] = {
@@ -1295,12 +1295,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Superior Mana",
+			["itemString"] = "i:38841",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38841",
+			["name"] = "Superior Mana",
 		},
 		[63732] = {
 			["mats"] = {
@@ -1310,28 +1310,28 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:45621",
+			["name"] = "Elixir of Minor Accuracy",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Elixir of Minor Accuracy",
+			["itemString"] = "i:45621",
 		},
 		[13937] = {
 			["mats"] = {
 				["i:11176"] = 2,
-				["i:38682"] = 1,
 				["i:11178"] = 2,
+				["i:38682"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Greater Impact",
+			["itemString"] = "i:38845",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38845",
+			["name"] = "Greater Impact",
 		},
 		[80484] = {
 			["mats"] = {
@@ -1341,13 +1341,13 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:58092",
+			["name"] = "Elixir of the Cobra",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Elixir of the Cobra",
+			["itemString"] = "i:58092",
 		},
 		[44506] = {
 			["mats"] = {
@@ -1356,12 +1356,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Gatherer",
+			["itemString"] = "i:38960",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38960",
+			["name"] = "Gatherer",
 		},
 		[74193] = {
 			["mats"] = {
@@ -1371,12 +1371,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Speed",
+			["itemString"] = "i:52746",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:52746",
+			["name"] = "Speed",
 		},
 		[74225] = {
 			["mats"] = {
@@ -1388,12 +1388,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Heartsong",
+			["itemString"] = "i:52761",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:52761",
+			["name"] = "Heartsong",
 		},
 		[7771] = {
 			["mats"] = {
@@ -1403,12 +1403,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Minor Protection",
+			["itemString"] = "i:38775",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38775",
+			["name"] = "Minor Protection",
 		},
 		[53848] = {
 			["mats"] = {
@@ -1417,13 +1417,13 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:40076",
+			["name"] = "Guru's Elixir",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Guru's Elixir",
+			["itemString"] = "i:40076",
 		},
 		[7779] = {
 			["mats"] = {
@@ -1433,12 +1433,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Minor Agility",
+			["itemString"] = "i:38777",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38777",
+			["name"] = "Minor Agility",
 		},
 		[114786] = {
 			["mats"] = {
@@ -1449,13 +1449,13 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:75525",
+			["name"] = "Alchemist's Flask",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Alchemist's Flask",
+			["itemString"] = "i:75525",
 		},
 		[175853] = {
 			["mats"] = {
@@ -1464,12 +1464,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:116266",
+			["name"] = "Draenic Swiftness Potion",
 			["players"] = {
 				["Taunkah"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Draenic Swiftness Potion",
+			["itemString"] = "i:116266",
 		},
 		[39636] = {
 			["mats"] = {
@@ -1479,13 +1479,13 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:32062",
+			["name"] = "Elixir of Major Fortitude",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Elixir of Major Fortitude",
+			["itemString"] = "i:32062",
 		},
 		[11478] = {
 			["mats"] = {
@@ -1494,29 +1494,29 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:9233",
+			["name"] = "Elixir of Detect Demon",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Elixir of Detect Demon",
+			["itemString"] = "i:9233",
 		},
 		[13538] = {
 			["mats"] = {
 				["i:11082"] = 1,
 				["i:38682"] = 1,
-				["i:10940"] = 2,
 				["i:11084"] = 1,
+				["i:10940"] = 2,
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Lesser Absorption",
+			["itemString"] = "i:38798",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38798",
+			["name"] = "Lesser Absorption",
 		},
 		[74226] = {
 			["mats"] = {
@@ -1525,12 +1525,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Mastery",
+			["itemString"] = "i:52762",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:52762",
+			["name"] = "Mastery",
 		},
 		[104407] = {
 			["mats"] = {
@@ -1540,12 +1540,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Greater Haste",
+			["itemString"] = "i:74715",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:74715",
+			["name"] = "Greater Haste",
 		},
 		[80486] = {
 			["mats"] = {
@@ -1553,13 +1553,13 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:56850",
+			["name"] = "Deepstone Oil",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Deepstone Oil",
+			["itemString"] = "i:56850",
 		},
 		[188311] = {
 			["mats"] = {
@@ -1568,26 +1568,31 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:127838",
+			["name"] = "Sylvan Elixir",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Sylvan Elixir",
+			["itemString"] = "i:127838",
 		},
-		[104404] = {
-			["mats"] = {
-				["i:38682"] = 1,
-				["i:74250"] = 1,
+		[53781] = {
+			["players"] = {
+				["Taunkah"] = true,
 			},
 			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Superior Critical Strike",
-			["players"] = {
-				["Holyshnizzle"] = true,
+			["cooldownTimes"] = {
+				["Taunkah"] = {
+					["endTime"] = 0,
+				},
 			},
+			["hasCD"] = true,
+			["mats"] = {
+				["i:35624"] = 1,
+			},
+			["itemString"] = "i:35623",
+			["profession"] = "Alchemy",
 			["queued"] = 0,
-			["itemString"] = "i:74713",
+			["name"] = "Eternal Air",
 		},
 		[60396] = {
 			["mats"] = {
@@ -1597,13 +1602,13 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:44322",
+			["name"] = "Mercurial Alchemist Stone",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Mercurial Alchemist Stone",
+			["itemString"] = "i:44322",
 		},
 		[74195] = {
 			["mats"] = {
@@ -1613,27 +1618,26 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Mending",
+			["itemString"] = "i:52747",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:52747",
+			["name"] = "Mending",
 		},
-		[44616] = {
+		[7837] = {
 			["mats"] = {
-				["i:34054"] = 9,
-				["i:34055"] = 1,
-				["i:38682"] = 1,
+				["i:6359"] = 2,
 			},
 			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Greater Stats",
+			["profession"] = "Alchemy",
+			["name"] = "Fire Oil",
 			["players"] = {
+				["Taunkah"] = true,
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38987",
+			["itemString"] = "i:6371",
 		},
 		[104408] = {
 			["mats"] = {
@@ -1643,12 +1647,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Greater Precision",
+			["itemString"] = "i:74716",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:74716",
+			["name"] = "Greater Precision",
 		},
 		[104440] = {
 			["mats"] = {
@@ -1657,24 +1661,24 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Colossus",
+			["itemString"] = "i:74727",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:74727",
+			["name"] = "Colossus",
 		},
 		[66658] = {
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["numResult"] = 1,
 			["cooldownTimes"] = {
-				["Holyshnizzle"] = {
+				["Taunkah"] = {
 					["endTime"] = 0,
 				},
-				["Taunkah"] = {
+				["Holyshnizzle"] = {
 					["endTime"] = 0,
 				},
 			},
@@ -1696,13 +1700,13 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:6372",
+			["name"] = "Swim Speed Potion",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Swim Speed Potion",
+			["itemString"] = "i:6372",
 		},
 		[13626] = {
 			["mats"] = {
@@ -1713,12 +1717,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Minor Stats",
+			["itemString"] = "i:38804",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38804",
+			["name"] = "Minor Stats",
 		},
 		[7845] = {
 			["mats"] = {
@@ -1728,15 +1732,15 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:6373",
+			["name"] = "Elixir of Firepower",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Elixir of Firepower",
+			["itemString"] = "i:6373",
 		},
-		[53783] = {
+		[53784] = {
 			["players"] = {
 				["Taunkah"] = true,
 			},
@@ -1750,40 +1754,38 @@ TradeSkillMaster_CraftingDB = {
 			["mats"] = {
 				["i:35622"] = 1,
 			},
-			["itemString"] = "i:35623",
+			["itemString"] = "i:36860",
 			["profession"] = "Alchemy",
 			["queued"] = 0,
-			["name"] = "Eternal Air",
+			["name"] = "Eternal Fire",
 		},
-		[33740] = {
+		[12044] = {
 			["mats"] = {
-				["i:13463"] = 1,
-				["i:22785"] = 1,
-				["i:3371"] = 1,
+				["i:2320"] = 1,
+				["i:2996"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["itemString"] = "i:28103",
+			["profession"] = "Tailoring",
+			["name"] = "Simple Linen Pants",
 			["players"] = {
-				["Holyshnizzle"] = true,
-				["Taunkah"] = true,
+				["Bahlar"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Adept's Elixir",
+			["itemString"] = "i:10045",
 		},
 		[13642] = {
 			["mats"] = {
-				["i:38682"] = 1,
 				["i:11134"] = 1,
+				["i:38682"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Versatility",
+			["itemString"] = "i:38809",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38809",
+			["name"] = "Versatility",
 		},
 		[17551] = {
 			["mats"] = {
@@ -1791,46 +1793,41 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:13423",
+			["name"] = "Stonescale Oil",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Stonescale Oil",
+			["itemString"] = "i:13423",
 		},
-		[53782] = {
-			["players"] = {
-				["Taunkah"] = true,
+		[20017] = {
+			["mats"] = {
+				["i:11176"] = 5,
+				["i:38682"] = 1,
 			},
 			["numResult"] = 1,
-			["cooldownTimes"] = {
-				["Taunkah"] = {
-					["endTime"] = 0,
-				},
+			["profession"] = "Enchanting",
+			["itemString"] = "i:38861",
+			["players"] = {
+				["Holyshnizzle"] = true,
 			},
-			["hasCD"] = true,
-			["mats"] = {
-				["i:35624"] = 1,
-			},
-			["itemString"] = "i:35627",
-			["profession"] = "Alchemy",
 			["queued"] = 0,
-			["name"] = "Eternal Shadow",
+			["name"] = "Greater Stamina",
 		},
 		[188313] = {
 			["mats"] = {
-				["i:124103"] = 5,
 				["i:127835"] = 1,
+				["i:124103"] = 5,
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:127839",
+			["name"] = "Avalanche Elixir",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Avalanche Elixir",
+			["itemString"] = "i:127839",
 		},
 		[74132] = {
 			["mats"] = {
@@ -1840,12 +1837,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Mastery",
+			["itemString"] = "i:52687",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:52687",
+			["name"] = "Mastery",
 		},
 		[190996] = {
 			["mats"] = {
@@ -1855,42 +1852,42 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Binding of Critical Strike",
+			["itemString"] = "i:128541",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:128541",
+			["name"] = "Binding of Critical Strike",
 		},
 		[60668] = {
 			["mats"] = {
-				["i:38682"] = 1,
 				["i:34054"] = 15,
+				["i:38682"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Crusher",
+			["itemString"] = "i:44458",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:44458",
+			["name"] = "Crusher",
 		},
 		[3170] = {
 			["mats"] = {
 				["i:3371"] = 1,
-				["i:2447"] = 1,
 				["i:2449"] = 2,
+				["i:2447"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:3382",
+			["name"] = "Weak Troll's Blood Elixir",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Weak Troll's Blood Elixir",
+			["itemString"] = "i:3382",
 		},
 		[3171] = {
 			["mats"] = {
@@ -1900,29 +1897,29 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:3383",
+			["name"] = "Elixir of Wisdom",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Elixir of Wisdom",
+			["itemString"] = "i:3383",
 		},
 		[92688] = {
 			["mats"] = {
 				["i:58085"] = 3,
 				["i:58086"] = 3,
-				["i:58087"] = 3,
 				["i:58088"] = 3,
+				["i:58087"] = 3,
 			},
 			["itemString"] = "i:65460",
 			["profession"] = "Alchemy",
-			["name"] = "Big Cauldron of Battle",
-			["numResult"] = 1,
-			["queued"] = 0,
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
+			["numResult"] = 1,
+			["queued"] = 0,
+			["name"] = "Big Cauldron of Battle",
 		},
 		[3173] = {
 			["mats"] = {
@@ -1932,13 +1929,13 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:3385",
+			["name"] = "Lesser Mana Potion",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Lesser Mana Potion",
+			["itemString"] = "i:3385",
 		},
 		[80488] = {
 			["mats"] = {
@@ -1947,27 +1944,28 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:58093",
+			["name"] = "Elixir of Deep Earth",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Elixir of Deep Earth",
+			["itemString"] = "i:58093",
 		},
-		[13622] = {
+		[53847] = {
 			["mats"] = {
-				["i:11082"] = 2,
-				["i:38682"] = 1,
+				["i:36907"] = 3,
+				["i:3371"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Lesser Intellect",
+			["profession"] = "Alchemy",
+			["name"] = "Elixir of Versatility",
 			["players"] = {
+				["Taunkah"] = true,
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38803",
+			["itemString"] = "i:40072",
 		},
 		[3176] = {
 			["mats"] = {
@@ -1977,13 +1975,13 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:3388",
+			["name"] = "Strong Troll's Blood Elixir",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Strong Troll's Blood Elixir",
+			["itemString"] = "i:3388",
 		},
 		[3177] = {
 			["mats"] = {
@@ -1993,41 +1991,27 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:3389",
-			["players"] = {
-				["Holyshnizzle"] = true,
-				["Taunkah"] = true,
-			},
-			["queued"] = 0,
 			["name"] = "Elixir of Defense",
+			["players"] = {
+				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:3389",
 		},
-		[44555] = {
+		[188308] = {
 			["mats"] = {
-				["i:38682"] = 1,
-				["i:34054"] = 10,
+				["i:127834"] = 1,
+				["i:124101"] = 20,
 			},
 			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Exceptional Intellect",
+			["profession"] = "Alchemy",
+			["name"] = "Draught of Raw Magic",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38968",
-		},
-		[27899] = {
-			["mats"] = {
-				["i:22445"] = 6,
-				["i:38682"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Brawn",
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:38897",
+			["itemString"] = "i:127837",
 		},
 		[44492] = {
 			["mats"] = {
@@ -2036,12 +2020,27 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Mighty Health",
+			["itemString"] = "i:38955",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38955",
+			["name"] = "Mighty Health",
+		},
+		[130758] = {
+			["mats"] = {
+				["i:38682"] = 1,
+				["i:74247"] = 1,
+				["i:74250"] = 3,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:89737",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Greater Parry",
 		},
 		[44508] = {
 			["mats"] = {
@@ -2051,12 +2050,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Greater Versatility",
+			["itemString"] = "i:38961",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38961",
+			["name"] = "Greater Versatility",
 		},
 		[62409] = {
 			["mats"] = {
@@ -2064,13 +2063,13 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:44958",
+			["name"] = "Ethereal Oil",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Ethereal Oil",
+			["itemString"] = "i:44958",
 		},
 		[74220] = {
 			["mats"] = {
@@ -2080,12 +2079,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Greater Haste",
+			["itemString"] = "i:52759",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:52759",
+			["name"] = "Greater Haste",
 		},
 		[190998] = {
 			["mats"] = {
@@ -2095,12 +2094,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Binding of Mastery",
+			["itemString"] = "i:128543",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:128543",
+			["name"] = "Binding of Mastery",
 		},
 		[74197] = {
 			["mats"] = {
@@ -2110,12 +2109,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Avalanche",
+			["itemString"] = "i:52748",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:52748",
+			["name"] = "Avalanche",
 		},
 		[74229] = {
 			["mats"] = {
@@ -2125,26 +2124,28 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Superior Dodge",
+			["itemString"] = "i:52763",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:52763",
+			["name"] = "Superior Dodge",
 		},
-		[34001] = {
+		[11450] = {
 			["mats"] = {
-				["i:38682"] = 1,
-				["i:22447"] = 3,
+				["i:3371"] = 1,
+				["i:3355"] = 1,
+				["i:3821"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Major Intellect",
+			["profession"] = "Alchemy",
+			["name"] = "Elixir of Greater Defense",
 			["players"] = {
+				["Taunkah"] = true,
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38937",
+			["itemString"] = "i:8951",
 		},
 		[118239] = {
 			["mats"] = {
@@ -2152,31 +2153,31 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 2,
 			["profession"] = "Enchanting",
-			["name"] = "Ethereal Shard",
+			["itemString"] = "i:74247",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:74247",
+			["name"] = "Ethereal Shard",
 		},
 		[66660] = {
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["numResult"] = 1,
 			["cooldownTimes"] = {
-				["Holyshnizzle"] = {
+				["Taunkah"] = {
 					["endTime"] = 0,
 				},
-				["Taunkah"] = {
+				["Holyshnizzle"] = {
 					["endTime"] = 0,
 				},
 			},
 			["hasCD"] = true,
 			["mats"] = {
-				["i:36921"] = 1,
 				["i:35625"] = 1,
+				["i:36921"] = 1,
 			},
 			["itemString"] = "i:36922",
 			["profession"] = "Alchemy",
@@ -2191,27 +2192,29 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:41334",
+			["name"] = "Earthsiege Diamond",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Earthsiege Diamond",
+			["itemString"] = "i:41334",
 		},
-		[188319] = {
+		[57425] = {
 			["mats"] = {
-				["i:127836"] = 1,
-				["i:124105"] = 4,
+				["i:36917"] = 1,
+				["i:36923"] = 1,
+				["i:35623"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:127841",
+			["name"] = "Skyflare Diamond",
 			["players"] = {
+				["Taunkah"] = true,
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Skystep Potion",
+			["itemString"] = "i:41266",
 		},
 		[190999] = {
 			["mats"] = {
@@ -2221,12 +2224,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Binding of Versatility",
+			["itemString"] = "i:128544",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:128544",
+			["name"] = "Binding of Versatility",
 		},
 		[53898] = {
 			["mats"] = {
@@ -2235,42 +2238,13 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:40078",
-			["players"] = {
-				["Holyshnizzle"] = true,
-				["Taunkah"] = true,
-			},
-			["queued"] = 0,
 			["name"] = "Elixir of Mighty Fortitude",
-		},
-		[188316] = {
-			["mats"] = {
-				["i:124104"] = 5,
-				["i:127835"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["itemString"] = "i:127840",
 			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Skaggldrynk",
-		},
-		[93935] = {
-			["mats"] = {
-				["i:52983"] = 1,
-				["i:3371"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["itemString"] = "i:67415",
-			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Draught of War",
+			["itemString"] = "i:40078",
 		},
 		[104698] = {
 			["mats"] = {
@@ -2278,27 +2252,57 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 2,
 			["profession"] = "Enchanting",
-			["name"] = "Heavenly Shard",
+			["itemString"] = "i:52721",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:52721",
+			["name"] = "Heavenly Shard",
 		},
-		[7426] = {
+		[34001] = {
 			["mats"] = {
+				["i:22447"] = 3,
 				["i:38682"] = 1,
-				["i:10938"] = 1,
-				["i:10940"] = 2,
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Minor Absorption",
+			["itemString"] = "i:38937",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38767",
+			["name"] = "Major Intellect",
+		},
+		[39638] = {
+			["mats"] = {
+				["i:3371"] = 1,
+				["i:22785"] = 1,
+				["i:22789"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Alchemy",
+			["name"] = "Elixir of Draenic Wisdom",
+			["players"] = {
+				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:32067",
+		},
+		[62410] = {
+			["mats"] = {
+				["i:44958"] = 3,
+				["i:3371"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Alchemy",
+			["name"] = "Elixir of Water Walking",
+			["players"] = {
+				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:8827",
 		},
 		[60621] = {
 			["mats"] = {
@@ -2308,41 +2312,41 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Greater Potency",
+			["itemString"] = "i:44453",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:44453",
+			["name"] = "Greater Potency",
 		},
-		[74199] = {
+		[7426] = {
 			["mats"] = {
-				["i:52719"] = 1,
 				["i:38682"] = 1,
-				["i:52555"] = 2,
+				["i:10938"] = 1,
+				["i:10940"] = 2,
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Haste",
+			["itemString"] = "i:38767",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:52750",
+			["name"] = "Minor Absorption",
 		},
 		[60653] = {
 			["mats"] = {
-				["i:38682"] = 1,
 				["i:34054"] = 12,
+				["i:38682"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Greater Intellect",
+			["itemString"] = "i:44455",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:44455",
+			["name"] = "Greater Intellect",
 		},
 		[74198] = {
 			["mats"] = {
@@ -2352,75 +2356,69 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Haste",
+			["itemString"] = "i:52749",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:52749",
+			["name"] = "Haste",
 		},
-		[74230] = {
+		[7418] = {
 			["mats"] = {
-				["i:52719"] = 2,
+				["i:10940"] = 1,
 				["i:38682"] = 1,
-				["i:52555"] = 8,
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Critical Strike",
+			["itemString"] = "i:38679",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:52764",
+			["name"] = "Minor Health",
 		},
 		[7420] = {
 			["mats"] = {
-				["i:38682"] = 1,
 				["i:10940"] = 1,
+				["i:38682"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Minor Health",
+			["itemString"] = "i:38766",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38766",
+			["name"] = "Minor Health",
 		},
-		[62410] = {
+		[54218] = {
 			["mats"] = {
-				["i:44958"] = 3,
+				["i:36904"] = 2,
 				["i:3371"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:8827",
+			["name"] = "Elixir of Mighty Strength",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Elixir of Water Walking",
+			["itemString"] = "i:40073",
 		},
-		[53771] = {
-			["players"] = {
-				["Taunkah"] = true,
+		[188319] = {
+			["mats"] = {
+				["i:127836"] = 1,
+				["i:124105"] = 4,
 			},
 			["numResult"] = 1,
-			["cooldownTimes"] = {
-				["Taunkah"] = {
-					["endTime"] = 0,
-				},
-			},
-			["hasCD"] = true,
-			["mats"] = {
-				["i:35625"] = 1,
-			},
-			["itemString"] = "i:35627",
 			["profession"] = "Alchemy",
+			["name"] = "Skystep Potion",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
 			["queued"] = 0,
-			["name"] = "Eternal Shadow",
+			["itemString"] = "i:127841",
 		},
 		[80490] = {
 			["mats"] = {
@@ -2430,13 +2428,13 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:57193",
+			["name"] = "Mighty Rejuvenation Potion",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Mighty Rejuvenation Potion",
+			["itemString"] = "i:57193",
 		},
 		[7428] = {
 			["mats"] = {
@@ -2446,12 +2444,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Minor Dodge",
+			["itemString"] = "i:38768",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38768",
+			["name"] = "Minor Dodge",
 		},
 		[13822] = {
 			["mats"] = {
@@ -2460,12 +2458,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Intellect",
+			["itemString"] = "i:38829",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38829",
+			["name"] = "Intellect",
 		},
 		[217637] = {
 			["mats"] = {
@@ -2477,126 +2475,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Tome of Illusions: Azeroth",
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
 			["itemString"] = "i:138787",
-		},
-		[74231] = {
-			["mats"] = {
-				["i:52719"] = 2,
-				["i:38682"] = 1,
-				["i:52555"] = 10,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Exceptional Versatility",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:52765",
-		},
-		[175865] = {
-			["mats"] = {
-				["i:109138"] = 3,
-				["i:109123"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["itemString"] = "i:116268",
-			["players"] = {
-				["Taunkah"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Draenic Invisibility Potion",
-		},
-		[175866] = {
-			["mats"] = {
-				["i:109143"] = 3,
-				["i:109123"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["itemString"] = "i:116271",
-			["players"] = {
-				["Taunkah"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Draenic Water Breathing Elixir",
-		},
-		[44509] = {
-			["mats"] = {
-				["i:34056"] = 4,
-				["i:34054"] = 4,
-				["i:38682"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Greater Versatility",
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:38962",
-		},
-		[13846] = {
-			["mats"] = {
-				["i:11137"] = 1,
-				["i:38682"] = 1,
-				["i:11174"] = 3,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Greater Versatility",
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:38832",
-		},
-		[60893] = {
-			["players"] = {
-				["Holyshnizzle"] = true,
-				["Taunkah"] = true,
-			},
-			["numResult"] = 1,
-			["cooldownTimes"] = {
-				["Holyshnizzle"] = {
-					["endTime"] = 0,
-				},
-				["Taunkah"] = {
-					["endTime"] = 0,
-				},
-			},
-			["hasCD"] = true,
-			["mats"] = {
-				["i:3371"] = 4,
-				["i:36907"] = 4,
-				["i:36903"] = 10,
-				["i:36901"] = 10,
-			},
-			["itemString"] = "i:115460",
-			["profession"] = "Alchemy",
-			["queued"] = 0,
-			["name"] = "Alchemy: Northrend Alchemy Research",
-		},
-		[28016] = {
-			["mats"] = {
-				["i:22445"] = 3,
-				["i:22791"] = 1,
-				["i:3371"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Superior Mana Oil",
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:22521",
+			["name"] = "Tome of Illusions: Azeroth",
 		},
 		[13858] = {
 			["mats"] = {
@@ -2605,12 +2489,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Superior Health",
+			["itemString"] = "i:38833",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38833",
+			["name"] = "Superior Health",
 		},
 		[44589] = {
 			["mats"] = {
@@ -2620,12 +2504,127 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Superior Agility",
+			["itemString"] = "i:38976",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38976",
+			["name"] = "Superior Agility",
+		},
+		[175867] = {
+			["mats"] = {
+				["i:109123"] = 1,
+				["i:109139"] = 3,
+			},
+			["numResult"] = 1,
+			["profession"] = "Alchemy",
+			["name"] = "Draenic Living Action Potion",
+			["players"] = {
+				["Taunkah"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:116276",
+		},
+		[44509] = {
+			["mats"] = {
+				["i:34056"] = 4,
+				["i:34054"] = 4,
+				["i:38682"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:38962",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Greater Versatility",
+		},
+		[13846] = {
+			["mats"] = {
+				["i:11137"] = 1,
+				["i:38682"] = 1,
+				["i:11174"] = 3,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:38832",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Greater Versatility",
+		},
+		[60893] = {
+			["players"] = {
+				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
+			},
+			["numResult"] = 1,
+			["cooldownTimes"] = {
+				["Taunkah"] = {
+					["endTime"] = 0,
+				},
+				["Holyshnizzle"] = {
+					["endTime"] = 0,
+				},
+			},
+			["hasCD"] = true,
+			["mats"] = {
+				["i:3371"] = 4,
+				["i:36901"] = 10,
+				["i:36907"] = 4,
+				["i:36903"] = 10,
+			},
+			["itemString"] = "i:115460",
+			["profession"] = "Alchemy",
+			["queued"] = 0,
+			["name"] = "Alchemy: Northrend Alchemy Research",
+		},
+		[33995] = {
+			["mats"] = {
+				["i:22446"] = 1,
+				["i:38682"] = 1,
+				["i:22445"] = 12,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:38933",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Major Strength",
+		},
+		[74199] = {
+			["mats"] = {
+				["i:52719"] = 1,
+				["i:38682"] = 1,
+				["i:52555"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:52750",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Haste",
+		},
+		[74231] = {
+			["mats"] = {
+				["i:52719"] = 2,
+				["i:38682"] = 1,
+				["i:52555"] = 10,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:52765",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Exceptional Versatility",
 		},
 		[20035] = {
 			["mats"] = {
@@ -2635,39 +2634,38 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Major Versatility",
+			["itemString"] = "i:38874",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38874",
+			["name"] = "Major Versatility",
 		},
-		[44510] = {
+		[156577] = {
 			["mats"] = {
-				["i:34054"] = 3,
-				["i:34052"] = 4,
-				["i:38682"] = 1,
+				["i:3371"] = 1,
+				["i:109125"] = 3,
 			},
 			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Exceptional Versatility",
+			["profession"] = "Alchemy",
+			["name"] = "Draenic Agility Potion",
 			["players"] = {
-				["Holyshnizzle"] = true,
+				["Taunkah"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38963",
+			["itemString"] = "i:109217",
 		},
 		[66662] = {
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["numResult"] = 1,
 			["cooldownTimes"] = {
-				["Holyshnizzle"] = {
+				["Taunkah"] = {
 					["endTime"] = 0,
 				},
-				["Taunkah"] = {
+				["Holyshnizzle"] = {
 					["endTime"] = 0,
 				},
 			},
@@ -2689,36 +2687,28 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:58094",
+			["name"] = "Elixir of Impossible Accuracy",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Elixir of Impossible Accuracy",
+			["itemString"] = "i:58094",
 		},
-		[53780] = {
-			["players"] = {
-				["Holyshnizzle"] = true,
-				["Taunkah"] = true,
+		[188323] = {
+			["mats"] = {
+				["i:124106"] = 5,
+				["i:124124"] = 3,
+				["i:124444"] = 1,
 			},
 			["numResult"] = 1,
-			["cooldownTimes"] = {
-				["Holyshnizzle"] = {
-					["endTime"] = 0,
-				},
-				["Taunkah"] = {
-					["endTime"] = 0,
-				},
-			},
-			["hasCD"] = true,
-			["mats"] = {
-				["i:35627"] = 1,
-			},
-			["itemString"] = "i:35625",
 			["profession"] = "Alchemy",
+			["name"] = "Infernal Alchemist Stone",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
 			["queued"] = 0,
-			["name"] = "Eternal Life",
+			["itemString"] = "i:127842",
 		},
 		[191003] = {
 			["mats"] = {
@@ -2729,56 +2719,58 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Binding of Strength",
+			["itemString"] = "i:128548",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:128548",
+			["name"] = "Binding of Strength",
 		},
 		[53899] = {
 			["mats"] = {
 				["i:3371"] = 1,
-				["i:37921"] = 4,
 				["i:36901"] = 1,
+				["i:37921"] = 4,
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:40079",
+			["name"] = "Lesser Flask of Toughness",
 			["players"] = {
+				["Taunkah"] = true,
 				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:40079",
+		},
+		[11457] = {
+			["mats"] = {
+				["i:3358"] = 1,
+				["i:8838"] = 1,
+				["i:3371"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Alchemy",
+			["name"] = "Superior Healing Potion",
+			["players"] = {
+				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:3928",
+		},
+		[175865] = {
+			["mats"] = {
+				["i:109123"] = 1,
+				["i:109138"] = 3,
+			},
+			["numResult"] = 1,
+			["profession"] = "Alchemy",
+			["name"] = "Draenic Invisibility Potion",
+			["players"] = {
 				["Taunkah"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Lesser Flask of Toughness",
-		},
-		[13501] = {
-			["mats"] = {
-				["i:38682"] = 1,
-				["i:11083"] = 2,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Lesser Stamina",
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:38793",
-		},
-		[34002] = {
-			["mats"] = {
-				["i:22445"] = 6,
-				["i:38682"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Lesser Assault",
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:38938",
+			["itemString"] = "i:116268",
 		},
 		[17552] = {
 			["mats"] = {
@@ -2787,13 +2779,13 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:13442",
+			["name"] = "Mighty Rage Potion",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Mighty Rage Potion",
+			["itemString"] = "i:13442",
 		},
 		[60606] = {
 			["mats"] = {
@@ -2803,44 +2795,42 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Assault",
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
 			["itemString"] = "i:44449",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Assault",
 		},
-		[60367] = {
+		[104414] = {
 			["mats"] = {
-				["i:37921"] = 2,
-				["i:36907"] = 1,
+				["i:38682"] = 1,
+				["i:74249"] = 4,
+				["i:74250"] = 3,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:74718",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Pandaren's Step",
+		},
+		[80477] = {
+			["mats"] = {
+				["i:52983"] = 2,
 				["i:3371"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:44332",
+			["name"] = "Ghost Elixir",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Elixir of Mighty Thoughts",
-		},
-		[11449] = {
-			["mats"] = {
-				["i:3371"] = 1,
-				["i:3820"] = 1,
-				["i:3821"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["itemString"] = "i:8949",
-			["players"] = {
-				["Holyshnizzle"] = true,
-				["Taunkah"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Elixir of Agility",
+			["itemString"] = "i:58084",
 		},
 		[191004] = {
 			["mats"] = {
@@ -2851,12 +2841,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Binding of Agility",
+			["itemString"] = "i:128549",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:128549",
+			["name"] = "Binding of Agility",
 		},
 		[74200] = {
 			["mats"] = {
@@ -2866,12 +2856,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Stamina",
+			["itemString"] = "i:52751",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:52751",
+			["name"] = "Stamina",
 		},
 		[74232] = {
 			["mats"] = {
@@ -2881,52 +2871,52 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Precision",
+			["itemString"] = "i:52766",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:52766",
+			["name"] = "Precision",
 		},
-		[13419] = {
+		[175866] = {
 			["mats"] = {
-				["i:38682"] = 1,
-				["i:10998"] = 1,
+				["i:109123"] = 1,
+				["i:109143"] = 3,
 			},
 			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Minor Agility",
+			["profession"] = "Alchemy",
+			["name"] = "Draenic Water Breathing Elixir",
 			["players"] = {
-				["Holyshnizzle"] = true,
+				["Taunkah"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38789",
+			["itemString"] = "i:116271",
 		},
 		[104445] = {
 			["mats"] = {
-				["i:38682"] = 1,
 				["i:74250"] = 3,
+				["i:38682"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Major Intellect",
+			["itemString"] = "i:74729",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:74729",
+			["name"] = "Major Intellect",
 		},
 		[66663] = {
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["numResult"] = 1,
 			["cooldownTimes"] = {
-				["Holyshnizzle"] = {
+				["Taunkah"] = {
 					["endTime"] = 0,
 				},
-				["Taunkah"] = {
+				["Holyshnizzle"] = {
 					["endTime"] = 0,
 				},
 			},
@@ -2948,25 +2938,240 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
+			["name"] = "Prismatic Elixir",
+			["players"] = {
+				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
 			["itemString"] = "i:58143",
+		},
+		[53836] = {
+			["mats"] = {
+				["i:36901"] = 1,
+				["i:36906"] = 2,
+				["i:3371"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Alchemy",
+			["name"] = "Runic Healing Potion",
+			["players"] = {
+				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:33447",
+		},
+		[191005] = {
+			["mats"] = {
+				["i:124440"] = 30,
+				["i:124442"] = 8,
+				["i:124124"] = 2,
+				["i:38682"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:128550",
 			["players"] = {
 				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Binding of Intellect",
+		},
+		[217641] = {
+			["mats"] = {
+				["i:22449"] = 5,
+				["i:22457"] = 5,
+				["i:22450"] = 10,
+				["i:21884"] = 5,
+				["i:39354"] = 3,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:138789",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Tome of Illusions: Outland",
+		},
+		[104430] = {
+			["mats"] = {
+				["i:74250"] = 3,
+				["i:38682"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:74725",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Elemental Force",
+		},
+		[95471] = {
+			["mats"] = {
+				["i:52719"] = 3,
+				["i:52721"] = 3,
+				["i:52555"] = 3,
+				["i:38682"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:68134",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Mighty Agility",
+		},
+		[104398] = {
+			["mats"] = {
+				["i:74249"] = 7,
+				["i:38682"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:74710",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Accuracy",
+		},
+		[44510] = {
+			["mats"] = {
+				["i:34054"] = 3,
+				["i:34052"] = 4,
+				["i:38682"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:38963",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Exceptional Versatility",
+		},
+		[60367] = {
+			["mats"] = {
+				["i:37921"] = 2,
+				["i:36907"] = 1,
+				["i:3371"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Alchemy",
+			["name"] = "Elixir of Mighty Thoughts",
+			["players"] = {
+				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:44332",
+		},
+		[80269] = {
+			["mats"] = {
+				["i:3371"] = 1,
+				["i:52985"] = 1,
+				["i:52329"] = 3,
+			},
+			["numResult"] = 1,
+			["profession"] = "Alchemy",
+			["name"] = "Potion of Illusion",
+			["players"] = {
+				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:58489",
+		},
+		[27944] = {
+			["mats"] = {
+				["i:22452"] = 10,
+				["i:38682"] = 1,
+				["i:22445"] = 6,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:38904",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Lesser Dodge",
+		},
+		[74201] = {
+			["mats"] = {
+				["i:38682"] = 1,
+				["i:52555"] = 4,
+				["i:52718"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:52752",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Critical Strike",
+		},
+		[94162] = {
+			["mats"] = {
+				["i:3371"] = 1,
+				["i:52986"] = 8,
+				["i:52984"] = 8,
+				["i:52329"] = 8,
+			},
+			["numResult"] = 1,
+			["profession"] = "Alchemy",
+			["name"] = "Flask of Flowing Water",
+			["players"] = {
+				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:67438",
+		},
+		[175868] = {
+			["mats"] = {
+				["i:109141"] = 3,
+				["i:109123"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Alchemy",
+			["name"] = "Pure Rage Potion",
+			["players"] = {
 				["Taunkah"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Prismatic Elixir",
+			["itemString"] = "i:118704",
+		},
+		[156578] = {
+			["mats"] = {
+				["i:3371"] = 1,
+				["i:109129"] = 3,
+			},
+			["numResult"] = 1,
+			["profession"] = "Alchemy",
+			["name"] = "Draenic Intellect Potion",
+			["players"] = {
+				["Taunkah"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:109218",
 		},
 		[66664] = {
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["numResult"] = 1,
 			["cooldownTimes"] = {
-				["Holyshnizzle"] = {
+				["Taunkah"] = {
 					["endTime"] = 0,
 				},
-				["Taunkah"] = {
+				["Holyshnizzle"] = {
 					["endTime"] = 0,
 				},
 			},
@@ -2979,190 +3184,6 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Eye of Zul",
 		},
-		[191005] = {
-			["mats"] = {
-				["i:124440"] = 30,
-				["i:124442"] = 8,
-				["i:124124"] = 2,
-				["i:38682"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Binding of Intellect",
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:128550",
-		},
-		[217641] = {
-			["mats"] = {
-				["i:22449"] = 5,
-				["i:22457"] = 5,
-				["i:22450"] = 10,
-				["i:21884"] = 5,
-				["i:39354"] = 3,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Tome of Illusions: Outland",
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:138789",
-		},
-		[53812] = {
-			["mats"] = {
-				["i:40199"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["itemString"] = "i:40195",
-			["players"] = {
-				["Holyshnizzle"] = true,
-				["Taunkah"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Pygmy Oil",
-		},
-		[95471] = {
-			["mats"] = {
-				["i:52719"] = 3,
-				["i:52721"] = 3,
-				["i:52555"] = 3,
-				["i:38682"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Mighty Agility",
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:68134",
-		},
-		[44598] = {
-			["mats"] = {
-				["i:34054"] = 12,
-				["i:34055"] = 1,
-				["i:38682"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Haste",
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:38984",
-		},
-		[156577] = {
-			["mats"] = {
-				["i:3371"] = 1,
-				["i:109125"] = 3,
-			},
-			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["itemString"] = "i:109217",
-			["players"] = {
-				["Taunkah"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Draenic Agility Potion",
-		},
-		[188323] = {
-			["mats"] = {
-				["i:124106"] = 5,
-				["i:124124"] = 3,
-				["i:124444"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["itemString"] = "i:127842",
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Infernal Alchemist Stone",
-		},
-		[80269] = {
-			["mats"] = {
-				["i:3371"] = 1,
-				["i:52985"] = 1,
-				["i:52329"] = 3,
-			},
-			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["itemString"] = "i:58489",
-			["players"] = {
-				["Holyshnizzle"] = true,
-				["Taunkah"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Potion of Illusion",
-		},
-		[228405] = {
-			["mats"] = {
-				["i:124441"] = 12,
-				["i:38682"] = 1,
-				["i:124442"] = 15,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Mark of the Trained Soldier",
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:141909",
-		},
-		[74201] = {
-			["mats"] = {
-				["i:38682"] = 1,
-				["i:52555"] = 4,
-				["i:52718"] = 2,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Critical Strike",
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:52752",
-		},
-		[94162] = {
-			["mats"] = {
-				["i:3371"] = 1,
-				["i:52329"] = 8,
-				["i:52984"] = 8,
-				["i:52986"] = 8,
-			},
-			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["itemString"] = "i:67438",
-			["players"] = {
-				["Holyshnizzle"] = true,
-				["Taunkah"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Flask of Flowing Water",
-		},
-		[175868] = {
-			["mats"] = {
-				["i:109141"] = 3,
-				["i:109123"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["itemString"] = "i:118704",
-			["players"] = {
-				["Taunkah"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Pure Rage Potion",
-		},
 		[80493] = {
 			["mats"] = {
 				["i:52987"] = 1,
@@ -3171,61 +3192,13 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:58144",
-			["players"] = {
-				["Holyshnizzle"] = true,
-				["Taunkah"] = true,
-			},
-			["queued"] = 0,
 			["name"] = "Elixir of Mighty Speed",
-		},
-		[53836] = {
-			["mats"] = {
-				["i:36901"] = 1,
-				["i:36906"] = 2,
-				["i:3371"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["itemString"] = "i:33447",
 			["players"] = {
+				["Taunkah"] = true,
 				["Holyshnizzle"] = true,
-				["Taunkah"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Runic Healing Potion",
-		},
-		[11451] = {
-			["mats"] = {
-				["i:3371"] = 1,
-				["i:4625"] = 1,
-				["i:3821"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["itemString"] = "i:8956",
-			["players"] = {
-				["Holyshnizzle"] = true,
-				["Taunkah"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Oil of Immolation",
-		},
-		[11459] = {
-			["mats"] = {
-				["i:4625"] = 4,
-				["i:8831"] = 4,
-				["i:3575"] = 4,
-				["i:9262"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["itemString"] = "i:9149",
-			["players"] = {
-				["Taunkah"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Philosopher's Stone",
+			["itemString"] = "i:58144",
 		},
 		[13503] = {
 			["mats"] = {
@@ -3235,12 +3208,28 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Lesser Striking",
+			["itemString"] = "i:38794",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38794",
+			["name"] = "Lesser Striking",
+		},
+		[11459] = {
+			["mats"] = {
+				["i:9262"] = 1,
+				["i:8831"] = 4,
+				["i:3575"] = 4,
+				["i:4625"] = 4,
+			},
+			["numResult"] = 1,
+			["profession"] = "Alchemy",
+			["name"] = "Philosopher's Stone",
+			["players"] = {
+				["Taunkah"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:9149",
 		},
 		[53900] = {
 			["mats"] = {
@@ -3250,13 +3239,13 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:40081",
+			["name"] = "Potion of Nightmares",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Potion of Nightmares",
+			["itemString"] = "i:40081",
 		},
 		[11467] = {
 			["mats"] = {
@@ -3266,13 +3255,13 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:9187",
+			["name"] = "Elixir of Greater Agility",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Elixir of Greater Agility",
+			["itemString"] = "i:9187",
 		},
 		[175869] = {
 			["mats"] = {
@@ -3281,12 +3270,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:118711",
+			["name"] = "Draenic Water Walking Elixir",
 			["players"] = {
 				["Taunkah"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Draenic Water Walking Elixir",
+			["itemString"] = "i:118711",
 		},
 		[28028] = {
 			["mats"] = {
@@ -3294,12 +3283,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Void Sphere",
+			["itemString"] = "i:22459",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:22459",
+			["name"] = "Void Sphere",
 		},
 		[156579] = {
 			["mats"] = {
@@ -3308,12 +3297,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:109219",
+			["name"] = "Draenic Strength Potion",
 			["players"] = {
 				["Taunkah"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Draenic Strength Potion",
+			["itemString"] = "i:109219",
 		},
 		[28555] = {
 			["mats"] = {
@@ -3323,44 +3312,45 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:22832",
+			["name"] = "Super Mana Potion",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Super Mana Potion",
+			["itemString"] = "i:22832",
 		},
-		[13941] = {
+		[217644] = {
 			["mats"] = {
-				["i:38682"] = 1,
-				["i:11178"] = 1,
-				["i:11176"] = 3,
-				["i:11175"] = 2,
+				["i:34057"] = 10,
+				["i:35622"] = 4,
+				["i:39354"] = 3,
+				["i:34055"] = 8,
+				["i:34052"] = 5,
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Stats",
+			["itemString"] = "i:138790",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38847",
+			["name"] = "Tome of Illusions: Northrend",
 		},
 		[191008] = {
 			["mats"] = {
 				["i:124441"] = 12,
-				["i:38682"] = 1,
 				["i:124442"] = 12,
+				["i:38682"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Mark of the Hidden Satyr",
+			["itemString"] = "i:128553",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:128553",
+			["name"] = "Mark of the Hidden Satyr",
 		},
 		[74202] = {
 			["mats"] = {
@@ -3369,12 +3359,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Intellect",
+			["itemString"] = "i:52753",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:52753",
+			["name"] = "Intellect",
 		},
 		[74234] = {
 			["mats"] = {
@@ -3384,35 +3374,45 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Protection",
+			["itemString"] = "i:52767",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:52767",
+			["name"] = "Protection",
 		},
-		[188802] = {
-			["players"] = {
-				["Holyshnizzle"] = true,
+		[17181] = {
+			["mats"] = {
+				["i:8170"] = 1,
+				["i:16202"] = 1,
 			},
 			["numResult"] = 1,
-			["cooldownTimes"] = {
-				["Holyshnizzle"] = {
-					["endTime"] = 1477407599,
-				},
+			["profession"] = "Enchanting",
+			["itemString"] = "i:12810",
+			["players"] = {
+				["Holyshnizzle"] = true,
 			},
-			["hasCD"] = true,
-			["mats"] = {
-				["i:124105"] = 1,
-				["i:124104"] = 5,
-				["i:124101"] = 5,
-				["i:124102"] = 5,
-				["i:124103"] = 5,
-			},
-			["itemString"] = "i:141323",
-			["profession"] = "Alchemy",
 			["queued"] = 0,
-			["name"] = "Wild Transmutation",
+			["name"] = "Enchanted Leather",
+		},
+		[80237] = {
+			["mats"] = {
+				["i:52177"] = 3,
+				["i:52178"] = 3,
+				["i:52179"] = 3,
+				["i:52180"] = 3,
+				["i:52182"] = 3,
+				["i:52181"] = 3,
+			},
+			["numResult"] = 2,
+			["profession"] = "Alchemy",
+			["name"] = "Shadowspirit Diamond",
+			["players"] = {
+				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:52303",
 		},
 		[44383] = {
 			["mats"] = {
@@ -3422,26 +3422,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Resilience",
+			["itemString"] = "i:38949",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38949",
-		},
-		[156580] = {
-			["mats"] = {
-				["i:3371"] = 1,
-				["i:109124"] = 3,
-			},
-			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["itemString"] = "i:109220",
-			["players"] = {
-				["Taunkah"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Draenic Versatility Potion",
+			["name"] = "Resilience",
 		},
 		[80494] = {
 			["mats"] = {
@@ -3451,30 +3437,28 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:57192",
+			["name"] = "Mythical Mana Potion",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Mythical Mana Potion",
+			["itemString"] = "i:57192",
 		},
-		[96254] = {
+		[13485] = {
 			["mats"] = {
-				["i:52983"] = 8,
-				["i:52985"] = 20,
-				["i:52329"] = 50,
-				["i:52986"] = 8,
+				["i:38682"] = 1,
+				["i:10940"] = 4,
+				["i:10998"] = 2,
 			},
 			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["itemString"] = "i:68777",
+			["profession"] = "Enchanting",
+			["itemString"] = "i:38792",
 			["players"] = {
 				["Holyshnizzle"] = true,
-				["Taunkah"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Vibrant Alchemist Stone",
+			["name"] = "Lesser Versatility",
 		},
 		[191009] = {
 			["mats"] = {
@@ -3483,29 +3467,29 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Word of Critical Strike",
+			["itemString"] = "i:128537",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:128537",
+			["name"] = "Word of Critical Strike",
 		},
 		[217645] = {
 			["mats"] = {
 				["i:52328"] = 5,
 				["i:52722"] = 10,
-				["i:52721"] = 10,
-				["i:39354"] = 3,
 				["i:52327"] = 5,
+				["i:39354"] = 3,
+				["i:52721"] = 10,
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Tome of Illusions: Cataclysm",
+			["itemString"] = "i:138791",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:138791",
+			["name"] = "Tome of Illusions: Cataclysm",
 		},
 		[33732] = {
 			["mats"] = {
@@ -3515,13 +3499,13 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:28100",
+			["name"] = "Volatile Healing Potion",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Volatile Healing Potion",
+			["itemString"] = "i:28100",
 		},
 		[69412] = {
 			["mats"] = {
@@ -3529,12 +3513,70 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Essence or Dust",
+			["itemString"] = "i:89738",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:89738",
+			["name"] = "Essence or Dust",
+		},
+		[7745] = {
+			["mats"] = {
+				["i:38682"] = 1,
+				["i:10978"] = 1,
+				["i:10940"] = 4,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:38772",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Minor Impact",
+		},
+		[156581] = {
+			["mats"] = {
+				["i:3371"] = 1,
+				["i:109127"] = 3,
+			},
+			["numResult"] = 1,
+			["profession"] = "Alchemy",
+			["name"] = "Draenic Channeled Mana Potion",
+			["players"] = {
+				["Taunkah"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:109221",
+		},
+		[104416] = {
+			["mats"] = {
+				["i:74249"] = 4,
+				["i:38682"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:74719",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Greater Haste",
+		},
+		[13631] = {
+			["mats"] = {
+				["i:11083"] = 1,
+				["i:38682"] = 1,
+				["i:11134"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:38805",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Lesser Stamina",
 		},
 		[20012] = {
 			["mats"] = {
@@ -3544,70 +3586,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Greater Agility",
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
 			["itemString"] = "i:38856",
-		},
-		[156581] = {
-			["mats"] = {
-				["i:3371"] = 1,
-				["i:109127"] = 3,
-			},
-			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["itemString"] = "i:109221",
-			["players"] = {
-				["Taunkah"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Draenic Channeled Mana Potion",
-		},
-		[20028] = {
-			["mats"] = {
-				["i:16204"] = 8,
-				["i:38682"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Major Mana",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38867",
-		},
-		[53837] = {
-			["mats"] = {
-				["i:36901"] = 1,
-				["i:36905"] = 2,
-				["i:3371"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["itemString"] = "i:33448",
-			["players"] = {
-				["Holyshnizzle"] = true,
-				["Taunkah"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Runic Mana Potion",
-		},
-		[191010] = {
-			["mats"] = {
-				["i:124440"] = 10,
-				["i:38682"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["itemString"] = "i:128538",
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Word of Haste",
+			["name"] = "Greater Agility",
 		},
 		[53773] = {
 			["players"] = {
@@ -3628,32 +3612,31 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Eternal Fire",
 		},
-		[13607] = {
+		[20028] = {
 			["mats"] = {
-				["i:11082"] = 1,
+				["i:16204"] = 8,
 				["i:38682"] = 1,
-				["i:10998"] = 2,
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Mana",
+			["itemString"] = "i:38867",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38799",
+			["name"] = "Major Mana",
 		},
 		[78866] = {
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["numResult"] = 15,
 			["cooldownTimes"] = {
-				["Holyshnizzle"] = {
+				["Taunkah"] = {
 					["endTime"] = 0,
 				},
-				["Taunkah"] = {
+				["Holyshnizzle"] = {
 					["endTime"] = 0,
 				},
 			},
@@ -3673,26 +3656,28 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Super Stats",
+			["itemString"] = "i:38989",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38989",
+			["name"] = "Super Stats",
 		},
-		[156582] = {
+		[53837] = {
 			["mats"] = {
+				["i:36901"] = 1,
+				["i:36905"] = 2,
 				["i:3371"] = 1,
-				["i:109126"] = 3,
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:109222",
+			["name"] = "Runic Mana Potion",
 			["players"] = {
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Draenic Mana Potion",
+			["itemString"] = "i:33448",
 		},
 		[80495] = {
 			["mats"] = {
@@ -3702,44 +3687,13 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:58145",
-			["players"] = {
-				["Holyshnizzle"] = true,
-				["Taunkah"] = true,
-			},
-			["queued"] = 0,
 			["name"] = "Potion of the Tol'vir",
-		},
-		[53901] = {
-			["mats"] = {
-				["i:3371"] = 1,
-				["i:36905"] = 5,
-				["i:36906"] = 5,
-				["i:36908"] = 1,
-			},
-			["numResult"] = 2,
-			["profession"] = "Alchemy",
-			["itemString"] = "i:46376",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Flask of the Frost Wyrm",
-		},
-		[191011] = {
-			["mats"] = {
-				["i:124440"] = 10,
-				["i:38682"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Word of Mastery",
-			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:128539",
+			["itemString"] = "i:58145",
 		},
 		[13635] = {
 			["mats"] = {
@@ -3749,12 +3703,43 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Defense",
+			["itemString"] = "i:38806",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38806",
+			["name"] = "Defense",
+		},
+		[191011] = {
+			["mats"] = {
+				["i:124440"] = 10,
+				["i:38682"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:128539",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Word of Mastery",
+		},
+		[53901] = {
+			["mats"] = {
+				["i:3371"] = 1,
+				["i:36906"] = 5,
+				["i:36905"] = 5,
+				["i:36908"] = 1,
+			},
+			["numResult"] = 2,
+			["profession"] = "Alchemy",
+			["name"] = "Flask of the Frost Wyrm",
+			["players"] = {
+				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:46376",
 		},
 		[118238] = {
 			["mats"] = {
@@ -3762,28 +3747,28 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 3,
 			["profession"] = "Enchanting",
-			["name"] = "Mysterious Essence",
+			["itemString"] = "i:74250",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:74250",
+			["name"] = "Mysterious Essence",
 		},
 		[34004] = {
 			["mats"] = {
 				["i:22445"] = 4,
 				["i:22451"] = 1,
-				["i:38682"] = 1,
 				["i:22446"] = 1,
+				["i:38682"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Greater Agility",
+			["itemString"] = "i:38940",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38940",
+			["name"] = "Greater Agility",
 		},
 		[17553] = {
 			["mats"] = {
@@ -3793,13 +3778,13 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:13443",
+			["name"] = "Superior Mana Potion",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Superior Mana Potion",
+			["itemString"] = "i:13443",
 		},
 		[80719] = {
 			["mats"] = {
@@ -3810,27 +3795,28 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:58085",
+			["name"] = "Flask of Steelskin",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Flask of Steelskin",
+			["itemString"] = "i:58085",
 		},
-		[13663] = {
+		[104385] = {
 			["mats"] = {
-				["i:11135"] = 1,
 				["i:38682"] = 1,
+				["i:74249"] = 8,
+				["i:74250"] = 2,
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Greater Mana",
+			["itemString"] = "i:74701",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38818",
+			["name"] = "Major Dodge",
 		},
 		[13659] = {
 			["mats"] = {
@@ -3840,42 +3826,42 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Versatility",
+			["itemString"] = "i:38816",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38816",
+			["name"] = "Versatility",
 		},
-		[191012] = {
+		[13663] = {
 			["mats"] = {
-				["i:124440"] = 10,
+				["i:11135"] = 1,
 				["i:38682"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Word of Versatility",
+			["itemString"] = "i:38818",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:128540",
+			["name"] = "Greater Mana",
 		},
 		[191076] = {
 			["mats"] = {
 				["i:124440"] = 50,
 				["i:124442"] = 5,
-				["i:124441"] = 20,
 				["i:124116"] = 10,
+				["i:124441"] = 20,
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Enchanted Pen",
+			["itemString"] = "i:128535",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:128535",
+			["name"] = "Enchanted Pen",
 		},
 		[74236] = {
 			["mats"] = {
@@ -3886,73 +3872,72 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Precision",
+			["itemString"] = "i:52769",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:52769",
+			["name"] = "Precision",
 		},
 		[104417] = {
 			["mats"] = {
-				["i:38682"] = 1,
 				["i:74250"] = 2,
+				["i:38682"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Superior Haste",
+			["itemString"] = "i:74720",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:74720",
+			["name"] = "Superior Haste",
 		},
-		[28545] = {
+		[44582] = {
 			["mats"] = {
-				["i:3371"] = 1,
-				["i:13464"] = 1,
-				["i:22786"] = 1,
+				["i:34054"] = 15,
+				["i:38682"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:38973",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Minor Power",
+		},
+		[96253] = {
+			["mats"] = {
+				["i:52983"] = 24,
+				["i:52986"] = 12,
+				["i:52329"] = 50,
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:22825",
+			["name"] = "Quicksilver Alchemist Stone",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Elixir of Healing Power",
-		},
-		[13421] = {
-			["mats"] = {
-				["i:38682"] = 1,
-				["i:10940"] = 6,
-				["i:10978"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Lesser Protection",
-			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38790",
+			["itemString"] = "i:68776",
 		},
 		[80496] = {
 			["mats"] = {
 				["i:3371"] = 1,
-				["i:52329"] = 1,
 				["i:52986"] = 1,
+				["i:52329"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:58146",
+			["name"] = "Golemblood Potion",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Golemblood Potion",
+			["itemString"] = "i:58146",
 		},
 		[74192] = {
 			["mats"] = {
@@ -3961,12 +3946,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Lesser Power",
+			["itemString"] = "i:52745",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:52745",
+			["name"] = "Lesser Power",
 		},
 		[13695] = {
 			["mats"] = {
@@ -3976,26 +3961,27 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Impact",
+			["itemString"] = "i:38822",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38822",
+			["name"] = "Impact",
 		},
-		[60350] = {
+		[44635] = {
 			["mats"] = {
-				["i:36913"] = 8,
+				["i:34056"] = 4,
+				["i:34054"] = 8,
+				["i:38682"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["itemString"] = "i:41163",
+			["profession"] = "Enchanting",
+			["itemString"] = "i:38997",
 			["players"] = {
 				["Holyshnizzle"] = true,
-				["Taunkah"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Titanium Bar",
+			["name"] = "Greater Spellpower",
 		},
 		[33733] = {
 			["mats"] = {
@@ -4005,47 +3991,28 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:28101",
-			["players"] = {
-				["Holyshnizzle"] = true,
-				["Taunkah"] = true,
-			},
-			["queued"] = 0,
 			["name"] = "Unstable Mana Potion",
-		},
-		[80720] = {
-			["mats"] = {
-				["i:52987"] = 8,
-				["i:52985"] = 8,
-				["i:3371"] = 1,
-				["i:52329"] = 8,
-			},
-			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["itemString"] = "i:58086",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Flask of the Draconic Mind",
+			["itemString"] = "i:28101",
 		},
-		[217650] = {
+		[7857] = {
 			["mats"] = {
-				["i:76139"] = 2,
-				["i:74248"] = 10,
-				["i:76140"] = 2,
-				["i:76141"] = 2,
-				["i:39354"] = 3,
+				["i:38682"] = 1,
+				["i:10998"] = 1,
+				["i:10940"] = 4,
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Tome of Illusions: Pandaria",
+			["itemString"] = "i:38782",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:138793",
+			["name"] = "Health",
 		},
 		[156585] = {
 			["mats"] = {
@@ -4053,12 +4020,28 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:109123",
+			["name"] = "Crescent Oil",
 			["players"] = {
 				["Taunkah"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Crescent Oil",
+			["itemString"] = "i:109123",
+		},
+		[64441] = {
+			["mats"] = {
+				["i:37663"] = 1,
+				["i:38682"] = 1,
+				["i:34055"] = 8,
+				["i:34057"] = 4,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:46026",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Blade Ward",
 		},
 		[44528] = {
 			["mats"] = {
@@ -4068,61 +4051,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Greater Fortitude",
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
 			["itemString"] = "i:38966",
-		},
-		[44592] = {
-			["mats"] = {
-				["i:34056"] = 1,
-				["i:34054"] = 2,
-				["i:38682"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Exceptional Spellpower",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38979",
-		},
-		[58868] = {
-			["mats"] = {
-				["i:3371"] = 1,
-				["i:33448"] = 10,
-			},
-			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["itemString"] = "i:43570",
-			["players"] = {
-				["Holyshnizzle"] = true,
-				["Taunkah"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Endless Mana Potion",
-		},
-		[53774] = {
-			["players"] = {
-				["Taunkah"] = true,
-			},
-			["numResult"] = 1,
-			["cooldownTimes"] = {
-				["Taunkah"] = {
-					["endTime"] = 0,
-				},
-			},
-			["hasCD"] = true,
-			["mats"] = {
-				["i:36860"] = 1,
-			},
-			["itemString"] = "i:35622",
-			["profession"] = "Alchemy",
-			["queued"] = 0,
-			["name"] = "Eternal Water",
+			["name"] = "Greater Fortitude",
 		},
 		[74237] = {
 			["mats"] = {
@@ -4132,12 +4066,59 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Exceptional Versatility",
+			["itemString"] = "i:52770",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:52770",
+			["name"] = "Exceptional Versatility",
+		},
+		[58868] = {
+			["mats"] = {
+				["i:3371"] = 1,
+				["i:33448"] = 10,
+			},
+			["numResult"] = 1,
+			["profession"] = "Alchemy",
+			["name"] = "Endless Mana Potion",
+			["players"] = {
+				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:43570",
+		},
+		[217650] = {
+			["mats"] = {
+				["i:76139"] = 2,
+				["i:74248"] = 10,
+				["i:39354"] = 3,
+				["i:76141"] = 2,
+				["i:76140"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:138793",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Tome of Illusions: Pandaria",
+		},
+		[44592] = {
+			["mats"] = {
+				["i:34056"] = 1,
+				["i:34054"] = 2,
+				["i:38682"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:38979",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Exceptional Spellpower",
 		},
 		[27957] = {
 			["mats"] = {
@@ -4148,26 +4129,28 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Exceptional Health",
+			["itemString"] = "i:38911",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38911",
+			["name"] = "Exceptional Health",
 		},
-		[7863] = {
+		[80497] = {
 			["mats"] = {
-				["i:38682"] = 1,
-				["i:10940"] = 8,
+				["i:3371"] = 1,
+				["i:52987"] = 1,
+				["i:52986"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Minor Stamina",
+			["profession"] = "Alchemy",
+			["name"] = "Elixir of the Master",
 			["players"] = {
+				["Taunkah"] = true,
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38785",
+			["itemString"] = "i:58148",
 		},
 		[53838] = {
 			["mats"] = {
@@ -4176,13 +4159,13 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:39671",
+			["name"] = "Resurgent Healing Potion",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Resurgent Healing Potion",
+			["itemString"] = "i:39671",
 		},
 		[188332] = {
 			["mats"] = {
@@ -4193,12 +4176,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:127845",
+			["name"] = "Unbending Potion",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 10,
-			["name"] = "Unbending Potion",
+			["itemString"] = "i:127845",
 		},
 		[28027] = {
 			["mats"] = {
@@ -4206,26 +4189,28 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Prismatic Sphere",
+			["itemString"] = "i:22460",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:22460",
+			["name"] = "Prismatic Sphere",
 		},
-		[60609] = {
+		[188328] = {
 			["mats"] = {
-				["i:38682"] = 1,
-				["i:34054"] = 3,
+				["i:3371"] = 1,
+				["i:124105"] = 2,
+				["i:124104"] = 4,
+				["i:124103"] = 4,
 			},
 			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Speed",
+			["profession"] = "Alchemy",
+			["name"] = "Potion of the Old War",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
-			["queued"] = 0,
-			["itemString"] = "i:44456",
+			["queued"] = 9,
+			["itemString"] = "i:127844",
 		},
 		[53902] = {
 			["mats"] = {
@@ -4236,60 +4221,59 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 2,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:46379",
-			["players"] = {
-				["Holyshnizzle"] = true,
-				["Taunkah"] = true,
-			},
-			["queued"] = 0,
 			["name"] = "Flask of Stoneblood",
-		},
-		[80721] = {
-			["mats"] = {
-				["i:3371"] = 1,
-				["i:52985"] = 8,
-				["i:52988"] = 8,
-				["i:52329"] = 8,
-			},
-			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["itemString"] = "i:58087",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Flask of the Winds",
+			["itemString"] = "i:46379",
 		},
-		[14809] = {
+		[13890] = {
 			["mats"] = {
-				["i:11291"] = 1,
-				["i:11083"] = 1,
-				["i:11134"] = 1,
+				["i:11174"] = 1,
+				["i:38682"] = 1,
+				["i:7909"] = 1,
+				["i:11177"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Lesser Mystic Wand",
+			["itemString"] = "i:38837",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:11289",
+			["name"] = "Minor Speed",
 		},
-		[80498] = {
+		[28564] = {
 			["mats"] = {
-				["i:52987"] = 1,
 				["i:3371"] = 1,
+				["i:22791"] = 1,
+				["i:22789"] = 2,
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:57191",
+			["name"] = "Haste Potion",
 			["players"] = {
 				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:22838",
+		},
+		[60354] = {
+			["mats"] = {
+				["i:3371"] = 1,
+				["i:36907"] = 1,
+				["i:36904"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Alchemy",
+			["name"] = "Elixir of Accuracy",
+			["players"] = {
 				["Taunkah"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Mythical Healing Potion",
+			["itemString"] = "i:44325",
 		},
 		[156587] = {
 			["players"] = {
@@ -4303,57 +4287,335 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["hasCD"] = true,
 			["mats"] = {
-				["i:109118"] = 10,
 				["i:109124"] = 20,
+				["i:109118"] = 10,
 			},
 			["itemString"] = "i:108996",
 			["profession"] = "Alchemy",
 			["queued"] = 0,
 			["name"] = "Alchemical Catalyst",
 		},
-		[2963] = {
+		[191018] = {
 			["mats"] = {
-				["i:2589"] = 2,
+				["i:124441"] = 12,
+				["i:38682"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Tailoring",
-			["itemString"] = "i:2996",
-			["players"] = {
-				["Bahlar"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Bolt of Linen Cloth",
-		},
-		[28564] = {
-			["mats"] = {
-				["i:3371"] = 1,
-				["i:22791"] = 1,
-				["i:22789"] = 2,
-			},
-			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["itemString"] = "i:22838",
+			["profession"] = "Enchanting",
+			["itemString"] = "i:128546",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Haste Potion",
+			["name"] = "Word of Agility",
+		},
+		[14809] = {
+			["mats"] = {
+				["i:11291"] = 1,
+				["i:11083"] = 1,
+				["i:11134"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:11289",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Lesser Mystic Wand",
+		},
+		[53775] = {
+			["players"] = {
+				["Taunkah"] = true,
+			},
+			["numResult"] = 1,
+			["cooldownTimes"] = {
+				["Taunkah"] = {
+					["endTime"] = 0,
+				},
+			},
+			["hasCD"] = true,
+			["mats"] = {
+				["i:36860"] = 1,
+			},
+			["itemString"] = "i:35625",
+			["profession"] = "Alchemy",
+			["queued"] = 0,
+			["name"] = "Eternal Life",
+		},
+		[104420] = {
+			["mats"] = {
+				["i:74250"] = 3,
+				["i:38682"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:74722",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Superior Mastery",
+		},
+		[74238] = {
+			["mats"] = {
+				["i:52719"] = 3,
+				["i:38682"] = 1,
+				["i:52555"] = 10,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:52771",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Mastery",
+		},
+		[104419] = {
+			["mats"] = {
+				["i:74249"] = 3,
+				["i:38682"] = 1,
+				["i:74247"] = 1,
+				["i:74250"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:74721",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Super Strength",
+		},
+		[2330] = {
+			["mats"] = {
+				["i:3371"] = 1,
+				["i:2447"] = 1,
+				["i:765"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Alchemy",
+			["name"] = "Minor Healing Potion",
+			["players"] = {
+				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:118",
+		},
+		[53903] = {
+			["mats"] = {
+				["i:3371"] = 1,
+				["i:36901"] = 3,
+				["i:36905"] = 7,
+				["i:36908"] = 1,
+			},
+			["numResult"] = 2,
+			["profession"] = "Alchemy",
+			["name"] = "Flask of Endless Rage",
+			["players"] = {
+				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:46377",
+		},
+		[80498] = {
+			["mats"] = {
+				["i:52987"] = 1,
+				["i:3371"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Alchemy",
+			["name"] = "Mythical Healing Potion",
+			["players"] = {
+				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:57191",
+		},
+		[71692] = {
+			["mats"] = {
+				["i:44958"] = 3,
+				["i:34054"] = 1,
+				["i:38682"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:50816",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Angler",
+		},
+		[191017] = {
+			["mats"] = {
+				["i:124441"] = 12,
+				["i:38682"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:128545",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Word of Strength",
+		},
+		[20023] = {
+			["mats"] = {
+				["i:38682"] = 1,
+				["i:8153"] = 2,
+				["i:16202"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:38863",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Greater Agility",
+		},
+		[7179] = {
+			["mats"] = {
+				["i:3371"] = 1,
+				["i:6370"] = 2,
+				["i:3820"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Alchemy",
+			["name"] = "Elixir of Water Breathing",
+			["players"] = {
+				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:5996",
+		},
+		[7181] = {
+			["mats"] = {
+				["i:3357"] = 1,
+				["i:3356"] = 1,
+				["i:3371"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Alchemy",
+			["name"] = "Greater Healing Potion",
+			["players"] = {
+				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:1710",
+		},
+		[7183] = {
+			["mats"] = {
+				["i:3371"] = 1,
+				["i:765"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Alchemy",
+			["name"] = "Elixir of Minor Defense",
+			["players"] = {
+				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:5997",
+		},
+		[44513] = {
+			["mats"] = {
+				["i:34054"] = 6,
+				["i:34055"] = 1,
+				["i:38682"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:38964",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Greater Assault",
 		},
 		[188335] = {
 			["mats"] = {
 				["i:3371"] = 1,
 				["i:124105"] = 2,
-				["i:124101"] = 4,
 				["i:124102"] = 4,
+				["i:124101"] = 4,
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:127846",
+			["name"] = "Leytorrent Potion",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 10,
-			["name"] = "Leytorrent Potion",
+			["itemString"] = "i:127846",
+		},
+		[190954] = {
+			["mats"] = {
+				["i:124441"] = 2,
+				["i:38682"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:128554",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Boon of the Scavenger",
+		},
+		[20013] = {
+			["mats"] = {
+				["i:38682"] = 1,
+				["i:16204"] = 4,
+				["i:16202"] = 4,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:38857",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Greater Strength",
+		},
+		[74207] = {
+			["mats"] = {
+				["i:52719"] = 1,
+				["i:52327"] = 15,
+				["i:38682"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:52754",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Protection",
+		},
+		[44593] = {
+			["mats"] = {
+				["i:34054"] = 4,
+				["i:34055"] = 2,
+				["i:38682"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:38980",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Major Versatility",
 		},
 		[175880] = {
 			["players"] = {
@@ -4374,301 +4636,21 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Secret of Draenor Alchemy",
 		},
-		[74238] = {
-			["mats"] = {
-				["i:52719"] = 3,
-				["i:38682"] = 1,
-				["i:52555"] = 10,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Mastery",
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:52771",
-		},
-		[104419] = {
-			["mats"] = {
-				["i:74247"] = 1,
-				["i:38682"] = 1,
-				["i:74249"] = 3,
-				["i:74250"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Super Strength",
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:74721",
-		},
-		[191019] = {
-			["mats"] = {
-				["i:38682"] = 1,
-				["i:124441"] = 12,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Word of Intellect",
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:128547",
-		},
-		[2331] = {
+		[2332] = {
 			["mats"] = {
 				["i:3371"] = 1,
-				["i:785"] = 1,
-				["i:765"] = 1,
+				["i:2447"] = 1,
+				["i:785"] = 2,
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:2455",
+			["name"] = "Minor Rejuvenation Potion",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Minor Mana Potion",
-		},
-		[13815] = {
-			["mats"] = {
-				["i:11137"] = 1,
-				["i:38682"] = 1,
-				["i:11174"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Agility",
-			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38827",
-		},
-		[92643] = {
-			["mats"] = {
-				["i:58088"] = 1,
-				["i:58142"] = 8,
-				["i:58085"] = 1,
-				["i:58087"] = 1,
-				["i:58086"] = 1,
-			},
-			["itemString"] = "i:62288",
-			["profession"] = "Alchemy",
-			["name"] = "Cauldron of Battle",
-			["numResult"] = 1,
-			["queued"] = 0,
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-		},
-		[191017] = {
-			["mats"] = {
-				["i:38682"] = 1,
-				["i:124441"] = 12,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Word of Strength",
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:128545",
-		},
-		[53779] = {
-			["players"] = {
-				["Holyshnizzle"] = true,
-				["Taunkah"] = true,
-			},
-			["numResult"] = 1,
-			["cooldownTimes"] = {
-				["Holyshnizzle"] = {
-					["endTime"] = 0,
-				},
-				["Taunkah"] = {
-					["endTime"] = 0,
-				},
-			},
-			["hasCD"] = true,
-			["mats"] = {
-				["i:35627"] = 1,
-			},
-			["itemString"] = "i:35624",
-			["profession"] = "Alchemy",
-			["queued"] = 0,
-			["name"] = "Eternal Earth",
-		},
-		[7179] = {
-			["mats"] = {
-				["i:3371"] = 1,
-				["i:6370"] = 2,
-				["i:3820"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["itemString"] = "i:5996",
-			["players"] = {
-				["Holyshnizzle"] = true,
-				["Taunkah"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Elixir of Water Breathing",
-		},
-		[7181] = {
-			["mats"] = {
-				["i:3357"] = 1,
-				["i:3356"] = 1,
-				["i:3371"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["itemString"] = "i:1710",
-			["players"] = {
-				["Holyshnizzle"] = true,
-				["Taunkah"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Greater Healing Potion",
-		},
-		[7183] = {
-			["mats"] = {
-				["i:3371"] = 1,
-				["i:765"] = 2,
-			},
-			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["itemString"] = "i:5997",
-			["players"] = {
-				["Holyshnizzle"] = true,
-				["Taunkah"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Elixir of Minor Defense",
-		},
-		[44513] = {
-			["mats"] = {
-				["i:34054"] = 6,
-				["i:34055"] = 1,
-				["i:38682"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Greater Assault",
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:38964",
-		},
-		[80243] = {
-			["mats"] = {
-				["i:52326"] = 10,
-				["i:51950"] = 3,
-				["i:52325"] = 10,
-				["i:52328"] = 10,
-			},
-			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["itemString"] = "i:58480",
-			["players"] = {
-				["Holyshnizzle"] = true,
-				["Taunkah"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Truegold",
-		},
-		[190954] = {
-			["mats"] = {
-				["i:38682"] = 1,
-				["i:124441"] = 2,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Boon of the Scavenger",
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:128554",
-		},
-		[20013] = {
-			["mats"] = {
-				["i:38682"] = 1,
-				["i:16204"] = 4,
-				["i:16202"] = 4,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Greater Strength",
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:38857",
-		},
-		[74207] = {
-			["mats"] = {
-				["i:52719"] = 1,
-				["i:52327"] = 15,
-				["i:38682"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Protection",
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:52754",
-		},
-		[44593] = {
-			["mats"] = {
-				["i:34054"] = 4,
-				["i:34055"] = 2,
-				["i:38682"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Major Versatility",
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:38980",
-		},
-		[104420] = {
-			["mats"] = {
-				["i:38682"] = 1,
-				["i:74250"] = 3,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Superior Mastery",
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:74722",
-		},
-		[33990] = {
-			["mats"] = {
-				["i:22446"] = 2,
-				["i:38682"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Major Versatility",
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:38928",
+			["itemString"] = "i:2456",
 		},
 		[53839] = {
 			["mats"] = {
@@ -4677,13 +4659,13 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:40067",
+			["name"] = "Icy Mana Potion",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Icy Mana Potion",
+			["itemString"] = "i:40067",
 		},
 		[42613] = {
 			["mats"] = {
@@ -4691,12 +4673,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Small Prismatic Shard",
+			["itemString"] = "i:22448",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:22448",
+			["name"] = "Small Prismatic Shard",
 		},
 		[2329] = {
 			["mats"] = {
@@ -4706,98 +4688,97 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:2454",
+			["name"] = "Elixir of Lion's Strength",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Elixir of Lion's Strength",
+			["itemString"] = "i:2454",
 		},
-		[2330] = {
+		[191019] = {
+			["mats"] = {
+				["i:124441"] = 12,
+				["i:38682"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:128547",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Word of Intellect",
+		},
+		[2331] = {
 			["mats"] = {
 				["i:3371"] = 1,
-				["i:2447"] = 1,
+				["i:785"] = 1,
 				["i:765"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:118",
+			["name"] = "Minor Mana Potion",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Minor Healing Potion",
+			["itemString"] = "i:2455",
 		},
-		[53903] = {
+		[33990] = {
 			["mats"] = {
-				["i:3371"] = 1,
-				["i:36901"] = 3,
-				["i:36905"] = 7,
-				["i:36908"] = 1,
-			},
-			["numResult"] = 2,
-			["profession"] = "Alchemy",
-			["itemString"] = "i:46377",
-			["players"] = {
-				["Holyshnizzle"] = true,
-				["Taunkah"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Flask of Endless Rage",
-		},
-		[2332] = {
-			["mats"] = {
-				["i:3371"] = 1,
-				["i:785"] = 2,
-				["i:2447"] = 1,
+				["i:22446"] = 2,
+				["i:38682"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["itemString"] = "i:2456",
+			["profession"] = "Enchanting",
+			["itemString"] = "i:38928",
 			["players"] = {
 				["Holyshnizzle"] = true,
-				["Taunkah"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Minor Rejuvenation Potion",
+			["name"] = "Major Versatility",
 		},
-		[2334] = {
-			["mats"] = {
-				["i:3371"] = 1,
-				["i:2449"] = 2,
-				["i:2447"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["itemString"] = "i:2458",
+		[80244] = {
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Elixir of Minor Fortitude",
-		},
-		[213248] = {
-			["players"] = {
 				["Holyshnizzle"] = true,
 			},
-			["numResult"] = 1,
+			["numResult"] = 3,
 			["cooldownTimes"] = {
+				["Taunkah"] = {
+					["endTime"] = 0,
+				},
 				["Holyshnizzle"] = {
-					["endTime"] = 1477407599,
+					["endTime"] = 0,
 				},
 			},
 			["hasCD"] = true,
 			["mats"] = {
-				["i:123918"] = 5,
-				["i:123919"] = 5,
+				["i:52327"] = 1,
+				["i:52186"] = 1,
 			},
-			["itemString"] = "i:137590",
+			["itemString"] = "i:51950",
 			["profession"] = "Alchemy",
 			["queued"] = 0,
-			["name"] = "Pile of Silk",
+			["name"] = "Pyrium Bar",
+		},
+		[2334] = {
+			["mats"] = {
+				["i:3371"] = 1,
+				["i:2447"] = 1,
+				["i:2449"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Alchemy",
+			["name"] = "Elixir of Minor Fortitude",
+			["players"] = {
+				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:2458",
 		},
 		[80723] = {
 			["mats"] = {
@@ -4808,28 +4789,28 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:58088",
+			["name"] = "Flask of Titanic Strength",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Flask of Titanic Strength",
+			["itemString"] = "i:58088",
 		},
 		[190892] = {
 			["mats"] = {
 				["i:124441"] = 12,
-				["i:38682"] = 1,
 				["i:124442"] = 15,
+				["i:38682"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Mark of the Claw",
+			["itemString"] = "i:128551",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:128551",
+			["name"] = "Mark of the Claw",
 		},
 		[2337] = {
 			["mats"] = {
@@ -4838,13 +4819,13 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:858",
+			["name"] = "Lesser Healing Potion",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Lesser Healing Potion",
+			["itemString"] = "i:858",
 		},
 		[224199] = {
 			["mats"] = {
@@ -4852,27 +4833,26 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 3,
 			["profession"] = "Enchanting",
-			["name"] = "Arkhana",
+			["itemString"] = "i:124440",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:124440",
+			["name"] = "Arkhana",
 		},
-		[190893] = {
+		[13935] = {
 			["mats"] = {
-				["i:124441"] = 12,
+				["i:11175"] = 2,
 				["i:38682"] = 1,
-				["i:124442"] = 15,
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Mark of the Distant Army",
+			["itemString"] = "i:38844",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:128552",
+			["name"] = "Agility",
 		},
 		[74240] = {
 			["mats"] = {
@@ -4882,12 +4862,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Greater Intellect",
+			["itemString"] = "i:52773",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:52773",
+			["name"] = "Greater Intellect",
 		},
 		[13931] = {
 			["mats"] = {
@@ -4897,12 +4877,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Dodge",
+			["itemString"] = "i:38842",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38842",
+			["name"] = "Dodge",
 		},
 		[213249] = {
 			["players"] = {
@@ -4931,27 +4911,27 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Greater Strength",
+			["itemString"] = "i:38846",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38846",
+			["name"] = "Greater Strength",
 		},
-		[13943] = {
+		[190893] = {
 			["mats"] = {
-				["i:11178"] = 2,
+				["i:124441"] = 12,
+				["i:124442"] = 15,
 				["i:38682"] = 1,
-				["i:11175"] = 2,
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Greater Striking",
+			["itemString"] = "i:128552",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38848",
+			["name"] = "Mark of the Distant Army",
 		},
 		[7748] = {
 			["mats"] = {
@@ -4961,27 +4941,27 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Lesser Health",
+			["itemString"] = "i:38773",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38773",
+			["name"] = "Lesser Health",
 		},
-		[47766] = {
+		[13887] = {
 			["mats"] = {
-				["i:34054"] = 3,
-				["i:35624"] = 1,
+				["i:11137"] = 3,
 				["i:38682"] = 1,
+				["i:11174"] = 2,
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Greater Dodge",
+			["itemString"] = "i:38836",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:39002",
+			["name"] = "Strength",
 		},
 		[74235] = {
 			["mats"] = {
@@ -4991,41 +4971,41 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Superior Intellect",
+			["itemString"] = "i:52768",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:52768",
+			["name"] = "Superior Intellect",
 		},
 		[74191] = {
 			["mats"] = {
-				["i:38682"] = 1,
 				["i:52718"] = 2,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Mighty Stats",
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:52744",
-		},
-		[44529] = {
-			["mats"] = {
-				["i:34056"] = 4,
 				["i:38682"] = 1,
-				["i:34052"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Major Agility",
+			["itemString"] = "i:52744",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38967",
+			["name"] = "Mighty Stats",
+		},
+		[104403] = {
+			["mats"] = {
+				["i:38682"] = 1,
+				["i:74249"] = 3,
+				["i:74250"] = 3,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:74712",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Superior Intellect",
 		},
 		[213250] = {
 			["players"] = {
@@ -5047,6 +5027,21 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Pile of Ore",
 		},
+		[60623] = {
+			["mats"] = {
+				["i:34054"] = 8,
+				["i:37705"] = 1,
+				["i:38682"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:38986",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Icewalker",
+		},
 		[80245] = {
 			["mats"] = {
 				["i:52177"] = 3,
@@ -5054,45 +5049,29 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:52190",
-			["players"] = {
-				["Holyshnizzle"] = true,
-				["Taunkah"] = true,
-			},
-			["queued"] = 0,
 			["name"] = "Inferno Ruby",
-		},
-		[22808] = {
-			["mats"] = {
-				["i:3371"] = 1,
-				["i:7972"] = 1,
-				["i:8831"] = 2,
-			},
-			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["itemString"] = "i:18294",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Elixir of Greater Water Breathing",
+			["itemString"] = "i:52190",
 		},
-		[11448] = {
+		[12609] = {
 			["mats"] = {
 				["i:3371"] = 1,
-				["i:3358"] = 1,
+				["i:3818"] = 1,
 				["i:3821"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:6149",
+			["name"] = "Catseye Elixir",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Greater Mana Potion",
+			["itemString"] = "i:10592",
 		},
 		[60403] = {
 			["mats"] = {
@@ -5102,25 +5081,25 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:44323",
+			["name"] = "Indestructible Alchemist Stone",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Indestructible Alchemist Stone",
+			["itemString"] = "i:44323",
 		},
 		[53776] = {
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["numResult"] = 1,
 			["cooldownTimes"] = {
-				["Holyshnizzle"] = {
+				["Taunkah"] = {
 					["endTime"] = 0,
 				},
-				["Taunkah"] = {
+				["Holyshnizzle"] = {
 					["endTime"] = 0,
 				},
 			},
@@ -5140,26 +5119,26 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["itemString"] = "i:38909",
+			["name"] = "Fortitude",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Fortitude",
+			["itemString"] = "i:38909",
 		},
 		[27958] = {
 			["mats"] = {
-				["i:38682"] = 1,
 				["i:34054"] = 3,
+				["i:38682"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Exceptional Mana",
+			["itemString"] = "i:38912",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38912",
+			["name"] = "Exceptional Mana",
 		},
 		[213251] = {
 			["players"] = {
@@ -5181,49 +5160,55 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Pile of Herbs",
 		},
-		[53840] = {
+		[11448] = {
 			["mats"] = {
-				["i:36901"] = 2,
-				["i:36903"] = 2,
 				["i:3371"] = 1,
+				["i:3358"] = 1,
+				["i:3821"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:39666",
+			["name"] = "Greater Mana Potion",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Elixir of Mighty Agility",
-		},
-		[27905] = {
-			["mats"] = {
-				["i:22445"] = 6,
-				["i:38682"] = 1,
-				["i:22447"] = 6,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Stats",
-			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38898",
+			["itemString"] = "i:6149",
 		},
-		[28022] = {
-			["mats"] = {
-				["i:22448"] = 3,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Large Prismatic Shard",
+		[213252] = {
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
+			["numResult"] = 1,
+			["cooldownTimes"] = {
+				["Holyshnizzle"] = {
+					["endTime"] = 1477407599,
+				},
+			},
+			["hasCD"] = true,
+			["mats"] = {
+				["i:124437"] = 10,
+			},
+			["itemString"] = "i:137593",
+			["profession"] = "Alchemy",
 			["queued"] = 0,
-			["itemString"] = "i:22449",
+			["name"] = "Pile of Herbs",
+		},
+		[80725] = {
+			["mats"] = {
+				["i:3371"] = 1,
+				["i:52986"] = 5,
+			},
+			["numResult"] = 1,
+			["profession"] = "Alchemy",
+			["name"] = "Potion of Deepholm",
+			["players"] = {
+				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:58487",
 		},
 		[11460] = {
 			["mats"] = {
@@ -5232,29 +5217,29 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:9154",
+			["name"] = "Elixir of Detect Undead",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Elixir of Detect Undead",
+			["itemString"] = "i:9154",
 		},
-		[7788] = {
+		[28557] = {
 			["mats"] = {
-				["i:10940"] = 2,
-				["i:38682"] = 1,
-				["i:10939"] = 1,
-				["i:10978"] = 1,
+				["i:3371"] = 1,
+				["i:22789"] = 1,
+				["i:22790"] = 3,
 			},
 			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Minor Striking",
+			["profession"] = "Alchemy",
+			["name"] = "Elixir of Major Defense",
 			["players"] = {
+				["Taunkah"] = true,
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38780",
+			["itemString"] = "i:22834",
 		},
 		[33991] = {
 			["mats"] = {
@@ -5264,12 +5249,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Versatility Prime",
+			["itemString"] = "i:38929",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38929",
+			["name"] = "Versatility Prime",
 		},
 		[53936] = {
 			["mats"] = {
@@ -5278,12 +5263,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:40213",
+			["name"] = "Mighty Arcane Protection Potion",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Mighty Arcane Protection Potion",
+			["itemString"] = "i:40213",
 		},
 		[11476] = {
 			["mats"] = {
@@ -5292,29 +5277,29 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:9264",
+			["name"] = "Elixir of Shadow Power",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Elixir of Shadow Power",
+			["itemString"] = "i:9264",
 		},
 		[28549] = {
 			["mats"] = {
 				["i:3371"] = 1,
-				["i:22578"] = 2,
 				["i:22790"] = 1,
+				["i:22578"] = 2,
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:22827",
+			["name"] = "Elixir of Major Frost Power",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Elixir of Major Frost Power",
+			["itemString"] = "i:22827",
 		},
 		[80246] = {
 			["mats"] = {
@@ -5323,13 +5308,13 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:52191",
+			["name"] = "Ocean Sapphire",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Ocean Sapphire",
+			["itemString"] = "i:52191",
 		},
 		[74239] = {
 			["mats"] = {
@@ -5339,26 +5324,26 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Greater Haste",
+			["itemString"] = "i:52772",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:52772",
+			["name"] = "Greater Haste",
 		},
 		[13536] = {
 			["mats"] = {
-				["i:38682"] = 1,
 				["i:11083"] = 2,
+				["i:38682"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Lesser Strength",
+			["itemString"] = "i:38797",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38797",
+			["name"] = "Lesser Strength",
 		},
 		[47900] = {
 			["mats"] = {
@@ -5368,44 +5353,43 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Super Health",
+			["itemString"] = "i:39005",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:39005",
+			["name"] = "Super Health",
 		},
 		[28589] = {
 			["mats"] = {
 				["i:3371"] = 1,
-				["i:22793"] = 3,
 				["i:22794"] = 1,
 				["i:22789"] = 7,
-			},
-			["numResult"] = 2,
-			["profession"] = "Alchemy",
-			["itemString"] = "i:22854",
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Flask of Relentless Assault",
-		},
-		[28590] = {
-			["mats"] = {
-				["i:3371"] = 1,
-				["i:22791"] = 7,
 				["i:22793"] = 3,
-				["i:22794"] = 1,
 			},
 			["numResult"] = 2,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:22861",
+			["name"] = "Flask of Relentless Assault",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Flask of Blinding Light",
+			["itemString"] = "i:22854",
+		},
+		[104395] = {
+			["mats"] = {
+				["i:38682"] = 1,
+				["i:74249"] = 2,
+				["i:74250"] = 3,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:74708",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Glorious Stats",
 		},
 		[213253] = {
 			["players"] = {
@@ -5435,172 +5419,26 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Lesser Dodge",
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
 			["itemString"] = "i:38811",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Lesser Dodge",
 		},
-		[104338] = {
+		[14293] = {
 			["mats"] = {
-				["i:74249"] = 4,
-				["i:38682"] = 1,
+				["i:4470"] = 1,
+				["i:10938"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Mastery",
+			["itemString"] = "i:11287",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:74700",
-		},
-		[25124] = {
-			["mats"] = {
-				["i:3371"] = 1,
-				["i:10940"] = 2,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Minor Wizard Oil",
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:20744",
-		},
-		[74211] = {
-			["mats"] = {
-				["i:52719"] = 2,
-				["i:52721"] = 1,
-				["i:52555"] = 7,
-				["i:38682"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Elemental Slayer",
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:52755",
-		},
-		[213254] = {
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["numResult"] = 1,
-			["cooldownTimes"] = {
-				["Holyshnizzle"] = {
-					["endTime"] = 1477407599,
-				},
-			},
-			["hasCD"] = true,
-			["mats"] = {
-				["i:124112"] = 5,
-				["i:124108"] = 5,
-				["i:124110"] = 5,
-				["i:124107"] = 5,
-				["i:124111"] = 5,
-				["i:124109"] = 5,
-			},
-			["itemString"] = "i:137594",
-			["profession"] = "Alchemy",
-			["queued"] = 0,
-			["name"] = "Pile of Gems",
-		},
-		[58871] = {
-			["mats"] = {
-				["i:3371"] = 1,
-				["i:33447"] = 10,
-			},
-			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["itemString"] = "i:43569",
-			["players"] = {
-				["Holyshnizzle"] = true,
-				["Taunkah"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Endless Healing Potion",
-		},
-		[2387] = {
-			["mats"] = {
-				["i:2320"] = 1,
-				["i:2996"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Tailoring",
-			["itemString"] = "i:2570",
-			["players"] = {
-				["Bahlar"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Linen Cloak",
-		},
-		[3915] = {
-			["mats"] = {
-				["i:2320"] = 1,
-				["i:2996"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Tailoring",
-			["itemString"] = "i:4344",
-			["players"] = {
-				["Bahlar"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Brown Linen Shirt",
-		},
-		[80726] = {
-			["mats"] = {
-				["i:3371"] = 1,
-				["i:52988"] = 4,
-				["i:52986"] = 6,
-				["i:52983"] = 8,
-				["i:52984"] = 4,
-			},
-			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["itemString"] = "i:58488",
-			["players"] = {
-				["Holyshnizzle"] = true,
-				["Taunkah"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Potion of Treasure Finding",
-		},
-		[80247] = {
-			["mats"] = {
-				["i:52988"] = 3,
-				["i:52179"] = 3,
-			},
-			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["itemString"] = "i:52195",
-			["players"] = {
-				["Holyshnizzle"] = true,
-				["Taunkah"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Amberjewel",
-		},
-		[3450] = {
-			["mats"] = {
-				["i:3371"] = 1,
-				["i:3355"] = 1,
-				["i:3821"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["itemString"] = "i:3825",
-			["players"] = {
-				["Holyshnizzle"] = true,
-				["Taunkah"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Elixir of Fortitude",
+			["name"] = "Lesser Magic Wand",
 		},
 		[62959] = {
 			["mats"] = {
@@ -5610,12 +5448,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Spellpower",
+			["itemString"] = "i:45060",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:45060",
+			["name"] = "Spellpower",
 		},
 		[53777] = {
 			["players"] = {
@@ -5636,6 +5474,151 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Eternal Earth",
 		},
+		[3915] = {
+			["mats"] = {
+				["i:2320"] = 1,
+				["i:2996"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Tailoring",
+			["name"] = "Brown Linen Shirt",
+			["players"] = {
+				["Bahlar"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:4344",
+		},
+		[25124] = {
+			["mats"] = {
+				["i:3371"] = 1,
+				["i:10940"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:20744",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Minor Wizard Oil",
+		},
+		[74211] = {
+			["mats"] = {
+				["i:52719"] = 2,
+				["i:52721"] = 1,
+				["i:52555"] = 7,
+				["i:38682"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:52755",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Elemental Slayer",
+		},
+		[213254] = {
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["numResult"] = 1,
+			["cooldownTimes"] = {
+				["Holyshnizzle"] = {
+					["endTime"] = 1477407599,
+				},
+			},
+			["hasCD"] = true,
+			["mats"] = {
+				["i:124112"] = 5,
+				["i:124108"] = 5,
+				["i:124110"] = 5,
+				["i:124109"] = 5,
+				["i:124111"] = 5,
+				["i:124107"] = 5,
+			},
+			["itemString"] = "i:137594",
+			["profession"] = "Alchemy",
+			["queued"] = 0,
+			["name"] = "Pile of Gems",
+		},
+		[80726] = {
+			["mats"] = {
+				["i:3371"] = 1,
+				["i:52988"] = 4,
+				["i:52986"] = 6,
+				["i:52983"] = 8,
+				["i:52984"] = 4,
+			},
+			["numResult"] = 1,
+			["profession"] = "Alchemy",
+			["name"] = "Potion of Treasure Finding",
+			["players"] = {
+				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:58488",
+		},
+		[80247] = {
+			["mats"] = {
+				["i:52988"] = 3,
+				["i:52179"] = 3,
+			},
+			["numResult"] = 1,
+			["profession"] = "Alchemy",
+			["name"] = "Amberjewel",
+			["players"] = {
+				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:52195",
+		},
+		[33993] = {
+			["mats"] = {
+				["i:22445"] = 4,
+				["i:38682"] = 1,
+				["i:22447"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:38931",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Blasting",
+		},
+		[58871] = {
+			["mats"] = {
+				["i:3371"] = 1,
+				["i:33447"] = 10,
+			},
+			["numResult"] = 1,
+			["profession"] = "Alchemy",
+			["name"] = "Endless Healing Potion",
+			["players"] = {
+				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:43569",
+		},
+		[2387] = {
+			["mats"] = {
+				["i:2320"] = 1,
+				["i:2996"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Tailoring",
+			["name"] = "Linen Cloak",
+			["players"] = {
+				["Bahlar"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:2570",
+		},
 		[104392] = {
 			["mats"] = {
 				["i:38682"] = 1,
@@ -5644,12 +5627,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Super Resilience",
+			["itemString"] = "i:74706",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:74706",
+			["name"] = "Super Resilience",
 		},
 		[7836] = {
 			["mats"] = {
@@ -5657,13 +5640,13 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:6370",
+			["name"] = "Blackmouth Oil",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Blackmouth Oil",
+			["itemString"] = "i:6370",
 		},
 		[213255] = {
 			["players"] = {
@@ -5677,10 +5660,10 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["hasCD"] = true,
 			["mats"] = {
-				["i:124120"] = 5,
-				["i:124119"] = 5,
 				["i:124117"] = 5,
 				["i:124121"] = 5,
+				["i:124120"] = 5,
+				["i:124119"] = 5,
 				["i:124118"] = 5,
 			},
 			["itemString"] = "i:137600",
@@ -5691,18 +5674,18 @@ TradeSkillMaster_CraftingDB = {
 		[53841] = {
 			["mats"] = {
 				["i:3371"] = 1,
-				["i:36901"] = 1,
 				["i:37921"] = 2,
+				["i:36901"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:40068",
+			["name"] = "Wrath Elixir",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Wrath Elixir",
+			["itemString"] = "i:40068",
 		},
 		[42615] = {
 			["mats"] = {
@@ -5710,12 +5693,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 3,
 			["profession"] = "Enchanting",
-			["name"] = "Small Prismatic Shard",
+			["itemString"] = "i:22448",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:22448",
+			["name"] = "Small Prismatic Shard",
 		},
 		[2393] = {
 			["mats"] = {
@@ -5725,71 +5708,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Tailoring",
-			["itemString"] = "i:2576",
+			["name"] = "White Linen Shirt",
 			["players"] = {
 				["Bahlar"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "White Linen Shirt",
-		},
-		[17555] = {
-			["mats"] = {
-				["i:3371"] = 1,
-				["i:13463"] = 1,
-				["i:13466"] = 2,
-			},
-			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["itemString"] = "i:13447",
-			["players"] = {
-				["Holyshnizzle"] = true,
-				["Taunkah"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Elixir of the Sages",
-		},
-		[53905] = {
-			["mats"] = {
-				["i:36906"] = 2,
-				["i:3371"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["itemString"] = "i:40093",
-			["players"] = {
-				["Holyshnizzle"] = true,
-				["Taunkah"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Indestructible Potion",
-		},
-		[13640] = {
-			["mats"] = {
-				["i:38682"] = 1,
-				["i:11083"] = 3,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Greater Health",
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:38808",
-		},
-		[13644] = {
-			["mats"] = {
-				["i:38682"] = 1,
-				["i:11083"] = 4,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Lesser Stamina",
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:38810",
+			["itemString"] = "i:2576",
 		},
 		[213256] = {
 			["players"] = {
@@ -5815,18 +5739,77 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Pulsating Sac",
 		},
+		[53905] = {
+			["mats"] = {
+				["i:36906"] = 2,
+				["i:3371"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Alchemy",
+			["name"] = "Indestructible Potion",
+			["players"] = {
+				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:40093",
+		},
+		[13640] = {
+			["mats"] = {
+				["i:11083"] = 3,
+				["i:38682"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:38808",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Greater Health",
+		},
+		[13644] = {
+			["mats"] = {
+				["i:11083"] = 4,
+				["i:38682"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:38810",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Lesser Stamina",
+		},
+		[17555] = {
+			["mats"] = {
+				["i:3371"] = 1,
+				["i:13466"] = 2,
+				["i:13463"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Alchemy",
+			["name"] = "Elixir of the Sages",
+			["players"] = {
+				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:13447",
+		},
 		[116497] = {
 			["mats"] = {
 				["i:74249"] = 5,
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Mysterious Essence",
+			["itemString"] = "i:74250",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:74250",
+			["name"] = "Mysterious Essence",
 		},
 		[80248] = {
 			["mats"] = {
@@ -5835,13 +5818,13 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:52194",
+			["name"] = "Demonseye",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Demonseye",
+			["itemString"] = "i:52194",
 		},
 		[118237] = {
 			["mats"] = {
@@ -5849,12 +5832,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 3,
 			["profession"] = "Enchanting",
-			["name"] = "Spirit Dust",
+			["itemString"] = "i:74249",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:74249",
+			["name"] = "Spirit Dust",
 		},
 		[20016] = {
 			["mats"] = {
@@ -5864,12 +5847,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Vitality",
+			["itemString"] = "i:38860",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38860",
+			["name"] = "Vitality",
 		},
 		[74212] = {
 			["mats"] = {
@@ -5879,12 +5862,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Exceptional Strength",
+			["itemString"] = "i:52756",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:52756",
+			["name"] = "Exceptional Strength",
 		},
 		[104393] = {
 			["mats"] = {
@@ -5893,12 +5876,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Mighty Versatility",
+			["itemString"] = "i:74707",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:74707",
+			["name"] = "Mighty Versatility",
 		},
 		[104425] = {
 			["mats"] = {
@@ -5908,12 +5891,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Windsong",
+			["itemString"] = "i:74723",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:74723",
+			["name"] = "Windsong",
 		},
 		[213257] = {
 			["players"] = {
@@ -5936,21 +5919,19 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Blood of Sargeras",
 		},
-		[188325] = {
+		[13648] = {
 			["mats"] = {
-				["i:3371"] = 1,
-				["i:124105"] = 2,
-				["i:124104"] = 4,
-				["i:124102"] = 4,
+				["i:11083"] = 6,
+				["i:38682"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["itemString"] = "i:127843",
+			["profession"] = "Enchanting",
+			["itemString"] = "i:38812",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
-			["queued"] = 10,
-			["name"] = "Potion of Deadly Grace",
+			["queued"] = 0,
+			["name"] = "Stamina",
 		},
 		[136197] = {
 			["mats"] = {
@@ -5958,42 +5939,43 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:75274",
+			["name"] = "Zen Alchemist Stone",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Zen Alchemist Stone",
+			["itemString"] = "i:75274",
 		},
-		[80487] = {
+		[25128] = {
 			["mats"] = {
-				["i:56850"] = 2,
 				["i:3371"] = 1,
+				["i:16204"] = 3,
+				["i:4625"] = 2,
 			},
 			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["itemString"] = "i:57099",
+			["profession"] = "Enchanting",
+			["itemString"] = "i:20750",
 			["players"] = {
 				["Holyshnizzle"] = true,
-				["Taunkah"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Mysterious Potion",
+			["name"] = "Wizard Oil",
 		},
-		[13746] = {
+		[190997] = {
 			["mats"] = {
-				["i:11137"] = 3,
+				["i:124440"] = 50,
+				["i:124442"] = 4,
 				["i:38682"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Greater Defense",
+			["itemString"] = "i:128542",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38825",
+			["name"] = "Binding of Haste",
 		},
 		[13700] = {
 			["mats"] = {
@@ -6004,53 +5986,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Lesser Stats",
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
 			["itemString"] = "i:38824",
-		},
-		[116498] = {
-			["mats"] = {
-				["i:74250"] = 5,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Ethereal Shard",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:74247",
-		},
-		[44484] = {
-			["mats"] = {
-				["i:38682"] = 1,
-				["i:34054"] = 12,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Haste",
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:38951",
-		},
-		[44500] = {
-			["mats"] = {
-				["i:38682"] = 1,
-				["i:34054"] = 9,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Superior Agility",
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:38959",
+			["name"] = "Lesser Stats",
 		},
 		[17180] = {
 			["mats"] = {
@@ -6059,12 +6000,53 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Enchanted Thorium Bar",
+			["itemString"] = "i:12655",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:12655",
+			["name"] = "Enchanted Thorium Bar",
+		},
+		[44484] = {
+			["mats"] = {
+				["i:34054"] = 12,
+				["i:38682"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:38951",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Haste",
+		},
+		[44500] = {
+			["mats"] = {
+				["i:34054"] = 9,
+				["i:38682"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:38959",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Superior Agility",
+		},
+		[116498] = {
+			["mats"] = {
+				["i:74250"] = 5,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:74247",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Ethereal Shard",
 		},
 		[28019] = {
 			["mats"] = {
@@ -6074,12 +6056,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Superior Wizard Oil",
+			["itemString"] = "i:22522",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:22522",
+			["name"] = "Superior Wizard Oil",
 		},
 		[104409] = {
 			["mats"] = {
@@ -6088,28 +6070,28 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Blurred Speed",
+			["itemString"] = "i:74717",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:74717",
+			["name"] = "Blurred Speed",
 		},
 		[60405] = {
 			["mats"] = {
-				["i:36903"] = 15,
 				["i:36904"] = 15,
+				["i:36903"] = 15,
 				["i:36908"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:44324",
+			["name"] = "Mighty Alchemist Stone",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Mighty Alchemist Stone",
+			["itemString"] = "i:44324",
 		},
 		[74213] = {
 			["mats"] = {
@@ -6119,12 +6101,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Major Agility",
+			["itemString"] = "i:52757",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:52757",
+			["name"] = "Major Agility",
 		},
 		[27951] = {
 			["mats"] = {
@@ -6134,42 +6116,41 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Dexterity",
+			["itemString"] = "i:37603",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:37603",
+			["name"] = "Dexterity",
 		},
-		[190997] = {
+		[13746] = {
 			["mats"] = {
-				["i:124440"] = 50,
-				["i:124442"] = 4,
+				["i:11137"] = 3,
 				["i:38682"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Binding of Haste",
+			["itemString"] = "i:38825",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:128542",
+			["name"] = "Greater Defense",
 		},
-		[25128] = {
+		[80487] = {
 			["mats"] = {
+				["i:56850"] = 2,
 				["i:3371"] = 1,
-				["i:16204"] = 3,
-				["i:4625"] = 2,
 			},
 			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Wizard Oil",
+			["profession"] = "Alchemy",
+			["name"] = "Mysterious Potion",
 			["players"] = {
+				["Taunkah"] = true,
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:20750",
+			["itemString"] = "i:57099",
 		},
 		[53842] = {
 			["mats"] = {
@@ -6179,27 +6160,29 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:40070",
+			["name"] = "Spellpower Elixir",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Spellpower Elixir",
+			["itemString"] = "i:40070",
 		},
-		[13648] = {
+		[188325] = {
 			["mats"] = {
-				["i:38682"] = 1,
-				["i:11083"] = 6,
+				["i:3371"] = 1,
+				["i:124105"] = 2,
+				["i:124104"] = 4,
+				["i:124102"] = 4,
 			},
 			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Stamina",
+			["profession"] = "Alchemy",
+			["name"] = "Potion of Deadly Grace",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
-			["queued"] = 0,
-			["itemString"] = "i:38812",
+			["queued"] = 10,
+			["itemString"] = "i:127843",
 		},
 		[3447] = {
 			["mats"] = {
@@ -6209,13 +6192,13 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:929",
+			["name"] = "Healing Potion",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Healing Potion",
+			["itemString"] = "i:929",
 		},
 		[3448] = {
 			["mats"] = {
@@ -6225,13 +6208,13 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:3823",
+			["name"] = "Lesser Invisibility Potion",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Lesser Invisibility Potion",
+			["itemString"] = "i:3823",
 		},
 		[3449] = {
 			["mats"] = {
@@ -6240,28 +6223,29 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:3824",
+			["name"] = "Shadow Oil",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Shadow Oil",
+			["itemString"] = "i:3824",
 		},
-		[33993] = {
+		[3450] = {
 			["mats"] = {
-				["i:22445"] = 4,
-				["i:38682"] = 1,
-				["i:22447"] = 1,
+				["i:3371"] = 1,
+				["i:3355"] = 1,
+				["i:3821"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Blasting",
+			["profession"] = "Alchemy",
+			["name"] = "Elixir of Fortitude",
 			["players"] = {
+				["Taunkah"] = true,
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38931",
+			["itemString"] = "i:3825",
 		},
 		[34009] = {
 			["mats"] = {
@@ -6270,12 +6254,12 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Major Stamina",
+			["itemString"] = "i:38945",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38945",
+			["name"] = "Major Stamina",
 		},
 		[3452] = {
 			["mats"] = {
@@ -6285,13 +6269,13 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:3827",
+			["name"] = "Mana Potion",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Mana Potion",
+			["itemString"] = "i:3827",
 		},
 		[116499] = {
 			["players"] = {
@@ -6319,13 +6303,13 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:52193",
+			["name"] = "Ember Topaz",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Ember Topaz",
+			["itemString"] = "i:52193",
 		},
 		[14810] = {
 			["mats"] = {
@@ -6335,26 +6319,26 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Greater Mystic Wand",
+			["itemString"] = "i:11290",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:11290",
+			["name"] = "Greater Mystic Wand",
 		},
-		[14293] = {
+		[104338] = {
 			["mats"] = {
-				["i:4470"] = 1,
-				["i:10938"] = 1,
+				["i:74249"] = 4,
+				["i:38682"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Lesser Magic Wand",
+			["itemString"] = "i:74700",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:11287",
+			["name"] = "Mastery",
 		},
 		[74214] = {
 			["mats"] = {
@@ -6363,75 +6347,211 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Mighty Resilience",
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
 			["itemString"] = "i:52758",
-		},
-		[104395] = {
-			["mats"] = {
-				["i:38682"] = 1,
-				["i:74249"] = 2,
-				["i:74250"] = 3,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Glorious Stats",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:74708",
+			["name"] = "Mighty Resilience",
+		},
+		[28590] = {
+			["mats"] = {
+				["i:3371"] = 1,
+				["i:22791"] = 7,
+				["i:22793"] = 3,
+				["i:22794"] = 1,
+			},
+			["numResult"] = 2,
+			["profession"] = "Alchemy",
+			["name"] = "Flask of Blinding Light",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:22861",
 		},
 		[7421] = {
 			["mats"] = {
-				["i:10938"] = 1,
 				["i:6217"] = 1,
+				["i:10938"] = 1,
 				["i:10940"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Runed Copper Rod",
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
 			["itemString"] = "i:6218",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Runed Copper Rod",
 		},
-		[28557] = {
+		[7788] = {
 			["mats"] = {
+				["i:10978"] = 1,
+				["i:38682"] = 1,
+				["i:10939"] = 1,
+				["i:10940"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:38780",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Minor Striking",
+		},
+		[28022] = {
+			["mats"] = {
+				["i:22448"] = 3,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:22449",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Large Prismatic Shard",
+		},
+		[27905] = {
+			["mats"] = {
+				["i:22445"] = 6,
+				["i:38682"] = 1,
+				["i:22447"] = 6,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:38898",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Stats",
+		},
+		[53840] = {
+			["mats"] = {
+				["i:36901"] = 2,
+				["i:36903"] = 2,
 				["i:3371"] = 1,
-				["i:22789"] = 1,
-				["i:22790"] = 3,
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:22834",
+			["name"] = "Elixir of Mighty Agility",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Elixir of Major Defense",
+			["itemString"] = "i:39666",
 		},
-		[80725] = {
+		[22808] = {
 			["mats"] = {
 				["i:3371"] = 1,
-				["i:52986"] = 5,
+				["i:7972"] = 1,
+				["i:8831"] = 2,
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:58487",
+			["name"] = "Elixir of Greater Water Breathing",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Potion of Deepholm",
+			["itemString"] = "i:18294",
 		},
-		[213252] = {
+		[44529] = {
+			["mats"] = {
+				["i:34056"] = 4,
+				["i:38682"] = 1,
+				["i:34052"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:38967",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Major Agility",
+		},
+		[33738] = {
+			["mats"] = {
+				["i:3371"] = 1,
+				["i:13465"] = 1,
+				["i:22785"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Alchemy",
+			["name"] = "Onslaught Elixir",
+			["players"] = {
+				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:28102",
+		},
+		[13836] = {
+			["mats"] = {
+				["i:11137"] = 5,
+				["i:38682"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:38830",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Stamina",
+		},
+		[47766] = {
+			["mats"] = {
+				["i:34054"] = 3,
+				["i:35624"] = 1,
+				["i:38682"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:39002",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Greater Dodge",
+		},
+		[13943] = {
+			["mats"] = {
+				["i:11178"] = 2,
+				["i:38682"] = 1,
+				["i:11175"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:38848",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Greater Striking",
+		},
+		[80251] = {
+			["mats"] = {
+				["i:52984"] = 3,
+				["i:52182"] = 3,
+			},
+			["numResult"] = 1,
+			["profession"] = "Alchemy",
+			["name"] = "Dream Emerald",
+			["players"] = {
+				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:52192",
+		},
+		[213248] = {
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
@@ -6443,156 +6563,13 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["hasCD"] = true,
 			["mats"] = {
-				["i:124437"] = 10,
+				["i:123918"] = 5,
+				["i:123919"] = 5,
 			},
-			["itemString"] = "i:137593",
+			["itemString"] = "i:137590",
 			["profession"] = "Alchemy",
 			["queued"] = 0,
-			["name"] = "Pile of Herbs",
-		},
-		[12609] = {
-			["mats"] = {
-				["i:3371"] = 1,
-				["i:3821"] = 1,
-				["i:3818"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["itemString"] = "i:10592",
-			["players"] = {
-				["Holyshnizzle"] = true,
-				["Taunkah"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Catseye Elixir",
-		},
-		[60623] = {
-			["mats"] = {
-				["i:34054"] = 8,
-				["i:37705"] = 1,
-				["i:38682"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Icewalker",
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:38986",
-		},
-		[104403] = {
-			["mats"] = {
-				["i:38682"] = 1,
-				["i:74249"] = 3,
-				["i:74250"] = 3,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Superior Intellect",
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:74712",
-		},
-		[33738] = {
-			["mats"] = {
-				["i:3371"] = 1,
-				["i:13465"] = 1,
-				["i:22785"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["itemString"] = "i:28102",
-			["players"] = {
-				["Holyshnizzle"] = true,
-				["Taunkah"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Onslaught Elixir",
-		},
-		[13836] = {
-			["mats"] = {
-				["i:11137"] = 5,
-				["i:38682"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Stamina",
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:38830",
-		},
-		[13887] = {
-			["mats"] = {
-				["i:11137"] = 3,
-				["i:38682"] = 1,
-				["i:11174"] = 2,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Strength",
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:38836",
-		},
-		[13935] = {
-			["mats"] = {
-				["i:38682"] = 1,
-				["i:11175"] = 2,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Agility",
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:38844",
-		},
-		[80251] = {
-			["mats"] = {
-				["i:52984"] = 3,
-				["i:52182"] = 3,
-			},
-			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["itemString"] = "i:52192",
-			["players"] = {
-				["Holyshnizzle"] = true,
-				["Taunkah"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Dream Emerald",
-		},
-		[80244] = {
-			["players"] = {
-				["Holyshnizzle"] = true,
-				["Taunkah"] = true,
-			},
-			["numResult"] = 3,
-			["cooldownTimes"] = {
-				["Holyshnizzle"] = {
-					["endTime"] = 0,
-				},
-				["Taunkah"] = {
-					["endTime"] = 0,
-				},
-			},
-			["hasCD"] = true,
-			["mats"] = {
-				["i:52186"] = 1,
-				["i:52327"] = 1,
-			},
-			["itemString"] = "i:51950",
-			["profession"] = "Alchemy",
-			["queued"] = 0,
-			["name"] = "Pyrium Bar",
+			["name"] = "Pile of Silk",
 		},
 		[25125] = {
 			["mats"] = {
@@ -6601,58 +6578,64 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Minor Mana Oil",
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
 			["itemString"] = "i:20745",
-		},
-		[20023] = {
-			["mats"] = {
-				["i:38682"] = 1,
-				["i:8153"] = 2,
-				["i:16202"] = 2,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Greater Agility",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38863",
+			["name"] = "Minor Mana Oil",
 		},
-		[71692] = {
-			["mats"] = {
-				["i:44958"] = 3,
-				["i:34054"] = 1,
-				["i:38682"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Angler",
+		[53779] = {
 			["players"] = {
+				["Taunkah"] = true,
 				["Holyshnizzle"] = true,
 			},
+			["numResult"] = 1,
+			["cooldownTimes"] = {
+				["Taunkah"] = {
+					["endTime"] = 0,
+				},
+				["Holyshnizzle"] = {
+					["endTime"] = 0,
+				},
+			},
+			["hasCD"] = true,
+			["mats"] = {
+				["i:35627"] = 1,
+			},
+			["itemString"] = "i:35624",
+			["profession"] = "Alchemy",
 			["queued"] = 0,
-			["itemString"] = "i:50816",
+			["name"] = "Eternal Earth",
+		},
+		[2963] = {
+			["mats"] = {
+				["i:2589"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Tailoring",
+			["name"] = "Bolt of Linen Cloth",
+			["players"] = {
+				["Bahlar"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:2996",
 		},
 		[96252] = {
 			["mats"] = {
 				["i:52983"] = 12,
-				["i:52329"] = 50,
 				["i:52986"] = 24,
+				["i:52329"] = 50,
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:68775",
+			["name"] = "Volatile Alchemist Stone",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Volatile Alchemist Stone",
+			["itemString"] = "i:68775",
 		},
 		[44629] = {
 			["mats"] = {
@@ -6662,28 +6645,169 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Exceptional Spellpower",
+			["itemString"] = "i:38991",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38991",
+			["name"] = "Exceptional Spellpower",
 		},
 		[7457] = {
 			["mats"] = {
-				["i:38682"] = 1,
 				["i:10940"] = 3,
+				["i:38682"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Minor Stamina",
+			["itemString"] = "i:38771",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38771",
+			["name"] = "Minor Stamina",
 		},
-		[53775] = {
+		[80243] = {
+			["mats"] = {
+				["i:52326"] = 10,
+				["i:51950"] = 3,
+				["i:52328"] = 10,
+				["i:52325"] = 10,
+			},
+			["numResult"] = 1,
+			["profession"] = "Alchemy",
+			["name"] = "Truegold",
+			["players"] = {
+				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:58480",
+		},
+		[92643] = {
+			["mats"] = {
+				["i:58088"] = 1,
+				["i:58142"] = 8,
+				["i:58085"] = 1,
+				["i:58087"] = 1,
+				["i:58086"] = 1,
+			},
+			["itemString"] = "i:62288",
+			["profession"] = "Alchemy",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["numResult"] = 1,
+			["queued"] = 0,
+			["name"] = "Cauldron of Battle",
+		},
+		[13815] = {
+			["mats"] = {
+				["i:11137"] = 1,
+				["i:38682"] = 1,
+				["i:11174"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:38827",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Agility",
+		},
+		[228402] = {
+			["mats"] = {
+				["i:124441"] = 12,
+				["i:124442"] = 15,
+				["i:38682"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:141908",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Mark of the Heavy Hide",
+		},
+		[80721] = {
+			["mats"] = {
+				["i:3371"] = 1,
+				["i:52985"] = 8,
+				["i:52988"] = 8,
+				["i:52329"] = 8,
+			},
+			["numResult"] = 1,
+			["profession"] = "Alchemy",
+			["name"] = "Flask of the Winds",
+			["players"] = {
+				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:58087",
+		},
+		[60609] = {
+			["mats"] = {
+				["i:34054"] = 3,
+				["i:38682"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:44456",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Speed",
+		},
+		[17556] = {
+			["mats"] = {
+				["i:13464"] = 2,
+				["i:13465"] = 1,
+				["i:3371"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Alchemy",
+			["name"] = "Major Healing Potion",
+			["players"] = {
+				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:13446",
+		},
+		[7863] = {
+			["mats"] = {
+				["i:10940"] = 8,
+				["i:38682"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:38785",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Minor Stamina",
+		},
+		[17572] = {
+			["mats"] = {
+				["i:3371"] = 1,
+				["i:13466"] = 2,
+				["i:13467"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Alchemy",
+			["name"] = "Purification Potion",
+			["players"] = {
+				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:13462",
+		},
+		[53774] = {
 			["players"] = {
 				["Taunkah"] = true,
 			},
@@ -6697,180 +6821,41 @@ TradeSkillMaster_CraftingDB = {
 			["mats"] = {
 				["i:36860"] = 1,
 			},
-			["itemString"] = "i:35625",
+			["itemString"] = "i:35622",
 			["profession"] = "Alchemy",
 			["queued"] = 0,
-			["name"] = "Eternal Life",
+			["name"] = "Eternal Water",
 		},
-		[191018] = {
+		[80720] = {
 			["mats"] = {
-				["i:38682"] = 1,
-				["i:124441"] = 12,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Word of Agility",
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:128546",
-		},
-		[60354] = {
-			["mats"] = {
+				["i:52987"] = 8,
+				["i:52985"] = 8,
 				["i:3371"] = 1,
-				["i:36907"] = 1,
-				["i:36904"] = 2,
+				["i:52329"] = 8,
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:44325",
+			["name"] = "Flask of the Draconic Mind",
 			["players"] = {
 				["Taunkah"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Elixir of Accuracy",
-		},
-		[228402] = {
-			["mats"] = {
-				["i:124441"] = 12,
-				["i:38682"] = 1,
-				["i:124442"] = 15,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Mark of the Heavy Hide",
-			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:141908",
+			["itemString"] = "i:58086",
 		},
-		[13890] = {
+		[60350] = {
 			["mats"] = {
-				["i:11174"] = 1,
-				["i:38682"] = 1,
-				["i:11177"] = 1,
-				["i:7909"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Minor Speed",
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:38837",
-		},
-		[188328] = {
-			["mats"] = {
-				["i:3371"] = 1,
-				["i:124105"] = 2,
-				["i:124104"] = 4,
-				["i:124103"] = 4,
+				["i:36913"] = 8,
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:127844",
+			["name"] = "Titanium Bar",
 			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 9,
-			["name"] = "Potion of the Old War",
-		},
-		[17556] = {
-			["mats"] = {
-				["i:13464"] = 2,
-				["i:13465"] = 1,
-				["i:3371"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["itemString"] = "i:13446",
-			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Major Healing Potion",
-		},
-		[80497] = {
-			["mats"] = {
-				["i:3371"] = 1,
-				["i:52987"] = 1,
-				["i:52986"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["itemString"] = "i:58148",
-			["players"] = {
-				["Holyshnizzle"] = true,
-				["Taunkah"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Elixir of the Master",
-		},
-		[17572] = {
-			["mats"] = {
-				["i:3371"] = 1,
-				["i:13467"] = 2,
-				["i:13466"] = 2,
-			},
-			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["itemString"] = "i:13462",
-			["players"] = {
-				["Holyshnizzle"] = true,
-				["Taunkah"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Purification Potion",
-		},
-		[64441] = {
-			["mats"] = {
-				["i:37663"] = 1,
-				["i:38682"] = 1,
-				["i:34055"] = 8,
-				["i:34057"] = 4,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Blade Ward",
-			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:46026",
-		},
-		[7857] = {
-			["mats"] = {
-				["i:38682"] = 1,
-				["i:10940"] = 4,
-				["i:10998"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Health",
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:38782",
-		},
-		[44635] = {
-			["mats"] = {
-				["i:34056"] = 4,
-				["i:34054"] = 8,
-				["i:38682"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Greater Spellpower",
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:38997",
+			["itemString"] = "i:41163",
 		},
 		[104397] = {
 			["mats"] = {
@@ -6880,74 +6865,74 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Superior Stamina",
+			["itemString"] = "i:74709",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:74709",
+			["name"] = "Superior Stamina",
 		},
-		[96253] = {
+		[13421] = {
 			["mats"] = {
-				["i:52983"] = 24,
-				["i:52329"] = 50,
-				["i:52986"] = 12,
+				["i:38682"] = 1,
+				["i:10978"] = 1,
+				["i:10940"] = 6,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:38790",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Lesser Protection",
+		},
+		[28545] = {
+			["mats"] = {
+				["i:3371"] = 1,
+				["i:13464"] = 1,
+				["i:22786"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:68776",
+			["name"] = "Elixir of Healing Power",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Quicksilver Alchemist Stone",
+			["itemString"] = "i:22825",
 		},
-		[44582] = {
+		[191012] = {
 			["mats"] = {
+				["i:124440"] = 10,
 				["i:38682"] = 1,
-				["i:34054"] = 15,
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Minor Power",
+			["itemString"] = "i:128540",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38973",
-		},
-		[104385] = {
-			["mats"] = {
-				["i:38682"] = 1,
-				["i:74249"] = 8,
-				["i:74250"] = 2,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Major Dodge",
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:74701",
+			["name"] = "Word of Versatility",
 		},
 		[80508] = {
 			["mats"] = {
 				["i:52983"] = 12,
 				["i:52985"] = 12,
-				["i:52329"] = 50,
 				["i:52986"] = 12,
+				["i:52329"] = 50,
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:58483",
+			["name"] = "Lifebound Alchemist Stone",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Lifebound Alchemist Stone",
+			["itemString"] = "i:58483",
 		},
 		[13948] = {
 			["mats"] = {
@@ -6957,121 +6942,125 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Minor Haste",
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
 			["itemString"] = "i:38851",
-		},
-		[13631] = {
-			["mats"] = {
-				["i:11083"] = 1,
-				["i:38682"] = 1,
-				["i:11134"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Lesser Stamina",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38805",
+			["name"] = "Minor Haste",
 		},
-		[104416] = {
+		[156582] = {
 			["mats"] = {
-				["i:74249"] = 4,
-				["i:38682"] = 1,
+				["i:3371"] = 1,
+				["i:109126"] = 3,
 			},
 			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Greater Haste",
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:74719",
-		},
-		[7745] = {
-			["mats"] = {
-				["i:38682"] = 1,
-				["i:10940"] = 4,
-				["i:10978"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Minor Impact",
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:38772",
-		},
-		[13485] = {
-			["mats"] = {
-				["i:38682"] = 1,
-				["i:10998"] = 2,
-				["i:10940"] = 4,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Lesser Versatility",
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:38792",
-		},
-		[80237] = {
-			["mats"] = {
-				["i:52177"] = 3,
-				["i:52178"] = 3,
-				["i:52179"] = 3,
-				["i:52180"] = 3,
-				["i:52181"] = 3,
-				["i:52182"] = 3,
-			},
-			["numResult"] = 2,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:52303",
+			["name"] = "Draenic Mana Potion",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Shadowspirit Diamond",
+			["itemString"] = "i:109222",
 		},
-		[17181] = {
+		[13607] = {
 			["mats"] = {
-				["i:8170"] = 1,
-				["i:16202"] = 1,
+				["i:11082"] = 1,
+				["i:38682"] = 1,
+				["i:10998"] = 2,
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Enchanted Leather",
+			["itemString"] = "i:38799",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:12810",
+			["name"] = "Mana",
 		},
-		[217644] = {
+		[191010] = {
 			["mats"] = {
-				["i:34057"] = 10,
-				["i:35622"] = 4,
-				["i:34052"] = 5,
-				["i:34055"] = 8,
-				["i:39354"] = 3,
+				["i:124440"] = 10,
+				["i:38682"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Tome of Illusions: Northrend",
+			["name"] = "Word of Haste",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:138790",
+			["itemString"] = "i:128538",
+		},
+		[96254] = {
+			["mats"] = {
+				["i:52983"] = 8,
+				["i:52985"] = 20,
+				["i:52986"] = 8,
+				["i:52329"] = 50,
+			},
+			["numResult"] = 1,
+			["profession"] = "Alchemy",
+			["name"] = "Vibrant Alchemist Stone",
+			["players"] = {
+				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:68777",
+		},
+		[156580] = {
+			["mats"] = {
+				["i:3371"] = 1,
+				["i:109124"] = 3,
+			},
+			["numResult"] = 1,
+			["profession"] = "Alchemy",
+			["name"] = "Draenic Versatility Potion",
+			["players"] = {
+				["Taunkah"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:109220",
+		},
+		[188802] = {
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["numResult"] = 1,
+			["cooldownTimes"] = {
+				["Holyshnizzle"] = {
+					["endTime"] = 1477407599,
+				},
+			},
+			["hasCD"] = true,
+			["mats"] = {
+				["i:124105"] = 1,
+				["i:124104"] = 5,
+				["i:124101"] = 5,
+				["i:124102"] = 5,
+				["i:124103"] = 5,
+			},
+			["itemString"] = "i:141323",
+			["profession"] = "Alchemy",
+			["queued"] = 0,
+			["name"] = "Wild Transmutation",
+		},
+		[13941] = {
+			["mats"] = {
+				["i:11178"] = 1,
+				["i:38682"] = 1,
+				["i:11176"] = 3,
+				["i:11175"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:38847",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Stats",
 		},
 		[45061] = {
 			["mats"] = {
@@ -7080,70 +7069,81 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:34440",
+			["name"] = "Mad Alchemist's Potion",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Mad Alchemist's Potion",
+			["itemString"] = "i:34440",
 		},
-		[156578] = {
+		[11451] = {
 			["mats"] = {
 				["i:3371"] = 1,
-				["i:109129"] = 3,
+				["i:3821"] = 1,
+				["i:4625"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:109218",
+			["name"] = "Oil of Immolation",
 			["players"] = {
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Draenic Intellect Potion",
+			["itemString"] = "i:8956",
 		},
-		[27944] = {
+		[53780] = {
+			["players"] = {
+				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
+			},
+			["numResult"] = 1,
+			["cooldownTimes"] = {
+				["Taunkah"] = {
+					["endTime"] = 0,
+				},
+				["Holyshnizzle"] = {
+					["endTime"] = 0,
+				},
+			},
+			["hasCD"] = true,
 			["mats"] = {
-				["i:22452"] = 10,
+				["i:35627"] = 1,
+			},
+			["itemString"] = "i:35625",
+			["profession"] = "Alchemy",
+			["queued"] = 0,
+			["name"] = "Eternal Life",
+		},
+		[44598] = {
+			["mats"] = {
+				["i:34054"] = 12,
+				["i:34055"] = 1,
 				["i:38682"] = 1,
-				["i:22445"] = 6,
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Lesser Dodge",
+			["itemString"] = "i:38984",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38904",
+			["name"] = "Haste",
 		},
-		[104398] = {
+		[53812] = {
 			["mats"] = {
-				["i:74249"] = 7,
-				["i:38682"] = 1,
+				["i:40199"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Accuracy",
+			["profession"] = "Alchemy",
+			["name"] = "Pygmy Oil",
 			["players"] = {
+				["Taunkah"] = true,
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:74710",
-		},
-		[104430] = {
-			["mats"] = {
-				["i:38682"] = 1,
-				["i:74250"] = 3,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Elemental Force",
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:74725",
+			["itemString"] = "i:40195",
 		},
 		[44630] = {
 			["mats"] = {
@@ -7153,58 +7153,57 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Greater Savagery",
+			["itemString"] = "i:38992",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38992",
+			["name"] = "Greater Savagery",
 		},
-		[80477] = {
+		[11449] = {
 			["mats"] = {
-				["i:52983"] = 2,
 				["i:3371"] = 1,
+				["i:3821"] = 1,
+				["i:3820"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:58084",
+			["name"] = "Elixir of Agility",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Ghost Elixir",
+			["itemString"] = "i:8949",
 		},
-		[104414] = {
+		[228405] = {
 			["mats"] = {
+				["i:124441"] = 12,
+				["i:124442"] = 15,
 				["i:38682"] = 1,
-				["i:74249"] = 4,
-				["i:74250"] = 3,
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Pandaren's Step",
+			["itemString"] = "i:141909",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:74718",
+			["name"] = "Mark of the Trained Soldier",
 		},
-		[11457] = {
+		[13501] = {
 			["mats"] = {
-				["i:3358"] = 1,
-				["i:8838"] = 1,
-				["i:3371"] = 1,
+				["i:11083"] = 2,
+				["i:38682"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["itemString"] = "i:3928",
+			["profession"] = "Enchanting",
+			["itemString"] = "i:38793",
 			["players"] = {
 				["Holyshnizzle"] = true,
-				["Taunkah"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Superior Healing Potion",
+			["name"] = "Lesser Stamina",
 		},
 		[11461] = {
 			["mats"] = {
@@ -7214,74 +7213,72 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:9155",
+			["name"] = "Arcane Elixir",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Arcane Elixir",
+			["itemString"] = "i:9155",
 		},
 		[11465] = {
 			["mats"] = {
 				["i:3371"] = 1,
-				["i:8839"] = 1,
 				["i:3358"] = 1,
+				["i:8839"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:9179",
+			["name"] = "Elixir of Greater Intellect",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Elixir of Greater Intellect",
+			["itemString"] = "i:9179",
 		},
-		[33995] = {
+		[28016] = {
 			["mats"] = {
-				["i:22446"] = 1,
-				["i:38682"] = 1,
-				["i:22445"] = 12,
+				["i:22445"] = 3,
+				["i:22791"] = 1,
+				["i:3371"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Major Strength",
+			["itemString"] = "i:22521",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38933",
+			["name"] = "Superior Mana Oil",
 		},
-		[175867] = {
+		[13419] = {
 			["mats"] = {
-				["i:109139"] = 3,
-				["i:109123"] = 1,
+				["i:10998"] = 1,
+				["i:38682"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["itemString"] = "i:116276",
-			["players"] = {
-				["Taunkah"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Draenic Living Action Potion",
-		},
-		[57425] = {
-			["mats"] = {
-				["i:36917"] = 1,
-				["i:36923"] = 1,
-				["i:35623"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["itemString"] = "i:41266",
+			["profession"] = "Enchanting",
+			["itemString"] = "i:38789",
 			["players"] = {
 				["Holyshnizzle"] = true,
-				["Taunkah"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Skyflare Diamond",
+			["name"] = "Minor Agility",
+		},
+		[34002] = {
+			["mats"] = {
+				["i:22445"] = 6,
+				["i:38682"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:38938",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Lesser Assault",
 		},
 		[28551] = {
 			["mats"] = {
@@ -7291,13 +7288,13 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:22829",
+			["name"] = "Super Healing Potion",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Super Healing Potion",
+			["itemString"] = "i:22829",
 		},
 		[13529] = {
 			["mats"] = {
@@ -7307,192 +7304,14 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Lesser Impact",
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
 			["itemString"] = "i:38796",
-		},
-		[54218] = {
-			["mats"] = {
-				["i:36904"] = 2,
-				["i:3371"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["itemString"] = "i:40073",
-			["players"] = {
-				["Holyshnizzle"] = true,
-				["Taunkah"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Elixir of Mighty Strength",
-		},
-		[60663] = {
-			["mats"] = {
-				["i:34054"] = 3,
-				["i:34052"] = 3,
-				["i:38682"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Major Agility",
 			["players"] = {
 				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:44457",
+			["name"] = "Lesser Impact",
 		},
-		[7418] = {
-			["mats"] = {
-				["i:38682"] = 1,
-				["i:10940"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Minor Health",
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:38679",
-		},
-		[74250] = {
-			["mats"] = {
-				["i:52721"] = 3,
-				["i:38682"] = 1,
-				["i:52722"] = 3,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Peerless Stats",
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:52779",
-		},
-		[39638] = {
-			["mats"] = {
-				["i:3371"] = 1,
-				["i:22785"] = 1,
-				["i:22789"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["itemString"] = "i:32067",
-			["players"] = {
-				["Holyshnizzle"] = true,
-				["Taunkah"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Elixir of Draenic Wisdom",
-		},
-		[11450] = {
-			["mats"] = {
-				["i:3371"] = 1,
-				["i:3355"] = 1,
-				["i:3821"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["itemString"] = "i:8951",
-			["players"] = {
-				["Holyshnizzle"] = true,
-				["Taunkah"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Elixir of Greater Defense",
-		},
-		[80478] = {
-			["mats"] = {
-				["i:52984"] = 2,
-				["i:3371"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["itemString"] = "i:58090",
-			["players"] = {
-				["Holyshnizzle"] = true,
-				["Taunkah"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Earthen Potion",
-		},
-		[130758] = {
-			["mats"] = {
-				["i:38682"] = 1,
-				["i:74247"] = 1,
-				["i:74250"] = 3,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Greater Parry",
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:89737",
-		},
-		[188308] = {
-			["mats"] = {
-				["i:127834"] = 1,
-				["i:124101"] = 20,
-			},
-			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["itemString"] = "i:127837",
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Draught of Raw Magic",
-		},
-		[53847] = {
-			["mats"] = {
-				["i:36907"] = 3,
-				["i:3371"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["itemString"] = "i:40072",
-			["players"] = {
-				["Holyshnizzle"] = true,
-				["Taunkah"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Elixir of Versatility",
-		},
-		[20017] = {
-			["mats"] = {
-				["i:38682"] = 1,
-				["i:11176"] = 5,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Greater Stamina",
-			["players"] = {
-				["Holyshnizzle"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:38861",
-		},
-		[12044] = {
-			["mats"] = {
-				["i:2320"] = 1,
-				["i:2996"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Tailoring",
-			["itemString"] = "i:10045",
-			["players"] = {
-				["Bahlar"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Simple Linen Pants",
-		},
-		[53784] = {
+		[53771] = {
 			["players"] = {
 				["Taunkah"] = true,
 			},
@@ -7504,28 +7323,145 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["hasCD"] = true,
 			["mats"] = {
-				["i:35622"] = 1,
+				["i:35625"] = 1,
 			},
-			["itemString"] = "i:36860",
+			["itemString"] = "i:35627",
 			["profession"] = "Alchemy",
 			["queued"] = 0,
-			["name"] = "Eternal Fire",
+			["name"] = "Eternal Shadow",
 		},
-		[7837] = {
+		[60663] = {
 			["mats"] = {
-				["i:6359"] = 2,
+				["i:34054"] = 3,
+				["i:34052"] = 3,
+				["i:38682"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:44457",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Major Agility",
+		},
+		[74230] = {
+			["mats"] = {
+				["i:52719"] = 2,
+				["i:38682"] = 1,
+				["i:52555"] = 8,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:52764",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Critical Strike",
+		},
+		[74250] = {
+			["mats"] = {
+				["i:52721"] = 3,
+				["i:38682"] = 1,
+				["i:52722"] = 3,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:52779",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Peerless Stats",
+		},
+		[93935] = {
+			["mats"] = {
+				["i:52983"] = 1,
+				["i:3371"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["itemString"] = "i:6371",
+			["name"] = "Draught of War",
 			["players"] = {
-				["Holyshnizzle"] = true,
 				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Fire Oil",
+			["itemString"] = "i:67415",
 		},
-		[53781] = {
+		[188316] = {
+			["mats"] = {
+				["i:124104"] = 5,
+				["i:127835"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Alchemy",
+			["name"] = "Skaggldrynk",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:127840",
+		},
+		[80478] = {
+			["mats"] = {
+				["i:52984"] = 2,
+				["i:3371"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Alchemy",
+			["name"] = "Earthen Potion",
+			["players"] = {
+				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:58090",
+		},
+		[27899] = {
+			["mats"] = {
+				["i:22445"] = 6,
+				["i:38682"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:38897",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Brawn",
+		},
+		[44555] = {
+			["mats"] = {
+				["i:34054"] = 10,
+				["i:38682"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:38968",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Exceptional Intellect",
+		},
+		[13622] = {
+			["mats"] = {
+				["i:11082"] = 2,
+				["i:38682"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:38803",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Lesser Intellect",
+		},
+		[53782] = {
 			["players"] = {
 				["Taunkah"] = true,
 			},
@@ -7539,14 +7475,138 @@ TradeSkillMaster_CraftingDB = {
 			["mats"] = {
 				["i:35624"] = 1,
 			},
+			["itemString"] = "i:35627",
+			["profession"] = "Alchemy",
+			["queued"] = 0,
+			["name"] = "Eternal Shadow",
+		},
+		[33740] = {
+			["mats"] = {
+				["i:13463"] = 1,
+				["i:22785"] = 1,
+				["i:3371"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Alchemy",
+			["name"] = "Adept's Elixir",
+			["players"] = {
+				["Taunkah"] = true,
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:28103",
+		},
+		[53783] = {
+			["players"] = {
+				["Taunkah"] = true,
+			},
+			["numResult"] = 1,
+			["cooldownTimes"] = {
+				["Taunkah"] = {
+					["endTime"] = 0,
+				},
+			},
+			["hasCD"] = true,
+			["mats"] = {
+				["i:35622"] = 1,
+			},
 			["itemString"] = "i:35623",
 			["profession"] = "Alchemy",
 			["queued"] = 0,
 			["name"] = "Eternal Air",
 		},
+		[44616] = {
+			["mats"] = {
+				["i:34054"] = 9,
+				["i:34055"] = 1,
+				["i:38682"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:38987",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Greater Stats",
+		},
+		[104404] = {
+			["mats"] = {
+				["i:74250"] = 1,
+				["i:38682"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:74713",
+			["players"] = {
+				["Holyshnizzle"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Superior Critical Strike",
+		},
 	},
 	["f@Alliance - Doomhammer@ignoreDECheckBox"] = false,
 	["f@Alliance - Doomhammer@playerProfessions"] = {
+		["Nilrum"] = {
+			["Jewelcrafting"] = {
+				["isSecondary"] = false,
+				["level"] = 1,
+				["maxLevel"] = 75,
+			},
+			["Cooking"] = {
+				["isSecondary"] = true,
+				["level"] = 1,
+				["maxLevel"] = 75,
+			},
+			["First Aid"] = {
+				["isSecondary"] = true,
+				["level"] = 1,
+				["maxLevel"] = 75,
+			},
+			["Alchemy"] = {
+				["isSecondary"] = false,
+				["level"] = 1,
+				["maxLevel"] = 75,
+			},
+		},
+		["Taunkah"] = {
+			["Jewelcrafting"] = {
+				["isSecondary"] = false,
+				["level"] = 525,
+				["maxLevel"] = 800,
+			},
+			["Cooking"] = {
+				["isSecondary"] = true,
+				["level"] = 1,
+				["maxLevel"] = 75,
+			},
+			["First Aid"] = {
+				["isSecondary"] = true,
+				["level"] = 521,
+				["maxLevel"] = 600,
+			},
+			["Alchemy"] = {
+				["prompted"] = true,
+				["link"] = "|cffffd000|Htrade:Player-1190-07578C7A:2259:171|h[Alchemy]|h|r",
+				["isSecondary"] = false,
+				["level"] = 528,
+				["maxLevel"] = 800,
+			},
+		},
+		["Bahlar"] = {
+			["Herbalism"] = {
+				["isSecondary"] = false,
+				["level"] = 75,
+				["maxLevel"] = 75,
+			},
+			["Tailoring"] = {
+				["maxLevel"] = 75,
+				["link"] = "|cffffd000|Htrade:Player-1190-092C8FE0:3908:197|h[Tailoring]|h|r",
+				["isSecondary"] = false,
+				["level"] = 1,
+				["prompted"] = true,
+			},
+		},
 		["Holyshnizzle"] = {
 			["Alchemy"] = {
 				["prompted"] = true,
@@ -7573,66 +7633,6 @@ TradeSkillMaster_CraftingDB = {
 				["maxLevel"] = 800,
 			},
 		},
-		["Taunkah"] = {
-			["Jewelcrafting"] = {
-				["isSecondary"] = false,
-				["level"] = 525,
-				["maxLevel"] = 800,
-			},
-			["Alchemy"] = {
-				["prompted"] = true,
-				["link"] = "|cffffd000|Htrade:Player-1190-07578C7A:2259:171|h[Alchemy]|h|r",
-				["isSecondary"] = false,
-				["level"] = 528,
-				["maxLevel"] = 800,
-			},
-			["First Aid"] = {
-				["isSecondary"] = true,
-				["level"] = 521,
-				["maxLevel"] = 600,
-			},
-			["Cooking"] = {
-				["isSecondary"] = true,
-				["level"] = 1,
-				["maxLevel"] = 75,
-			},
-		},
-		["Bahlar"] = {
-			["Herbalism"] = {
-				["isSecondary"] = false,
-				["level"] = 75,
-				["maxLevel"] = 75,
-			},
-			["Tailoring"] = {
-				["maxLevel"] = 75,
-				["link"] = "|cffffd000|Htrade:Player-1190-092C8FE0:3908:197|h[Tailoring]|h|r",
-				["isSecondary"] = false,
-				["level"] = 1,
-				["prompted"] = true,
-			},
-		},
-		["Nilrum"] = {
-			["Jewelcrafting"] = {
-				["isSecondary"] = false,
-				["level"] = 1,
-				["maxLevel"] = 75,
-			},
-			["Alchemy"] = {
-				["isSecondary"] = false,
-				["level"] = 1,
-				["maxLevel"] = 75,
-			},
-			["First Aid"] = {
-				["isSecondary"] = true,
-				["level"] = 1,
-				["maxLevel"] = 75,
-			},
-			["Cooking"] = {
-				["isSecondary"] = true,
-				["level"] = 1,
-				["maxLevel"] = 75,
-			},
-		},
 	},
 	["g@ @ignoreCharacters"] = {
 	},
@@ -7641,19 +7641,67 @@ TradeSkillMaster_CraftingDB = {
 	["f@Alliance - Doomhammer@evenStacks"] = false,
 	["f@Alliance - Doomhammer@buyAH"] = false,
 	["f@Alliance - Doomhammer@ignoreAlts"] = false,
-	["f@Alliance - Doomhammer@queueStatus"] = {
-		["collapsed"] = {
-			["Alchemy"] = false,
-		},
+	["g@ @ignoreGuilds"] = {
 	},
 	["_currentProfile"] = {
 		["Nilrum - Doomhammer"] = "Default",
-		["Holyshnizzle - Doomhammer"] = "Default",
-		["Bahlar - Doomhammer"] = "Default",
 		["Taunkah - Doomhammer"] = "Default",
+		["Bahlar - Doomhammer"] = "Default",
+		["Holyshnizzle - Doomhammer"] = "Default",
 	},
-	["_version"] = 7,
+	["f@Alliance - Doomhammer@inkTrade"] = false,
 	["g@ @ignoreCDCraftCost"] = true,
+	["g@ @profitPercent"] = 0,
+	["f@Alliance - Doomhammer@disableCheckBox"] = false,
+	["g@ @helpPlatesShown"] = {
+		["gatherSelection"] = true,
+		["gatheringFrame"] = true,
+		["groups"] = true,
+		["profession"] = true,
+	},
+	["g@ @priceColumn"] = 1,
+	["f@Alliance - Doomhammer@ignoreIntermediate"] = false,
+	["g@ @defaultCraftPriceMethod"] = "first(dbminbuyout, dbmarket)",
+	["g@ @defaultMatCostMethod"] = "min(dbmarket, crafting, vendorbuy, convert(dbmarket))",
+	["g@ @questSmartCrafting"] = true,
+	["g@ @queueSort"] = 1,
+	["f@Alliance - Doomhammer@professionScanCache"] = {
+		["HolyshnizzleAlchemy"] = {
+			["hash"] = 10027416,
+			["scanTime"] = 1477381020,
+		},
+		["BahlarTailoring"] = {
+			["hash"] = 11450423,
+			["scanTime"] = 1477207281,
+		},
+		["TaunkahAlchemy"] = {
+			["hash"] = 11710890,
+			["scanTime"] = 1476584650,
+		},
+		["HolyshnizzleEnchanting"] = {
+			["hash"] = 16527017,
+			["scanTime"] = 1477272431,
+		},
+	},
+	["f@Alliance - Doomhammer@gathering"] = {
+		["availableMats"] = {
+		},
+		["shortItems"] = {
+		},
+		["selectedSources"] = {
+		},
+		["sessionOptions"] = {
+		},
+		["destroyingMats"] = {
+		},
+		["selectedSourceStatus"] = {
+		},
+		["neededMats"] = {
+		},
+		["gatheredMats"] = false,
+		["extraMats"] = {
+		},
+	},
 	["_scopeKeys"] = {
 		["char"] = {
 			"Holyshnizzle - Doomhammer", -- [1]
@@ -7661,68 +7709,20 @@ TradeSkillMaster_CraftingDB = {
 			"Bahlar - Doomhammer", -- [3]
 			"Taunkah - Doomhammer", -- [4]
 		},
-		["factionrealm"] = {
-			"Alliance - Doomhammer", -- [1]
+		["realm"] = {
+			"Doomhammer", -- [1]
 		},
 		["profile"] = {
 			"Default", -- [1]
 		},
-		["realm"] = {
-			"Doomhammer", -- [1]
+		["factionrealm"] = {
+			"Alliance - Doomhammer", -- [1]
 		},
 	},
-	["f@Alliance - Doomhammer@disableCheckBox"] = false,
-	["f@Alliance - Doomhammer@gathering"] = {
-		["availableMats"] = {
+	["_version"] = 7,
+	["f@Alliance - Doomhammer@queueStatus"] = {
+		["collapsed"] = {
+			["Alchemy"] = false,
 		},
-		["shortItems"] = {
-		},
-		["extraMats"] = {
-		},
-		["gatheredMats"] = false,
-		["destroyingMats"] = {
-		},
-		["neededMats"] = {
-		},
-		["selectedSourceStatus"] = {
-		},
-		["sessionOptions"] = {
-		},
-		["selectedSources"] = {
-		},
-	},
-	["g@ @priceColumn"] = 1,
-	["f@Alliance - Doomhammer@ignoreIntermediate"] = false,
-	["g@ @questSmartCrafting"] = true,
-	["g@ @defaultMatCostMethod"] = "min(dbmarket, crafting, vendorbuy, convert(dbmarket))",
-	["g@ @queueSort"] = 1,
-	["g@ @defaultCraftPriceMethod"] = "first(dbminbuyout, dbmarket)",
-	["f@Alliance - Doomhammer@professionScanCache"] = {
-		["HolyshnizzleEnchanting"] = {
-			["hash"] = 16527017,
-			["scanTime"] = 1477272431,
-		},
-		["HolyshnizzleAlchemy"] = {
-			["hash"] = 10027416,
-			["scanTime"] = 1477381020,
-		},
-		["TaunkahAlchemy"] = {
-			["hash"] = 11710890,
-			["scanTime"] = 1476584650,
-		},
-		["BahlarTailoring"] = {
-			["hash"] = 11450423,
-			["scanTime"] = 1477207281,
-		},
-	},
-	["g@ @helpPlatesShown"] = {
-		["gatherSelection"] = true,
-		["gatheringFrame"] = true,
-		["groups"] = true,
-		["profession"] = true,
-	},
-	["g@ @profitPercent"] = 0,
-	["f@Alliance - Doomhammer@inkTrade"] = false,
-	["g@ @ignoreGuilds"] = {
 	},
 }
