@@ -1,4 +1,17 @@
 ------------------------------------------------------------------------
+r789 | chaoslux | 2016-10-26 22:10:59 +0000 (Wed, 26 Oct 2016) | 2 lines
+Changed paths:
+   A /trunk/addons/recount.lua
+
+- Recount support has been re-added, it seems to have been accidentally deleted a few revisions ago. 
+- Re-added Demonhunter support that i forgot to add back after Recount updated.
+------------------------------------------------------------------------
+r788 | chaoslux | 2016-10-26 05:11:54 +0000 (Wed, 26 Oct 2016) | 1 line
+Changed paths:
+   M /trunk/modules/tooltip.lua
+
+- Tooltip: World Quests tooltips should now be correctly skinned.
+------------------------------------------------------------------------
 r787 | chaoslux | 2016-10-25 23:28:46 +0000 (Tue, 25 Oct 2016) | 1 line
 Changed paths:
    M /trunk/modules/bars.lua

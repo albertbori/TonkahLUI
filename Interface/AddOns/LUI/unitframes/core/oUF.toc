@@ -11,7 +11,7 @@
 ## X-Curse-Project-Name: LUI Core
 ## X-Curse-Project-ID: lui
 ## X-Curse-Repository-ID: wow/lui/mainline
-## X-Curse-Packaged-Version: r787
+## X-Curse-Packaged-Version: r789
 ## X-Curse-Project-Name: LUI Core
 ## X-Curse-Project-ID: lui
 ## X-Curse-Repository-ID: wow/lui/mainline
