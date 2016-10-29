@@ -1,8 +1,12 @@
 .DS_Store
 *.bak
+*.old
+*.wtf
+*.md5
 
 #Individual files
 
+**/WTF/Account/ACCOUNTNAME/macros-cache.txt
 **/WTF/Account/ACCOUNTNAME/SavedVariables/Auctionator.lua
 **/WTF/Account/ACCOUNTNAME/SavedVariables/AskMrRobot.lua
 **/WTF/Account/ACCOUNTNAME/SavedVariables/!BugGrabber.lua
@@ -19,17 +23,7 @@
 **/WTF/Account/ACCOUNTNAME/SavedVariables/WeakAuras.lua
 **/WTF/Account/ACCOUNTNAME/SavedVariables/WeakAurasOptions.lua
 **/WTF/Account/ACCOUNTNAME/SavedVariables/WorldQuestTracker.lua
-**/WTF/Account/ACCOUNTNAME/SERVERNAME/CHARACTERNAME/SavedVariables/Auctionator.lua
-**/WTF/Account/ACCOUNTNAME/SERVERNAME/CHARACTERNAME/SavedVariables/Blizzard_ClientSavedVariables.lua
-**/WTF/Account/ACCOUNTNAME/SERVERNAME/CHARACTERNAME/SavedVariables/Blizzard_RaidUI.lua
-**/WTF/Account/ACCOUNTNAME/SERVERNAME/CHARACTERNAME/SavedVariables/Blizzard_TimeManager.lua
-**/WTF/Account/ACCOUNTNAME/SERVERNAME/CHARACTERNAME/SavedVariables/DBM*
-**/WTF/Account/ACCOUNTNAME/SERVERNAME/CHARACTERNAME/SavedVariables/EquipmentBuddy.lua
-**/WTF/Account/ACCOUNTNAME/SERVERNAME/CHARACTERNAME/SavedVariables/HealBot.lua
-**/WTF/Account/ACCOUNTNAME/SERVERNAME/CHARACTERNAME/SavedVariables/LUI.lua
-**/WTF/Account/ACCOUNTNAME/SERVERNAME/CHARACTERNAME/SavedVariables/Pawn.lua
-**/WTF/Account/ACCOUNTNAME/SERVERNAME/CHARACTERNAME/SavedVariables/Recount.lua
-**/WTF/Account/ACCOUNTNAME/SERVERNAME/CHARACTERNAME/SavedVariables/WorldQuestTracker.lua
+**/WTF/Account/ACCOUNTNAME/Doomhammer/
 
 **/Interface/AddOns/AskMrRobot/
 **/Interface/AddOns/Auctionator/
@@ -45,4 +39,3 @@
 **/Interface/AddOns/TradeSkillMaster*/
 **/Interface/AddOns/WeakAuras*/
 **/Interface/AddOns/WorldQuestTracker/
-

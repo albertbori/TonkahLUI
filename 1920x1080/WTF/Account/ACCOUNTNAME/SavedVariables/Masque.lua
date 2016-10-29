@@ -9,6 +9,7 @@ MasqueDB = {
 		["Taunkah - Doomhammer"] = "Default",
 		["Nilrum - Doomhammer"] = "Default",
 		["Bahlar - Doomhammer"] = "Default",
+		["Tareva - Doomhammer"] = "Default",
 		["Marmit - Doomhammer"] = "Default",
 	},
 	["profiles"] = {

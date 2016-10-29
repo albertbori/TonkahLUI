@@ -349,38 +349,38 @@ ChatterDB = {
 			["realm"] = {
 				["Doomhammer"] = {
 					["history"] = {
-						"/lui", -- [1]
-						"/bartender", -- [2]
+						"/sj", -- [1]
+						"/pawn", -- [2]
 						"/bartender", -- [3]
-						"/bartender", -- [4]
+						"/healbot", -- [4]
 						"/healbot", -- [5]
 						"/focus", -- [6]
 						"/healbot", -- [7]
-						"/healbot hide", -- [8]
-						"/healbot t", -- [9]
-						"/healbot t", -- [10]
-						"/bartender", -- [11]
-						"/gsse", -- [12]
-						"/s wanna group?", -- [13]
-						"/focus", -- [14]
-						"/pawn", -- [15]
-						"/pawn", -- [16]
-						"/sj", -- [17]
-						"/pawn", -- [18]
-						"/bartender", -- [19]
-						"/healbot", -- [20]
-						"/healbot", -- [21]
-						"/focus", -- [22]
-						"/healbot", -- [23]
-						"/healbot", -- [24]
-						"/focus", -- [25]
-						"/healbot", -- [26]
-						"/healbot", -- [27]
-						"/healbot", -- [28]
-						"/lui", -- [29]
-						"/clearfocus", -- [30]
-						"/healbot", -- [31]
-						"/sj", -- [32]
+						"/healbot", -- [8]
+						"/focus", -- [9]
+						"/healbot", -- [10]
+						"/healbot", -- [11]
+						"/healbot", -- [12]
+						"/lui", -- [13]
+						"/clearfocus", -- [14]
+						"/healbot", -- [15]
+						"/sj", -- [16]
+						"/omen config", -- [17]
+						"/bartender", -- [18]
+						"/lui", -- [19]
+						"/recount", -- [20]
+						"/lui", -- [21]
+						"/omen", -- [22]
+						"/omen test", -- [23]
+						"/omen config", -- [24]
+						"/lui", -- [25]
+						" Omen is super disobedient", -- [26]
+						" It's positioning mechanisms change between characters by a few pixels.", -- [27]
+						" Just enough to make me upset.", -- [28]
+						" I have a workaround, but my OCD is unhappy.", -- [29]
+						" brb again", -- [30]
+						"/gsse", -- [31]
+						"/gsse", -- [32]
 					},
 				},
 			},
@@ -404,10 +404,11 @@ ChatterDB = {
 		["Holyshnizzle - Doomhammer"] = "Tonkah LUI",
 		["Alfalpha - Doomhammer"] = "Default",
 		["Taunkah - Doomhammer"] = "Tonkah LUI",
-		["Nilrum - Doomhammer"] = "Default",
-		["Bahlar - Doomhammer"] = "Tonkah LUI",
 		["Bartholamue - Doomhammer"] = "Default",
 		["Marmit - Doomhammer"] = "Default",
+		["Tareva - Doomhammer"] = "Tonkah LUI",
+		["Bahlar - Doomhammer"] = "Tonkah LUI",
+		["Nilrum - Doomhammer"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
