@@ -3,6 +3,9 @@
 
 #Individual files
 
+**/WTF/Account/ACCOUNTNAME/SavedVariables/Auctionator.lua
+**/WTF/Account/ACCOUNTNAME/SavedVariables/AskMrRobot.lua
+**/WTF/Account/ACCOUNTNAME/SavedVariables/!BugGrabber.lua
 **/WTF/Account/ACCOUNTNAME/SavedVariables/BadBoy.lua
 **/WTF/Account/ACCOUNTNAME/SavedVariables/BugSack.lua
 **/WTF/Account/ACCOUNTNAME/SavedVariables/Blizzard_CombatLog.lua
@@ -42,8 +45,4 @@
 **/Interface/AddOns/TradeSkillMaster*/
 **/Interface/AddOns/WeakAuras*/
 **/Interface/AddOns/WorldQuestTracker/
-
-
-
-
 
