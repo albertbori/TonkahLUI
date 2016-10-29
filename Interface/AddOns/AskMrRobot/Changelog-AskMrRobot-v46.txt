@@ -1,8 +1,0 @@
-2016-10-25  yellowfive  <yellowfive>
-
-[ec6f0938932f] [v46]
-* .hgtags:
-
-Removed tag v46
-
-

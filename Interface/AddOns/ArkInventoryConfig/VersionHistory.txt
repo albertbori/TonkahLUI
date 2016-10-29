@@ -1,5 +1,0 @@
-*1.00.01 (25-JUN-2015)*
- * changed - toc updated to 60200
-
-*1.00.00 (05-JUN-2014)*
- * moved out of main mod

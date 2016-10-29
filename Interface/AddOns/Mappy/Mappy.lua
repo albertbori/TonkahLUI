@@ -1330,8 +1330,7 @@ end
 
 function Mappy:UpdateCoords()
 	local	vX, vY = GetPlayerMapPosition("player")
-	
-	if vX == 0 and vY == 0 then
+	if not vX or not vY or (vX == 0 and vY == 0) then
 		self.CoordString:SetText("")
 	else
 		self.CoordString:SetText(string.format("%.1f, %.1f", vX * 100, vY * 100))

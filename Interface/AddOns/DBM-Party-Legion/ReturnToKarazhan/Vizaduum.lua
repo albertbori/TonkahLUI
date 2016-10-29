@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(1838, "DBM-Party-Legion", 11, 860)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 15402 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 15410 $"):sub(12, -3))
 mod:SetCreatureID(114790)
 mod:SetEncounterID(2017)
 mod:SetZone()
@@ -13,21 +13,22 @@ mod:RegisterCombat("combat")
 
 mod:RegisterEventsInCombat(
 	"SPELL_CAST_START 229151 229083",
-	"SPELL_CAST_SUCCESS 229610 229242 229284",
+	"SPELL_CAST_SUCCESS 229610",
 	"SPELL_AURA_APPLIED 229159 229241",
 	"SPELL_AURA_REMOVED 229159",
 --	"SPELL_PERIODIC_DAMAGE",
 --	"SPELL_PERIODIC_MISSED",
-	"UNIT_AURA player"
+	"UNIT_SPELLCAST_SUCCEEDED boss1"
 )
 
 --TODO: Burning Blast INterrupt helper. Figure out CD, then what to do with it
---TODO: Phases
---TODO: Figure out what to do with soul harvest
 --TODO: figure out what to do with Felguard Sentry (115730)
 --ALL
 local warnChaoticShadows			= mod:NewTargetAnnounce(229159, 3)
-local warnDisintegrate				= mod:NewSpellAnnounce(229159, 4)--Switch to special warning if target scanning works
+local warnFelBeam					= mod:NewTargetAnnounce(229242, 4)
+local warnDisintegrate				= mod:NewSpellAnnounce(229151, 4)--Switch to special warning if target scanning works
+local warnPhase2					= mod:NewPhaseAnnounce(2, 2)
+local warnPhase3					= mod:NewPhaseAnnounce(3, 2)
 
 --ALL
 local specWarnChaoticShadows		= mod:NewSpecialWarningYou(229159, nil, nil, nil, 1, 2)
@@ -37,12 +38,11 @@ local specWarnFelBeam				= mod:NewSpecialWarningRun(229242, nil, nil, nil, 1, 2)
 local yellFelBeam					= mod:NewYell(229242)
 
 --ALL
-local timerChaoticShadowsCD			= mod:NewAITimer(40, 229159, nil, nil, nil, 3)
-local timerDisintegrateCD			= mod:NewAITimer(40, 229151, nil, nil, nil, 3)
---local timerBurningBlastCD			= mod:NewAITimer(40, 229151, nil, nil, nil, 4, nil, DBM_CORE_INTERRUPT_ICON)
+local timerChaoticShadowsCD			= mod:NewCDTimer(30, 229159, nil, nil, nil, 3)
+local timerDisintegrateCD			= mod:NewCDTimer(10.8, 229151, nil, nil, nil, 3)
 --Phase 1
-local timerFelBeamCD				= mod:NewAITimer(40, 229242, 219084, nil, nil, 3)
-local timerBombardmentCD			= mod:NewAITimer(40, 229284, 229287, nil, nil, 3)
+local timerFelBeamCD				= mod:NewCDTimer(40, 229242, 219084, nil, nil, 3)
+local timerBombardmentCD			= mod:NewCDTimer(25, 229284, 229287, nil, nil, 3)
 
 --local berserkTimer					= mod:NewBerserkTimer(300)
 
@@ -70,10 +70,11 @@ function mod:OnCombatStart(delay)
 	laserWarned = false
 	table.wipe(chaoticShadowsTargets)
 	self.vb.phase = 1
-	timerFelBeamCD:Start(1-delay)
-	timerDisintegrateCD:Start(1-delay)
-	timerChaoticShadowsCD:Start(1-delay)
-	timerBombardmentCD:Start(1-delay)
+	--These timers seem to vary about 1-2 sec
+	timerFelBeamCD:Start(5.2-delay)
+	timerDisintegrateCD:Start(10.8-delay)
+	timerChaoticShadowsCD:Start(15.5-delay)
+	timerBombardmentCD:Start(25.5-delay)
 end
 
 function mod:OnCombatEnd()
@@ -87,8 +88,8 @@ function mod:SPELL_CAST_START(args)
 	if spellId == 229151 then
 		warnDisintegrate:Show()
 		timerDisintegrateCD:Show()
-	elseif spellId == 229083 then
---		timerBurningBlastCD:Start()
+	elseif spellId == 229083 then--Burning Blast
+		
 	end
 end
 
@@ -99,26 +100,22 @@ function mod:SPELL_CAST_SUCCESS(args)
 		--Cancel stuff
 		timerDisintegrateCD:Stop()
 		timerChaoticShadowsCD:Stop()
-		--timerBurningBlastCD:Stop()
 		timerBombardmentCD:Stop()
 		if self.vb.phase == 2 then
+			warnPhase2:Show()
 			timerFelBeamCD:Stop()
-			timerDisintegrateCD:Start(2)
-			timerChaoticShadowsCD:Start(2)
---			timerBurningBlastCD:Start(2)
-			timerBombardmentCD:Start(2)
+			--Variable based on how long it takesto engage boss
+			--timerDisintegrateCD:Start(15)--Cast when boss engaged
+			timerBombardmentCD:Start(41)
+			timerChaoticShadowsCD:Start(45)
 		elseif self.vb.phase == 3 then
-			timerDisintegrateCD:Start(3)
-			timerChaoticShadowsCD:Start(3)
---			timerBurningBlastCD:Start(3)
+			warnPhase3:Show()
+			--Variable based on how long it takesto engage boss
+			timerChaoticShadowsCD:Start(41)
 			if self.Options.RangeFrame then
 				DBM.RangeCheck:Show(6)
 			end
 		end
-	elseif spellId == 229242 then
-		timerFelBeamCD:Start()
-	elseif spellId == 229284 then
-		timerBombardmentCD:Start()
 	elseif spellId == 230084 then--Stabilize Rift
 		DBM:Debug("THE RIFT")
 	end
@@ -147,8 +144,15 @@ function mod:SPELL_AURA_APPLIED(args)
 		if self.Options.SetIconOnShadows then
 			self:SetIcon(name, count)
 		end
-	elseif spellId == 229241 then--Odds of this being in combat log are next to none, but worth a try
-		DBM:Debug("Holy shit, something useful in combat log, say it isn't so!")
+	elseif spellId == 229241 then
+		timerFelBeamCD:Start()
+		if args:IsPlayer() then
+			specWarnFelBeam:Show()
+			voiceFelBeam:Play("justrun")
+			voiceFelBeam:Schedule(1, "keepmove")
+		else
+			warnFelBeam:Show(args.destName)
+		end
 	end
 end
 
@@ -157,22 +161,6 @@ function mod:SPELL_AURA_REMOVED(args)
 	if spellId == 229159 then
 		if self.Options.SetIconOnShadows then
 			self:SetIcon(args.destName, 0)
-		end
-	end
-end
-
-do
-	local debuffName = GetSpellInfo(229241)
-	function mod:UNIT_AURA(uId)
-		local hasDebuff = UnitDebuff("player", debuffName)
-		if hasDebuff and not laserWarned then
-			specWarnFelBeam:Show()
-			voiceFelBeam:Play("justrun")
-			voiceFelBeam:Schedule(1, "keepmove")
-			yellFelBeam:Yell()
-			laserWarned = true
-		elseif not hasDebuff and laserWarned then
-			laserWarned = false
 		end
 	end
 end
@@ -192,11 +180,12 @@ function mod:UNIT_DIED(args)
 
 	end
 end
+--]]
 
 function mod:UNIT_SPELLCAST_SUCCEEDED(uId, _, _, spellGUID)
 	local spellId = tonumber(select(5, strsplit("-", spellGUID)), 10)
-	if spellId == 206341 then
-	
+	if spellId == 229284 then--Bombardment (more reliable than auras, which can be fickle and apply/remove multiple times
+		timerBombardmentCD:Start()
 	end
 end
---]]
+
