@@ -3,45 +3,45 @@
 
 #Individual files
 
-WTF/Account/ACCOUNTNAME/SavedVariables/BadBoy.lua
-WTF/Account/ACCOUNTNAME/SavedVariables/BugSack.lua
-WTF/Account/ACCOUNTNAME/SavedVariables/Blizzard_CombatLog.lua
-WTF/Account/ACCOUNTNAME/SavedVariables/Coordinates.lua
-WTF/Account/ACCOUNTNAME/SavedVariables/GS-Core.lua
-WTF/Account/ACCOUNTNAME/SavedVariables/Pawn.lua
-WTF/Account/ACCOUNTNAME/SavedVariables/Postal.lua
-WTF/Account/ACCOUNTNAME/SavedVariables/TomTom.lua
-WTF/Account/ACCOUNTNAME/SavedVariables/TradeSkillMaster*
-WTF/Account/ACCOUNTNAME/SavedVariables/SellJunk.lua
-WTF/Account/ACCOUNTNAME/SavedVariables/WeakAuras.lua
-WTF/Account/ACCOUNTNAME/SavedVariables/WeakAurasOptions.lua
-WTF/Account/ACCOUNTNAME/SavedVariables/WorldQuestTracker.lua
-WTF/Account/ACCOUNTNAME/SERVERNAME/CHARACTERNAME/SavedVariables/Auctionator.lua
-WTF/Account/ACCOUNTNAME/SERVERNAME/CHARACTERNAME/SavedVariables/Blizzard_ClientSavedVariables.lua
-WTF/Account/ACCOUNTNAME/SERVERNAME/CHARACTERNAME/SavedVariables/Blizzard_RaidUI.lua
-WTF/Account/ACCOUNTNAME/SERVERNAME/CHARACTERNAME/SavedVariables/Blizzard_TimeManager.lua
-WTF/Account/ACCOUNTNAME/SERVERNAME/CHARACTERNAME/SavedVariables/DBM*
-WTF/Account/ACCOUNTNAME/SERVERNAME/CHARACTERNAME/SavedVariables/EquipmentBuddy.lua
-WTF/Account/ACCOUNTNAME/SERVERNAME/CHARACTERNAME/SavedVariables/HealBot.lua
-WTF/Account/ACCOUNTNAME/SERVERNAME/CHARACTERNAME/SavedVariables/LUI.lua
-WTF/Account/ACCOUNTNAME/SERVERNAME/CHARACTERNAME/SavedVariables/Pawn.lua
-WTF/Account/ACCOUNTNAME/SERVERNAME/CHARACTERNAME/SavedVariables/Recount.lua
-WTF/Account/ACCOUNTNAME/SERVERNAME/CHARACTERNAME/SavedVariables/WorldQuestTracker.lua
+**/WTF/Account/ACCOUNTNAME/SavedVariables/BadBoy.lua
+**/WTF/Account/ACCOUNTNAME/SavedVariables/BugSack.lua
+**/WTF/Account/ACCOUNTNAME/SavedVariables/Blizzard_CombatLog.lua
+**/WTF/Account/ACCOUNTNAME/SavedVariables/Coordinates.lua
+**/WTF/Account/ACCOUNTNAME/SavedVariables/GS-Core.lua
+**/WTF/Account/ACCOUNTNAME/SavedVariables/Pawn.lua
+**/WTF/Account/ACCOUNTNAME/SavedVariables/Postal.lua
+**/WTF/Account/ACCOUNTNAME/SavedVariables/TomTom.lua
+**/WTF/Account/ACCOUNTNAME/SavedVariables/TradeSkillMaster*
+**/WTF/Account/ACCOUNTNAME/SavedVariables/SellJunk.lua
+**/WTF/Account/ACCOUNTNAME/SavedVariables/WeakAuras.lua
+**/WTF/Account/ACCOUNTNAME/SavedVariables/WeakAurasOptions.lua
+**/WTF/Account/ACCOUNTNAME/SavedVariables/WorldQuestTracker.lua
+**/WTF/Account/ACCOUNTNAME/SERVERNAME/CHARACTERNAME/SavedVariables/Auctionator.lua
+**/WTF/Account/ACCOUNTNAME/SERVERNAME/CHARACTERNAME/SavedVariables/Blizzard_ClientSavedVariables.lua
+**/WTF/Account/ACCOUNTNAME/SERVERNAME/CHARACTERNAME/SavedVariables/Blizzard_RaidUI.lua
+**/WTF/Account/ACCOUNTNAME/SERVERNAME/CHARACTERNAME/SavedVariables/Blizzard_TimeManager.lua
+**/WTF/Account/ACCOUNTNAME/SERVERNAME/CHARACTERNAME/SavedVariables/DBM*
+**/WTF/Account/ACCOUNTNAME/SERVERNAME/CHARACTERNAME/SavedVariables/EquipmentBuddy.lua
+**/WTF/Account/ACCOUNTNAME/SERVERNAME/CHARACTERNAME/SavedVariables/HealBot.lua
+**/WTF/Account/ACCOUNTNAME/SERVERNAME/CHARACTERNAME/SavedVariables/LUI.lua
+**/WTF/Account/ACCOUNTNAME/SERVERNAME/CHARACTERNAME/SavedVariables/Pawn.lua
+**/WTF/Account/ACCOUNTNAME/SERVERNAME/CHARACTERNAME/SavedVariables/Recount.lua
+**/WTF/Account/ACCOUNTNAME/SERVERNAME/CHARACTERNAME/SavedVariables/WorldQuestTracker.lua
 
-Interface/AddOns/AskMrRobot/
-Interface/AddOns/Auctionator/
-Interface/AddOns/BadBoy/
-Interface/AddOns/EquipmentBuddy/
-Interface/AddOns/GS-Core/
-Interface/AddOns/GS-DraikMacros/
-Interface/AddOns/GS-SequenceEditor/
-Interface/AddOns/Pawn/
-Interface/AddOns/Postal/
-Interface/AddOns/SellJunk/
-Interface/AddOns/TomTom/
-Interface/AddOns/TradeSkillMaster*/
-Interface/AddOns/WeakAuras*/
-Interface/AddOns/WorldQuestTracker/
+**/Interface/AddOns/AskMrRobot/
+**/Interface/AddOns/Auctionator/
+**/Interface/AddOns/BadBoy/
+**/Interface/AddOns/EquipmentBuddy/
+**/Interface/AddOns/GS-Core/
+**/Interface/AddOns/GS-DraikMacros/
+**/Interface/AddOns/GS-SequenceEditor/
+**/Interface/AddOns/Pawn/
+**/Interface/AddOns/Postal/
+**/Interface/AddOns/SellJunk/
+**/Interface/AddOns/TomTom/
+**/Interface/AddOns/TradeSkillMaster*/
+**/Interface/AddOns/WeakAuras*/
+**/Interface/AddOns/WorldQuestTracker/
 
 
 
