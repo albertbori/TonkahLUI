@@ -13,8 +13,8 @@ Due to some addons not fully supporting profiles, some tweaking may be necessary
 
 1. Download source
 1. Locate the appropriate screen resolution that matches your WoW screen.
-1. Copy the `(Resolution)\Interface` folder to your `C:\World of Warcraft\` folder (Mac: `/Applications/World of Warcraft/`)
-1. Copy the `(Resolution)\WTF` folder to your `C:\World of Warcraft\` folder (Mac: `/Applications/World of Warcraft/`) and rename the `SERVERNAME`, `ACCOUNTNAME` and `CHARACTERNAME` folders accordingly.
+1. Copy the contents of the `[Screen-Resolution]\Interface` folder into your `C:\World of Warcraft\Interface` folder (Mac: `/Applications/World of Warcraft/Interface`)
+1. Copy the contents of the `[Screen-Resolution]\WTF` folder into your `C:\World of Warcraft\WTF` folder (Mac: `/Applications/World of Warcraft/WTF`) and rename the `SERVERNAME`, `ACCOUNTNAME` and `CHARACTERNAME` folders accordingly.
 1. Launch WoW and configure each addon to use (or copy from) the `Taunkah LUI` profile
 1. Tweak further as you see fit
 
