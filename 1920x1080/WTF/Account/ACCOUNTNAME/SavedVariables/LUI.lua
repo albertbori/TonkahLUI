@@ -54,10 +54,10 @@ LUIDB = {
 				["Tonkah LUI"] = {
 					["Bags"] = {
 						["Scale"] = 1.25,
-						["CoordX"] = 1366.90014648438,
+						["CoordX"] = 1398.82836914063,
 						["Cols"] = 9,
 						["Spacing"] = 1,
-						["CoordY"] = 251.506271362305,
+						["CoordY"] = 273.610137939453,
 						["BagFrame"] = false,
 					},
 					["Colors"] = {
@@ -130,11 +130,11 @@ LUIDB = {
 					["Gold"] = {
 						["Alliance"] = {
 							["Marmit"] = 27461031,
-							["Nilrum"] = 413324333,
-							["Taunkah"] = 118814685,
+							["Nilrum"] = 436976680,
+							["Taunkah"] = 153795756,
 							["Bahlar"] = 12994519,
 							["Tareva"] = 89063716,
-							["Holyshnizzle"] = 639196434,
+							["Holyshnizzle"] = 561861743,
 						},
 					},
 				},
@@ -2577,6 +2577,12 @@ LUIDB = {
 					},
 				},
 				["Tonkah LUI"] = {
+					["SidebarRight2"] = {
+						["Anchor"] = "Dominos Bar2",
+					},
+					["SidebarLeft2"] = {
+						["Anchor"] = "Dominos Bar1",
+					},
 					["SidebarLeft1"] = {
 						["Enable"] = true,
 						["OpenInstant"] = true,
@@ -2584,6 +2590,7 @@ LUIDB = {
 					["SidebarRight1"] = {
 						["IsOpen"] = true,
 						["Enable"] = false,
+						["Anchor"] = "Dominos Bar1",
 					},
 				},
 				["Marmit - Doomhammer"] = {

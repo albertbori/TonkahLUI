@@ -1,0 +1,3 @@
+
+SV_GarrisonMissionManager = {
+}

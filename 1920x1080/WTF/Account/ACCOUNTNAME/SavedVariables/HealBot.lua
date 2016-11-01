@@ -5467,7 +5467,7 @@ Healbot_Config_Skins = {
 		},
 		["Standard"] = {
 			{
-				["Y"] = 26.51,
+				["Y"] = 26.42,
 				["GROW"] = 2,
 				["BARS"] = 1,
 				["FRAME"] = 5,
@@ -6529,7 +6529,7 @@ Healbot_Config_Skins = {
 			{
 				["BACKR"] = 0.102,
 				["BORDERR"] = 0.2,
-				["LOCKED"] = false,
+				["LOCKED"] = true,
 				["BORDERB"] = 0.2,
 				["BORDERA"] = 0,
 				["BORDERG"] = 0.2,
@@ -7525,7 +7525,7 @@ HealBot_Globals = {
 		["HEALERS"] = 3,
 		["TANKS"] = 2,
 		["TARGETS"] = 5,
-		["PROFILE"] = 2,
+		["PROFILE"] = 3,
 	},
 	["RaidHideMethod"] = 0,
 	["PowerChargeTxtSizeMod"] = 7,
@@ -7592,8 +7592,9 @@ HealBot_MapScale = {
 		["Darkheart Thicket"] = 0.039596735128129,
 		["Dalaran"] = 0.16021300866905,
 		["Eye of Azshara"] = 0.023547897625992,
-		["Highmountain"] = 0.11956144422407,
 		["The Arcatraz"] = 0.0617927531575772,
+		["Highmountain"] = 0.11956144422407,
+		["The Eye of Azshara"] = 0.014470561915311,
 		["The Shattered Halls"] = 0.0421225894008982,
 		["Thunder Totem"] = 0.1353124989035,
 		["Val'sharah"] = 0.0081394341851804,
