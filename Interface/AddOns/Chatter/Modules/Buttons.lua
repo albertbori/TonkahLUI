@@ -40,20 +40,6 @@ local defaults = { profile = {} }
 local clickFunc = function(self) self:GetParent():ScrollToBottom() end
 function mod:OnInitialize()
 	self.db = Chatter.db:RegisterNamespace("Buttons", defaults)
-	--for i = 1, NUM_CHAT_WINDOWS do
-	--	local f = _G["ChatFrame" .. i]
-		--local button = CreateFrame("Button", nil, f)
-		--button:SetNormalTexture([[Interface\ChatFrame\UI-ChatIcon-ScrollEnd-Up]])
-		--button:SetPushedTexture([[Interface\ChatFrame\UI-ChatIcon-ScrollEnd-Down]])
-		--button:SetDisabledTexture([[Interface\ChatFrame\UI-ChatIcon-ScrollEnd-Disabled]])
-		--button:SetHighlightTexture([[Interface\Buttons\UI-Common-MouseHilight]])
-		--button:SetWidth(20)
-		--button:SetHeight(20)
-		--button:SetPoint("TOPRIGHT", f, "TOPRIGHT", 0, 0)
-		--button:SetScript("OnClick", clickFunc)
-		--button:Hide()
-		--f.downButton = button
-	--end
 	self:SecureHook("FCF_RestorePositionAndDimensions")
 end
 
@@ -96,6 +82,8 @@ end
 function mod:OnEnable()
 	ChatFrameMenuButton:Hide()
 	ChatFrameMenuButton:SetScript("OnShow", hide)
+	QuickJoinToastButton:Hide()
+	QuickJoinToastButton:SetScript("OnShow", hide)
 	for i = 1, NUM_CHAT_WINDOWS do
 		local f = _G["ChatFrame" .. i]
 		self:Decorate(f)
@@ -123,8 +111,8 @@ end
 function mod:OnDisable()
 	ChatFrameMenuButton:Show()
 	ChatFrameMenuButton:SetScript("OnShow", nil)
-	FriendsMicroButton:Show()
-	FriendsMicroButton:SetScript("OnShow", nil)
+	QuickJoinToastButton:Show()
+	QuickJoinToastButton:SetScript("OnShow", nil)
 	self:DisableBottomButton()
 	for i = 1, NUM_CHAT_WINDOWS do
 		local f = _G["ChatFrame" .. i]
