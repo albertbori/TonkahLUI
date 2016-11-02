@@ -349,38 +349,38 @@ ChatterDB = {
 			["realm"] = {
 				["Doomhammer"] = {
 					["history"] = {
-						" nice", -- [1]
-						"/gsse", -- [2]
-						" No, I hadn't started it till tonight. We were supposed to do it Tuesday evening, and then again on thursday, but both nights something came up that prevented us.", -- [3]
-						" tuesday night, scarab's computer died.", -- [4]
-						" woot!", -- [5]
-						"/nod", -- [6]
-						"/pawn", -- [7]
-						"/gsse", -- [8]
-						"/gsse", -- [9]
-						"/p repairing", -- [10]
-						"/p I'm broken, BRB, for repair", -- [11]
-						"/p wewt", -- [12]
-						"/cw Malcoren-Doomhammer When she shot 3 times in a row, behind me", -- [13]
-						"/cw Malcoren-Doomhammer That's when I got confused.", -- [14]
-						"/cw Malcoren-Doomhammer both", -- [15]
-						"/cw Malcoren-Doomhammer I don't think my zoom out goes far enough to see both in front and behind me", -- [16]
-						"/cw Malcoren-Doomhammer on that fight", -- [17]
-						"/cw Malcoren-Doomhammer I'll read more about it later", -- [18]
-						"/reload", -- [19]
-						"/focus", -- [20]
-						"/healbot", -- [21]
-						"/p  |cffa335ee|Hitem:138220::::::::110:258::5:3:1805:1502:3337:::|h[Mindrend Band]|h|r", -- [22]
-						"/cw Kagoth  |cffa335ee|Hitem:138220::::::::110:258::5:3:1805:1502:3337:::|h[Mindrend Band]|h|r", -- [23]
-						"/g  |cffa335ee|Hitem:138220::::::::110:258::5:3:1805:1502:3337:::|h[Mindrend Band]|h|r :D", -- [24]
-						"/g grats", -- [25]
-						"/pawn", -- [26]
-						"/pawn", -- [27]
-						"/pawn", -- [28]
-						"/pawn", -- [29]
-						"/bartender", -- [30]
-						"/healbot", -- [31]
-						"/focus", -- [32]
+						"/pawn", -- [1]
+						"/point", -- [2]
+						"/s yea", -- [3]
+						" WAT", -- [4]
+						" ZOMG", -- [5]
+						" THAT'S SO AWESOME", -- [6]
+						" that is just absolutely great news.", -- [7]
+						" Now jessi can play that druid she wanted to", -- [8]
+						" haha, cool", -- [9]
+						" that's new...", -- [10]
+						" I don't remember that.", -- [11]
+						" that's totes cool", -- [12]
+						" that's awesome", -- [13]
+						" wait here.", -- [14]
+						" gonna show her", -- [15]
+						" poop", -- [16]
+						" she went to sleep already", -- [17]
+						" screenshotted", -- [18]
+						" :(", -- [19]
+						" no more headless horseman", -- [20]
+						" no more broom", -- [21]
+						"/bartender", -- [22]
+						"/lui", -- [23]
+						"/bartender", -- [24]
+						"/pawn", -- [25]
+						"/gsse", -- [26]
+						"/gsse", -- [27]
+						"/gsse", -- [28]
+						"/reload", -- [29]
+						"/gsse", -- [30]
+						"/gsse", -- [31]
+						"/macro", -- [32]
 					},
 				},
 			},
@@ -401,14 +401,15 @@ ChatterDB = {
 		},
 	},
 	["profileKeys"] = {
+		["Marmit - Doomhammer"] = "Default",
+		["Bartholamue - Doomhammer"] = "Default",
 		["Holyshnizzle - Doomhammer"] = "Tonkah LUI",
 		["Alfalpha - Doomhammer"] = "Default",
 		["Taunkah - Doomhammer"] = "Tonkah LUI",
-		["Bartholamue - Doomhammer"] = "Default",
-		["Marmit - Doomhammer"] = "Default",
+		["Nilrum - Doomhammer"] = "Default",
 		["Tareva - Doomhammer"] = "Tonkah LUI",
 		["Bahlar - Doomhammer"] = "Tonkah LUI",
-		["Nilrum - Doomhammer"] = "Default",
+		["Dfbdeffbw - Doomhammer"] = "Tonkah LUI",
 	},
 	["profiles"] = {
 		["Default"] = {

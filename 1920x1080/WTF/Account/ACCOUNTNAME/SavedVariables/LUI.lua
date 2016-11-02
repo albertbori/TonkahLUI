@@ -9,6 +9,12 @@ LUIDB = {
 						["Width"] = 810,
 					},
 				},
+				["Marmit - Doomhammer"] = {
+					["General"] = {
+						["Y"] = 0,
+						["Width"] = 810,
+					},
+				},
 				["Taunkah - Doomhammer"] = {
 					["General"] = {
 						["Y"] = 0,
@@ -16,12 +22,6 @@ LUIDB = {
 					},
 				},
 				["Tonkah LUI"] = {
-					["General"] = {
-						["Y"] = 0,
-						["Width"] = 810,
-					},
-				},
-				["Marmit - Doomhammer"] = {
 					["General"] = {
 						["Y"] = 0,
 						["Width"] = 810,
@@ -51,15 +51,36 @@ LUIDB = {
 						["CoordY"] = 881.597473144531,
 					},
 				},
-				["Tonkah LUI"] = {
+				["Marmit - Doomhammer"] = {
 					["Bags"] = {
-						["Scale"] = 1.25,
-						["CoordX"] = 1398.82836914063,
-						["Cols"] = 9,
-						["Spacing"] = 1,
-						["CoordY"] = 273.610137939453,
-						["BagFrame"] = false,
+						["CoordX"] = 1726.86755371094,
+						["CoordY"] = 185.734436035156,
 					},
+					["Bank"] = {
+						["CoordY"] = 818.1513671875,
+						["CoordX"] = 1470.52331542969,
+					},
+					["Reagents"] = {
+						["CoordY"] = 881.597473144531,
+						["CoordX"] = 942.485961914063,
+					},
+				},
+				["Taunkah - Doomhammer"] = {
+					["Bags"] = {
+						["CoordX"] = 928.670776367188,
+						["CoordY"] = 442.589691162109,
+					},
+					["Reagents"] = {
+						["CoordY"] = 881.597473144531,
+						["CoordX"] = 942.485961914063,
+					},
+					["Bank"] = {
+						["CoordY"] = 818.1513671875,
+						["CoordX"] = 1470.52331542969,
+					},
+				},
+				["Tonkah LUI"] = {
+					["hideSort"] = true,
 					["Colors"] = {
 						["Background"] = {
 							["a"] = 1,
@@ -80,7 +101,14 @@ LUIDB = {
 						["BagFrame"] = false,
 						["ShowQuest"] = true,
 					},
-					["hideSort"] = true,
+					["Bags"] = {
+						["Scale"] = 1.25,
+						["CoordX"] = 1366.90002441406,
+						["Cols"] = 9,
+						["Spacing"] = 1,
+						["CoordY"] = 253.106369018555,
+						["BagFrame"] = false,
+					},
 					["Bank"] = {
 						["Scale"] = 1.25,
 						["CoordX"] = 385.999572753906,
@@ -94,34 +122,6 @@ LUIDB = {
 						["ShowQuest"] = true,
 					},
 				},
-				["Taunkah - Doomhammer"] = {
-					["Bags"] = {
-						["CoordX"] = 928.670776367188,
-						["CoordY"] = 442.589691162109,
-					},
-					["Reagents"] = {
-						["CoordY"] = 881.597473144531,
-						["CoordX"] = 942.485961914063,
-					},
-					["Bank"] = {
-						["CoordY"] = 818.1513671875,
-						["CoordX"] = 1470.52331542969,
-					},
-				},
-				["Marmit - Doomhammer"] = {
-					["Bags"] = {
-						["CoordX"] = 1726.86755371094,
-						["CoordY"] = 185.734436035156,
-					},
-					["Bank"] = {
-						["CoordY"] = 818.1513671875,
-						["CoordX"] = 1470.52331542969,
-					},
-					["Reagents"] = {
-						["CoordY"] = 881.597473144531,
-						["CoordX"] = 942.485961914063,
-					},
-				},
 			},
 		},
 		["Infotext"] = {
@@ -129,12 +129,13 @@ LUIDB = {
 				["Doomhammer"] = {
 					["Gold"] = {
 						["Alliance"] = {
-							["Marmit"] = 27461031,
+							["Dfbdeffbw"] = 100000,
+							["Marmit"] = 27417031,
 							["Nilrum"] = 436976680,
-							["Taunkah"] = 153795756,
+							["Taunkah"] = 155716881,
 							["Bahlar"] = 12994519,
-							["Tareva"] = 89063716,
-							["Holyshnizzle"] = 561861743,
+							["Tareva"] = 100604427,
+							["Holyshnizzle"] = 565837501,
 						},
 					},
 				},
@@ -337,6 +338,14 @@ LUIDB = {
 						["ShowInRealPartys"] = true,
 					},
 				},
+				["Dfbdeffbw - Doomhammer"] = {
+					["Player"] = {
+						["Bars"] = {
+							["ClassIcons"] = {
+							},
+						},
+					},
+				},
 				["Tonkah LUI"] = {
 					["Party"] = {
 						["ShowInRealPartys"] = true,
@@ -375,7 +384,7 @@ LUIDB = {
 								},
 							},
 						},
-						["Y"] = -250.000015258789,
+						["Y"] = -240,
 						["X"] = -435.000030517578,
 					},
 					["Target"] = {
@@ -444,14 +453,22 @@ LUIDB = {
 							},
 						},
 					},
-					["ToT"] = {
-						["Y"] = -250.000015258789,
-						["X"] = 435.000030517578,
+					["Raid"] = {
+						["Enable"] = false,
+					},
+					["PetTarget"] = {
+						["Y"] = -235.000076293945,
 					},
 					["Pet"] = {
 						["Fader"] = {
-							["UseGlobalSettings"] = false,
 							["Enable"] = true,
+							["UseGlobalSettings"] = false,
+						},
+						["Aura"] = {
+							["Buffs"] = {
+								["Enable"] = true,
+								["PlayerOnly"] = true,
+							},
 						},
 						["Bars"] = {
 							["Health"] = {
@@ -505,8 +522,8 @@ LUIDB = {
 							},
 						},
 						["Fader"] = {
-							["UseGlobalSettings"] = false,
 							["Enable"] = true,
+							["UseGlobalSettings"] = false,
 						},
 						["Aura"] = {
 							["Debuffs"] = {
@@ -566,8 +583,8 @@ LUIDB = {
 						},
 					},
 					["Boss"] = {
-						["Y"] = -95.0000076293945,
-						["X"] = -230.000015258789,
+						["Y"] = -106.256530761719,
+						["X"] = -263.769927978516,
 						["Bars"] = {
 							["Health"] = {
 								["IndividualColor"] = {
@@ -583,8 +600,9 @@ LUIDB = {
 						["X"] = 123.101303100586,
 						["Point"] = "LEFT",
 					},
-					["Raid"] = {
-						["Enable"] = false,
+					["ToT"] = {
+						["Y"] = -240,
+						["X"] = 435.000030517578,
 					},
 					["XP_Rep"] = {
 						["General"] = {
@@ -595,31 +613,23 @@ LUIDB = {
 				["Marmit - Doomhammer"] = {
 					["Pet"] = {
 						["Fader"] = {
-							["Enable"] = true,
 							["UseGlobalSettings"] = false,
+							["Enable"] = true,
 						},
-					},
-					["Boss"] = {
-						["Y"] = -95.0000076293945,
-						["X"] = -230.000015258789,
 						["Bars"] = {
 							["Health"] = {
 								["IndividualColor"] = {
-									["b"] = 0,
-									["g"] = 0.549019607843137,
 									["r"] = 0,
+									["g"] = 0.549019607843137,
+									["b"] = 0,
 								},
 							},
 						},
 					},
-					["ToT"] = {
-						["Y"] = -250.000015258789,
-						["X"] = 435.000030517578,
-					},
 					["Player"] = {
 						["Fader"] = {
-							["Enable"] = true,
 							["UseGlobalSettings"] = false,
+							["Enable"] = true,
 						},
 						["Castbar"] = {
 							["General"] = {
@@ -702,6 +712,17 @@ LUIDB = {
 								["Enable"] = false,
 							},
 						},
+					},
+					["Arena"] = {
+						["Y"] = 242.242736816406,
+						["X"] = 149.707824707031,
+						["Point"] = "LEFT",
+					},
+					["Party"] = {
+						["Portrait"] = {
+							["Enable"] = true,
+						},
+						["ShowInRealPartys"] = true,
 					},
 					["Colors"] = {
 						["Misc"] = {
@@ -775,19 +796,25 @@ LUIDB = {
 							},
 						},
 					},
-					["Arena"] = {
-						["Y"] = 242.242736816406,
-						["X"] = 149.707824707031,
-						["Point"] = "LEFT",
-					},
 					["Raid"] = {
 						["Enable"] = false,
 					},
-					["Party"] = {
-						["Portrait"] = {
-							["Enable"] = true,
+					["ToT"] = {
+						["Y"] = -250.000015258789,
+						["X"] = 435.000030517578,
+					},
+					["Boss"] = {
+						["Y"] = -95.0000076293945,
+						["X"] = -230.000015258789,
+						["Bars"] = {
+							["Health"] = {
+								["IndividualColor"] = {
+									["b"] = 0,
+									["g"] = 0.549019607843137,
+									["r"] = 0,
+								},
+							},
 						},
-						["ShowInRealPartys"] = true,
 					},
 				},
 				["Nilrum - Doomhammer"] = {
@@ -1007,17 +1034,17 @@ LUIDB = {
 						["Point"] = "BOTTOMLEFT",
 					},
 				},
+				["Marmit - Doomhammer"] = {
+					["General"] = {
+						["Point"] = "BOTTOMLEFT",
+					},
+				},
 				["Taunkah - Doomhammer"] = {
 					["General"] = {
 						["Point"] = "BOTTOMLEFT",
 					},
 				},
 				["Tonkah LUI"] = {
-					["General"] = {
-						["Point"] = "BOTTOMLEFT",
-					},
-				},
-				["Marmit - Doomhammer"] = {
 					["General"] = {
 						["Point"] = "BOTTOMLEFT",
 					},
@@ -1055,6 +1082,10 @@ LUIDB = {
 			},
 			["profiles"] = {
 				["Holyshnizzle - Doomhammer"] = {
+					["modules"] = {
+					},
+				},
+				["Dfbdeffbw - Doomhammer"] = {
 					["modules"] = {
 					},
 				},
@@ -1106,6 +1137,14 @@ LUIDB = {
 					},
 					["MicroMenu"] = {
 						["AlwaysShow"] = false,
+					},
+				},
+				["Dfbdeffbw - Doomhammer"] = {
+					["Minimap"] = {
+						["IsShown"] = true,
+					},
+					["MicroMenu"] = {
+						["IsShown"] = true,
 					},
 				},
 				["Tonkah LUI"] = {
@@ -1532,6 +1571,169 @@ LUIDB = {
 						0.9, -- [1]
 						0.9, -- [2]
 						0.9, -- [3]
+						0.4, -- [4]
+					},
+				},
+				["Dfbdeffbw - Doomhammer"] = {
+					["micromenu_btn"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.8, -- [4]
+					},
+					["color_bottom"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.5, -- [4]
+					},
+					["tpsborder"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["tps"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["chat"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["bar"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.7, -- [4]
+					},
+					["micromenu_bg"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.8, -- [4]
+					},
+					["orb_cycle"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["color_top"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.5, -- [4]
+					},
+					["raid"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["theme"] = "Druid",
+					["micromenu_bg2"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.7, -- [4]
+					},
+					["chatborder"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["minimap"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						1, -- [4]
+					},
+					["editbox"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["bar2"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.6, -- [4]
+					},
+					["dpsborder"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["dps"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu_btn_hover"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.8, -- [4]
+					},
+					["orb_hover"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["chat2"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["sidebar"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.5, -- [4]
+					},
+					["raidborder"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+					},
+					["navi"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.6, -- [4]
+					},
+					["chat2border"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["orb"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+					},
+					["navi_hover"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
 						0.4, -- [4]
 					},
 				},
@@ -2526,6 +2728,11 @@ LUIDB = {
 						["Size"] = 65,
 					},
 				},
+				["Marmit - Doomhammer"] = {
+					["Debuffs"] = {
+						["Size"] = 65,
+					},
+				},
 				["Taunkah - Doomhammer"] = {
 					["Debuffs"] = {
 						["Size"] = 65,
@@ -2540,15 +2747,11 @@ LUIDB = {
 						["Size"] = 65,
 					},
 					["Buffs"] = {
+						["Consolidate"] = false,
 						["ReverseSort"] = true,
 						["Count"] = {
 							["Font"] = "Prototype",
 						},
-					},
-				},
-				["Marmit - Doomhammer"] = {
-					["Debuffs"] = {
-						["Size"] = 65,
 					},
 				},
 			},
@@ -2566,6 +2769,17 @@ LUIDB = {
 						["OpenInstant"] = true,
 					},
 				},
+				["Marmit - Doomhammer"] = {
+					["SidebarLeft1"] = {
+						["Enable"] = true,
+						["IsOpen"] = true,
+						["OpenInstant"] = true,
+					},
+					["SidebarRight1"] = {
+						["Enable"] = false,
+						["IsOpen"] = true,
+					},
+				},
 				["Taunkah - Doomhammer"] = {
 					["SidebarLeft1"] = {
 						["Enable"] = true,
@@ -2578,29 +2792,32 @@ LUIDB = {
 				},
 				["Tonkah LUI"] = {
 					["SidebarRight2"] = {
-						["Anchor"] = "Dominos Bar2",
+						["Offset"] = 155,
+						["AutoPosEnable"] = false,
+						["OpenInstant"] = true,
+						["Anchor"] = "Dominos Bar1",
 					},
 					["SidebarLeft2"] = {
-						["Anchor"] = "Dominos Bar1",
+						["Offset"] = 155,
+						["IsOpen"] = true,
+						["Enable"] = true,
+						["AutoPosEnable"] = false,
+						["OpenInstant"] = true,
+						["Anchor"] = "BT4Bar10",
 					},
 					["SidebarLeft1"] = {
+						["Offset"] = -100,
+						["IsOpen"] = true,
 						["Enable"] = true,
+						["AutoPosEnable"] = false,
 						["OpenInstant"] = true,
 					},
 					["SidebarRight1"] = {
-						["IsOpen"] = true,
+						["Offset"] = -100,
 						["Enable"] = false,
-						["Anchor"] = "Dominos Bar1",
-					},
-				},
-				["Marmit - Doomhammer"] = {
-					["SidebarLeft1"] = {
-						["Enable"] = true,
+						["AutoPosEnable"] = false,
 						["OpenInstant"] = true,
-					},
-					["SidebarRight1"] = {
-						["Enable"] = false,
-						["IsOpen"] = true,
+						["Anchor"] = "BT4Bar8",
 					},
 				},
 			},
@@ -2635,11 +2852,12 @@ LUIDB = {
 	},
 	["profileKeys"] = {
 		["Holyshnizzle - Doomhammer"] = "Tonkah LUI",
+		["Dfbdeffbw - Doomhammer"] = "Tonkah LUI",
 		["Taunkah - Doomhammer"] = "Tonkah LUI",
 		["Nilrum - Doomhammer"] = "Tonkah LUI",
 		["Bahlar - Doomhammer"] = "Tonkah LUI",
 		["Tareva - Doomhammer"] = "Tonkah LUI",
-		["Marmit - Doomhammer"] = "Marmit - Doomhammer",
+		["Marmit - Doomhammer"] = "Tonkah LUI",
 	},
 	["global"] = {
 		["luiconfig"] = {
@@ -2650,6 +2868,25 @@ LUIDB = {
 					["recount"] = 3300,
 					["RaidMenu"] = true,
 					["vengeance"] = 2,
+					["interrupt"] = 2,
+					["panels"] = 1.2,
+					["bartender"] = 3300,
+					["threatbar"] = 2,
+					["mirrorbar"] = 1,
+					["lui"] = 3403,
+					["Micromenu"] = 1.5,
+					["swing"] = 2,
+					["bars"] = 2.4,
+					["omen"] = 3300,
+					["Auras"] = 2,
+				},
+			},
+			["Dfbdeffbw - Doomhammer"] = {
+				["IsConfigured"] = true,
+				["Versions"] = {
+					["raidmenu"] = 2.4,
+					["recount"] = 3300,
+					["RaidMenu"] = true,
 					["interrupt"] = 2,
 					["panels"] = 1.2,
 					["bartender"] = 3300,
@@ -2761,76 +2998,6 @@ LUIDB = {
 		},
 	},
 	["profiles"] = {
-		["Holyshnizzle - Doomhammer"] = {
-			["modules"] = {
-				["Merchant"] = false,
-			},
-			["Tooltip"] = {
-				["Y"] = -500,
-				["X"] = 0,
-			},
-			["General"] = {
-				["DamageFont"] = "Prototype",
-			},
-			["Minimap"] = {
-				["General"] = {
-					["Size"] = 1.25,
-				},
-				["Frames"] = {
-					["ObjectiveTrackerFrameX"] = "-10",
-					["ObjectiveTrackerFrameY"] = "-295",
-				},
-			},
-		},
-		["Default"] = {
-		},
-		["Taunkah - Doomhammer"] = {
-			["modules"] = {
-				["Merchant"] = false,
-			},
-			["Tooltip"] = {
-				["Y"] = -232,
-				["X"] = 0,
-			},
-			["General"] = {
-				["DamageFont"] = "Prototype",
-			},
-			["Minimap"] = {
-				["General"] = {
-					["Size"] = 1.25,
-				},
-				["Frames"] = {
-					["ObjectiveTrackerFrameY"] = "-295",
-					["ObjectiveTrackerFrameX"] = "-10",
-				},
-			},
-		},
-		["Tareva - Doomhammer"] = {
-			["modules"] = {
-				["Merchant"] = false,
-			},
-		},
-		["Marmit - Doomhammer"] = {
-			["modules"] = {
-				["Merchant"] = false,
-			},
-			["Tooltip"] = {
-				["Y"] = -232,
-				["X"] = 0,
-			},
-			["General"] = {
-				["DamageFont"] = "Prototype",
-			},
-			["Minimap"] = {
-				["General"] = {
-					["Size"] = 1.25,
-				},
-				["Frames"] = {
-					["ObjectiveTrackerFrameY"] = "-295",
-					["ObjectiveTrackerFrameX"] = "-10",
-				},
-			},
-		},
 		["Tonkah LUI"] = {
 			["modules"] = {
 				["Merchant"] = false,
@@ -2858,14 +3025,89 @@ LUIDB = {
 				},
 			},
 		},
+		["Marmit - Doomhammer"] = {
+			["modules"] = {
+				["Merchant"] = false,
+			},
+			["Tooltip"] = {
+				["Y"] = -232,
+				["X"] = 0,
+			},
+			["General"] = {
+				["DamageFont"] = "Prototype",
+			},
+			["Minimap"] = {
+				["General"] = {
+					["Size"] = 1.25,
+				},
+				["Frames"] = {
+					["ObjectiveTrackerFrameY"] = "-295",
+					["ObjectiveTrackerFrameX"] = "-10",
+				},
+			},
+		},
+		["Tareva - Doomhammer"] = {
+			["modules"] = {
+				["Merchant"] = false,
+			},
+		},
+		["Holyshnizzle - Doomhammer"] = {
+			["modules"] = {
+				["Merchant"] = false,
+			},
+			["Tooltip"] = {
+				["Y"] = -500,
+				["X"] = 0,
+			},
+			["General"] = {
+				["DamageFont"] = "Prototype",
+			},
+			["Minimap"] = {
+				["General"] = {
+					["Size"] = 1.25,
+				},
+				["Frames"] = {
+					["ObjectiveTrackerFrameX"] = "-10",
+					["ObjectiveTrackerFrameY"] = "-295",
+				},
+			},
+		},
+		["Dfbdeffbw - Doomhammer"] = {
+			["modules"] = {
+				["Merchant"] = false,
+			},
+		},
+		["Default"] = {
+		},
+		["Nilrum - Doomhammer"] = {
+			["modules"] = {
+				["Merchant"] = false,
+			},
+		},
 		["Bahlar - Doomhammer"] = {
 			["modules"] = {
 				["Merchant"] = false,
 			},
 		},
-		["Nilrum - Doomhammer"] = {
+		["Taunkah - Doomhammer"] = {
 			["modules"] = {
 				["Merchant"] = false,
+			},
+			["Tooltip"] = {
+				["Y"] = -232,
+				["X"] = 0,
+			},
+			["General"] = {
+				["DamageFont"] = "Prototype",
+			},
+			["Minimap"] = {
+				["General"] = {
+					["Size"] = 1.25,
+				},
+				["Frames"] = {
+					["ObjectiveTrackerFrameY"] = "-295",
+					["ObjectiveTrackerFrameX"] = "-10",
+				},
 			},
 		},
 	},
