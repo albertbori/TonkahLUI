@@ -1,0 +1,115 @@
+------------------------------------------------------------------------
+r793 | chaoslux | 2016-10-28 09:39:42 +0000 (Fri, 28 Oct 2016) | 1 line
+Changed paths:
+   A /tags/v3.9.11-793 (from /trunk:792)
+
+Tagging as v3.9.11-793
+------------------------------------------------------------------------
+r792 | chaoslux | 2016-10-28 09:35:29 +0000 (Fri, 28 Oct 2016) | 1 line
+Changed paths:
+   M /trunk/LUI.toc
+
+- Version Bump to 3.9.11
+------------------------------------------------------------------------
+r791 | chaoslux | 2016-10-28 09:33:10 +0000 (Fri, 28 Oct 2016) | 2 lines
+Changed paths:
+   M /trunk/modules/raidmenu.lua
+
+- RaidMenu: Added X Offset for anyone that wants to move the frame horizontally.
+- RaidMenu: The button no longer works while in combat (it just threw an error anyway)
+------------------------------------------------------------------------
+r790 | chaoslux | 2016-10-27 06:18:27 +0000 (Thu, 27 Oct 2016) | 1 line
+Changed paths:
+   M /trunk/modules/tooltip.lua
+
+- Tooltip: Fixed another GetAttribute issue. 
+------------------------------------------------------------------------
+r789 | chaoslux | 2016-10-26 22:10:59 +0000 (Wed, 26 Oct 2016) | 2 lines
+Changed paths:
+   A /trunk/addons/recount.lua
+
+- Recount support has been re-added, it seems to have been accidentally deleted a few revisions ago. 
+- Re-added Demonhunter support that i forgot to add back after Recount updated.
+------------------------------------------------------------------------
+r788 | chaoslux | 2016-10-26 05:11:54 +0000 (Wed, 26 Oct 2016) | 1 line
+Changed paths:
+   M /trunk/modules/tooltip.lua
+
+- Tooltip: World Quests tooltips should now be correctly skinned.
+------------------------------------------------------------------------
+r787 | chaoslux | 2016-10-25 23:28:46 +0000 (Tue, 25 Oct 2016) | 1 line
+Changed paths:
+   M /trunk/modules/bars.lua
+
+- Bars: Revert a change that wasn't supposed to be committed.
+------------------------------------------------------------------------
+r786 | chaoslux | 2016-10-25 23:21:04 +0000 (Tue, 25 Oct 2016) | 1 line
+Changed paths:
+   M /trunk/modules/minimap.lua
+
+- Minimap: Do not display any coordinates if GetPlayerMapPosition returns nil. 
+------------------------------------------------------------------------
+r785 | chaoslux | 2016-10-25 23:06:01 +0000 (Tue, 25 Oct 2016) | 7 lines
+Changed paths:
+   M /trunk/LUI.toc
+   D /trunk/addons/recount.lua
+   M /trunk/modules/bars.lua
+   M /trunk/modules/chat/buttons.lua
+   M /trunk/modules/chat/chat.lua
+   M /trunk/modules/tooltip.lua
+   M /trunk/unitframes/core/blizzard.lua
+   M /trunk/unitframes/core/colors.lua
+   M /trunk/unitframes/core/elements/altpowerbar.lua
+   M /trunk/unitframes/core/elements/assistant.lua
+   M /trunk/unitframes/core/elements/aura.lua
+   M /trunk/unitframes/core/elements/castbar.lua
+   M /trunk/unitframes/core/elements/classicons.lua
+   M /trunk/unitframes/core/elements/combat.lua
+   M /trunk/unitframes/core/elements/cpoints.lua
+   M /trunk/unitframes/core/elements/druidmana.lua
+   M /trunk/unitframes/core/elements/healprediction.lua
+   M /trunk/unitframes/core/elements/health.lua
+   M /trunk/unitframes/core/elements/leader.lua
+   M /trunk/unitframes/core/elements/lfdrole.lua
+   M /trunk/unitframes/core/elements/masterlooter.lua
+   M /trunk/unitframes/core/elements/picon.lua
+   M /trunk/unitframes/core/elements/portraits.lua
+   M /trunk/unitframes/core/elements/power.lua
+   M /trunk/unitframes/core/elements/powerprediction.lua
+   M /trunk/unitframes/core/elements/pvp.lua
+   M /trunk/unitframes/core/elements/qicon.lua
+   M /trunk/unitframes/core/elements/raidrole.lua
+   M /trunk/unitframes/core/elements/range.lua
+   M /trunk/unitframes/core/elements/readycheck.lua
+   M /trunk/unitframes/core/elements/resting.lua
+   M /trunk/unitframes/core/elements/resurrect.lua
+   M /trunk/unitframes/core/elements/ricons.lua
+   M /trunk/unitframes/core/elements/runebar.lua
+   M /trunk/unitframes/core/elements/stagger.lua
+   M /trunk/unitframes/core/elements/tags.lua
+   M /trunk/unitframes/core/elements/threat.lua
+   M /trunk/unitframes/core/elements/totems.lua
+   M /trunk/unitframes/core/events.lua
+   M /trunk/unitframes/core/factory.lua
+   M /trunk/unitframes/core/finalize.lua
+   M /trunk/unitframes/core/init.lua
+   M /trunk/unitframes/core/oUF.toc
+   M /trunk/unitframes/core/oUF.xml
+   M /trunk/unitframes/core/ouf.lua
+   M /trunk/unitframes/core/private.lua
+   M /trunk/unitframes/core/units.lua
+
+- TOC Bump for 7.1
+- Chat: Changed all instances of "GetCurrentScroll" to the new "GetScrollOffset" function.
+- Chat: FriendsMicroButton has been renamed QuickJoinToastButton.
+- Chat: As of 7.1, OnHyperlinkLeave event does not return the link anymore, so get rid of the conditional.
+- Tooltip: Added WorldMapCompareTooltip to the list of skinned tooltips (old change that was accidentally never committed)
+- Tooltip: Get rid of GetMouseFocus:GetAttribute as it seems to no longer exists.
+- Unitframes: SVN detects change, but I dont see any? 
+------------------------------------------------------------------------
+r784 | chaoslux | 2016-09-22 22:59:32 +0000 (Thu, 22 Sep 2016) | 1 line
+Changed paths:
+   M /trunk/modules/merchant.lua
+
+Merchant: Fixed an issue when items do not have a quality. It will not sell those items.
+------------------------------------------------------------------------
