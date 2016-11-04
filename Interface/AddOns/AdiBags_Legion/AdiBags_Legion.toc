@@ -1,0 +1,10 @@
+## Interface: 70000
+
+## Title: AdiBags - Filter for Legion
+## Notes: Adds Legion filters to AdiBags.
+## Author: Dia
+## Version: v1.6
+
+## Dependencies: AdiBags
+
+AdiBags_Legion.lua
