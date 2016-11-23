@@ -65,6 +65,18 @@
 	<Binding name="RECOUNT_RUNICPOWER" category="ADDONS">
 		Recount:SetMainWindowModeByLabel("Runic Power Gained")
 	</Binding>
+	<Binding name="RECOUNT_LUNAR_POWER" category="ADDONS">
+		Recount:SetMainWindowModeByLabel("Astral Power Gained")
+	</Binding>
+	<Binding name="RECOUNT_MAELSTROM" category="ADDONS">
+		Recount:SetMainWindowModeByLabel("Maelstorm Gained")
+	</Binding>
+	<Binding name="RECOUNT_FURY" category="ADDONS">
+		Recount:SetMainWindowModeByLabel("Fury Gained")
+	</Binding>
+	<Binding name="RECOUNT_PAIN" category="ADDONS">
+		Recount:SetMainWindowModeByLabel("Pain Gained")
+	</Binding>
 	<Binding name="RECOUNT_REPORT_MAIN" category="ADDONS">
 		Recount:ShowReport("Main",Recount.ReportData)
 	</Binding>

@@ -43,7 +43,7 @@
 --
 
 
-local revision =("$Revision: 15322 $"):sub(12, -3)
+local revision =("$Revision: 15477 $"):sub(12, -3)
 local FrameTitle = "DBM_GUI_Option_"	-- all GUI frames get automatically a name FrameTitle..ID
 
 local PanelPrototype = {}
@@ -3409,7 +3409,7 @@ local function CreateOptionsMenu()
 
 	do
 		local hideBlizzPanel = DBM_GUI_Frame:CreateNewPanel(L.Panel_HideBlizzard, "option")
-		local hideBlizzArea = hideBlizzPanel:CreateArea(L.Area_HideBlizzard, nil, 335, true)
+		local hideBlizzArea = hideBlizzPanel:CreateArea(L.Area_HideBlizzard, nil, 315, true)
 		hideBlizzArea:CreateCheckButton(L.HideBossEmoteFrame, true, nil, "HideBossEmoteFrame")
 		hideBlizzArea:CreateCheckButton(L.HideWatchFrame, true, nil, "HideObjectivesFrame")
 		hideBlizzArea:CreateCheckButton(L.HideGarrisonUpdates, true, nil, "HideGarrisonToasts")
@@ -3429,57 +3429,6 @@ local function CreateOptionsMenu()
 		end)
 		blockMovieDropDown:SetPoint("TOPLEFT", filterYell, "TOPLEFT", 0, -40)
 
-		local talkingHeadOptions = {
-			{	text	= L.SWFNever,	value 	= "Never"},
-			{	text	= L.RaidCombat,	value 	= "BossCombatOnly"},
-			{	text	= L.CombatOnly,	value 	= "CombatOnly"},
-			{	text	= L.Always,		value 	= "Always"},
-		}
-		local talkingHeadDropDown = hideBlizzArea:CreateDropdown(L.DisableTalkingHead, talkingHeadOptions, "DBM", "TalkingHeadFilter", function(value)
-			DBM.Options.TalkingHeadFilter = value
-			local disabled, loaded = DBM:TalkingHeadStatus()
-			if loaded then
-				if value == "Always" and not disabled then
-					TalkingHeadFrame:UnregisterAllEvents()
-					--TalkingHeadFrame_CloseImmediately()
-					DBM:SetTalkingHeadState(true)
-				else
-					if value == "Never" and disabled then
-						TalkingHeadFrame:RegisterEvent("TALKINGHEAD_REQUESTED")
-						TalkingHeadFrame:RegisterEvent("TALKINGHEAD_CLOSE")
-						TalkingHeadFrame:RegisterEvent("SOUNDKIT_FINISHED")
-						TalkingHeadFrame:RegisterEvent("LOADING_SCREEN_ENABLED")
-						DBM:SetTalkingHeadState(false)
-					elseif value == "CombatOnly" then
-						if InCombatLockdown() and not disabled then
-							TalkingHeadFrame:UnregisterAllEvents()
-							--TalkingHeadFrame_CloseImmediately()
-							DBM:SetTalkingHeadState(true)
-						else
-							TalkingHeadFrame:RegisterEvent("TALKINGHEAD_REQUESTED")
-							TalkingHeadFrame:RegisterEvent("TALKINGHEAD_CLOSE")
-							TalkingHeadFrame:RegisterEvent("SOUNDKIT_FINISHED")
-							TalkingHeadFrame:RegisterEvent("LOADING_SCREEN_ENABLED")
-							DBM:SetTalkingHeadState(false)
-						end
-					elseif value == "BossCombatOnly" then
-						if IsEncounterInProgress() and not disabled then
-							TalkingHeadFrame:UnregisterAllEvents()
-							--TalkingHeadFrame_CloseImmediately()
-							DBM:SetTalkingHeadState(true)
-						else
-							TalkingHeadFrame:RegisterEvent("TALKINGHEAD_REQUESTED")
-							TalkingHeadFrame:RegisterEvent("TALKINGHEAD_CLOSE")
-							TalkingHeadFrame:RegisterEvent("SOUNDKIT_FINISHED")
-							TalkingHeadFrame:RegisterEvent("LOADING_SCREEN_ENABLED")
-							DBM:SetTalkingHeadState(false)
-						end
-					end
-				end
-			end
-		end)
-		talkingHeadDropDown:SetPoint("TOPLEFT", blockMovieDropDown, "TOPLEFT", 0, -45)
-
 		--hideBlizzArea:AutoSetDimension()
 		hideBlizzPanel:SetMyOwnHeight()
 	end
@@ -3498,12 +3447,13 @@ local function CreateOptionsMenu()
 		local AFKHealthWarning		= soundAlertsArea:CreateCheckButton(L.AFKHealthWarning, true, nil, "AFKHealthWarning")
 		local AutoReplySound		= soundAlertsArea:CreateCheckButton(L.AutoReplySound, true, nil, "AutoReplySound")
 
-		local generaltimeroptions	= extraFeaturesPanel:CreateArea(L.TimerGeneral, nil, 125, true)
+		local generaltimeroptions	= extraFeaturesPanel:CreateArea(L.TimerGeneral, nil, 145, true)
 
-		local SKT_Enabled	= generaltimeroptions:CreateCheckButton(L.SKT_Enabled, true, nil, "AlwaysShowSpeedKillTimer")
-		local CRT_Enabled	= generaltimeroptions:CreateCheckButton(L.CRT_Enabled, true, nil, "CRT_Enabled")
-		local RespawnTimer	= generaltimeroptions:CreateCheckButton(L.ShowRespawn, true, nil, "ShowRespawn")
-		local QueueTimer	= generaltimeroptions:CreateCheckButton(L.ShowQueuePop, true, nil, "ShowQueuePop")
+		local SKT_Enabled		= generaltimeroptions:CreateCheckButton(L.SKT_Enabled, true, nil, "AlwaysShowSpeedKillTimer")
+		local CRT_Enabled		= generaltimeroptions:CreateCheckButton(L.CRT_Enabled, true, nil, "CRT_Enabled")
+		local RespawnTimer		= generaltimeroptions:CreateCheckButton(L.ShowRespawn, true, nil, "ShowRespawn")
+		local QueueTimer		= generaltimeroptions:CreateCheckButton(L.ShowQueuePop, true, nil, "ShowQueuePop")
+		local MythicPlusChests	= generaltimeroptions:CreateCheckButton(L.ShowMythicPlusChests, true, nil, "MythicPlusChestTimer")
 
 		local bossLoggingArea		= extraFeaturesPanel:CreateArea(L.Area_AutoLogging, nil, 100, true)
 		local AutologBosses			= bossLoggingArea:CreateCheckButton(L.AutologBosses, true, nil, "AutologBosses")

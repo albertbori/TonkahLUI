@@ -39,11 +39,6 @@ local UnregisterEvent = event_frame.UnregisterEvent
 -- local prof = time_record.new():ldb_register('GMM - FindBestFollowersForMission')
 -- local timer = prof.timer
 
--- will be "table" in 6.2, number before it
-local currencyMultipliers_type
--- TODO: Fix this, broken for OH
-local class_based_SetClearFollower = GarrisonMissionFrame and GarrisonMissionFrame.AssignFollowerToMission and GarrisonMissionFrame.RemoveFollowerFromMission and true
-
 local top = {{}, {}, {}, {}}
 local top_yield = {{}, {}, {}, {}}
 local top_unavailable = {{}, {}, {}, {}}
@@ -76,6 +71,7 @@ local function FindBestFollowersForMission(mission, followers, mode)
       top.yield = nil
    end
 
+   local mission_frame = _G[GarrisonFollowerOptions[followers.type].missionFrame]
    local type70 = followers.type == LE_FOLLOWER_TYPE_GARRISON_7_0
 
    local slots = mission.numFollowers
@@ -171,6 +167,7 @@ local function FindBestFollowersForMission(mission, followers, mode)
       local follower1_level = follower1.isMaxLevel and follower1.iLevel or follower1.level
       local follower1_busy = follower1.is_busy_for_mission and 1 or 0
       local follower1_is_troop = follower1.isTroop and 1 or 0
+      local follower1_not_maxed = (follower1_is_troop == 0 and follower1_maxed == 0) and 1 or 0
       local prev_follower2_troop_spec
       for i2 = min[2] or (i1 + 1), max[2] do
          local follower2_maxed = 0
@@ -180,6 +177,7 @@ local function FindBestFollowersForMission(mission, followers, mode)
          local follower2_busy = 0
          local follower2_is_troop = 0
          local follower2_troop_spec
+         local follower2_not_maxed = 0
          if follower2 then
             follower2_id = follower2.followerID
             if follower2.levelXP == 0 then follower2_maxed = 1 end
@@ -190,6 +188,7 @@ local function FindBestFollowersForMission(mission, followers, mode)
                -- Only used to remove "duplicate" teams with different instance of same troop class
                follower2_troop_spec = follower2.classSpec * (follower2_busy == 1 and 1 or -1)
             end
+            follower2_not_maxed = (follower2_is_troop == 0 and follower2_maxed == 0) and 1 or 0
          end
          -- Special handling to calculate precisely one team for 1 filled slot in 3 members missions.
          local i3_start = min[3] or (i2 + 1)
@@ -205,6 +204,7 @@ local function FindBestFollowersForMission(mission, followers, mode)
             local follower3_busy = 0
             local follower3_is_troop = 0
             local follower3_troop_spec
+            local follower3_not_maxed = 0
             if follower3 then
                follower3_id = follower3.followerID
                if follower3.levelXP == 0 then follower3_maxed = 1 end
@@ -215,10 +215,12 @@ local function FindBestFollowersForMission(mission, followers, mode)
                   -- Only used to remove "duplicate" teams with different instance of same troop class
                   follower3_troop_spec = follower3.classSpec * (follower3_busy == 1 and 1 or -1)
                end
+               follower3_not_maxed = (follower3_is_troop == 0 and follower3_maxed == 0) and 1 or 0
             end
 
             local followers_maxed = follower1_maxed + follower2_maxed + follower3_maxed
             local followers_troop = follower1_is_troop + follower2_is_troop + follower3_is_troop
+            local followers_not_maxed = follower1_not_maxed + follower2_not_maxed + follower3_not_maxed
 
             -- at least one follower in party is busy (i.e. staus non-empty/non-party) for mission
             local follower_is_busy_for_mission = (follower1_busy + follower2_busy + follower3_busy) > 0
@@ -277,13 +279,7 @@ local function FindBestFollowersForMission(mission, followers, mode)
                end
 
                -- Uh, thanks 6.2, for lots of new calls and tables going directly to garbage right in the middle of most computational heavy loop.
-               -- At least I can eliminate "type" after first check.
-               -- TODO: remove old API support
-               if not currencyMultipliers_type and materialMultiplier then
-                  local detected_type = type(materialMultiplier)
-                  if detected_type == "table" or detected_type == "number" then currencyMultipliers_type = detected_type end
-               end
-               if currencyMultipliers_type == "table" then materialMultiplier = materialMultiplier[material_rewards] or 1 end
+               materialMultiplier = materialMultiplier[material_rewards] or 1
                isEnvMechanicCountered = isEnvMechanicCountered and 1 or 0
                local buffCount = #partyBuffs
 
@@ -489,6 +485,7 @@ local function FindBestFollowersForMission(mission, followers, mode)
                         new.mission_level = mission.level
                         new.followers_troop = followers_troop
                         new.cost = cost
+                        new.followers_not_maxed = followers_not_maxed
                         tinsert(top_list, idx, new)
                         top_list[5] = nil
                         break
@@ -515,6 +512,7 @@ local function FindBestFollowersForMission(mission, followers, mode)
 
    top.material_rewards = material_rewards
    top.gold_rewards = gold_rewards
+
    -- TODO:
    -- If we have material/gold yield list, check it and remove all entries where material_yield is worse than #1 from regular top list.
    -- dump(top[1])
@@ -522,7 +520,7 @@ local function FindBestFollowersForMission(mission, followers, mode)
    if party_followers_count > 0 then
       for party_idx = 1, party_followers_count do
          if preserve_mission_page_followers[party_idx] then
-            GarrisonMissionFrame:AssignFollowerToMission(MissionPageFollowers[party_idx], preserve_mission_page_followers[party_idx])
+            mission_frame:AssignFollowerToMission(MissionPageFollowers[party_idx], preserve_mission_page_followers[party_idx])
          end
       end
    end

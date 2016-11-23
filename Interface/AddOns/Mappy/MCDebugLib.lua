@@ -1,4 +1,4 @@
-﻿local gMCDebugLib_Version = 15
+local gMCDebugLib_Version = 15
 
 if tern == nil then tern = function(b, t, f) if b then return t else return f end end end
 

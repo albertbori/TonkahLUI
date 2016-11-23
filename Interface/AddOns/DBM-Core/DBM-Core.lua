@@ -41,9 +41,9 @@
 --  Globals/Default Options  --
 -------------------------------
 DBM = {
-	Revision = tonumber(("$Revision: 15418 $"):sub(12, -3)),
-	DisplayVersion = "7.1.1", -- the string that is shown as version
-	ReleaseRevision = 15418 -- the revision of the latest stable version that is available
+	Revision = tonumber(("$Revision: 15490 $"):sub(12, -3)),
+	DisplayVersion = "7.1.3", -- the string that is shown as version
+	ReleaseRevision = 15490 -- the revision of the latest stable version that is available
 }
 DBM.HighestRelease = DBM.ReleaseRevision --Updated if newer version is detected, used by update nags to reflect critical fixes user is missing on boss pulls
 
@@ -271,11 +271,11 @@ DBM.DefaultOptions = {
 	CRT_Enabled = false,
 	ShowRespawn = true,
 	ShowQueuePop = true,
+	MythicPlusChestTimer = true,
 	HelpMessageVersion = 3,
 	NewsMessageShown = 4,
 	MoviesSeen = {},
 	MovieFilter = "AfterFirst",
-	TalkingHeadFilter = "Never",
 	LastRevision = 0,
 	FilterSayAndYell = false,
 	DebugMode = false,
@@ -418,10 +418,9 @@ local targetMonitor = nil
 local statusWhisperDisabled = false
 local wowVersionString, _, _, wowTOC = GetBuildInfo()
 local dbmToc = 0
-local isTalkingHeadLoaded = false
-local talkingHeadUnregistered = false
+local UpdateChestTimer
 
-local fakeBWVersion, fakeBWHash = 21, "93b8dd3"
+local fakeBWVersion, fakeBWHash = 24, "55aa1a7"
 local versionQueryString, versionResponseString = "Q^%d^%s", "V^%d^%s"
 
 local enableIcons = true -- set to false when a raid leader or a promoted player has a newer version of DBM
@@ -1117,13 +1116,6 @@ do
 				self.Options.tempBreak2 = nil
 			end
 		end
-		if TalkingHeadFrame and not talkingHeadUnregistered and (self.Options.TalkingHeadFilter == "Always" or self.Options.TalkingHeadFilter == "CombatOnly" and InCombatLockdown() or self.Options.TalkingHeadFilter == "BossCombatOnly" and IsEncounterInProgress()) then
-			TalkingHeadFrame:UnregisterAllEvents()
-			--TalkingHeadFrame_CloseImmediately()--Calling this crashes wow apparently
-			isTalkingHeadLoaded = true--it laoded before DBM, so this secondary check just checks if frame exists and sets loaded = true
-			talkingHeadUnregistered = true
-			self:Debug("TalkingHead has been unregistered", 2)
-		end
 	end
 
 	-- register a callback that will be executed once the addon is fully loaded (ADDON_LOADED fired, saved vars are available)
@@ -1297,17 +1289,6 @@ do
 				healthCombatInitialized = true
 			end)
 			self:Schedule(10, runDelayedFunctions, self)
-		end
-		if modname == "Blizzard_TalkingHeadUI" and not isTalkingHeadLoaded then
-			isTalkingHeadLoaded = true
-			if not isLoaded then return end--DBM isn't loaded yet, options won't exist yet
-			self:Debug("Blizzard_TalkingHeadUI has been loaded", 2)
-			if self.Options.TalkingHeadFilter == "Always" or self.Options.TalkingHeadFilter == "CombatOnly" and InCombatLockdown() or self.Options.TalkingHeadFilter == "BossCombatOnly" and IsEncounterInProgress() then
-				TalkingHeadFrame:UnregisterAllEvents()
-				--TalkingHeadFrame_CloseImmediately()--Calling this crashes wow apparently
-				talkingHeadUnregistered = true
-				self:Debug("TalkingHead has been unregistered", 2)
-			end
 		end
 	end
 end
@@ -3557,14 +3538,6 @@ function DBM:PLAYER_REGEN_ENABLED()
 		guiRequested = false
 		self:LoadGUI()
 	end
-	if self.Options.TalkingHeadFilter == "CombatOnly" and talkingHeadUnregistered then
-		TalkingHeadFrame:RegisterEvent("TALKINGHEAD_REQUESTED")
-		TalkingHeadFrame:RegisterEvent("TALKINGHEAD_CLOSE")
-		TalkingHeadFrame:RegisterEvent("SOUNDKIT_FINISHED")
-		TalkingHeadFrame:RegisterEvent("LOADING_SCREEN_ENABLED")
-		talkingHeadUnregistered = false
-		self:Debug("TalkingHead has been restored")
-	end
 end
 
 function DBM:UPDATE_BATTLEFIELD_STATUS()
@@ -3596,21 +3569,50 @@ function DBM:SCENARIO_CRITERIA_UPDATE()
 	end
 end
 
---REFACTOR IN LEGION
-function DBM:CHALLENGE_MODE_START(mapID)
-	self:Debug("CHALLENGE_MODE_START fired for mapID "..mapID)
-end
+do
+	function UpdateChestTimer(self)
+		local _, elapsedTime = GetWorldElapsedTime(1)--Should always be 1, with only one world state timer active.
+		local _, _, maxTime = C_ChallengeMode.GetMapInfo(LastInstanceMapID);
+		maxTime = maxTime * 0.8--Two chests
+		local remaining = (maxTime or 0) - (elapsedTime or 0)
+		if remaining and remaining > 0 then--Safey check in case it fails
+			self.Bars:CreateBar(remaining, "2 "..CHESTSLOT)
+			self:Schedule(remaining+1, UpdateChestTimer, self)
+		end
+	end
 
-function DBM:CHALLENGE_MODE_RESET()
-	self.Bars:CancelBar(PLAYER_DIFFICULTY6.."+")
-	self:Debug("CHALLENGE_MODE_RESET fired")
-end
+	function DBM:CHALLENGE_MODE_START(mapID)
+		self:Debug("CHALLENGE_MODE_START fired for mapID "..mapID)
+		if not self.Options.MythicPlusChestTimer then return end
+		self:Unschedule(UpdateChestTimer)
+		local _, elapsedTime = GetWorldElapsedTime(1)--Should always be 1, with only one world state timer active.
+		local _, _, maxTime = C_ChallengeMode.GetMapInfo(LastInstanceMapID);
+		maxTime = maxTime * 0.6--Three Chests
+		local remaining = (maxTime or 0) - (elapsedTime or 0)
+		if remaining and remaining > 0 then--Safey check in case it fails
+			self.Bars:CreateBar(remaining, "3 "..CHESTSLOT)
+			self:Schedule(remaining+1, UpdateChestTimer, self)
+		end
+	end
 
-function DBM:CHALLENGE_MODE_COMPLETED()
-	self.Bars:CancelBar(PLAYER_DIFFICULTY6.."+")
-	self:Debug("CHALLENGE_MODE_COMPLETED fired for mapID "..LastInstanceMapID)
+	function DBM:CHALLENGE_MODE_RESET()
+		self:Debug("CHALLENGE_MODE_RESET fired")
+		self.Bars:CancelBar(PLAYER_DIFFICULTY6.."+")
+		if not self.Options.MythicPlusChestTimer then return end
+		self:Unschedule(UpdateChestTimer)
+		self.Bars:CancelBar("3 "..CHESTSLOT)
+		self.Bars:CancelBar("2 "..CHESTSLOT)
+	end
+
+	function DBM:CHALLENGE_MODE_COMPLETED()
+		self:Debug("CHALLENGE_MODE_COMPLETED fired for mapID "..LastInstanceMapID)
+		self.Bars:CancelBar(PLAYER_DIFFICULTY6.."+")
+		if not self.Options.MythicPlusChestTimer then return end
+		self:Unschedule(UpdateChestTimer)
+		self.Bars:CancelBar("3 "..CHESTSLOT)
+		self.Bars:CancelBar("2 "..CHESTSLOT)
+	end
 end
---REFACTOR IN LEGION
 
 --------------------------------
 --  Load Boss Mods on Demand  --
@@ -5109,12 +5111,10 @@ do
 				path = "Interface\\AddOns\\DBM-VP"..voice.."\\checkhp.ogg"
 			end
 			self:PlaySoundFile(path)
-		end
-		if self.Options.TalkingHeadFilter == "CombatOnly" and not talkingHeadUnregistered and isTalkingHeadLoaded then
-			TalkingHeadFrame:UnregisterAllEvents()
-			--TalkingHeadFrame_CloseImmediately()--Calling this crashes wow apparently
-			talkingHeadUnregistered = true
-			self:Debug("TalkingHead has been unregistered", 2)
+			if UnitHealthMax("player") ~= 0 then
+				local health = UnitHealth("player") / UnitHealthMax("player") * 100
+				self:AddMsg(DBM_CORE_AFK_WARNING:format(health))
+			end
 		end
 	end
 
@@ -5711,6 +5711,7 @@ do
 			end
 			if self.Options.AFKHealthWarning and UnitIsUnit(uId, "player") and (health < 85) and not IsEncounterInProgress() and UnitIsAFK("player") and self:AntiSpam(5, "AFK") then--You are afk and losing health, some griever is trying to kill you while you are afk/tabbed out.
 				self:PlaySoundFile("Sound\\Creature\\CThun\\CThunYouWillDIe.ogg")--So fire an alert sound to save yourself from this person's behavior.
+				self:AddMsg(DBM_CORE_AFK_WARNING:format(health))
 			end
 		end
 	end
@@ -5956,11 +5957,11 @@ do
 				self:Unschedule(loopCRTimer)
 				self.BossHealth:Hide()
 				self.Arrow:Hide(true)
-				if self.Options.HideObjectivesFrame and watchFrameRestore and not scenario then
+				if watchFrameRestore then
 					ObjectiveTrackerFrame:Show()
 					watchFrameRestore = false
-					self.Bars:CancelBar(PLAYER_DIFFICULTY6.."+")
 				end
+				self.Bars:CancelBar(PLAYER_DIFFICULTY6.."+")
 				if tooltipsHidden then
 					--Better or cleaner way?
 					tooltipsHidden = false
@@ -6044,7 +6045,7 @@ do
 	local autoTLog = false
 	
 	local function isCurrentContent()
-		if LastInstanceMapID == 1520 or LastInstanceMapID == 1530 or LastInstanceMapID == 1220 then--Legion
+		if LastInstanceMapID == 1520 or LastInstanceMapID == 1530 or LastInstanceMapID == 1220 or LastInstanceMapID == 1648 then--Legion
 			return true
 		end
 		return false
@@ -6198,6 +6199,28 @@ function DBM:UNIT_DIED(args)
 	if self.Options.AFKHealthWarning and GUID == UnitGUID("player") and not IsEncounterInProgress() and UnitIsAFK("player") and self:AntiSpam(5, "AFK") then--You are afk and losing health, some griever is trying to kill you while you are afk/tabbed out.
 		self:FlashClientIcon()
 		self:PlaySoundFile("Sound\\Creature\\CThun\\CThunYouWillDIe.ogg")--So fire an alert sound to save yourself from this person's behavior.
+		self:AddMsg(DBM_CORE_AFK_WARNING:format(0))
+	end
+	--UGLY INEFFICIENT PLACE to have this. TODO see if CHALLENGE_MODE event exists for timer changing to do this more properly
+	if difficultyIndex == 8 and self.Options.MythicPlusChestTimer and bband(args.destFlags, COMBATLOG_OBJECT_TYPE_PLAYER) ~= 0 then
+		self:Unschedule(UpdateChestTimer)
+		self.Bars:CancelBar("3 "..CHESTSLOT)
+		self.Bars:CancelBar("2 "..CHESTSLOT)
+		local _, elapsedTime = GetWorldElapsedTime(1)--Should always be 1, with only one world state timer active.
+		local _, _, maxTime = C_ChallengeMode.GetMapInfo(LastInstanceMapID);
+		local threeChest = maxTime * 0.6
+		local twoChest = maxTime * 0.8
+		local remaining = (threeChest or 0) - (elapsedTime or 0)
+		if remaining and remaining > 0 then--Safey check in case it fails
+			self.Bars:CreateBar(remaining, "3 "..CHESTSLOT)
+			self:Schedule(remaining+1, UpdateChestTimer, self)
+		else
+			remaining = (twoChest or 0) - (elapsedTime or 0)
+			if remaining and remaining > 0 then--Safey check in case it fails
+				self.Bars:CreateBar(remaining, "2 "..CHESTSLOT)
+				self:Schedule(remaining+1, UpdateChestTimer, self)
+			end
+		end
 	end
 end
 DBM.UNIT_DESTROYED = DBM.UNIT_DIED
@@ -6406,12 +6429,12 @@ do
 		if month == 4 and day == 1 then--April 1st
 			self:Schedule(180 + math.random(0, 300) , self.AprilFools, self)
 		end
-		if GetLocale() == "ptBR" or GetLocale() == "frFR" or GetLocale() == "itIT" then
+		if GetLocale() == "ptBR" or GetLocale() == "frFR" or GetLocale() == "itIT" or GetLocale() == "esES" or GetLocale() == "ruRU" then
 			C_TimerAfter(10, function() if self.Options.HelpMessageVersion < 4 then self.Options.HelpMessageVersion = 4 self:AddMsg(DBM_CORE_NEED_LOCALS) end end)
 		end
 		C_TimerAfter(20, function() if not self.Options.ForumsMessageShown then self.Options.ForumsMessageShown = self.ReleaseRevision self:AddMsg(DBM_FORUMS_MESSAGE) end end)
 		C_TimerAfter(30, function() if not self.Options.SettingsMessageShown then self.Options.SettingsMessageShown = true self:AddMsg(DBM_HOW_TO_USE_MOD) end end)
-		C_TimerAfter(40, function() if self.Options.NewsMessageShown < 7 then self.Options.NewsMessageShown = 7 self:AddMsg(DBM_CORE_WHATS_NEW_LINK) end end)
+		C_TimerAfter(40, function() if self.Options.NewsMessageShown < 8 then self.Options.NewsMessageShown = 8 self:AddMsg(DBM_CORE_WHATS_NEW_LINK) end end)
 		if type(RegisterAddonMessagePrefix) == "function" then
 			if not RegisterAddonMessagePrefix("D4") then -- main prefix for DBM4
 				self:AddMsg("Error: unable to register DBM addon message prefix (reached client side addon message filter limit), synchronization will be unavailable") -- TODO: confirm that this actually means that the syncs won't show up
@@ -6619,12 +6642,6 @@ do
 			if self.Options.HideGuildChallengeUpdates or custom then
 				AlertFrame:UnregisterEvent("GUILD_CHALLENGE_COMPLETED")
 			end
-			if self.Options.TalkingHeadFilter == "CombatOnly" and not talkingHeadUnregistered and isTalkingHeadLoaded then
-				TalkingHeadFrame:UnregisterAllEvents()
-				--TalkingHeadFrame_CloseImmediately()--Calling this crashes wow apparently
-				talkingHeadUnregistered = true
-				self:Debug("TalkingHead has been unregistered", 2)
-			end
 		elseif toggle == 0 and blizzEventsUnregistered then
 			blizzEventsUnregistered = false
 			if self.Options.HideQuestTooltips then
@@ -6641,14 +6658,6 @@ do
 			end
 			if self.Options.HideGuildChallengeUpdates then
 				AlertFrame:RegisterEvent("GUILD_CHALLENGE_COMPLETED")
-			end
-			if self.Options.TalkingHeadFilter == "BossCombatOnly" and talkingHeadUnregistered then
-				TalkingHeadFrame:RegisterEvent("TALKINGHEAD_REQUESTED")
-				TalkingHeadFrame:RegisterEvent("TALKINGHEAD_CLOSE")
-				TalkingHeadFrame:RegisterEvent("SOUNDKIT_FINISHED")
-				TalkingHeadFrame:RegisterEvent("LOADING_SCREEN_ENABLED")
-				talkingHeadUnregistered = false
-				self:Debug("TalkingHead has been restored")
 			end
 		end
 	end
@@ -6812,18 +6821,6 @@ end
 
 function DBM:GetTOC()
 	return wowTOC
-end
-
-function DBM:TalkingHeadStatus()
-	return talkingHeadUnregistered, isTalkingHeadLoaded
-end
-
-function DBM:SetTalkingHeadState(disabled)
-	if disabled then
-		talkingHeadUnregistered = true
-	else
-		talkingHeadUnregistered = false
-	end
 end
 
 function DBM:FlashClientIcon()
@@ -10288,6 +10285,17 @@ do
 			return self:NewCastTimer(timer / 1000, spellId, ...)
 		end
 		return newTimer(self, "cast", timer, ...)
+	end
+	
+	function bossModPrototype:NewCastSourceTimer(timer, ...)
+		if tonumber(timer) and timer > 1000 then -- hehe :) best hack in DBM. This makes the first argument optional, so we can omit it to use the cast time from the spell id ;)
+			local spellId = timer
+			timer = select(4, GetSpellInfo(spellId)) or 1000 -- GetSpellInfo takes YOUR spell haste into account...WTF?
+			local spellHaste = select(4, GetSpellInfo(53142)) / 10000 -- 53142 = Dalaran Portal, should have 10000 ms cast time
+			timer = timer / spellHaste -- calculate the real cast time of the spell...
+			return self:NewCastSourceTimer(timer / 1000, spellId, ...)
+		end
+		return newTimer(self, "castsource", timer, ...)
 	end
 
 	function bossModPrototype:NewCDTimer(...)

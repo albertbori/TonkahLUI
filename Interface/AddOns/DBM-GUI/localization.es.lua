@@ -1,4 +1,4 @@
-﻿if GetLocale() ~= "esES" and GetLocale() ~= "esMX" then return end
+if GetLocale() ~= "esES" and GetLocale() ~= "esMX" then return end
 
 if not DBM_GUI_Translations then DBM_GUI_Translations = {} end
 local L = DBM_GUI_Translations
@@ -284,7 +284,6 @@ L.SpamBlockSayYell			= "Deshabilitar bocadillos de chat"
 L.DisableCinematics			= "Deshabilitar cinemáticas"
 L.AfterFirst				= "Tras ver la cinemática por primera vez"
 L.Always					= ALWAYS
-L.DisableTalkingHead		= "Desactivar cabeza parlante"
 L.CombatOnly				= "En combate"
 L.RaidCombat				= "En combate (solo en jefes)"
 

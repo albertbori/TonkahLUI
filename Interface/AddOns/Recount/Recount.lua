@@ -11,7 +11,7 @@ local FilterSize	= 20
 local RampUp		= 5
 local RampDown		= 10
 
-Recount.Version = tonumber(string.sub("$Revision: 1386 $", 12, -3))
+Recount.Version = tonumber(string.sub("$Revision: 1396 $", 12, -3))
 
 local _G = _G
 local abs = abs
@@ -331,6 +331,10 @@ BINDING_NAME_RECOUNT_MANA = L["Display"].." "..L["Mana Gained"]
 BINDING_NAME_RECOUNT_ENERGY = L["Display"].." "..L["Energy Gained"]
 BINDING_NAME_RECOUNT_RAGE = L["Display"].." "..L["Rage Gained"]
 BINDING_NAME_RECOUNT_RUNICPOWER = L["Display"].." "..L["Runic Power Gained"]
+BINDING_NAME_RECOUNT_LUNAR_POWER = L["Display"].." "..L["Astral Power Gained"]
+BINDING_NAME_RECOUNT_MAELSTROM = L["Display"].." "..L["Maelstorm Gained"]
+BINDING_NAME_RECOUNT_FURY = L["Display"].." "..L["Fury Gained"]
+BINDING_NAME_RECOUNT_PAIN = L["Display"].." "..L["Pain Gained"]
 
 BINDING_NAME_RECOUNT_REPORT_MAIN = L["Report the Main Window Data"]
 BINDING_NAME_RECOUNT_REPORT_DETAILS = L["Report the Detail Window Data"]

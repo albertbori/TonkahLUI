@@ -3,11 +3,9 @@ local AddonName, Addon = ...
 Addon.AddonPath = "Interface\\Addons\\"..AddonName.."\\"
 
 function Addon:new(methodTable, ...)
-	local object
+	assert(type(methodTable) == "table", "table expected")
 	
-	if type(methodTable) ~= "table" then
-		error("table expected")
-	end
+	local object
 	
 	if methodTable.New then
 		object = methodTable:New(...)

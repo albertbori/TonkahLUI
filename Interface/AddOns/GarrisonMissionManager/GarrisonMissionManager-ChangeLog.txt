@@ -1,9 +1,18 @@
-Garrison Mission Manager, v52
+Garrison Mission Manager, v54
 
 * http://www.curse.com/addons/wow/garrison-mission-manager
 * http://www.wowinterface.com/downloads/info23375-GarrisonMissionManager.html
 
 == Change log ==
+2016-11-07 v54
+ * Disable minor debug left in AR notes tracker.
+ * Docs typo cleanup commit.
+
+2016-11-06 v53
+ * Artifact Research Notes tracker.
+ * Typo fixing in the code. Side-effect: ignored followers list will reset.
+ * Another pass at code unifying/preparing for sharing.
+
 2016-10-26 v52
  * TOC update for 7.1.
 

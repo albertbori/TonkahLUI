@@ -365,7 +365,7 @@ function Mappy:ApplyKaleilsFixToPreventWorldMapTaintIssues()
 end
 
 function Mappy:InitializeAttachedFrames()
-	local vAttachmenFrame = CreateFrame("Frame", "MappyAttachmentFrame", UIParent)
+	local vAttachmenFrame = CreateFrame("Frame", "MappyAttachmentFrame", UIParent, "SecureFrameTemplate")
 	self.AttachmentFrame = vAttachmenFrame
 
 	-- Give it an initial position
@@ -395,7 +395,7 @@ function Mappy:ActivateAttachmentFrame()
 	self.AttachmentFrame:RegisterForDrag("LeftButton")
 	self.AttachmentFrame:EnableMouse(true)
 	self.AttachmentFrame:SetMovable(true)
-	
+
 	self.AttachmentFrame:SetScript("OnDragStart", function (frame)
 		frame:StartMoving()
 	end)
@@ -406,62 +406,151 @@ function Mappy:ActivateAttachmentFrame()
 	end)
 end
 
+function Mappy:RecordSetPointData(frame)
+	-- Wipe the anchor memory on ClearAllPoints
+	hooksecurefunc(frame, "ClearAllPoints", function (frame)
+		frame.Mappy_Anchors = nil
+	end)
+
+	-- Record the anchor points
+	hooksecurefunc(frame, "SetPoint", function (frame, anchorPoint, relativeTo, relativePoint, offsetX, offsetY)
+		local anchors = frame.Mappy_Anchors
+		if not anchors then
+			anchors = {}
+			frame.Mappy_Anchors = anchors
+		end
+		
+		local anchor = anchors[anchorPoint]
+		if not anchor then
+			anchor = {}
+			anchors[anchorPoint] = anchor
+		end
+
+		assert(relativeTo ~= self.AttachmentFrame)
+
+		anchor.relativeTo = relativeTo
+		anchor.relativePoint = relativePoint
+		anchor.offsetX = offsetX
+		anchor.offsetY = offsetY
+
+		-- Call the original SetPoint if not in combat lockdown
+		if not InCombatLockdown() then
+			local relativeTo = relativeTo
+			if self.CurrentProfile.DetachManagedFrames and (relativeTo == "MinimapCluster" or relativeTo == MinimapCluster) then
+				relativeTo = self.AttachmentFrame
+			end
+			frame:Mappy_SetPoint(anchorPoint, relativeTo, relativePoint, offsetX, offsetY)
+		end
+	end)
+end
+
 function Mappy:HookAttachedFrames()
 	if not self.AttachmentFrame
 	or not self.CurrentProfile.DetachManagedFrames then
 		return
 	end
 	
-	for _, vFrameName in pairs(self.MinimapAttachedFrames) do
-		local vFrame = _G[vFrameName]
-		if vFrame and vFrame.SetPoint and not vFrame.Mappy_DidHook then
-			vFrame.Mappy_DidHook = true
-			hooksecurefunc(vFrame, "SetPoint", function (pFrame, pAnchorPoint, pRelativeTo, pRelativePoint, pOffsetX, pOffsetY)
-				-- Don't mess with the position if they're in combat or if the feature is disabled
-				if self.InCombat or not self.CurrentProfile.DetachManagedFrames then
-					if pFrame.Mappy_RelativeTo then
-						pFrame.Mappy_RelativeTo[pAnchorPoint] = nil
-					end
-					return
+	for _, frameName in pairs(self.MinimapAttachedFrames) do
+		local frame = _G[frameName]
+		
+		if frame and frame.SetPoint and not frame.Mappy_DidHook then
+			frame.Mappy_DidHook = true
+
+			-- Save the existing SetPoint function 
+			frame.Mappy_SetPoint = frame.SetPoint
+
+			-- Point the original SetPoint at IsVisible instead. IsVisible is a secure function
+			-- which takes no parameters and affects no state, making it a good choice for this purpose
+			frame.SetPoint = frame.IsVisible
+
+			-- Hook the existing SetPoint so the parameters can be recorded
+			self:RecordSetPointData(frame)
+
+			-- Save the hooked SetPoint for re-use later
+			frame.Mappy_HookedSetPoint = frame.SetPoint
+		end
+
+		if frame then
+			-- Capture the existing anchors
+			local numPoints = frame:GetNumPoints()
+			frame.Mappy_Anchors = {}
+			for pointIndex = 1, numPoints do
+				local point, relativeTo, relativePoint, offsetX, offsetY = frame:GetPoint(pointIndex)
+				if relativeTo == self.AttachmentFrame then
+					relativeTo = MinimapCluster
 				end
-				
-				-- If the frame is trying to attach to the minimap, redirect it to the attachment frame
-				if pRelativeTo == "MinimapCluster" or pRelativeTo == MinimapCluster then
-					if not pFrame.Mappy_RelativeTo then
-						pFrame.Mappy_RelativeTo = {}
-					end
-					pFrame.Mappy_RelativeTo[pAnchorPoint] = pRelativeTo
-					pFrame:SetPoint(pAnchorPoint, self.AttachmentFrame, pRelativePoint, pOffsetX, pOffsetY)
-				end
-			end)
+				frame.Mappy_Anchors[point] = {
+					relativeTo = relativeTo,
+					relativePoint = relativePoint,
+					offsetX = offsetX,
+					offsetY = offsetY
+				}
+			end
+
+			-- Use the hooked SetPoint
+			frame.SetPoint = frame.Mappy_HookedSetPoint
 		end
 	end
+
+	-- Refresh the anchors
 	self:ReanchorDetachedFrames()
+end
+
+function Mappy:UnhookAttachedFrames()
+	assert(not self.CurrentProfile.DetachManagedFrames, "unhooking but detach is still set")
+
+	-- Refresh the anchors
+	self:ReanchorDetachedFrames()
+	
+	-- Restore each frame to use the original SetPoint function
+	for _, frameName in pairs(self.MinimapAttachedFrames) do
+		local frame = _G[frameName]
+		if frame then
+			frame.SetPoint = frame.Mappy_SetPoint
+		end
+	end
 end
 
 function Mappy:ReanchorDetachedFrames()
 	-- Don't allow in combat
-	if self.InCombat then return end
+	if InCombatLockdown() then
+		Mappy:TestMessage("ReanchorDetachedFrames: In lockdown")
+		return
+	end
+	
 	--
-	for _, vFrameName in pairs(self.MinimapAttachedFrames) do
-		local vFrame = _G[vFrameName]
-		if vFrame and vFrame.SetPoint then
-			local vNumPoints = vFrame:GetNumPoints()
-			for vPointIndex = 1, vNumPoints do
-				local vPoint, vRelativeTo, vRelativePoint, vOffsetX, vOffsetY = vFrame:GetPoint(vPointIndex)
-				--self:TestMessage("%s is anchored relative to %s", tostring(vFrame:GetName()), type(vRelativeTo) == "string" and vRelativeTo or tostring(vRelativeTo:GetName()))
-				vFrame:SetPoint(vPoint, vFrame.Mappy_RelativeTo and vFrame.Mappy_RelativeTo[vPoint] or vRelativeTo, vRelativePoint, vOffsetX, vOffsetY)
+	local detachManagedFrames = self.CurrentProfile.DetachManagedFrames
+	for _, frameName in pairs(self.MinimapAttachedFrames) do
+		local frame = _G[frameName]
+		if frame and frame.Mappy_Anchors then
+			for anchorPoint, anchor in pairs(frame.Mappy_Anchors) do
+				local relativeTo = anchor.relativeTo
+				local relativeToName = tostring(relativeTo)
+
+				if type(relativeTo) == "table" and relativeTo.GetName then
+					relativeToName = relativeTo:GetName()
+				end
+
+				assert(relativeTo ~= self.AttachmentFrame)
+
+				if detachManagedFrames and (relativeTo == "MinimapCluster" or relativeTo == MinimapCluster) then
+					relativeTo = self.AttachmentFrame
+					relativeToName = "AttachmentFrame"
+				end
+				
+				-- Call the real SetPoint
+				frame:Mappy_SetPoint(anchorPoint, relativeTo, anchor.relativePoint, anchor.offsetX, anchor.offsetY)
 			end
 		end
 	end
 end
 
-function Mappy:UnhookAttachedFrames()
-	-- Just re-anchor since unhooking isn't actually possible
-	self:ReanchorDetachedFrames()
-end
-
 function Mappy:UpdateAttachmentFrame()
+	if InCombatLockdown() then
+		self:ErrorMessage("InCombatLockdown during UpdateAttachmentFrame")
+		return
+	end
+
 	self.AttachmentFrame:ClearAllPoints()
 	
 	if self.CurrentProfile.DetachManagedFrames then
@@ -1064,6 +1153,10 @@ function Mappy:ConfigureMinimap()
 		return
 	end
 	
+	if InCombatLockdown() then
+		return
+	end
+
 	self.StartingCorner = self.CurrentProfile.StartingCorner or "TOPRIGHT"
 	
 	self:ConfigureMinimapOptions()
@@ -1297,7 +1390,7 @@ function Mappy:SelectAutoProfile()
 		return
 	end
 	
-	if vProfile ~= self.CurrentProfile then
+	if not InCombatLockdown() and vProfile ~= self.CurrentProfile then
 		self:LoadProfile(vProfile)
 	end
 end
@@ -1379,12 +1472,21 @@ end
 
 function Mappy:RegenEnabled()
 	self.InCombat = false
+
+	-- Refresh all the attached frames
 	self:ReanchorDetachedFrames()
-	self.SchedulerLib:ScheduleUniqueTask(0.5, self.ConfigureMinimap, self)
+
+	-- Do a reconfiguration after a short delay
+	self.SchedulerLib:ScheduleUniqueTask(0.25, self.ConfigureMinimap, self)
 end
 
 function Mappy:RegenDisabled()
 	self.InCombat = true
+
+	-- Hide the attachment frame during combat
+	self.AttachmentFrame:Hide()
+	
+	-- Adjust the alpha for combat
 	self:AdjustAlpha()
 end
 
@@ -2563,7 +2665,7 @@ function Mappy._ProfilesPanel:OnShow()
 	Mappy.DisableUpdates = true
 	
 	if not self.DidCreateMenus then
-		self.DungeonMenu = Mappy:New(Mappy.UIElementsLib._DropDownMenu, self, function (...) self:ProfileMenuFunc(...) end)
+		self.DungeonMenu = Mappy:New(Mappy.UIElementsLib._TitledDropDownMenuButton, self, function (...) self:ProfileMenuFunc(...) end)
 		self.DungeonMenu:SetTitle("Dungeon")
 		self.DungeonMenu:SetWidth(150)
 		self.DungeonMenu:SetPoint("TOPLEFT", self.Title, "BOTTOMLEFT", 80, -15)
@@ -2571,7 +2673,7 @@ function Mappy._ProfilesPanel:OnShow()
 			gMappy_Settings.DungeonProfile = pValue == "NONE" and nil or pValue
 		end
 
-		self.BattlegroundMenu = Mappy:New(Mappy.UIElementsLib._DropDownMenu, self, function (...) self:ProfileMenuFunc(...) end)
+		self.BattlegroundMenu = Mappy:New(Mappy.UIElementsLib._TitledDropDownMenuButton, self, function (...) self:ProfileMenuFunc(...) end)
 		self.BattlegroundMenu:SetTitle("Battleground")
 		self.BattlegroundMenu:SetWidth(150)
 		self.BattlegroundMenu:SetPoint("TOPLEFT", self.DungeonMenu, "BOTTOMLEFT", 0, -15)
@@ -2579,7 +2681,7 @@ function Mappy._ProfilesPanel:OnShow()
 			gMappy_Settings.BattlegroundProfile = pValue == "NONE" and nil or pValue
 		end
 
-		self.MountedMenu = Mappy:New(Mappy.UIElementsLib._DropDownMenu, self, function (...) self:ProfileMenuFunc(...) end)
+		self.MountedMenu = Mappy:New(Mappy.UIElementsLib._TitledDropDownMenuButton, self, function (...) self:ProfileMenuFunc(...) end)
 		self.MountedMenu:SetTitle("Mounted")
 		self.MountedMenu:SetWidth(150)
 		self.MountedMenu:SetPoint("TOPLEFT", self.BattlegroundMenu, "BOTTOMLEFT", 0, -15)
@@ -2587,7 +2689,7 @@ function Mappy._ProfilesPanel:OnShow()
 			gMappy_Settings.MountedProfile = pValue == "NONE" and nil or pValue
 		end
 
-		self.DefaultMenu = Mappy:New(Mappy.UIElementsLib._DropDownMenu, self, function (...) self:ProfileMenuFunc(...) end)
+		self.DefaultMenu = Mappy:New(Mappy.UIElementsLib._TitledDropDownMenuButton, self, function (...) self:ProfileMenuFunc(...) end)
 		self.DefaultMenu:SetTitle("All others")
 		self.DefaultMenu:SetWidth(150)
 		self.DefaultMenu:SetPoint("TOPLEFT", self.MountedMenu, "BOTTOMLEFT", 0, -15)

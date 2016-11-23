@@ -42,6 +42,12 @@ local event_frame = addon_env.event_frame
 local GetFilteredFollowers = addon_env.GetFilteredFollowers
 local FindBestFollowersForMission = addon_env.FindBestFollowersForMission
 
+local ignored_followers
+function addon_env.LocalIgnoredFollowers()
+   ignored_followers = addon_env.ignored_followers
+end
+addon_env.LocalIgnoredFollowers()
+
 local currency_texture = {}
 for _, currency in pairs({ GARRISON_CURRENCY, GARRISON_SHIP_OIL_CURRENCY, 823 --[[Apexis]] }) do
    local _, _, texture = GetCurrencyInfo(currency)
@@ -325,6 +331,7 @@ local function BestForCurrentSelectedMission(type_id, mission_page, button_prefi
       local suffix = button_suffixes[suffix_idx]
       for idx = 1, 3 do
          local button = gmm_buttons[button_prefix .. suffix .. idx]
+         if addon_env.b then button:Disable() end
          local top_entry
          if suffix == 'Yield' then
             if top.yield or top.material_rewards or top.gold_rewards then
@@ -492,6 +499,7 @@ local function MissionList_Update_More(self, caller, frame_prefix, follower_type
          local offerEndTime = mission.offerEndTime
 
          -- offerEndTime seems to be present on all missions, though Blizzard UI shows tooltips only on rare
+         -- some Legion missions actually have no end time - seems like they're permanent
          if offerEndTime then
             local xp_only_rewards
             if not is_rare then
@@ -546,3 +554,101 @@ local function MissionList_Update_More(self, caller, frame_prefix, follower_type
    end
 end
 addon_env.MissionList_Update_More = MissionList_Update_More
+
+local maxed_follower_color_code = "|cff22aa22"
+
+local function GarrisonMissionFrame_SetFollowerPortrait_More(portraitFrame, followerInfo, forMissionPage)
+   if not forMissionPage then return end
+
+   local MissionPage = portraitFrame:GetParent():GetParent()
+   local mentor_level = MissionPage.mentorLevel
+   local mentor_i_level = MissionPage.mentorItemLevel
+
+   local level = followerInfo.level
+   local i_level = followerInfo.iLevel
+
+   local boosted
+
+   if mentor_i_level and mentor_i_level > (i_level or 0) then
+      i_level = mentor_i_level
+      boosted = true
+   end
+   if mentor_level and mentor_level > level then
+      level = mentor_level
+      boosted = true
+   end
+
+   if followerInfo.isMaxLevel then
+      local level_border = portraitFrame.LevelBorder
+      level_border:SetAtlas("GarrMission_PortraitRing_iLvlBorder")
+      level_border:SetWidth(70)
+      portraitFrame.Level:SetFormattedText("%s%s %d", ((i_level == 675 or i_level == 850) and not boosted) and maxed_follower_color_code or "", ITEM_LEVEL_ABBR, i_level)
+   end
+end
+hooksecurefunc("GarrisonMissionPortrait_SetFollowerPortrait", GarrisonMissionFrame_SetFollowerPortrait_More)
+
+local function GarrisonFollowerList_Update_More(self)
+   -- Somehow Blizzard UI insists on updating hidden frames AND explicitly updates them OnShow.
+   --  Following suit is just a waste of CPU, so we'll update only when frame is actually visible.
+   if not self:IsVisible() then return end
+
+   local followerFrame = self:GetParent()
+   local followers = followerFrame.FollowerList.followers
+   local followersList = followerFrame.FollowerList.followersList
+   local numFollowers = #followersList
+   local scrollFrame = followerFrame.FollowerList.listScroll
+   local offset = HybridScrollFrame_GetOffset(scrollFrame)
+   local buttons = scrollFrame.buttons
+   local numButtons = #buttons
+
+   for i = 1, numButtons do
+      local button = buttons[i]
+      local index = offset + i
+
+      local show_ilevel
+      local follower_frame = button.Follower
+      local portrait_frame = follower_frame.PortraitFrame
+      local level_border = portrait_frame.LevelBorder
+
+      if ( index <= numFollowers ) then
+         local follower_index = followersList[index]
+         -- follower_index 0 - category header
+         if follower_index ~= 0 then
+            local follower = followers[follower_index]
+            if ( follower.isCollected ) then
+               if ignored_followers[follower.followerID] then
+                  local BusyFrame = follower_frame.BusyFrame
+                  BusyFrame.Texture:SetColorTexture(0.5, 0, 0, 0.3)
+                  BusyFrame:Show()
+               end
+
+               if follower.isMaxLevel then
+                  level_border:SetAtlas("GarrMission_PortraitRing_iLvlBorder")
+                  level_border:SetWidth(70)
+                  local i_level = follower.iLevel
+                  portrait_frame.Level:SetFormattedText("%s%s %d", (i_level == 675 or i_level == 850) and maxed_follower_color_code or "", ITEM_LEVEL_ABBR, i_level)
+                  follower_frame.ILevel:SetText(nil)
+                  show_ilevel = true
+               end
+            end
+         end
+      end
+      if follower_index ~= 0 and not show_ilevel then
+         level_border:SetAtlas("GarrMission_PortraitRing_LevelBorder")
+         level_border:SetWidth(58)
+      end
+   end
+end
+addon_env.GarrisonFollowerList_Update_More = GarrisonFollowerList_Update_More
+
+local last_shipment_request = 0
+local function ThrottleRequestLandingPageShipmentInfo()
+   local time = GetTime()
+   if last_shipment_request + 5 < time then
+      last_shipment_request = time
+      event_frame:RegisterEvent("GARRISON_LANDINGPAGE_SHIPMENTS")
+      C_Garrison.RequestLandingPageShipmentInfo()
+      return true
+   end
+end
+addon_env.ThrottleRequestLandingPageShipmentInfo = ThrottleRequestLandingPageShipmentInfo

@@ -5,13 +5,16 @@ MasqueDB = {
 		},
 	},
 	["profileKeys"] = {
-		["Holyshnizzle - Doomhammer"] = "Default",
-		["Dfbdeffbw - Doomhammer"] = "Default",
-		["Taunkah - Doomhammer"] = "Default",
-		["Nilrum - Doomhammer"] = "Default",
 		["Marmit - Doomhammer"] = "Default",
-		["Bahlar - Doomhammer"] = "Default",
 		["Tareva - Doomhammer"] = "Default",
+		["Holyshnizzle - Doomhammer"] = "Default",
+		["Alfalpha - Doomhammer"] = "Default",
+		["Taunkah - Doomhammer"] = "Default",
+		["Brooslee - Doomhammer"] = "Default",
+		["Nilrum - Doomhammer"] = "Default",
+		["Dfbdeffbw - Doomhammer"] = "Default",
+		["Bahlar - Doomhammer"] = "Default",
+		["Bartholamue - Doomhammer"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

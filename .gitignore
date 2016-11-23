@@ -4,6 +4,8 @@
 *.wtf
 *.md5
 
+*conflicted copy*
+
 #Individual files
 
 **/WTF/Account/ACCOUNTNAME/macros-cache.txt
@@ -14,12 +16,19 @@
 **/WTF/Account/ACCOUNTNAME/SavedVariables/BugSack.lua
 **/WTF/Account/ACCOUNTNAME/SavedVariables/Blizzard_CombatLog.lua
 **/WTF/Account/ACCOUNTNAME/SavedVariables/Coordinates.lua
+**/WTF/Account/ACCOUNTNAME/SavedVariables/Easy_Obliterate.lua
+**/WTF/Account/ACCOUNTNAME/SavedVariables/FocusInterruptSounds.lua
+**/WTF/Account/ACCOUNTNAME/SavedVariables/GarrisonMissionManager.lua
 **/WTF/Account/ACCOUNTNAME/SavedVariables/GS-Core.lua
+**/WTF/Account/ACCOUNTNAME/SavedVariables/GS-DraikMacros.lua
+**/WTF/Account/ACCOUNTNAME/SavedVariables/GuildManager.lua
+**/WTF/Account/ACCOUNTNAME/SavedVariables/Netherwing_Eggs.lua
 **/WTF/Account/ACCOUNTNAME/SavedVariables/Pawn.lua
 **/WTF/Account/ACCOUNTNAME/SavedVariables/Postal.lua
 **/WTF/Account/ACCOUNTNAME/SavedVariables/TomTom.lua
 **/WTF/Account/ACCOUNTNAME/SavedVariables/TradeSkillMaster*
 **/WTF/Account/ACCOUNTNAME/SavedVariables/SellJunk.lua
+**/WTF/Account/ACCOUNTNAME/SavedVariables/Storyline.lua
 **/WTF/Account/ACCOUNTNAME/SavedVariables/WeakAuras.lua
 **/WTF/Account/ACCOUNTNAME/SavedVariables/WeakAurasOptions.lua
 **/WTF/Account/ACCOUNTNAME/SavedVariables/WorldQuestTracker.lua
@@ -28,10 +37,15 @@
 **/Interface/AddOns/AskMrRobot/
 **/Interface/AddOns/Auctionator/
 **/Interface/AddOns/BadBoy/
+**/Interface/Addons/Easy_Obliterate/
 **/Interface/AddOns/EquipmentBuddy/
+**/Interface/AddOns/FocusInterruptSounds/
+**/Interface/AddOns/GarrisonMissionManager/
 **/Interface/AddOns/GS-Core/
 **/Interface/AddOns/GS-DraikMacros/
 **/Interface/AddOns/GS-SequenceEditor/
+**/Interface/AddOns/GuildManager/
+**/Interface/AddOns/Netherwing_Eggs/
 **/Interface/AddOns/Pawn/
 **/Interface/AddOns/Postal/
 **/Interface/AddOns/SellJunk/
@@ -39,3 +53,5 @@
 **/Interface/AddOns/TradeSkillMaster*/
 **/Interface/AddOns/WeakAuras*/
 **/Interface/AddOns/WorldQuestTracker/
+**/Interface/AddOns/Storyline/
+
