@@ -56,178 +56,178 @@ ChatterDB = {
 				["Default"] = {
 					["colors"] = {
 						["Guild"] = {
-							["b"] = 0.250980406999588,
-							["g"] = 1,
 							["r"] = 0.250980406999588,
+							["g"] = 1,
+							["b"] = 0.250980406999588,
 						},
 						["Real ID Whisper"] = {
-							["b"] = 0.964705944061279,
-							["g"] = 1,
 							["r"] = 0,
+							["g"] = 1,
+							["b"] = 0.964705944061279,
 						},
 						["Raid Leader"] = {
-							["b"] = 0.0352941192686558,
-							["g"] = 0.282352954149246,
 							["r"] = 1,
+							["g"] = 0.282352954149246,
+							["b"] = 0.0352941192686558,
 						},
 						["LookingForGroup"] = {
-							["b"] = 0.752941250801086,
-							["g"] = 0.752941250801086,
 							["r"] = 1,
+							["g"] = 0.752941250801086,
+							["b"] = 0.752941250801086,
 						},
 						["Party"] = {
-							["b"] = 1,
-							["g"] = 0.666666686534882,
 							["r"] = 0.666666686534882,
+							["g"] = 0.666666686534882,
+							["b"] = 1,
 						},
 						["Whisper"] = {
-							["b"] = 1,
-							["g"] = 0.501960813999176,
 							["r"] = 1,
+							["g"] = 0.501960813999176,
+							["b"] = 1,
 						},
 						["Raid"] = {
-							["b"] = 0,
-							["g"] = 0.498039245605469,
 							["r"] = 1,
+							["g"] = 0.498039245605469,
+							["b"] = 0,
 						},
 						["Raid Warning"] = {
-							["b"] = 0,
-							["g"] = 0.282352954149246,
 							["r"] = 1,
+							["g"] = 0.282352954149246,
+							["b"] = 0,
 						},
 						["Party Leader"] = {
-							["b"] = 1,
-							["g"] = 0.784313797950745,
 							["r"] = 0.462745130062103,
+							["g"] = 0.784313797950745,
+							["b"] = 1,
 						},
 						["Instance"] = {
-							["b"] = 0,
-							["g"] = 0.498039245605469,
 							["r"] = 1,
+							["g"] = 0.498039245605469,
+							["b"] = 0,
 						},
 						["Yell"] = {
-							["b"] = 0.250980406999588,
-							["g"] = 0.250980406999588,
 							["r"] = 1,
+							["g"] = 0.250980406999588,
+							["b"] = 0.250980406999588,
 						},
 						["LocalDefense"] = {
-							["b"] = 0.752941250801086,
-							["g"] = 0.752941250801086,
 							["r"] = 1,
+							["g"] = 0.752941250801086,
+							["b"] = 0.752941250801086,
 						},
 						["Say"] = {
-							["b"] = 1,
-							["g"] = 1,
 							["r"] = 1,
+							["g"] = 1,
+							["b"] = 1,
 						},
 						["Trade"] = {
-							["b"] = 0.752941250801086,
-							["g"] = 0.752941250801086,
 							["r"] = 1,
-						},
-						["General"] = {
-							["b"] = 0.752941250801086,
 							["g"] = 0.752941250801086,
-							["r"] = 1,
+							["b"] = 0.752941250801086,
 						},
 						["Instance Leader"] = {
-							["b"] = 0.0352941192686558,
-							["g"] = 0.282352954149246,
 							["r"] = 1,
+							["g"] = 0.282352954149246,
+							["b"] = 0.0352941192686558,
+						},
+						["General"] = {
+							["r"] = 1,
+							["g"] = 0.752941250801086,
+							["b"] = 0.752941250801086,
 						},
 						["Officer"] = {
-							["b"] = 0.250980406999588,
-							["g"] = 0.752941250801086,
 							["r"] = 0.250980406999588,
+							["g"] = 0.752941250801086,
+							["b"] = 0.250980406999588,
 						},
 					},
 				},
 				["Tonkah LUI"] = {
 					["colors"] = {
 						["Guild"] = {
-							["r"] = 0.250980406999588,
-							["g"] = 1,
 							["b"] = 0.250980406999588,
+							["g"] = 1,
+							["r"] = 0.250980406999588,
 						},
 						["Real ID Whisper"] = {
-							["r"] = 0,
-							["g"] = 1,
 							["b"] = 0.964705944061279,
+							["g"] = 1,
+							["r"] = 0,
 						},
 						["Raid Leader"] = {
-							["r"] = 1,
-							["g"] = 0.282352954149246,
 							["b"] = 0.0352941192686558,
+							["g"] = 0.282352954149246,
+							["r"] = 1,
 						},
 						["LookingForGroup"] = {
-							["r"] = 1,
-							["g"] = 0.752941250801086,
 							["b"] = 0.752941250801086,
+							["g"] = 0.752941250801086,
+							["r"] = 1,
 						},
 						["Party"] = {
-							["r"] = 0.666666686534882,
-							["g"] = 0.666666686534882,
 							["b"] = 1,
+							["g"] = 0.666666686534882,
+							["r"] = 0.666666686534882,
 						},
 						["Whisper"] = {
-							["r"] = 1,
-							["g"] = 0.501960813999176,
 							["b"] = 1,
+							["g"] = 0.501960813999176,
+							["r"] = 1,
 						},
 						["Raid"] = {
-							["r"] = 1,
-							["g"] = 0.498039245605469,
 							["b"] = 0,
+							["g"] = 0.498039245605469,
+							["r"] = 1,
 						},
 						["Raid Warning"] = {
-							["r"] = 1,
-							["g"] = 0.282352954149246,
 							["b"] = 0,
+							["g"] = 0.282352954149246,
+							["r"] = 1,
 						},
 						["Party Leader"] = {
-							["r"] = 0.462745130062103,
-							["g"] = 0.784313797950745,
 							["b"] = 1,
+							["g"] = 0.784313797950745,
+							["r"] = 0.462745130062103,
 						},
 						["Instance"] = {
-							["r"] = 1,
-							["g"] = 0.498039245605469,
 							["b"] = 0,
+							["g"] = 0.498039245605469,
+							["r"] = 1,
 						},
 						["Yell"] = {
-							["r"] = 1,
-							["g"] = 0.250980406999588,
 							["b"] = 0.250980406999588,
+							["g"] = 0.250980406999588,
+							["r"] = 1,
 						},
 						["LocalDefense"] = {
-							["r"] = 1,
-							["g"] = 0.752941250801086,
 							["b"] = 0.752941250801086,
+							["g"] = 0.752941250801086,
+							["r"] = 1,
 						},
 						["Say"] = {
-							["r"] = 1,
-							["g"] = 1,
 							["b"] = 1,
+							["g"] = 1,
+							["r"] = 1,
 						},
 						["Trade"] = {
-							["r"] = 1,
-							["g"] = 0.752941250801086,
 							["b"] = 0.752941250801086,
-						},
-						["Instance Leader"] = {
+							["g"] = 0.752941250801086,
 							["r"] = 1,
-							["g"] = 0.282352954149246,
-							["b"] = 0.0352941192686558,
 						},
 						["General"] = {
-							["r"] = 1,
-							["g"] = 0.752941250801086,
 							["b"] = 0.752941250801086,
+							["g"] = 0.752941250801086,
+							["r"] = 1,
+						},
+						["Instance Leader"] = {
+							["b"] = 0.0352941192686558,
+							["g"] = 0.282352954149246,
+							["r"] = 1,
 						},
 						["Officer"] = {
-							["r"] = 0.250980406999588,
-							["g"] = 0.752941250801086,
 							["b"] = 0.250980406999588,
+							["g"] = 0.752941250801086,
+							["r"] = 0.250980406999588,
 						},
 					},
 				},
@@ -305,7 +305,7 @@ ChatterDB = {
 								["a"] = 0,
 							},
 						},
-						["FRAME_10"] = {
+						["FRAME_2"] = {
 							["borderColor"] = {
 								["a"] = 0,
 							},
@@ -313,7 +313,7 @@ ChatterDB = {
 								["a"] = 0,
 							},
 						},
-						["FRAME_2"] = {
+						["FRAME_10"] = {
 							["borderColor"] = {
 								["a"] = 0,
 							},
@@ -329,61 +329,11 @@ ChatterDB = {
 		},
 		["Server Positioning"] = {
 		},
-		["JustifyText"] = {
+		["Mousewheel Scroll"] = {
 		},
 		["Timestamps"] = {
 		},
 		["EditBox"] = {
-		},
-		["Highlight"] = {
-		},
-		["ChatTabs"] = {
-		},
-		["ChannelNames"] = {
-		},
-		["CopyChat"] = {
-		},
-		["UrlCopy"] = {
-		},
-		["Editbox History"] = {
-			["realm"] = {
-				["Doomhammer"] = {
-					["history"] = {
-						"/who kjagoth", -- [1]
-						"/who kagoth", -- [2]
-						"/ginvite Exoren", -- [3]
-						"/ginvite malcoren", -- [4]
-						"/ginvite Eodred ", -- [5]
-						"/cw Teo If Lieutenant can't kick people, go ahead and promote Eodred to Officer", -- [6]
-						"/cw Teo-Doomhammer eggcellent", -- [7]
-						"/cw Teo-Doomhammer Is that vent server still current?", -- [8]
-						"/cw Teo-Doomhammer I updated the guild info tab", -- [9]
-						"/cw Teo-Doomhammer Give it a once-over and let me know if you have any feedback", -- [10]
-						"/cw Teo-Doomhammer WOOT! grats!", -- [11]
-						"/cw Eodred <Defiant> is an established, casual, family-friendly, adult raiding guild. Raid times are Tue/Th 7-9pm PST. We are looking for more raiders. PST if interested.", -- [12]
-						"/cw Eodred just testing to make sure it fits", -- [13]
-						"/join 1", -- [14]
-						"/join Zone", -- [15]
-						"/leave 5", -- [16]
-						"/cw Eodred Welcome to <Defiant>! We're glad you decided to join our ranks. Please take some time to review our guild info tab to see the general info, and rules (no drama, no swearing/lewd talk, etc.). Also, go ahead and register for chat/voice at discord.thedefiant", -- [17]
-						"/cw Eodred-Doomhammer Welcome to <Defiant>! We're glad you decided to join our ranks. Please take some time to review our guild info tab to see the general info, and rules. Also, go ahead and register for chat/voice at discord.thedefiantguild.com", -- [18]
-						"/cw Eodred-Doomhammer I am sorry you decided not to join us. If you ever reconsider, please contact any member of our guild for an invite. That being said, I respect your decision and will not send another invite to this toon unless you ask. Take care!", -- [19]
-						"/cw Eodred-Doomhammer <Defiant> is an established, casual, family-friendly, adult raiding guild. Raid times are Tue/Th 7-9pm PST. We are looking for more raiders. Accept if interested.", -- [20]
-						"/cw Eodred-Doomhammer guild invite", -- [21]
-						"/cw Eodred-Doomhammer ginvite", -- [22]
-						"/cw Eodred-Doomhammer <Defiant> is an established, casual, family-friendly, adult raiding guild. Raid times are Tue/Th 7-9pm Server. We are looking for more raiders. Accept if interested.", -- [23]
-						"/macro", -- [24]
-						"/macro", -- [25]
-						"/gsse", -- [26]
-						"/macro", -- [27]
-						"/macro", -- [28]
-						"/macro", -- [29]
-						"/gsse", -- [30]
-						"/macro", -- [31]
-						"/macro", -- [32]
-					},
-				},
-			},
 		},
 		["ChatFont"] = {
 			["profiles"] = {
@@ -397,19 +347,70 @@ ChatterDB = {
 				},
 			},
 		},
-		["Mousewheel Scroll"] = {
+		["ChatTabs"] = {
+		},
+		["ChannelNames"] = {
+		},
+		["CopyChat"] = {
+		},
+		["UrlCopy"] = {
+		},
+		["Editbox History"] = {
+			["realm"] = {
+				["Doomhammer"] = {
+					["history"] = {
+						"/cw Sekké-Lightbringer musta been a glitch", -- [1]
+						"/g grats!", -- [2]
+						"/cw Teo It's hard to tell what we're doing wrong on this fight. From a healing perspective, everything seems fine.", -- [3]
+						"/cw Teo-Doomhammer He's been playing under a different tag up until now.", -- [4]
+						"/healbot", -- [5]
+						"/p O", -- [6]
+						"/raid I'll switch to dps", -- [7]
+						"/readycheck", -- [8]
+						"/dbm pull", -- [9]
+						"/raid dont' dispell tanks until they hit green", -- [10]
+						" WOOT!", -- [11]
+						"/raid thanks!", -- [12]
+						"/cheer", -- [13]
+						"/cheer", -- [14]
+						"/cheer", -- [15]
+						"/cw Platedfurbal-Baelgun You were a boss", -- [16]
+						"/cw Platedfurbal-Baelgun We need to de-squishy Masokiss. He takes a ton of damage", -- [17]
+						"/cw Platedfurbal-Baelgun nope", -- [18]
+						"/cw Platedfurbal-Baelgun He's there, and then all the sudden he's at 3%", -- [19]
+						"/cw Platedfurbal-Baelgun And I'm like smashing every key I own", -- [20]
+						"/cw Platedfurbal-Baelgun to try and save him", -- [21]
+						"/cw Platedfurbal-Baelgun There were a few times where he just got completely squashed.", -- [22]
+						"/cw Platedfurbal-Baelgun We'll get his gear fixed. They're getting a buff too in 7.1.5", -- [23]
+						"/cw Platedfurbal-Baelgun So, I need to figure out how to fix that. I can't see who has what stacks with healbot. It seems to be a bug for that encounter.", -- [24]
+						"/g night!", -- [25]
+						"/p tyty", -- [26]
+						"/g wewt!", -- [27]
+						"/wa", -- [28]
+						"/guildmanager", -- [29]
+						"/g night!", -- [30]
+						"/g <3", -- [31]
+						"/g gnight e'rbody!", -- [32]
+					},
+				},
+			},
+		},
+		["Highlight"] = {
+		},
+		["JustifyText"] = {
 		},
 	},
 	["profileKeys"] = {
 		["Marmit - Doomhammer"] = "Default",
-		["Bartholamue - Doomhammer"] = "Default",
+		["Bartholamue - Doomhammer"] = "Tonkah LUI",
 		["Holyshnizzle - Doomhammer"] = "Tonkah LUI",
 		["Alfalpha - Doomhammer"] = "Default",
 		["Taunkah - Doomhammer"] = "Tonkah LUI",
+		["Targatdummy - Doomhammer"] = "Default",
 		["Nilrum - Doomhammer"] = "Default",
-		["Tareva - Doomhammer"] = "Tonkah LUI",
-		["Bahlar - Doomhammer"] = "Tonkah LUI",
 		["Dfbdeffbw - Doomhammer"] = "Tonkah LUI",
+		["Bahlar - Doomhammer"] = "Tonkah LUI",
+		["Tareva - Doomhammer"] = "Tonkah LUI",
 	},
 	["profiles"] = {
 		["Default"] = {

@@ -9,13 +9,13 @@ LUIDB = {
 						["Width"] = 810,
 					},
 				},
-				["Tonkah LUI"] = {
+				["Taunkah - Doomhammer"] = {
 					["General"] = {
 						["Y"] = 0,
 						["Width"] = 810,
 					},
 				},
-				["Taunkah - Doomhammer"] = {
+				["Tonkah LUI"] = {
 					["General"] = {
 						["Y"] = 0,
 						["Width"] = 810,
@@ -39,20 +39,41 @@ LUIDB = {
 			["profiles"] = {
 				["Holyshnizzle - Doomhammer"] = {
 					["Bags"] = {
-						["CoordX"] = 928.670776367188,
 						["CoordY"] = 442.589691162109,
-					},
-					["Reagents"] = {
-						["CoordY"] = 881.597473144531,
-						["CoordX"] = 942.485961914063,
+						["CoordX"] = 928.670776367188,
 					},
 					["Bank"] = {
-						["CoordY"] = 818.1513671875,
 						["CoordX"] = 1470.52331542969,
+						["CoordY"] = 818.1513671875,
+					},
+					["Reagents"] = {
+						["CoordX"] = 942.485961914063,
+						["CoordY"] = 881.597473144531,
 					},
 				},
 				["Tonkah LUI"] = {
 					["Enable"] = false,
+					["hideSort"] = true,
+					["Colors"] = {
+						["Background"] = {
+							["a"] = 1,
+							["r"] = 0.180392156862745,
+							["g"] = 0.180392156862745,
+							["b"] = 0.180392156862745,
+						},
+					},
+					["Reagents"] = {
+						["Scale"] = 1.25,
+						["CoordX"] = 892.751953125,
+						["Spacing"] = 1,
+						["ShowNew"] = false,
+						["ItemQuality"] = false,
+						["CoordY"] = 618.192565917969,
+						["Font"] = "AvantGarde_LT_Medium",
+						["FontSize"] = 12,
+						["BagFrame"] = false,
+						["ShowQuest"] = true,
+					},
 					["Bags"] = {
 						["Scale"] = 1.25,
 						["CoordX"] = 1173.30004882813,
@@ -60,14 +81,6 @@ LUIDB = {
 						["Spacing"] = 1,
 						["CoordY"] = 269.1064453125,
 						["BagFrame"] = false,
-					},
-					["Colors"] = {
-						["Background"] = {
-							["a"] = 1,
-							["b"] = 0.180392156862745,
-							["g"] = 0.180392156862745,
-							["r"] = 0.180392156862745,
-						},
 					},
 					["Bank"] = {
 						["Scale"] = 1.25,
@@ -81,46 +94,33 @@ LUIDB = {
 						["BagFrame"] = false,
 						["ShowQuest"] = true,
 					},
-					["hideSort"] = true,
-					["Reagents"] = {
-						["Scale"] = 1.25,
-						["CoordX"] = 892.751953125,
-						["Spacing"] = 1,
-						["ShowNew"] = false,
-						["ItemQuality"] = false,
-						["CoordY"] = 618.192565917969,
-						["Font"] = "AvantGarde_LT_Medium",
-						["FontSize"] = 12,
-						["BagFrame"] = false,
-						["ShowQuest"] = true,
-					},
 				},
 				["Taunkah - Doomhammer"] = {
 					["Bags"] = {
-						["CoordY"] = 442.589691162109,
 						["CoordX"] = 928.670776367188,
-					},
-					["Bank"] = {
-						["CoordX"] = 1470.52331542969,
-						["CoordY"] = 818.1513671875,
+						["CoordY"] = 442.589691162109,
 					},
 					["Reagents"] = {
-						["CoordX"] = 942.485961914063,
 						["CoordY"] = 881.597473144531,
+						["CoordX"] = 942.485961914063,
+					},
+					["Bank"] = {
+						["CoordY"] = 818.1513671875,
+						["CoordX"] = 1470.52331542969,
 					},
 				},
 				["Marmit - Doomhammer"] = {
 					["Bags"] = {
-						["CoordY"] = 185.734436035156,
 						["CoordX"] = 1726.86755371094,
-					},
-					["Reagents"] = {
-						["CoordX"] = 942.485961914063,
-						["CoordY"] = 881.597473144531,
+						["CoordY"] = 185.734436035156,
 					},
 					["Bank"] = {
-						["CoordX"] = 1470.52331542969,
 						["CoordY"] = 818.1513671875,
+						["CoordX"] = 1470.52331542969,
+					},
+					["Reagents"] = {
+						["CoordY"] = 881.597473144531,
+						["CoordX"] = 942.485961914063,
 					},
 				},
 			},
@@ -130,13 +130,16 @@ LUIDB = {
 				["Doomhammer"] = {
 					["Gold"] = {
 						["Alliance"] = {
-							["Dfbdeffbw"] = 100000,
-							["Marmit"] = 27417031,
+							["Marmit"] = 154418643,
 							["Nilrum"] = 436976680,
-							["Holyshnizzle"] = 340311893,
-							["Tareva"] = 481705898,
+							["Targatdummy"] = 100000,
+							["Bartholamue"] = 17813207,
+							["Dfbdeffbw"] = 100000,
+							["Taunkah"] = 242054300,
+							["Alfalpha"] = 51008857,
+							["Holyshnizzle"] = 207092009,
+							["Tareva"] = 182909519,
 							["Bahlar"] = 12994519,
-							["Taunkah"] = 288802372,
 						},
 					},
 				},
@@ -144,209 +147,6 @@ LUIDB = {
 		},
 		["Unitframes"] = {
 			["profiles"] = {
-				["Holyshnizzle - Doomhammer"] = {
-					["Party"] = {
-						["Portrait"] = {
-							["Enable"] = true,
-						},
-						["ShowInRealPartys"] = true,
-					},
-					["ToT"] = {
-						["Y"] = -250.000015258789,
-						["X"] = 435.000030517578,
-					},
-					["Player"] = {
-						["Fader"] = {
-							["Enable"] = true,
-							["UseGlobalSettings"] = false,
-						},
-						["Castbar"] = {
-							["General"] = {
-								["Y"] = -240,
-								["X"] = -200,
-								["Point"] = "CENTER",
-								["Width"] = 250,
-							},
-							["Text"] = {
-								["Name"] = {
-									["Font"] = "Prototype",
-								},
-								["Time"] = {
-									["Font"] = "Prototype",
-								},
-							},
-						},
-						["Aura"] = {
-							["Debuffs"] = {
-								["Y"] = 30,
-								["X"] = 0,
-								["InitialAnchor"] = "TOPLEFT",
-								["Enable"] = true,
-								["ColorByType"] = true,
-								["GrowthY"] = "UP",
-								["AuraTimer"] = true,
-							},
-						},
-						["Bars"] = {
-							["HealPrediction"] = {
-								["Enable"] = true,
-							},
-							["Health"] = {
-								["IndividualColor"] = {
-									["r"] = 0,
-									["g"] = 0.549019607843137,
-									["b"] = 0,
-								},
-							},
-							["Power"] = {
-								["Color"] = "By Type",
-							},
-						},
-						["Icons"] = {
-							["Resting"] = {
-								["Enable"] = true,
-								["X"] = -13,
-							},
-							["Combat"] = {
-								["Y"] = -14,
-								["X"] = 13,
-								["Point"] = "BOTTOMRIGHT",
-								["Enable"] = true,
-							},
-							["PvP"] = {
-								["Y"] = -15,
-								["X"] = -20,
-								["Enable"] = true,
-							},
-							["Leader"] = {
-								["Point"] = "TOPRIGHT",
-								["X"] = -8,
-							},
-							["Lootmaster"] = {
-								["X"] = 15,
-							},
-						},
-						["Texts"] = {
-							["HealthPercent"] = {
-								["Y"] = 13,
-								["Point"] = "BOTTOMRIGHT",
-								["RelativePoint"] = "BOTTOMRIGHT",
-							},
-							["Health"] = {
-								["Y"] = 13,
-								["X"] = 2,
-								["Point"] = "BOTTOMLEFT",
-								["RelativePoint"] = "BOTTOMLEFT",
-								["Format"] = "Absolut Short",
-								["Size"] = 16,
-							},
-							["Power"] = {
-								["Enable"] = false,
-							},
-						},
-					},
-					["Colors"] = {
-						["Misc"] = {
-							["Hostile"] = {
-								nil, -- [1]
-								nil, -- [2]
-								nil, -- [3]
-								1, -- [4]
-							},
-						},
-					},
-					["Focus"] = {
-						["Y"] = -250.000015258789,
-						["X"] = -435.000030517578,
-					},
-					["Target"] = {
-						["Castbar"] = {
-							["General"] = {
-								["Y"] = -240,
-								["X"] = 200,
-								["Point"] = "CENTER",
-								["Width"] = 250,
-							},
-							["Text"] = {
-								["Name"] = {
-									["Font"] = "Prototype",
-								},
-								["Time"] = {
-									["Font"] = "Prototype",
-								},
-							},
-						},
-						["Bars"] = {
-							["TotalAbsorb"] = {
-								["Enable"] = true,
-							},
-							["Health"] = {
-								["Tapping"] = true,
-								["IndividualColor"] = {
-									["r"] = 0,
-									["g"] = 0.549019607843137,
-									["b"] = 0.00392156862745098,
-								},
-								["Color"] = "Gradient",
-							},
-							["HealPrediction"] = {
-								["Enable"] = true,
-							},
-						},
-						["Icons"] = {
-							["PvP"] = {
-								["Y"] = -15,
-								["X"] = -20,
-								["Enable"] = true,
-							},
-						},
-						["Texts"] = {
-							["HealthPercent"] = {
-								["Y"] = 13,
-								["Point"] = "BOTTOMRIGHT",
-								["RelativePoint"] = "BOTTOMRIGHT",
-							},
-							["Health"] = {
-								["Y"] = 13,
-								["X"] = 2,
-								["Format"] = "Absolut Short",
-								["Size"] = 16,
-							},
-							["Power"] = {
-								["Enable"] = false,
-							},
-						},
-					},
-					["Raid"] = {
-						["Enable"] = false,
-					},
-					["Arena"] = {
-						["Y"] = 242.242736816406,
-						["X"] = 149.707824707031,
-						["Point"] = "LEFT",
-					},
-					["Boss"] = {
-						["Y"] = -95.0000076293945,
-						["X"] = -230.000015258789,
-						["Bars"] = {
-							["Health"] = {
-								["IndividualColor"] = {
-									["r"] = 0,
-									["g"] = 0.549019607843137,
-									["b"] = 0,
-								},
-							},
-						},
-					},
-				},
-				["Dfbdeffbw - Doomhammer"] = {
-					["Player"] = {
-						["Bars"] = {
-							["ClassIcons"] = {
-							},
-						},
-					},
-				},
 				["Tonkah LUI"] = {
 					["Party"] = {
 						["ShowInRealPartys"] = true,
@@ -365,9 +165,9 @@ LUIDB = {
 						["Bars"] = {
 							["Health"] = {
 								["IndividualColor"] = {
-									["b"] = 0,
-									["g"] = 0.549019607843137,
 									["r"] = 0,
+									["g"] = 0.549019607843137,
+									["b"] = 0,
 								},
 							},
 						},
@@ -413,15 +213,15 @@ LUIDB = {
 							},
 						},
 						["Aura"] = {
+							["Debuffs"] = {
+								["PlayerOnly"] = true,
+								["FadeOthers"] = false,
+								["IncludePet"] = true,
+								["AuraTimer"] = true,
+							},
 							["Buffs"] = {
 								["PlayerOnly"] = true,
 								["AuraTimer"] = true,
-							},
-							["Debuffs"] = {
-								["PlayerOnly"] = true,
-								["AuraTimer"] = true,
-								["IncludePet"] = true,
-								["FadeOthers"] = false,
 							},
 						},
 						["Bars"] = {
@@ -432,9 +232,9 @@ LUIDB = {
 								["Color"] = "Gradient",
 								["Tapping"] = true,
 								["IndividualColor"] = {
-									["r"] = 0,
-									["g"] = 0.549019607843137,
 									["b"] = 0.00392156862745098,
+									["g"] = 0.549019607843137,
+									["r"] = 0,
 								},
 							},
 							["HealPrediction"] = {
@@ -442,16 +242,16 @@ LUIDB = {
 							},
 						},
 						["Texts"] = {
+							["HealthPercent"] = {
+								["Point"] = "BOTTOMRIGHT",
+								["Y"] = 13,
+								["RelativePoint"] = "BOTTOMRIGHT",
+							},
 							["Health"] = {
 								["Y"] = 13,
 								["X"] = 2,
 								["Format"] = "Absolut Short",
 								["Size"] = 16,
-							},
-							["HealthPercent"] = {
-								["Point"] = "BOTTOMRIGHT",
-								["Y"] = 13,
-								["RelativePoint"] = "BOTTOMRIGHT",
 							},
 							["Power"] = {
 								["Enable"] = false,
@@ -478,9 +278,9 @@ LUIDB = {
 						["Bars"] = {
 							["Health"] = {
 								["IndividualColor"] = {
-									["r"] = 0,
-									["g"] = 0.549019607843137,
 									["b"] = 0,
+									["g"] = 0.549019607843137,
+									["r"] = 0,
 								},
 							},
 						},
@@ -547,9 +347,9 @@ LUIDB = {
 							},
 							["Health"] = {
 								["IndividualColor"] = {
-									["r"] = 0,
-									["g"] = 0.549019607843137,
 									["b"] = 0,
+									["g"] = 0.549019607843137,
+									["r"] = 0,
 								},
 							},
 							["ClassIcons"] = {
@@ -593,9 +393,9 @@ LUIDB = {
 						["Bars"] = {
 							["Health"] = {
 								["IndividualColor"] = {
-									["r"] = 0,
-									["g"] = 0.549019607843137,
 									["b"] = 0,
+									["g"] = 0.549019607843137,
+									["r"] = 0,
 								},
 							},
 						},
@@ -624,12 +424,21 @@ LUIDB = {
 						["Bars"] = {
 							["Health"] = {
 								["IndividualColor"] = {
-									["b"] = 0,
-									["g"] = 0.549019607843137,
 									["r"] = 0,
+									["g"] = 0.549019607843137,
+									["b"] = 0,
 								},
 							},
 						},
+					},
+					["Party"] = {
+						["Portrait"] = {
+							["Enable"] = true,
+						},
+						["ShowInRealPartys"] = true,
+					},
+					["Raid"] = {
+						["Enable"] = false,
 					},
 					["Boss"] = {
 						["Y"] = -95.0000076293945,
@@ -637,16 +446,93 @@ LUIDB = {
 						["Bars"] = {
 							["Health"] = {
 								["IndividualColor"] = {
-									["r"] = 0,
-									["g"] = 0.549019607843137,
 									["b"] = 0,
+									["g"] = 0.549019607843137,
+									["r"] = 0,
 								},
+							},
+						},
+					},
+					["Colors"] = {
+						["Misc"] = {
+							["Hostile"] = {
+								nil, -- [1]
+								nil, -- [2]
+								nil, -- [3]
+								1, -- [4]
+							},
+						},
+					},
+					["Focus"] = {
+						["Y"] = -250.000015258789,
+						["X"] = -435.000030517578,
+					},
+					["Target"] = {
+						["Castbar"] = {
+							["General"] = {
+								["Y"] = -240,
+								["X"] = 200,
+								["Point"] = "CENTER",
+								["Width"] = 250,
+							},
+							["Text"] = {
+								["Name"] = {
+									["Font"] = "Prototype",
+								},
+								["Time"] = {
+									["Font"] = "Prototype",
+								},
+							},
+						},
+						["Bars"] = {
+							["TotalAbsorb"] = {
+								["Enable"] = true,
+							},
+							["Health"] = {
+								["Color"] = "Gradient",
+								["IndividualColor"] = {
+									["b"] = 0.00392156862745098,
+									["g"] = 0.549019607843137,
+									["r"] = 0,
+								},
+								["Tapping"] = true,
+							},
+							["HealPrediction"] = {
+								["Enable"] = true,
+							},
+						},
+						["Icons"] = {
+							["PvP"] = {
+								["Y"] = -15,
+								["X"] = -20,
+								["Enable"] = true,
+							},
+						},
+						["Texts"] = {
+							["HealthPercent"] = {
+								["Y"] = 13,
+								["Point"] = "BOTTOMRIGHT",
+								["RelativePoint"] = "BOTTOMRIGHT",
+							},
+							["Health"] = {
+								["Y"] = 13,
+								["X"] = 2,
+								["Format"] = "Absolut Short",
+								["Size"] = 16,
+							},
+							["Power"] = {
+								["Enable"] = false,
 							},
 						},
 					},
 					["ToT"] = {
 						["Y"] = -250.000015258789,
 						["X"] = 435.000030517578,
+					},
+					["Arena"] = {
+						["Y"] = 242.242736816406,
+						["X"] = 149.707824707031,
+						["Point"] = "LEFT",
 					},
 					["Player"] = {
 						["Fader"] = {
@@ -683,9 +569,212 @@ LUIDB = {
 						["Bars"] = {
 							["Health"] = {
 								["IndividualColor"] = {
-									["r"] = 0,
-									["g"] = 0.549019607843137,
 									["b"] = 0,
+									["g"] = 0.549019607843137,
+									["r"] = 0,
+								},
+							},
+							["Power"] = {
+								["Color"] = "By Type",
+							},
+						},
+						["Icons"] = {
+							["Resting"] = {
+								["Enable"] = true,
+								["X"] = -13,
+							},
+							["Combat"] = {
+								["Y"] = -14,
+								["X"] = 13,
+								["Point"] = "BOTTOMRIGHT",
+								["Enable"] = true,
+							},
+							["PvP"] = {
+								["Y"] = -15,
+								["X"] = -20,
+								["Enable"] = true,
+							},
+							["Leader"] = {
+								["Point"] = "TOPRIGHT",
+								["X"] = -8,
+							},
+							["Lootmaster"] = {
+								["X"] = 15,
+							},
+						},
+						["Texts"] = {
+							["HealthPercent"] = {
+								["Y"] = 13,
+								["Point"] = "BOTTOMRIGHT",
+								["RelativePoint"] = "BOTTOMRIGHT",
+							},
+							["Health"] = {
+								["Y"] = 13,
+								["X"] = 2,
+								["Point"] = "BOTTOMLEFT",
+								["RelativePoint"] = "BOTTOMLEFT",
+								["Format"] = "Absolut Short",
+								["Size"] = 16,
+							},
+							["Power"] = {
+								["Enable"] = false,
+							},
+						},
+					},
+				},
+				["Bartholamue - Doomhammer"] = {
+					["Player"] = {
+						["Bars"] = {
+							["ClassIcons"] = {
+							},
+						},
+					},
+				},
+				["Holyshnizzle - Doomhammer"] = {
+					["Boss"] = {
+						["Y"] = -95.0000076293945,
+						["X"] = -230.000015258789,
+						["Bars"] = {
+							["Health"] = {
+								["IndividualColor"] = {
+									["b"] = 0,
+									["g"] = 0.549019607843137,
+									["r"] = 0,
+								},
+							},
+						},
+					},
+					["Arena"] = {
+						["Y"] = 242.242736816406,
+						["X"] = 149.707824707031,
+						["Point"] = "LEFT",
+					},
+					["Party"] = {
+						["Portrait"] = {
+							["Enable"] = true,
+						},
+						["ShowInRealPartys"] = true,
+					},
+					["Colors"] = {
+						["Misc"] = {
+							["Hostile"] = {
+								nil, -- [1]
+								nil, -- [2]
+								nil, -- [3]
+								1, -- [4]
+							},
+						},
+					},
+					["Focus"] = {
+						["Y"] = -250.000015258789,
+						["X"] = -435.000030517578,
+					},
+					["Target"] = {
+						["Texts"] = {
+							["Health"] = {
+								["Y"] = 13,
+								["X"] = 2,
+								["Format"] = "Absolut Short",
+								["Size"] = 16,
+							},
+							["HealthPercent"] = {
+								["Y"] = 13,
+								["Point"] = "BOTTOMRIGHT",
+								["RelativePoint"] = "BOTTOMRIGHT",
+							},
+							["Power"] = {
+								["Enable"] = false,
+							},
+						},
+						["Bars"] = {
+							["TotalAbsorb"] = {
+								["Enable"] = true,
+							},
+							["Health"] = {
+								["Tapping"] = true,
+								["IndividualColor"] = {
+									["b"] = 0.00392156862745098,
+									["g"] = 0.549019607843137,
+									["r"] = 0,
+								},
+								["Color"] = "Gradient",
+							},
+							["HealPrediction"] = {
+								["Enable"] = true,
+							},
+						},
+						["Icons"] = {
+							["PvP"] = {
+								["Y"] = -15,
+								["X"] = -20,
+								["Enable"] = true,
+							},
+						},
+						["Castbar"] = {
+							["General"] = {
+								["Y"] = -240,
+								["X"] = 200,
+								["Point"] = "CENTER",
+								["Width"] = 250,
+							},
+							["Text"] = {
+								["Name"] = {
+									["Font"] = "Prototype",
+								},
+								["Time"] = {
+									["Font"] = "Prototype",
+								},
+							},
+						},
+					},
+					["ToT"] = {
+						["Y"] = -250.000015258789,
+						["X"] = 435.000030517578,
+					},
+					["Raid"] = {
+						["Enable"] = false,
+					},
+					["Player"] = {
+						["Fader"] = {
+							["Enable"] = true,
+							["UseGlobalSettings"] = false,
+						},
+						["Castbar"] = {
+							["General"] = {
+								["Y"] = -240,
+								["X"] = -200,
+								["Point"] = "CENTER",
+								["Width"] = 250,
+							},
+							["Text"] = {
+								["Name"] = {
+									["Font"] = "Prototype",
+								},
+								["Time"] = {
+									["Font"] = "Prototype",
+								},
+							},
+						},
+						["Aura"] = {
+							["Debuffs"] = {
+								["Y"] = 30,
+								["X"] = 0,
+								["InitialAnchor"] = "TOPLEFT",
+								["Enable"] = true,
+								["ColorByType"] = true,
+								["GrowthY"] = "UP",
+								["AuraTimer"] = true,
+							},
+						},
+						["Bars"] = {
+							["HealPrediction"] = {
+								["Enable"] = true,
+							},
+							["Health"] = {
+								["IndividualColor"] = {
+									["b"] = 0,
+									["g"] = 0.549019607843137,
+									["r"] = 0,
 								},
 							},
 							["Power"] = {
@@ -735,103 +824,118 @@ LUIDB = {
 							},
 						},
 					},
-					["Colors"] = {
-						["Misc"] = {
-							["Hostile"] = {
-								nil, -- [1]
-								nil, -- [2]
-								nil, -- [3]
-								1, -- [4]
-							},
-						},
-					},
-					["Focus"] = {
-						["Y"] = -250.000015258789,
-						["X"] = -435.000030517578,
-					},
-					["Target"] = {
-						["Texts"] = {
-							["Health"] = {
-								["Y"] = 13,
-								["X"] = 2,
-								["Format"] = "Absolut Short",
-								["Size"] = 16,
-							},
-							["HealthPercent"] = {
-								["Y"] = 13,
-								["Point"] = "BOTTOMRIGHT",
-								["RelativePoint"] = "BOTTOMRIGHT",
-							},
-							["Power"] = {
-								["Enable"] = false,
-							},
-						},
+				},
+				["Dfbdeffbw - Doomhammer"] = {
+					["Player"] = {
 						["Bars"] = {
-							["TotalAbsorb"] = {
-								["Enable"] = true,
-							},
-							["Health"] = {
-								["Color"] = "Gradient",
-								["IndividualColor"] = {
-									["r"] = 0,
-									["g"] = 0.549019607843137,
-									["b"] = 0.00392156862745098,
-								},
-								["Tapping"] = true,
-							},
-							["HealPrediction"] = {
-								["Enable"] = true,
+							["ClassIcons"] = {
 							},
 						},
-						["Icons"] = {
-							["PvP"] = {
-								["Y"] = -15,
-								["X"] = -20,
-								["Enable"] = true,
-							},
-						},
-						["Castbar"] = {
-							["General"] = {
-								["Y"] = -240,
-								["X"] = 200,
-								["Point"] = "CENTER",
-								["Width"] = 250,
-							},
-							["Text"] = {
-								["Name"] = {
-									["Font"] = "Prototype",
-								},
-								["Time"] = {
-									["Font"] = "Prototype",
-								},
-							},
-						},
-					},
-					["Arena"] = {
-						["Y"] = 242.242736816406,
-						["X"] = 149.707824707031,
-						["Point"] = "LEFT",
-					},
-					["Raid"] = {
-						["Enable"] = false,
-					},
-					["Party"] = {
-						["Portrait"] = {
-							["Enable"] = true,
-						},
-						["ShowInRealPartys"] = true,
 					},
 				},
 				["Taunkah - Doomhammer"] = {
+					["Boss"] = {
+						["Y"] = -95.0000076293945,
+						["X"] = -230.000015258789,
+						["Bars"] = {
+							["Health"] = {
+								["IndividualColor"] = {
+									["b"] = 0,
+									["g"] = 0.549019607843137,
+									["r"] = 0,
+								},
+							},
+						},
+					},
+					["Arena"] = {
+						["Y"] = 242.242736816406,
+						["X"] = 149.707824707031,
+						["Point"] = "LEFT",
+					},
 					["Party"] = {
 						["Portrait"] = {
 							["Enable"] = true,
 						},
 						["ShowInRealPartys"] = true,
 					},
+					["Colors"] = {
+						["Misc"] = {
+							["Hostile"] = {
+								nil, -- [1]
+								nil, -- [2]
+								nil, -- [3]
+								1, -- [4]
+							},
+						},
+					},
+					["Focus"] = {
+						["Y"] = -250.000015258789,
+						["X"] = -435.000030517578,
+					},
+					["Target"] = {
+						["Castbar"] = {
+							["General"] = {
+								["Y"] = -240,
+								["X"] = 200,
+								["Point"] = "CENTER",
+								["Width"] = 250,
+							},
+							["Text"] = {
+								["Name"] = {
+									["Font"] = "Prototype",
+								},
+								["Time"] = {
+									["Font"] = "Prototype",
+								},
+							},
+						},
+						["Bars"] = {
+							["TotalAbsorb"] = {
+								["Enable"] = true,
+							},
+							["Health"] = {
+								["Color"] = "Gradient",
+								["IndividualColor"] = {
+									["b"] = 0.00392156862745098,
+									["g"] = 0.549019607843137,
+									["r"] = 0,
+								},
+								["Tapping"] = true,
+							},
+							["HealPrediction"] = {
+								["Enable"] = true,
+							},
+						},
+						["Icons"] = {
+							["PvP"] = {
+								["Y"] = -15,
+								["X"] = -20,
+								["Enable"] = true,
+							},
+						},
+						["Texts"] = {
+							["HealthPercent"] = {
+								["Y"] = 13,
+								["Point"] = "BOTTOMRIGHT",
+								["RelativePoint"] = "BOTTOMRIGHT",
+							},
+							["Health"] = {
+								["Y"] = 13,
+								["X"] = 2,
+								["Format"] = "Absolut Short",
+								["Size"] = 16,
+							},
+							["Power"] = {
+								["Enable"] = false,
+							},
+						},
+					},
 					["ToT"] = {
 						["Y"] = -250.000015258789,
 						["X"] = 435.000030517578,
+					},
+					["Raid"] = {
+						["Enable"] = false,
 					},
 					["Player"] = {
 						["Fader"] = {
@@ -868,9 +972,9 @@ LUIDB = {
 						["Bars"] = {
 							["Health"] = {
 								["IndividualColor"] = {
-									["r"] = 0,
-									["g"] = 0.549019607843137,
 									["b"] = 0,
+									["g"] = 0.549019607843137,
+									["r"] = 0,
 								},
 							},
 							["Power"] = {
@@ -902,6 +1006,11 @@ LUIDB = {
 							},
 						},
 						["Texts"] = {
+							["HealthPercent"] = {
+								["Y"] = 13,
+								["Point"] = "BOTTOMRIGHT",
+								["RelativePoint"] = "BOTTOMRIGHT",
+							},
 							["Health"] = {
 								["Y"] = 13,
 								["X"] = 2,
@@ -910,106 +1019,16 @@ LUIDB = {
 								["Format"] = "Absolut Short",
 								["Size"] = 16,
 							},
-							["HealthPercent"] = {
-								["Y"] = 13,
-								["Point"] = "BOTTOMRIGHT",
-								["RelativePoint"] = "BOTTOMRIGHT",
-							},
 							["Power"] = {
 								["Enable"] = false,
 							},
 						},
 					},
-					["Colors"] = {
-						["Misc"] = {
-							["Hostile"] = {
-								nil, -- [1]
-								nil, -- [2]
-								nil, -- [3]
-								1, -- [4]
-							},
-						},
-					},
-					["Focus"] = {
-						["Y"] = -250.000015258789,
-						["X"] = -435.000030517578,
-					},
-					["Target"] = {
-						["Texts"] = {
-							["Health"] = {
-								["Y"] = 13,
-								["X"] = 2,
-								["Format"] = "Absolut Short",
-								["Size"] = 16,
-							},
-							["HealthPercent"] = {
-								["Y"] = 13,
-								["Point"] = "BOTTOMRIGHT",
-								["RelativePoint"] = "BOTTOMRIGHT",
-							},
-							["Power"] = {
-								["Enable"] = false,
-							},
-						},
+				},
+				["Nilrum - Doomhammer"] = {
+					["Player"] = {
 						["Bars"] = {
-							["TotalAbsorb"] = {
-								["Enable"] = true,
-							},
-							["Health"] = {
-								["Color"] = "Gradient",
-								["IndividualColor"] = {
-									["r"] = 0,
-									["g"] = 0.549019607843137,
-									["b"] = 0.00392156862745098,
-								},
-								["Tapping"] = true,
-							},
-							["HealPrediction"] = {
-								["Enable"] = true,
-							},
-						},
-						["Icons"] = {
-							["PvP"] = {
-								["Y"] = -15,
-								["X"] = -20,
-								["Enable"] = true,
-							},
-						},
-						["Castbar"] = {
-							["General"] = {
-								["Y"] = -240,
-								["X"] = 200,
-								["Point"] = "CENTER",
-								["Width"] = 250,
-							},
-							["Text"] = {
-								["Name"] = {
-									["Font"] = "Prototype",
-								},
-								["Time"] = {
-									["Font"] = "Prototype",
-								},
-							},
-						},
-					},
-					["Raid"] = {
-						["Enable"] = false,
-					},
-					["Arena"] = {
-						["Y"] = 242.242736816406,
-						["X"] = 149.707824707031,
-						["Point"] = "LEFT",
-					},
-					["Boss"] = {
-						["Y"] = -95.0000076293945,
-						["X"] = -230.000015258789,
-						["Bars"] = {
-							["Health"] = {
-								["IndividualColor"] = {
-									["r"] = 0,
-									["g"] = 0.549019607843137,
-									["b"] = 0,
-								},
+							["ClassIcons"] = {
 							},
 						},
 					},
@@ -1022,7 +1041,7 @@ LUIDB = {
 						},
 					},
 				},
-				["Nilrum - Doomhammer"] = {
+				["Targatdummy - Doomhammer"] = {
 					["Player"] = {
 						["Bars"] = {
 							["ClassIcons"] = {
@@ -1039,12 +1058,12 @@ LUIDB = {
 						["Point"] = "BOTTOMLEFT",
 					},
 				},
-				["Tonkah LUI"] = {
+				["Taunkah - Doomhammer"] = {
 					["General"] = {
 						["Point"] = "BOTTOMLEFT",
 					},
 				},
-				["Taunkah - Doomhammer"] = {
+				["Tonkah LUI"] = {
 					["General"] = {
 						["Point"] = "BOTTOMLEFT",
 					},
@@ -1076,83 +1095,78 @@ LUIDB = {
 		},
 		["Merchant"] = {
 		},
-		["Auras"] = {
+		["Chat"] = {
+			["namespaces"] = {
+				["StickyChannels"] = {
+				},
+				["Buttons"] = {
+				},
+				["EditBox"] = {
+				},
+			},
 			["profiles"] = {
-				["Holyshnizzle - Doomhammer"] = {
-					["Debuffs"] = {
-						["Size"] = 65,
-					},
-				},
 				["Tonkah LUI"] = {
-					["Buffs"] = {
-						["Consolidate"] = false,
-						["ReverseSort"] = true,
-						["Count"] = {
-							["Font"] = "Prototype",
-						},
-					},
-					["Debuffs"] = {
-						["ReverseSort"] = true,
-						["Count"] = {
-							["Font"] = "Prototype",
-						},
-						["Size"] = 65,
-					},
-				},
-				["Taunkah - Doomhammer"] = {
-					["Debuffs"] = {
-						["Size"] = 65,
+					["modules"] = {
 					},
 				},
 				["Marmit - Doomhammer"] = {
-					["Debuffs"] = {
-						["Size"] = 65,
+					["modules"] = {
+					},
+				},
+				["Tareva - Doomhammer"] = {
+					["modules"] = {
+					},
+				},
+				["Holyshnizzle - Doomhammer"] = {
+					["modules"] = {
+					},
+				},
+				["Dfbdeffbw - Doomhammer"] = {
+					["modules"] = {
+					},
+				},
+				["Taunkah - Doomhammer"] = {
+					["modules"] = {
+					},
+				},
+				["Bartholamue - Doomhammer"] = {
+					["modules"] = {
+					},
+				},
+				["Nilrum - Doomhammer"] = {
+					["modules"] = {
+					},
+				},
+				["Targatdummy - Doomhammer"] = {
+					["modules"] = {
+					},
+				},
+				["Bahlar - Doomhammer"] = {
+					["modules"] = {
+					},
+				},
+				["Alfalpha - Doomhammer"] = {
+					["modules"] = {
 					},
 				},
 			},
 		},
 		["Panels"] = {
 			["profiles"] = {
-				["Holyshnizzle - Doomhammer"] = {
+				["Tonkah LUI"] = {
+					["Dps"] = {
+						["IsShown"] = true,
+						["Width"] = 190,
+						["OffsetX"] = 2,
+						["OffsetY"] = -32,
+					},
 					["MicroMenu"] = {
 						["AlwaysShow"] = false,
-					},
-					["Tps"] = {
-						["OffsetY"] = -3,
-						["IsShown"] = true,
-						["OffsetX"] = 3,
-					},
-					["Dps"] = {
-						["OffsetY"] = -32,
-						["IsShown"] = true,
-						["OffsetX"] = 2,
-					},
-					["Raid"] = {
-						["Anchor"] = "HealBot_Action",
-						["Direction"] = "LEFT",
-					},
-					["Minimap"] = {
 						["IsShown"] = true,
 					},
-				},
-				["Dfbdeffbw - Doomhammer"] = {
-					["MicroMenu"] = {
-						["IsShown"] = true,
-					},
-					["Minimap"] = {
-						["IsShown"] = true,
-					},
-				},
-				["Tonkah LUI"] = {
 					["Raid"] = {
 						["Direction"] = "LEFT",
 						["Anchor"] = "HealBot_Action",
-					},
-					["Chat"] = {
-						["IsShown"] = true,
-					},
-					["Minimap"] = {
-						["IsShown"] = true,
 					},
 					["Tps"] = {
 						["IsShown"] = true,
@@ -1160,66 +1174,76 @@ LUIDB = {
 						["OffsetX"] = 3,
 						["OffsetY"] = -2,
 					},
-					["Dps"] = {
-						["IsShown"] = true,
-						["Width"] = 190,
-						["OffsetX"] = 2,
-						["OffsetY"] = -32,
-					},
-					["MicroMenu"] = {
-						["AlwaysShow"] = false,
-						["IsShown"] = true,
-					},
-				},
-				["Taunkah - Doomhammer"] = {
-					["MicroMenu"] = {
-						["AlwaysShow"] = false,
-					},
-					["Raid"] = {
-						["Anchor"] = "HealBot_Action",
-						["Direction"] = "LEFT",
-					},
-					["Dps"] = {
-						["OffsetY"] = -32,
-						["IsShown"] = true,
-						["OffsetX"] = 2,
-					},
-					["Tps"] = {
-						["OffsetY"] = -3,
-						["IsShown"] = true,
-						["OffsetX"] = 3,
-					},
 					["Minimap"] = {
 						["IsShown"] = true,
 					},
-				},
-				["Nilrum - Doomhammer"] = {
-					["MicroMenu"] = {
-						["IsShown"] = true,
-					},
-					["Minimap"] = {
-						["IsShown"] = true,
-					},
-				},
-				["Tareva - Doomhammer"] = {
-					["Minimap"] = {
-						["IsShown"] = true,
-					},
-					["MicroMenu"] = {
-						["IsShown"] = true,
-					},
-				},
-				["Bahlar - Doomhammer"] = {
-					["Minimap"] = {
-						["IsShown"] = true,
-					},
-					["MicroMenu"] = {
+					["Chat"] = {
 						["IsShown"] = true,
 					},
 				},
 				["Marmit - Doomhammer"] = {
+					["Minimap"] = {
+						["IsShown"] = true,
+					},
+					["Dps"] = {
+						["OffsetY"] = -32,
+						["IsShown"] = true,
+						["OffsetX"] = 2,
+					},
+					["Tps"] = {
+						["OffsetY"] = -3,
+						["IsShown"] = true,
+						["OffsetX"] = 3,
+					},
+					["Raid"] = {
+						["Anchor"] = "HealBot_Action",
+						["Direction"] = "LEFT",
+					},
 					["MicroMenu"] = {
 						["AlwaysShow"] = false,
+					},
+				},
+				["Tareva - Doomhammer"] = {
+					["MicroMenu"] = {
+						["IsShown"] = true,
+					},
+					["Minimap"] = {
+						["IsShown"] = true,
+					},
+				},
+				["Holyshnizzle - Doomhammer"] = {
+					["Minimap"] = {
+						["IsShown"] = true,
+					},
+					["Raid"] = {
+						["Anchor"] = "HealBot_Action",
+						["Direction"] = "LEFT",
+					},
+					["Tps"] = {
+						["OffsetY"] = -3,
+						["IsShown"] = true,
+						["OffsetX"] = 3,
+					},
+					["Dps"] = {
+						["OffsetY"] = -32,
+						["IsShown"] = true,
+						["OffsetX"] = 2,
+					},
+					["MicroMenu"] = {
+						["AlwaysShow"] = false,
+					},
+				},
+				["Dfbdeffbw - Doomhammer"] = {
+					["Minimap"] = {
+						["IsShown"] = true,
+					},
+					["MicroMenu"] = {
+						["IsShown"] = true,
+					},
+				},
+				["Taunkah - Doomhammer"] = {
+					["Minimap"] = {
+						["IsShown"] = true,
 					},
 					["Tps"] = {
 						["OffsetY"] = -3,
@@ -1234,6 +1258,46 @@ LUIDB = {
 						["OffsetY"] = -32,
 						["IsShown"] = true,
 						["OffsetX"] = 2,
+					},
+					["MicroMenu"] = {
+						["AlwaysShow"] = false,
+					},
+				},
+				["Alfalpha - Doomhammer"] = {
+					["Minimap"] = {
+						["IsShown"] = true,
+					},
+					["MicroMenu"] = {
+						["IsShown"] = true,
+					},
+				},
+				["Nilrum - Doomhammer"] = {
+					["Minimap"] = {
+						["IsShown"] = true,
+					},
+					["MicroMenu"] = {
+						["IsShown"] = true,
+					},
+				},
+				["Targatdummy - Doomhammer"] = {
+					["MicroMenu"] = {
+						["IsShown"] = true,
+					},
+					["Minimap"] = {
+						["IsShown"] = true,
+					},
+				},
+				["Bahlar - Doomhammer"] = {
+					["MicroMenu"] = {
+						["IsShown"] = true,
+					},
+					["Minimap"] = {
+						["IsShown"] = true,
+					},
+				},
+				["Bartholamue - Doomhammer"] = {
+					["MicroMenu"] = {
+						["IsShown"] = true,
 					},
 					["Minimap"] = {
 						["IsShown"] = true,
@@ -1241,7 +1305,7 @@ LUIDB = {
 				},
 			},
 		},
-		["Forte"] = {
+		["Fader"] = {
 		},
 		["Themes"] = {
 			["global"] = {
@@ -1300,11 +1364,11 @@ LUIDB = {
 						0.9, -- [3]
 						0.4, -- [4]
 					},
-					["navi_hover"] = {
+					["bar"] = {
 						0.9, -- [1]
 						0.9, -- [2]
 						0.9, -- [3]
-						0.4, -- [4]
+						0.7, -- [4]
 					},
 					["micromenu_bg2"] = {
 						0, -- [1]
@@ -1312,22 +1376,23 @@ LUIDB = {
 						0, -- [3]
 						0.7, -- [4]
 					},
-					["orb"] = {
+					["chatborder"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.160000026226044, -- [4]
+					},
+					["minimap"] = {
 						0.9, -- [1]
 						0.9, -- [2]
 						0.9, -- [3]
+						1, -- [4]
 					},
-					["chat2border"] = {
+					["editbox"] = {
 						0.9, -- [1]
 						0.9, -- [2]
 						0.9, -- [3]
 						0.4, -- [4]
-					},
-					["navi"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.6, -- [4]
 					},
 					["bar2"] = {
 						0.9, -- [1]
@@ -1347,25 +1412,13 @@ LUIDB = {
 						0, -- [3]
 						0.160000026226044, -- [4]
 					},
-					["chat2"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_btn_hover"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.8, -- [4]
-					},
 					["raidborder"] = {
 						0.9, -- [1]
 						0.9, -- [2]
 						0.9, -- [3]
 						0.4, -- [4]
 					},
-					["sidebar"] = {
+					["chat2"] = {
 						0.9, -- [1]
 						0.9, -- [2]
 						0.9, -- [3]
@@ -1377,364 +1430,49 @@ LUIDB = {
 						0.9, -- [3]
 						0.4, -- [4]
 					},
-					["micromenu"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-					},
-					["editbox"] = {
+					["sidebar"] = {
 						0.9, -- [1]
 						0.9, -- [2]
 						0.9, -- [3]
 						0.4, -- [4]
 					},
-					["minimap"] = {
+					["micromenu_btn_hover"] = {
 						0.9, -- [1]
 						0.9, -- [2]
 						0.9, -- [3]
-						1, -- [4]
+						0.8, -- [4]
 					},
-					["chatborder"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.160000026226044, -- [4]
-					},
-					["bar"] = {
+					["micromenu"] = {
 						0.9, -- [1]
 						0.9, -- [2]
 						0.9, -- [3]
-						0.7, -- [4]
+					},
+					["navi"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.6, -- [4]
+					},
+					["chat2border"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["orb"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+					},
+					["navi_hover"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
 					},
 				},
 			},
 			["profiles"] = {
-				["Holyshnizzle - Doomhammer"] = {
-					["micromenu_btn"] = {
-						0.901960784313726, -- [1]
-						0.901960784313726, -- [2]
-						0.901960784313726, -- [3]
-						0.800000011920929, -- [4]
-					},
-					["color_bottom"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.5, -- [4]
-					},
-					["tpsborder"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.160000026226044, -- [4]
-					},
-					["tps"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.160000026226044, -- [4]
-					},
-					["chat"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["navi_hover"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_bg"] = {
-						0.6, -- [1]
-						0.6, -- [2]
-						0.6, -- [3]
-						0.8, -- [4]
-					},
-					["orb_cycle"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["color_top"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.5, -- [4]
-					},
-					["raid"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["theme"] = "Priest",
-					["micromenu_bg2"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.7, -- [4]
-					},
-					["orb"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-					},
-					["chat2border"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["navi"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.6, -- [4]
-					},
-					["bar2"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.6, -- [4]
-					},
-					["dpsborder"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.160000026226044, -- [4]
-					},
-					["dps"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.160000026226044, -- [4]
-					},
-					["orb_hover"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["raidborder"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_btn_hover"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.8, -- [4]
-					},
-					["sidebar"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["chat2"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-					},
-					["editbox"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["minimap"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						1, -- [4]
-					},
-					["chatborder"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["bar"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.7, -- [4]
-					},
-				},
-				["Dfbdeffbw - Doomhammer"] = {
-					["micromenu_btn"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.8, -- [4]
-					},
-					["color_bottom"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.5, -- [4]
-					},
-					["tpsborder"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.4, -- [4]
-					},
-					["tps"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.4, -- [4]
-					},
-					["chat"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.4, -- [4]
-					},
-					["navi_hover"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_bg"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.8, -- [4]
-					},
-					["orb_cycle"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.4, -- [4]
-					},
-					["color_top"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.5, -- [4]
-					},
-					["raid"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.4, -- [4]
-					},
-					["theme"] = "Druid",
-					["micromenu_bg2"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.7, -- [4]
-					},
-					["orb"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-					},
-					["chat2border"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.4, -- [4]
-					},
-					["navi"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.6, -- [4]
-					},
-					["bar2"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.6, -- [4]
-					},
-					["dpsborder"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.4, -- [4]
-					},
-					["dps"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.4, -- [4]
-					},
-					["orb_hover"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.4, -- [4]
-					},
-					["raidborder"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_btn_hover"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.8, -- [4]
-					},
-					["sidebar"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.5, -- [4]
-					},
-					["chat2"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-					},
-					["editbox"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.4, -- [4]
-					},
-					["minimap"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						1, -- [4]
-					},
-					["chatborder"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.4, -- [4]
-					},
-					["bar"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.7, -- [4]
-					},
-				},
 				["Tonkah LUI"] = {
 					["micromenu_btn"] = {
 						0.901960784313726, -- [1]
@@ -1766,11 +1504,11 @@ LUIDB = {
 						0, -- [3]
 						0.160000026226044, -- [4]
 					},
-					["bar"] = {
+					["navi_hover"] = {
 						0.9, -- [1]
 						0.9, -- [2]
 						0.9, -- [3]
-						0.7, -- [4]
+						0.4, -- [4]
 					},
 					["micromenu_bg"] = {
 						0.6, -- [1]
@@ -1803,23 +1541,22 @@ LUIDB = {
 						0, -- [3]
 						0.7, -- [4]
 					},
-					["chatborder"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.160000026226044, -- [4]
-					},
-					["minimap"] = {
+					["orb"] = {
 						0.9, -- [1]
 						0.9, -- [2]
 						0.9, -- [3]
-						1, -- [4]
 					},
-					["editbox"] = {
+					["chat2border"] = {
 						0.9, -- [1]
 						0.9, -- [2]
 						0.9, -- [3]
 						0.4, -- [4]
+					},
+					["navi"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.6, -- [4]
 					},
 					["bar2"] = {
 						0.9, -- [1]
@@ -1839,25 +1576,13 @@ LUIDB = {
 						0, -- [3]
 						0.160000026226044, -- [4]
 					},
-					["raidborder"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["chat2"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
 					["orb_hover"] = {
 						0.9, -- [1]
 						0.9, -- [2]
 						0.9, -- [3]
 						0.4, -- [4]
 					},
-					["sidebar"] = {
+					["raidborder"] = {
 						0.9, -- [1]
 						0.9, -- [2]
 						0.9, -- [3]
@@ -1869,33 +1594,46 @@ LUIDB = {
 						0.9, -- [3]
 						0.8, -- [4]
 					},
+					["sidebar"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["chat2"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
 					["micromenu"] = {
 						0.9, -- [1]
 						0.9, -- [2]
 						0.9, -- [3]
 					},
-					["navi"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.6, -- [4]
-					},
-					["chat2border"] = {
+					["editbox"] = {
 						0.9, -- [1]
 						0.9, -- [2]
 						0.9, -- [3]
 						0.4, -- [4]
 					},
-					["orb"] = {
+					["minimap"] = {
 						0.9, -- [1]
 						0.9, -- [2]
 						0.9, -- [3]
+						1, -- [4]
 					},
-					["navi_hover"] = {
+					["chatborder"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.160000026226044, -- [4]
+					},
+					["bar"] = {
 						0.9, -- [1]
 						0.9, -- [2]
 						0.9, -- [3]
-						0.4, -- [4]
+						0.7, -- [4]
 					},
 				},
 				["Marmit - Doomhammer"] = {
@@ -1929,11 +1667,11 @@ LUIDB = {
 						0.9, -- [3]
 						0.4, -- [4]
 					},
-					["navi_hover"] = {
+					["bar"] = {
 						0.9, -- [1]
 						0.9, -- [2]
 						0.9, -- [3]
-						0.4, -- [4]
+						0.7, -- [4]
 					},
 					["micromenu_bg"] = {
 						0.6, -- [1]
@@ -1966,22 +1704,23 @@ LUIDB = {
 						0, -- [3]
 						0.7, -- [4]
 					},
-					["orb"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-					},
-					["chat2border"] = {
+					["chatborder"] = {
 						0.9, -- [1]
 						0.9, -- [2]
 						0.9, -- [3]
 						0.4, -- [4]
 					},
-					["navi"] = {
+					["minimap"] = {
 						0.9, -- [1]
 						0.9, -- [2]
 						0.9, -- [3]
-						0.6, -- [4]
+						1, -- [4]
+					},
+					["editbox"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
 					},
 					["bar2"] = {
 						0.9, -- [1]
@@ -2001,25 +1740,13 @@ LUIDB = {
 						0, -- [3]
 						0.160000026226044, -- [4]
 					},
-					["chat2"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_btn_hover"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.8, -- [4]
-					},
 					["raidborder"] = {
 						0.9, -- [1]
 						0.9, -- [2]
 						0.9, -- [3]
 						0.4, -- [4]
 					},
-					["sidebar"] = {
+					["chat2"] = {
 						0.9, -- [1]
 						0.9, -- [2]
 						0.9, -- [3]
@@ -2031,24 +1758,236 @@ LUIDB = {
 						0.9, -- [3]
 						0.4, -- [4]
 					},
-					["micromenu"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-					},
-					["editbox"] = {
+					["sidebar"] = {
 						0.9, -- [1]
 						0.9, -- [2]
 						0.9, -- [3]
 						0.4, -- [4]
 					},
-					["minimap"] = {
+					["micromenu_btn_hover"] = {
 						0.9, -- [1]
 						0.9, -- [2]
 						0.9, -- [3]
+						0.8, -- [4]
+					},
+					["micromenu"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+					},
+					["navi"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.6, -- [4]
+					},
+					["chat2border"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["orb"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+					},
+					["navi_hover"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+				},
+				["Tareva - Doomhammer"] = {
+					["micromenu_btn"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.8, -- [4]
+					},
+					["color_bottom"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.5, -- [4]
+					},
+					["tpsborder"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["tps"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["chat"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["navi_hover"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu_bg"] = {
+						0, -- [1]
+						0.09, -- [2]
+						0.68, -- [3]
+						0.8, -- [4]
+					},
+					["orb_cycle"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["color_top"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.5, -- [4]
+					},
+					["raid"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["theme"] = "Shaman",
+					["micromenu_bg2"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.8, -- [4]
+					},
+					["orb"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+					},
+					["chat2border"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["navi"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.6, -- [4]
+					},
+					["bar2"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.6, -- [4]
+					},
+					["dpsborder"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["dps"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["orb_hover"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["raidborder"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu_btn_hover"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.8, -- [4]
+					},
+					["sidebar"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["chat2"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+					},
+					["editbox"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["minimap"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
 						1, -- [4]
 					},
 					["chatborder"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["bar"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.7, -- [4]
+					},
+				},
+				["Holyshnizzle - Doomhammer"] = {
+					["micromenu_btn"] = {
+						0.901960784313726, -- [1]
+						0.901960784313726, -- [2]
+						0.901960784313726, -- [3]
+						0.800000011920929, -- [4]
+					},
+					["color_bottom"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.5, -- [4]
+					},
+					["tpsborder"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.160000026226044, -- [4]
+					},
+					["tps"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.160000026226044, -- [4]
+					},
+					["chat"] = {
 						0.9, -- [1]
 						0.9, -- [2]
 						0.9, -- [3]
@@ -2060,8 +1999,785 @@ LUIDB = {
 						0.9, -- [3]
 						0.7, -- [4]
 					},
+					["micromenu_bg"] = {
+						0.6, -- [1]
+						0.6, -- [2]
+						0.6, -- [3]
+						0.8, -- [4]
+					},
+					["orb_cycle"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["color_top"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.5, -- [4]
+					},
+					["raid"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["theme"] = "Priest",
+					["micromenu_bg2"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.7, -- [4]
+					},
+					["chatborder"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["minimap"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						1, -- [4]
+					},
+					["editbox"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["bar2"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.6, -- [4]
+					},
+					["dpsborder"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.160000026226044, -- [4]
+					},
+					["dps"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.160000026226044, -- [4]
+					},
+					["micromenu_btn_hover"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.8, -- [4]
+					},
+					["orb_hover"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["chat2"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["sidebar"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["raidborder"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+					},
+					["navi"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.6, -- [4]
+					},
+					["chat2border"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["orb"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+					},
+					["navi_hover"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+				},
+				["Dfbdeffbw - Doomhammer"] = {
+					["micromenu_btn"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.8, -- [4]
+					},
+					["color_bottom"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.5, -- [4]
+					},
+					["tpsborder"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["tps"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["chat"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["bar"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.7, -- [4]
+					},
+					["micromenu_bg"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.8, -- [4]
+					},
+					["orb_cycle"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["color_top"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.5, -- [4]
+					},
+					["raid"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["theme"] = "Druid",
+					["micromenu_bg2"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.7, -- [4]
+					},
+					["chatborder"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["minimap"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						1, -- [4]
+					},
+					["editbox"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["bar2"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.6, -- [4]
+					},
+					["dpsborder"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["dps"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu_btn_hover"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.8, -- [4]
+					},
+					["orb_hover"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["chat2"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["sidebar"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.5, -- [4]
+					},
+					["raidborder"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+					},
+					["navi"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.6, -- [4]
+					},
+					["chat2border"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["orb"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+					},
+					["navi_hover"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+				},
+				["Taunkah - Doomhammer"] = {
+					["micromenu_btn"] = {
+						0.901960784313726, -- [1]
+						0.901960784313726, -- [2]
+						0.901960784313726, -- [3]
+						0.800000011920929, -- [4]
+					},
+					["color_bottom"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.5, -- [4]
+					},
+					["tpsborder"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.160000026226044, -- [4]
+					},
+					["tps"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.160000026226044, -- [4]
+					},
+					["chat"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["bar"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.7, -- [4]
+					},
+					["micromenu_bg"] = {
+						0.6, -- [1]
+						0.6, -- [2]
+						0.6, -- [3]
+						0.8, -- [4]
+					},
+					["orb_cycle"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["color_top"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.5, -- [4]
+					},
+					["raid"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["theme"] = "Priest",
+					["micromenu_bg2"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.7, -- [4]
+					},
+					["chatborder"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["minimap"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						1, -- [4]
+					},
+					["editbox"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["bar2"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.6, -- [4]
+					},
+					["dpsborder"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.160000026226044, -- [4]
+					},
+					["dps"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.160000026226044, -- [4]
+					},
+					["micromenu_btn_hover"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.8, -- [4]
+					},
+					["orb_hover"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["chat2"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["sidebar"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["raidborder"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+					},
+					["navi"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.6, -- [4]
+					},
+					["chat2border"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["orb"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+					},
+					["navi_hover"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+				},
+				["Bartholamue - Doomhammer"] = {
+					["micromenu_btn"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.8, -- [4]
+					},
+					["color_bottom"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.5, -- [4]
+					},
+					["tpsborder"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["tps"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["chat"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["navi_hover"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu_bg"] = {
+						0.66, -- [1]
+						0, -- [2]
+						0.43, -- [3]
+						0.8, -- [4]
+					},
+					["orb_cycle"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["color_top"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.5, -- [4]
+					},
+					["raid"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["theme"] = "Paladin",
+					["micromenu_bg2"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.7, -- [4]
+					},
+					["orb"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+					},
+					["chat2border"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["navi"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.6, -- [4]
+					},
+					["bar2"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.6, -- [4]
+					},
+					["dpsborder"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["dps"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["orb_hover"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["raidborder"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu_btn_hover"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.8, -- [4]
+					},
+					["sidebar"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["chat2"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+					},
+					["editbox"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["minimap"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						1, -- [4]
+					},
+					["chatborder"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["bar"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.7, -- [4]
+					},
 				},
 				["Nilrum - Doomhammer"] = {
+					["micromenu_btn"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.8, -- [4]
+					},
+					["color_bottom"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.5, -- [4]
+					},
+					["tpsborder"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["tps"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["chat"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["bar"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.8, -- [4]
+					},
+					["micromenu_bg"] = {
+						0, -- [1]
+						0.22, -- [2]
+						0.47, -- [3]
+						1, -- [4]
+					},
+					["orb_cycle"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["color_top"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.5, -- [4]
+					},
+					["raid"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["theme"] = "Mage",
+					["micromenu_bg2"] = {
+						0.12, -- [1]
+						0.12, -- [2]
+						0.12, -- [3]
+						0.6, -- [4]
+					},
+					["chatborder"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["minimap"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						1, -- [4]
+					},
+					["editbox"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["bar2"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.6, -- [4]
+					},
+					["dpsborder"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["dps"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["raidborder"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["chat2"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["orb_hover"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["sidebar"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu_btn_hover"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.8, -- [4]
+					},
+					["micromenu"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+					},
+					["navi"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.6, -- [4]
+					},
+					["chat2border"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["orb"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+					},
+					["navi_hover"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+				},
+				["Targatdummy - Doomhammer"] = {
 					["micromenu_btn"] = {
 						0.12, -- [1]
 						0.58, -- [2]
@@ -2164,7 +2880,13 @@ LUIDB = {
 						0.89, -- [3]
 						0.4, -- [4]
 					},
-					["chat2"] = {
+					["orb_hover"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["raidborder"] = {
 						0.12, -- [1]
 						0.58, -- [2]
 						0.89, -- [3]
@@ -2176,19 +2898,13 @@ LUIDB = {
 						0.89, -- [3]
 						0.8, -- [4]
 					},
-					["raidborder"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
 					["sidebar"] = {
 						0.12, -- [1]
 						0.58, -- [2]
 						0.89, -- [3]
 						0.4, -- [4]
 					},
-					["orb_hover"] = {
+					["chat2"] = {
 						0.12, -- [1]
 						0.58, -- [2]
 						0.89, -- [3]
@@ -2255,11 +2971,11 @@ LUIDB = {
 						1, -- [3]
 						0.4, -- [4]
 					},
-					["bar"] = {
+					["navi_hover"] = {
 						0.57, -- [1]
 						0.22, -- [2]
 						1, -- [3]
-						0.7, -- [4]
+						0.4, -- [4]
 					},
 					["micromenu_bg"] = {
 						0.27, -- [1]
@@ -2292,23 +3008,22 @@ LUIDB = {
 						0, -- [3]
 						0.7, -- [4]
 					},
-					["chatborder"] = {
+					["orb"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+					},
+					["chat2border"] = {
 						0.57, -- [1]
 						0.22, -- [2]
 						1, -- [3]
 						0.4, -- [4]
 					},
-					["minimap"] = {
+					["navi"] = {
 						0.57, -- [1]
 						0.22, -- [2]
 						1, -- [3]
-						1, -- [4]
-					},
-					["editbox"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.4, -- [4]
+						0.6, -- [4]
 					},
 					["bar2"] = {
 						0.57, -- [1]
@@ -2328,19 +3043,19 @@ LUIDB = {
 						1, -- [3]
 						0.4, -- [4]
 					},
+					["chat2"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.4, -- [4]
+					},
 					["micromenu_btn_hover"] = {
 						0.57, -- [1]
 						0.22, -- [2]
 						1, -- [3]
 						0.8, -- [4]
 					},
-					["orb_hover"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.4, -- [4]
-					},
-					["chat2"] = {
+					["raidborder"] = {
 						0.57, -- [1]
 						0.22, -- [2]
 						1, -- [3]
@@ -2352,7 +3067,7 @@ LUIDB = {
 						1, -- [3]
 						0.4, -- [4]
 					},
-					["raidborder"] = {
+					["orb_hover"] = {
 						0.57, -- [1]
 						0.22, -- [2]
 						1, -- [3]
@@ -2363,402 +3078,231 @@ LUIDB = {
 						0.22, -- [2]
 						1, -- [3]
 					},
-					["navi"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.6, -- [4]
-					},
-					["chat2border"] = {
+					["editbox"] = {
 						0.57, -- [1]
 						0.22, -- [2]
 						1, -- [3]
 						0.4, -- [4]
 					},
-					["orb"] = {
+					["minimap"] = {
 						0.57, -- [1]
 						0.22, -- [2]
 						1, -- [3]
+						1, -- [4]
 					},
-					["navi_hover"] = {
+					["chatborder"] = {
 						0.57, -- [1]
 						0.22, -- [2]
 						1, -- [3]
-						0.4, -- [4]
-					},
-				},
-				["Tareva - Doomhammer"] = {
-					["micromenu_btn"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.8, -- [4]
-					},
-					["color_bottom"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.5, -- [4]
-					},
-					["tpsborder"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["tps"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["chat"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
 						0.4, -- [4]
 					},
 					["bar"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
 						0.7, -- [4]
 					},
-					["micromenu_bg"] = {
-						0, -- [1]
-						0.09, -- [2]
-						0.68, -- [3]
-						0.8, -- [4]
-					},
-					["orb_cycle"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["color_top"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.5, -- [4]
-					},
-					["raid"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["theme"] = "Shaman",
-					["micromenu_bg2"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.8, -- [4]
-					},
-					["chatborder"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["minimap"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						1, -- [4]
-					},
-					["editbox"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["bar2"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.6, -- [4]
-					},
-					["dpsborder"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["dps"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["raidborder"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["chat2"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["orb_hover"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["sidebar"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_btn_hover"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.8, -- [4]
-					},
-					["micromenu"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-					},
-					["navi"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.6, -- [4]
-					},
-					["chat2border"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["orb"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-					},
-					["navi_hover"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
 				},
-				["Taunkah - Doomhammer"] = {
+				["Alfalpha - Doomhammer"] = {
 					["micromenu_btn"] = {
-						0.901960784313726, -- [1]
-						0.901960784313726, -- [2]
-						0.901960784313726, -- [3]
-						0.800000011920929, -- [4]
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.8, -- [4]
 					},
 					["color_bottom"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
 						0.5, -- [4]
 					},
 					["tpsborder"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.160000026226044, -- [4]
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
 					},
 					["tps"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.160000026226044, -- [4]
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
 					},
 					["chat"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["navi_hover"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_bg"] = {
-						0.6, -- [1]
-						0.6, -- [2]
-						0.6, -- [3]
-						0.8, -- [4]
-					},
-					["orb_cycle"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["color_top"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.5, -- [4]
-					},
-					["raid"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["theme"] = "Priest",
-					["micromenu_bg2"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.7, -- [4]
-					},
-					["orb"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-					},
-					["chat2border"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["navi"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.6, -- [4]
-					},
-					["bar2"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.6, -- [4]
-					},
-					["dpsborder"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.160000026226044, -- [4]
-					},
-					["dps"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.160000026226044, -- [4]
-					},
-					["orb_hover"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["raidborder"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_btn_hover"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.8, -- [4]
-					},
-					["sidebar"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["chat2"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-					},
-					["editbox"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["minimap"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						1, -- [4]
-					},
-					["chatborder"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
 						0.4, -- [4]
 					},
 					["bar"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.7, -- [4]
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.8, -- [4]
+					},
+					["micromenu_bg"] = {
+						0.7, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.8, -- [4]
+					},
+					["orb_cycle"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
+					},
+					["color_top"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.5, -- [4]
+					},
+					["raid"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
+					},
+					["theme"] = "Death Knight",
+					["micromenu_bg2"] = {
+						0.1, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.8, -- [4]
+					},
+					["chatborder"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
+					},
+					["minimap"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						1, -- [4]
+					},
+					["editbox"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
+					},
+					["bar2"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.6, -- [4]
+					},
+					["dpsborder"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
+					},
+					["dps"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu_btn_hover"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.8, -- [4]
+					},
+					["orb_hover"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
+					},
+					["chat2"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
+					},
+					["sidebar"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
+					},
+					["raidborder"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+					},
+					["navi"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.6, -- [4]
+					},
+					["chat2border"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
+					},
+					["orb"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+					},
+					["navi_hover"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
 					},
 				},
 			},
 		},
-		["Fader"] = {
+		["Forte"] = {
 		},
 		["Micromenu"] = {
 		},
-		["Chat"] = {
-			["namespaces"] = {
-				["StickyChannels"] = {
-				},
-				["EditBox"] = {
-				},
-				["Buttons"] = {
-				},
-			},
+		["Auras"] = {
 			["profiles"] = {
 				["Holyshnizzle - Doomhammer"] = {
-					["modules"] = {
-					},
-				},
-				["Dfbdeffbw - Doomhammer"] = {
-					["modules"] = {
-					},
-				},
-				["Tonkah LUI"] = {
-					["modules"] = {
-					},
-				},
-				["Marmit - Doomhammer"] = {
-					["modules"] = {
-					},
-				},
-				["Nilrum - Doomhammer"] = {
-					["modules"] = {
-					},
-				},
-				["Bahlar - Doomhammer"] = {
-					["modules"] = {
-					},
-				},
-				["Tareva - Doomhammer"] = {
-					["modules"] = {
+					["Debuffs"] = {
+						["Size"] = 65,
 					},
 				},
 				["Taunkah - Doomhammer"] = {
-					["modules"] = {
+					["Debuffs"] = {
+						["Size"] = 65,
+					},
+				},
+				["Tonkah LUI"] = {
+					["Debuffs"] = {
+						["ReverseSort"] = true,
+						["Count"] = {
+							["Font"] = "Prototype",
+						},
+						["Size"] = 65,
+					},
+					["Buffs"] = {
+						["Consolidate"] = false,
+						["ReverseSort"] = true,
+						["Count"] = {
+							["Font"] = "Prototype",
+						},
+					},
+				},
+				["Marmit - Doomhammer"] = {
+					["Debuffs"] = {
+						["Size"] = 65,
 					},
 				},
 			},
@@ -2766,9 +3310,19 @@ LUIDB = {
 		["Bars"] = {
 			["profiles"] = {
 				["Holyshnizzle - Doomhammer"] = {
+					["SidebarRight1"] = {
+						["Enable"] = false,
+						["IsOpen"] = true,
+					},
 					["SidebarLeft1"] = {
 						["Enable"] = true,
 						["IsOpen"] = true,
+						["OpenInstant"] = true,
+					},
+				},
+				["Taunkah - Doomhammer"] = {
+					["SidebarLeft1"] = {
+						["Enable"] = true,
 						["OpenInstant"] = true,
 					},
 					["SidebarRight1"] = {
@@ -2804,25 +3358,15 @@ LUIDB = {
 						["Anchor"] = "BT4Bar8",
 					},
 				},
-				["Taunkah - Doomhammer"] = {
-					["SidebarRight1"] = {
-						["Enable"] = false,
-						["IsOpen"] = true,
-					},
-					["SidebarLeft1"] = {
-						["Enable"] = true,
-						["OpenInstant"] = true,
-					},
-				},
 				["Marmit - Doomhammer"] = {
-					["SidebarRight1"] = {
-						["Enable"] = false,
-						["IsOpen"] = true,
-					},
 					["SidebarLeft1"] = {
 						["Enable"] = true,
 						["IsOpen"] = true,
 						["OpenInstant"] = true,
+					},
+					["SidebarRight1"] = {
+						["Enable"] = false,
+						["IsOpen"] = true,
 					},
 				},
 			},
@@ -2833,9 +3377,9 @@ LUIDB = {
 					["Text"] = {
 						["Font"] = "Prototype",
 						["Align"] = "LEFT",
-						["Size"] = 14,
-						["XOffset"] = 3,
 						["YOffset"] = -8,
+						["XOffset"] = 3,
+						["Size"] = 14,
 					},
 					["Colors"] = {
 						["Sec"] = {
@@ -2863,105 +3407,21 @@ LUIDB = {
 			},
 		},
 	},
+	["profileKeys"] = {
+		["Marmit - Doomhammer"] = "Tonkah LUI",
+		["Tareva - Doomhammer"] = "Tonkah LUI",
+		["Targatdummy - Doomhammer"] = "Tonkah LUI",
+		["Dfbdeffbw - Doomhammer"] = "Tonkah LUI",
+		["Taunkah - Doomhammer"] = "Tonkah LUI",
+		["Bartholamue - Doomhammer"] = "Tonkah LUI",
+		["Nilrum - Doomhammer"] = "Tonkah LUI",
+		["Holyshnizzle - Doomhammer"] = "Tonkah LUI",
+		["Bahlar - Doomhammer"] = "Tonkah LUI",
+		["Alfalpha - Doomhammer"] = "Tonkah LUI",
+	},
 	["global"] = {
 		["luiconfig"] = {
-			["Holyshnizzle - Doomhammer"] = {
-				["IsConfigured"] = true,
-				["Versions"] = {
-					["raidmenu"] = 2.4,
-					["recount"] = 3300,
-					["RaidMenu"] = true,
-					["vengeance"] = 2,
-					["interrupt"] = 2,
-					["panels"] = 1.2,
-					["bartender"] = 3300,
-					["Auras"] = 2,
-					["Micromenu"] = 1.5,
-					["lui"] = 3403,
-					["mirrorbar"] = 1,
-					["swing"] = 2,
-					["bars"] = 2.4,
-					["omen"] = 3300,
-					["threatbar"] = 2,
-				},
-			},
-			["Dfbdeffbw - Doomhammer"] = {
-				["IsConfigured"] = true,
-				["Versions"] = {
-					["raidmenu"] = 2.4,
-					["recount"] = 3300,
-					["RaidMenu"] = true,
-					["interrupt"] = 2,
-					["panels"] = 1.2,
-					["bartender"] = 3300,
-					["Auras"] = 2,
-					["Micromenu"] = 1.5,
-					["lui"] = 3403,
-					["mirrorbar"] = 1,
-					["swing"] = 2,
-					["bars"] = 2.4,
-					["omen"] = 3300,
-					["threatbar"] = 2,
-				},
-			},
-			["Taunkah - Doomhammer"] = {
-				["IsConfigured"] = true,
-				["Versions"] = {
-					["raidmenu"] = 2.4,
-					["recount"] = 3300,
-					["RaidMenu"] = true,
-					["interrupt"] = 2,
-					["panels"] = 1.2,
-					["bartender"] = 3300,
-					["Auras"] = 2,
-					["Micromenu"] = 1.5,
-					["lui"] = 3403,
-					["mirrorbar"] = 1,
-					["swing"] = 2,
-					["bars"] = 2.4,
-					["omen"] = 3300,
-					["threatbar"] = 2,
-				},
-			},
-			["Nilrum - Doomhammer"] = {
-				["IsConfigured"] = true,
-				["Versions"] = {
-					["raidmenu"] = 2.4,
-					["recount"] = 3300,
-					["RaidMenu"] = true,
-					["interrupt"] = 2,
-					["panels"] = 1.2,
-					["bartender"] = 3300,
-					["Auras"] = 2,
-					["Micromenu"] = 1.5,
-					["lui"] = 3403,
-					["mirrorbar"] = 1,
-					["swing"] = 2,
-					["bars"] = 2.4,
-					["omen"] = 3300,
-					["threatbar"] = 2,
-				},
-			},
 			["Marmit - Doomhammer"] = {
-				["IsConfigured"] = true,
-				["Versions"] = {
-					["raidmenu"] = 2.4,
-					["recount"] = 3300,
-					["RaidMenu"] = true,
-					["interrupt"] = 2,
-					["panels"] = 1.2,
-					["bartender"] = 3300,
-					["Auras"] = 2,
-					["Micromenu"] = 1.5,
-					["lui"] = 3403,
-					["mirrorbar"] = 1,
-					["swing"] = 2,
-					["bars"] = 2.4,
-					["omen"] = 3300,
-					["threatbar"] = 2,
-				},
-			},
-			["Bahlar - Doomhammer"] = {
 				["IsConfigured"] = true,
 				["Versions"] = {
 					["raidmenu"] = 2.4,
@@ -2989,6 +3449,159 @@ LUIDB = {
 					["interrupt"] = 2,
 					["panels"] = 1.2,
 					["bartender"] = 3300,
+					["Auras"] = 2,
+					["Micromenu"] = 1.5,
+					["lui"] = 3403,
+					["mirrorbar"] = 1,
+					["swing"] = 2,
+					["bars"] = 2.4,
+					["omen"] = 3300,
+					["threatbar"] = 2,
+				},
+			},
+			["Targatdummy - Doomhammer"] = {
+				["IsConfigured"] = true,
+				["Versions"] = {
+					["raidmenu"] = 2.4,
+					["recount"] = 3300,
+					["RaidMenu"] = true,
+					["interrupt"] = 2,
+					["panels"] = 1.2,
+					["bartender"] = 3300,
+					["Auras"] = 2,
+					["Micromenu"] = 1.5,
+					["lui"] = 3403,
+					["mirrorbar"] = 1,
+					["swing"] = 2,
+					["bars"] = 2.4,
+					["omen"] = 3300,
+					["threatbar"] = 2,
+				},
+			},
+			["Dfbdeffbw - Doomhammer"] = {
+				["IsConfigured"] = true,
+				["Versions"] = {
+					["raidmenu"] = 2.4,
+					["recount"] = 3300,
+					["RaidMenu"] = true,
+					["interrupt"] = 2,
+					["panels"] = 1.2,
+					["bartender"] = 3300,
+					["threatbar"] = 2,
+					["mirrorbar"] = 1,
+					["lui"] = 3403,
+					["Micromenu"] = 1.5,
+					["swing"] = 2,
+					["bars"] = 2.4,
+					["omen"] = 3300,
+					["Auras"] = 2,
+				},
+			},
+			["Taunkah - Doomhammer"] = {
+				["IsConfigured"] = true,
+				["Versions"] = {
+					["raidmenu"] = 2.4,
+					["recount"] = 3300,
+					["RaidMenu"] = true,
+					["interrupt"] = 2,
+					["panels"] = 1.2,
+					["bartender"] = 3300,
+					["threatbar"] = 2,
+					["mirrorbar"] = 1,
+					["lui"] = 3403,
+					["Micromenu"] = 1.5,
+					["swing"] = 2,
+					["bars"] = 2.4,
+					["omen"] = 3300,
+					["Auras"] = 2,
+				},
+			},
+			["Bartholamue - Doomhammer"] = {
+				["IsConfigured"] = true,
+				["Versions"] = {
+					["raidmenu"] = 2.4,
+					["recount"] = 3300,
+					["RaidMenu"] = true,
+					["interrupt"] = 2,
+					["panels"] = 1.2,
+					["bartender"] = 3300,
+					["Auras"] = 2,
+					["Micromenu"] = 1.5,
+					["lui"] = 3403,
+					["mirrorbar"] = 1,
+					["swing"] = 2,
+					["bars"] = 2.4,
+					["omen"] = 3300,
+					["threatbar"] = 2,
+				},
+			},
+			["Nilrum - Doomhammer"] = {
+				["IsConfigured"] = true,
+				["Versions"] = {
+					["raidmenu"] = 2.4,
+					["recount"] = 3300,
+					["RaidMenu"] = true,
+					["interrupt"] = 2,
+					["panels"] = 1.2,
+					["bartender"] = 3300,
+					["threatbar"] = 2,
+					["mirrorbar"] = 1,
+					["lui"] = 3403,
+					["Micromenu"] = 1.5,
+					["swing"] = 2,
+					["bars"] = 2.4,
+					["omen"] = 3300,
+					["Auras"] = 2,
+				},
+			},
+			["Holyshnizzle - Doomhammer"] = {
+				["IsConfigured"] = true,
+				["Versions"] = {
+					["raidmenu"] = 2.4,
+					["recount"] = 3300,
+					["RaidMenu"] = true,
+					["vengeance"] = 2,
+					["interrupt"] = 2,
+					["panels"] = 1.2,
+					["bartender"] = 3300,
+					["threatbar"] = 2,
+					["mirrorbar"] = 1,
+					["lui"] = 3403,
+					["Micromenu"] = 1.5,
+					["swing"] = 2,
+					["bars"] = 2.4,
+					["omen"] = 3300,
+					["Auras"] = 2,
+				},
+			},
+			["Bahlar - Doomhammer"] = {
+				["IsConfigured"] = true,
+				["Versions"] = {
+					["raidmenu"] = 2.4,
+					["recount"] = 3300,
+					["RaidMenu"] = true,
+					["interrupt"] = 2,
+					["panels"] = 1.2,
+					["bartender"] = 3300,
+					["Auras"] = 2,
+					["Micromenu"] = 1.5,
+					["lui"] = 3403,
+					["mirrorbar"] = 1,
+					["swing"] = 2,
+					["bars"] = 2.4,
+					["omen"] = 3300,
+					["threatbar"] = 2,
+				},
+			},
+			["Alfalpha - Doomhammer"] = {
+				["IsConfigured"] = true,
+				["Versions"] = {
+					["raidmenu"] = 2.4,
+					["recount"] = 3300,
+					["RaidMenu"] = true,
+					["interrupt"] = 2,
+					["panels"] = 1.2,
+					["bartender"] = 3300,
 					["threatbar"] = 2,
 					["mirrorbar"] = 1,
 					["lui"] = 3403,
@@ -3000,15 +3613,6 @@ LUIDB = {
 				},
 			},
 		},
-	},
-	["profileKeys"] = {
-		["Holyshnizzle - Doomhammer"] = "Tonkah LUI",
-		["Dfbdeffbw - Doomhammer"] = "Tonkah LUI",
-		["Taunkah - Doomhammer"] = "Tonkah LUI",
-		["Nilrum - Doomhammer"] = "Tonkah LUI",
-		["Marmit - Doomhammer"] = "Tonkah LUI",
-		["Bahlar - Doomhammer"] = "Tonkah LUI",
-		["Tareva - Doomhammer"] = "Tonkah LUI",
 	},
 	["profiles"] = {
 		["Tonkah LUI"] = {
@@ -3054,12 +3658,17 @@ LUIDB = {
 					["Size"] = 1.25,
 				},
 				["Frames"] = {
-					["ObjectiveTrackerFrameX"] = "-10",
 					["ObjectiveTrackerFrameY"] = "-295",
+					["ObjectiveTrackerFrameX"] = "-10",
 				},
 			},
 		},
 		["Tareva - Doomhammer"] = {
+			["modules"] = {
+				["Merchant"] = false,
+			},
+		},
+		["Bartholamue - Doomhammer"] = {
 			["modules"] = {
 				["Merchant"] = false,
 			},
@@ -3080,24 +3689,24 @@ LUIDB = {
 					["Size"] = 1.25,
 				},
 				["Frames"] = {
-					["ObjectiveTrackerFrameY"] = "-295",
 					["ObjectiveTrackerFrameX"] = "-10",
+					["ObjectiveTrackerFrameY"] = "-295",
 				},
 			},
 		},
-		["Dfbdeffbw - Doomhammer"] = {
+		["Alfalpha - Doomhammer"] = {
 			["modules"] = {
 				["Merchant"] = false,
 			},
 		},
 		["Default"] = {
 		},
-		["Nilrum - Doomhammer"] = {
+		["Targatdummy - Doomhammer"] = {
 			["modules"] = {
 				["Merchant"] = false,
 			},
 		},
-		["Bahlar - Doomhammer"] = {
+		["Nilrum - Doomhammer"] = {
 			["modules"] = {
 				["Merchant"] = false,
 			},
@@ -3118,9 +3727,19 @@ LUIDB = {
 					["Size"] = 1.25,
 				},
 				["Frames"] = {
-					["ObjectiveTrackerFrameX"] = "-10",
 					["ObjectiveTrackerFrameY"] = "-295",
+					["ObjectiveTrackerFrameX"] = "-10",
 				},
+			},
+		},
+		["Bahlar - Doomhammer"] = {
+			["modules"] = {
+				["Merchant"] = false,
+			},
+		},
+		["Dfbdeffbw - Doomhammer"] = {
+			["modules"] = {
+				["Merchant"] = false,
 			},
 		},
 	},

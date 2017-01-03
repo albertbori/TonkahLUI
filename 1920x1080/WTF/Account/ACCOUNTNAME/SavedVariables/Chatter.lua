@@ -56,178 +56,178 @@ ChatterDB = {
 				["Default"] = {
 					["colors"] = {
 						["Guild"] = {
-							["b"] = 0.250980406999588,
-							["g"] = 1,
 							["r"] = 0.250980406999588,
+							["g"] = 1,
+							["b"] = 0.250980406999588,
 						},
 						["Real ID Whisper"] = {
-							["b"] = 0.964705944061279,
-							["g"] = 1,
 							["r"] = 0,
+							["g"] = 1,
+							["b"] = 0.964705944061279,
 						},
 						["Raid Leader"] = {
-							["b"] = 0.0352941192686558,
-							["g"] = 0.282352954149246,
 							["r"] = 1,
+							["g"] = 0.282352954149246,
+							["b"] = 0.0352941192686558,
 						},
 						["LookingForGroup"] = {
-							["b"] = 0.752941250801086,
-							["g"] = 0.752941250801086,
 							["r"] = 1,
+							["g"] = 0.752941250801086,
+							["b"] = 0.752941250801086,
 						},
 						["Party"] = {
-							["b"] = 1,
-							["g"] = 0.666666686534882,
 							["r"] = 0.666666686534882,
+							["g"] = 0.666666686534882,
+							["b"] = 1,
 						},
 						["Whisper"] = {
-							["b"] = 1,
-							["g"] = 0.501960813999176,
 							["r"] = 1,
+							["g"] = 0.501960813999176,
+							["b"] = 1,
 						},
 						["Raid"] = {
-							["b"] = 0,
-							["g"] = 0.498039245605469,
 							["r"] = 1,
+							["g"] = 0.498039245605469,
+							["b"] = 0,
 						},
 						["Raid Warning"] = {
-							["b"] = 0,
-							["g"] = 0.282352954149246,
 							["r"] = 1,
+							["g"] = 0.282352954149246,
+							["b"] = 0,
 						},
 						["Party Leader"] = {
-							["b"] = 1,
-							["g"] = 0.784313797950745,
 							["r"] = 0.462745130062103,
+							["g"] = 0.784313797950745,
+							["b"] = 1,
 						},
 						["Instance"] = {
-							["b"] = 0,
-							["g"] = 0.498039245605469,
 							["r"] = 1,
+							["g"] = 0.498039245605469,
+							["b"] = 0,
 						},
 						["Yell"] = {
-							["b"] = 0.250980406999588,
-							["g"] = 0.250980406999588,
 							["r"] = 1,
+							["g"] = 0.250980406999588,
+							["b"] = 0.250980406999588,
 						},
 						["LocalDefense"] = {
-							["b"] = 0.752941250801086,
-							["g"] = 0.752941250801086,
 							["r"] = 1,
+							["g"] = 0.752941250801086,
+							["b"] = 0.752941250801086,
 						},
 						["Say"] = {
-							["b"] = 1,
-							["g"] = 1,
 							["r"] = 1,
+							["g"] = 1,
+							["b"] = 1,
 						},
 						["Trade"] = {
-							["b"] = 0.752941250801086,
-							["g"] = 0.752941250801086,
 							["r"] = 1,
-						},
-						["General"] = {
-							["b"] = 0.752941250801086,
 							["g"] = 0.752941250801086,
-							["r"] = 1,
+							["b"] = 0.752941250801086,
 						},
 						["Instance Leader"] = {
-							["b"] = 0.0352941192686558,
-							["g"] = 0.282352954149246,
 							["r"] = 1,
+							["g"] = 0.282352954149246,
+							["b"] = 0.0352941192686558,
+						},
+						["General"] = {
+							["r"] = 1,
+							["g"] = 0.752941250801086,
+							["b"] = 0.752941250801086,
 						},
 						["Officer"] = {
-							["b"] = 0.250980406999588,
-							["g"] = 0.752941250801086,
 							["r"] = 0.250980406999588,
+							["g"] = 0.752941250801086,
+							["b"] = 0.250980406999588,
 						},
 					},
 				},
 				["Tonkah LUI"] = {
 					["colors"] = {
 						["Guild"] = {
-							["r"] = 0.250980406999588,
-							["g"] = 1,
 							["b"] = 0.250980406999588,
+							["g"] = 1,
+							["r"] = 0.250980406999588,
 						},
 						["Real ID Whisper"] = {
-							["r"] = 0,
-							["g"] = 1,
 							["b"] = 0.964705944061279,
+							["g"] = 1,
+							["r"] = 0,
 						},
 						["Raid Leader"] = {
-							["r"] = 1,
-							["g"] = 0.282352954149246,
 							["b"] = 0.0352941192686558,
+							["g"] = 0.282352954149246,
+							["r"] = 1,
 						},
 						["LookingForGroup"] = {
-							["r"] = 1,
-							["g"] = 0.752941250801086,
 							["b"] = 0.752941250801086,
+							["g"] = 0.752941250801086,
+							["r"] = 1,
 						},
 						["Party"] = {
-							["r"] = 0.666666686534882,
-							["g"] = 0.666666686534882,
 							["b"] = 1,
+							["g"] = 0.666666686534882,
+							["r"] = 0.666666686534882,
 						},
 						["Whisper"] = {
-							["r"] = 1,
-							["g"] = 0.501960813999176,
 							["b"] = 1,
+							["g"] = 0.501960813999176,
+							["r"] = 1,
 						},
 						["Raid"] = {
-							["r"] = 1,
-							["g"] = 0.498039245605469,
 							["b"] = 0,
+							["g"] = 0.498039245605469,
+							["r"] = 1,
 						},
 						["Raid Warning"] = {
-							["r"] = 1,
-							["g"] = 0.282352954149246,
 							["b"] = 0,
+							["g"] = 0.282352954149246,
+							["r"] = 1,
 						},
 						["Party Leader"] = {
-							["r"] = 0.462745130062103,
-							["g"] = 0.784313797950745,
 							["b"] = 1,
+							["g"] = 0.784313797950745,
+							["r"] = 0.462745130062103,
 						},
 						["Instance"] = {
-							["r"] = 1,
-							["g"] = 0.498039245605469,
 							["b"] = 0,
+							["g"] = 0.498039245605469,
+							["r"] = 1,
 						},
 						["Yell"] = {
-							["r"] = 1,
-							["g"] = 0.250980406999588,
 							["b"] = 0.250980406999588,
+							["g"] = 0.250980406999588,
+							["r"] = 1,
 						},
 						["LocalDefense"] = {
-							["r"] = 1,
-							["g"] = 0.752941250801086,
 							["b"] = 0.752941250801086,
+							["g"] = 0.752941250801086,
+							["r"] = 1,
 						},
 						["Say"] = {
-							["r"] = 1,
-							["g"] = 1,
 							["b"] = 1,
+							["g"] = 1,
+							["r"] = 1,
 						},
 						["Trade"] = {
-							["r"] = 1,
-							["g"] = 0.752941250801086,
 							["b"] = 0.752941250801086,
-						},
-						["Instance Leader"] = {
+							["g"] = 0.752941250801086,
 							["r"] = 1,
-							["g"] = 0.282352954149246,
-							["b"] = 0.0352941192686558,
 						},
 						["General"] = {
-							["r"] = 1,
-							["g"] = 0.752941250801086,
 							["b"] = 0.752941250801086,
+							["g"] = 0.752941250801086,
+							["r"] = 1,
+						},
+						["Instance Leader"] = {
+							["b"] = 0.0352941192686558,
+							["g"] = 0.282352954149246,
+							["r"] = 1,
 						},
 						["Officer"] = {
-							["r"] = 0.250980406999588,
-							["g"] = 0.752941250801086,
 							["b"] = 0.250980406999588,
+							["g"] = 0.752941250801086,
+							["r"] = 0.250980406999588,
 						},
 					},
 				},
@@ -305,7 +305,7 @@ ChatterDB = {
 								["a"] = 0,
 							},
 						},
-						["FRAME_10"] = {
+						["FRAME_2"] = {
 							["borderColor"] = {
 								["a"] = 0,
 							},
@@ -313,7 +313,7 @@ ChatterDB = {
 								["a"] = 0,
 							},
 						},
-						["FRAME_2"] = {
+						["FRAME_10"] = {
 							["borderColor"] = {
 								["a"] = 0,
 							},
@@ -329,61 +329,11 @@ ChatterDB = {
 		},
 		["Server Positioning"] = {
 		},
-		["JustifyText"] = {
+		["Mousewheel Scroll"] = {
 		},
 		["Timestamps"] = {
 		},
 		["EditBox"] = {
-		},
-		["Highlight"] = {
-		},
-		["ChatTabs"] = {
-		},
-		["ChannelNames"] = {
-		},
-		["CopyChat"] = {
-		},
-		["UrlCopy"] = {
-		},
-		["Editbox History"] = {
-			["realm"] = {
-				["Doomhammer"] = {
-					["history"] = {
-						"/cw Teo-Doomhammer I've been thinking (probably foolishly so) to kick on the recruiting and build up a raid team.", -- [1]
-						"/cw Teo-Doomhammer Well, I was planning on using some tools to help, like the auto-guild inviter thing, and setting up recruitment info, rules, etc.", -- [2]
-						"/cw Teo-Doomhammer Posting on WoW's forums, reddit, etc.", -- [3]
-						"/cw Teo-Doomhammer I've even considered putting a bit of cash into facebook advertising.", -- [4]
-						"/cw Teo-Doomhammer I'm conflicted. My play schedule doesn't want to get any more serious, but I'm pretty serious about getting to the content I want to see.", -- [5]
-						"/cw Teo-Doomhammer Normal+ LOL", -- [6]
-						"/cw Teo-Doomhammer I'm not asking much", -- [7]
-						"/cw Teo-Doomhammer Just a regular group of 10+ high-quality folks to raid regularly with.", -- [8]
-						"/cw Teo-Doomhammer The only person it works for is Kagoth", -- [9]
-						"/cw Teo-Doomhammer Yea, I have a list of people who are interested, but just need a kick in the pants (a leader)", -- [10]
-						"/cw Teo-Doomhammer I'm in discord if you want to chat about it", -- [11]
-						"/g Hey guys, I'm gonna move this character over to a guild that has raid times a bit more accomodating to my schedule. So long, and thanks for all the fish!", -- [12]
-						"/cw Elistreesiaa-Baelgun Hey there. I just posted this in guild chat, but I'm going to move my character over to a guild that has raid times a bit more fitting to my schedule.", -- [13]
-						"/cw Elistreesiaa-Baelgun Thanks for letting me be a part of Requiem", -- [14]
-						"/cw Elistreesiaa-Baelgun I'll keep in touch, and leave Marmit in the guild for the foreseeable future.", -- [15]
-						"/gquit", -- [16]
-						"/cw Teo <--", -- [17]
-						"/g I'd like to thank Teo for letting me in, despite what I've done.", -- [18]
-						"/g <3", -- [19]
-						"/gsse", -- [20]
-						"/reload", -- [21]
-						"/cw Nilrum We understand that you're not interested in <Defiant> at the moment, but if you ever change your mind, we are a casual, family-friendly, adult raiding guild. Hardcore players with casual schedules (raid Tu/Th 7-9pm PST). We've been around for over a decad", -- [22]
-						"/cw Nilrum We understand that you're not interested in <Defiant> at the moment, but if you ever change your mind, we are a decade-old, casual, family-friendly, adult raiding guild. Hardcore players with casual schedules (raid Tu/Th 7-9pm PST). PST Taunkah if you bec", -- [23]
-						"/cw Nilrum-Doomhammer We understand that you're not interested in <Defiant> at the moment, but if you ever change your mind, we are an established, casual, family-friendly, adult raiding guild. Raid times are Tu/Th 7-9pm PST. Let me know if you become interested.", -- [24]
-						"/cw Nilrum-Doomhammer Welcome to <Defiant>! We're glad you decided to join our ranks. We are an established, casual, family-friendly, adult raiding guild. We raid Tu/Th 7-9pm PST. Please abide by the rules in the guild info tab and note that communication should be kept \"famil", -- [25]
-						"/cw Nilrum-Doomhammer Welcome to <Defiant>! We're glad you decided to join our ranks. We are an established, casual, family-friendly, adult raiding guild. We raid Tu/Th 7-9pm PST. Please abide by the rules in the guild info tab and note that chat/voice should be kept \"family-f", -- [26]
-						"/cw Nilrum-Doomhammer Welcome to <Defiant>! We're glad you decided to join our ranks. We are an established, casual, family-friendly, adult raiding guild. We raid Tu/Th 7-9pm PST. Please abide by the rules in the guild info tab. Most importantly: no swearing/lewd talk.", -- [27]
-						"/cw Nilrum-Doomhammer Welcome to <Defiant>! We're glad you decided to join our ranks. We are an established, casual, family-friendly, adult raiding guild. We raid Tu/Th 7-9pm PST. Please abide by the rules in the guild info tab. (No drama, no swearing/lewd talk, etc.)", -- [28]
-						"/who", -- [29]
-						"/run print(IsQuestFlaggedCompleted(44311))", -- [30]
-						"/run local q,x,_,a,b = GetAchievementCriteriaInfo,0 for i=1,11 do _,_,_,a,b = q(11152,i) x=x+a end local _,_,_,c,d = q(11153,1) local _,_,_,e,f = q(11154,1) print(\"Dungeons: \"..x..\"/\"..b) print(\"WQs: \"..c..\"/\"..d) print(\"Kills: \"..e..\"/\"..f)", -- [31]
-						"/macro", -- [32]
-					},
-				},
-			},
 		},
 		["ChatFont"] = {
 			["profiles"] = {
@@ -397,20 +347,72 @@ ChatterDB = {
 				},
 			},
 		},
-		["Mousewheel Scroll"] = {
+		["ChatTabs"] = {
+		},
+		["ChannelNames"] = {
+		},
+		["CopyChat"] = {
+		},
+		["UrlCopy"] = {
+		},
+		["Editbox History"] = {
+			["realm"] = {
+				["Doomhammer"] = {
+					["history"] = {
+						" more dps showed up. Tree and a pug 878 ilvl arms warrior", -- [1]
+						" But also, we waited to burn heroism till after the first heart phase", -- [2]
+						" and also, we were much better at chasing down & killing the right adds", -- [3]
+						" Oh, and Darknight reactivated and was on for 30 minutes last evening.", -- [4]
+						" It won't last, but still was cool to see him on.", -- [5]
+						" yea, he's got serious internal conflict", -- [6]
+						"/g GRATS!", -- [7]
+						" yea, maw+2", -- [8]
+						" *+3", -- [9]
+						"/p  |cffa335ee|Hitem:133608::::::::110:257::16:3:3411:1502:3336:::|h[Mistbound Helarjar Footwraps]|h|r", -- [10]
+						"/g GRAAAAAAATS!!!!!!!", -- [11]
+						" NICE", -- [12]
+						" off the world boss?", -- [13]
+						"/readycheck", -- [14]
+						"/dbm pull", -- [15]
+						"/g grats!", -- [16]
+						" he's poop on high-mobility fights, but sometimes he does great", -- [17]
+						" no, not yet. I didn't get it finished.", -- [18]
+						" Yea, I wanna see how high you can get without any modifications to what it currently is.", -- [19]
+						" how many combustions did you do, and how close to the end of your rotation did you do one?", -- [20]
+						" k", -- [21]
+						" The highest I was able to get with GSE was 135k, and it still required a ton of attention to use the alt key to manage pyroblasts", -- [22]
+						" That's overall data", -- [23]
+						" His theoretical throughput is in the 300k's", -- [24]
+						" So I", -- [25]
+						" So based on your numbers", -- [26]
+						" 135k of 180k is 75%", -- [27]
+						" If his theoretical is 350k, then 75% would be...", -- [28]
+						" 262", -- [29]
+						" yea, I think we should just make him respec to something else.", -- [30]
+						" But I don't know what yet because I wasn't able to try arcane or frost. You didn't have the weapons on you.", -- [31]
+						" brb", -- [32]
+					},
+				},
+			},
+		},
+		["Highlight"] = {
+		},
+		["JustifyText"] = {
 		},
 	},
 	["profileKeys"] = {
 		["Marmit - Doomhammer"] = "Default",
-		["Bartholamue - Doomhammer"] = "Tonkah LUI",
+		["Targatdummy - Doomhammer"] = "Default",
+		["Tareva - Doomhammer"] = "Tonkah LUI",
 		["Holyshnizzle - Doomhammer"] = "Tonkah LUI",
+		["Targetdummee - Doomhammer"] = "Default",
 		["Alfalpha - Doomhammer"] = "Default",
 		["Taunkah - Doomhammer"] = "Tonkah LUI",
 		["Brooslee - Doomhammer"] = "Default",
 		["Nilrum - Doomhammer"] = "Tonkah LUI",
-		["Tareva - Doomhammer"] = "Tonkah LUI",
-		["Bahlar - Doomhammer"] = "Tonkah LUI",
 		["Dfbdeffbw - Doomhammer"] = "Tonkah LUI",
+		["Bahlar - Doomhammer"] = "Tonkah LUI",
+		["Bartholamue - Doomhammer"] = "Tonkah LUI",
 	},
 	["profiles"] = {
 		["Default"] = {

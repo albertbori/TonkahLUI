@@ -17,11 +17,14 @@
 **/WTF/Account/ACCOUNTNAME/SavedVariables/Blizzard_CombatLog.lua
 **/WTF/Account/ACCOUNTNAME/SavedVariables/Coordinates.lua
 **/WTF/Account/ACCOUNTNAME/SavedVariables/Easy_Obliterate.lua
+**/WTF/Account/ACCOUNTNAME/SavedVariables/ExtGuildUI*
 **/WTF/Account/ACCOUNTNAME/SavedVariables/FocusInterruptSounds.lua
 **/WTF/Account/ACCOUNTNAME/SavedVariables/GarrisonMissionManager.lua
 **/WTF/Account/ACCOUNTNAME/SavedVariables/GS-Core.lua
 **/WTF/Account/ACCOUNTNAME/SavedVariables/GS-DraikMacros.lua
 **/WTF/Account/ACCOUNTNAME/SavedVariables/GuildManager.lua
+**/WTF/Account/ACCOUNTNAME/SavedVariables/GuildUI*
+**/WTF/Account/ACCOUNTNAME/SavedVariables/LoggerHead*
 **/WTF/Account/ACCOUNTNAME/SavedVariables/Netherwing_Eggs.lua
 **/WTF/Account/ACCOUNTNAME/SavedVariables/Pawn.lua
 **/WTF/Account/ACCOUNTNAME/SavedVariables/Postal.lua
@@ -29,8 +32,8 @@
 **/WTF/Account/ACCOUNTNAME/SavedVariables/TradeSkillMaster*
 **/WTF/Account/ACCOUNTNAME/SavedVariables/SellJunk.lua
 **/WTF/Account/ACCOUNTNAME/SavedVariables/Storyline.lua
-**/WTF/Account/ACCOUNTNAME/SavedVariables/WeakAuras.lua
-**/WTF/Account/ACCOUNTNAME/SavedVariables/WeakAurasOptions.lua
+**/WTF/Account/ACCOUNTNAME/SavedVariables/SuperGuildInvite*
+**/WTF/Account/ACCOUNTNAME/SavedVariables/WeakAuras*
 **/WTF/Account/ACCOUNTNAME/SavedVariables/WorldQuestTracker.lua
 **/WTF/Account/ACCOUNTNAME/Doomhammer/
 
