@@ -1,4 +1,4 @@
-﻿-- Chinese translator required
+-- Chinese translator required
 
 -------------
 -- CHINESE --

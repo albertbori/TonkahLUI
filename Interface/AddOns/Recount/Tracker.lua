@@ -4,7 +4,7 @@ local AceLocale = LibStub("AceLocale-3.0")
 local L = AceLocale:GetLocale("Recount")
 local BossIDs = LibStub("LibBossIDs-1.0")
 
-local revision = tonumber(string.sub("$Revision: 1392 $", 12, -3))
+local revision = tonumber(string.sub("$Revision: 1398 $", 12, -3))
 if Recount.Version < revision then
 	Recount.Version = revision
 end
@@ -933,6 +933,11 @@ function Recount:SpellAbsorbed(...)
 		if spellId == 20711 or spellId == 115069 or spellId == 114556 or spellId == 184553 then
 			return
 		end
+		local caster, casterowner, casterownerID = Recount:DetectPet(casterName, casterGUID, casterFlags)
+		if casterowner then
+			casterName = casterowner
+		end
+
 		local sourceData = dbCombatants[casterName]
 		Recount:AddTimeEvent(sourceData, dstName, spellName, true)
 		Recount:AddAbsorbCredit(casterName, dstName, spellName, spellId, absorbed)
@@ -942,6 +947,11 @@ function Recount:SpellAbsorbed(...)
 		if spellId == 20711 or spellId == 115069 or spellId == 114556 or spellId == 184553 then
 			return
 		end
+		local caster, casterowner, casterownerID = Recount:DetectPet(casterName, casterGUID, casterFlags)
+		if casterowner then
+			casterName = casterowner
+		end
+
 		local sourceData = dbCombatants[casterName]
 		Recount:AddTimeEvent(sourceData, dstName, spellName, true)
 		Recount:AddAbsorbCredit(casterName, dstName, spellName, spellId, absorbed)
@@ -1073,7 +1083,7 @@ function Recount:CheckRetentionFromFlags(nameFlags, name, nameGUID)
 		elseif bit_band(nameFlags, COMBATLOG_OBJECT_TYPE_GUARDIAN) ~= 0 and Recount:GetGuardianOwnerByGUID(nameGUID) then -- This is necessary because guardian combat log flags can be wrong in 3.0.9
 			return true
 		end
-	elseif bit_band(nameFlags, COMBATLOG_OBJECT_CONTROL_NPC) ~= 0 then 
+	elseif bit_band(nameFlags, COMBATLOG_OBJECT_CONTROL_NPC) ~= 0 then
 		local isBoss = Recount.IsBoss(nameGUID) 
 		if not isBoss and (filters["Trivial"] or filters["Nontrivial"]) then
 			return true
@@ -1202,67 +1212,80 @@ function Recount:AddCurrentEvent(who, eventType, incoming, number, event)
 	if not who then
 		return
 	end
-	if Recount.db.profile.Filters.TrackDeaths[who.type] then
-		who.LastEvents = who.LastEvents or {}
-		who.LastEventTimes = who.LastEventTimes or {}
-		who.LastEventType = who.LastEventType or {}
-		who.LastEventIncoming = who.LastEventIncoming or {}
-		who.NextEventNum = who.NextEventNum or 1
-		who.LastEventTimes[who.NextEventNum] = GetTime()
-		who.LastEventType[who.NextEventNum] = eventType
-		who.LastEventIncoming[who.NextEventNum] = incoming
-		who.LastEvents[who.NextEventNum] = event --(eventType or "").." "..(abiliy or "").." "..(number or "")
+	if not Recount.db.profile.Filters.TrackDeaths[who.type] then
+		return
+	end
 
-		local name, realm 
+	if not who.LastEvents then
+		who.LastEvents = {}
+	end
+	if not who.LastEventTimes then
+		who.LastEventTimes = {}
+	end
+	if not who.LastEventType then
+		who.LastEventType = {}
+	end
+	if not who.LastEventIncoming then
+		who.LastEventIncoming = {}
+	end
 
-		if who.unit and UnitExists(who.unit) then
-			name, realm = UnitName(who.unit)
-		else
-			name = ""
-		end
-		if realm then
-			name = name.."-"..realm
-		end
-		if (not who.unit) or (name ~= who.Name) and who.UnitLockout < Recount.UnitLockout then
-			who.unit = Recount:FindUnit(who.Name)
-			who.UnitLockout = Recount.CurTime
-		end
+	local NextEventNum = who.NextEventNum or 1
+	who.LastEventTimes[NextEventNum] = GetTime()
+	who.LastEventType[NextEventNum] = eventType
+	who.LastEventIncoming[NextEventNum] = incoming
+	who.LastEvents[NextEventNum] = event --(eventType or "").." "..(abiliy or "").." "..(number or "")
 
-		if who.unit and UnitExists(who.unit) then
-			if UnitHealthMax(who.unit) ~= 100 then
-				who.LastEventHealth = who.LastEventHealth or {}
-				who.LastEventHealth[who.NextEventNum] = UnitHealth(who.unit).." ("..math_floor(100 * UnitHealth(who.unit) / (UnitHealthMax(who.unit) + Epsilon)).."%)"
-				if number then
-					who.LastEventNum = who.LastEventNum or {}
-					who.LastEventNum[who.NextEventNum] = 100 * number / (UnitHealthMax(who.unit) + Epsilon)
-				elseif who.LastEventNum then
-					who.LastEventNum[who.NextEventNum] = nil
-				end
-			else
-				who.LastEventHealth = who.LastEventHealth or {}
-				who.LastEventHealth[who.NextEventNum] = UnitHealth(who.unit).."%"
-				if who.LastEventNum then
-					who.LastEventNum[who.NextEventNum] = nil
-				end
+	local name, realm
+	local unit = who.unit
+	if not UnitExists(unit) then
+		unit = nil
+	end -- Sometimes there's boolean true in who.unit. It's source should be found and eliminated. After that, this check can be removed.
+
+	if unit then
+		name, realm = UnitName(unit)
+	end
+	if not name then
+		name = ""
+	end
+	if realm then
+		name = name.."-"..realm
+	end
+
+	if (not unit) or (name ~= who.Name) and who.UnitLockout < Recount.UnitLockout then
+		unit = Recount:FindUnit(who.Name)
+		who.unit = unit
+		who.UnitLockout = Recount.CurTime
+	end
+
+	if unit then
+		local health_max = UnitHealthMax(unit)
+		if health_max and health_max ~= 0 then
+			if not who.LastEventHealth then
+				who.LastEventHealth = {}
 			end
-			who.LastEventHealthNum = who.LastEventHealthNum or {}
-			who.LastEventHealthNum[who.NextEventNum] = 100 * UnitHealth(who.unit) / (UnitHealthMax(who.unit) + Epsilon)
-		else
-			who.LastEventHealth = who.LastEventHealth or {}
-			who.LastEventHealthNum = who.LastEventHealthNum or {}
-			who.LastEventHealth[who.NextEventNum] = "???"
-			who.LastEventHealthNum[who.NextEventNum] = 0
-			if who.LastEventNum then
-				who.LastEventNum[who.NextEventNum] = nil
+			if not who.LastEventHealthMax then
+				who.LastEventHealthMax = {}
 			end
-		end
 
-		who.NextEventNum = who.NextEventNum + 1
-
-		if who.NextEventNum > Recount.db.profile.MessagesTracked then
-			who.NextEventNum = who.NextEventNum - Recount.db.profile.MessagesTracked
+			who.LastEventHealth[NextEventNum] = UnitHealth(unit)
+			who.LastEventHealthMax[NextEventNum] = health_max
+		else
+			if who.LastEventHealth then
+				who.LastEventHealth[NextEventNum] = nil
+			end
+			if who.LastEventHealthMax then
+				who.LastEventHealthMax[NextEventNum] = nil
+			end
 		end
 	end
+
+	NextEventNum = NextEventNum + 1
+
+	if NextEventNum > Recount.db.profile.MessagesTracked then
+		NextEventNum = NextEventNum - Recount.db.profile.MessagesTracked
+	end
+
+	who.NextEventNum = NextEventNum
 end
 
 --Functions for adding data
@@ -1424,7 +1447,9 @@ end
 
 local first = false
 function Recount:CorrectTableData(who, datatype, secondary, amount)
-	if not who then return end
+	if not who then
+		return
+	end
 	if not Recount.db.profile.Filters.Data[who.type] or Recount.db.profile.GlobalDataCollect == false or not Recount.CurrentDataCollect then
 		return
 	end
@@ -1711,7 +1736,7 @@ end
 
 function Recount:BossFightWhoFromFlags(srcFlags, dstFlags, victim, victimGUID)
 	if Recount:InGroup(srcFlags) and not Recount:IsFriend(dstFlags) then
-		if Recount.IsBoss(victimGUID) then 
+		if Recount.IsBoss(victimGUID) then
 			Recount.FightingWho = victim
 			Recount.FightingLevel = -1
 		elseif Recount.FightingWho == "" then
@@ -1728,6 +1753,11 @@ function Recount:AddDamageData(source, victim, ability, element, hittype, damage
 
 	-- Stagger DoT (Monk)
 	if spellId == 124255 then
+		FriendlyFire = false
+	end
+
+	-- Earthen Shield (Shaman)
+	if spellId == 201657 then
 		FriendlyFire = false
 	end
 
@@ -2009,7 +2039,7 @@ function Recount:AddDamageData(source, victim, ability, element, hittype, damage
 			-- Elsia: Also removed bug, victims resist/block/absorb!
 
 			--Tracking for passing data to other functions
-			if Tracking["DAMAGETAKEN"] then 
+			if Tracking["DAMAGETAKEN"] then
 				if Tracking["DAMAGETAKEN"][victim] then
 					for _, v in pairs(Tracking["DAMAGETAKEN"][victim]) do
 						v.func(v.pass, damage)
@@ -2059,7 +2089,7 @@ function Recount:AddHealData(source, victim, ability, healtype, amount, overheal
 		Recount.cleventtext = Recount.cleventtext.." +"..amount
 	end
 
-	if overheal and overheal ~= 0 then 
+	if overheal and overheal ~= 0 then
 		Recount.cleventtext = Recount.cleventtext .." ("..overheal.." "..L["Overheal"]..")"
 	end
 
@@ -2362,7 +2392,7 @@ function Recount:HandleDeath(arg)
 	DeathLog.MessageType = Recount:GetTable()
 	DeathLog.MessageIncoming = Recount:GetTable()
 	DeathLog.Health = Recount:GetTable()
-	DeathLog.HealthNum = Recount:GetTable()
+	DeathLog.HealthMax = Recount:GetTable()
 	DeathLog.EventNum = Recount:GetTable()
 
 	if who.LastKilledBy and math_abs(who.LastKilledAt - DeathTime) < 2 then
@@ -2373,18 +2403,24 @@ function Recount:HandleDeath(arg)
 	end
 
 	local offset
-	for i = 1, num do
-		offset = math_fmod(who.NextEventNum + i + num - 2, num) + 1
-		if who.LastEvents[offset] and (who.LastEventTimes[offset] - DeathTime) > -15 then
-			DeathLog.MessageTimes[#DeathLog.MessageTimes + 1] = who.LastEventTimes[offset]-DeathTime
-			DeathLog.Messages[#DeathLog.Messages + 1] = who.LastEvents[offset] or ""
-			DeathLog.MessageType[#DeathLog.MessageType + 1] = who.LastEventType[offset] or "MISC"
-			DeathLog.MessageIncoming[#DeathLog.MessageIncoming + 1] = who.LastEventIncoming[offset] or false
-			DeathLog.Health[#DeathLog.Health + 1] = who.LastEventHealth[offset] or 0
-			DeathLog.HealthNum[#DeathLog.HealthNum + 1] = who.LastEventHealthNum[offset] or 0
-			DeathLog.EventNum[#DeathLog.HealthNum] = who.LastEventNum and who.LastEventNum[offset] or 0
-		end
-	end
+	local death_log_idx = 1
+ 	for i = 1, num do
+ 		offset = math_fmod(who.NextEventNum + i + num - 2, num) + 1
+ 		if who.LastEvents[offset] and (who.LastEventTimes[offset] - DeathTime) > -15 then
+			DeathLog.MessageTimes[death_log_idx] = who.LastEventTimes[offset]-DeathTime
+			DeathLog.Messages[death_log_idx] = who.LastEvents[offset] or ""
+			DeathLog.MessageType[death_log_idx] = who.LastEventType[offset] or "MISC"
+			DeathLog.MessageIncoming[death_log_idx] = who.LastEventIncoming[offset] or false
+			if who.LastEventHealth then
+				DeathLog.Health[death_log_idx] = who.LastEventHealth[offset]
+			end
+			if who.LastEventHealthMax then
+				DeathLog.HealthMax[death_log_idx] = who.LastEventHealthMax[offset]
+			end
+			DeathLog.EventNum[death_log_idx] = who.LastEventNum and who.LastEventNum[offset] or 0
+			death_log_idx = death_log_idx + 1
+ 		end
+ 	end
 
 	who.DeathLogs = who.DeathLogs or {}
 	tinsert(who.DeathLogs, 1, DeathLog)

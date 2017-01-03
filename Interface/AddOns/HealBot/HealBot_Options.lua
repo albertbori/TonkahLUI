@@ -451,6 +451,7 @@ function HealBot_Options_setLists()
         [HEALBOT_STONEFORM]=HEALBOT_CLASSES_ALL, 
         [HEALBOT_SHROUD_OF_THE_NAGLFAR]=HEALBOT_CLASSES_ALL,
         [HEALBOT_SPIRIT_FRAGMENT]=HEALBOT_CLASSES_ALL,
+        [HEALBOT_NORGANNONS_FORESIGHT]=HEALBOT_CLASSES_ALL,
         
         --Death Knight
         [HEALBOT_ICEBOUND_FORTITUDE]=HEALBOT_DEATHKNIGHT,
@@ -462,6 +463,9 @@ function HealBot_Options_setLists()
         [HEALBOT_VAMPIRIC_BLOOD]=HEALBOT_DEATHKNIGHT,
         [HEALBOT_DANCING_RUNE_WEAPON]=HEALBOT_DEATHKNIGHT,
         
+        --Demon Hunter
+        [HEALBOT_DEMON_SPIKES]=HEALBOT_DEMONHUNTER,
+        
         --Druid
         [HEALBOT_LIFEBLOOM]=HEALBOT_DRUID,
         [HEALBOT_REGROWTH]=HEALBOT_DRUID,
@@ -472,6 +476,7 @@ function HealBot_Options_setLists()
         [HEALBOT_WILD_GROWTH]=HEALBOT_DRUID,
         [HEALBOT_BARKSKIN]=HEALBOT_DRUID,
         [HEALBOT_IRONBARK]=HEALBOT_DRUID,
+        [HEALBOT_IRONFUR]=HEALBOT_DRUID,
         [HEALBOT_SURVIVAL_INSTINCTS]=HEALBOT_DRUID,
         [HEALBOT_FRENZIED_REGEN]=HEALBOT_DRUID,
         [HEALBOT_DRUID_CLEARCASTING]=HEALBOT_DRUID,
@@ -505,7 +510,8 @@ function HealBot_Options_setLists()
         [HEALBOT_FORTIFYING_BREW]=HEALBOT_MONK,
         [HEALBOT_DAMPEN_HARM]=HEALBOT_MONK,
         [HEALBOT_DIFFUSE_MAGIC]=HEALBOT_MONK,
-        [HEALBOT_EXTEND_LIFE]=HEALBOT_MONK,                 
+        [HEALBOT_EXTEND_LIFE]=HEALBOT_MONK,
+        [HEALBOT_TOUCH_OF_KARMA]=HEALBOT_MONK,
 		--Legion Added
         
         --Paladin
@@ -561,6 +567,9 @@ function HealBot_Options_setLists()
         [HEALBOT_SUNDERING_SOUL]=HEALBOT_PRIEST,
         [HEALBOT_FOCUSED_WILL]=HEALBOT_PRIEST,
         [HEALBOT_LIGHT_OF_TUURE]=HEALBOT_PRIEST,
+        [HEALBOT_BLESSING_OF_TUURE]=HEALBOT_PRIEST,
+        [HEALBOT_POWER_OF_THE_NAARU]=HEALBOT_PRIEST,
+        [HEALBOT_POWER_OF_THE_DARK_SIDE]=HEALBOT_PRIEST,
 		
 		--Rogue
         [HEALBOT_VANISH]=HEALBOT_ROGUE,
@@ -4710,6 +4719,22 @@ function HealBot_Options_ComboClass_Text()
         HealBot_CtrlShiftSpellAutoTrinket2:SetChecked(combo["Ctrl-Shift"..button..HealBot_Config.CurrentSpec] or false)
         HealBot_CtrlAltSpellAutoTrinket2:SetChecked(combo["Alt-Ctrl"..button..HealBot_Config.CurrentSpec] or false)
     end
+    if HealBot_Options_StorePrev["ActionBarsCombo"]==1 then
+        combo = HealBot_Config_Spells.EnabledAvoidBlueCursor;
+    elseif HealBot_Options_StorePrev["ActionBarsCombo"]==2 then
+        combo = HealBot_Config_Spells.DisabledAvoidBlueCursor;
+    else
+        combo = HealBot_Config_Spells.EnemyAvoidBlueCursor;
+    end
+    if combo then
+        HealBot_AvoidBlueCursor:SetChecked(combo[button..HealBot_Config.CurrentSpec] or false)
+        HealBot_ShiftAvoidBlueCursor:SetChecked(combo["Shift"..button..HealBot_Config.CurrentSpec] or false)
+        HealBot_CtrlAvoidBlueCursor:SetChecked(combo["Ctrl"..button..HealBot_Config.CurrentSpec] or false)
+        HealBot_AltAvoidBlueCursor:SetChecked(combo["Alt"..button..HealBot_Config.CurrentSpec] or false)
+        HealBot_AltShiftAvoidBlueCursor:SetChecked(combo["Alt-Shift"..button..HealBot_Config.CurrentSpec] or false)
+        HealBot_CtrlShiftAvoidBlueCursor:SetChecked(combo["Ctrl-Shift"..button..HealBot_Config.CurrentSpec] or false)
+        HealBot_CtrlAltAvoidBlueCursor:SetChecked(combo["Alt-Ctrl"..button..HealBot_Config.CurrentSpec] or false)
+    end
 end
 
 --------------------------------------------------------------------------------
@@ -8451,17 +8476,17 @@ function HealBot_SpellAutoButton_OnClick(self, autoType, autoMod)
         if autoType=="Target" then combo = HealBot_Config_Spells.EnabledSpellTarget;
         elseif autoType=="Trinket1" then combo = HealBot_Config_Spells.EnabledSpellTrinket1;
         elseif autoType=="Trinket2" then combo = HealBot_Config_Spells.EnabledSpellTrinket2; 
-        end
+        else combo = HealBot_Config_Spells.EnabledAvoidBlueCursor; end
     elseif HealBot_Options_StorePrev["ActionBarsCombo"]==2 then
         if autoType=="Target" then combo = HealBot_Config_Spells.DisabledSpellTarget;
         elseif autoType=="Trinket1" then combo = HealBot_Config_Spells.DisabledSpellTrinket1;
         elseif autoType=="Trinket2" then combo = HealBot_Config_Spells.DisabledSpellTrinket2;
-        end
+        else combo = HealBot_Config_Spells.DisabledAvoidBlueCursor; end
     else
         if autoType=="Target" then combo = HealBot_Config_Spells.EnemySpellTarget;
         elseif autoType=="Trinket1" then combo = HealBot_Config_Spells.EnemySpellTrinket1;
         elseif autoType=="Trinket2" then combo = HealBot_Config_Spells.EnemySpellTrinket2;
-        end
+        else combo = HealBot_Config_Spells.EnemyAvoidBlueCursor; end
     end
     local button = HealBot_Options_ComboClass_Button(HealBot_Options_ComboButtons_Button)
     if self:GetChecked() then
@@ -9724,6 +9749,10 @@ function HealBot_Options_InitSub1(subNo)
             g:SetText(HEALBOT_OPTIONS_COMBOAUTOTARGET)
             g=_G["HealBot_AutoTrinket_ButtonText"]
             g:SetText(HEALBOT_OPTIONS_COMBOAUTOTRINKET)
+            g=_G["HealBot_AvoidBC_ButtonText"]
+            g:SetText(HEALBOT_OPTIONS_AVOIDBLUECURSOR)
+            g=_G["HealBot_AvoidBC_ButtonText"]
+            g:SetText(HEALBOT_OPTIONS_AVOIDBLUECURSOR)
             g=_G["healbotcombobuttonfontstr"]
             g:SetText(HEALBOT_OPTIONS_COMBOBUTTON)
             g=_G["healbotcastmethodfontstr"]

@@ -155,6 +155,12 @@ Mappy.CornerInfoCCW = {
 	},
 }
 
+Mappy.ProfileNameMap = {
+	DEFAULT = "Normal",
+	gather = "Gather",
+	NONE = "Don't change"
+}
+
 Mappy.ObjectIconsNormalSmallPath = "Interface\\MINIMAP\\ObjectIconsAtlas"
 Mappy.ObjectIconsHighlightSmallPath = "Interface\\Addons\\Mappy\\Textures\\ObjectIconsAtlas_On"
 
@@ -230,16 +236,17 @@ function Mappy:InitializeSettings()
 				HideTimeManagerClock = false,
 				FlashGatherNodes = false,
 				UseNormalIcons = false, -- use large icons
+				DetachManagedFrames = false
 			},
 			gather =
 			{
-				MinimapSize = 800,
+				MinimapSize = 1000,
 				MinimapAlpha = 0,
 				MinimapCombatAlpha = 0,
 				MinimapMovingAlpha = 0,
 
-				Point = "TOP",
-				RelativePoint = "TOP",
+				Point = "CENTER",
+				RelativePoint = "CENTER",
 				OffsetX = 0,
 				OffsetY = 0,
 				
@@ -257,6 +264,15 @@ function Mappy:InitializeSettings()
 				HideTimeManagerClock = false,
 				FlashGatherNodes = true,
 				UseNormalIcons = false, -- use large icons
+				DetachManagedFrames = true,
+				AttachmentPosition = {
+					Point = "TOPRIGHT",
+					RelativeTo = UIParent,
+					RelativePoint = "TOPRIGHT",
+					OffsetX = -80,
+					OffsetY = -50
+				},
+				LockManagedFrames = true,
 			},
 		},
 	}
@@ -2665,44 +2681,33 @@ function Mappy._ProfilesPanel:OnShow()
 	Mappy.DisableUpdates = true
 	
 	if not self.DidCreateMenus then
-		self.DungeonMenu = Mappy:New(Mappy.UIElementsLib._TitledDropDownMenuButton, self, function (...) self:ProfileMenuFunc(...) end)
+		self.DidCreateMenus = true
+
+		self.DungeonMenu = Mappy:New(Mappy.UIElementsLib._TitledDropDownMenuButton, self, function (...) self:ProfileMenuFunc(self.DungeonMenu, "DungeonProfile", ...) end)
 		self.DungeonMenu:SetTitle("Dungeon")
 		self.DungeonMenu:SetWidth(150)
 		self.DungeonMenu:SetPoint("TOPLEFT", self.Title, "BOTTOMLEFT", 80, -15)
-		self.DungeonMenu.ItemClickedFunc = function (pMenu, pValue)
-			gMappy_Settings.DungeonProfile = pValue == "NONE" and nil or pValue
-		end
 
-		self.BattlegroundMenu = Mappy:New(Mappy.UIElementsLib._TitledDropDownMenuButton, self, function (...) self:ProfileMenuFunc(...) end)
+		self.BattlegroundMenu = Mappy:New(Mappy.UIElementsLib._TitledDropDownMenuButton, self, function (...) self:ProfileMenuFunc(self.BattlegroundMenu, "BattlegroundProfile", ...) end)
 		self.BattlegroundMenu:SetTitle("Battleground")
 		self.BattlegroundMenu:SetWidth(150)
 		self.BattlegroundMenu:SetPoint("TOPLEFT", self.DungeonMenu, "BOTTOMLEFT", 0, -15)
-		self.BattlegroundMenu.ItemClickedFunc = function (pMenu, pValue)
-			gMappy_Settings.BattlegroundProfile = pValue == "NONE" and nil or pValue
-		end
 
-		self.MountedMenu = Mappy:New(Mappy.UIElementsLib._TitledDropDownMenuButton, self, function (...) self:ProfileMenuFunc(...) end)
+		self.MountedMenu = Mappy:New(Mappy.UIElementsLib._TitledDropDownMenuButton, self, function (...) self:ProfileMenuFunc(self.MountedMenu, "MountedProfile", ...) end)
 		self.MountedMenu:SetTitle("Mounted")
 		self.MountedMenu:SetWidth(150)
 		self.MountedMenu:SetPoint("TOPLEFT", self.BattlegroundMenu, "BOTTOMLEFT", 0, -15)
-		self.MountedMenu.ItemClickedFunc = function (pMenu, pValue)
-			gMappy_Settings.MountedProfile = pValue == "NONE" and nil or pValue
-		end
 
-		self.DefaultMenu = Mappy:New(Mappy.UIElementsLib._TitledDropDownMenuButton, self, function (...) self:ProfileMenuFunc(...) end)
+		self.DefaultMenu = Mappy:New(Mappy.UIElementsLib._TitledDropDownMenuButton, self, function (...) self:ProfileMenuFunc(self.DefaultMenu, "DefaultProfile", ...) end)
 		self.DefaultMenu:SetTitle("All others")
 		self.DefaultMenu:SetWidth(150)
 		self.DefaultMenu:SetPoint("TOPLEFT", self.MountedMenu, "BOTTOMLEFT", 0, -15)
-		self.DefaultMenu.ItemClickedFunc = function (pMenu, pValue)
-			gMappy_Settings.DefaultProfile = pValue == "NONE" and nil or pValue
-		end
-		
 	end
 
-	self.MountedMenu:SetSelectedValue(gMappy_Settings.MountedProfile or "NONE")
-	self.DungeonMenu:SetSelectedValue(gMappy_Settings.DungeonProfile or "NONE")
-	self.BattlegroundMenu:SetSelectedValue(gMappy_Settings.BattlegroundProfile or "NONE")
-	self.DefaultMenu:SetSelectedValue(gMappy_Settings.DefaultProfile or "NONE")
+	self.MountedMenu:SetCurrentValueText(Mappy:GetProfileName(gMappy_Settings.MountedProfile))
+	self.DungeonMenu:SetCurrentValueText(Mappy:GetProfileName(gMappy_Settings.DungeonProfile))
+	self.BattlegroundMenu:SetCurrentValueText(Mappy:GetProfileName(gMappy_Settings.BattlegroundProfile))
+	self.DefaultMenu:SetCurrentValueText(Mappy:GetProfileName(gMappy_Settings.DefaultProfile))
 	
 	Mappy.DisableUpdates = false
 end
@@ -2710,12 +2715,36 @@ end
 function Mappy._ProfilesPanel:OnHide()
 end
 
-function Mappy._ProfilesPanel:ProfileMenuFunc(pMenu, pValue, pLevel)
-	pMenu:AddNormalItem("Don't change", "NONE")
-	
-	for vProfileName, vProfile in pairs(gMappy_Settings.Profiles) do
-		pMenu:AddNormalItem(vProfileName, vProfileName)
+function Mappy._ProfilesPanel:ProfileMenuFunc(menu, profileIndex, items)
+	items:AddToggle("Don't change", function ()
+		return not gMappy_Settings[profileIndex]
+	end, function (item)
+		gMappy_Settings[profileIndex] = nil
+		menu:SetCurrentValueText(Mappy:GetProfileName(gMappy_Settings[profileIndex]))
+	end)
+
+	for profileID, profile in pairs(gMappy_Settings.Profiles) do
+		items:AddToggle(Mappy:GetProfileName(profileID), function ()
+			return gMappy_Settings[profileIndex] == profileID
+		end, function (item)
+			gMappy_Settings[profileIndex] = profileID
+			menu:SetCurrentValueText(Mappy:GetProfileName(gMappy_Settings[profileIndex]))
+		end)
 	end
+end
+
+function Mappy:GetProfileName(profileID)
+	if not profileID then
+		profileID = "NONE"
+	end
+
+	local name = Mappy.ProfileNameMap[profileID]
+	
+	if not name then
+		name = profileID
+	end
+
+	return name
 end
 
 ----------------------------------------

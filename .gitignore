@@ -39,19 +39,24 @@
 **/Interface/AddOns/BadBoy/
 **/Interface/Addons/Easy_Obliterate/
 **/Interface/AddOns/EquipmentBuddy/
+**/Interface/AddOns/ExtGuildUI/
 **/Interface/AddOns/FocusInterruptSounds/
 **/Interface/AddOns/GarrisonMissionManager/
 **/Interface/AddOns/GS-Core/
 **/Interface/AddOns/GS-DraikMacros/
 **/Interface/AddOns/GS-SequenceEditor/
 **/Interface/AddOns/GuildManager/
+**/Interface/AddOns/GuildUI/
+**/Interface/AddOns/LoggerHead/
 **/Interface/AddOns/Netherwing_Eggs/
 **/Interface/AddOns/Pawn/
 **/Interface/AddOns/Postal/
 **/Interface/AddOns/SellJunk/
+**/Interface/AddOns/Storyline/
+**/Interface/AddOns/SuperGuildInvite/
 **/Interface/AddOns/TomTom/
 **/Interface/AddOns/TradeSkillMaster*/
 **/Interface/AddOns/WeakAuras*/
 **/Interface/AddOns/WorldQuestTracker/
-**/Interface/AddOns/Storyline/
+
 

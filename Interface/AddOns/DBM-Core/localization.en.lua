@@ -91,7 +91,7 @@ DBM_CORE_NOTE_SHARE_FAIL			= "%s attempted to share note text with you for %s. H
 DBM_CORE_NOTEHEADER					= "Enter your note text here for %s. Enclosing a players name with >< class colors it. For alerts with multiple notes, separate notes with '/'"
 DBM_CORE_NOTEFOOTER					= "Press 'Okay' to accept changes or 'Cancel' to decline changes"
 DBM_CORE_NOTESHAREDHEADER			= "%s has shared below note text for %s. If you accept it, it will overwrite your existing note"
-DBM_CORE_NOTESHARED					= "You're note has been sent to the group"
+DBM_CORE_NOTESHARED					= "Your note has been sent to the group"
 DBM_CORE_NOTESHAREERRORSOLO			= "Lonely? Shouldn't be passing notes to yourself"
 DBM_CORE_NOTESHAREERRORBLANK		= "Cannot share blank notes"
 DBM_CORE_NOTESHAREERRORGROUPFINDER	= "Notes cannot be shared in BGs, LFR, or LFG"
@@ -153,6 +153,7 @@ DBM_CORE_VERSIONCHECK_OUTDATED		= "Following %d player(s) have outdated boss mod
 DBM_CORE_YOUR_VERSION_OUTDATED      = "Your version of Deadly Boss Mods is out-of-date. Please visit http://www.deadlybossmods.com to get the latest version."
 DBM_CORE_VOICE_PACK_OUTDATED		= "Your DBM voice pack may be missing sounds supported by this version of DBM. Some special warning sounds will not be supressed for alerts using voices not supported by your voice pack version. Please download a newer version of voice pack or contact author for an update that contains missing audio files"
 DBM_CORE_VOICE_MISSING				= "You had a DBM voice pack selected that could not be found. Your selection has been reset to 'None'. If this is an error, make sure your voice pack is properly installed and enabled in addons."
+DBM_CORE_VOICE_DISABLED				= "You currently have at least one DBM voice pack installed but none enabled. If you intend to use a voice pack, make sure it's chosen in 'Spoken Alerts', else uninstall unused voice packs to hide this message"
 DBM_CORE_VOICE_COUNT_MISSING		= "Countdown voice %d is set to a voice/count pack that could not be found. It has be reset to default settings."
 DBM_BIG_WIGS						= "BigWigs"
 
@@ -250,6 +251,7 @@ DBM_CORE_MIDDLE						= "Middle"
 DBM_CORE_FRONT						= "Front"
 DBM_CORE_INTERMISSION				= "Intermission"--No blizz global for this, and will probably be used in most end tier fights with intermission phases
 DBM_CORE_ORB						= "Orb"
+DBM_CHEST							= "Chest"--As in Treasure 'Chest'. Not Chest as in body part.
 --Common Locals end
 
 DBM_CORE_BREAK_USAGE				= "Break timer cannot be longer than 60 minutes. Make sure you're inputting time in minutes and not seconds."
@@ -257,7 +259,7 @@ DBM_CORE_BREAK_START				= "Break starting now -- you have %s! (Sent by %s)"
 DBM_CORE_BREAK_MIN					= "Break ends in %s minute(s)!"
 DBM_CORE_BREAK_SEC					= "Break ends in %s seconds!"
 DBM_CORE_TIMER_BREAK				= "Break time!"
-DBM_CORE_ANNOUNCE_BREAK_OVER		= "Break has ended"
+DBM_CORE_ANNOUNCE_BREAK_OVER		= "Break has ended at %s"
 
 DBM_CORE_TIMER_PULL					= "Pull in"
 DBM_CORE_ANNOUNCE_PULL				= "Pull in %d sec. (Sent by %s)"
@@ -438,6 +440,7 @@ DBM_CORE_AUTO_YELL_ANNOUNCE_TEXT = {
 	fade		= "%s fading in %%d",
 	position 	= "%s %%s on {rt%%d}"..UnitName("player").."{rt%%d}"
 }
+DBM_CORE_AUTO_YELL_CUSTOM_POSITION		= "{rt%d} %s {rt%d}"--Doesn't need translating. Has no strings
 DBM_CORE_AUTO_HUD_OPTION_TEXT			= "Show HudMap for $spell:%s"
 DBM_CORE_AUTO_HUD_OPTION_TEXT_MULTI		= "Show HudMap for various mechanics"
 DBM_CORE_AUTO_RANGE_OPTION_TEXT			= "Show range frame (%s) for $spell:%s"--string used for range so we can use things like "5/2" as a value for that field
@@ -484,7 +487,7 @@ DBM_ARROW_ERROR_USAGE	= {
 DBM_SPEED_KILL_TIMER_TEXT	= "Record Victory"
 DBM_SPEED_CLEAR_TIMER_TEXT	= "Best Clear"
 DBM_COMBAT_RES_TIMER_TEXT	= "Next CR Charge"
-DBM_CORE_TIMER_RESPAWN		= "Respawn"
+DBM_CORE_TIMER_RESPAWN		= "%s Respawn"
 
 
 DBM_REQ_INSTANCE_ID_PERMISSION		= "%s requested to see your current instance IDs and progress.\nDo you want to send this information to %s? He or she will be able to request this information during your current session (i. e. until you relog)."

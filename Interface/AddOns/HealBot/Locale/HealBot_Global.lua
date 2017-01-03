@@ -1,4 +1,4 @@
-HEALBOT_VERSION   = "7.1.0.0";
+HEALBOT_VERSION   = "7.1.0.1";
 HEALBOT_ABOUT_URL = "http://healbot.darktech.org/"
 
 function HealBot_globalVars()
@@ -43,6 +43,7 @@ function HealBot_globalVars()
     HEALBOT_WHISPERS_OF_INSANITY            = GetSpellInfo(176151) or "--Whispers of Insanity"
     HEALBOT_SHROUD_OF_THE_NAGLFAR           = GetSpellInfo(215247) or "--Shroud of the Naglfar"
     HEALBOT_SPIRIT_FRAGMENT                 = GetSpellInfo(221878) or "--Spirit Fragment"
+    HEALBOT_NORGANNONS_FORESIGHT            = GetSpellInfo(208215) or "--Norgannon's Foresight";
 
     --Racial Abilities
     HEALBOT_DARKFLIGHT                      = GetSpellInfo(68992) or "--Darkflight";
@@ -205,7 +206,9 @@ function HealBot_globalVars()
     HEALBOT_SHROUD_OF_PURGATORY             = GetSpellInfo(116888) or "--Shroud of Purgatory"; 
     HEALBOT_UNHOLY_AURA                     = GetSpellInfo(55610) or "--Unholy Aura"
     HEALBOT_VAMPIRIC_BLOOD                  = GetSpellInfo(55233) or "--Vampiric Blood";
+    
     --Demon Hunter
+    HEALBOT_DEMON_SPIKES                    = GetSpellInfo(203720) or "--Demon Spikes";
     
 	--Druid
     HEALBOT_BARKSKIN                        = GetSpellInfo(22812) or "--Barkskin";
@@ -213,6 +216,7 @@ function HealBot_globalVars()
     HEALBOT_FRENZIED_REGEN                  = GetSpellInfo(22842) or "--Frenzied Regeneration";
     HEALBOT_HARMONY                         = GetSpellInfo(77495) or "--Mastery Harmony";
     HEALBOT_IRONBARK                        = GetSpellInfo(102342) or "--Ironbark";
+    HEALBOT_IRONFUR                         = GetSpellInfo(192081) or "--Ironfur";
     HEALBOT_LEADER_OF_THE_PACK              = GetSpellInfo(17007) or "--Leader of the Pack";
     HEALBOT_LIVING_SEED                     = GetSpellInfo(48500) or "--Living Seed";
     HEALBOT_MARK_OF_THE_WILD                = GetSpellInfo(1126) or "--Mark of the Wild";
@@ -371,7 +375,7 @@ function HealBot_globalVars()
     HEALBOT_SAVING_GRACE                    = GetSpellInfo(152116) or "--Saving Grace"
     HEALBOT_SAVING_VOID_ENTROPY             = GetSpellInfo(155361) or "--Void Entropy"
     HEALBOT_SERENDIPITY                     = GetSpellInfo(63733) or "--Serendipity";
-    HEALBOT_SHADOWFORM                      = GetSpellInfo(15473) or "--Shadowform"
+    HEALBOT_SHADOWFORM                      = GetSpellInfo(232698) or "--Shadowform"
     HEALBOT_SHADOW_WORD_INSANITY            = GetSpellInfo(132573) or "--Shadow Word: Insanity";
     HEALBOT_SPIRIT_SHELL                    = GetSpellInfo(109964) or "--Spirit Shell";
     HEALBOT_SUNDERING_SOUL                  = GetSpellInfo(212570) or "--Sundering Soul";
@@ -390,7 +394,10 @@ function HealBot_globalVars()
 	HEALBOT_ATONEMENT                       = GetSpellInfo(81749) or "--Atonement";
 	HEALBOT_SHADOW_COVENANT                 = GetSpellInfo(204065) or "--Shadow Covenant";
     HEALBOT_LIGHT_OF_TUURE                  = GetSpellInfo(208065) or "--Light of T'uure";
-   
+    HEALBOT_BLESSING_OF_TUURE               = GetSpellInfo(196644) or "--Blessing of T'uure";
+    HEALBOT_POWER_OF_THE_NAARU              = GetSpellInfo(196490) or "--Power of the Naaru";
+    HEALBOT_POWER_OF_THE_DARK_SIDE          = GetSpellInfo(198069) or "--Power of the Dark Side";
+
 	--Shaman
     HEALBOT_ANACESTRAL_GUIDANCE             = GetSpellInfo(108281) or "--Ancestral Guidance";
     HEALBOT_ANACESTRAL_SWIFTNESS            = GetSpellInfo(16188) or "--Ancestral Swiftness";
@@ -441,6 +448,7 @@ function HealBot_globalVars()
     HEALBOT_WINDFLURRY                      = GetSpellInfo(166916) or "--Windflurry"
     HEALBOT_EXTEND_LIFE                     = GetSpellInfo(185158) or "--Extend Life"
     HEALBOT_ESSENCE_FONT                    = GetSpellInfo(191837) or "--Essence Font"
+    HEALBOT_TOUCH_OF_KARMA                  = GetSpellInfo(122470) or "--Touch of Karma"
     
 	--Warlock
     HEALBOT_BLOOD_PACT                      = GetSpellInfo(166928) or "--Blood Pact";
@@ -722,6 +730,7 @@ function HealBot_globalVars()
     
     HEALBOT_DEBUFF_BLACKENING_SOUL      = GetSpellInfo(209158) or "--Blackening Soul"
     HEALBOT_DEBUFF_DARKENING_SOUL       = GetSpellInfo(206651) or "--Darkening Soul"
+    HEALBOT_DEBUFF_SHADOW_BURST         = GetSpellInfo(204044) or "--Shadow Burst"
 end
 
 HEALBOT_DISEASE_en                      = "Disease";  -- Do NOT localize this value.

@@ -1,13 +1,15 @@
 local mod	= DBM:NewMod(1838, "DBM-Party-Legion", 11, 860)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 15450 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 15607 $"):sub(12, -3))
 mod:SetCreatureID(114790)
 mod:SetEncounterID(2017)
 mod:SetZone()
 mod:SetUsedIcons(1, 2, 3)
 --mod:SetHotfixNoticeRev(14922)
 --mod.respawnTime = 30
+
+mod.noNormal = true
 
 mod:RegisterCombat("combat")
 
@@ -32,7 +34,7 @@ local warnPhase3					= mod:NewPhaseAnnounce(3, 2)
 
 --ALL
 local specWarnChaoticShadows		= mod:NewSpecialWarningYou(229159, nil, nil, nil, 1, 2)
-local yellChaoticShadows			= mod:NewPosYell(229159)
+local yellChaoticShadows			= mod:NewPosYell(229159, DBM_CORE_AUTO_YELL_CUSTOM_POSITION)
 local specWarnBurningBlast			= mod:NewSpecialWarningInterruptCount(229083, "HasInterrupt", nil, nil, 1, 2)
 --Phase 1
 local specWarnFelBeam				= mod:NewSpecialWarningRun(229242, nil, nil, nil, 1, 2)
@@ -152,7 +154,7 @@ function mod:SPELL_AURA_APPLIED(args)
 		if args:IsPlayer() then
 			specWarnChaoticShadows:Show()
 			voiceChaoticShadows:Play("runout")
-			yellChaoticShadows:Yell(count, count, count)
+			yellChaoticShadows:Yell(count, args.spellName, count)
 		end
 		if self.Options.SetIconOnShadows then
 			self:SetIcon(name, count)

@@ -1340,6 +1340,11 @@ function Addon.UIElementsLib._DropDownMenu:Show(items, point, relativeTo, relati
 	-- Show the menu
 	self.menuFrame = LibStub("LibDropdownMC-1.0"):OpenAce3Menu(items)
 	self.menuFrame:SetPoint(point, relativeTo, relativePoint, xOffset, yOffset)
+	self.menuFrame.cleanup = function ()
+		if self.cleanup then
+			self.cleanup()
+		end
+	end
 end
 
 function Addon.UIElementsLib._DropDownMenu:Hide()

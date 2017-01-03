@@ -70,14 +70,17 @@ HealBot_Config_SpellsDefaults = {
   EnabledSpellTarget={},
   EnabledSpellTrinket1={},
   EnabledSpellTrinket2={},
+  EnabledAvoidBlueCursor={},
   DisabledKeyCombo = nil,
   DisabledSpellTarget={},
   DisabledSpellTrinket1={},
   DisabledSpellTrinket2={},
+  DisabledAvoidBlueCursor={},
   EnemyKeyCombo=nil,
   EnemySpellTarget={},
   EnemySpellTrinket1={},
   EnemySpellTrinket2={},
+  EnemyAvoidBlueCursor={},
   ButtonCastMethod = 2,
 };
 
@@ -439,6 +442,7 @@ function HealBot_Data_InitVars()
             --
             [HEALBOT_DEBUFF_BLACKENING_SOUL]      = 9,
             [HEALBOT_DEBUFF_DARKENING_SOUL]       = 10,
+            [HEALBOT_DEBUFF_SHADOW_BURST]         = 10,
         },
         Custom_Debuff_Categories=HEALBOT_CUSTOM_DEBUFF_CATS;
         WatchHoT = {
@@ -452,8 +456,9 @@ function HealBot_Data_InitVars()
                 [HEALBOT_TRANQUILITY]=2,
                 [HEALBOT_BARKSKIN]=2,
                 [HEALBOT_IRONBARK]=2,
+                [HEALBOT_IRONFUR]=4,
                 [HEALBOT_SURVIVAL_INSTINCTS]=2,
-                [HEALBOT_FRENZIED_REGEN]=2,
+                [HEALBOT_FRENZIED_REGEN]=4,
                 --WoD Added
                 [HEALBOT_NATURE_REJUVENATION_GERMINATION]=2,
                 --Legion Added
@@ -477,14 +482,14 @@ function HealBot_Data_InitVars()
                 [HEALBOT_GUARDED_BY_THE_LIGHT]=2,
                 [HEALBOT_HAND_OF_FREEDOM]=2,
                 [HEALBOT_LIGHT_BEACON]=2,
-                [HEALBOT_DIVINE_SHIELD]=2,
+                [HEALBOT_DIVINE_SHIELD]=4,
                 [HEALBOT_HAND_OF_SACRIFICE]=2,
                 [HEALBOT_INFUSION_OF_LIGHT]=2,
                 [HEALBOT_SPEED_OF_LIGHT]=2,
                 [HEALBOT_DIVINE_PURPOSE]=2,
                 [HEALBOT_ETERNAL_FLAME]=2,
                 [HEALBOT_ARDENT_DEFENDER]=2,
-                [HEALBOT_DIVINE_PROTECTION]=2,
+                [HEALBOT_DIVINE_PROTECTION]=4,
                 --WoD Added
                 [HEALBOT_BEACON_OF_FAITH]=2,                                
                 --Legion Added
@@ -524,7 +529,10 @@ function HealBot_Data_InitVars()
                 [HEALBOT_HARMONY]=2,   
                 [HEALBOT_SUNDERING_SOUL]=3,
                 [HEALBOT_FOCUSED_WILL]=2,        
-                [HEALBOT_LIGHT_OF_TUURE]=2,                
+                [HEALBOT_LIGHT_OF_TUURE]=2, 
+                [HEALBOT_BLESSING_OF_TUURE]=2,
+                [HEALBOT_POWER_OF_THE_NAARU]=2,
+                [HEALBOT_POWER_OF_THE_DARK_SIDE]=2,
             },
             ["ROGU"] = {
                 [HEALBOT_VANISH]=2,
@@ -551,21 +559,22 @@ function HealBot_Data_InitVars()
             }, 
             ["WARR"] = {
                 [HEALBOT_VIGILANCE]=2,
-                [HEALBOT_LAST_STAND]=2,
-                [HEALBOT_SHIELD_WALL]=2,
-                [HEALBOT_SHIELD_BLOCK]=2,
+                [HEALBOT_LAST_STAND]=4,
+                [HEALBOT_SHIELD_WALL]=4,
+                [HEALBOT_SHIELD_BLOCK]=4,
             }, 
             ["DEAT"] = {
-                [HEALBOT_ICEBOUND_FORTITUDE]=2,
-                [HEALBOT_ANTIMAGIC_SHELL]=2,
+                [HEALBOT_ICEBOUND_FORTITUDE]=4,
+                [HEALBOT_ANTIMAGIC_SHELL]=4,
                 [HEALBOT_ARMY_OF_THE_DEAD]=2,
                 [HEALBOT_LICHBORNE]=2,
-                [HEALBOT_ANTIMAGIC_ZONE]=2,
+                [HEALBOT_ANTIMAGIC_ZONE]=4,
                 [HEALBOT_VAMPIRIC_BLOOD]=2,
                 [HEALBOT_DANCING_RUNE_WEAPON]=2,
                 [HEALBOT_SHROUD_OF_PURGATORY]=2,
             },
             ["DEMO"] = {
+                [HEALBOT_DEMON_SPIKES]=4,
             },
             ["MONK"] = {
                 [HEALBOT_VIGILANCE]=2,
@@ -583,6 +592,7 @@ function HealBot_Data_InitVars()
                 --WoD Added                
                 [HEALBOT_EXTEND_LIFE]=2,
                 --Legion Added
+                [HEALBOT_TOUCH_OF_KARMA]=2,
             },
             ["ALL"] = {
                 [HEALBOT_GIFT_OF_THE_NAARU]=2,
@@ -590,6 +600,7 @@ function HealBot_Data_InitVars()
                 [HEALBOT_STONEFORM]=2,
                 [HEALBOT_SHROUD_OF_THE_NAGLFAR]=2,
                 [HEALBOT_SPIRIT_FRAGMENT]=2,
+                [HEALBOT_NORGANNONS_FORESIGHT]=2,
             },
         },
     };
