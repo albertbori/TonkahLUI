@@ -1,5 +1,5 @@
 ## Interface: 70100
-## Version: v7.1.0e release
+## Version: v7.1.0h release
 ## Title: Recount
 ## Notes: Records Damage and Healing for Graph Based Display.
 ## Notes-ruRU: Записывает урон и исцеления и отоброжает различные графики.

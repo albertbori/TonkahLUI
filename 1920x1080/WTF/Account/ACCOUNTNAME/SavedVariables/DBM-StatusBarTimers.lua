@@ -12,6 +12,7 @@ DBT_AllPersistentOptions = {
 			["TimerX"] = 13.9131278991699,
 			["EnlargeBarTime"] = 11,
 			["TimerPoint"] = "TOP",
+			["ClickThrough"] = true,
 			["Width"] = 183,
 			["HugeTimerPoint"] = "CENTER",
 			["HugeBarXOffset"] = 0,

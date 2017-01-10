@@ -359,38 +359,38 @@ ChatterDB = {
 			["realm"] = {
 				["Doomhammer"] = {
 					["history"] = {
-						"/cw Sekké-Lightbringer musta been a glitch", -- [1]
-						"/g grats!", -- [2]
-						"/cw Teo It's hard to tell what we're doing wrong on this fight. From a healing perspective, everything seems fine.", -- [3]
-						"/cw Teo-Doomhammer He's been playing under a different tag up until now.", -- [4]
-						"/healbot", -- [5]
-						"/p O", -- [6]
-						"/raid I'll switch to dps", -- [7]
-						"/readycheck", -- [8]
-						"/dbm pull", -- [9]
-						"/raid dont' dispell tanks until they hit green", -- [10]
-						" WOOT!", -- [11]
-						"/raid thanks!", -- [12]
-						"/cheer", -- [13]
-						"/cheer", -- [14]
-						"/cheer", -- [15]
-						"/cw Platedfurbal-Baelgun You were a boss", -- [16]
-						"/cw Platedfurbal-Baelgun We need to de-squishy Masokiss. He takes a ton of damage", -- [17]
-						"/cw Platedfurbal-Baelgun nope", -- [18]
-						"/cw Platedfurbal-Baelgun He's there, and then all the sudden he's at 3%", -- [19]
-						"/cw Platedfurbal-Baelgun And I'm like smashing every key I own", -- [20]
-						"/cw Platedfurbal-Baelgun to try and save him", -- [21]
-						"/cw Platedfurbal-Baelgun There were a few times where he just got completely squashed.", -- [22]
-						"/cw Platedfurbal-Baelgun We'll get his gear fixed. They're getting a buff too in 7.1.5", -- [23]
-						"/cw Platedfurbal-Baelgun So, I need to figure out how to fix that. I can't see who has what stacks with healbot. It seems to be a bug for that encounter.", -- [24]
-						"/g night!", -- [25]
-						"/p tyty", -- [26]
-						"/g wewt!", -- [27]
-						"/wa", -- [28]
-						"/guildmanager", -- [29]
-						"/g night!", -- [30]
-						"/g <3", -- [31]
-						"/g gnight e'rbody!", -- [32]
+						"/o haha, what are the permissions on it, Teo?", -- [1]
+						"/invite Tareva ", -- [2]
+						"/hug", -- [3]
+						"/cw Teo-Doomhammer We're trying to get some suramar progression in while she has some play time", -- [4]
+						"/cw Teo-Doomhammer thanks for the offer, tho", -- [5]
+						"/g I'm off for the night. Goodnight guildies, see you tomrrow.", -- [6]
+						"/invite Tareva ", -- [7]
+						"/cw Seesaw-Baelgun We're still recruiting all roles, but we're currently lowest on healers.", -- [8]
+						"/cw Seesaw-Baelgun We are definitely a guild of hardcore raiders stuck with casual raid schedules. :) Sounds like a good fit.", -- [9]
+						"/cw Seesaw-Baelgun Ok, just a few things before I send you an invite: No drama, no swearing, no lewd talk. Raid times (optional) are Tuesday/Thursdays at 7pm server (pacific). Are you cool with that?", -- [10]
+						"/cw Seesaw-Baelgun awesome! ginvite incoming!", -- [11]
+						"/ginvite Seesaw-Baelgun ", -- [12]
+						"/g welcome! Please register on www.thedefiantguild.com", -- [13]
+						"/cw Eodred Seesaw == Raid-ready holy pally", -- [14]
+						"/g grats!", -- [15]
+						"/g grats!!!", -- [16]
+						" So, the only thing we have left to do together is VH?", -- [17]
+						" Or is there more coop content?", -- [18]
+						" k, you don't have to wait, but I'll be available around 10:30pm", -- [19]
+						"/g I saw that Logitech has some new nice headphones coming out from their CES announcment. PC-only I think", -- [20]
+						"/g lol", -- [21]
+						"/invite Tareva ", -- [22]
+						"/g haha, yea, that's the way with upgrades", -- [23]
+						"/g grats!", -- [24]
+						"/g grats!", -- [25]
+						"/g grats :)", -- [26]
+						"/g grats!!!", -- [27]
+						"/g you guys do the guild proud", -- [28]
+						"/g k, I'm out for the night", -- [29]
+						"/g happy patch day tomorrow!", -- [30]
+						"/g See you all in the raid!", -- [31]
+						"/cw Kahldrogo check your calendar for an invite for the raid tomorrow. And have a good evening! bye!", -- [32]
 					},
 				},
 			},
@@ -402,11 +402,10 @@ ChatterDB = {
 	},
 	["profileKeys"] = {
 		["Marmit - Doomhammer"] = "Default",
-		["Bartholamue - Doomhammer"] = "Tonkah LUI",
+		["Bartholamue - Doomhammer"] = "Default",
 		["Holyshnizzle - Doomhammer"] = "Tonkah LUI",
 		["Alfalpha - Doomhammer"] = "Default",
 		["Taunkah - Doomhammer"] = "Tonkah LUI",
-		["Targatdummy - Doomhammer"] = "Default",
 		["Nilrum - Doomhammer"] = "Default",
 		["Dfbdeffbw - Doomhammer"] = "Tonkah LUI",
 		["Bahlar - Doomhammer"] = "Tonkah LUI",

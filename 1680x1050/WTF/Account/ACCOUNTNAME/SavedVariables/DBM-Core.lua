@@ -291,7 +291,7 @@ DBM_AllSavedOptions = {
 		["RangeFrameRadarY"] = -100,
 		["HUDAlpha1"] = 0.5,
 		["StatusEnabled"] = true,
-		["InfoFrameX"] = -133.76008605957,
+		["InfoFrameX"] = -223.203903198242,
 		["RangeFrameX"] = -257.759735107422,
 		["AlwaysShowSpeedKillTimer"] = true,
 		["RangeFrameY"] = -239.000198364258,
@@ -319,7 +319,6 @@ DBM_AllSavedOptions = {
 		["DontShowSpecialWarnings"] = false,
 		["ShowMinimapButton"] = false,
 		["MoviesSeen"] = {
-			["5852"] = true,
 			["14921"] = true,
 		},
 		["ShowQueuePop"] = true,
@@ -332,7 +331,7 @@ DBM_AllSavedOptions = {
 			0, -- [3]
 		},
 		["WarningFontStyle"] = "None",
-		["InfoFrameY"] = -148.999847412109,
+		["InfoFrameY"] = -213.938873291016,
 		["ChatFrame"] = "DEFAULT_CHAT_FRAME",
 		["WarningIconRight"] = true,
 		["UseSoundChannel"] = "Master",

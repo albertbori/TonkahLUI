@@ -1277,38 +1277,38 @@ Healbot_Config_Skins = {
 		["Standard"] = {
 			{
 				["FRAME"] = 1,
-				["STATE"] = false,
+				["STATE"] = true,
 				["NAME"] = "Self",
 			}, -- [1]
 			{
 				["FRAME"] = 1,
-				["STATE"] = false,
+				["STATE"] = true,
 				["NAME"] = "Healers",
 			}, -- [2]
 			{
 				["FRAME"] = 1,
 				["STATE"] = true,
-				["NAME"] = "Group",
+				["NAME"] = "Main tanks",
 			}, -- [3]
 			{
 				["FRAME"] = 1,
 				["STATE"] = true,
-				["NAME"] = "Focus",
+				["NAME"] = "Group",
 			}, -- [4]
 			{
 				["FRAME"] = 1,
 				["STATE"] = true,
-				["NAME"] = "Raid",
+				["NAME"] = "Focus",
 			}, -- [5]
 			{
 				["FRAME"] = 1,
 				["STATE"] = true,
-				["NAME"] = "My Targets",
+				["NAME"] = "Raid",
 			}, -- [6]
 			{
 				["FRAME"] = 1,
 				["STATE"] = true,
-				["NAME"] = "Main tanks",
+				["NAME"] = "My Targets",
 			}, -- [7]
 			{
 				["FRAME"] = 1,
@@ -5805,11 +5805,11 @@ Healbot_Config_Skins = {
 		},
 		["Standard"] = {
 			{
-				["Y"] = 25.83,
+				["Y"] = 25.64,
 				["GROW"] = 2,
 				["BARS"] = 1,
 				["FRAME"] = 5,
-				["X"] = 50.2,
+				["X"] = 50.14,
 			}, -- [1]
 			{
 				["Y"] = 23.22,
@@ -7587,30 +7587,30 @@ HealBot_MapScale = {
 	["zScale"] = {
 		["Vault of the Wardens"] = 0.0663728161768281,
 		["Dragonblight"] = 0.0053017844221482,
-		["Helmouth Cliffs"] = 0.10638994578009,
+		["Helmouth Cliffs"] = 0.10006189574088,
 		["Violet Hold"] = 0.123811909885963,
 		["Halls of Valor"] = 0.050303115276111,
 		["Darkheart Thicket"] = 0.039596735128129,
 		["Stormheim"] = 0.10974900062512,
-		["Scarlet Monastery"] = 0.12374919624174,
+		["Duskwood"] = 0.016122539381637,
 		["Dalaran"] = 0.20381340437546,
-		["Broken Shore"] = 0.094167768374812,
-		["The Storm Peaks"] = 0.00536475314643299,
+		["Magisters' Terrace"] = 0.067530207793603,
+		["Eye of Azshara"] = 0.023547897625992,
 		["Val'sharah"] = 0.089284933373799,
-		["Azshara"] = 0.006343167314684,
-		["Highmountain"] = 0.12244994582556,
+		["The Storm Peaks"] = 0.00536475314643299,
+		["Highmountain"] = 0.1320645191789,
 		["The Eye of Azshara"] = 0.014470561915311,
 		["The Shattered Halls"] = 0.0421225894008982,
 		["Thunder Totem"] = 0.1353124989035,
-		["Suramar"] = 0.1021437897595,
+		["Mana-Tombs"] = 0.0519207526489385,
 		["The Slave Pens"] = 0.0493983433929098,
-		["Mana-Tombs"] = 0.051920752648939,
+		["Suramar"] = 0.18238027964896,
 		["Black Rook Hold"] = 0.195414322804474,
 		["Neltharion's Lair"] = 0.033706033781319,
-		["Magisters' Terrace"] = 0.067530207793603,
-		["Eye of Azshara"] = 0.023547897625992,
+		["Azshara"] = 0.006343167314684,
+		["Broken Shore"] = 0.094167768374812,
 		["Azsuna"] = 0.0071095401397648,
-		["Deadwind Pass"] = 0.00756354711804635,
+		["Scarlet Monastery"] = 0.12374919624174,
 		["The Arcatraz"] = 0.0617927531575772,
 	},
 }

@@ -161,6 +161,8 @@ AdiBagsDB = {
 				},
 			},
 		},
+		["ItemSets"] = {
+		},
 		["CurrencyFrame"] = {
 			["profiles"] = {
 				["Tonkah LUI"] = {
@@ -181,8 +183,6 @@ AdiBagsDB = {
 			},
 		},
 		["DataSource"] = {
-		},
-		["ItemSets"] = {
 		},
 		["Junk"] = {
 			["profiles"] = {

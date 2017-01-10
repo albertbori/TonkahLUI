@@ -242,82 +242,82 @@ ChatterDB = {
 				["Tonkah LUI"] = {
 					["frames"] = {
 						["FRAME_1"] = {
-							["borderColor"] = {
+							["backgroundColor"] = {
 								["a"] = 0,
 							},
-							["backgroundColor"] = {
+							["borderColor"] = {
 								["a"] = 0,
 							},
 						},
 						["FRAME_9"] = {
-							["borderColor"] = {
+							["backgroundColor"] = {
 								["a"] = 0,
 							},
-							["backgroundColor"] = {
+							["borderColor"] = {
 								["a"] = 0,
 							},
 						},
 						["FRAME_6"] = {
-							["borderColor"] = {
+							["backgroundColor"] = {
 								["a"] = 0,
 							},
-							["backgroundColor"] = {
+							["borderColor"] = {
 								["a"] = 0,
 							},
 						},
 						["FRAME_5"] = {
-							["borderColor"] = {
+							["backgroundColor"] = {
 								["a"] = 0,
 							},
-							["backgroundColor"] = {
+							["borderColor"] = {
 								["a"] = 0,
 							},
 						},
 						["FRAME_8"] = {
-							["borderColor"] = {
+							["backgroundColor"] = {
 								["a"] = 0,
 							},
-							["backgroundColor"] = {
+							["borderColor"] = {
 								["a"] = 0,
 							},
 						},
 						["FRAME_7"] = {
-							["borderColor"] = {
+							["backgroundColor"] = {
 								["a"] = 0,
 							},
-							["backgroundColor"] = {
+							["borderColor"] = {
 								["a"] = 0,
 							},
 						},
 						["FRAME_3"] = {
-							["borderColor"] = {
+							["backgroundColor"] = {
 								["a"] = 0,
 							},
-							["backgroundColor"] = {
+							["borderColor"] = {
 								["a"] = 0,
 							},
 						},
 						["FRAME_4"] = {
-							["borderColor"] = {
+							["backgroundColor"] = {
 								["a"] = 0,
 							},
-							["backgroundColor"] = {
+							["borderColor"] = {
 								["a"] = 0,
 							},
 						},
 						["FRAME_2"] = {
-							["borderColor"] = {
+							["backgroundColor"] = {
 								["a"] = 0,
 							},
-							["backgroundColor"] = {
+							["borderColor"] = {
 								["a"] = 0,
 							},
 						},
 						["FRAME_10"] = {
-							["borderColor"] = {
+							["backgroundColor"] = {
 								["a"] = 0,
 							},
-							["backgroundColor"] = {
+							["borderColor"] = {
 								["a"] = 0,
 							},
 						},
@@ -338,12 +338,12 @@ ChatterDB = {
 		["ChatFont"] = {
 			["profiles"] = {
 				["Default"] = {
-					["fontsize"] = 12,
 					["font"] = "Arial Narrow",
+					["fontsize"] = 12,
 				},
 				["Tonkah LUI"] = {
-					["font"] = "Arial Narrow",
 					["fontsize"] = 12,
+					["font"] = "Arial Narrow",
 				},
 			},
 		},
@@ -359,38 +359,38 @@ ChatterDB = {
 			["realm"] = {
 				["Doomhammer"] = {
 					["history"] = {
-						" more dps showed up. Tree and a pug 878 ilvl arms warrior", -- [1]
-						" But also, we waited to burn heroism till after the first heart phase", -- [2]
-						" and also, we were much better at chasing down & killing the right adds", -- [3]
-						" Oh, and Darknight reactivated and was on for 30 minutes last evening.", -- [4]
-						" It won't last, but still was cool to see him on.", -- [5]
-						" yea, he's got serious internal conflict", -- [6]
-						"/g GRATS!", -- [7]
-						" yea, maw+2", -- [8]
-						" *+3", -- [9]
-						"/p  |cffa335ee|Hitem:133608::::::::110:257::16:3:3411:1502:3336:::|h[Mistbound Helarjar Footwraps]|h|r", -- [10]
-						"/g GRAAAAAAATS!!!!!!!", -- [11]
-						" NICE", -- [12]
-						" off the world boss?", -- [13]
-						"/readycheck", -- [14]
-						"/dbm pull", -- [15]
-						"/g grats!", -- [16]
-						" he's poop on high-mobility fights, but sometimes he does great", -- [17]
-						" no, not yet. I didn't get it finished.", -- [18]
-						" Yea, I wanna see how high you can get without any modifications to what it currently is.", -- [19]
-						" how many combustions did you do, and how close to the end of your rotation did you do one?", -- [20]
-						" k", -- [21]
-						" The highest I was able to get with GSE was 135k, and it still required a ton of attention to use the alt key to manage pyroblasts", -- [22]
-						" That's overall data", -- [23]
-						" His theoretical throughput is in the 300k's", -- [24]
-						" So I", -- [25]
-						" So based on your numbers", -- [26]
-						" 135k of 180k is 75%", -- [27]
-						" If his theoretical is 350k, then 75% would be...", -- [28]
-						" 262", -- [29]
-						" yea, I think we should just make him respec to something else.", -- [30]
-						" But I don't know what yet because I wasn't able to try arcane or frost. You didn't have the weapons on you.", -- [31]
-						" brb", -- [32]
+						"/gsse", -- [1]
+						"/macro", -- [2]
+						"/gsse", -- [3]
+						"/cw Wrinkles-Doomhammer ohai!", -- [4]
+						"/cw Chaelei-Baelgun hi there", -- [5]
+						"/cw Chaelei-Baelgun definitely", -- [6]
+						"/cw Wrinkles-Doomhammer Thanks for the offer. The wife and I had to put our dog down today, so we're going to keep it low-key. We're in a low spot tonight :-||", -- [7]
+						"/macro", -- [8]
+						"/cw Chaelei-Baelgun k", -- [9]
+						"/cw Wrinkles-Doomhammer Thanks man. It's life I guess. Hard to say goodbye to my best friend for 11 years", -- [10]
+						"/cw Wrinkles-Doomhammer But don't let me bring you down.", -- [11]
+						"/cw Wrinkles-Doomhammer GO! FIGHT! WIN!", -- [12]
+						"/cw Wrinkles-Doomhammer :D", -- [13]
+						"/gsse", -- [14]
+						"/cw Wrinkles-Doomhammer He'd like that :) Thanks", -- [15]
+						"/cw Eodred-Doomhammer I am not", -- [16]
+						"/cw Platedfurbal-Baelgun Thanks!!!", -- [17]
+						"/cw Eodred-Doomhammer no, Jessi and I are going to keep it low-key tonight", -- [18]
+						"/cw Platedfurbal-Baelgun I'll send whatever isn't back to you", -- [19]
+						"/p ^", -- [20]
+						"/p haha", -- [21]
+						"/p Thanks plated", -- [22]
+						"/p good luck yous guys", -- [23]
+						"/cw Eodred-Doomhammer You will still has fun", -- [24]
+						"/cw Eodred-Doomhammer Jessi and I are going to do suramar in a minute", -- [25]
+						"/reload", -- [26]
+						"/gsse", -- [27]
+						"/g grats!", -- [28]
+						"/g and HAPPY PATCH DAY!!!", -- [29]
+						"/g @Wrinkles 27% fire damage buff!!!!", -- [30]
+						"/g It's like christmas morning!! :D", -- [31]
+						"/1 I was shocked as well. Maybe they're just getting better at it?", -- [32]
 					},
 				},
 			},
@@ -402,9 +402,9 @@ ChatterDB = {
 	},
 	["profileKeys"] = {
 		["Marmit - Doomhammer"] = "Default",
-		["Targatdummy - Doomhammer"] = "Default",
-		["Tareva - Doomhammer"] = "Tonkah LUI",
 		["Holyshnizzle - Doomhammer"] = "Tonkah LUI",
+		["Bartholamue - Doomhammer"] = "Tonkah LUI",
+		["Targatdummy - Doomhammer"] = "Default",
 		["Targetdummee - Doomhammer"] = "Default",
 		["Alfalpha - Doomhammer"] = "Default",
 		["Taunkah - Doomhammer"] = "Tonkah LUI",
@@ -412,7 +412,7 @@ ChatterDB = {
 		["Nilrum - Doomhammer"] = "Tonkah LUI",
 		["Dfbdeffbw - Doomhammer"] = "Tonkah LUI",
 		["Bahlar - Doomhammer"] = "Tonkah LUI",
-		["Bartholamue - Doomhammer"] = "Tonkah LUI",
+		["Tareva - Doomhammer"] = "Tonkah LUI",
 	},
 	["profiles"] = {
 		["Default"] = {

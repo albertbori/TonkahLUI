@@ -1,0 +1,14 @@
+tag v1.1.9
+00faf84e807da6f2fe21aee23b9556da8289c362
+Ketho <sghs17@outlook.com>
+2016-10-29 14:13:47 +0200
+
+Tagging as v1.1.9
+
+
+--------------------
+
+Ketho:
+	- Bump TOC for 7.1
+	Update deDE locale
+	- Fixed the frame sometimes still being movable when not holding shift
