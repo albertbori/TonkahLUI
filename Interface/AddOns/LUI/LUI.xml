@@ -125,7 +125,4 @@
 	<Script file="unitframes\layout\tags.lua"/>
 	<Script file="unitframes\layout\meta.lua"/>
 	<Script file="unitframes\layout\layout.lua"/>
-
-	<!-- Raid Menu -->
-	<Include file="modules\RaidMenu\RaidMenu.xml"/>
 </Ui>

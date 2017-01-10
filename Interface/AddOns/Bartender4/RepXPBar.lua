@@ -35,7 +35,12 @@ function RepBarMod:OnEnable()
 		self.bar.content:SetParent(self.bar)
 		self.bar.content:SetFrameLevel(self.bar:GetFrameLevel() + 1)
 	end
-	self:SecureHook("MainMenuBar_UpdateExperienceBars", "UpdateLayout")
+	if ReputationWatchBar_Update then
+		self:SecureHook("ReputationWatchBar_Update", "UpdateLayout")
+	end
+	if MainMenuBar_UpdateExperienceBars then
+		self:SecureHook("MainMenuBar_UpdateExperienceBars", "UpdateLayout")
+	end
 	self.bar:Enable()
 	self:ToggleOptions()
 	self:ApplyConfig()
