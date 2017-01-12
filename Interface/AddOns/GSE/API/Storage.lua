@@ -171,11 +171,11 @@ function GSE.ImportSequence(importStr, legacy)
   return Sequences
   ]===]
 
-  GSE.PrintDebugMessage (functiondefinition, "GS-SequenceEditor")
+  GSE.PrintDebugMessage (functiondefinition, "Storage")
   local fake_globals = setmetatable({
     Sequences = {},
     }, {__index = _G})
-  local func, err = loadstring (functiondefinition, "GS-SequenceEditor")
+  local func, err = loadstring (functiondefinition, "Storage")
   if func then
     -- Make the compiled function see this table as its "globals"
     setfenv (func, fake_globals)
@@ -197,7 +197,7 @@ function GSE.ImportSequence(importStr, legacy)
       success = true
     end
   else
-    GSE.PrintDebugMessage (err, GNOME)
+    GSE.Print (err, GNOME)
     returnmessage = err
 
   end
@@ -209,7 +209,11 @@ function GSE.ReloadSequences()
   for name, sequence in pairs(GSELibrary[GSE.GetCurrentClassID()]) do
     GSE.UpdateSequence(name, sequence.MacroVersions[GSE.GetActiveSequenceVersion(name)])
   end
-
+  if GSEOptions.CreateGlobalButtons then
+    for name, sequence in pairs(GSELibrary[0]) do
+      GSE.UpdateSequence(name, sequence.MacroVersions[GSE.GetActiveSequenceVersion(name)])
+    end
+  end
 end
 
 function GSE.PrepareLogout(deletenonlocalmacros)
@@ -385,11 +389,13 @@ function GSE.CleanOrphanSequences()
     local found = false
     local mname, mtexture, mbody = GetMacroInfo(macid)
     if not GSE.isEmpty(mname) then
-      for name, _ in pairs(GSEOptions.ActiveSequenceVersions) do
-        if name == mname then
-          found = true
-        end
+      if not GSE.isEmpty(GSELibrary[GSE.GetCurrentClassID()][mname]) then
+        found = true
       end
+      if not GSE.isEmpty(GSELibrary[0][mname]) then
+        found = true
+      end
+
       if not found then
         -- check if body is a gs one and delete the orphan
         todelete[mname] = true
@@ -659,13 +665,19 @@ end
 function GSE.GetSequenceNames()
   local keyset={}
   for k,v in pairs(GSELibrary) do
-    if GSEOptions.filterList[Statics.All] or k == GSE.GetCurrentClassID() then
+    if GSEOptions.filterList[Statics.All] or k == GSE.GetCurrentClassID()  then
       for i,j in pairs(GSELibrary[k]) do
         keyset[k .. "," .. i] = i
       end
+    else
+      if k == 0 and GSEOptions.filterList[Statics.Global] then
+        for i,j in pairs(GSELibrary[k]) do
+          keyset[k .. "," .. i] = i
+        end
+      end
     end
   end
-  table.sort(keyset)
+
   return keyset
 end
 

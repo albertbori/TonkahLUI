@@ -20,6 +20,7 @@
 **/WTF/Account/ACCOUNTNAME/SavedVariables/ExtGuildUI*
 **/WTF/Account/ACCOUNTNAME/SavedVariables/FocusInterruptSounds.lua
 **/WTF/Account/ACCOUNTNAME/SavedVariables/GarrisonMissionManager.lua
+**/WTF/Account/ACCOUNTNAME/SavedVariables/GSE*
 **/WTF/Account/ACCOUNTNAME/SavedVariables/GS-Core.lua
 **/WTF/Account/ACCOUNTNAME/SavedVariables/GS-DraikMacros.lua
 **/WTF/Account/ACCOUNTNAME/SavedVariables/GuildManager.lua
@@ -45,6 +46,8 @@
 **/Interface/AddOns/ExtGuildUI/
 **/Interface/AddOns/FocusInterruptSounds/
 **/Interface/AddOns/GarrisonMissionManager/
+**/Interface/AddOns/GnomeSequencer/
+**/Interface/AddOns/GSE/
 **/Interface/AddOns/GS-Core/
 **/Interface/AddOns/GS-DraikMacros/
 **/Interface/AddOns/GS-SequenceEditor/

@@ -13,7 +13,7 @@ local Sequences = Statics.SampleMacros[7]
 Sequences['SAM_enhsingle'] = {
   SpecID = 263,
   Author = "lloskka",
-  Help = "Artifact Order: Doom Winds �> Hammer of Storms �> Gathering Storms �> Wind Strikes �> Wind Surge �> Weapons of the elements �> Elemental Healing �> and all the way to Unleash Doom",
+  Help = "Artifact Order: Doom Winds -> Hammer of Storms -> Gathering Storms -> Wind Strikes -> Wind Surge -> Weapons of the elements -> Elemental Healing -> and all the way to Unleash Doom",
   Talents = "3,1,1,2,1,1,2",
   Default=1,
   MacroVersions = {
@@ -22,10 +22,10 @@ Sequences['SAM_enhsingle'] = {
       KeyPress = {
         "/targetenemy [noharm][dead]",
       },
-      "/castsequence Boulderfist, Crash Lightning, !Stormstrike",
+      "/castsequence Boulderfist, Crash Lightning, Stormstrike",
       "/castsequence Boulderfist, Stormstrike, Crash Lightning",
-      "/castsequence [nochanneling] Boulderfist, Boulderfist, !Crash Lightning;",
-      "/castsequence Boulderfist, Boulderfist;",
+      "/castsequence [nochanneling] Boulderfist, Boulderfist, Crash Lightning",
+      "/castsequence Boulderfist, Boulderfist",
       "/cast Lightning Bolt",
       KeyRelease = {
         "/startattack",
@@ -105,8 +105,8 @@ Sequences['SAM_MC_Surge'] = {
   Default=1,
   MacroVersions = {
     [1] = {
-      KeyPress=[[
-      ]],
+      KeyPress={
+      },
       "/castsequence [nochanneling]reset=30 Healing Stream Totem",
       "/castsequence [nochanneling,@mouseover,help,nodead]reset=5 !Riptide",
       "/castsequence [nochanneling,@mouseover,help]Healing Surge, Healing Surge, Healing Surge, Healing Surge",

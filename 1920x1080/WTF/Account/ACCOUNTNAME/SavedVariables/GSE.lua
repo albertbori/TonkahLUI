@@ -13,19 +13,61 @@ GSEOptions = {
 	["UNKNOWN"] = "|cffff6666",
 	["sendDebugOutputToDebugOutput"] = false,
 	["hideSoundErrors"] = false,
-	["use1"] = false,
+	["KEYWORD"] = "|cff88bbdd",
 	["STRING"] = "|cff888888",
 	["clearUIErrors"] = false,
+	["autoCreateMacroStubsGlobal"] = false,
+	["resetOOC"] = true,
+	["TitleColour"] = "|cFFFF0000",
+	["hideUIErrors"] = false,
+	["initialised"] = true,
+	["ActiveSequenceVersions"] = {
+	},
+	["DebugModules"] = {
+		["Translator"] = false,
+		["GUI"] = false,
+		["Storage"] = false,
+		["Editor"] = false,
+		["Versions"] = false,
+		["API"] = false,
+		["Viewer"] = false,
+		["Transmission"] = false,
+	},
+	["INDENT"] = "|cffccaa88",
+	["filterList"] = {
+		["Spec"] = true,
+		["All"] = false,
+		["Class"] = true,
+	},
+	["DisabledSequences"] = {
+	},
+	["EmphasisColour"] = "|cFFFFFF00",
+	["autoCreateMacroStubsClass"] = true,
+	["WOWSHORTCUTS"] = "|cffddaaff",
+	["RealtimeParse"] = false,
+	["deleteOrphansOnLogout"] = false,
+	["DefaultDisabledMacroIcon"] = "Interface\\Icons\\INV_MISC_BOOK_08",
+	["AuthorColour"] = "|cFF00D1FF",
+	["overflowPersonalMacros"] = false,
+	["requireTarget"] = false,
+	["useTranslator"] = false,
+	["NUMBER"] = "|cffffaa00",
+	["use12"] = false,
+	["use13"] = true,
+	["NormalColour"] = "|cFFFFFFFF",
+	["CONCAT"] = "|cffcc7777",
+	["saveAllMacrosLocal"] = true,
+	["setDefaultIconQuestionMark"] = true,
 	["AddInPacks"] = {
 		["Legacy GSE 1"] = {
-			["Version"] = "Legacy 2.0 Adaptor",
 			["Name"] = "Legacy GSE 1",
+			["Version"] = "Legacy 2.0 Adaptor",
 			["SequenceNames"] = {
 			},
 		},
 		["Samples"] = {
-			["Version"] = "200",
 			["Name"] = "Samples",
+			["Version"] = "200",
 			["SequenceNames"] = {
 				"SAM_ProtWar", -- [1]
 				"SAM_Fury1", -- [2]
@@ -88,49 +130,7 @@ GSEOptions = {
 			},
 		},
 	},
-	["INDENT"] = "|cffccaa88",
-	["TitleColour"] = "|cFFFF0000",
-	["hideUIErrors"] = false,
-	["initialised"] = true,
-	["saveAllMacrosLocal"] = true,
-	["DebugModules"] = {
-		["Translator"] = false,
-		["GUI"] = false,
-		["Storage"] = false,
-		["Editor"] = false,
-		["API"] = false,
-		["Versions"] = false,
-		["Viewer"] = false,
-		["Transmission"] = false,
-	},
-	["resetOOC"] = true,
-	["CONCAT"] = "|cffcc7777",
-	["DisabledSequences"] = {
-	},
-	["EmphasisColour"] = "|cFFFFFF00",
-	["autoCreateMacroStubsClass"] = true,
-	["WOWSHORTCUTS"] = "|cffddaaff",
-	["RealtimeParse"] = false,
-	["deleteOrphansOnLogout"] = false,
-	["use12"] = false,
-	["NUMBER"] = "|cffffaa00",
-	["overflowPersonalMacros"] = false,
-	["useTranslator"] = false,
-	["requireTarget"] = false,
-	["AuthorColour"] = "|cFF00D1FF",
-	["DefaultDisabledMacroIcon"] = "Interface\\Icons\\INV_MISC_BOOK_08",
-	["use13"] = true,
-	["NormalColour"] = "|cFFFFFFFF",
-	["filterList"] = {
-		["Spec"] = true,
-		["Class"] = true,
-		["All"] = false,
-	},
-	["ActiveSequenceVersions"] = {
-	},
-	["setDefaultIconQuestionMark"] = true,
-	["autoCreateMacroStubsGlobal"] = false,
-	["KEYWORD"] = "|cff88bbdd",
+	["use1"] = false,
 }
 GSELibrary = {
 	{
@@ -138,7 +138,6 @@ GSELibrary = {
 			["Talents"] = "1213312",
 			["Default"] = 1,
 			["Author"] = "Taunkah@Doomhammer",
-			["SpecID"] = "Fury",
 			["MacroVersions"] = {
 				{
 					"/cast [mod:alt] Charge", -- [1]
@@ -150,7 +149,7 @@ GSELibrary = {
 					["KeyRelease"] = {
 					},
 					["StepFunction"] = "Priority",
-					["KeyPress"] = {
+					["PostMacro"] = {
 					},
 					["PreMacro"] = {
 						"", -- [1]
@@ -159,84 +158,118 @@ GSELibrary = {
 						"/cast [combat] Avatar", -- [4]
 						"/cast [combat] Battle Cry", -- [5]
 					},
-					["PostMacro"] = {
+					["KeyPress"] = {
 					},
 				}, -- [1]
 			},
+			["SpecID"] = "Fury",
 		},
 		["ProtAoE"] = {
 			["Talents"] = "1213312",
 			["Default"] = 1,
 			["Author"] = "Taunkah@Doomhammer",
-			["SpecID"] = 73,
 			["MacroVersions"] = {
 				{
-					"|cffddaaff/cast|r |cff88bbdd|cff55cc55[mod:alt]|r |cff88bbddIntercept|r|r", -- [1]
-					"|cffddaaff/cast|r |cff88bbdd|cff88bbddVictory Rush|r|r", -- [2]
-					"|cffddaaff/cast|r |cff88bbdd|cff88bbddNeltharion's Fury|r|r", -- [3]
-					"|cffddaaff/cast|r |cff88bbdd|cff88bbddShockwave|r|r", -- [4]
-					"|cffddaaff/cast|r |cff88bbdd|cff88bbddThunder Clap|r|r", -- [5]
-					"|cffddaaff/cast|r |cff88bbdd|cff88bbddShield Slam|r|r", -- [6]
-					"|cffddaaff/castsequence|r |cff55ddcc|cff55cc55 reset=combat |r|r |cff88bbdd|cff88bbddShield Block|r|r, |cff88bbdd|cff88bbddIgnore Pain|r|r, |cff88bbdd|cff88bbddRevenge|r|r", -- [7]
-					"|cffddaaff/cast|r |cff88bbdd|cff88bbddDevastate|r|r", -- [8]
+					"/cast [mod:alt] Intercept", -- [1]
+					"/cast Victory Rush", -- [2]
+					"/cast Neltharion's Fury", -- [3]
+					"/cast Revenge", -- [4]
+					"/cast Shockwave", -- [5]
+					"/cast Thunder Clap", -- [6]
+					"/cast [mod:alt] Focused Rage; Ignore Pain", -- [7]
+					"/cast Shield Block", -- [8]
+					"/cast Shield Slam", -- [9]
+					"/cast Devastate", -- [10]
 					["KeyRelease"] = {
 					},
 					["StepFunction"] = "Priority",
 					["PostMacro"] = {
 					},
 					["PreMacro"] = {
-						"|cffddaaff/target|r  [@focustarget]", -- [1]
-						"|cffddaaff/targetenemy|r  [noexists][noharm][dead]", -- [2]
-						"|cffddaaff/cast|r |cff88bbdd|cff55cc55[combat]|r |cff88bbddBattle Cry|r|r", -- [3]
+						"", -- [1]
+						"/target  [@focustarget]", -- [2]
+						"/targetenemy  [noexists][noharm][dead]", -- [3]
+						"/cast [combat] Battle Cry", -- [4]
 					},
 					["KeyPress"] = {
 					},
 				}, -- [1]
 			},
+			["SpecID"] = 73,
 		},
 		["FurySingle"] = {
 			["Talents"] = "1213312",
 			["Default"] = 1,
 			["Author"] = "Taunkah@Doomhammer",
-			["SpecID"] = "Fury",
 			["MacroVersions"] = {
 				{
-					"|cffddaaff/cast|r |cff88bbdd|cff55cc55[mod:alt]|r |cff88bbddCharge|r|r", -- [1]
-					"|cffddaaff/cast|r |cff88bbdd|cff88bbddDragon Roar|r|r", -- [2]
-					"|cffddaaff/cast|r |cff88bbdd|cff88bbddOdyn's Fury|r|r", -- [3]
-					"|cffddaaff/cast|r |cff88bbdd|cff88bbddExecute|r|r", -- [4]
-					"|cffddaaff/cast|r |cff88bbdd|cff88bbddRampage|r|r", -- [5]
-					"|cffddaaff/castsequence|r |cff88bbdd|cff88bbddRaging Blow|r|r, |cff88bbdd|cff88bbddBloodthirst|r|r, |cff88bbdd|cff88bbddFurious Slash|r|r", -- [6]
+					"/cast [mod:alt] Charge", -- [1]
+					"/cast Dragon Roar", -- [2]
+					"/cast Odyn's Fury", -- [3]
+					"/cast Execute", -- [4]
+					"/cast Rampage", -- [5]
+					"/castsequence Raging Blow, Bloodthirst, Furious Slash", -- [6]
 					["KeyRelease"] = {
 					},
 					["StepFunction"] = "Priority",
-					["KeyPress"] = {
+					["PostMacro"] = {
 					},
 					["PreMacro"] = {
 						"", -- [1]
-						"|cffddaaff/target|r  [@focustarget]", -- [2]
-						"|cffddaaff/targetenemy|r  [noexists][noharm][dead]", -- [3]
-						"|cffddaaff/cast|r |cff88bbdd|cff55cc55[combat]|r |cff88bbddAvatar|r|r", -- [4]
-						"|cffddaaff/cast|r |cff88bbdd|cff55cc55[combat]|r |cff88bbddBattle Cry|r|r", -- [5]
+						"/target  [@focustarget]", -- [2]
+						"/targetenemy  [noexists][noharm][dead]", -- [3]
+						"/cast [combat] Avatar", -- [4]
+						"/cast [combat] Battle Cry", -- [5]
 						"", -- [6]
 					},
-					["PostMacro"] = {
+					["KeyPress"] = {
 					},
 				}, -- [1]
 			},
+			["SpecID"] = "Fury",
 		},
 		["ProtSingle"] = {
 			["Talents"] = "1213312",
 			["Default"] = 1,
 			["Author"] = "Taunkah@Doomhammer",
-			["SpecID"] = 73,
 			["MacroVersions"] = {
 				{
-					"|cffddaaff/cast|r |cff88bbdd|cff55cc55[mod:alt]|r |cff88bbddIntercept|r|r", -- [1]
-					"|cffddaaff/cast|r |cff88bbdd|cff88bbddVictory Rush|r|r", -- [2]
-					"|cffddaaff/cast|r |cff88bbdd|cff88bbddShield Slam|r|r", -- [3]
-					"|cffddaaff/castsequence|r |cff55ddcc|cff55cc55 reset=combat |r|r |cff88bbdd|cff88bbddShield Block|r|r, |cff88bbdd|cff88bbddIgnore Pain|r|r, |cff88bbdd|cff88bbddRevenge|r|r", -- [4]
-					"|cffddaaff/cast|r |cff88bbdd|cff88bbddDevastate|r|r", -- [5]
+					"/cast [mod:alt] Intercept", -- [1]
+					"/cast Victory Rush", -- [2]
+					"/cast [mod:alt] Focused Rage; Ignore Pain", -- [3]
+					"/cast Shield Block", -- [4]
+					"/cast Shield Slam", -- [5]
+					"/cast Revenge", -- [6]
+					"/cast Devastate", -- [7]
+					["KeyRelease"] = {
+					},
+					["StepFunction"] = "Priority",
+					["PostMacro"] = {
+					},
+					["PreMacro"] = {
+						"/target  [@focustarget]", -- [1]
+						"/targetenemy  [noexists][noharm][dead]", -- [2]
+						"/cast [combat] Battle Cry", -- [3]
+					},
+					["KeyPress"] = {
+					},
+				}, -- [1]
+			},
+			["SpecID"] = 73,
+		},
+	}, -- [1]
+	{
+		["RetAoE"] = {
+			["Talents"] = "1131111",
+			["Default"] = 1,
+			["Author"] = "Bartholamue@Doomhammer",
+			["MacroVersions"] = {
+				{
+					"|cffddaaff/cast|r |cff88bbdd|cff88bbddWake of Ashes|r|r", -- [1]
+					"|cffddaaff/cast|r |cff88bbdd|cff88bbdd|cff55cc55[mod:alt]|r |cff88bbddJusticar's Vengeance|r|r; |cff88bbdd|cff88bbddDivine Storm|r|r|r", -- [2]
+					"|cffddaaff/cast|r |cff88bbdd|cff88bbddJudgment|r|r", -- [3]
+					"|cffddaaff/cast|r |cff88bbdd|cff88bbddBlade of Justice|r|r", -- [4]
+					"|cffddaaff/cast|r |cff88bbdd|cff88bbddCrusader Strike|r|r", -- [5]
 					["KeyRelease"] = {
 					},
 					["StepFunction"] = "Priority",
@@ -245,36 +278,70 @@ GSELibrary = {
 					["PreMacro"] = {
 						"|cffddaaff/target|r  [@focustarget]", -- [1]
 						"|cffddaaff/targetenemy|r  [noexists][noharm][dead]", -- [2]
-						"|cffddaaff/cast|r |cff88bbdd|cff55cc55[combat]|r |cff88bbddBattle Cry|r|r", -- [3]
+						"|cffddaaff/cast|r |cff88bbdd|cff88bbddAvenging Wrath|r|r", -- [3]
+						"|cffddaaff/cast|r Shield of Vengeance", -- [4]
 					},
 					["KeyPress"] = {
 					},
 				}, -- [1]
 			},
+			["SpecID"] = 70,
 		},
-	}, -- [1]
+		["RetSingle"] = {
+			["Talents"] = "1131111",
+			["Default"] = 1,
+			["Author"] = "Bartholamue@Doomhammer",
+			["MacroVersions"] = {
+				{
+					"|cffddaaff/cast|r |cff88bbdd|cff88bbdd|cff55cc55[mod:alt]|r |cff88bbddJusticar's Vengeance|r|r; |cff88bbdd|cff88bbddTemplar's Verdict|r|r|r", -- [1]
+					"|cffddaaff/cast|r |cff88bbdd|cff88bbddJudgment|r|r", -- [2]
+					"|cffddaaff/cast|r |cff88bbdd|cff88bbddBlade of Justice|r|r", -- [3]
+					"|cffddaaff/cast|r |cff88bbdd|cff88bbddCrusader Strike|r|r", -- [4]
+					["KeyRelease"] = {
+					},
+					["StepFunction"] = "Priority",
+					["PostMacro"] = {
+					},
+					["PreMacro"] = {
+						"|cffddaaff/target|r  [@focustarget]", -- [1]
+						"|cffddaaff/targetenemy|r  [noexists][noharm][dead]", -- [2]
+						"|cffddaaff/cast|r |cff88bbdd|cff88bbddAvenging Wrath|r|r", -- [3]
+					},
+					["KeyPress"] = {
+					},
+				}, -- [1]
+			},
+			["SpecID"] = 70,
+		},
+	}, -- [2]
 	[5] = {
 		["HolyDPS"] = {
 			["Talents"] = "?,?,?,?,?,?,?",
 			["Help"] = "Talents: 2333222",
-			["SpecID"] = 258,
-			["Author"] = "Holyshnizzle@Doomhammer",
+			["Default"] = 1,
 			["MacroVersions"] = {
 				{
 					"/cast Holy Word: Chastise", -- [1]
 					"/cast Holy Fire", -- [2]
 					"/cast Divine Star", -- [3]
 					"/cast Smite", -- [4]
+					["PostMacro"] = {
+					},
+					["StepFunction"] = "Priority",
 					["KeyPress"] = {
 						"/target [@focustarget]", -- [1]
 						"/targetenemy [noexists][help][dead]", -- [2]
 						"", -- [3]
 					},
-					["StepFunction"] = "Priority",
+					["PreMacro"] = {
+					},
+					["KeyRelease"] = {
+					},
 				}, -- [1]
 			},
+			["SpecID"] = 258,
 			["Icon"] = "INV_MISC_QUESTIONMARK",
-			["Default"] = 1,
+			["Author"] = "Holyshnizzle@Doomhammer",
 		},
 	},
 }

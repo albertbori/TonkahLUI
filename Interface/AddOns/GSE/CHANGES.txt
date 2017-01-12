@@ -1,3 +1,123 @@
+commit e3471539a73b787a4ce4ac3d6ad08fb4d34d4b84
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Fri Jan 13 01:16:12 2017 +1030
+
+    TOC
+
+commit bcdf17e6b092fcfba38bba323be7b40298ff5b6a
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Fri Jan 13 01:14:24 2017 +1030
+
+    Fix for #184
+
+commit cce1d79a1a02283c71d0f58b2ef40e1e9963cc35
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Fri Jan 13 00:28:27 2017 +1030
+
+    Changes for #181
+
+commit 88565610dd4998334fb48200005085fca96bc952
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Thu Jan 12 23:44:21 2017 +1030
+
+    update for #173
+
+commit 4f2c15accdcb7c91763c139f35f65a90370a1d8f
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Thu Jan 12 23:20:44 2017 +1030
+
+    Fix for Cleanorphans removing more than it should #170
+
+commit c58331925688dca0d6086812bc374c6d1a0ffa6d
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Thu Jan 12 22:58:30 2017 +1030
+
+    TOC update
+
+commit 815f2f708017add8c8d7dcc745fe50d0f1c8a92a
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Thu Jan 12 22:50:30 2017 +1030
+
+    Fix for #173
+
+commit de34acc3a84dad8b79cd832e1373fc65bf7dca30
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Thu Jan 12 16:50:24 2017 +1030
+
+    Shaman #162
+
+commit d9ee8f2469ea20280c4e762e416dae52e80ae6e7
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Thu Jan 12 13:26:58 2017 +1030
+
+    change for #154
+
+commit cd83823db547d6e245e8046f70103c5e5e691579
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Thu Jan 12 12:10:00 2017 +1030
+
+    fix for #167
+
+commit a5595e61893f0574afe43894920ac108c58bcc6e
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Thu Jan 12 12:03:18 2017 +1030
+
+    Travis #166
+
+commit b022937f1d2f0c0e0e402e1967590694e537437a
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Thu Jan 12 11:58:54 2017 +1030
+
+    Travis update for #166
+
+commit d44d0e404ff55ae040e68f0aed0e3c298865e96d
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Thu Jan 12 11:54:06 2017 +1030
+
+    TOC update
+
+commit 59612db8161ab19ba7bdd83c7a15c8b9db09a82b
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Thu Jan 12 11:52:55 2017 +1030
+
+    Shaman #162
+
+commit ef115f186f5c389021cfe380e598a2e5b7f269c9
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Thu Jan 12 11:51:32 2017 +1030
+
+    Create buttons for GLobal Macros #166
+
+commit 4e31839c84c0391d548d96c27d22a4840609b602
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Thu Jan 12 11:48:26 2017 +1030
+
+    Sort Macros - #154
+
+commit 0a091d25131f9c54f2fe7073166b9ae232cd5af6
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Thu Jan 12 11:27:26 2017 +1030
+
+    code for #162
+
+commit b815cfe17801f7f165d9547309c423522c4b83ef
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Thu Jan 12 11:17:34 2017 +1030
+
+    code for #165
+
+commit 0299e721b9bba0887840f9eb9d1177a578a3ebc3
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Thu Jan 12 10:45:26 2017 +1030
+
+    more for #164
+
+commit 3b5b377e1dfdbd74dea005b17932330bb18f7bbe
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Thu Jan 12 08:42:05 2017 +1030
+
+    Show import errors by default #164
+
 commit fab17ab13c7ba6aa1191277eca648b89543e9811
 Author: Timothy Minahan <timothy@minahan.net>
 Date:   Wed Jan 11 19:50:30 2017 +1030
@@ -495,124 +615,4 @@ Author: Timothy Minahan <timothy@minahan.net>
 Date:   Mon Dec 12 19:56:35 2016 +1030
 
     Fixes for #139
-
-commit 3a837d990cbda349c2f509e98b35462c7a0f3d8b
-Author: Timothy Minahan <timothy@minahan.net>
-Date:   Mon Dec 12 19:43:26 2016 +1030
-
-    fixes for #137
-
-commit 9ac14dd67b6bbaade04bfa7c1197f03d966ec60c
-Author: Timothy Minahan <timothy@minahan.net>
-Date:   Mon Dec 12 19:16:18 2016 +1030
-
-    Many Bug Fixes Handle it #116 #137 #138
-
-commit fc9d94bf984910ab31c09a335630b3e997752064
-Author: Timothy Minahan <timothy@minahan.net>
-Date:   Mon Dec 12 15:45:08 2016 +1030
-
-    #116 unittestcoverage
-
-commit 62f9ddb8b35eb2432b288951827f806a291e286a
-Author: Timothy Minahan <timothy@minahan.net>
-Date:   Mon Dec 12 15:43:37 2016 +1030
-
-    Fix gobbled single commands
-
-commit f8a3eabf323803f2cb8a590ce4826267113a7ff0
-Author: Timothy Minahan <timothy@minahan.net>
-Date:   Mon Dec 12 15:30:29 2016 +1030
-
-    more fixes and codesmells #116 #137
-
-commit 32e25b54e11086be1582fbb76e83dec4a2ea3a0a
-Author: Timothy Minahan <timothy@minahan.net>
-Date:   Mon Dec 12 15:21:36 2016 +1030
-
-    more lua ambiguity #137
-
-commit 1fcbd669ef54538e2e18726be46da26da64c19c2
-Author: Timothy Minahan <timothy@minahan.net>
-Date:   Mon Dec 12 15:04:46 2016 +1030
-
-    #137 remove ambiguity
-
-commit d045e182e6f55c264750b7cb13797766fcae4793
-Author: Timothy Minahan <timothy@minahan.net>
-Date:   Mon Dec 12 15:00:49 2016 +1030
-
-    I will success travis you annoyance #137
-
-commit e53336669cb89c9845d5d84c7d60cbcf678c4194
-Author: Timothy Minahan <timothy@minahan.net>
-Date:   Mon Dec 12 14:56:27 2016 +1030
-
-    attempt next  for Travis #137
-
-commit ae5fa451e804a3309b624c85dc94403f4a834105
-Author: Timothy Minahan <timothy@minahan.net>
-Date:   Mon Dec 12 14:30:36 2016 +1030
-
-    Travis and Travis #137
-
-commit 40db8e1d10bd0ffc8129fa359f49f3588f45eaad
-Author: Timothy Minahan <timothy@minahan.net>
-Date:   Mon Dec 12 14:26:46 2016 +1030
-
-    more travis #137
-
-commit e7a0ef51b9c3e5adbbe912856ce0e7c795eb797c
-Author: Timothy Minahan <timothy@minahan.net>
-Date:   Mon Dec 12 14:23:31 2016 +1030
-
-    Travis Fix for #137
-
-commit a5cd88ee173b4ceaac6881e163bde61633dd4d88
-Author: Timothy Minahan <timothy@minahan.net>
-Date:   Mon Dec 12 14:19:37 2016 +1030
-
-    #137  travis fix
-
-commit e1fed432b32e20fc8d73b1ea4ea17ef73517c62e
-Author: Timothy Minahan <timothy@minahan.net>
-Date:   Mon Dec 12 14:13:50 2016 +1030
-
-    Travis Fix #137
-
-commit d3913462b41e5f552a0f180f3c83468294fddd88
-Author: Timothy Minahan <timothy@minahan.net>
-Date:   Mon Dec 12 14:10:30 2016 +1030
-
-    Troubleshoot translator #137
-
-commit a26ee4ca983519505d901a8339a81396e1203828
-Author: Timothy Minahan <timothy@minahan.net>
-Date:   Mon Dec 12 14:10:09 2016 +1030
-
-    Cleanup Chat commands #136
-
-commit 360ad3254ae2a1005c49d20b46861bde07415557
-Author: Timothy Minahan <timothy@minahan.net>
-Date:   Mon Dec 12 13:18:34 2016 +1030
-
-    Check save location for Fix for #138
-
-commit 914b3a045bd25ebc3632d087fb8ee1cd44dfd45a
-Author: Timothy Minahan <timothy@minahan.net>
-Date:   Mon Dec 12 13:13:42 2016 +1030
-
-    Fix for Nul GnomeOptions on clean install #135
-
-commit 6b586049cbe0c6a341c5c33fd823ca85058b0085
-Author: Timothy Minahan <timothy@minahan.net>
-Date:   Mon Dec 12 11:23:00 2016 +1030
-
-    Add OOC Processing queue for Critical Events #134
-
-commit a1649357aa2ef4b8c241ba5856426f31baa39210
-Author: Timothy Minahan <timothy@minahan.net>
-Date:   Fri Dec 9 17:25:12 2016 +1030
-
-    Reload the Sequence for the change in environment to take effect #131
 

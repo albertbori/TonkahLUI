@@ -141,7 +141,7 @@ function GSE.GUICreateSequencePanels(frame, container, key)
   local urlval = "http://www.wowlazymacros.com"
   local urllabel = AceGUI:Create("InteractiveLabel")
   if not GSE.isEmpty(GSELibrary[classid][sequencename].Helplink) then
-   urlval = GSELibrary[classid][sequencename].HelpLink
+   urlval = GSELibrary[classid][sequencename].Helplink
   end
   urllabel:SetFontObject(font)
   urllabel:SetText(urlval)
@@ -271,9 +271,10 @@ end
 
 function GSE.GUIShowViewer()
   local names = GSE.GetSequenceNames()
+
   viewframe:ReleaseChildren()
   GSE.GUIViewerLayout(viewframe)
-  for k,v in pairs(names) do
+  for k,v in GSE.pairsByKeys(names) do
     GSE.GUICreateSequencePanels(viewframe,viewframe.ScrollContainer, k)
   end
   viewframe:Show()

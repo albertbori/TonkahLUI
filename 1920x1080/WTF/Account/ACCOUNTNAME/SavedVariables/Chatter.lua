@@ -56,178 +56,178 @@ ChatterDB = {
 				["Default"] = {
 					["colors"] = {
 						["Guild"] = {
-							["b"] = 0.250980406999588,
-							["g"] = 1,
 							["r"] = 0.250980406999588,
+							["g"] = 1,
+							["b"] = 0.250980406999588,
 						},
 						["Real ID Whisper"] = {
-							["b"] = 0.964705944061279,
-							["g"] = 1,
 							["r"] = 0,
+							["g"] = 1,
+							["b"] = 0.964705944061279,
 						},
 						["Raid Leader"] = {
-							["b"] = 0.0352941192686558,
-							["g"] = 0.282352954149246,
 							["r"] = 1,
+							["g"] = 0.282352954149246,
+							["b"] = 0.0352941192686558,
 						},
 						["LookingForGroup"] = {
-							["b"] = 0.752941250801086,
-							["g"] = 0.752941250801086,
 							["r"] = 1,
+							["g"] = 0.752941250801086,
+							["b"] = 0.752941250801086,
 						},
 						["Party"] = {
-							["b"] = 1,
-							["g"] = 0.666666686534882,
 							["r"] = 0.666666686534882,
+							["g"] = 0.666666686534882,
+							["b"] = 1,
 						},
 						["Whisper"] = {
-							["b"] = 1,
-							["g"] = 0.501960813999176,
 							["r"] = 1,
+							["g"] = 0.501960813999176,
+							["b"] = 1,
 						},
 						["Raid"] = {
-							["b"] = 0,
-							["g"] = 0.498039245605469,
 							["r"] = 1,
+							["g"] = 0.498039245605469,
+							["b"] = 0,
 						},
 						["Raid Warning"] = {
-							["b"] = 0,
-							["g"] = 0.282352954149246,
 							["r"] = 1,
+							["g"] = 0.282352954149246,
+							["b"] = 0,
 						},
 						["Party Leader"] = {
-							["b"] = 1,
-							["g"] = 0.784313797950745,
 							["r"] = 0.462745130062103,
+							["g"] = 0.784313797950745,
+							["b"] = 1,
 						},
 						["Instance"] = {
-							["b"] = 0,
-							["g"] = 0.498039245605469,
 							["r"] = 1,
+							["g"] = 0.498039245605469,
+							["b"] = 0,
 						},
 						["Yell"] = {
-							["b"] = 0.250980406999588,
-							["g"] = 0.250980406999588,
 							["r"] = 1,
+							["g"] = 0.250980406999588,
+							["b"] = 0.250980406999588,
 						},
 						["LocalDefense"] = {
-							["b"] = 0.752941250801086,
-							["g"] = 0.752941250801086,
 							["r"] = 1,
+							["g"] = 0.752941250801086,
+							["b"] = 0.752941250801086,
 						},
 						["Say"] = {
-							["b"] = 1,
-							["g"] = 1,
 							["r"] = 1,
+							["g"] = 1,
+							["b"] = 1,
 						},
 						["Trade"] = {
-							["b"] = 0.752941250801086,
-							["g"] = 0.752941250801086,
 							["r"] = 1,
-						},
-						["General"] = {
-							["b"] = 0.752941250801086,
 							["g"] = 0.752941250801086,
-							["r"] = 1,
+							["b"] = 0.752941250801086,
 						},
 						["Instance Leader"] = {
-							["b"] = 0.0352941192686558,
-							["g"] = 0.282352954149246,
 							["r"] = 1,
+							["g"] = 0.282352954149246,
+							["b"] = 0.0352941192686558,
+						},
+						["General"] = {
+							["r"] = 1,
+							["g"] = 0.752941250801086,
+							["b"] = 0.752941250801086,
 						},
 						["Officer"] = {
-							["b"] = 0.250980406999588,
-							["g"] = 0.752941250801086,
 							["r"] = 0.250980406999588,
+							["g"] = 0.752941250801086,
+							["b"] = 0.250980406999588,
 						},
 					},
 				},
 				["Tonkah LUI"] = {
 					["colors"] = {
 						["Guild"] = {
-							["r"] = 0.250980406999588,
-							["g"] = 1,
 							["b"] = 0.250980406999588,
+							["g"] = 1,
+							["r"] = 0.250980406999588,
 						},
 						["Real ID Whisper"] = {
-							["r"] = 0,
-							["g"] = 1,
 							["b"] = 0.964705944061279,
+							["g"] = 1,
+							["r"] = 0,
 						},
 						["Raid Leader"] = {
-							["r"] = 1,
-							["g"] = 0.282352954149246,
 							["b"] = 0.0352941192686558,
+							["g"] = 0.282352954149246,
+							["r"] = 1,
 						},
 						["LookingForGroup"] = {
-							["r"] = 1,
-							["g"] = 0.752941250801086,
 							["b"] = 0.752941250801086,
+							["g"] = 0.752941250801086,
+							["r"] = 1,
 						},
 						["Party"] = {
-							["r"] = 0.666666686534882,
-							["g"] = 0.666666686534882,
 							["b"] = 1,
+							["g"] = 0.666666686534882,
+							["r"] = 0.666666686534882,
 						},
 						["Whisper"] = {
-							["r"] = 1,
-							["g"] = 0.501960813999176,
 							["b"] = 1,
+							["g"] = 0.501960813999176,
+							["r"] = 1,
 						},
 						["Raid"] = {
-							["r"] = 1,
-							["g"] = 0.498039245605469,
 							["b"] = 0,
+							["g"] = 0.498039245605469,
+							["r"] = 1,
 						},
 						["Raid Warning"] = {
-							["r"] = 1,
-							["g"] = 0.282352954149246,
 							["b"] = 0,
+							["g"] = 0.282352954149246,
+							["r"] = 1,
 						},
 						["Party Leader"] = {
-							["r"] = 0.462745130062103,
-							["g"] = 0.784313797950745,
 							["b"] = 1,
+							["g"] = 0.784313797950745,
+							["r"] = 0.462745130062103,
 						},
 						["Instance"] = {
-							["r"] = 1,
-							["g"] = 0.498039245605469,
 							["b"] = 0,
+							["g"] = 0.498039245605469,
+							["r"] = 1,
 						},
 						["Yell"] = {
-							["r"] = 1,
-							["g"] = 0.250980406999588,
 							["b"] = 0.250980406999588,
+							["g"] = 0.250980406999588,
+							["r"] = 1,
 						},
 						["LocalDefense"] = {
-							["r"] = 1,
-							["g"] = 0.752941250801086,
 							["b"] = 0.752941250801086,
+							["g"] = 0.752941250801086,
+							["r"] = 1,
 						},
 						["Say"] = {
-							["r"] = 1,
-							["g"] = 1,
 							["b"] = 1,
+							["g"] = 1,
+							["r"] = 1,
 						},
 						["Trade"] = {
-							["r"] = 1,
-							["g"] = 0.752941250801086,
 							["b"] = 0.752941250801086,
-						},
-						["Instance Leader"] = {
+							["g"] = 0.752941250801086,
 							["r"] = 1,
-							["g"] = 0.282352954149246,
-							["b"] = 0.0352941192686558,
 						},
 						["General"] = {
-							["r"] = 1,
-							["g"] = 0.752941250801086,
 							["b"] = 0.752941250801086,
+							["g"] = 0.752941250801086,
+							["r"] = 1,
+						},
+						["Instance Leader"] = {
+							["b"] = 0.0352941192686558,
+							["g"] = 0.282352954149246,
+							["r"] = 1,
 						},
 						["Officer"] = {
-							["r"] = 0.250980406999588,
-							["g"] = 0.752941250801086,
 							["b"] = 0.250980406999588,
+							["g"] = 0.752941250801086,
+							["r"] = 0.250980406999588,
 						},
 					},
 				},
@@ -305,7 +305,7 @@ ChatterDB = {
 								["a"] = 0,
 							},
 						},
-						["FRAME_10"] = {
+						["FRAME_2"] = {
 							["borderColor"] = {
 								["a"] = 0,
 							},
@@ -313,7 +313,7 @@ ChatterDB = {
 								["a"] = 0,
 							},
 						},
-						["FRAME_2"] = {
+						["FRAME_10"] = {
 							["borderColor"] = {
 								["a"] = 0,
 							},
@@ -329,61 +329,11 @@ ChatterDB = {
 		},
 		["Server Positioning"] = {
 		},
-		["JustifyText"] = {
+		["Mousewheel Scroll"] = {
 		},
 		["Timestamps"] = {
 		},
 		["EditBox"] = {
-		},
-		["Highlight"] = {
-		},
-		["ChatTabs"] = {
-		},
-		["ChannelNames"] = {
-		},
-		["CopyChat"] = {
-		},
-		["UrlCopy"] = {
-		},
-		["Editbox History"] = {
-			["realm"] = {
-				["Doomhammer"] = {
-					["history"] = {
-						"/invite Eodred ", -- [1]
-						"/invite Eodred ", -- [2]
-						"/lui", -- [3]
-						"/lui", -- [4]
-						"/lui", -- [5]
-						"/lui", -- [6]
-						"/lui", -- [7]
-						"/lui", -- [8]
-						"/lui", -- [9]
-						"/reload", -- [10]
-						"/lui", -- [11]
-						"/bartender", -- [12]
-						"/reload", -- [13]
-						"/gsse", -- [14]
-						"/g ohai!", -- [15]
-						"/macro", -- [16]
-						"/gsse", -- [17]
-						"/macro", -- [18]
-						"/g Pretty good. Just got back from lunch with Tareva and my two yougest kids. It was nice.", -- [19]
-						"/g Now I'm trying to get a screenshot for my addon pack/setup", -- [20]
-						"/g dealing with addons updating and changing my defaults.", -- [21]
-						"/gsse", -- [22]
-						"/g Nice!", -- [23]
-						"/gsse", -- [24]
-						"/reload", -- [25]
-						"/g what kind of skillups? professions?", -- [26]
-						"/g oh very yes", -- [27]
-						"/g But you get those things you can apply to your lure to catch the rare fish that give you +5 skill when you throw them back", -- [28]
-						"/g Sounds good.", -- [29]
-						"/gsse", -- [30]
-						"/gsse", -- [31]
-						"/gsse", -- [32]
-					},
-				},
-			},
 		},
 		["ChatFont"] = {
 			["profiles"] = {
@@ -397,22 +347,72 @@ ChatterDB = {
 				},
 			},
 		},
-		["Mousewheel Scroll"] = {
+		["ChatTabs"] = {
+		},
+		["ChannelNames"] = {
+		},
+		["CopyChat"] = {
+		},
+		["UrlCopy"] = {
+		},
+		["Editbox History"] = {
+			["realm"] = {
+				["Doomhammer"] = {
+					["history"] = {
+						"/g I did it last week, but I can't remember what I did.", -- [1]
+						"/g Because I just herp derp through the things", -- [2]
+						"/g maybe it's caused by an addon?", -- [3]
+						"/g grats Yards!", -- [4]
+						"/mappy", -- [5]
+						"/g grats plated!", -- [6]
+						"/g and yards!", -- [7]
+						"/g ohai scarab", -- [8]
+						"/lui", -- [9]
+						"/cw Teo-Doomhammer Rhael dumped a ton of max-level food into the guild bank", -- [10]
+						"/cw Teo-Doomhammer He told me we need to clean the crap out.", -- [11]
+						"/cw Teo-Doomhammer Maybe something that Boodicca can do?", -- [12]
+						"/cw Teo-Doomhammer yea, maybe we can let her get to 110 first :)", -- [13]
+						"/g nice!", -- [14]
+						"/g rats", -- [15]
+						"/g I mean grats", -- [16]
+						"/gsse", -- [17]
+						"/macro", -- [18]
+						"/gsse", -- [19]
+						"/gsse", -- [20]
+						"/g Do you have any bloods of sargeras, Zenathar?", -- [21]
+						"/g Zen, they drop from everything. Maybe only at 110, tho. You can exchange them for mats.", -- [22]
+						"/g Yup!", -- [23]
+						"/g well, I wouldn't stop leveling to work on it, I'd continue to collect mats as I leveled.", -- [24]
+						"/g ^", -- [25]
+						"/g gnight!", -- [26]
+						"/gsse", -- [27]
+						"/g sleep is for the weak", -- [28]
+						"/g or for me in about 30 minutes", -- [29]
+						"/g none of my alts are even close enough to use it", -- [30]
+						"/g gnight all!", -- [31]
+						"/g See you at the raid tomorrow! :D", -- [32]
+					},
+				},
+			},
+		},
+		["Highlight"] = {
+		},
+		["JustifyText"] = {
 		},
 	},
 	["profileKeys"] = {
 		["Marmit - Doomhammer"] = "Default",
+		["Targatdummy - Doomhammer"] = "Default",
 		["Tareva - Doomhammer"] = "Tonkah LUI",
-		["Bartholamue - Doomhammer"] = "Tonkah LUI",
-		["Targetdummee - Doomhammer"] = "Default",
 		["Holyshnizzle - Doomhammer"] = "Tonkah LUI",
+		["Targetdummee - Doomhammer"] = "Default",
 		["Alfalpha - Doomhammer"] = "Default",
 		["Taunkah - Doomhammer"] = "Tonkah LUI",
 		["Brooslee - Doomhammer"] = "Default",
 		["Nilrum - Doomhammer"] = "Tonkah LUI",
 		["Dfbdeffbw - Doomhammer"] = "Tonkah LUI",
 		["Bahlar - Doomhammer"] = "Tonkah LUI",
-		["Targatdummy - Doomhammer"] = "Default",
+		["Bartholamue - Doomhammer"] = "Tonkah LUI",
 	},
 	["profiles"] = {
 		["Default"] = {
