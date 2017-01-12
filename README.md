@@ -7,7 +7,23 @@ All of these addons are available from their respective authors. This repo is fo
 
 Due to some addons not fully supporting profiles, some tweaking may be necessary after installing.
 
-![Tonkah's Custom LUI Sample](https://github.com/albertbori/TonkahLUI/blob/master/Minimized.png?raw=true)
+## Screenshots
+
+### Everything Minimized/Inactive
+
+![Tonkah's Custom LUI Minimized Inactive](https://github.com/albertbori/TonkahLUI/blob/master/Minimized.png?raw=true)
+
+### Solo Combat
+
+![Tonkah's Custom LUI Solo Combat](https://github.com/albertbori/TonkahLUI/blob/master/Single.png?raw=true)
+
+### Party Combat
+
+![Tonkah's Custom LUI Party Combat](https://github.com/albertbori/TonkahLUI/blob/master/Party.jpg?raw=true)
+
+### Raid Combat
+
+![Tonkah's Custom LUI Raid Combat](https://github.com/albertbori/TonkahLUI/blob/master/Raid.png?raw=true)
 
 ## Installation
 
