@@ -1,0 +1,618 @@
+commit fab17ab13c7ba6aa1191277eca648b89543e9811
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Wed Jan 11 19:50:30 2017 +1030
+
+    Fix for #157 #153
+
+commit 1face1ec3ffd8179420621746fe58b5cab0b71c2
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Wed Jan 11 19:02:34 2017 +1030
+
+    Fix for #161
+
+commit 00b2debbc3910ea01188e570f5a00a76f13e6dc5
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Wed Jan 11 14:47:00 2017 +1030
+
+    More Fixes #158
+
+commit fbc05ec71494c6d2315cb6a069160035d2154e70
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Wed Jan 11 14:27:47 2017 +1030
+
+    Creating New Macros
+
+commit f812a22ee71e1e8906728dad0c552d3cf1b0d6c3
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Wed Jan 11 13:34:14 2017 +1030
+
+    Fix for #160
+
+commit 1cc6b17b6c1bde1807e542df68ac73209f550589
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Wed Jan 11 13:00:16 2017 +1030
+
+    More Travis #153
+
+commit f686d346652d4cad372c4cb5e37196d86c55d614
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Wed Jan 11 12:53:56 2017 +1030
+
+    Travis #153
+
+commit 776c52a1d52ac244b5692e45c85d2e31c06185d1
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Wed Jan 11 12:44:10 2017 +1030
+
+    add unit test #153
+
+commit af833122492e4f7e6ad1b8369bcd77a360d3b7bf
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Wed Jan 11 10:21:04 2017 +1030
+
+    further stuff for #153
+
+commit 45bb5c99bd82c09caa8314d9d3e4232f8d4f1b63
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Wed Jan 11 10:11:28 2017 +1030
+
+    further fixes for #153
+
+commit fb852b5c5e0031e45055c34b6b15faf11bd77163
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Wed Jan 11 08:41:47 2017 +1030
+
+    Temp fix for #148
+
+commit ef696c3312635c107a72263c2c0aa3201ec7d48b
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Tue Jan 10 14:45:39 2017 +1030
+
+    Travis #147
+
+commit d73a84cc60975a32c11ecab2533d6c72b5834132
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Tue Jan 10 14:39:09 2017 +1030
+
+    travis unit test fix for #147
+
+commit 6595bff79f362b1a72d80085ead0894d1c325fd8
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Tue Jan 10 14:36:13 2017 +1030
+
+    Code fix and Unit test for the following part of #147
+    
+    "Created Tab 2.
+    It preformed a copy of tab 1
+    Blanked everything out in tab 2
+    Went back to Tab 1 everything was blank.
+    Decided to not save to avoid losing my tab 1 contents
+    Just closed out
+    Opened back up and both tabs were blank."
+
+commit 6da007f36567794b012f55249823189fab101738
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Tue Jan 10 13:59:09 2017 +1030
+
+    Unit Test for #151
+
+commit de7786e813f50ba4c79231dc2fca7505b3978216
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Tue Jan 10 13:56:22 2017 +1030
+
+    on save remove spaces and replace with underscores. #151
+
+commit 7a250c7835fc2f9672b2dcb6181149dd611fd1dc
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Tue Jan 10 01:37:31 2017 +1030
+
+    Fixes for Sequence Debugger - #147
+
+commit dd3dbe76efc1d75f4dc2e4a0ee3472c11168ff94
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Tue Jan 10 01:23:43 2017 +1030
+
+    Fix for #149
+
+commit 5f031180e95dc91212d113af8b42832d786b3ac2
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Tue Jan 10 00:42:50 2017 +1030
+
+    Attempt to find cause for #149
+
+commit 902125a68464eab02895e86ae2ceedab18529019
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Tue Jan 10 00:41:57 2017 +1030
+
+    Revert "Bug fix trying to find #149"
+    
+    This reverts commit 232f78386f792f50a3d01e48d7e68a5708ad3b62.
+
+commit bc286339b02a31d1c69eee59ee371f3c7d83cee8
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Tue Jan 10 00:40:54 2017 +1030
+
+    pkgmeta fix #147
+
+commit 232f78386f792f50a3d01e48d7e68a5708ad3b62
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Tue Jan 10 00:36:29 2017 +1030
+
+    Bug fix trying to find #149
+
+commit d45dd537a9e6f049ff0d48c09baaa3bc341845bd
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Sat Dec 24 12:02:33 2016 +1030
+
+    Beta 1 Bugs
+
+commit 8eb6b0535d1a51e86e7f35d3e5ba35ddb1c85708
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Sat Dec 24 10:40:30 2016 +1030
+
+    Localisation fix #146
+
+commit 61069e85c251bf9ba39048d53be4c0c697ce647c
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Sat Dec 24 10:25:32 2016 +1030
+
+    Attempt to fix localisation post Curse Update #146
+
+commit e618d71e08625029bbf67ecbc176356fcc04cf1a
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Sat Dec 24 10:19:05 2016 +1030
+
+    Temporary disable Localisation #146
+
+commit f9bf1baa3404afd58e73e1408fac048a7d45a724
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Sat Dec 24 09:32:16 2016 +1030
+
+    Cleanup for #146
+
+commit 3cf29136a436550f1098114afe65b67a4a52ab00
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Tue Dec 20 12:26:50 2016 +1030
+
+    Travis #146
+
+commit 3d29a352ced3b7fdb2ed1ba0b8d7ed13f8224a51
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Tue Dec 20 12:10:12 2016 +1030
+
+    Travis #146
+
+commit 2ac5a555de2c21de7de09fd630e6b9caab49a82e
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Tue Dec 20 12:00:11 2016 +1030
+
+    debug options #146
+
+commit 18472aad9ba109ae20e47924ee84c7f3d04d469e
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Tue Dec 20 11:53:06 2016 +1030
+
+    Travis #145
+
+commit 013c538def9d1dbbb8c444c9e2e267c59f8488eb
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Tue Dec 20 08:23:12 2016 +1030
+
+    Travis Cleanup #144
+
+commit 2ccb6dde7b2aefe658d398ae8abfbf896232af94
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Tue Dec 20 08:21:33 2016 +1030
+
+    More cleanup fixes for #145
+
+commit a90c8fbf8eb03af8215e0ae700ba15e9c6e02cc8
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Mon Dec 19 23:17:03 2016 +1030
+
+    writing and editing in foreign language. Need to fix exporting.  Its not translating back to enUS #145
+
+commit df8bb028f81b73287bc95aacff0b4cc1e67df1c9
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Mon Dec 19 22:43:00 2016 +1030
+
+    Fixes for #145
+
+commit 2e7883ef0d1a3aea0c7ed5da5ba95d345924cfab
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Mon Dec 19 11:48:40 2016 +1030
+
+    Travis #145
+
+commit 55b8037e7693098841fef291ee86fd5d4b89aa27
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Mon Dec 19 11:47:22 2016 +1030
+
+    Editor changes for #145
+
+commit cc5ad9d286420bf65ae3d4b099c7032b46cf99ce
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Mon Dec 19 11:40:18 2016 +1030
+
+    travis fix
+
+commit 805e11ec5c16eaf3c9de91709afdd97721a9fa42
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Mon Dec 19 10:08:34 2016 +1030
+
+    Storage changes for #145 - need to do the editor changes.
+
+commit 4a89ecdb3bdc1f8ad79b21783869471bfa9b34ae
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Sat Dec 17 16:41:05 2016 +1030
+
+    Travis fix #116
+
+commit d22c818c8aad77ff030d03fcdec251d82ac1cc96
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Sat Dec 17 15:35:43 2016 +1030
+
+    Travis fix #144
+
+commit 50fee174172e56cafd12b76c1f8c58074a81c58e
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Sat Dec 17 15:32:56 2016 +1030
+
+    Export GUI for #143
+
+commit c483fc430215c07426a5d21ebd1e5ce39679d325
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Sat Dec 17 15:21:44 2016 +1030
+
+    GUI for #143
+
+commit e9c404407f61969e6c0a2a0c0934ab86e7f3a036
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Sat Dec 17 08:59:17 2016 +1030
+
+    import old help to Help rather than talents
+
+commit 8f1540b8eae6e5d0cb22f6fafb36f458abb9f936
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Sat Dec 17 08:45:25 2016 +1030
+
+    More GUI Experimentation #143
+
+commit 69eeae628c3ac89af5ff44aa576c71aadbe66f58
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Sat Dec 17 08:45:04 2016 +1030
+
+    Text Saving for Macros #140
+
+commit f9f5245237d5c37f7cd4a494676ee84495c48563
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Fri Dec 16 21:00:31 2016 +1030
+
+    PanelWidget working for #143
+
+commit c67abc47d1e466ce860bb0c4e455633263fe1476
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Fri Dec 16 15:08:58 2016 +1030
+
+    Travis - Panel Widget #143
+
+commit aca2d8b2acf85a550b5f0990d12eb8a5a5f1048a
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Fri Dec 16 12:53:02 2016 +1030
+
+    Panel widget for #143
+
+commit d928aece4c4b925adf669e18494e0935ba024a77
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Fri Dec 16 09:03:39 2016 +1030
+
+    Code Cleanup #140
+
+commit d549ad0818d20585afab14daedd358049cc023de
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Fri Dec 16 09:02:21 2016 +1030
+
+    remove debug strings
+
+commit a435e49eb63bffcf4d0e6fc51d48705d9ee65567
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Fri Dec 16 08:27:45 2016 +1030
+
+    Export Window
+
+commit 1982eb10100658cf70d3ef9f79b7802d767bf200
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Wed Dec 14 23:09:51 2016 +1030
+
+    attempt at a coveralls fix to ignore stuff outside the project. #116
+
+commit a773efa8547ff08df55de90fea2a9debe11e2e45
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Wed Dec 14 23:05:59 2016 +1030
+
+    Travis Fix #140
+
+commit 58be10acfb7c395816cdb576aa4c650d49cfc226
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Wed Dec 14 23:02:06 2016 +1030
+
+    Fix for #141
+
+commit de0b3840c370aa19ee0af4583bffb0200535ea06
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Wed Dec 14 22:40:07 2016 +1030
+
+    Editor Fixed #139
+
+commit 6b7d667f636b9297961f6e9ea9b955bbe22a1f05
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Wed Dec 14 17:14:31 2016 +1030
+
+    Revert "Attempt to fix Editor/GuiSave issues #139"
+    
+    This reverts commit 832fd4fd7cba7ad09120720e5ad6beee4a65a677.
+
+commit 6215251c5f78a9aa6d780e7c15b5ed47236c5647
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Wed Dec 14 17:14:23 2016 +1030
+
+    Fix for #139
+
+commit 832fd4fd7cba7ad09120720e5ad6beee4a65a677
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Wed Dec 14 10:52:27 2016 +1030
+
+    Attempt to fix Editor/GuiSave issues #139
+
+commit 7803bfc8c98cee406d5b1919a20396f96f26470e
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Wed Dec 14 10:08:32 2016 +1030
+
+    importing Unit Tests #139
+
+commit d1e2db9a1022c9cc7ee045432a5822f00017d469
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Wed Dec 14 10:06:41 2016 +1030
+
+    Importing Unittests #139
+
+commit c8f45bc5782ffdc0071de098291dc8dcb9a15ebb
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Wed Dec 14 09:59:53 2016 +1030
+
+    More unit tests for importing from GSE1
+
+commit aa11b20b69728c5775594f02bcb97d86d9e1ad31
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Tue Dec 13 12:37:32 2016 +1030
+
+    Storage Unit tests #139
+
+commit dba5c3339196f4aa606d10b89cd0bf61b72ffa75
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Tue Dec 13 12:31:59 2016 +1030
+
+    More unittests #139
+
+commit 505e2d070b1463e778e563dc36f0db7737b9e679
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Tue Dec 13 12:25:09 2016 +1030
+
+    fix unittest freeze #139
+
+commit 166b7650474e6c88339e701c77ea927945813f77
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Tue Dec 13 12:17:54 2016 +1030
+
+    more unittesting #139
+
+commit 864006be192e81dc2c9e2cfe0be4fe6e57f8f557
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Tue Dec 13 12:03:36 2016 +1030
+
+    Bug Fixes and more unit tests #139
+
+commit 1c17a167bd1472f93b77a07e5b1c69802d74d448
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Tue Dec 13 11:56:13 2016 +1030
+
+    more unittesting
+
+commit 2e397a445b29d5ea86e701951bca0942d7d321ff
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Tue Dec 13 10:59:31 2016 +1030
+
+    More Unittesting #116
+
+commit 450546ce699ac6c65cb765ceef5d97304579b108
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Tue Dec 13 08:47:08 2016 +1030
+
+    more Storage Unittesting setup #116
+
+commit e92e1d6b8a7f21940fac5b6b53b3a9fdab30dc34
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Tue Dec 13 08:44:05 2016 +1030
+
+    Storage Unittesting #116
+
+commit 5d10c56e8e5d57ec64c38e2fe235769381415cda
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Tue Dec 13 08:40:12 2016 +1030
+
+    More unittesting #116
+
+commit 65c7ce7415041058188583728c8ec5257631577a
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Tue Dec 13 08:36:46 2016 +1030
+
+    Attempt to fix spec #116
+
+commit f6fc588c0cc8bec089c1da15bee968d12e679fde
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Tue Dec 13 08:29:31 2016 +1030
+
+    Add Localisation #116
+
+commit 7d4e2a9601920a24ee4c0fbce060324be8a3c6d1
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Tue Dec 13 08:24:43 2016 +1030
+
+    First Storage Unittest #116
+
+commit 1f7f52a944ddc8250a38781f35b4e15837a0df1a
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Tue Dec 13 08:16:59 2016 +1030
+
+    more mock fixes #116
+
+commit 69a2df7cac54b902f429ef4b9f0f55e061e78a6b
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Tue Dec 13 08:14:00 2016 +1030
+
+    better mocking #116
+
+commit ca97e1db6021ff395aadac09c1f005d0888eff21
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Tue Dec 13 08:09:11 2016 +1030
+
+    Start to mock storage for unittesting
+
+commit 0d76a3600708b475fa472fe4c2b9ec2666888211
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Mon Dec 12 20:00:21 2016 +1030
+
+    Travis fix #116
+
+commit fc34137f347e5c39a0c3bdd2b676885238f8d33a
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Mon Dec 12 19:58:05 2016 +1030
+
+    Travis Warning #139
+
+commit c593642bea7d365b225c333412b2349753612304
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Mon Dec 12 19:56:35 2016 +1030
+
+    Fixes for #139
+
+commit 3a837d990cbda349c2f509e98b35462c7a0f3d8b
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Mon Dec 12 19:43:26 2016 +1030
+
+    fixes for #137
+
+commit 9ac14dd67b6bbaade04bfa7c1197f03d966ec60c
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Mon Dec 12 19:16:18 2016 +1030
+
+    Many Bug Fixes Handle it #116 #137 #138
+
+commit fc9d94bf984910ab31c09a335630b3e997752064
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Mon Dec 12 15:45:08 2016 +1030
+
+    #116 unittestcoverage
+
+commit 62f9ddb8b35eb2432b288951827f806a291e286a
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Mon Dec 12 15:43:37 2016 +1030
+
+    Fix gobbled single commands
+
+commit f8a3eabf323803f2cb8a590ce4826267113a7ff0
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Mon Dec 12 15:30:29 2016 +1030
+
+    more fixes and codesmells #116 #137
+
+commit 32e25b54e11086be1582fbb76e83dec4a2ea3a0a
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Mon Dec 12 15:21:36 2016 +1030
+
+    more lua ambiguity #137
+
+commit 1fcbd669ef54538e2e18726be46da26da64c19c2
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Mon Dec 12 15:04:46 2016 +1030
+
+    #137 remove ambiguity
+
+commit d045e182e6f55c264750b7cb13797766fcae4793
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Mon Dec 12 15:00:49 2016 +1030
+
+    I will success travis you annoyance #137
+
+commit e53336669cb89c9845d5d84c7d60cbcf678c4194
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Mon Dec 12 14:56:27 2016 +1030
+
+    attempt next  for Travis #137
+
+commit ae5fa451e804a3309b624c85dc94403f4a834105
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Mon Dec 12 14:30:36 2016 +1030
+
+    Travis and Travis #137
+
+commit 40db8e1d10bd0ffc8129fa359f49f3588f45eaad
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Mon Dec 12 14:26:46 2016 +1030
+
+    more travis #137
+
+commit e7a0ef51b9c3e5adbbe912856ce0e7c795eb797c
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Mon Dec 12 14:23:31 2016 +1030
+
+    Travis Fix for #137
+
+commit a5cd88ee173b4ceaac6881e163bde61633dd4d88
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Mon Dec 12 14:19:37 2016 +1030
+
+    #137  travis fix
+
+commit e1fed432b32e20fc8d73b1ea4ea17ef73517c62e
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Mon Dec 12 14:13:50 2016 +1030
+
+    Travis Fix #137
+
+commit d3913462b41e5f552a0f180f3c83468294fddd88
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Mon Dec 12 14:10:30 2016 +1030
+
+    Troubleshoot translator #137
+
+commit a26ee4ca983519505d901a8339a81396e1203828
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Mon Dec 12 14:10:09 2016 +1030
+
+    Cleanup Chat commands #136
+
+commit 360ad3254ae2a1005c49d20b46861bde07415557
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Mon Dec 12 13:18:34 2016 +1030
+
+    Check save location for Fix for #138
+
+commit 914b3a045bd25ebc3632d087fb8ee1cd44dfd45a
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Mon Dec 12 13:13:42 2016 +1030
+
+    Fix for Nul GnomeOptions on clean install #135
+
+commit 6b586049cbe0c6a341c5c33fd823ca85058b0085
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Mon Dec 12 11:23:00 2016 +1030
+
+    Add OOC Processing queue for Critical Events #134
+
+commit a1649357aa2ef4b8c241ba5856426f31baa39210
+Author: Timothy Minahan <timothy@minahan.net>
+Date:   Fri Dec 9 17:25:12 2016 +1030
+
+    Reload the Sequence for the change in environment to take effect #131
+

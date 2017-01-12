@@ -10,11 +10,11 @@ MasqueDB = {
 		["Targatdummy - Doomhammer"] = "Default",
 		["Dfbdeffbw - Doomhammer"] = "Default",
 		["Taunkah - Doomhammer"] = "Default",
-		["Alfalpha - Doomhammer"] = "Default",
+		["Bartholamue - Doomhammer"] = "Default",
 		["Nilrum - Doomhammer"] = "Default",
 		["Holyshnizzle - Doomhammer"] = "Default",
 		["Bahlar - Doomhammer"] = "Default",
-		["Bartholamue - Doomhammer"] = "Default",
+		["Alfalpha - Doomhammer"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

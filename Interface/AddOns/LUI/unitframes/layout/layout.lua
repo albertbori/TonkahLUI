@@ -68,7 +68,7 @@ local cornerAuras = {
 		TOPLEFT = {139, true}, -- Renew
 		TOPRIGHT = {17}, -- Power Word: Shield
 		BOTTOMLEFT = {33076}, -- Prayer of Mending
-		BOTTOMRIGHT = {6788, false, true}, -- Weakened Soul
+		BOTTOMRIGHT = {194384, true}, -- Atonement
 	},
 	DRUID = {
 		TOPLEFT = {8936, true}, -- Regrowth
@@ -108,7 +108,7 @@ do
 		},
 		PRIEST = {
 			[GetSpellInfo(15407)] = 1, -- Mind Flay
-			[GetSpellInfo(48045)] = 1, -- Mind Sear
+			[GetSpellInfo(234702)] = 1, -- Mind Sear
 			[GetSpellInfo(64843)] = 2, -- Divine Hymn
 			--[GetSpellInfo(64901)] = 2, -- Hymn of Hope
 			[GetSpellInfo(47540)] = 1, -- Penance
@@ -118,7 +118,7 @@ do
 		},
 		WARLOCK = {
 			--[GetSpellInfo(1120)] = 3, -- Drain Soul
-			[GetSpellInfo(689)] = 1, -- Drain Life
+			[GetSpellInfo(234153)] = 1, -- Drain Life
 			[GetSpellInfo(755)] = 1, -- Health Funnel
 			--[GetSpellInfo(79268)] = 1, -- Soul Harvest
 			[GetSpellInfo(5740)] = 2, -- Rain of Fire
@@ -454,7 +454,7 @@ local OverrideHealth = function(self, event, unit, powerType)
 		end
 	end
 
-	if health.colorTapping and UnitIsTapped and UnitIsTapped(unit) and not UnitIsTappedByPlayer(unit) then health:SetStatusBarColor(unpack(module.db.Colors.Misc["Tapped"])) end
+	if health.colorTapping and UnitIsTapDenied and UnitIsTapDenied(unit) then health:SetStatusBarColor(unpack(module.db.Colors.Misc["Tapped"])) end
 
 	local r_, g_, b_ = health:GetStatusBarColor()
 	local mu = health.bg.multiplier or 1
@@ -494,23 +494,23 @@ local OverrideHealth = function(self, event, unit, powerType)
 				if health.value.ShowAlways == false and min == max then
 					health.value:SetText()
 				elseif health.value.Format == "Absolut" then
-					health.value:SetFormattedText("%d/%d", min, max)
+					health.value:SetFormattedText("%s/%s", min, max)
 				elseif health.value.Format == "Absolut & Percent" then
-					health.value:SetFormattedText("%d/%d | %.1f%%", min, max, healthPercent)
+					health.value:SetFormattedText("%s/%s | %.1f%%", min, max, healthPercent)
 				elseif health.value.Format == "Absolut Short" then
 					health.value:SetFormattedText("%s/%s", ShortValue(min), ShortValue(max))
 				elseif health.value.Format == "Absolut Short & Percent" then
 					health.value:SetFormattedText("%s/%s | %.1f%%", ShortValue(min),ShortValue(max), healthPercent)
 				elseif health.value.Format == "Standard" then
-					health.value:SetFormattedText("%d", min)
+					health.value:SetFormattedText("%s", min)
 				elseif health.value.Format == "Standard & Percent" then
-					health.value:SetFormattedText("%d | %.1f%%", min, healthPercent)
+					health.value:SetFormattedText("%s | %.1f%%", min, healthPercent)
 				elseif health.value.Format == "Standard Short" then
 					health.value:SetFormattedText("%s", ShortValue(min))
 				elseif health.value.Format == "Standard Short & Percent" then
 					health.value:SetFormattedText("%s | %.1f%%", ShortValue(min), healthPercent)
 				else
-					health.value:SetFormattedText("%d", min)
+					health.value:SetFormattedText("%s", min)
 				end
 
 				if health.value.color == "By Class" then
@@ -552,7 +552,7 @@ local OverrideHealth = function(self, event, unit, powerType)
 				if health.valueMissing.ShortValue == true then
 					health.valueMissing:SetFormattedText("-%s", ShortValue(healthMissing))
 				else
-					health.valueMissing:SetFormattedText("-%d", healthMissing)
+					health.valueMissing:SetFormattedText("-%s", healthMissing)
 				end
 			else
 				health.valueMissing:SetText()
@@ -3811,7 +3811,6 @@ local SetStyle = function(self, unit, isSingle)
 
 	self:RegisterEvent("PLAYER_FLAGS_CHANGED", function(self) self.Health:ForceUpdate() end)
 	if unit == "player" then self:RegisterEvent("PLAYER_ENTERING_WORLD", function(self) self.Health:ForceUpdate() end) end
-
 	if unit == "pet" then
 		self.elapsed = 0
 		self:SetScript("OnUpdate", function(self, elapsed)
@@ -3832,7 +3831,6 @@ local SetStyle = function(self, unit, isSingle)
 			outsideAlpha = 0.5
 		}
 	end
-
 	self.Health.Override = OverrideHealth
 	self.Power.Override = OverridePower
 
