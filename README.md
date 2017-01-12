@@ -7,7 +7,7 @@ All of these addons are available from their respective authors. This repo is fo
 
 Due to some addons not fully supporting profiles, some tweaking may be necessary after installing.
 
-![Tonkah's Custom LUI Sample](https://cdn.discordapp.com/attachments/135080106983948288/234858454160769024/Screen_Shot_2016-10-09_at_7.54.07_PM.png)
+![Tonkah's Custom LUI Sample](https://github.com/albertbori/TonkahLUI/blob/master/Minimized.png?raw=true)
 
 ## Installation
 
