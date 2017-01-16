@@ -51,15 +51,15 @@ Omen3DB = {
 				["HideInPVP"] = false,
 			},
 			["VGrip1"] = 155.316689874038,
+			["PositionX"] = 1480.65893554688,
+			["Warnings"] = {
+				["Sound"] = false,
+			},
 			["TitleBar"] = {
 				["ShowTitleBar"] = false,
 				["FontSize"] = 12,
 				["Height"] = 18,
 			},
-			["Warnings"] = {
-				["Sound"] = false,
-			},
-			["PositionX"] = 1480.65893554688,
 			["Bar"] = {
 				["FontSize"] = 13,
 				["FontColor"] = {
@@ -67,10 +67,14 @@ Omen3DB = {
 					["g"] = 0.776470588235294,
 					["r"] = 0.776470588235294,
 				},
-				["UseMyBarColor"] = true,
+				["ShowHeadings"] = false,
 				["ShowValue"] = false,
 				["UseClassColors"] = false,
-				["Spacing"] = 1,
+				["FadeBarColor"] = {
+					["b"] = 0.466666666666667,
+					["g"] = 0.466666666666667,
+					["r"] = 0.466666666666667,
+				},
 				["MyBarColor"] = {
 					["b"] = 0.592156862745098,
 					["g"] = 0.592156862745098,
@@ -91,12 +95,8 @@ Omen3DB = {
 				},
 				["Font"] = "Prototype",
 				["Height"] = 26,
-				["ShowHeadings"] = false,
-				["FadeBarColor"] = {
-					["b"] = 0.466666666666667,
-					["g"] = 0.466666666666667,
-					["r"] = 0.466666666666667,
-				},
+				["Spacing"] = 1,
+				["UseMyBarColor"] = true,
 			},
 		},
 		["Targatdummy - Doomhammer"] = {
@@ -197,15 +197,11 @@ Omen3DB = {
 				["HideWhileResting"] = false,
 				["HideInPVP"] = false,
 			},
-			["VGrip1"] = 155.316689874038,
 			["PositionH"] = 196.984924316406,
+			["VGrip1"] = 155.316689874038,
 			["VGrip2"] = 155.316689874038,
 			["PositionY"] = 233.224487304688,
-			["TitleBar"] = {
-				["ShowTitleBar"] = false,
-				["FontSize"] = 12,
-				["Height"] = 18,
-			},
+			["PositionX"] = 1526.64990234375,
 			["Warnings"] = {
 				["Sound"] = false,
 			},
@@ -226,7 +222,11 @@ Omen3DB = {
 				},
 				["Texture"] = "Solid",
 			},
-			["PositionX"] = 1526.64990234375,
+			["TitleBar"] = {
+				["ShowTitleBar"] = false,
+				["FontSize"] = 12,
+				["Height"] = 18,
+			},
 			["Bar"] = {
 				["FontSize"] = 13,
 				["FontColor"] = {
@@ -235,8 +235,8 @@ Omen3DB = {
 					["b"] = 0.776470588235294,
 				},
 				["ShowTPS"] = false,
-				["UseMyBarColor"] = true,
 				["ShowHeadings"] = false,
+				["UseMyBarColor"] = true,
 				["BarColor"] = {
 					["a"] = 0.890000000596047,
 					["r"] = 0.368627450980392,
@@ -249,20 +249,20 @@ Omen3DB = {
 					["b"] = 0.592156862745098,
 				},
 				["ShowValue"] = false,
-				["UseClassColors"] = false,
+				["Font"] = "vibrocen",
 				["MyBarColor"] = {
 					["r"] = 0.592156862745098,
 					["g"] = 0.592156862745098,
 					["b"] = 0.592156862745098,
 				},
+				["Spacing"] = 1,
+				["Height"] = 25,
 				["FadeBarColor"] = {
 					["r"] = 0.466666666666667,
 					["g"] = 0.466666666666667,
 					["b"] = 0.466666666666667,
 				},
-				["Height"] = 25,
-				["Spacing"] = 1,
-				["Font"] = "vibrocen",
+				["UseClassColors"] = false,
 				["Texture"] = "Minimalist",
 			},
 		},

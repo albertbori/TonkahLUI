@@ -2,6 +2,8 @@
 GSEOptions = {
 	["use2"] = false,
 	["STANDARDFUNCS"] = "|cff55ddcc",
+	["UnfoundSpellIDs"] = {
+	},
 	["COMMENT"] = "|cff55cc55",
 	["use14"] = true,
 	["EQUALS"] = "|cffccddee",
@@ -11,53 +13,7 @@ GSEOptions = {
 	["use6"] = false,
 	["CommandColour"] = "|cFF00FF00",
 	["UNKNOWN"] = "|cffff6666",
-	["sendDebugOutputToDebugOutput"] = false,
-	["hideSoundErrors"] = false,
 	["KEYWORD"] = "|cff88bbdd",
-	["STRING"] = "|cff888888",
-	["clearUIErrors"] = false,
-	["autoCreateMacroStubsGlobal"] = false,
-	["resetOOC"] = true,
-	["TitleColour"] = "|cFFFF0000",
-	["hideUIErrors"] = false,
-	["initialised"] = true,
-	["ActiveSequenceVersions"] = {
-	},
-	["DebugModules"] = {
-		["Translator"] = false,
-		["GUI"] = false,
-		["Storage"] = false,
-		["Editor"] = false,
-		["Versions"] = false,
-		["API"] = false,
-		["Viewer"] = false,
-		["Transmission"] = false,
-	},
-	["INDENT"] = "|cffccaa88",
-	["filterList"] = {
-		["Spec"] = true,
-		["All"] = false,
-		["Class"] = true,
-	},
-	["DisabledSequences"] = {
-	},
-	["EmphasisColour"] = "|cFFFFFF00",
-	["autoCreateMacroStubsClass"] = true,
-	["WOWSHORTCUTS"] = "|cffddaaff",
-	["RealtimeParse"] = false,
-	["deleteOrphansOnLogout"] = false,
-	["DefaultDisabledMacroIcon"] = "Interface\\Icons\\INV_MISC_BOOK_08",
-	["AuthorColour"] = "|cFF00D1FF",
-	["overflowPersonalMacros"] = false,
-	["requireTarget"] = false,
-	["useTranslator"] = false,
-	["NUMBER"] = "|cffffaa00",
-	["use12"] = false,
-	["use13"] = true,
-	["NormalColour"] = "|cFFFFFFFF",
-	["CONCAT"] = "|cffcc7777",
-	["saveAllMacrosLocal"] = true,
-	["setDefaultIconQuestionMark"] = true,
 	["AddInPacks"] = {
 		["Legacy GSE 1"] = {
 			["Name"] = "Legacy GSE 1",
@@ -67,7 +23,7 @@ GSEOptions = {
 		},
 		["Samples"] = {
 			["Name"] = "Samples",
-			["Version"] = "200",
+			["Version"] = "206",
 			["SequenceNames"] = {
 				"SAM_ProtWar", -- [1]
 				"SAM_Fury1", -- [2]
@@ -130,10 +86,92 @@ GSEOptions = {
 			},
 		},
 	},
+	["sendDebugOutputToDebugOutput"] = false,
+	["hideSoundErrors"] = false,
+	["ErroneousSpellID"] = {
+	},
+	["autoCreateMacroStubsGlobal"] = false,
+	["STRING"] = "|cff888888",
+	["clearUIErrors"] = false,
+	["ActiveSequenceVersions"] = {
+	},
+	["autoCreateMacroStubsClass"] = true,
+	["TitleColour"] = "|cFFFF0000",
+	["hideUIErrors"] = false,
+	["initialised"] = true,
+	["CONCAT"] = "|cffcc7777",
+	["DebugModules"] = {
+		["Translator"] = false,
+		["GUI"] = false,
+		["Storage"] = false,
+		["Editor"] = false,
+		["Versions"] = false,
+		["API"] = false,
+		["Viewer"] = false,
+		["Transmission"] = false,
+	},
+	["resetOOC"] = true,
+	["filterList"] = {
+		["Spec"] = true,
+		["Class"] = true,
+		["Global"] = true,
+		["All"] = false,
+	},
+	["DefaultDisabledMacroIcon"] = "Interface\\Icons\\INV_MISC_BOOK_08",
+	["EmphasisColour"] = "|cFFFFFF00",
+	["INDENT"] = "|cffccaa88",
+	["WOWSHORTCUTS"] = "|cffddaaff",
+	["RealtimeParse"] = false,
+	["deleteOrphansOnLogout"] = false,
+	["overflowPersonalMacros"] = false,
+	["UnfoundSpells"] = {
+	},
+	["AuthorColour"] = "|cFF00D1FF",
+	["requireTarget"] = false,
+	["NUMBER"] = "|cffffaa00",
+	["DisabledSequences"] = {
+	},
+	["use12"] = false,
+	["use13"] = true,
+	["NormalColour"] = "|cFFFFFFFF",
+	["useTranslator"] = false,
+	["saveAllMacrosLocal"] = true,
+	["setDefaultIconQuestionMark"] = true,
+	["CreateGlobalButtons"] = false,
 	["use1"] = false,
 }
 GSELibrary = {
 	{
+		["ProtAoE"] = {
+			["Talents"] = "1213312",
+			["Default"] = 1,
+			["Author"] = "Taunkah@Doomhammer",
+			["MacroVersions"] = {
+				{
+					"/cast [mod:alt] Intercept", -- [1]
+					"/cast Victory Rush", -- [2]
+					"/cast Neltharion's Fury", -- [3]
+					"/cast Shockwave", -- [4]
+					"/cast Thunder Clap", -- [5]
+					"/cast Shield Slam", -- [6]
+					"/castsequence  reset=combat  Shield Block, Ignore Pain, Revenge", -- [7]
+					"/cast Devastate", -- [8]
+					["KeyRelease"] = {
+						"/cast [combat] Battle Cry", -- [1]
+					},
+					["StepFunction"] = "Priority",
+					["PostMacro"] = {
+					},
+					["PreMacro"] = {
+						"/target  [@focustarget]", -- [1]
+						"/targetenemy  [noexists][noharm][dead]", -- [2]
+					},
+					["KeyPress"] = {
+					},
+				}, -- [1]
+			},
+			["SpecID"] = 73,
+		},
 		["FuryAoE"] = {
 			["Talents"] = "1213312",
 			["Default"] = 1,
@@ -147,49 +185,15 @@ GSELibrary = {
 					"/cast Rampage", -- [5]
 					"/castsequence  reset=4  Bloodthirst, Whirlwind, Whirlwind", -- [6]
 					["KeyRelease"] = {
+						"/cast [combat] Avatar", -- [1]
+						"/cast [combat] Battle Cry", -- [2]
 					},
-					["StepFunction"] = "Priority",
+					["StepFunction"] = "Sequential",
 					["PostMacro"] = {
 					},
 					["PreMacro"] = {
-						"", -- [1]
-						"/target  [@focustarget]", -- [2]
-						"/targetenemy  [noexists][noharm][dead]", -- [3]
-						"/cast [combat] Avatar", -- [4]
-						"/cast [combat] Battle Cry", -- [5]
-					},
-					["KeyPress"] = {
-					},
-				}, -- [1]
-			},
-			["SpecID"] = "Fury",
-		},
-		["ProtAoE"] = {
-			["Talents"] = "1213312",
-			["Default"] = 1,
-			["Author"] = "Taunkah@Doomhammer",
-			["MacroVersions"] = {
-				{
-					"/cast [mod:alt] Intercept", -- [1]
-					"/cast Victory Rush", -- [2]
-					"/cast Neltharion's Fury", -- [3]
-					"/cast Revenge", -- [4]
-					"/cast Shockwave", -- [5]
-					"/cast Thunder Clap", -- [6]
-					"/cast [mod:alt] Focused Rage; Ignore Pain", -- [7]
-					"/cast Shield Block", -- [8]
-					"/cast Shield Slam", -- [9]
-					"/cast Devastate", -- [10]
-					["KeyRelease"] = {
-					},
-					["StepFunction"] = "Priority",
-					["PostMacro"] = {
-					},
-					["PreMacro"] = {
-						"", -- [1]
-						"/target  [@focustarget]", -- [2]
-						"/targetenemy  [noexists][noharm][dead]", -- [3]
-						"/cast [combat] Battle Cry", -- [4]
+						"/target  [@focustarget]", -- [1]
+						"/targetenemy  [noexists][noharm][dead]", -- [2]
 					},
 					["KeyPress"] = {
 					},
@@ -203,30 +207,26 @@ GSELibrary = {
 			["Author"] = "Taunkah@Doomhammer",
 			["MacroVersions"] = {
 				{
-					"/cast [mod:alt] Charge", -- [1]
-					"/cast Dragon Roar", -- [2]
-					"/cast Odyn's Fury", -- [3]
-					"/cast Execute", -- [4]
-					"/cast Rampage", -- [5]
-					"/castsequence Raging Blow, Bloodthirst, Furious Slash", -- [6]
+					"/castsequence Odyn's Fury, Dragon Roar, Dragon Roar", -- [1]
+					"/cast Execute", -- [2]
+					"/cast Rampage", -- [3]
+					"/castsequence Raging Blow, Bloodthirst, Furious Slash", -- [4]
 					["KeyRelease"] = {
+						"/cast [combat] Avatar", -- [1]
+						"/cast [combat] Battle Cry", -- [2]
 					},
-					["StepFunction"] = "Priority",
+					["StepFunction"] = "Sequential",
 					["PostMacro"] = {
 					},
 					["PreMacro"] = {
-						"", -- [1]
-						"/target  [@focustarget]", -- [2]
-						"/targetenemy  [noexists][noharm][dead]", -- [3]
-						"/cast [combat] Avatar", -- [4]
-						"/cast [combat] Battle Cry", -- [5]
-						"", -- [6]
+						"/target  [@focustarget]", -- [1]
+						"/targetenemy  [noexists][noharm][dead]", -- [2]
 					},
 					["KeyPress"] = {
 					},
 				}, -- [1]
 			},
-			["SpecID"] = "Fury",
+			["SpecID"] = 73,
 		},
 		["ProtSingle"] = {
 			["Talents"] = "1213312",
@@ -236,12 +236,11 @@ GSELibrary = {
 				{
 					"/cast [mod:alt] Intercept", -- [1]
 					"/cast Victory Rush", -- [2]
-					"/cast [mod:alt] Focused Rage; Ignore Pain", -- [3]
-					"/cast Shield Block", -- [4]
-					"/cast Shield Slam", -- [5]
-					"/cast Revenge", -- [6]
-					"/cast Devastate", -- [7]
+					"/cast Shield Slam", -- [3]
+					"/castsequence  reset=combat  Shield Block, Ignore Pain, Revenge", -- [4]
+					"/cast Devastate", -- [5]
 					["KeyRelease"] = {
+						"/cast [combat] Battle Cry", -- [1]
 					},
 					["StepFunction"] = "Priority",
 					["PostMacro"] = {
@@ -249,7 +248,6 @@ GSELibrary = {
 					["PreMacro"] = {
 						"/target  [@focustarget]", -- [1]
 						"/targetenemy  [noexists][noharm][dead]", -- [2]
-						"/cast [combat] Battle Cry", -- [3]
 					},
 					["KeyPress"] = {
 					},
@@ -265,21 +263,21 @@ GSELibrary = {
 			["Author"] = "Bartholamue@Doomhammer",
 			["MacroVersions"] = {
 				{
-					"|cffddaaff/cast|r |cff88bbdd|cff88bbddWake of Ashes|r|r", -- [1]
-					"|cffddaaff/cast|r |cff88bbdd|cff88bbdd|cff55cc55[mod:alt]|r |cff88bbddJusticar's Vengeance|r|r; |cff88bbdd|cff88bbddDivine Storm|r|r|r", -- [2]
-					"|cffddaaff/cast|r |cff88bbdd|cff88bbddJudgment|r|r", -- [3]
-					"|cffddaaff/cast|r |cff88bbdd|cff88bbddBlade of Justice|r|r", -- [4]
-					"|cffddaaff/cast|r |cff88bbdd|cff88bbddCrusader Strike|r|r", -- [5]
+					"/cast Wake of Ashes", -- [1]
+					"/cast [mod:alt] Justicar's Vengeance; Divine Storm", -- [2]
+					"/cast Judgment", -- [3]
+					"/cast Blade of Justice", -- [4]
+					"/cast Crusader Strike", -- [5]
 					["KeyRelease"] = {
+						"/cast Avenging Wrath", -- [1]
+						"/cast Shield of Vengeance", -- [2]
 					},
 					["StepFunction"] = "Priority",
 					["PostMacro"] = {
 					},
 					["PreMacro"] = {
-						"|cffddaaff/target|r  [@focustarget]", -- [1]
-						"|cffddaaff/targetenemy|r  [noexists][noharm][dead]", -- [2]
-						"|cffddaaff/cast|r |cff88bbdd|cff88bbddAvenging Wrath|r|r", -- [3]
-						"|cffddaaff/cast|r Shield of Vengeance", -- [4]
+						"/target  [@focustarget]", -- [1]
+						"/targetenemy  [noexists][noharm][dead]", -- [2]
 					},
 					["KeyPress"] = {
 					},
@@ -293,19 +291,19 @@ GSELibrary = {
 			["Author"] = "Bartholamue@Doomhammer",
 			["MacroVersions"] = {
 				{
-					"|cffddaaff/cast|r |cff88bbdd|cff88bbdd|cff55cc55[mod:alt]|r |cff88bbddJusticar's Vengeance|r|r; |cff88bbdd|cff88bbddTemplar's Verdict|r|r|r", -- [1]
-					"|cffddaaff/cast|r |cff88bbdd|cff88bbddJudgment|r|r", -- [2]
-					"|cffddaaff/cast|r |cff88bbdd|cff88bbddBlade of Justice|r|r", -- [3]
-					"|cffddaaff/cast|r |cff88bbdd|cff88bbddCrusader Strike|r|r", -- [4]
+					"/cast [mod:alt] Justicar's Vengeance; Templar's Verdict", -- [1]
+					"/cast Judgment", -- [2]
+					"/cast Blade of Justice", -- [3]
+					"/cast Crusader Strike", -- [4]
 					["KeyRelease"] = {
+						"/cast Avenging Wrath", -- [1]
 					},
 					["StepFunction"] = "Priority",
 					["PostMacro"] = {
 					},
 					["PreMacro"] = {
-						"|cffddaaff/target|r  [@focustarget]", -- [1]
-						"|cffddaaff/targetenemy|r  [noexists][noharm][dead]", -- [2]
-						"|cffddaaff/cast|r |cff88bbdd|cff88bbddAvenging Wrath|r|r", -- [3]
+						"/target  [@focustarget]", -- [1]
+						"/targetenemy  [noexists][noharm][dead]", -- [2]
 					},
 					["KeyPress"] = {
 					},
@@ -314,34 +312,177 @@ GSELibrary = {
 			["SpecID"] = 70,
 		},
 	}, -- [2]
-	[5] = {
-		["HolyDPS"] = {
-			["Talents"] = "?,?,?,?,?,?,?",
-			["Help"] = "Talents: 2333222",
+	{
+		["BeastMasterSingle"] = {
+			["Talents"] = "3132111",
 			["Default"] = 1,
+			["Author"] = "Marmit@Doomhammer",
+			["MacroVersions"] = {
+				{
+					"/cast [combat,talent:7/1] Stampede", -- [1]
+					"/cast [combat] A Murder of Crows", -- [2]
+					"/cast Kill Command", -- [3]
+					"/cast Titan's Thunder", -- [4]
+					"/cast [talent:2/2] Dire Frenzy; Dire Beast", -- [5]
+					"/cast Cobra Shot", -- [6]
+					"/cast Kill Command", -- [7]
+					["KeyRelease"] = {
+						"/cast [combat] Bestial Wrath", -- [1]
+						"/cast [combat] Aspect of the Wild", -- [2]
+					},
+					["StepFunction"] = "Priority",
+					["KeyPress"] = {
+					},
+					["PreMacro"] = {
+						"/target  [@focustarget]", -- [1]
+						"/targetenemy  [noexists][noharm][dead]", -- [2]
+					},
+					["PostMacro"] = {
+					},
+				}, -- [1]
+			},
+			["SpecID"] = 253,
+		},
+		["BeastMasterAoE"] = {
+			["Talents"] = "3132111",
+			["Default"] = 1,
+			["Author"] = "Marmit@Doomhammer",
+			["SpecID"] = 253,
+			["MacroVersions"] = {
+				{
+					"/cast [combat,talent:7/1] Stampede", -- [1]
+					"/cast Titan's Thunder", -- [2]
+					"/cast [talent:2/2] Dire Frenzy; Dire Beast", -- [3]
+					"/castsequence Multi-Shot, Kill Command, Multi-Shot", -- [4]
+					["KeyRelease"] = {
+						"/cast [combat] Bestial Wrath", -- [1]
+						"/cast [combat] Aspect of the Wild", -- [2]
+					},
+					["StepFunction"] = "Priority",
+					["KeyPress"] = {
+					},
+					["PreMacro"] = {
+						"/target  [@focustarget]", -- [1]
+						"/targetenemy  [noexists][noharm][dead]", -- [2]
+					},
+					["PostMacro"] = {
+					},
+				}, -- [1]
+			},
+		},
+	}, -- [3]
+	nil, -- [4]
+	{
+		["HolySingle"] = {
+			["Talents"] = "",
+			["Default"] = 1,
+			["SpecID"] = 257,
 			["MacroVersions"] = {
 				{
 					"/cast Holy Word: Chastise", -- [1]
 					"/cast Holy Fire", -- [2]
 					"/cast Divine Star", -- [3]
 					"/cast Smite", -- [4]
-					["PostMacro"] = {
+					["KeyRelease"] = {
 					},
 					["StepFunction"] = "Priority",
 					["KeyPress"] = {
-						"/target [@focustarget]", -- [1]
-						"/targetenemy [noexists][help][dead]", -- [2]
-						"", -- [3]
+						"/target  [@focustarget]", -- [1]
+						"/targetenemy  [noexists][help][dead]", -- [2]
 					},
 					["PreMacro"] = {
 					},
-					["KeyRelease"] = {
+					["PostMacro"] = {
 					},
 				}, -- [1]
 			},
-			["SpecID"] = 258,
 			["Icon"] = "INV_MISC_QUESTIONMARK",
 			["Author"] = "Holyshnizzle@Doomhammer",
 		},
-	},
+		["HolyAoE"] = {
+			["Talents"] = "2333222",
+			["Default"] = 1,
+			["Author"] = "Holyshnizzle@Doomhammer",
+			["SpecID"] = 257,
+			["MacroVersions"] = {
+				{
+					"/cast Holy Word: Chastise", -- [1]
+					"/cast Holy Nova", -- [2]
+					"/cast Divine Star", -- [3]
+					["KeyRelease"] = {
+					},
+					["StepFunction"] = "Priority",
+					["KeyPress"] = {
+					},
+					["PreMacro"] = {
+						"/target  [@focustarget]", -- [1]
+						"/targetenemy  [noexists][help][dead]", -- [2]
+					},
+					["PostMacro"] = {
+					},
+				}, -- [1]
+			},
+		},
+		["ShadowAoE"] = {
+			["Talents"] = "1322231",
+			["Default"] = 1,
+			["Author"] = "Holyshnizzle@Doomhammer",
+			["SpecID"] = 258,
+			["MacroVersions"] = {
+				{
+					"/cast [nochanneling:Void Torrent] Vampiric Embrace", -- [1]
+					"/cast [nochanneling:Void Torrent] Mindbender", -- [2]
+					"/cast [nochanneling:Void Torrent] Void Eruption", -- [3]
+					"/cast Void Torrent", -- [4]
+					"/cast [nochanneling:Void Torrent] Shadow Word: Death", -- [5]
+					"/cast [nochanneling:Void Torrent] Mind Blast", -- [6]
+					"/castsequence [nochanneling] reset=combat/target/12  Shadow Word: Pain, Vampiric Touch, Mind Sear, Mind Sear, Mind Sear, Mind Sear, Mind Sear", -- [7]
+					["KeyRelease"] = {
+					},
+					["StepFunction"] = "Priority",
+					["KeyPress"] = {
+					},
+					["PreMacro"] = {
+						"/target  [@focustarget]", -- [1]
+						"/targetenemy  [noexists][noharm][dead]", -- [2]
+					},
+					["PostMacro"] = {
+					},
+				}, -- [1]
+			},
+		},
+		["ShadowSingle"] = {
+			["Talents"] = "1322231",
+			["Default"] = 1,
+			["Author"] = "Holyshnizzle@Doomhammer",
+			["SpecID"] = 258,
+			["MacroVersions"] = {
+				{
+					"/cast [nochanneling:Void Torrent] Vampiric Embrace", -- [1]
+					"/cast [nochanneling:Void Torrent] Mindbender", -- [2]
+					"/cast [nochanneling:Void Torrent] Void Eruption", -- [3]
+					"/cast Void Torrent", -- [4]
+					"/cast [nochanneling:Void Torrent] Shadow Word: Death", -- [5]
+					"/cast [nochanneling:Void Torrent] Mind Blast", -- [6]
+					"/castsequence [nochanneling,mod:alt] reset=combat/target/12  Shadow Word: Pain, Vampiric Touch", -- [7]
+					"/cast [nochanneling,nomod] Mind Flay", -- [8]
+					["KeyRelease"] = {
+					},
+					["StepFunction"] = "Priority",
+					["KeyPress"] = {
+					},
+					["PreMacro"] = {
+						"/target  [@focustarget]", -- [1]
+						"/targetenemy  [noexists][noharm][dead]", -- [2]
+					},
+					["PostMacro"] = {
+					},
+				}, -- [1]
+			},
+		},
+	}, -- [5]
+	nil, -- [6]
+	nil, -- [7]
+	{
+	}, -- [8]
 }
