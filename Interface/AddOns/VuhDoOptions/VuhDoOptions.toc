@@ -1,7 +1,7 @@
-## Interface: 70100
+## Interface: 70200
 ## Title: VuhDo ['vu:du:] - Options
 ## Author: Iza@Gilneas, humfras, Ivaria@Hyjal
-## Version: 3.81
+## Version: 3.84
 ## Notes: VuhDo Options
 ## SavedVariables: VUHDO_OPTIONS_SETTINGS
 ## SavedVariablesPerCharacter: VUHDO_GLOBAL_ICONS, VUHDO_GI_SCAN_IDX
@@ -25,6 +25,7 @@ VuhDoNewOptionsGeneralThreat.xml
 VuhDoNewOptionsGeneralMisc.xml
 VuhDoNewOptionsGeneralCluster.xml
 VuhDoNewOptionsGeneralIndicators.xml
+VuhDoNewOptionsGeneralSpellTrace.xml
 VuhDoNewOptionsGeneral.xml
 VuhDoNewOptionsSpellMouse.xml
 VuhDoNewOptionsSpellKeys.xml

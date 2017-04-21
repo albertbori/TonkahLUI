@@ -630,6 +630,11 @@ VUHDO_I18N_TT.K564 = "Select a color for Monks";
 VUHDO_I18N_TT.K565 = "Select a color for Demon Hunters";
 VUHDO_I18N_TT.K566 = "Click to select pain bar color.";
 VUHDO_I18N_TT.K567 = "Enter a text to be shown in chat when you start casting 'mass' resurrection.";
+VUHDO_I18N_TT.K568 = "Setup spell traces. A spell trace tracks which units are hit when a particular spell is cast. You can build bouquets with spell traces or use the default 'Spell Trace' bouquet e.g. as a HoT icon or indicator.";
+VUHDO_I18N_TT.K569 = "Enable Holy Priest 'Trail of Light' talent tracking.  There is a corresponding default bouquet 'Trail of Light' that can be used to display an indicator.";
+VUHDO_I18N_TT.K570 = "The duration that the spell trace icon should be shown.";
+VUHDO_I18N_TT.K571 = "Trigger the spell trace when the spell is cast by yourself.";
+VUHDO_I18N_TT.K572 = "Trigger the spell trace when the spell is cast by others.";
 
 VUHDO_I18N_DEFAULT_PROFILE = "Default Profile";
 VUHDO_I18N_DEFAULT_LAYOUT = "Default Layout";
@@ -1128,3 +1133,11 @@ VUHDO_I18N_SPEC_3 = "Spec 3";
 VUHDO_I18N_SPEC_4 = "Spec 4";
 
 VUHDO_I18N_ANNOUNCE_MASS_RES = "'Mass' Resurrection\nAnnouncement";
+
+VUHDO_I18N_SPELL_TRACE = "Spell Trace";
+VUHDO_I18N_SPELL_TRACE_EDIT_BOX = "Enter spell name or ID to trace";
+VUHDO_I18N_SPELL_TRACE_LIST = "Spell Trace List";
+VUHDO_I18N_DURATION = "Duration";
+VUHDO_I18N_SEC = "sec";
+VUHDO_I18N_TRAIL_OF_LIGHT = "Trail of\nLight";
+

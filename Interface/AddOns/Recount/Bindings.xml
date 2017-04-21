@@ -104,4 +104,15 @@
 	<Binding name="RECOUNT_TOGGLE_PAUSE" category="ADDONS">
 		Recount:SetGlobalDataCollect(not Recount.db.profile.GlobalDataCollect)
 	</Binding>
+	<Binding name="RECOUNT_TOGGLE_MERGEPETS" category="ADDONS">
+		if Recount.db.profile.MergePets then
+			Recount.db.profile.MergePets = false
+			Recount.db.profile.Filters.Show["Pet"] = true
+		else
+			Recount.db.profile.MergePets = true
+			Recount.db.profile.Filters.Show["Pet"] = false
+		end
+		Recount:FullRefreshMainWindow()
+		Recount:RefreshMainWindow()
+	</Binding>
 </Bindings>

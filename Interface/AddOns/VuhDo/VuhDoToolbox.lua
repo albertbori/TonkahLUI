@@ -533,7 +533,7 @@ function VUHDO_getResurrectionSpells()
 		tKnownResurrectionSpells = { };
 
 		for _, tResurrectionSpell in ipairs(tResurrectionSpells) do
-			if VUHDO_isSpellKnown(tResurrectionSpell) then
+			if VUHDO_isSpellKnown(tResurrectionSpell) and IsUsableSpell(tResurrectionSpell) then
 				tinsert(tKnownResurrectionSpells, tResurrectionSpell);
 			end
 		end

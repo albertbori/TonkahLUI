@@ -56,6 +56,7 @@
 	<Script file="VuhDoPlayerTargetEventHandler.lua" />
 	<Script file="VuhDoDcShield.lua" />
 	<Script file="VuhDoAoeAdvisor.lua" />
+	<Script file="VuhDoSpellTrace.lua" />
 	<Script file="VuhDoAddonAdapter.lua" />
 	<Script file="VuhDo.lua" />
 

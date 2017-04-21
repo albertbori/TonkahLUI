@@ -4,7 +4,7 @@
 
 	<Frame name="VuhDoNewOptionsTabbedFrame" hidden="true" toplevel="true" movable="true" parent="UIParent" enableMouse="true" frameStrata="DIALOG" inherits="VuhDoFrameTemplate">
 		<Size>
-			<AbsDimension x="648" y="420" />
+			<AbsDimension x="648" y="455" />
 		</Size>
 		<Anchors>
 			<Anchor point="CENTER" relativeTo="UIParent">

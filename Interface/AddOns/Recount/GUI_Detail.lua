@@ -4,7 +4,7 @@ local Graph = LibStub:GetLibrary("LibGraph-2.0")
 local AceLocale = LibStub("AceLocale-3.0")
 local L = AceLocale:GetLocale("Recount")
 
-local revision = tonumber(string.sub("$Revision: 1398 $", 12, -3))
+local revision = tonumber(string.sub("$Revision: 1419 $", 12, -3))
 if Recount.Version < revision then
 	Recount.Version = revision
 end
@@ -239,7 +239,7 @@ function me:RefreshUpperDetails()
 			row.Count:SetText(i + offset)
 			row.Name:SetText(entry[1])
 			row.ACount:SetText(entry[6])
-			row.Amount:SetText(entry[2])
+			row.Amount:SetText(Recount:FormatLongNums(entry[2]))
 			row.Percent:SetText(string.format("%.1f", entry[4]).."%")
 			row.Data = entry[3]
 			row:Show()
@@ -338,23 +338,28 @@ function Recount:FillLowerDetailTable(Data)
 			row.Key:SetVertexColor(entry[7][1], entry[7][2], entry[7][3],1.0)
 			row.Background:SetVertexColor((entry[7][1] + 0.5) / 2, (entry[7][2] + 0.5) / 2, (entry[7][3] + 0.5) / 2, 0.3)
 			row.Name:SetText(entry[1])
-			row.Count:SetText(entry[2])
+			local countLabel = Recount.DetailWindow.PieMode.BotRowLabels.Count:GetText()
+			if countLabel == L["Damage"] or countLabel == L["Healed"] then
+				row.Count:SetText(Recount:FormatLongNums(entry[2]))
+			else
+				row.Count:SetText(entry[2])
+			end
 			if entry[3] then
-				row.Min:SetText(entry[3])
+				row.Min:SetText(Recount:FormatLongNums(entry[3]))
 				row.Min:Show()
 			else
 				row.Min:Hide()
 			end
 
 			if entry[4] then
-				row.Avg:SetText(entry[4])
+				row.Avg:SetText(Recount:FormatLongNums(entry[4]))
 				row.Avg:Show()
 			else
 				row.Avg:Hide()
 			end
 
 			if entry[5] then
-				row.Max:SetText(entry[5])
+				row.Max:SetText(Recount:FormatLongNums(entry[5]))
 				row.Max:Show()
 			else
 				row.Max:Hide()

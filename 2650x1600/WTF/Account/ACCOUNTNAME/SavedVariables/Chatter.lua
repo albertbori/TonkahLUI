@@ -56,178 +56,178 @@ ChatterDB = {
 				["Default"] = {
 					["colors"] = {
 						["Guild"] = {
-							["b"] = 0.250980406999588,
-							["g"] = 1,
 							["r"] = 0.250980406999588,
+							["g"] = 1,
+							["b"] = 0.250980406999588,
 						},
 						["Real ID Whisper"] = {
-							["b"] = 0.964705944061279,
-							["g"] = 1,
 							["r"] = 0,
+							["g"] = 1,
+							["b"] = 0.964705944061279,
 						},
 						["Raid Leader"] = {
-							["b"] = 0.0352941192686558,
-							["g"] = 0.282352954149246,
 							["r"] = 1,
+							["g"] = 0.282352954149246,
+							["b"] = 0.0352941192686558,
 						},
 						["LookingForGroup"] = {
-							["b"] = 0.752941250801086,
-							["g"] = 0.752941250801086,
 							["r"] = 1,
+							["g"] = 0.752941250801086,
+							["b"] = 0.752941250801086,
 						},
 						["Party"] = {
-							["b"] = 1,
-							["g"] = 0.666666686534882,
 							["r"] = 0.666666686534882,
+							["g"] = 0.666666686534882,
+							["b"] = 1,
 						},
 						["Whisper"] = {
-							["b"] = 1,
-							["g"] = 0.501960813999176,
 							["r"] = 1,
+							["g"] = 0.501960813999176,
+							["b"] = 1,
 						},
 						["Raid"] = {
-							["b"] = 0,
-							["g"] = 0.498039245605469,
 							["r"] = 1,
+							["g"] = 0.498039245605469,
+							["b"] = 0,
 						},
 						["Raid Warning"] = {
-							["b"] = 0,
-							["g"] = 0.282352954149246,
 							["r"] = 1,
+							["g"] = 0.282352954149246,
+							["b"] = 0,
 						},
 						["Party Leader"] = {
-							["b"] = 1,
-							["g"] = 0.784313797950745,
 							["r"] = 0.462745130062103,
+							["g"] = 0.784313797950745,
+							["b"] = 1,
 						},
 						["Instance"] = {
-							["b"] = 0,
-							["g"] = 0.498039245605469,
 							["r"] = 1,
+							["g"] = 0.498039245605469,
+							["b"] = 0,
 						},
 						["Yell"] = {
-							["b"] = 0.250980406999588,
-							["g"] = 0.250980406999588,
 							["r"] = 1,
+							["g"] = 0.250980406999588,
+							["b"] = 0.250980406999588,
 						},
 						["LocalDefense"] = {
-							["b"] = 0.752941250801086,
-							["g"] = 0.752941250801086,
 							["r"] = 1,
+							["g"] = 0.752941250801086,
+							["b"] = 0.752941250801086,
 						},
 						["Say"] = {
-							["b"] = 1,
-							["g"] = 1,
 							["r"] = 1,
+							["g"] = 1,
+							["b"] = 1,
 						},
 						["Trade"] = {
-							["b"] = 0.752941250801086,
-							["g"] = 0.752941250801086,
 							["r"] = 1,
-						},
-						["General"] = {
-							["b"] = 0.752941250801086,
 							["g"] = 0.752941250801086,
-							["r"] = 1,
+							["b"] = 0.752941250801086,
 						},
 						["Instance Leader"] = {
-							["b"] = 0.0352941192686558,
-							["g"] = 0.282352954149246,
 							["r"] = 1,
+							["g"] = 0.282352954149246,
+							["b"] = 0.0352941192686558,
+						},
+						["General"] = {
+							["r"] = 1,
+							["g"] = 0.752941250801086,
+							["b"] = 0.752941250801086,
 						},
 						["Officer"] = {
-							["b"] = 0.250980406999588,
-							["g"] = 0.752941250801086,
 							["r"] = 0.250980406999588,
+							["g"] = 0.752941250801086,
+							["b"] = 0.250980406999588,
 						},
 					},
 				},
 				["Tonkah LUI"] = {
 					["colors"] = {
 						["Guild"] = {
-							["r"] = 0.250980406999588,
-							["g"] = 1,
 							["b"] = 0.250980406999588,
+							["g"] = 1,
+							["r"] = 0.250980406999588,
 						},
 						["Real ID Whisper"] = {
-							["r"] = 0,
-							["g"] = 1,
 							["b"] = 0.964705944061279,
+							["g"] = 1,
+							["r"] = 0,
 						},
 						["Raid Leader"] = {
-							["r"] = 1,
-							["g"] = 0.282352954149246,
 							["b"] = 0.0352941192686558,
+							["g"] = 0.282352954149246,
+							["r"] = 1,
 						},
 						["LookingForGroup"] = {
-							["r"] = 1,
-							["g"] = 0.752941250801086,
 							["b"] = 0.752941250801086,
+							["g"] = 0.752941250801086,
+							["r"] = 1,
 						},
 						["Party"] = {
-							["r"] = 0.666666686534882,
-							["g"] = 0.666666686534882,
 							["b"] = 1,
+							["g"] = 0.666666686534882,
+							["r"] = 0.666666686534882,
 						},
 						["Whisper"] = {
-							["r"] = 1,
-							["g"] = 0.501960813999176,
 							["b"] = 1,
+							["g"] = 0.501960813999176,
+							["r"] = 1,
 						},
 						["Raid"] = {
-							["r"] = 1,
-							["g"] = 0.498039245605469,
 							["b"] = 0,
+							["g"] = 0.498039245605469,
+							["r"] = 1,
 						},
 						["Raid Warning"] = {
-							["r"] = 1,
-							["g"] = 0.282352954149246,
 							["b"] = 0,
+							["g"] = 0.282352954149246,
+							["r"] = 1,
 						},
 						["Party Leader"] = {
-							["r"] = 0.462745130062103,
-							["g"] = 0.784313797950745,
 							["b"] = 1,
+							["g"] = 0.784313797950745,
+							["r"] = 0.462745130062103,
 						},
 						["Instance"] = {
-							["r"] = 1,
-							["g"] = 0.498039245605469,
 							["b"] = 0,
+							["g"] = 0.498039245605469,
+							["r"] = 1,
 						},
 						["Yell"] = {
-							["r"] = 1,
-							["g"] = 0.250980406999588,
 							["b"] = 0.250980406999588,
+							["g"] = 0.250980406999588,
+							["r"] = 1,
 						},
 						["LocalDefense"] = {
-							["r"] = 1,
-							["g"] = 0.752941250801086,
 							["b"] = 0.752941250801086,
+							["g"] = 0.752941250801086,
+							["r"] = 1,
 						},
 						["Say"] = {
-							["r"] = 1,
-							["g"] = 1,
 							["b"] = 1,
+							["g"] = 1,
+							["r"] = 1,
 						},
 						["Trade"] = {
-							["r"] = 1,
-							["g"] = 0.752941250801086,
 							["b"] = 0.752941250801086,
-						},
-						["Instance Leader"] = {
+							["g"] = 0.752941250801086,
 							["r"] = 1,
-							["g"] = 0.282352954149246,
-							["b"] = 0.0352941192686558,
 						},
 						["General"] = {
-							["r"] = 1,
-							["g"] = 0.752941250801086,
 							["b"] = 0.752941250801086,
+							["g"] = 0.752941250801086,
+							["r"] = 1,
+						},
+						["Instance Leader"] = {
+							["b"] = 0.0352941192686558,
+							["g"] = 0.282352954149246,
+							["r"] = 1,
 						},
 						["Officer"] = {
-							["r"] = 0.250980406999588,
-							["g"] = 0.752941250801086,
 							["b"] = 0.250980406999588,
+							["g"] = 0.752941250801086,
+							["r"] = 0.250980406999588,
 						},
 					},
 				},
@@ -242,82 +242,82 @@ ChatterDB = {
 				["Tonkah LUI"] = {
 					["frames"] = {
 						["FRAME_1"] = {
-							["backgroundColor"] = {
+							["borderColor"] = {
 								["a"] = 0,
 							},
-							["borderColor"] = {
+							["backgroundColor"] = {
 								["a"] = 0,
 							},
 						},
 						["FRAME_9"] = {
-							["backgroundColor"] = {
+							["borderColor"] = {
 								["a"] = 0,
 							},
-							["borderColor"] = {
+							["backgroundColor"] = {
 								["a"] = 0,
 							},
 						},
 						["FRAME_6"] = {
-							["backgroundColor"] = {
+							["borderColor"] = {
 								["a"] = 0,
 							},
-							["borderColor"] = {
+							["backgroundColor"] = {
 								["a"] = 0,
 							},
 						},
 						["FRAME_5"] = {
-							["backgroundColor"] = {
+							["borderColor"] = {
 								["a"] = 0,
 							},
-							["borderColor"] = {
+							["backgroundColor"] = {
 								["a"] = 0,
 							},
 						},
 						["FRAME_8"] = {
-							["backgroundColor"] = {
+							["borderColor"] = {
 								["a"] = 0,
 							},
-							["borderColor"] = {
+							["backgroundColor"] = {
 								["a"] = 0,
 							},
 						},
 						["FRAME_7"] = {
-							["backgroundColor"] = {
+							["borderColor"] = {
 								["a"] = 0,
 							},
-							["borderColor"] = {
+							["backgroundColor"] = {
 								["a"] = 0,
 							},
 						},
 						["FRAME_3"] = {
-							["backgroundColor"] = {
+							["borderColor"] = {
 								["a"] = 0,
 							},
-							["borderColor"] = {
+							["backgroundColor"] = {
 								["a"] = 0,
 							},
 						},
 						["FRAME_4"] = {
-							["backgroundColor"] = {
-								["a"] = 0,
-							},
 							["borderColor"] = {
 								["a"] = 0,
 							},
-						},
-						["FRAME_10"] = {
 							["backgroundColor"] = {
-								["a"] = 0,
-							},
-							["borderColor"] = {
 								["a"] = 0,
 							},
 						},
 						["FRAME_2"] = {
+							["borderColor"] = {
+								["a"] = 0,
+							},
 							["backgroundColor"] = {
 								["a"] = 0,
 							},
+						},
+						["FRAME_10"] = {
 							["borderColor"] = {
+								["a"] = 0,
+							},
+							["backgroundColor"] = {
 								["a"] = 0,
 							},
 						},
@@ -329,13 +329,23 @@ ChatterDB = {
 		},
 		["Server Positioning"] = {
 		},
-		["JustifyText"] = {
+		["Mousewheel Scroll"] = {
 		},
 		["Timestamps"] = {
 		},
 		["EditBox"] = {
 		},
-		["Highlight"] = {
+		["ChatFont"] = {
+			["profiles"] = {
+				["Default"] = {
+					["fontsize"] = 12,
+					["font"] = "Arial Narrow",
+				},
+				["Tonkah LUI"] = {
+					["font"] = "Arial Narrow",
+					["fontsize"] = 12,
+				},
+			},
 		},
 		["ChatTabs"] = {
 		},
@@ -349,69 +359,59 @@ ChatterDB = {
 			["realm"] = {
 				["Doomhammer"] = {
 					["history"] = {
-						"/g :D", -- [1]
-						"/p cool", -- [2]
-						"/p thanks", -- [3]
-						"/p I have to pack for a flight tomorrow morning, I better not", -- [4]
-						"/p Thanks for the invite, tho", -- [5]
-						"/p catch you later! thanks!", -- [6]
-						"/g any time!", -- [7]
-						"/g heck yes", -- [8]
-						"/ginvite Pikros", -- [9]
-						"/ginvite  Pikros-Baelgun", -- [10]
-						"/g yw!", -- [11]
-						"/g k, I'm gonna hit the hay", -- [12]
-						"/g have a good night friends", -- [13]
-						"/cw Bronzon-Baelgun Our membership is primarily Mountain and Pacific timezones. Times listed are server (pacific) time zones", -- [14]
-						"/cw Bronzon-Baelgun no prob!", -- [15]
-						"/bartender", -- [16]
-						"/leavevehicle", -- [17]
-						"/leavevehicle", -- [18]
-						"/sj add  |cffffffff|Hitem:27855::::::::110:73::::::|h[Mag'har Grainbread]|h|r", -- [19]
-						"/sj add  |cffffffff|Hitem:21882::::::::110:73::::::|h[Soul Essence]|h|r", -- [20]
-						"/g ohai", -- [21]
-						"/cw Starxraider I'm not sure what you mean by guild rank", -- [22]
-						"/cw Starxraider 2155", -- [23]
-						"/cw Frostyshock-Hellscream sounds good!", -- [24]
-						"/cw Frostyshock-Hellscream No swearing, no lewd talk, no drama. Are you cool with that?", -- [25]
-						"/cw Starxraider-Doomhammer Sounds good. No swearing, no lewd talk, no drama. Are you cool with that?", -- [26]
-						"/cw Frostyshock-Hellscream no problem, good luck!", -- [27]
-						"/ginvite Starxraider", -- [28]
-						"/g Welcome starxraider!", -- [29]
-						"/g We're glad to have you, and hope you like it here.", -- [30]
-						"/g awesome. I'm just about to get on a plane, but I'll be on later this evening", -- [31]
-						"/g use all lower case in your email address", -- [32]
+						"/g any time!", -- [1]
+						"/g heck yes", -- [2]
+						"/ginvite Pikros", -- [3]
+						"/ginvite  Pikros-Baelgun", -- [4]
+						"/g yw!", -- [5]
+						"/g k, I'm gonna hit the hay", -- [6]
+						"/g have a good night friends", -- [7]
+						"/cw Bronzon-Baelgun Our membership is primarily Mountain and Pacific timezones. Times listed are server (pacific) time zones", -- [8]
+						"/cw Bronzon-Baelgun no prob!", -- [9]
+						"/bartender", -- [10]
+						"/leavevehicle", -- [11]
+						"/leavevehicle", -- [12]
+						"/sj add  |cffffffff|Hitem:27855::::::::110:73::::::|h[Mag'har Grainbread]|h|r", -- [13]
+						"/sj add  |cffffffff|Hitem:21882::::::::110:73::::::|h[Soul Essence]|h|r", -- [14]
+						"/g ohai", -- [15]
+						"/cw Starxraider I'm not sure what you mean by guild rank", -- [16]
+						"/cw Starxraider 2155", -- [17]
+						"/cw Frostyshock-Hellscream sounds good!", -- [18]
+						"/cw Frostyshock-Hellscream No swearing, no lewd talk, no drama. Are you cool with that?", -- [19]
+						"/cw Starxraider-Doomhammer Sounds good. No swearing, no lewd talk, no drama. Are you cool with that?", -- [20]
+						"/cw Frostyshock-Hellscream no problem, good luck!", -- [21]
+						"/ginvite Starxraider", -- [22]
+						"/g Welcome starxraider!", -- [23]
+						"/g We're glad to have you, and hope you like it here.", -- [24]
+						"/g awesome. I'm just about to get on a plane, but I'll be on later this evening", -- [25]
+						"/g use all lower case in your email address", -- [26]
+						"/g the weekly is timewalking, it appears", -- [27]
+						"/g grats!", -- [28]
+						"/cw Ajari 3/7H, 2/3N, 0/7N", -- [29]
+						"/g Grats!!", -- [30]
+						"/g grats!", -- [31]
+						"/tsm", -- [32]
 					},
 				},
 			},
 		},
-		["ChatFont"] = {
-			["profiles"] = {
-				["Default"] = {
-					["font"] = "Arial Narrow",
-					["fontsize"] = 12,
-				},
-				["Tonkah LUI"] = {
-					["fontsize"] = 12,
-					["font"] = "Arial Narrow",
-				},
-			},
+		["Highlight"] = {
 		},
-		["Mousewheel Scroll"] = {
+		["JustifyText"] = {
 		},
 	},
 	["profileKeys"] = {
 		["Marmit - Doomhammer"] = "Default",
 		["Bartholamue - Doomhammer"] = "Tonkah LUI",
+		["Dfbdeffbw - Doomhammer"] = "Tonkah LUI",
 		["Eamesey - Doomhammer"] = "Default",
-		["Holyshnizzle - Doomhammer"] = "Tonkah LUI",
 		["Alfalpha - Doomhammer"] = "Default",
 		["Taunkah - Doomhammer"] = "Tonkah LUI",
 		["Brooslee - Doomhammer"] = "Default",
 		["Nilrum - Doomhammer"] = "Tonkah LUI",
 		["Tareva - Doomhammer"] = "Tonkah LUI",
 		["Bahlar - Doomhammer"] = "Tonkah LUI",
-		["Dfbdeffbw - Doomhammer"] = "Tonkah LUI",
+		["Holyshnizzle - Doomhammer"] = "Tonkah LUI",
 	},
 	["profiles"] = {
 		["Default"] = {

@@ -1,7 +1,7 @@
 -- Mini Dragon(projecteurs@gmail.com)
 -- 夏一可
 -- Blizzard Entertainment
--- Last update: Dec 22 2016, 3:44 UTC@15569
+-- Last update: Feb 06 2017, 02:50 UTC@15833
 
 if GetLocale() ~= "zhCN" then return end
 local L
@@ -285,18 +285,18 @@ L:SetMiscLocalization({ --神坑
 	Male2		= "我听说那个密探已经来了，而且他很英俊。",
 	Male3		= "有个客人说她看见他和大魔导师一起走进了庄园。",
 	Male4		= "有个乐师说，他一直在打听这一带的消息。",
-	ShortSleave1= "我听说密探喜欢穿短袖服装，以免妨碍双臂的活动。",
-	ShortSleave2= "有人告诉我那个密探讨厌长袖的衣服。",
-	ShortSleave3= "我的一个朋友说，她看到了密探穿的衣服，是一件短袖上衣。",
-	ShortSleave4= "我听说那个密探喜欢清凉的空气，所以今晚没有穿长袖衣服。",
-	LongSleave1 = "我听说那个密探今天穿着长袖外套。",
-	LongSleave2 = "有人说，那个密探今晚穿了一件长袖的衣服。",
-	LongSleave3 = "上半夜的时候，我正巧瞥见那个密探穿着长袖衣服。",
-	LongSleave4 = "我的一个朋友说那个密探穿着长袖衣服。",
+	ShortSleeve1= "我听说密探喜欢穿短袖服装，以免妨碍双臂的活动。",
+	ShortSleeve2= "有人告诉我那个密探讨厌长袖的衣服。",
+	ShortSleeve3= "我的一个朋友说，她看到了密探穿的衣服，是一件短袖上衣。",
+	ShortSleeve4= "我听说那个密探喜欢清凉的空气，所以今晚没有穿长袖衣服。",
+	LongSleeve1 = "我听说那个密探今天穿着长袖外套。",
+	LongSleeve2 = "有人说，那个密探今晚穿了一件长袖的衣服。",
+	LongSleeve3 = "上半夜的时候，我正巧瞥见那个密探穿着长袖衣服。",
+	LongSleeve4 = "我的一个朋友说那个密探穿着长袖衣服。",
 	Potions1	= "我听说那个密探随身带着药水，这是为什么呢？",
 	Potions2	= "可别说是我告诉你的……那个密探伪装成了炼金师，腰带上挂着药水。",
 	Potions3	= "我敢肯定，那个密探的腰带上挂着药水。",
-	Potions4	= "PH",
+	Potions4	= "我听说那个密探买了一些药水……以防万一。",
 	NoPotions1	= "我听说那个密探根本没带任何药水。",
 	NoPotions2	= "有个乐师告诉我，她看到那个密探扔掉了身上的最后一瓶药水，已经没有药水了。",
 	Book1		= "我听说那个密探的腰带上，总是挂着一本写满机密的书。",
@@ -523,4 +523,36 @@ L:SetGeneralLocalization({
 
 L:SetMiscLocalization({
 	speedRun		=	"空气中弥漫着某种诡异的黑暗寒风……"
+})
+
+-----------------------
+-- <<<Cathedral of Eternal Night >>> --
+-----------------------
+-----------------------
+-- Agronox --
+-----------------------
+L= DBM:GetModLocalization(1905)
+
+-----------------------
+-- Trashbite the Scornful  --
+-----------------------
+L= DBM:GetModLocalization(1906)
+
+-----------------------
+-- Domatrax --
+-----------------------
+L= DBM:GetModLocalization(1904)
+
+-----------------------
+-- Mephistroth  --
+-----------------------
+L= DBM:GetModLocalization(1878)
+
+-----------------------
+--Cathedral of Eternal Night Trash
+-----------------------
+L = DBM:GetModLocalization("CoENTrash")
+
+L:SetGeneralLocalization({
+	name =	"永夜大教堂小怪"
 })

@@ -1,3 +1,90 @@
+Version 3.84
+
+
+Known issues:
+-- Limited support for Class Order Hall Bodyguards
+--   Bodyguards can be used in panels when set to target or focus
+--   Bodyguards have no unit ID so for now are only partially supported
+-- Incoming heal estimation reported is not even close to accurate
+--   Bug in Blizzard API UnitGetIncomingHeals() - returns bogus values
+-- Patch 7.1 disabled retrieval of unit facing and position in instances
+--   This was an intentional breaking change by Blizzard
+--   This breaks AOE Advice, Clusters and out-of-range direction arrow
+--   At this time there is no way to fix or renable these features
+
+
+Bugfixes:
+-- Fixed use of deprecated UnitMana/UnitManaMax APIs
+
+
+Improvements:
+-- TOC bump for patch 7.2
+
+
+--------------------------------------------------------------
+Version 3.83
+
+
+Known issues:
+-- Limited support for Class Order Hall Bodyguards
+--   Bodyguards can be used in panels when set to target or focus
+--   Bodyguards have no unit ID so for now are only partially supported
+-- Incoming heal estimation reported is not even close to accurate
+--   Bug in Blizzard API UnitGetIncomingHeals() - returns bogus values
+-- Patch 7.1 disabled retrieval of unit facing and position in instances
+--   This was an intentional breaking change by Blizzard
+--   This breaks AOE Advice, Clusters and out-of-range direction arrow
+--   At this time there is no way to fix or renable these features
+
+
+Bugfixes:
+-- Fixed spell trace tracking for periodic heals (eg. 'Healing Rain')
+-- Fixed debuff absorption tracking for Nighthold 'Time Release'
+
+
+Improvements:
+-- Added bouquet validator 'Statusbar: Mana % (Healer Only)'
+-- Added default bouquet 'Manabars: Mana (Healer Only)'
+-- Added more default custom debuffs for Nighthold raid encounters
+
+
+--------------------------------------------------------------
+Version 3.82
+
+
+Known issues:
+-- Limited support for Class Order Hall Bodyguards
+--   Bodyguards can be used in panels when set to target or focus
+--   Bodyguards have no unit ID so for now are only partially supported
+-- Incoming heal estimation reported is not even close to accurate
+--   Bug in Blizzard API UnitGetIncomingHeals() - returns bogus values
+-- Patch 7.1 disabled retrieval of unit facing and position in instances
+--   This was an intentional breaking change by Blizzard
+--   This breaks AOE Advice, Clusters and out-of-range direction arrow
+--   At this time there is no way to fix or renable these features
+
+
+Bugfixes:
+-- Updated default bouquet 'Paladin Beacon'
+-- Fixed resurrection smart casting while inside PvP instances
+
+
+Improvements:
+-- Added ability to track different spell casts on units
+--   See settings under 'VuhDo Options > General > Spell Trace'
+--   Useful for tracking which units are hit by AOE healing spells
+-- Added bouquet validator 'Icon: Spell Trace' 
+-- Added default bouquet 'Spell Trace'
+-- Added ability to track Holy Priest "Trail of Light"
+--   Enable under 'VuhDo Options > General > Spell Trace'
+-- Added bouquet validator 'Icon: Trail of Light'
+-- Added default bouquet 'Trail of Light'
+-- Added panel sort method 'Tank => MDPS => RDPS => Healer'
+-- Added default custom debuffs for Nighthold raid encounters
+-- Added debuff absorption tracking for Nighthold 'Time Release'
+
+
+--------------------------------------------------------------
 Version 3.81
 
 

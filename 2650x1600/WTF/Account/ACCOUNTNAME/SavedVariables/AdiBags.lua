@@ -27,16 +27,16 @@ AdiBagsDB = {
 						[140248] = "Consumable#Consumable",
 						[32506] = "Quest#Quest",
 						[31096] = "Equipment#Equipment",
-						[31095] = "Equipment#Equipment",
-						[31094] = "Equipment#Equipment",
-						[46110] = "Consumable#Consumable",
+						[42421] = "Miscellaneous#Tools",
+						[31100] = "Equipment#Equipment",
+						[45645] = "Equipment#Equipment",
 						[45798] = "Miscellaneous#Miscellaneous",
 						[140222] = "Consumable#Consumable",
-						[45645] = "Equipment#Equipment",
+						[46110] = "Consumable#Consumable",
 						[9149] = "Miscellaneous#Tools",
 						[141350] = "Consumable#Consumable",
-						[31100] = "Equipment#Equipment",
-						[42421] = "Miscellaneous#Tools",
+						[31094] = "Equipment#Equipment",
+						[31095] = "Equipment#Equipment",
 					},
 				},
 			},
@@ -68,14 +68,12 @@ AdiBagsDB = {
 		},
 		["Legion"] = {
 		},
-		["Equipment"] = {
+		["MoneyFrame"] = {
 			["profiles"] = {
 				["Tonkah LUI"] = {
-					["dispatchRule"] = "one",
+					["small"] = true,
 				},
 			},
-		},
-		["ItemSets"] = {
 		},
 		["CurrencyFrame"] = {
 			["profiles"] = {
@@ -98,6 +96,8 @@ AdiBagsDB = {
 		},
 		["DataSource"] = {
 		},
+		["ItemSets"] = {
+		},
 		["Junk"] = {
 			["profiles"] = {
 				["Default"] = {
@@ -112,19 +112,19 @@ AdiBagsDB = {
 				["Tonkah LUI"] = {
 					["exclude"] = {
 						[140743] = true,
-						[140745] = true,
-						[140744] = true,
-						[140746] = true,
-						[140731] = true,
 						[32427] = true,
+						[140744] = true,
+						[140731] = true,
+						[140745] = true,
+						[140746] = true,
 					},
 				},
 			},
 		},
-		["MoneyFrame"] = {
+		["Equipment"] = {
 			["profiles"] = {
 				["Tonkah LUI"] = {
-					["small"] = true,
+					["dispatchRule"] = "one",
 				},
 			},
 		},
@@ -139,7 +139,7 @@ AdiBagsDB = {
 	["profileKeys"] = {
 		["Marmit - Doomhammer"] = "Tonkah LUI",
 		["Tareva - Doomhammer"] = "Tonkah LUI",
-		["Eamesey - Doomhammer"] = "Default",
+		["Bartholamue - Doomhammer"] = "Tonkah LUI",
 		["Holyshnizzle - Doomhammer"] = "Tonkah LUI",
 		["Alfalpha - Doomhammer"] = "Tonkah LUI",
 		["Taunkah - Doomhammer"] = "Tonkah LUI",
@@ -147,21 +147,22 @@ AdiBagsDB = {
 		["Nilrum - Doomhammer"] = "Tonkah LUI",
 		["Dfbdeffbw - Doomhammer"] = "Default",
 		["Bahlar - Doomhammer"] = "Tonkah LUI",
-		["Bartholamue - Doomhammer"] = "Tonkah LUI",
+		["Eamesey - Doomhammer"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
 			["maxHeight"] = 0.9,
-			["sectionFont"] = {
-				["name"] = "Prototype",
-			},
-			["scale"] = 1,
 			["skin"] = {
 				["border"] = "Stripped_hard",
 			},
 			["columnWidth"] = {
 				["Backpack"] = 10,
 			},
+			["virtualStacks"] = {
+				["others"] = true,
+				["stackable"] = true,
+			},
+			["scale"] = 1,
 			["bagFont"] = {
 				["name"] = "Prototype",
 			},
@@ -171,9 +172,8 @@ AdiBagsDB = {
 					["yOffset"] = 35.0001449584961,
 				},
 			},
-			["virtualStacks"] = {
-				["others"] = true,
-				["stackable"] = true,
+			["sectionFont"] = {
+				["name"] = "Prototype",
 			},
 		},
 		["Tonkah LUI"] = {
@@ -182,7 +182,10 @@ AdiBagsDB = {
 				["stackable"] = true,
 				["incomplete"] = true,
 			},
-			["scale"] = 1,
+			["columnWidth"] = {
+				["Bank"] = 20,
+				["Backpack"] = 10,
+			},
 			["maxHeight"] = 0.9,
 			["skin"] = {
 				["ReagentBankColor"] = {
@@ -202,13 +205,13 @@ AdiBagsDB = {
 					["xOffset"] = -21,
 					["yOffset"] = 35.0001449584961,
 				},
-				["Backpack"] = {
-					["xOffset"] = -22,
-					["yOffset"] = 35.9998741149902,
-				},
 				["Bank"] = {
 					["xOffset"] = 106.376411437988,
 					["yOffset"] = -105.5595703125,
+				},
+				["Backpack"] = {
+					["xOffset"] = -22,
+					["yOffset"] = 35.9998741149902,
 				},
 			},
 			["filterPriorities"] = {
@@ -221,10 +224,7 @@ AdiBagsDB = {
 			},
 			["compactLayout"] = true,
 			["hideAnchor"] = true,
-			["columnWidth"] = {
-				["Backpack"] = 10,
-				["Bank"] = 20,
-			},
+			["scale"] = 1,
 			["positionMode"] = "manual",
 			["qualityOpacity"] = 0.5,
 		},

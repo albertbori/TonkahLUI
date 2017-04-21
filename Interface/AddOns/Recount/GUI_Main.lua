@@ -6,7 +6,7 @@ local AceLocale = LibStub("AceLocale-3.0")
 local L = AceLocale:GetLocale("Recount")
 local LD = LibStub("LibDropdown-1.0")
 
-local revision = tonumber(string.sub("$Revision: 1363 $", 12, -3))
+local revision = tonumber(string.sub("$Revision: 1423 $", 12, -3))
 if Recount.Version < revision then
 	Recount.Version = revision
 end
@@ -49,10 +49,27 @@ local dbCombatants
 
 -- Based on cck's numeric Short code in DogTag-3.0.
 function Recount.ShortNumber(value)
-	if value >= 10000000 or value <= -10000000 then
-		return ("%.2fm"):format(value / 1000000)
+	if not value then
+		return ""
+	end
+	if value >= 100000000000000 or value <= -100000000000000 then
+		return ("%.3fT"):format(value / 1000000000000)
+	elseif value >= 10000000000000 or value <= -10000000000000 then
+		return ("%.3fT"):format(value / 1000000000000)
+	elseif value >= 1000000000000 or value <= -1000000000000 then
+		return ("%.3fT"):format(value / 1000000000000)
+	elseif value >= 100000000000 or value <= -100000000000 then
+		return ("%.3fG"):format(value / 1000000000)
+	elseif value >= 10000000000 or value <= -10000000000 then
+		return ("%.3fG"):format(value / 1000000000)
+	elseif value >= 1000000000 or value <= -1000000000 then
+		return ("%.3fG"):format(value / 1000000000)
+	elseif value >= 100000000 or value <= -100000000 then
+		return ("%.2fM"):format(value / 1000000)
+	elseif value >= 10000000 or value <= -10000000 then
+		return ("%.2fM"):format(value / 1000000)
 	elseif value >= 1000000 or value <= -1000000 then
-		return ("%.2fm"):format(value / 1000000)
+		return ("%.2fM"):format(value / 1000000)
 	elseif value >= 100000 or value <= -100000 then
 		return ("%.1fk"):format(value / 1000)
 	elseif value >= 10000 or value <= -10000 then
@@ -63,14 +80,20 @@ function Recount.ShortNumber(value)
 end
 
 -- This is comma_value() by Richard Warburton from: http://lua-users.org/wiki/FormattingNumbers with slight modifications (and a bug fix)
-function Recount.CommaNumber(n)
-	n = ("%.0f"):format(math_floor(n + 0.5))
-	local left, num, right = string_match(n, "^([^%d]*%d)(%d+)(.-)$")
-	return left and left..(num:reverse():gsub("(%d%d%d)", "%1,"):reverse()) or n --..right
+function Recount.CommaNumber(value)
+	if not value then
+		return ""
+	end
+	value = ("%.0f"):format(math_floor(value + 0.5))
+	local left, num, right = string_match(value, "^([^%d]*%d)(%d+)(.-)$")
+	return left and left..(num:reverse():gsub("(%d%d%d)", "%1,"):reverse()) or value --..right
 end
 
 local NumFormats = {
 	function(value)
+		if not value then
+			return ""
+		end
 		return ("%.0f"):format(math_floor(value + 0.5))
 	end,
 	Recount.CommaNumber,
@@ -769,7 +792,11 @@ function Recount:CreateMainWindow()
 	theFrame.ResetButton:SetHeight(16)
 	theFrame.ResetButton:SetPoint("RIGHT", theFrame.LeftButton, "LEFT", 0, 0)
 	theFrame.ResetButton:SetScript("OnClick", function()
-		Recount:ShowReset()
+		if IsAltKeyDown() then
+			Recount:ResetData()
+		else
+			Recount:ShowReset()
+		end
 	end)
 	theFrame.ResetButton:SetFrameLevel(theFrame.ResetButton:GetFrameLevel() + 1)
 

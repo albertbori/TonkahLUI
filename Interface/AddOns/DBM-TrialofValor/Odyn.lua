@@ -1,11 +1,12 @@
 local mod	= DBM:NewMod(1819, "DBM-TrialofValor", nil, 861)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 15621 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 16089 $"):sub(12, -3))
 mod:SetCreatureID(114263, 114361, 114360)--114263 Odyn, 114361 Hymdall, 114360 Hyrja 
 mod:SetEncounterID(1958)
 mod:SetZone()
-mod:SetBossHPInfoToHighest()
+--mod:SetBossHPInfoToHighest()
+mod:SetMainBossID(114263)
 mod:SetUsedIcons(1)
 mod:SetHotfixNoticeRev(15581)
 mod.respawnTime = 29
@@ -15,9 +16,9 @@ mod:RegisterCombat("combat")
 mod:RegisterEventsInCombat(
 	"SPELL_CAST_START 228003 228012 228171 231013",
 	"SPELL_CAST_SUCCESS 228012 228028 228162 231350 227629",
-	"SPELL_AURA_APPLIED 228029 227807 227959 227626 228918 227490 227491 227498 227499 227500 231311 231342 231344 231345 231346 229579 229580 229581 229582 229583",
+	"SPELL_AURA_APPLIED 228029 227807 227959 227626 228918 227490 227491 227498 227499 227500 231311 231342 231344 231345 231346 229579 229580 229581 229582 229583 229584",
 	"SPELL_AURA_APPLIED_DOSE 227626",
-	"SPELL_AURA_REMOVED 228029 227807 227959 227490 227491 227498 227499 227500 231311 231342 231344 231345 231346",
+	"SPELL_AURA_REMOVED 228029 227807 227959 227490 227491 227498 227499 227500 231311 231342 231344 231345 231346 229584",
 	"SPELL_PERIODIC_DAMAGE 228007 228683",
 	"SPELL_PERIODIC_MISSED 228007 228683",
 	"CHAT_MSG_RAID_BOSS_EMOTE",
@@ -123,6 +124,7 @@ local voiceRunicBrand				= mod:NewVoice(231297)--mmX (will be changed to mmc whe
 mod:AddSetIconOption("SetIconOnShield", 228270, true)
 mod:AddInfoFrameOption(227503, true)
 mod:AddRangeFrameOption("5/8/15")
+mod:AddNamePlateOption("NPAuraOnBranded", 227503, true)
 
 mod.vb.phase = 1
 mod.vb.hornCasting = false
@@ -132,6 +134,7 @@ mod.vb.expelLightCast = 0
 mod.vb.dancingBladeCast = 0
 mod.vb.brandActive = false
 local drawTable = {}
+local playerProtected = false
 --Mythic Timers
 local dancingBladeTimers = {15.0, 20.1, 19.9, 25.0, 20.0}
 local hornTimers = {8.1, 22.0, 20.0, 35.0}
@@ -169,41 +172,43 @@ local updateInfoFrame
 do
 	local protected = GetSpellInfo(229584)
 	local lines = {}
+	local sortedLines = {}
+	local function addLine(key, value)
+		-- sort by insertion order
+		lines[key] = value
+		sortedLines[#sortedLines + 1] = key
+	end
 	updateInfoFrame = function()
 		local total = 0
 		table.wipe(lines)
+		table.wipe(sortedLines)
 		if drawTable[227490] then--Purple K (NE)
-			total = total + 1
-			lines[drawTable[227490]] = "|TInterface\\Icons\\Boss_OdunRunes_Purple.blp:12:12|tNE|TInterface\\Icons\\Boss_OdunRunes_Purple.blp:12:12|t"
+			addLine(drawTable[227490], "|TInterface\\Icons\\Boss_OdunRunes_Purple.blp:12:12|tNE|TInterface\\Icons\\Boss_OdunRunes_Purple.blp:12:12|t")
 		end
 		if drawTable[227491] then--Orange N (SE)
-			total = total + 1
-			lines[drawTable[227491]] = "|TInterface\\Icons\\Boss_OdunRunes_Orange.blp:12:12|tSE|TInterface\\Icons\\Boss_OdunRunes_Orange.blp:12:12|t"
+			addLine(drawTable[227491], "|TInterface\\Icons\\Boss_OdunRunes_Orange.blp:12:12|tSE|TInterface\\Icons\\Boss_OdunRunes_Orange.blp:12:12|t")
 		end
 		if drawTable[227498] then--Yellow H (SW)
-			total = total + 1
-			lines[drawTable[227498]] = "|TInterface\\Icons\\Boss_OdunRunes_Yellow.blp:12:12|tSW|TInterface\\Icons\\Boss_OdunRunes_Yellow.blp:12:12|t"
+			addLine(drawTable[227498], "|TInterface\\Icons\\Boss_OdunRunes_Yellow.blp:12:12|tSW|TInterface\\Icons\\Boss_OdunRunes_Yellow.blp:12:12|t")
 		end
 		if drawTable[227499] then--Blue fishies (NW)
-			total = total + 1
-			lines[drawTable[227499]] = "|TInterface\\Icons\\Boss_OdunRunes_Blue.blp:12:12|tNW|TInterface\\Icons\\Boss_OdunRunes_Blue.blp:12:12|t"
+			addLine(drawTable[227499], "|TInterface\\Icons\\Boss_OdunRunes_Blue.blp:12:12|tNW|TInterface\\Icons\\Boss_OdunRunes_Blue.blp:12:12|t")
 		end
 		if drawTable[227500] then--Green box (N)
-			total = total + 1
-			lines[drawTable[227500]] = "|TInterface\\Icons\\Boss_OdunRunes_Green.blp:12:12|tN|TInterface\\Icons\\Boss_OdunRunes_Green.blp:12:12|t"
+			addLine(drawTable[227500], "|TInterface\\Icons\\Boss_OdunRunes_Green.blp:12:12|tN|TInterface\\Icons\\Boss_OdunRunes_Green.blp:12:12|t")
 		end
 		if mod:IsMythic() then
-			if UnitDebuff("player", protected) then
-				lines[protected] = "|cFF088A08"..YES.."|r"
+			if playerProtected then
+				addLine(protected, "|cFF088A08"..YES.."|r")
 			else
-				lines[protected] = "|cffff0000"..NO.."|r"
+				addLine(protected, "|cffff0000"..NO.."|r")
 			end
 		else
-			if total == 0 then
+			if #sortedLines == 0 then
 				DBM.InfoFrame:Hide()
 			end
 		end
-		return lines
+		return lines, sortedLines
 	end
 end
 
@@ -246,6 +251,9 @@ function mod:OnCombatStart(delay)
 			countdownDrawPower:Start(45-delay)
 		end
 	end
+	if self.Options.NPAuraOnBranded then
+		DBM:FireEvent("BossMod_EnableHostileNameplates")
+	end
 end
 
 function mod:OnCombatEnd()
@@ -254,6 +262,9 @@ function mod:OnCombatEnd()
 	end
 	if self.Options.InfoFrame then
 		DBM.InfoFrame:Hide()
+	end
+	if self.Options.NPAuraOnBranded then
+		DBM.Nameplate:Hide(false, nil, nil, nil, true, true)
 	end
 end
 
@@ -407,6 +418,9 @@ function mod:SPELL_AURA_APPLIED(args)
 		end
 	elseif spellId == 227490 or spellId == 227491 or spellId == 227498 or spellId == 227499 or spellId == 227500 then--Branded (Draw Power Runes)
 		drawTable[spellId] = args.destName
+		if self.Options.InfoFrame then
+			DBM.InfoFrame:Update()
+		end
 		if spellId == 227490 and args:IsPlayer() then--Purple K (NE)
 			specWarnBranded:Show("|TInterface\\Icons\\Boss_OdunRunes_Purple.blp:12:12|tNE|TInterface\\Icons\\Boss_OdunRunes_Purple.blp:12:12|t")
 			voiceBranded:Play("mm3")
@@ -430,7 +444,10 @@ function mod:SPELL_AURA_APPLIED(args)
 		end
 		if self.Options.InfoFrame and not DBM.InfoFrame:IsShown() then
 			DBM.InfoFrame:SetHeader(args.spellName)
-			DBM.InfoFrame:Show(6, "function", updateInfoFrame)
+			DBM.InfoFrame:Show(6, "function", updateInfoFrame, false, false, true)
+		end
+		if self.Options.NPAuraOnBranded then
+			DBM.Nameplate:Show(true, args.sourceGUID, spellId)
 		end
 	elseif spellId == 229579 or spellId == 229580 or spellId == 229581 or spellId == 229582 or spellId == 229583 then--Branded (Mythic Phase 1/2 non fixate rune debuffs)
 		if spellId == 229579 and args:IsPlayer() then--Purple K (NE)
@@ -475,6 +492,11 @@ function mod:SPELL_AURA_APPLIED(args)
 			end
 			updateRangeFrame(self)
 		end
+	elseif spellId == 229584 and args:IsPlayer() then
+		playerProtected = true
+		if self.Options.InfoFrame then
+			DBM.InfoFrame:Update()
+		end
 	end
 end
 mod.SPELL_AURA_APPLIED_DOSE = mod.SPELL_AURA_APPLIED
@@ -494,9 +516,20 @@ function mod:SPELL_AURA_REMOVED(args)
 		countdownDrawPower:Cancel()
 	elseif spellId == 227490 or spellId == 227491 or spellId == 227498 or spellId == 227499 or spellId == 227500 then--Branded (Draw Power Runes)
 		drawTable[spellId] = nil
+		if self.Options.InfoFrame then
+			DBM.InfoFrame:Update()
+		end
+		if self.Options.NPAuraOnBranded then
+			DBM.Nameplate:Hide(true, args.sourceGUID, spellId)
+		end
 	elseif spellId == 231311 or spellId == 231342 or spellId == 231344 or spellId == 231345 or spellId == 231346 then--Branded (Draw Power Runes)
 		if args:IsPlayer() then
 			playerDebuff = nil
+		end
+	elseif spellId == 229584 and args:IsPlayer() then
+		playerProtected = false
+		if self.Options.InfoFrame then
+			DBM.InfoFrame:Update()
 		end
 	end
 end

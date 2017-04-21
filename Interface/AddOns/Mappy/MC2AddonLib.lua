@@ -1,10 +1,9 @@
+----------------------------------------
 local AddonName, Addon = ...
-
 Addon.AddonPath = "Interface\\Addons\\"..AddonName.."\\"
+----------------------------------------
 
 function Addon:new(methodTable, ...)
-	assert(type(methodTable) == "table", "table expected")
-	
 	local object
 	
 	if methodTable.New then
@@ -13,54 +12,36 @@ function Addon:new(methodTable, ...)
 		object = {}
 	end
 	
-	object.Inherit = self.Inherit
-	object.InheritOver = self.InheritOver
-	
-	object:InheritOver(methodTable, ...)
+	self:initObject(object, methodTable, ...)
 	
 	return object
 end
 
-function Addon:inheritOver(methodTable, ...)
-	for key, value in pairs(methodTable) do
-		if self[key] then
-			if not self.Inherited then
-				self.Inherited = {}
-			end
-			
-			self.Inherited[key] = self[key]
-		end
+function Addon:initObject(object, class, ...)
+	assert(type(class) == "table", "table expected")
+	
+	local methodTable = class
+	if methodTable._class_meta then
+		methodTable = methodTable._class_meta
+	end
+	
+	if methodTable.__index then
+		setmetatable(object, methodTable)
 		
-		self[key] = value
-	end
-	
-	if methodTable.construct then
-		methodTable.construct(self, ...)
-	elseif methodTable.Construct then
-		methodTable.Construct(self, ...)
-	end
-end
-
-function Addon:inherit(methodTable, ...)
-	for key, value in pairs(methodTable) do
-		if self[key] then
-			if not self.Inherited then
-				self.Inherited = {}
-			end
-			
-			if not self.Inherited[key] then
-				self.Inherited[key] = value
-			end
-		else
-			self[key] = value
+		if object.construct then
+			object:construct(...)
+		elseif object.Construct then
+			object:Construct(...)
 		end
+	else
+		for k, v in pairs(self.Object) do
+			object[k] = v
+		end
+	
+		object:inheritOver(methodTable, ...)
 	end
 	
-	if methodTable.construct then
-		methodTable.construct(self, ...)
-	elseif methodTable.Construct then
-		methodTable.Construct(self, ...)
-	end
+	return object
 end
 
 function Addon:duplicateTable(table, recurse, destTable)
@@ -68,31 +49,31 @@ function Addon:duplicateTable(table, recurse, destTable)
 		return nil
 	end
 	
-	local vTable
+	local result
 	
 	if destTable then
 		if type(destTable) ~= "table" then
 			error("table expected for destTable")
 		end
 		
-		vTable = destTable
+		result = destTable
 	else
-		vTable = {}
+		result = {}
 	end
 	
 	if recurse then
 		for key, value in pairs(table) do
 			if type(value) == "table" then
-				vTable[key] = self:duplicateTable(value, true)
+				result[key] = self:duplicateTable(value, true)
 			else
-				vTable[key] = value
+				result[key] = value
 			end
 		end
 	else
-		self:copyTable(vTable, table)
+		self:copyTable(result, table)
 	end
 	
-	return vTable
+	return result
 end
 
 function Addon:copyTable(destTable, table)
@@ -124,12 +105,78 @@ function Addon:hookScript(frame, scriptID, func)
 	end
 end
 
+function Addon:newClass(inherits)
+	local class = {}
+	setmetatable(class, inherits or Addon.ObjectMetaTable)
+	
+	local classMeta = {
+		__index = class
+	}
+	
+	class._class_meta = classMeta
+	
+	return class
+end
+
 -- Old name compatibility
 Addon.New = Addon.new
-Addon.Inherit = Addon.inherit
-Addon.InheritOver  = Addon.inheritOver
 Addon.DuplicateTable  = Addon.duplicateTable
 Addon.CopyTable  = Addon.copyTable
 Addon.EraseTable  = Addon.eraseTable
 Addon.RecycleTable  = Addon.recycleTable
 Addon.HookScript  = Addon.hookScript
+
+----------------------------------------
+Addon.Object = {}
+Addon.ObjectMetaTable = {__index = Addon.Object}
+----------------------------------------
+
+function Addon.Object:inheritOver(methodTable, ...)
+	for key, value in pairs(methodTable) do
+		if self[key] then
+			if not self.Inherited then
+				self.Inherited = {}
+			end
+			
+			self.Inherited[key] = self[key]
+		end
+		
+		self[key] = value
+	end
+	
+	if methodTable.construct then
+		methodTable.construct(self, ...)
+	elseif methodTable.Construct then
+		methodTable.Construct(self, ...)
+	end
+end
+
+function Addon.Object:inherit(methodTable, ...)
+	for key, value in pairs(methodTable) do
+		if self[key] then
+			if not self.Inherited then
+				self.Inherited = {}
+			end
+			
+			if not self.Inherited[key] then
+				self.Inherited[key] = value
+			end
+		else
+			self[key] = value
+		end
+	end
+	
+	if methodTable.construct then
+		methodTable.construct(self, ...)
+	elseif methodTable.Construct then
+		methodTable.Construct(self, ...)
+	end
+end
+
+Addon.Object.Inherit = Addon.Object.inherit
+Addon.Object.InheritOver = Addon.Object.inheritOver
+
+Addon.Inherit = Addon.Object.Inherit
+Addon.InheritOver = Addon.Object.InheritOver
+Addon.inherit = Addon.Object.inherit
+Addon.inheritOver = Addon.Object.inheritOver

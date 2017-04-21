@@ -327,6 +327,43 @@ local VUHDO_RAID_SORTERS = {
 					end
 				end
 			end,
+
+	[VUHDO_SORT_TA_MD_RD_HL]
+		= function(aUnitId, anotherUnitId)
+				if sIsPlayerFirst and aUnitId == "player" then return true;
+				elseif (sIsPlayerFirst and anotherUnitId == "player") then return false;
+				else
+					if VUHDO_PANEL_SETUP[sPanelNum]["MODEL"]["isReverse"] then
+						aUnitId, anotherUnitId = anotherUnitId, aUnitId;
+					end
+
+					tInfo1, tInfo2 = VUHDO_RAID[aUnitId] or sEmpty, VUHDO_RAID[anotherUnitId] or sEmpty;
+					tRole1, tRole2 = tInfo1["role"], tInfo2["role"];
+
+					if tRole1 == VUHDO_ID_MELEE_TANK and tRole2 ~= VUHDO_ID_MELEE_TANK then
+						return true;
+					elseif tRole2 == VUHDO_ID_MELEE_TANK and tRole1 ~= VUHDO_ID_MELEE_TANK then
+						return false;
+					elseif tRole2 == VUHDO_ID_RANGED_HEAL and tRole1 ~= VUHDO_ID_RANGED_HEAL then
+						return true;
+					elseif tRole1 == VUHDO_ID_RANGED_HEAL and tRole2 ~= VUHDO_ID_RANGED_HEAL then
+						return false;
+					elseif tRole1 == VUHDO_ID_MELEE_DAMAGE and 
+						(tRole2 == VUHDO_ID_RANGED_DAMAGE or tRole2 == VUHDO_ID_RANGED_HEAL) then
+						return true;
+					elseif tRole2 == VUHDO_ID_MELEE_DAMAGE and
+						(tRole1 == VUHDO_ID_RANGED_DAMAGE or tRole1 == VUHDO_ID_RANGED_HEAL) then
+						return false;
+					elseif tRole1 == VUHDO_ID_RANGED_DAMAGE and tRole2 == VUHDO_ID_RANGED_HEAL then
+						return true;
+					elseif tRole2 == VUHDO_ID_RANGED_DAMAGE and tRole1 == VUHDO_ID_RANGED_HEAL then
+						return false;
+					else
+						return (tInfo1["name"] or "") < (tInfo2["name"] or "");
+					end
+				end
+			end,
+
 };
 
 

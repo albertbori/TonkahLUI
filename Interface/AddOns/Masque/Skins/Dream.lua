@@ -3,7 +3,7 @@
 	please see the included License.txt file.
 
 	* File...: Skins\Dream.lua
-	* Date...: 2016-07-26T01:18:37Z
+	* Date...: 2016-07-26T6:18:37Z
 	* Hash...: 5979f17
 	* Author.: StormFX, JJSheets
 
@@ -13,7 +13,7 @@ local _, Core = ...
 
 Core:AddSkin("Dream", {
 	Author = "JJSheets, StormFX",
-	Version = "7.1.0",
+	Version = "7.2.0",
 	Masque_Version = 60201,
 	Shape = "Square",
 	Backdrop = {

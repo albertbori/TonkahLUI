@@ -3,7 +3,7 @@
 	please see the included License.txt file.
 
 	* File...: Core\Groups.lua
-	* Date...: 2015-12-16T19:25:16Z
+	* Date...: 2015-12-17T1:25:16Z
 	* Hash...: 1c8957d
 	* Author.: StormFX, JJSheets
 

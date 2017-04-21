@@ -143,8 +143,9 @@ DBMTheEye_AllSavedVars = {
 		},
 	},
 	["Taunkah-Doomhammer"] = {
+		["talent2"] = "Fury",
 		["VoidReaver"] = {
-			[3] = {
+			[2] = {
 				["Enabled"] = true,
 				["Timer34162cd"] = true,
 				["SpecWarn34172moveSWNote"] = true,
@@ -156,14 +157,14 @@ DBMTheEye_AllSavedVars = {
 				["announce25778spell"] = true,
 				["timer_berserk"] = true,
 				["Timer25778cd2TColor"] = 5,
-				["Timer25778cd2"] = true,
+				["Timer25778cd2"] = false,
 				["SpecWarn34172move"] = true,
 				["Yell34172"] = true,
 				["announce34162spell"] = true,
 			},
 		},
 		["KaelThas"] = {
-			[3] = {
+			[2] = {
 				["Timer39427cdTColor"] = 0,
 				["Timer36815cd"] = true,
 				["TimerRebirthTColor"] = 1,
@@ -209,7 +210,7 @@ DBMTheEye_AllSavedVars = {
 				["SpecWarn35859stack"] = true,
 				["SpecWarnEgg"] = true,
 				["WarnEgg"] = true,
-				["SpecWarn37027you"] = true,
+				["SpecWarn37027you"] = false,
 				["SpecWarnGazeSWNote"] = true,
 				["SpecWarn36819interrupt"] = true,
 				["SpecWarn36815spellSWNote"] = true,
@@ -227,7 +228,7 @@ DBMTheEye_AllSavedVars = {
 			},
 		},
 		["Solarian"] = {
-			[3] = {
+			[2] = {
 				["timer_berserkTColor"] = 0,
 				["SpecWarn42783you"] = true,
 				["HealthFrame"] = false,
@@ -255,9 +256,8 @@ DBMTheEye_AllSavedVars = {
 				["TimerAgent"] = true,
 			},
 		},
-		["talent3"] = "Protection",
 		["Alar"] = {
-			[3] = {
+			[2] = {
 				["timer_berserkTColor"] = 0,
 				["SpecWarn35383moveSWNote"] = true,
 				["announceother35410target"] = true,
@@ -271,7 +271,7 @@ DBMTheEye_AllSavedVars = {
 				["SpecWarn34229spellSWSound"] = 1,
 				["Enabled"] = true,
 				["announce1phase"] = true,
-				["Timer35410target2"] = true,
+				["Timer35410target2"] = false,
 				["SpecWarn35383move"] = true,
 				["Timer35181cdTColor"] = 2,
 				["SpecWarn34229spell"] = true,

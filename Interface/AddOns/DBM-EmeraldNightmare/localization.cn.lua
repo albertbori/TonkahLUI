@@ -43,18 +43,6 @@ L:SetWarningLocalization({
 	specWarnWebofPain	= "你和 >%s< 相连!"--Only this needs localizing
 })
 
-L:SetOptionLocalization({
-	WebConfiguration	= "设置痛苦之网的箭头及HUD选项",
-	Disabled			= "关闭",
-	Arrow				= "只使用传统的箭头",
-	HudSelf				= "只对你使用HUD连线",
-	HudAll				= "对所有相连目标使用HUD连线"
-})
-
-L:SetMiscLocalization({
-	MapMessage			= "注意: 本mod使用的箭头及HUD能在 /DBM 配置. 7.1后该功能被取缔."
-})
-
 ---------------------------
 -- Ursoc --
 ---------------------------

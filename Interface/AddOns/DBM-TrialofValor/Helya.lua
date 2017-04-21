@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(1829, "DBM-TrialofValor", nil, 861)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 15595 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 15965 $"):sub(12, -3))
 mod:SetCreatureID(114537)
 mod:SetEncounterID(2008)
 mod:SetZone()
@@ -18,7 +18,6 @@ mod:RegisterEventsInCombat(
 	"SPELL_AURA_REMOVED 193367 229119 230267 228300 228054",
 	"SPELL_PERIODIC_DAMAGE 227998",
 	"SPELL_PERIODIC_MISSED 227998",
-	"SPELL_INTERRUPT",
 	"UNIT_DIED",
 	"INSTANCE_ENCOUNTER_ENGAGE_UNIT",
 	"RAID_BOSS_EMOTE",
@@ -55,7 +54,7 @@ local warnOrbOfCorrosion			= mod:NewTargetAnnounce(230267, 3)
 --Stage One: Low Tide
 local specWarnOrbOfCorruption		= mod:NewSpecialWarningYou(229119, nil, nil, nil, 1, 5)
 local yellOrbOfCorruption			= mod:NewPosYell(229119)
-local specWarnTaintofSea			= mod:NewSpecialWarningMoveAway(228088, nil, nil, nil, 1, 2)
+local specWarnTaintofSea			= mod:NewSpecialWarningDodge(228088, nil, nil, nil, 1, 2)
 local specWarnBilewaterBreath		= mod:NewSpecialWarningCount(227967, nil, nil, nil, 2, 2)
 local specWarnBilewaterRedox		= mod:NewSpecialWarningTaunt(227982, nil, nil, nil, 1, 2)
 local specWarnBilewaterCorrosion	= mod:NewSpecialWarningMove(227998, nil, nil, nil, 1, 2)
@@ -99,8 +98,6 @@ local timerFetidRotCD				= mod:NewCDTimer(13, 193367, nil, nil, nil, 3)
 ----Night Watch Mariner
 local timerLanternofDarknessCD		= mod:NewNextTimer(25, 228619, nil, nil, nil, 2, nil, DBM_CORE_DEADLY_ICON)
 local timerGiveNoQuarterCD			= mod:NewNextTimer(6, 228633, nil, nil, nil, 3)
-----Mythic Add
-local timerMistInfusion				= mod:NewCastTimer(7, 228854, nil, nil, nil, 4, nil, DBM_CORE_INTERRUPT_ICON)
 --Stage Three: Helheim's Last Stand
 mod:AddTimerLine(SCENARIO_STAGE:format(3))
 local timerCorruptedBreathCD		= mod:NewCDCountTimer(40, 228565, 21131, nil, nil, 5, nil, DBM_CORE_TANK_ICON)
@@ -116,7 +113,7 @@ local countdownOozeExplosions		= mod:NewCountdown(20.5, 227992)
 
 --Stage One: Low Tide
 local voiceOrbofCorruption			= mod:NewVoice(229119)--orbrun
-local voiceTaintOfSea				= mod:NewVoice(228088)--scatter?runout?
+local voiceTaintOfSea				= mod:NewVoice(228088)--watchstep
 local voiceBilewaterBreath			= mod:NewVoice(227967)--breathsoon
 local voiceBilewaterRedox			= mod:NewVoice(227982)--tauntboss
 local voiceBilewaterCorrosion		= mod:NewVoice(227998)--runaway
@@ -265,7 +262,6 @@ function mod:SPELL_CAST_START(args)
 		if self:AntiSpam(0.5, 5) then--Combine two cast at same time, but if at least a second apart separate them
 			warnMistInfusion:Show()
 		end
-		timerMistInfusion:Start(nil, args.sourceGUID)
 	elseif spellId == 227903 then
 		self.vb.orbCount = self.vb.orbCount + 1
 		--Odd orbs are ranged and evens are melee
@@ -407,10 +403,6 @@ function mod:SPELL_AURA_APPLIED(args)
 		warnDarkHatred:CombinedShow(0.3, args.destName)
 	elseif spellId == 228054 then
 		warnTaintOfSea:CombinedShow(0.3, args.destName)
-		if args:IsPlayer() then
-			specWarnTaintofSea:Show()
-			voiceTaintOfSea:Play("scatter")
-		end
 		if self.Options.SetIconOnTaint then
 			self:SetSortedIcon(0.5, args.destName, 4, 5)
 		end
@@ -475,6 +467,10 @@ function mod:SPELL_AURA_REMOVED(args)
 			end
 		end
 	elseif spellId == 228054 then
+		if args:IsPlayer() then
+			specWarnTaintofSea:Show()
+			voiceTaintOfSea:Play("watchstep")
+		end
 		if self.Options.SetIconOnTaint then
 			self:SetIcon(args.destName, 0)
 		end
@@ -489,12 +485,6 @@ function mod:SPELL_PERIODIC_DAMAGE(_, _, _, _, destGUID, _, _, _, spellId)
 end
 mod.SPELL_PERIODIC_MISSED = mod.SPELL_PERIODIC_DAMAGE
 
-function mod:SPELL_INTERRUPT(args)
-	if type(args.extraSpellId) == "number" and args.extraSpellId == 228854 then
-		timerMistInfusion:Stop(args.destGUID)
-	end
-end
-
 function mod:UNIT_DIED(args)
 	local cid = self:GetCIDFromGUID(args.destGUID)
 	if cid == 114709 then--GrimeLord
@@ -504,8 +494,6 @@ function mod:UNIT_DIED(args)
 	elseif cid == 114809 then--Night Watch Mariner
 		timerLanternofDarknessCD:Stop(args.destGUID)
 		timerGiveNoQuarterCD:Stop(args.destGUID)
-	elseif cid == 116335 then--Helarjar Mistwatcher
-		timerMistInfusion:Stop(args.destGUID)
 	end
 end
 

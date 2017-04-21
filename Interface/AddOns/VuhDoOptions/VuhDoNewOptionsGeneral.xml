@@ -178,6 +178,23 @@
 						</Scripts>
 					</CheckButton>
 
+					<CheckButton name="$parentSpellTraceRadioButton" text="VUHDO_I18N_SPELL_TRACE" inherits="VuhDoTabRadioButtonTemplate">
+						<Anchors>
+							<Anchor point="TOPLEFT">
+								<Offset>
+									<AbsDimension x="3" y="-288" />
+								</Offset>
+							</Anchor>
+						</Anchors>
+						<Scripts>
+							<OnLoad>
+								self.tabPanel = "VuhDoNewOptionsGeneralSpellTrace";
+								VUHDO_lnfCheckButtonOnLoad(self);
+								VUHDO_lnfSetTooltip(self, VUHDO_I18N_TT.K568);
+							</OnLoad>
+						</Scripts>
+					</CheckButton>
+
 					<Frame name="$parentExpertLabel" inherits="VuhDoLabelFrameTemplate">
 						<Size>
 							<AbsDimension x="100" y="18" />
@@ -185,7 +202,7 @@
 						<Anchors>
 							<Anchor point="TOPLEFT">
 								<Offset>
-									<AbsDimension x="3" y="-293" />
+									<AbsDimension x="3" y="-328" />
 								</Offset>
 							</Anchor>
 						</Anchors>
@@ -201,7 +218,7 @@
 						<Anchors>
 							<Anchor point="TOPLEFT">
 								<Offset>
-									<AbsDimension x="3" y="-308" />
+									<AbsDimension x="3" y="-343" />
 								</Offset>
 							</Anchor>
 						</Anchors>
@@ -219,7 +236,7 @@
 
 			<Frame name="$parentContentPanel">
 				<Size>
-					<AbsDimension x="428" y="345" />
+					<AbsDimension x="428" y="380" />
 				</Size>
 				<Anchors>
 					<Anchor point="TOPLEFT">
@@ -244,6 +261,8 @@
 					<Frame name="VuhDoNewOptionsGeneralCluster" hidden="true" setAllPoints="true" inherits="VuhDoNewOptionsGeneralClusterTemplate">
 					</Frame>
 					<Frame name="VuhDoNewOptionsGeneralBouquet" hidden="true" setAllPoints="true" inherits="VuhDoNewOptionsGeneralBouquetTemplate">
+					</Frame>
+					<Frame name="VuhDoNewOptionsGeneralSpellTrace" hidden="true" setAllPoints="true" inherits="VuhDoNewOptionsGeneralSpellTraceTemplate">
 					</Frame>
 				</Frames>
 			</Frame>

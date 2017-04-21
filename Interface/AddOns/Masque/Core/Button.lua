@@ -3,7 +3,7 @@
 	please see the included License.txt file.
 
 	* File...: Core\Button.lua
-	* Date...: 2015-12-16T19:28:52Z
+	* Date...: 2015-12-17T1:28:52Z
 	* Hash...: 3bd8938
 	* Author.: StormFX, JJSheets
 

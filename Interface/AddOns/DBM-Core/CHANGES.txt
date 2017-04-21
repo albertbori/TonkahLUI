@@ -1,212 +1,141 @@
-tag c1b94ffe6e4483f5f4b10b24ef78a377c803bfec 7.1.7
+tag c2c4254b115d315214e278eb5629a0c35efea55f 7.2.3
 Author:	subversion <svn@deadlybossmods.com>
-Date:	Tue Jan 10 20:26:17 2017 +0100
+Date:	Thu Apr 6 18:20:13 2017 +0200
 
-Tagging as 7.1.7
+Tagging as 7.2.3
 
-commit cbc3f65e0fcf8401a3103b54d272dbb773d6589d
+commit adec88c4090c5a15ed7a6ea4969ae60fbf27df11
 Author: subversion <svn@deadlybossmods.com>
-Date:   Tue Jan 10 20:26:17 2017 +0100
+Date:   Thu Apr 6 18:20:13 2017 +0200
 
-    increment version number to 7.1.7
+    increment version number to 7.2.3
 
-commit 6102f52daf8211b2f658e298cc9c0c292f3c49ed
+commit bcf765e941bdd2fb244fb816da80b7bd2d8c23e1
 Author: subversion <svn@deadlybossmods.com>
-Date:   Tue Jan 10 20:21:20 2017 +0100
+Date:   Thu Apr 6 13:13:14 2017 +0200
 
-    Omega via svn r15639:
-    And update GetSpecializationInfoByID
-
-commit 85ab61af895642abc92f856db84a1ec50c34b4d8
-Author: subversion <svn@deadlybossmods.com>
-Date:   Tue Jan 10 20:02:42 2017 +0100
-
-    Omega via svn r15638:
-    Abort role check if role isn?\226?\128?\153t returned by api
-
-commit 56949c3a46e7663e04f90ae3f05f8030baa45175
-Author: subversion <svn@deadlybossmods.com>
-Date:   Sun Jan 8 10:05:56 2017 +0100
-
-    Omega via svn r15637:
+    Omega via svn r16140:
     Kr update
 
-commit 5e23e40676da70ce6df3310d17720bfeeaecc5b6
+commit b5e947354955068c53f6ded890aa6b7bbdcefdf6
 Author: subversion <svn@deadlybossmods.com>
-Date:   Sat Jan 7 21:12:45 2017 +0100
+Date:   Thu Apr 6 13:09:44 2017 +0200
 
-    Omega via svn r15636:
-    zhTW Update
+    Omega via svn r16139:
+    And remove this
 
-commit 374d51b102501880c8839d433e9eb638076ff17f
+commit 5d0c895b3bfe6f6706fb3a26387b501229e16c34
 Author: subversion <svn@deadlybossmods.com>
-Date:   Fri Jan 6 06:21:31 2017 +0100
+Date:   Thu Apr 6 13:06:57 2017 +0200
 
-    Omega via svn r15635:
-    more icon refactoring/fixes to handle deaths better
+    Omega via svn r16138:
+    Disable combat mechanics, they don?\226?\128?\153t work even remotely correctly. Shouldn?\226?\128?\153t be needed anyways
 
-commit 4f70b8e3e290e57185c271866a3db1ee4f29507c
+commit ccc987a2f7f39c72e39c158f0f22641bbfc661ea
 Author: subversion <svn@deadlybossmods.com>
-Date:   Fri Jan 6 05:07:10 2017 +0100
+Date:   Thu Apr 6 09:22:01 2017 +0200
 
-    Omega via svn r15634:
-    more icon refactoring/fixes to handle deaths better
+    ultrashining via svn r16137:
+    zhTW update
 
-commit 592952b4383843faa4d5d649b23c0eafaaa7fc10
+commit 3a329295e8a3fc668366c01fd76a61d885ee9a8e
 Author: subversion <svn@deadlybossmods.com>
-Date:   Fri Jan 6 04:00:53 2017 +0100
+Date:   Thu Apr 6 06:42:23 2017 +0200
 
-    Omega via svn r15633:
-    More fixes
+    Omega via svn r16136:
+    Flame crash countdown for kihra
 
-commit 308242cc7d9bed5516248fd967ed2d5a0b0c1f84
+commit a404c55f199cb73b5de72a8a3267a0b440ed2e70
 Author: subversion <svn@deadlybossmods.com>
-Date:   Fri Jan 6 02:55:17 2017 +0100
+Date:   Thu Apr 6 06:19:53 2017 +0200
 
-    Omega via svn r15632:
-    Fix Options in 4 places
+    Omega via svn r16135:
+    Add more countdowns to star auger
 
-commit dea634b04672df8dbce40311401ad174a1068a7c
+commit 9e2eacc664b4cf794f201b31741fc0782ec0e6bc
 Author: subversion <svn@deadlybossmods.com>
-Date:   Fri Jan 6 01:25:44 2017 +0100
+Date:   Thu Apr 6 00:07:31 2017 +0200
 
-    Omega via svn r15631:
-    comment tweaks
+    Omega via svn r16134:
+    Add loading for other 3 invasions and one new warning for val scenario
 
-commit 93bae3305e89c431136e23ee374072afdadc2956
+commit 5e4cb3337c364a4bb50329e73b242cb2bf24e577
 Author: subversion <svn@deadlybossmods.com>
-Date:   Thu Jan 5 22:05:57 2017 +0100
+Date:   Wed Apr 5 14:32:43 2017 +0200
 
-    Omega via svn r15630:
-    Added new filter option to guarm (on by default) to make icons/warnings/yells smarter and not happen if they are not needed.
-    Improved info frame to use shorter school names instead of spell names and added colors to make easier to understand at a glance
+    Omega via svn r16133:
+    Tweak another timer
+    Attempt to fix voice pack filter on custom option text warnings
 
-commit a26bc29ce604b6ecf104a926a3853814854ad239
+commit 4545671eda32790effe656b033890dcdb590bd45
 Author: subversion <svn@deadlybossmods.com>
-Date:   Thu Jan 5 05:41:07 2017 +0100
+Date:   Wed Apr 5 00:33:49 2017 +0200
 
-    Omega via svn r15629:
-    Add guarms 15 second respawn
+    Omega via svn r16132:
+    Update challenges message
 
-commit b48cf0f9259f502818fafeee1863751a7bcc6c21
+commit 52ffd86663dec3402c73152cfc01dab7a73e2bcb
 Author: subversion <svn@deadlybossmods.com>
-Date:   Thu Jan 5 05:24:56 2017 +0100
+Date:   Wed Apr 5 00:18:49 2017 +0200
 
-    Omega via svn r15628:
-    Fix some fail
+    Omega via svn r16131:
+    Preliminary invasion support. this supports two warnings in azsuna scenario
 
-commit 542463ab4e52191e221a43dcc8b1f5c620c63c85
+commit 94007a980943dd4e9b538912532ffa002dfbc9cd
 Author: subversion <svn@deadlybossmods.com>
-Date:   Wed Jan 4 07:36:24 2017 +0100
+Date:   Tue Apr 4 03:29:58 2017 +0200
 
-    ebmor via svn r15627:
-    deDE update
+    Omega via svn r16130:
+    Update Banned mods
 
-commit e2bc2e1f635c5421a7b632e05dcde4720cea428e
+commit f6adfcfcd9bf3707fca32c1faf5d0c68fa415283
 Author: subversion <svn@deadlybossmods.com>
-Date:   Wed Jan 4 05:39:08 2017 +0100
+Date:   Mon Apr 3 20:42:22 2017 +0200
 
-    Omega via svn r15626:
-    this should fix mythic deathglares for phase 2s that are way too long.
+    Omega via svn r16129:
+    fix error
 
-commit e0df53e4f30a0ac5a30713be5f39e577a692615b
+commit f2c84b8f24ef39f8ec5697fb9c79b0f1aa358536
 Author: subversion <svn@deadlybossmods.com>
-Date:   Tue Jan 3 16:23:41 2017 +0100
+Date:   Mon Apr 3 04:08:35 2017 +0200
 
-    ebmor via svn r15625:
-    deDE update
+    Omega via svn r16128:
+    Bump revision
 
-commit c12ab7a607289ec094ae3eab5ebbd041aaa4d663
+commit f18e63610f3911526410bee0fc177c572c7d8d51
 Author: subversion <svn@deadlybossmods.com>
-Date:   Tue Jan 3 09:48:53 2017 +0100
+Date:   Mon Apr 3 04:05:56 2017 +0200
 
-    Omega via svn r15624:
-    add some anti spam measures for larger pulls in CoS trash
+    Omega via svn r16127:
+    Add LFR timers for Elisande
+    Fix some other timer bugs in normal elisande and mythic elisande
 
-commit f931aa4999d6a97a6b94f93624930667a80a82df
+commit 766b08db25756a3036d27c1b72f0459999291d86
 Author: subversion <svn@deadlybossmods.com>
-Date:   Mon Jan 2 11:02:06 2017 +0100
+Date:   Sun Apr 2 22:43:54 2017 +0200
 
-    Omega via svn r15623:
-    zhTW Update
+    Omega via svn r16126:
+    Remove debug message forgot to remove
 
-commit d45ba8b50ac9c22afef3d077a5c117d5cbfcc4ca
+commit dc7e4e53e97dd7fcdc25331f06ec97a31b95922f
 Author: subversion <svn@deadlybossmods.com>
-Date:   Mon Jan 2 11:00:07 2017 +0100
+Date:   Sun Apr 2 07:24:22 2017 +0200
 
-    Omega via svn r15622:
-    Fix typo that caused gerdo jump message not to ever work.
+    Omega via svn r16125:
+    fix a bug where BuildVoiceCountdownCache would fail to set paths correctly if more than one were set to same voice.
+    Unfortunately I could find no fix that worked that didn?\226?\128?\153t require making it a LOT less inefficient. Fortunately it?\226?\128?\153s a one time function.
 
-commit 98c18414a0e19904605749d3633e15ee41b7545e
+commit 209633e717cd9796c0ee89214db815fc4c454ceb
 Author: subversion <svn@deadlybossmods.com>
-Date:   Fri Dec 30 22:54:08 2016 +0100
+Date:   Sun Apr 2 05:33:23 2017 +0200
 
-    Omega via svn r15621:
-    Tweak timer logic so it?\226?\128?\153s cast finish not cast start
+    Omega via svn r16124:
+    updated version code for guild. may contain bugs
 
-commit 1d56dc41bb987432cfa5a821b0573a3355c2be03
+commit ac823f7bb142858c0dfee499775fbb56fcefa80f
 Author: subversion <svn@deadlybossmods.com>
-Date:   Fri Dec 30 06:36:28 2016 +0100
+Date:   Sat Apr 1 12:33:12 2017 +0200
 
-    Omega via svn r15620:
-    HF
-
-commit 6e7393e0045f44df2ca478e1c41038f564de1d56
-Author: subversion <svn@deadlybossmods.com>
-Date:   Fri Dec 30 06:35:50 2016 +0100
-
-    Omega via svn r15619:
-    remove mythic lick timers too, also messed up
-    Add option to change all foam yells to match icon set on player instead(which might make more sense for some strats than color coded icon yells behavior.). Off by default.
-
-commit aec4800c0870429f1d49e1533cc11340386942c9
-Author: subversion <svn@deadlybossmods.com>
-Date:   Thu Dec 29 09:13:03 2016 +0100
-
-    Omega via svn r15618:
-    Attempt to fix CoS trash error for missing translations
-
-commit bf164c6e288c719cb992e4abe1a323ffa6aae8c5
-Author: subversion <svn@deadlybossmods.com>
-Date:   Wed Dec 28 06:23:53 2016 +0100
-
-    Omega via svn r15617:
-    Remove redundancy
-
-commit 12de551f540ebfe18961c8c49a0102b2eb263e79
-Author: subversion <svn@deadlybossmods.com>
-Date:   Wed Dec 28 02:42:45 2016 +0100
-
-    Omega via svn r15616:
-    Fix icon optino text
-
-commit 43c7c71c97edce38ddc0b561156693c950662f0e
-Author: subversion <svn@deadlybossmods.com>
-Date:   Tue Dec 27 23:28:46 2016 +0100
-
-    Omega via svn r15615:
-    Update drugon timers
-    Filter boss from snow plow warning. Improve timer start code for snow plow
-    Fixed snow crash warning to appropriately say it?\226?\128?\153s to dodge a shockwave not run away from boss.
-
-commit 46c7404fbc449a54acc7f313cba35366bb0fce2d
-Author: subversion <svn@deadlybossmods.com>
-Date:   Tue Dec 27 20:55:13 2016 +0100
-
-    Omega via svn r15614:
-    Update version check
-
-commit acadd172bdf5548c3f08de75be2a0e19dad14ae0
-Author: subversion <svn@deadlybossmods.com>
-Date:   Tue Dec 27 20:22:37 2016 +0100
-
-    Omega via svn r15613:
-    Fix greench error
-
-commit de03f82c71ba94d59bf8ef49586fa876c05f945d
-Author: subversion <svn@deadlybossmods.com>
-Date:   Tue Dec 27 11:28:06 2016 +0100
-
-    tandanu via svn r15612:
+    tandanu via svn r16123:
     increment alpha version
 

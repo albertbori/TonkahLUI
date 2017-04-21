@@ -458,6 +458,50 @@ end
 
 
 --
+local function VUHDO_spellTraceAddDefaultSettings(aSpellName)
+
+	if (VUHDO_CONFIG["SPELL_TRACE"]["STORED_SETTINGS"] == nil) then
+		VUHDO_CONFIG["SPELL_TRACE"]["STORED_SETTINGS"] = { };
+	end
+
+	if (VUHDO_CONFIG["SPELL_TRACE"]["STORED_SETTINGS"][aSpellName] == nil) then
+		VUHDO_CONFIG["SPELL_TRACE"]["STORED_SETTINGS"][aSpellName] = {
+			["isMine"] = VUHDO_CONFIG["SPELL_TRACE"]["isMine"],
+			["isOthers"] = VUHDO_CONFIG["SPELL_TRACE"]["isOthers"],
+			["duration"] = VUHDO_CONFIG["SPELL_TRACE"]["duration"],
+		}
+	end
+
+end
+
+
+
+--
+local function VUHDO_addSpellTraceSpellIds(aVersion, ...)
+
+	if ((VUHDO_CONFIG["SPELL_TRACE"].version or 0) < aVersion) then
+		VUHDO_CONFIG["SPELL_TRACE"].version = aVersion;
+
+		local tArg;
+
+		for tCnt = 1, select("#", ...) do
+			tArg = select(tCnt, ...);
+
+			if (type(tArg) == "number") then
+				-- make sure the spell ID is still added as a string
+				-- otherwise getKeyFromValue look-ups w/ spell ID string fail later
+				tArg = tostring(tArg);
+			end
+
+			VUHDO_tableUniqueAdd(VUHDO_CONFIG["SPELL_TRACE"]["STORED"], tArg);
+		end
+	end
+
+end
+
+
+
+--
 local VUHDO_DEFAULT_CONFIG = {
 	["VERSION"] = 4,
 
@@ -568,6 +612,15 @@ local VUHDO_DEFAULT_CONFIG = {
 		},
 	},
 
+	["SPELL_TRACE"] = {
+		["isMine"] = true,
+		["isOthers"] = false,
+		["duration"] = 2,
+		["showTrailOfLight"] = false,
+		["SELECTED"] = "",
+		["STORED"] = { },
+	},
+
 	["THREAT"] = {
 		["AGGRO_REFRESH_MS"] = 300,
 		["AGGRO_TEXT_LEFT"] = ">>",
@@ -673,6 +726,8 @@ local VUHDO_DEFAULT_CONFIG = {
 	["IS_USE_BUTTON_FACADE"] = false,
 	["IS_SHARE"] = true,
 	["IS_READY_CHECK_DISABLED"] = false,
+
+	["SHOW_SPELL_TRACE"] = false,
 };
 
 
@@ -700,6 +755,14 @@ local VUHDO_DEFAULT_CU_DE_STORED_SETTINGS = {
 --		["useBackground"] = true,
 --		["useOpacity"] = true,
 --	},
+};
+
+
+
+local VUHDO_DEFAULT_SPELL_TRACE_STORED_SETTINGS = {
+	["isMine"] = true,
+	["isOthers"] = false,
+	["duration"] = 2,
 };
 
 
@@ -1406,6 +1469,56 @@ function VUHDO_loadDefaultConfig()
 		232488  -- Dark Hatred
 	);
 
+	-- 7.1.5 - Legion - Nighthold
+	VUHDO_addCustomSpellIds(34,
+		-- [[ Nighthold ]]
+		-- Skorpyron
+		204766, -- Energy Surge
+		211659, -- Arcane Tether
+		-- Chronomatic Anomaly
+		206607, -- Chronometric Particles
+		206609, -- Time Release
+		206615, -- Time Bomb
+		-- Trilliax
+		-- Spellblade Aluriel
+		212587, -- Mark of Frost
+		-- Tichondrius
+		206480, -- Carrion Plague
+		212795, -- Brand of Argus
+		208230, -- Feast of Blood
+		216024, -- Volatile Wound
+		216040, -- Burning Soul
+		-- Krosus
+		-- High Botanist Tel'arn
+		218502, -- Recursive Strikes
+		219049, -- Toxic Spores
+		218424, -- Parasitic Fetter
+		-- Star Augur Etraeus
+		206585, -- Absolute Zero
+		206388, -- Felburst
+		205649, -- Fel Ejection
+		206965, -- Voidburst
+		207143, -- Void Ejection
+		-- Grand Magistrix Elisande
+		-- Gul'dan
+		212568, -- Drain
+		206883, -- Soul Vortex
+		206222, -- Bonds of Fel
+		206221, -- Empowered Bonds of Fel
+		208802  -- Soul Corrosion
+	);
+
+	-- 7.1.5 - Legion - Nighthold (part 2)
+	VUHDO_addCustomSpellIds(35,
+		-- [[ Nighthold ]]
+		-- Chronomatic Anomaly
+		219964, -- Time Release Green
+		219965, -- Time Release Yellow
+		219966  -- Time Release Red
+		-- Trilliax
+		-- Grand Magistrix Elisande
+	);
+
 	local debuffRemovalList = {};
 
 	for tIndex, tName in pairs(VUHDO_CONFIG["CUSTOM_DEBUFF"]["STORED"]) do
@@ -1429,6 +1542,26 @@ function VUHDO_loadDefaultConfig()
 	-- so do the removal in a second pass
 	for tIndex, _ in pairs(debuffRemovalList) do
 		VUHDO_CONFIG["CUSTOM_DEBUFF"]["STORED"][tIndex] = nil;
+	end
+
+	-- add default spells to track with spell trace
+	VUHDO_addSpellTraceSpellIds(1, 
+		-- Shaman
+		1064,   -- Chain Heal
+		-- Priest
+		34861,  -- Holy Word: Sanctify
+		596,    -- Prayer of Healing
+		194509  -- Power Word: Radiance
+	);
+
+	for tIndex, tName in pairs(VUHDO_CONFIG["SPELL_TRACE"]["STORED"]) do
+		VUHDO_spellTraceAddDefaultSettings(tName);
+
+		VUHDO_CONFIG["SPELL_TRACE"]["STORED_SETTINGS"][tName] = VUHDO_ensureSanity(
+			"SPELL_TRACE.STORED_SETTINGS",
+			VUHDO_CONFIG["SPELL_TRACE"]["STORED_SETTINGS"][tName],
+			VUHDO_DEFAULT_SPELL_TRACE_STORED_SETTINGS
+		);
 	end
 
 	if (VUHDO_POWER_TYPE_COLORS == nil) then

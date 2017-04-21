@@ -56,178 +56,178 @@ ChatterDB = {
 				["Default"] = {
 					["colors"] = {
 						["Guild"] = {
-							["r"] = 0.250980406999588,
-							["g"] = 1,
 							["b"] = 0.250980406999588,
+							["g"] = 1,
+							["r"] = 0.250980406999588,
 						},
 						["Real ID Whisper"] = {
-							["r"] = 0,
-							["g"] = 1,
 							["b"] = 0.964705944061279,
+							["g"] = 1,
+							["r"] = 0,
 						},
 						["Raid Leader"] = {
-							["r"] = 1,
-							["g"] = 0.282352954149246,
 							["b"] = 0.0352941192686558,
+							["g"] = 0.282352954149246,
+							["r"] = 1,
 						},
 						["LookingForGroup"] = {
-							["r"] = 1,
-							["g"] = 0.752941250801086,
 							["b"] = 0.752941250801086,
+							["g"] = 0.752941250801086,
+							["r"] = 1,
 						},
 						["Party"] = {
-							["r"] = 0.666666686534882,
-							["g"] = 0.666666686534882,
 							["b"] = 1,
+							["g"] = 0.666666686534882,
+							["r"] = 0.666666686534882,
 						},
 						["Whisper"] = {
-							["r"] = 1,
-							["g"] = 0.501960813999176,
 							["b"] = 1,
+							["g"] = 0.501960813999176,
+							["r"] = 1,
 						},
 						["Raid"] = {
-							["r"] = 1,
-							["g"] = 0.498039245605469,
 							["b"] = 0,
+							["g"] = 0.498039245605469,
+							["r"] = 1,
 						},
 						["Raid Warning"] = {
-							["r"] = 1,
-							["g"] = 0.282352954149246,
 							["b"] = 0,
+							["g"] = 0.282352954149246,
+							["r"] = 1,
 						},
 						["Party Leader"] = {
-							["r"] = 0.462745130062103,
-							["g"] = 0.784313797950745,
 							["b"] = 1,
+							["g"] = 0.784313797950745,
+							["r"] = 0.462745130062103,
 						},
 						["Instance"] = {
-							["r"] = 1,
-							["g"] = 0.498039245605469,
 							["b"] = 0,
+							["g"] = 0.498039245605469,
+							["r"] = 1,
 						},
 						["Yell"] = {
-							["r"] = 1,
-							["g"] = 0.250980406999588,
 							["b"] = 0.250980406999588,
+							["g"] = 0.250980406999588,
+							["r"] = 1,
 						},
 						["LocalDefense"] = {
-							["r"] = 1,
-							["g"] = 0.752941250801086,
 							["b"] = 0.752941250801086,
+							["g"] = 0.752941250801086,
+							["r"] = 1,
 						},
 						["Say"] = {
-							["r"] = 1,
-							["g"] = 1,
 							["b"] = 1,
+							["g"] = 1,
+							["r"] = 1,
 						},
 						["Trade"] = {
-							["r"] = 1,
-							["g"] = 0.752941250801086,
 							["b"] = 0.752941250801086,
-						},
-						["Instance Leader"] = {
+							["g"] = 0.752941250801086,
 							["r"] = 1,
-							["g"] = 0.282352954149246,
-							["b"] = 0.0352941192686558,
 						},
 						["General"] = {
-							["r"] = 1,
-							["g"] = 0.752941250801086,
 							["b"] = 0.752941250801086,
+							["g"] = 0.752941250801086,
+							["r"] = 1,
+						},
+						["Instance Leader"] = {
+							["b"] = 0.0352941192686558,
+							["g"] = 0.282352954149246,
+							["r"] = 1,
 						},
 						["Officer"] = {
-							["r"] = 0.250980406999588,
-							["g"] = 0.752941250801086,
 							["b"] = 0.250980406999588,
+							["g"] = 0.752941250801086,
+							["r"] = 0.250980406999588,
 						},
 					},
 				},
 				["Tonkah LUI"] = {
 					["colors"] = {
 						["Guild"] = {
-							["b"] = 0.250980406999588,
-							["g"] = 1,
 							["r"] = 0.250980406999588,
+							["g"] = 1,
+							["b"] = 0.250980406999588,
 						},
 						["Real ID Whisper"] = {
-							["b"] = 0.964705944061279,
-							["g"] = 1,
 							["r"] = 0,
+							["g"] = 1,
+							["b"] = 0.964705944061279,
 						},
 						["Raid Leader"] = {
-							["b"] = 0.0352941192686558,
-							["g"] = 0.282352954149246,
 							["r"] = 1,
+							["g"] = 0.282352954149246,
+							["b"] = 0.0352941192686558,
 						},
 						["LookingForGroup"] = {
-							["b"] = 0.752941250801086,
-							["g"] = 0.752941250801086,
 							["r"] = 1,
+							["g"] = 0.752941250801086,
+							["b"] = 0.752941250801086,
 						},
 						["Party"] = {
-							["b"] = 1,
-							["g"] = 0.666666686534882,
 							["r"] = 0.666666686534882,
+							["g"] = 0.666666686534882,
+							["b"] = 1,
 						},
 						["Whisper"] = {
-							["b"] = 1,
-							["g"] = 0.501960813999176,
 							["r"] = 1,
+							["g"] = 0.501960813999176,
+							["b"] = 1,
 						},
 						["Raid"] = {
-							["b"] = 0,
-							["g"] = 0.498039245605469,
 							["r"] = 1,
+							["g"] = 0.498039245605469,
+							["b"] = 0,
 						},
 						["Raid Warning"] = {
-							["b"] = 0,
-							["g"] = 0.282352954149246,
 							["r"] = 1,
+							["g"] = 0.282352954149246,
+							["b"] = 0,
 						},
 						["Party Leader"] = {
-							["b"] = 1,
-							["g"] = 0.784313797950745,
 							["r"] = 0.462745130062103,
+							["g"] = 0.784313797950745,
+							["b"] = 1,
 						},
 						["Instance"] = {
-							["b"] = 0,
-							["g"] = 0.498039245605469,
 							["r"] = 1,
+							["g"] = 0.498039245605469,
+							["b"] = 0,
 						},
 						["Yell"] = {
-							["b"] = 0.250980406999588,
-							["g"] = 0.250980406999588,
 							["r"] = 1,
+							["g"] = 0.250980406999588,
+							["b"] = 0.250980406999588,
 						},
 						["LocalDefense"] = {
-							["b"] = 0.752941250801086,
-							["g"] = 0.752941250801086,
 							["r"] = 1,
+							["g"] = 0.752941250801086,
+							["b"] = 0.752941250801086,
 						},
 						["Say"] = {
-							["b"] = 1,
-							["g"] = 1,
 							["r"] = 1,
+							["g"] = 1,
+							["b"] = 1,
 						},
 						["Trade"] = {
-							["b"] = 0.752941250801086,
-							["g"] = 0.752941250801086,
 							["r"] = 1,
-						},
-						["General"] = {
-							["b"] = 0.752941250801086,
 							["g"] = 0.752941250801086,
-							["r"] = 1,
+							["b"] = 0.752941250801086,
 						},
 						["Instance Leader"] = {
-							["b"] = 0.0352941192686558,
-							["g"] = 0.282352954149246,
 							["r"] = 1,
+							["g"] = 0.282352954149246,
+							["b"] = 0.0352941192686558,
+						},
+						["General"] = {
+							["r"] = 1,
+							["g"] = 0.752941250801086,
+							["b"] = 0.752941250801086,
 						},
 						["Officer"] = {
-							["b"] = 0.250980406999588,
-							["g"] = 0.752941250801086,
 							["r"] = 0.250980406999588,
+							["g"] = 0.752941250801086,
+							["b"] = 0.250980406999588,
 						},
 					},
 				},
@@ -305,7 +305,7 @@ ChatterDB = {
 								["a"] = 0,
 							},
 						},
-						["FRAME_2"] = {
+						["FRAME_10"] = {
 							["borderColor"] = {
 								["a"] = 0,
 							},
@@ -313,7 +313,7 @@ ChatterDB = {
 								["a"] = 0,
 							},
 						},
-						["FRAME_10"] = {
+						["FRAME_2"] = {
 							["borderColor"] = {
 								["a"] = 0,
 							},
@@ -329,23 +329,13 @@ ChatterDB = {
 		},
 		["Server Positioning"] = {
 		},
-		["Mousewheel Scroll"] = {
+		["JustifyText"] = {
 		},
 		["Timestamps"] = {
 		},
 		["EditBox"] = {
 		},
-		["ChatFont"] = {
-			["profiles"] = {
-				["Default"] = {
-					["fontsize"] = 12,
-					["font"] = "Arial Narrow",
-				},
-				["Tonkah LUI"] = {
-					["font"] = "Arial Narrow",
-					["fontsize"] = 12,
-				},
-			},
+		["Highlight"] = {
 		},
 		["ChatTabs"] = {
 		},
@@ -359,57 +349,70 @@ ChatterDB = {
 			["realm"] = {
 				["Doomhammer"] = {
 					["history"] = {
-						"/cw Roguewave-Baelgun looking to add this toon as well?", -- [1]
-						" it happens. sounds like amanda and them have something too", -- [2]
-						" expect the worst :P", -- [3]
-						"/ginvite Roguewave-Baelgun ", -- [4]
-						"/g welcome juicyj alt", -- [5]
-						"/cw Qorr-Doomhammer yea, again, my fault. not enough notice.", -- [6]
-						"/cw Qorr-Doomhammer we got shept, nianna and deathrazer last night. just barely.", -- [7]
-						"/cw Qorr-Doomhammer true", -- [8]
-						"/cw Qorr-Doomhammer nice!", -- [9]
-						"/readycheck", -- [10]
-						"/g teehee", -- [11]
-						"/clap", -- [12]
-						"/cheer", -- [13]
-						" what do you mean?", -- [14]
-						" who are you missing?", -- [15]
-						" who are you missing?", -- [16]
-						" you're missing lurasa", -- [17]
-						" try and get seesaw to heal?", -- [18]
-						" It's lurasa's birthday, so he's not online", -- [19]
-						"/g grats!", -- [20]
-						" Did you get it sorted?", -- [21]
-						"/focus", -- [22]
-						"/g grats!", -- [23]
-						"/cw Qorr-Doomhammer lol yea", -- [24]
-						"/g >..<", -- [25]
-						"/cw Qorr-Doomhammer no worries", -- [26]
-						"/g 24k", -- [27]
-						"/g haha, grats", -- [28]
-						"/g grats!", -- [29]
-						"/cw Tareva You won :)", -- [30]
-						"/g ok, heading to bed", -- [31]
-						"/g night everyone and may your lewt be epic", -- [32]
+						" I'd only have time to do one", -- [1]
+						" I thought you said +5?", -- [2]
+						" ah, gotcha", -- [3]
+						" I've done a +7", -- [4]
+						" Our 878 hunter just did a +14, so you're a bit off with that scale.", -- [5]
+						" Yea, he averages 400k dps", -- [6]
+						" sure, like I said, I have time for one", -- [7]
+						" What do you need? tank? heals? dps?", -- [8]
+						" 1 sec", -- [9]
+						" I'll go tank", -- [10]
+						" k", -- [11]
+						" I have a maw of souls +2, don't know if that matters", -- [12]
+						" yea", -- [13]
+						" but if you want to build your own key so you can continue after I drop, then we should do a +0", -- [14]
+						"/g Anyone interested in Maw of Souls mythic +2?", -- [15]
+						"/cw Boodicca mwa of souls +2?", -- [16]
+						"/cw Boodicca-Doomhammer nvm", -- [17]
+						"/cw Boodicca-Doomhammer it filled", -- [18]
+						"/p welcome!", -- [19]
+						"/p I'm at the stone", -- [20]
+						"/cw Boodicca-Doomhammer k, no worries", -- [21]
+						"/gs", -- [22]
+						"/cw Shaureith yes, just in a mythic+, so give me a few", -- [23]
+						"/p Jonyan, interrupt X please", -- [24]
+						"/p :D", -- [25]
+						"/p anyone need  |cffa335ee|Hitem:133637::::::::110:73::33:3:3411:1497:1813:::|h[Utgarde Royal Signet]|h|r?", -- [26]
+						"/cw Shaureith-Doomhammer ok, I'm ready now.", -- [27]
+						"/cw Shaureith-Doomhammer Are you there?", -- [28]
+						"/who Shaureith", -- [29]
+						"/gs", -- [30]
+						"/wa", -- [31]
+						"/gs", -- [32]
 					},
 				},
 			},
 		},
-		["Highlight"] = {
+		["ChatFont"] = {
+			["profiles"] = {
+				["Default"] = {
+					["fontsize"] = 12,
+					["font"] = "Arial Narrow",
+				},
+				["Tonkah LUI"] = {
+					["font"] = "Arial Narrow",
+					["fontsize"] = 12,
+				},
+			},
 		},
-		["JustifyText"] = {
+		["Mousewheel Scroll"] = {
 		},
 	},
 	["profileKeys"] = {
 		["Marmit - Doomhammer"] = "Default",
+		["Tareva - Doomhammer"] = "Tonkah LUI",
 		["Bartholamue - Doomhammer"] = "Tonkah LUI",
+		["Targetdummee - Doomhammer"] = "Default",
 		["Holyshnizzle - Doomhammer"] = "Tonkah LUI",
 		["Alfalpha - Doomhammer"] = "Default",
 		["Taunkah - Doomhammer"] = "Tonkah LUI",
-		["Nilrum - Doomhammer"] = "Default",
+		["Brooslee - Doomhammer"] = "Default",
+		["Nilrum - Doomhammer"] = "Tonkah LUI",
 		["Dfbdeffbw - Doomhammer"] = "Tonkah LUI",
 		["Bahlar - Doomhammer"] = "Tonkah LUI",
-		["Tareva - Doomhammer"] = "Tonkah LUI",
+		["Targatdummy - Doomhammer"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

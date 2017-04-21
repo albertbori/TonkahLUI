@@ -8,8 +8,8 @@ local VUHDO_IN_RAID_TARGET_BUTTONS;
 local VUHDO_PANEL_SETUP;
 local VUHDO_BUTTON_CACHE;
 local UnitPowerType = UnitPowerType;
-local UnitMana = UnitMana;
-local UnitManaMax = UnitManaMax;
+local UnitPower = UnitPower;
+local UnitPowerMax = UnitPowerMax;
 local InCombatLockdown = InCombatLockdown;
 local pairs = pairs;
 local _;
@@ -53,14 +53,14 @@ function VUHDO_updateManaBars(aUnit, aChange)
 
 	if not VUHDO_isConfigDemoUsers() then
 		if 1 == aChange then
-			tInfo["power"] = UnitMana(aUnit);
+			tInfo["power"] = UnitPower(aUnit);
 		elseif 2 == aChange  then
-			tInfo["powermax"] = UnitManaMax(aUnit);
+			tInfo["powermax"] = UnitPowerMax(aUnit);
 		elseif 3 == aChange then
 			tPowerType, _ = UnitPowerType(aUnit);
 			tInfo["powertype"] = tonumber(tPowerType);
-			tInfo["powermax"] = UnitManaMax(aUnit);
-			tInfo["power"] = UnitMana(aUnit);
+			tInfo["powermax"] = UnitPowerMax(aUnit);
+			tInfo["power"] = UnitPower(aUnit);
 		end
 	end
 

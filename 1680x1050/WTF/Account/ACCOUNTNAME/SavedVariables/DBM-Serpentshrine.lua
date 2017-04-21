@@ -290,7 +290,7 @@ DBMSerpentshrine_AllSavedVars = {
 	},
 	["Taunkah-Doomhammer"] = {
 		["LurkerBelow"] = {
-			[3] = {
+			[2] = {
 				["Timer37363cd"] = true,
 				["SpecWarn37433spellSWNote"] = true,
 				["Timer37363cdTColor"] = 2,
@@ -312,8 +312,9 @@ DBMSerpentshrine_AllSavedVars = {
 				["Timer37433active"] = true,
 			},
 		},
+		["talent2"] = "Fury",
 		["Hydross"] = {
-			[3] = {
+			[2] = {
 				["Enabled"] = true,
 				["WarnMark"] = true,
 				["TimerMark"] = true,
@@ -332,9 +333,8 @@ DBMSerpentshrine_AllSavedVars = {
 				["Timer38246targetTColor"] = 0,
 			},
 		},
-		["talent3"] = "Protection",
 		["Leotheras"] = {
-			[3] = {
+			[2] = {
 				["Timer37640cdTColor"] = 2,
 				["announceother37676target"] = true,
 				["SpecWarn37640runSWNote"] = true,
@@ -364,7 +364,7 @@ DBMSerpentshrine_AllSavedVars = {
 			},
 		},
 		["Vashj"] = {
-			[3] = {
+			[2] = {
 				["WarnLoot"] = true,
 				["SpecWarn38280youSWNote"] = true,
 				["ChargeIcon"] = false,
@@ -400,7 +400,7 @@ DBMSerpentshrine_AllSavedVars = {
 			},
 		},
 		["Tidewalker"] = {
-			[3] = {
+			[2] = {
 				["Enabled"] = true,
 				["GraveIcon"] = true,
 				["announce37854spell"] = true,
@@ -420,7 +420,7 @@ DBMSerpentshrine_AllSavedVars = {
 			},
 		},
 		["Fathomlord"] = {
-			[3] = {
+			[2] = {
 				["announce38455spell"] = true,
 				["SpecWarn38330interruptSWSound"] = 1,
 				["SpecWarn38330interrupt"] = false,

@@ -1,4 +1,112 @@
 ------------------------------------------------------------------------
+r816 | Chaoslux | 2017-04-16 15:20:08 -0500 (Sun, 16 Apr 2017) | 1 line
+Changed paths:
+   M /trunk/modules/panels.lua
+
+- Panels: Automatically update Details' Additional Frames. 
+------------------------------------------------------------------------
+r815 | Chaoslux | 2017-04-16 14:58:57 -0500 (Sun, 16 Apr 2017) | 3 lines
+Changed paths:
+   M /trunk/addons/details.lua
+   M /trunk/modules/panels.lua
+
+- Details: Added an additional frame to the panel, so that the bars will properly hide along with the window.
+- Panels: Added template for 2nd Details Windows.
+- Panels: Choosing Details template will now automatically add the additional frame in there. 
+------------------------------------------------------------------------
+r814 | Chaoslux | 2017-04-16 13:56:11 -0500 (Sun, 16 Apr 2017) | 1 line
+Changed paths:
+   M /trunk/LUI.toc
+
+- Changing to version 3.9.14
+------------------------------------------------------------------------
+r813 | Chaoslux | 2017-04-16 13:55:11 -0500 (Sun, 16 Apr 2017) | 2 lines
+Changed paths:
+   M /trunk/LUI.lua
+   M /trunk/addons/details.lua
+   M /trunk/modules/panels.lua
+
+- Details Support: Fixed Y OFfset not being adjusted properly
+- Core: Fixed issue preventing installation if Details is found. 
+------------------------------------------------------------------------
+r812 | Chaoslux | 2017-04-16 01:06:39 -0500 (Sun, 16 Apr 2017) | 3 lines
+Changed paths:
+   M /trunk/LUI.lua
+   M /trunk/LUI.toc
+   M /trunk/init.lua
+
+- Bumped TOC, Increased version to 3.9.13
+- Updated Patrons in Thanks section
+- Moved the Revision code to a file that isnt going to see much updates, to reduce the chances of accidentally overwriting it.
+------------------------------------------------------------------------
+r811 | Chaoslux | 2017-04-15 22:15:22 -0500 (Sat, 15 Apr 2017) | 1 line
+Changed paths:
+   M /trunk/LUI.lua
+
+- Core: Due to changes in Curse packaging, change the way we display version revision.
+------------------------------------------------------------------------
+r810 | Chaoslux | 2017-04-15 04:05:24 -0500 (Sat, 15 Apr 2017) | 1 line
+Changed paths:
+   M /trunk/LUI.lua
+
+- Options: Under General>Addons, do not show retore buttons for addons that aren't loaded.
+------------------------------------------------------------------------
+r809 | Chaoslux | 2017-04-15 03:22:09 -0500 (Sat, 15 Apr 2017) | 1 line
+Changed paths:
+   M /trunk/addons/details.lua
+
+- Details Support: Make sure to reset the DPS Panel' anchor to be Details when pressing "Restore Details"
+------------------------------------------------------------------------
+r808 | Chaoslux | 2017-04-15 02:50:42 -0500 (Sat, 15 Apr 2017) | 1 line
+Changed paths:
+   M /trunk/addons/details.lua
+
+- Added Details skin that actually works with LUI. To see the results, you need to do "Reset Details" in General> Addons
+------------------------------------------------------------------------
+r807 | Chaoslux | 2017-04-15 00:24:00 -0500 (Sat, 15 Apr 2017) | 2 lines
+Changed paths:
+   M /trunk/modules/datatext.lua
+
+- Infotext:Dualspec no longer sets a backdrop for the icon. Now uses :SetNormalTexture. Fixes green square issues.
+- Infotext:Dualspec now trigger the Specialization frame when you click on it.
+------------------------------------------------------------------------
+r806 | Chaoslux | 2017-03-29 01:03:03 -0500 (Wed, 29 Mar 2017) | 1 line
+Changed paths:
+   M /trunk/modules/tooltip.lua
+
+- Tooltip: Added special handling for Broken Shore Contribution table tooltips. 
+------------------------------------------------------------------------
+r805 | Chaoslux | 2017-03-28 18:35:02 -0500 (Tue, 28 Mar 2017) | 1 line
+Changed paths:
+   M /trunk/modules/threatbar.lua
+
+- Reputation: Added support for Paragon Reputation. After reaching Exalted, the bar will show Paragon Rep and the text will display "Pa" for any faction that supports the system.
+------------------------------------------------------------------------
+r804 | Chaoslux | 2017-03-28 17:57:27 -0500 (Tue, 28 Mar 2017) | 1 line
+Changed paths:
+   M /trunk/modules/tooltip.lua
+
+- Tooltip: Make sure to skin the Paragon Reputation Tooltip. 
+------------------------------------------------------------------------
+r803 | Chaoslux | 2017-03-28 17:39:20 -0500 (Tue, 28 Mar 2017) | 1 line
+Changed paths:
+   M /trunk/modules/threatbar.lua
+   M /trunk/unitframes/layout/layout.lua
+
+- Reputation: Blizzard changed the way Exalted Reputation works, this fixes the issues with display any tracked reputation that is currently at exalted.
+------------------------------------------------------------------------
+r802 | Chaoslux | 2017-03-28 16:47:31 -0500 (Tue, 28 Mar 2017) | 1 line
+Changed paths:
+   M /trunk/modules/threatbar.lua
+
+- Artifact Bar: Now grab information on the artifact's tier, fixes issues with the bar not showing.
+------------------------------------------------------------------------
+r801 | Chaoslux | 2017-01-23 13:32:22 -0600 (Mon, 23 Jan 2017) | 1 line
+Changed paths:
+   M /trunk/unitframes/layout/layout.lua
+
+- Unitframes: Rogues with Anticipation have 10 combo points (up from 8) as of 7.1.5
+------------------------------------------------------------------------
 r800 | Chaoslux | 2017-01-11 00:54:39 -0600 (Wed, 11 Jan 2017) | 1 line
 Changed paths:
    M /trunk/LUI.toc

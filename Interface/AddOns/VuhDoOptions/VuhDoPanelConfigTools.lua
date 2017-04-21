@@ -144,6 +144,11 @@ function VUHDO_updateGlobalIconList()
 		VUHDO_USED_BUFFS[tName] = true;
 	end
 
+	-- Add spell traces
+	for _, tName in pairs(VUHDO_CONFIG["SPELL_TRACE"]["STORED"]) do
+		VUHDO_USED_BUFFS[tName] = true;
+	end
+
 	-- Add bouquet item buffs
 	for _, tItems in pairs(VUHDO_BOUQUETS["STORED"]) do
 		tItems = VUHDO_decompressIfCompressed(tItems);

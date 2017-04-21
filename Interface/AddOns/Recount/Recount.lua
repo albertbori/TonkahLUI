@@ -11,7 +11,7 @@ local FilterSize	= 20
 local RampUp		= 5
 local RampDown		= 10
 
-Recount.Version = tonumber(string.sub("$Revision: 1411 $", 12, -3))
+Recount.Version = tonumber(string.sub("$Revision: 1415 $", 12, -3))
 
 
 
@@ -346,6 +346,7 @@ BINDING_NAME_RECOUNT_SHOW_MAIN = L["Shows the main window"]
 BINDING_NAME_RECOUNT_HIDE_MAIN = L["Hides the main window"]
 BINDING_NAME_RECOUNT_TOGGLE_MAIN = L["Toggles the main window"]
 BINDING_NAME_RECOUNT_TOGGLE_PAUSE = L["Toggle pause of global data collection"]
+BINDING_NAME_RECOUNT_TOGGLE_MERGEPETS = L["Toggle merge pets"]
 
 local optFrame
 

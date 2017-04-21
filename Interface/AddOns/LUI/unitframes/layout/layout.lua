@@ -29,7 +29,6 @@ local floor = math.floor
 local format = string.format
 local GetGlyphSocketInfo = GetGlyphSocketInfo 
 
-
 local normTex = mediaPath..[=[textures\statusbars\normTex]=]
 local glowTex = mediaPath..[=[textures\statusbars\glowTex]=]
 local highlightTex = mediaPath..[=[textures\statusbars\highlightTex]=]
@@ -2088,10 +2087,19 @@ module.funcs = {
 			self.Reputation.Override = function()
 				local name, standing, min, max, value = GetWatchedFactionInfo()
 				if name then
-					self.Reputation:SetMinMaxValues(min, max)
-					self.Reputation:SetValue(value)
-
-					self.Reputation.Value:SetFormattedText("%d / %d (%d%%)", value - min, max - min, math.floor(((value - min) / (max - min)) * 100 + 0.5))
+					if min == max then
+						min, max, value = 41000, 42000, 42000
+					end
+					
+					barMax = max - min
+					barValue = value - min
+					barMin = 0
+					percentBar = barValue * 100 / barMax
+					
+					self.Reputation:SetMinMaxValues(barMin, barMax)
+					self.Reputation:SetValue(barValue)
+					self.Reputation.Value:SetFormattedText("%d / %d (%d%%)", barValue, barMax, percentBar)
+					--math.floor(((value - min) / (max - min)) * 100 + 0.5)
 				else
 					self.Reputation:SetMinMaxValues(0, 100)
 					self.Reputation:SetValue(0)
@@ -2294,7 +2302,7 @@ module.funcs = {
 			MAGE = 4,
 			MONK = 6,
 			PALADIN = 5,
-			ROGUE = 8,
+			ROGUE = 10,
 			WARLOCK = 5,
 			DRUID = 5,
 		}
@@ -2347,8 +2355,8 @@ module.funcs = {
 			elseif class == "ROGUE" then
 				--Check for Strategem, increase CPoints to 6.
 				if select(4, GetTalentInfo(3, 1, 1)) then count = 6
-				--Check for Anticipation, increase CPoints to 8.
-				elseif select(4, GetTalentInfo(3, 2, 1)) then count = 8
+				--Check for Anticipation, increase CPoints to 10.
+				elseif select(4, GetTalentInfo(3, 2, 1)) then count = 10
 				end
 			end
 			self.ClassIcons.Count = count
@@ -3758,11 +3766,11 @@ local SetStyle = function(self, unit, isSingle)
 		if oufdb.CornerAura.Enable then module.funcs.SingleAuras(self, unit, oufdb) end
 		if oufdb.RaidDebuff.Enable then module.funcs.RaidDebuffs(self, unit, oufdb) end
 	end
-
+	
 	------------------------------------------------------------------------
 	--	Other
 	------------------------------------------------------------------------
-
+	
 	if oufdb.Portrait.Enable then module.funcs.Portrait(self, unit, oufdb) end
 
 	if unit == "player" or unit == "pet" then

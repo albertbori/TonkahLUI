@@ -260,7 +260,7 @@ L:SetMiscLocalization({
 	NoGloves1	= "There's a rumor that the spy never has gloves on.",
 	NoGloves2	= "You know... I found an extra pair of gloves in the back room. The spy is likely to be bare handed somewhere around here.",
 	NoGloves3	= "I heard the spy dislikes wearing gloves.",
-	NoGloves4	= "I heard the spy avoids having gloves on, in case some quick actions are needed",
+	NoGloves4	= "I heard the spy avoids having gloves on, in case some quick actions are needed.",
 	Cape1		= "Someone mentioned the spy came in earlier wearing a cape.",
 	Cape2		= "I heard the spy enjoys wearing capes.",
 	NoCape1		= "I heard the spy dislikes capes and refuses to wear one.",
@@ -275,7 +275,7 @@ L:SetMiscLocalization({
 	Female1		= "They say that the spy is here and she's quite the sight to behold.",
 	Female2		= "I hear some woman has been constantly asking about the district...",
 	Female3		= "Someone's been saying that our new guest isn't male.",
-	Female4		= "They say that the spy is here and she's quite the sight to behold.",
+	Female4		= "A guest saw both her and Elisande arrive together earlier.",
 	Male1		= "I heard somewhere that the spy isn't female.",
 	Male2		= "I heard the spy is here and he's very good looking.",
 	Male3		= "A guest said she saw him entering the manor alongside the Grand Magistrix.",
@@ -528,5 +528,41 @@ L:SetGeneralLocalization({
 
 L:SetMiscLocalization({
 	speedRun		=	"The strange chill of a dark presence winds through the air..."
+})
+
+-----------------------
+-- <<<Cathedral of Eternal Night >>> --
+-----------------------
+-----------------------
+-- Agronox --
+-----------------------
+L= DBM:GetModLocalization(1905)
+
+-----------------------
+-- Trashbite the Scornful  --
+-----------------------
+L= DBM:GetModLocalization(1906)
+
+L:SetMiscLocalization({
+	bookCase	=	"Behind bookcase"
+})
+
+-----------------------
+-- Domatrax --
+-----------------------
+L= DBM:GetModLocalization(1904)
+
+-----------------------
+-- Mephistroth  --
+-----------------------
+L= DBM:GetModLocalization(1878)
+
+-----------------------
+--Cathedral of Eternal Night Trash
+-----------------------
+L = DBM:GetModLocalization("CoENTrash")
+
+L:SetGeneralLocalization({
+	name =	"Cathedral of Eternal Night Trash"--Maybe something shorter?
 })
 

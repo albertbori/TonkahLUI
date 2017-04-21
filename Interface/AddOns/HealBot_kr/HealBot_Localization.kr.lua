@@ -1,4 +1,4 @@
--- Korean translator required
+﻿-- Korean translator required
 --
 ------------
 -- KOREAN --

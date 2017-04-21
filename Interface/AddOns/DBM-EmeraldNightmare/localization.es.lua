@@ -39,18 +39,6 @@ L:SetWarningLocalization({
 	specWarnWebofPain	= "Estás vinculado a >%s<"
 })
 
-L:SetOptionLocalization({
-	WebConfiguration	= "Opciones del indicador en pantalla y flecha de Telaraña de dolor",
-	Disabled			= "Deshabilitar",
-	Arrow				= "Mostrar solo flecha tradicional si estás afectado",
-	HudSelf				= "Mostrar línea indicadora solo si estás afectado",
-	HudAll				= "Mostrar líneas indicadoras de todos los objetivos afectados"
-})
-
-L:SetMiscLocalization({
-	MapMessage			= "Atención: este módulo hace uso de flechas e indicadores en pantalla, características que desaparecerán en el parche 7.1."
-})
-
 -----------
 -- Ursoc --
 -----------

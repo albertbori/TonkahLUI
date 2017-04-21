@@ -1,6 +1,6 @@
-## Interface: 70100
+## Interface: 70200
 ## Title: Masque
-## Version: 7.1.0
+## Version: 7.2.0
 ## Author: StormFX, JJSheets
 ## Notes: A dynamic button skinning engine.
 ## Notes-deDE: Ein dynamisches Button-Skin-Addon.
@@ -18,10 +18,6 @@
 ## X-WoWI-ID: 12097
 ## OptionalDeps: Ace3
 ## SavedVariables: MasqueDB
-## X-Curse-Packaged-Version: 7.1.0
-## X-Curse-Project-Name: Masque
-## X-Curse-Project-ID: masque
-## X-Curse-Repository-ID: wow/masque/mainline
 
 # Libraries
 Libs\LibStub\Libstub.lua

@@ -1,4 +1,4 @@
--- Greek maintained by Snaomi.
+﻿-- Greek maintained by Snaomi.
 
 -------------
 -- GREEK --

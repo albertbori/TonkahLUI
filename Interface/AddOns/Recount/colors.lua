@@ -1,6 +1,6 @@
 local Recount = _G.Recount
 
-local revision = tonumber(string.sub("$Revision: 1380 $", 12, -3))
+local revision = tonumber(string.sub("$Revision: 1413 $", 12, -3))
 if Recount.Version < revision then
 	Recount.Version = revision
 end
@@ -49,7 +49,7 @@ local function Color_Change()
 		TempColor.a = 1.0 - OpacitySliderFrame:GetValue()
 	end
 
-	--Colors:SetColor(Cur_Branch, Cur_Name, TempColor)
+	Colors:SetColor(Cur_Branch, Cur_Name, TempColor)
 end
 
 local function Opacity_Change()

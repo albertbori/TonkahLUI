@@ -1,4 +1,4 @@
--- Taiwanese translator required
+﻿-- Taiwanese translator required
 
 ---------------
 -- TAIWANESE --

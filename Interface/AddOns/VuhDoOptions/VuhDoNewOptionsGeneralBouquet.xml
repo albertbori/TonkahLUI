@@ -285,7 +285,7 @@
 
 			<Frame name="$parentDetailsPanel" inherits="VuhDoPanelTemplate">
 				<Size>
-					<AbsDimension x="200" y="380" />
+					<AbsDimension x="200" y="415" />
 				</Size>
 				<Anchors>
 					<Anchor point="TOPLEFT">
@@ -381,7 +381,7 @@
 
 					<ScrollFrame name="$parentScrollPanel" inherits="VuhDoScrollPanelTemplate">
 						<Size>
-							<AbsDimension x="200" y="250" />
+							<AbsDimension x="200" y="283" />
 						</Size>
 						<Anchors>
 							<Anchor point="TOPLEFT">
@@ -393,7 +393,7 @@
 						<ScrollChild>
 							<Frame name="$parentChild">
 								<Size>
-									<AbsDimension x="18" y="240" />
+									<AbsDimension x="18" y="283" />
 								</Size>
 								<Anchors>
 									<Anchor point="TOPLEFT">
@@ -416,7 +416,7 @@
 						<Anchors>
 							<Anchor point="TOPLEFT">
 								<Offset>
-									<AbsDimension x="13" y="-297" />
+									<AbsDimension x="13" y="-335" />
 								</Offset>
 							</Anchor>
 						</Anchors>

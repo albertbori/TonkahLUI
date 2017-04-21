@@ -2,7 +2,7 @@
 DBMBlackTemple_AllSavedVars = {
 	["Taunkah-Doomhammer"] = {
 		["Souls"] = {
-			[3] = {
+			[2] = {
 				["WarnMana"] = true,
 				["Timer41305nextTColor"] = 0,
 				["HealthFrame"] = false,
@@ -32,7 +32,7 @@ DBMBlackTemple_AllSavedVars = {
 				["announce41545spell"] = true,
 				["SpiteIcon"] = false,
 				["Timer41305active"] = true,
-				["announceother41294target"] = true,
+				["announceother41294target"] = false,
 				["TimerManaTColor"] = 0,
 				["Timer41426cd"] = true,
 				["Timer41545cd"] = true,
@@ -47,7 +47,7 @@ DBMBlackTemple_AllSavedVars = {
 			},
 		},
 		["Supremus"] = {
-			[3] = {
+			[2] = {
 				["Enabled"] = true,
 				["WarnKite"] = true,
 				["KiteIcon"] = true,
@@ -66,7 +66,7 @@ DBMBlackTemple_AllSavedVars = {
 			},
 		},
 		["Bloodboil"] = {
-			[3] = {
+			[2] = {
 				["Timer40604cd"] = true,
 				["SpecWarn42005youSWNote"] = true,
 				["SpecWarn40604youSWNote"] = true,
@@ -96,7 +96,7 @@ DBMBlackTemple_AllSavedVars = {
 			},
 		},
 		["Shahraz"] = {
-			[3] = {
+			[2] = {
 				["Enabled"] = true,
 				["announce40823spell"] = true,
 				["announce21340spell"] = true,
@@ -112,14 +112,14 @@ DBMBlackTemple_AllSavedVars = {
 			},
 		},
 		["Akama"] = {
-			[3] = {
+			[2] = {
 				["HealthFrame"] = false,
 				["announce2phase"] = true,
 				["Enabled"] = true,
 			},
 		},
 		["Council"] = {
-			[3] = {
+			[2] = {
 				["announce41476ends"] = true,
 				["announceother41475target"] = true,
 				["HealthFrame"] = false,
@@ -168,7 +168,7 @@ DBMBlackTemple_AllSavedVars = {
 			},
 		},
 		["TeronGorefiend"] = {
-			[3] = {
+			[2] = {
 				["announceother40239target"] = true,
 				["Timer40251targetTColor"] = 0,
 				["Timer40243active"] = true,
@@ -187,7 +187,7 @@ DBMBlackTemple_AllSavedVars = {
 			},
 		},
 		["Najentus"] = {
-			[3] = {
+			[2] = {
 				["Enabled"] = true,
 				["InfoFrame"] = false,
 				["HealthFrame"] = false,
@@ -203,9 +203,9 @@ DBMBlackTemple_AllSavedVars = {
 				["Timer39872cd"] = true,
 			},
 		},
-		["talent3"] = "Protection",
+		["talent2"] = "Fury",
 		["Illidan"] = {
-			[3] = {
+			[2] = {
 				["WarnHuman"] = true,
 				["timer_combatTColor"] = 0,
 				["announce40695spell"] = true,

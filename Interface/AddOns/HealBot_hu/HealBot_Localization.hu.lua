@@ -1,4 +1,4 @@
--- Hungarian translator required
+﻿-- Hungarian translator required
 
 ---------------
 -- Hungarian --

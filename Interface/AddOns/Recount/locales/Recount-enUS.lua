@@ -408,6 +408,7 @@ L["Times"] = true
 L["Title"] = true
 L["Title Text"] = true
 L["Toggle"] = true
+L["Toggle merge pets"] = true
 L["Toggle pause of global data collection"] = true
 L["Toggles sending synchronization messages"] = true
 L["Toggles the main window"] = true

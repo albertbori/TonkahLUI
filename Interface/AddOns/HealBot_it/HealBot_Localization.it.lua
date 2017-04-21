@@ -1,4 +1,4 @@
--- Italian translator required
+﻿-- Italian translator required
 
 -------------
 -- ITALIAN --

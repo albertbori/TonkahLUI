@@ -17,10 +17,12 @@
 **/WTF/Account/ACCOUNTNAME/SavedVariables/Blizzard_CombatLog.lua
 **/WTF/Account/ACCOUNTNAME/SavedVariables/Coordinates.lua
 **/WTF/Account/ACCOUNTNAME/SavedVariables/Easy_Obliterate.lua
+**/WTF/Account/ACCOUNTNAME/SavedVariables/Elephant*
+**/WTF/Account/ACCOUNTNAME/SavedVariables/Ellipsis*
 **/WTF/Account/ACCOUNTNAME/SavedVariables/ExtGuildUI*
 **/WTF/Account/ACCOUNTNAME/SavedVariables/FocusInterruptSounds.lua
 **/WTF/Account/ACCOUNTNAME/SavedVariables/GarrisonMissionManager.lua
-**/WTF/Account/ACCOUNTNAME/SavedVariables/GSE*
+**/WTF/Account/ACCOUNTNAME/SavedVariables/GSE.lua
 **/WTF/Account/ACCOUNTNAME/SavedVariables/GS-Core.lua
 **/WTF/Account/ACCOUNTNAME/SavedVariables/GS-DraikMacros.lua
 **/WTF/Account/ACCOUNTNAME/SavedVariables/GuildManager.lua
@@ -29,6 +31,8 @@
 **/WTF/Account/ACCOUNTNAME/SavedVariables/Netherwing_Eggs.lua
 **/WTF/Account/ACCOUNTNAME/SavedVariables/Pawn.lua
 **/WTF/Account/ACCOUNTNAME/SavedVariables/Postal.lua
+**/WTF/Account/ACCOUNTNAME/SavedVariables/QuickJoinNotifications*
+**/WTF/Account/ACCOUNTNAME/SavedVariables/TalentSetManager*
 **/WTF/Account/ACCOUNTNAME/SavedVariables/TomTom.lua
 **/WTF/Account/ACCOUNTNAME/SavedVariables/TradeSkillMaster*
 **/WTF/Account/ACCOUNTNAME/SavedVariables/SellJunk.lua
@@ -42,6 +46,9 @@
 **/Interface/AddOns/Auctionator/
 **/Interface/AddOns/BadBoy/
 **/Interface/Addons/Easy_Obliterate/
+**/Interface/AddOns/Elephant/
+**/Interface/AddOns/Ellipsis/
+**/Interface/AddOns/Ellipsis_Options/
 **/Interface/AddOns/EquipmentBuddy/
 **/Interface/AddOns/ExtGuildUI/
 **/Interface/AddOns/FocusInterruptSounds/
@@ -57,10 +64,13 @@
 **/Interface/AddOns/Netherwing_Eggs/
 **/Interface/AddOns/Pawn/
 **/Interface/AddOns/Postal/
+**/Interface/AddOns/QuickJoinNotifications/
 **/Interface/AddOns/SellJunk/
+**/Interface/AddOns/Simulationcraft/
 **/Interface/AddOns/Storyline/
 **/Interface/AddOns/SuperGuildInvite/
 **/Interface/AddOns/TomTom/
+**/Interface/AddOns/TalentSetManager/
 **/Interface/AddOns/TradeSkillMaster*/
 **/Interface/AddOns/WeakAuras*/
 **/Interface/AddOns/WorldQuestTracker/

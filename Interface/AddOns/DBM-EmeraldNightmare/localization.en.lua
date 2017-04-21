@@ -29,6 +29,10 @@ L:SetOptionLocalization({
 	Adds				= "Show add counts for all add types"
 })
 
+L:SetMiscLocalization({
+	AddSpawnNotice		= "As players overgear encounter, add spawns grow increasingly faster as encounter was designd by blizzard with auto pacing code. As such, if you overgear/overkill fight, take the add spawn timers witha grain of salt."
+})
+
 ---------------------------
 -- Elerethe Renferal --
 ---------------------------
@@ -37,20 +41,6 @@ L= DBM:GetModLocalization(1744)
 L:SetWarningLocalization({
 	warnWebOfPain		= ">%s< is linked to >%s<",--Only this needs localizing
 	specWarnWebofPain	= "You are linked to >%s<"--Only this needs localizing
-})
-
-L:SetOptionLocalization({
-	warnWebOfPain		= DBM_CORE_AUTO_ANNOUNCE_OPTIONS.target:format(215307),--No need to copy to other locals
-	specWarnWebofPain	= DBM_CORE_AUTO_SPEC_WARN_OPTIONS.you:format(215307),--No need to copy to other locals
-	WebConfiguration	= "Set HUD/Arrow options for Web of Pain",
-	Disabled			= "Disabled",
-	Arrow				= "Show only traditional Arrow if you're affected",
-	HudSelf				= "Show HUD line only if you're affected",
-	HudAll				= "Show HUD line for all affected targets"
-})
-
-L:SetMiscLocalization({
-	MapMessage			= "Note: This mod uses arrow/HUD options that can be configured in GUI. These options will also break in 7.1"
 })
 
 ---------------------------

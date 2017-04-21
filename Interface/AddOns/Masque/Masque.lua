@@ -3,7 +3,7 @@
 	please see the included License.txt file.
 
 	* File...: Masque.lua
-	* Date...: 2016-02-04T02:42:15Z
+	* Date...: 2016-02-04T8:42:15Z
 	* Hash...: e2d9853
 	* Author.: StormFX
 

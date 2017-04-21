@@ -121,4 +121,7 @@ function VUHDO_initFromSpellbook()
 		end
 	end
 	VUHDO_setKnowsSwiftmend(VUHDO_isSpellKnown(VUHDO_SPELL_ID.SWIFTMEND));
+
+	-- toggle whether we should track Holy Priest "Trail of Light"
+	VUHDO_setKnowsTrailOfLight(VUHDO_isTalentKnown(VUHDO_SPELL_ID.TRAIL_OF_LIGHT));
 end

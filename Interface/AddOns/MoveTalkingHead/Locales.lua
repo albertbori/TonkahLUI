@@ -10,8 +10,8 @@ local L = {
 	deDE = {
 		RESET = "Einstellungen wurden zurückgesetzt",
 		SET = "Die momentane Skalierung beträgt %.2f",
-		ERROR_SCALE = "%s ist nicht im gültigen Bereich von %s",
 		USAGE_SCALE = "Legt die Skalierung fest",
+		ERROR_SCALE = "%s ist nicht im gültigen Bereich von %s",
 	},
 	esES = {
 	},
@@ -22,6 +22,10 @@ local L = {
 	itIT = {
 	},
 	koKR = {
+		RESET = "설정이 초기화되었습니다",
+		SET = "현재 크기 비율은 %.2f입니다",
+		USAGE_SCALE = "크기 비율을 설정합니다",
+		ERROR_SCALE = "%s|1은;는; %s의 유효한 범위가 아닙니다",
 	},
 	ptBR = {
 	},

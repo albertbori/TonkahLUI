@@ -88,8 +88,16 @@ local VUHDO_DEFAULT_PROFILES = {
 				["xAdjust"] = -2,
 				["max_num"] = 3,
 			},
+			["SPELL_TRACE"] = {
+				["isMine"] = true,
+				["isOthers"] = false,
+				["duration"] = 2,
+				["showTrailOfLight"] = false,
+				["selected"] = "",
+			},
 			["SHOW_TEXT_OVERHEAL"] = true,
 		},
+
 		["LOCKED"] = false,
 		["HARDLOCKED"] = true,
 		["PANEL_POSITIONS"] = {
@@ -731,6 +739,13 @@ local VUHDO_DEFAULT_PROFILES = {
 			["HIDE_EMPTY_BUTTONS"] = false,
 			["LOCK_CLICKS_THROUGH"] = false,
 			["SHOW_TEXT_OVERHEAL"] = true,
+			["SPELL_TRACE"] = {
+				["isMine"] = true,
+				["isOthers"] = false,
+				["duration"] = 2,
+				["showTrailOfLight"] = false,
+				["selected"] = "",
+			},
 		},
 		["LOCKED"] = false,
 		["HARDLOCKED"] = true,
@@ -2516,6 +2531,10 @@ function VUHDO_loadProfileNoInit(aName)
 	-- @TODO: Warum werden die nicht direkt geladen (ipairs-Problem?)
 	if tProfile["CONFIG"]["CUSTOM_DEBUFF"] and tProfile["CONFIG"]["CUSTOM_DEBUFF"]["STORED"] and VUHDO_CONFIG["CUSTOM_DEBUFF"] then
 		VUHDO_CONFIG["CUSTOM_DEBUFF"]["STORED"] = VUHDO_deepCopyTable(tProfile["CONFIG"]["CUSTOM_DEBUFF"]["STORED"]);
+	end
+
+	if tProfile["CONFIG"]["SPELL_TRACE"] and tProfile["CONFIG"]["SPELL_TRACE"]["STORED"] and VUHDO_CONFIG["SPELL_TRACE"] then
+		VUHDO_CONFIG["SPELL_TRACE"]["STORED"] = VUHDO_deepCopyTable(tProfile["CONFIG"]["SPELL_TRACE"]["STORED"]);
 	end
 
 	VUHDO_fixDominantProfileSettings(tProfile);

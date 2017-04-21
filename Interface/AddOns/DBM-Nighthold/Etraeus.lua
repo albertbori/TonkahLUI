@@ -1,24 +1,24 @@
 local mod	= DBM:NewMod(1732, "DBM-Nighthold", nil, 786)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 15562 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 16135 $"):sub(12, -3))
 mod:SetCreatureID(103758)
 mod:SetEncounterID(1863)
 mod:SetZone()
 --mod:SetUsedIcons(8, 7, 6, 3, 2, 1)
---mod:SetHotfixNoticeRev(12324)
-mod.respawnTime = 30--or 35 or 40
+mod:SetHotfixNoticeRev(15841)
+mod.respawnTime = 50
 
 mod:RegisterCombat("combat")
 
 mod:RegisterEventsInCombat(
 	"SPELL_CAST_START 205408 206949 206517 207720 207439 216909",
-	"SPELL_CAST_SUCCESS 206464 206464 206936 205649 207143 205984 214335 214167",
+	"SPELL_CAST_SUCCESS 206464 206464 206936 205649 207143 205984 214335 214167 221875",
 	"SPELL_AURA_APPLIED 205429 216344 216345 205445 205984 214335 214167 206585 206936 205649 207143 206398",
-	"SPELL_AURA_REMOVED 205429 216344 216345 205445 205984 214335 214167 206585 206936 207143",
+	"SPELL_AURA_REMOVED 205429 216344 216345 205445 205984 214335 214167 206585 206936 205649 207143",
 	"SPELL_SUMMON 207813",
-	"SPELL_PERIODIC_DAMAGE 206398",
-	"SPELL_PERIODIC_MISSED 206398",
+--	"SPELL_PERIODIC_DAMAGE 206398",
+--	"SPELL_PERIODIC_MISSED 206398",
 	"UNIT_DIED",
 	"UNIT_SPELLCAST_SUCCEEDED boss1",
 	"UNIT_AURA player"
@@ -28,6 +28,11 @@ mod:RegisterEventsInCombat(
 --TODO, felburst stacks/swapping?
 --TODO, does void nova even merit a special warning, or regular?
 --TODO, void ejection gone?
+--[[
+(ability.id = 205408 or ability.id = 206949 or ability.id = 206517 or ability.id = 207720 or ability.id = 207439 or ability.id = 216909 or ability.id = 221875) and type = "begincast" or
+(ability.id = 205984 or ability.id = 214335 or ability.id = 214167 or ability.id = 221875) and type = "cast" or
+(ability.id = 206464 or ability.id = 206936 or ability.id = 205649 or ability.id = 207143) and type = "cast"
+--]]
 --Base abilities
 local warnStarSignCrab				= mod:NewTargetAnnounce(205429, 2)--Yellow (looks orange but icon text is yellow)
 local warnStarSignDragon			= mod:NewTargetAnnounce(216344, 2)--Blue
@@ -40,6 +45,7 @@ local warnCoronalEjection			= mod:NewTargetAnnounce(206464, 2)
 local warnIcyEjection				= mod:NewTargetAnnounce(206936, 2)
 --Stage Three: A Shattered World
 local warnFelEjection				= mod:NewTargetAnnounce(205649, 2)
+local warnFelEjectionPuddle			= mod:NewCountAnnounce(205649, 2)
 --Stage Four: Inevitable Fate
 --local warnVoidEjection				= mod:NewTargetAnnounce(207143, 2)
 
@@ -54,6 +60,8 @@ local yellIcyEjection				= mod:NewFadesYell(206936)
 local specWarnFrigidNova			= mod:NewSpecialWarningSpell(206949, nil, nil, nil, 2, 2)--maybe change to MoveTo warning
 --Stage Three: A Shattered World
 local specWarnFelEjection			= mod:NewSpecialWarningMoveAway(205649, nil, nil, nil, 1, 2)
+local yellFelEjection				= mod:NewYell(205649)
+local yellFelEjectionFade			= mod:NewFadesYell(205649)
 local specWarnFelNova				= mod:NewSpecialWarningRun(206517, nil, nil, nil, 4, 2)
 local specWarnFelFlame				= mod:NewSpecialWarningMove(206398, nil, nil, nil, 1, 2)
 --Stage Four: Inevitable Fate
@@ -65,40 +73,47 @@ local specWarnWorldDevouringForce	= mod:NewSpecialWarningDodge(216909, nil, nil,
 --Mythic
 local specWarnConjunction			= mod:NewSpecialWarningMoveAway(205408, nil, nil, nil, 3, 2)
 local specWarnConjunctionSign		= mod:NewSpecialWarningYouPos(205408, nil, nil, nil, 1, 6)
+local yellConjunctionSign			= mod:NewPosYell(205408, DBM_CORE_AUTO_YELL_CUSTOM_POSITION)
 
 
 --Base abilities
-local timerGravPullCD				= mod:NewCDTimer(29, 205984, nil, nil, nil, 5, nil, DBM_CORE_TANK_ICON)
+local timerGravPullCD				= mod:NewCDTimer(28, 205984, nil, nil, nil, 5, nil, DBM_CORE_TANK_ICON)
 --Stage One: The Dome of Observation
 mod:AddTimerLine(SCENARIO_STAGE:format(1))
-local timerCoronalEjectionCD		= mod:NewCDTimer(16, 206464, nil, nil, nil, 3)--CD is not known, always push phase 2 before this is cast 2nd time
+--local timerCoronalEjectionCD		= mod:NewCDTimer(16, 206464, nil, nil, nil, 3)--CD is not known, always push phase 2 before this is cast 2nd time
 --Stage Two: Absolute Zero
 mod:AddTimerLine(SCENARIO_STAGE:format(2))
 local timerIcyEjectionCD			= mod:NewCDCountTimer(16, 206936, nil, nil, nil, 3)
-local timerFrigidNovaCD				= mod:NewCDTimer(61.5, 206949, nil, nil, nil, 2, nil, DBM_CORE_DEADLY_ICON)
+local timerFrigidNovaCD				= mod:NewCDCountTimer(61.5, 206949, nil, nil, nil, 2, nil, DBM_CORE_DEADLY_ICON)
 --Stage Three: A Shattered World
 mod:AddTimerLine(SCENARIO_STAGE:format(3))
 local timerFelEjectionCD			= mod:NewCDCountTimer(16, 205649, nil, nil, nil, 3)
-local timerFelNovaCD				= mod:NewCDCountTimer(25, 206517, nil, nil, nil, 2, nil, DBM_CORE_DEADLY_ICON)--47.1, 45.0, 25.1
+local timerFelNovaCD				= mod:NewCDCountTimer(25, 206517, nil, nil, nil, 2, nil, DBM_CORE_DEADLY_ICON)
 --Stage Four: Inevitable Fate
 mod:AddTimerLine(SCENARIO_STAGE:format(4))
-local timerWitnessVoidCD			= mod:NewCDTimer(14.2, 207720, nil, nil, nil, 2, nil, DBM_CORE_HEALER_ICON)
+local timerWitnessVoid				= mod:NewCastTimer(4, 207720, nil, nil, nil, 2)
+local timerWitnessVoidCD			= mod:NewCDTimer(13, 207720, nil, nil, nil, 2, nil, DBM_CORE_HEALER_ICON)
 --local timerVoidEjectionCD			= mod:NewCDCountTimer(16, 207143, nil, nil, nil, 3)--Where did it go? wasn't on normal test and wasn't on heroic retest
-local timerVoidNovaCD				= mod:NewCDTimer(74, 207439, nil, nil, nil, 2)--Only saw a single pull it was cast twice, so CD needs more verification
-local timerWorldDevouringForceCD	= mod:NewCDTimer(16, 216909, nil, nil, nil, 3, nil, DBM_CORE_DEADLY_ICON..DBM_CORE_HEROIC_ICON)
+local timerVoidNovaCD				= mod:NewCDCountTimer(74, 207439, nil, nil, nil, 2)--Only saw a single pull it was cast twice, so CD needs more verification
+local timerWorldDevouringForceCD	= mod:NewCDCountTimer(42, 216909, nil, nil, nil, 3, nil, DBM_CORE_DEADLY_ICON..DBM_CORE_HEROIC_ICON)
 local timerThingCD					= mod:NewCDTimer(63, "ej13057", 207813, "Tank", nil, 5, nil, DBM_CORE_TANK_ICON)
 mod:AddTimerLine(ENCOUNTER_JOURNAL_SECTION_FLAG12)
-local timerConjunctionCD			= mod:NewCDTimer(16, 205408, nil, nil, nil, 3, nil, DBM_CORE_HEROIC_ICON)
+local timerConjunctionCD			= mod:NewCDCountTimer(16, 205408, nil, nil, nil, 3, nil, DBM_CORE_HEROIC_ICON)
+local timerConjunction				= mod:NewBuffFadesTimer(15, 207720, nil, nil, nil, 5, nil, DBM_CORE_DEADLY_ICON)
 
---local berserkTimer					= mod:NewBerserkTimer(463)
+local berserkTimer					= mod:NewBerserkTimer(463)
 
 --Base abilities
-local countdownConjunction			= mod:NewCountdownFades("AltTwo15", 205408)
+local countdownConjunction			= mod:NewCountdown("AltTwo15", 205408, nil, nil, 10)
+local countdownConjunctionFades		= mod:NewCountdownFades("AltTwo15", 205408, nil, nil, 10)
 local countdownGravPull				= mod:NewCountdownFades("Alt10", 205984)--Maybe change to everyone if it works like I think
 --Stage One: The Dome of Observation
 --Stage Two: Absolute Zero
+local countdownFrigidNova			= mod:NewCountdown(61.5, 206949)
 --Stage Three: A Shattered World
+local countdownFelNova				= mod:NewCountdown(25, 206517)
 --Stage Four: Inevitable Fate
+local countWorldDevouringForce		= mod:NewCountdown(15, 216909)
 
 --Base abilities
 local voiceConjunction				= mod:NewVoice(205408)--scatter/find <type>
@@ -113,7 +128,7 @@ local voiceFelEjection				= mod:NewVoice(205649)--runout/keepmove
 local voiceFelnova					= mod:NewVoice(206517)--justrun
 local voiceFelFlame					= mod:NewVoice(206398)--runaway
 --Stage Four: Inevitable Fate
-local voiceThing					= mod:NewVoice("ej13057", "-Healer")--killmob
+local voiceThing					= mod:NewVoice("ej13057", "-Healer")--bigmob
 local voiceWitnessVoid				= mod:NewVoice(207720)--turnaway
 local voiceVoidEjection				= mod:NewVoice(207143)--runout
 local voiceVoidNova					= mod:NewVoice(207439)--aesoon
@@ -121,15 +136,20 @@ local voiceWorldDevouringForce		= mod:NewVoice(216909)--farfromline
 
 
 mod:AddRangeFrameOption("5/8")
-mod:AddHudMapOption("HudMapOnConjunction", 205408)
-mod:AddBoolOption("ShowNeutralColor", false)
 mod:AddInfoFrameOption(205408)--really needs a "various" option
+mod:AddBoolOption("ConjunctionYellFilter", true)
 
 mod.vb.StarSigns = 0
 mod.vb.phase = 1
 mod.vb.icyEjectionCount = 0
 mod.vb.felEjectionCount = 0
+mod.vb.frostNovaCount = 0
 mod.vb.felNovaCount = 0
+mod.vb.voidNovaCount = 0
+mod.vb.grandConCount = 0
+mod.vb.conActive = false
+mod.vb.worldDestroyingCount = 0
+mod.vb.isPhaseChanging = false
 --mod.vb.voidEjectionCount = 0
 --These timers are self corrective, which is annoying when all inclusive but better if scrubbing short timers
 --For example Icy will always be 35.2, 64.5, 24.7 if you scrub the short timers or within 0.3. However including short timers and you get more variation.
@@ -139,14 +159,24 @@ mod.vb.felNovaCount = 0
 --"207143-Void Ejection" = "pull:328.7, 5.7, 14.1, 20.7, 2.8, 6.1, 25.7, 4.9",
 --"207143-Void Ejection" = "pull:326.8, 4.4, 17.5, 17.4, 4.6, 4.7, 26.3, 4.8",
 --For all inclusive, i'll simply use lowest observed time for each count, which will give close approx cd timer but imprecise to be a "next" timer.
-local icyEjectionTimers = {24.5, 34.4, 6.5, 5.3, 50.7, 1.2, 2.4}--43.3, 35.6, 8.1, 4.1, 52.2, 1.2, 2.4
-local felEjectionTimers = {22.5, 3.6, 3.2, 2.4, 10.2, 4.4, 2.8, 32.8, 4.0, 1.6, 4.0, 4.5, 22.3, 6.9, 17.0, 1.6, 1.2, 2.0, 18.3, 0.4}--10 after 4, 32 after 7, 22 after 12, 17 after 14, 18 after 18
+local icyEjectionTimers = {24.5, 34.4, 6.5, 4.8, 50.2, 1.2, 2.4, 25.6, 2.8}--43.3, 35.6, 8.1, 4.1, 52.2, 1.2, 2.4
+local felEjectionTimers = {18.2, 3.6, 3.2, 2.4, 10.2, 4.4, 2.8, 32.8, 4.0, 1.6, 4.0, 4.5, 22.3, 6.9, 17.0, 1.6, 1.2, 2.0, 18.3, 0.4}--10 after 4, 32 after 7, 22 after 12, 17 after 14, 18 after 18
+local mythicfelEjectionTimers = {17.4, 3.2, 2.8, 2.4, 9.3, 2.4, 3.2, 31.2, 2, 1.2, 13.4, 1.2, 1.7, 22.2, 8.5, 9.3, 2.5, 1.5, 24.3, 3.2}
 local voidEjectionTimers = {24, 3.2, 14.1, 17.4, 0.8, 4.7, 25.7, 2.3}
 --local felNovaTImers = {34.8, 31.3, 29.3}--Latest is 47.1, 45.0, 25.1. Currently unused. for now just doing 45 or 25
-local abZeroTargets = {}
+local worldDestroyingTimers = {22, 42, 57, 51.8}
+local ps1Grand = {15, 12.2}
+local ps2Grand = {27, 44.9, 58.3}
+local ps3Grand = {58.7, 43, 41.4}
+local ps4Grand = {46.5, 61.6, 51.2}
 local abZeroDebuff, chilledDebuff, gravPullDebuff = GetSpellInfo(206585), GetSpellInfo(206589), GetSpellInfo(205984)
 local icyEjectionDebuff, coronalEjectionDebuff, voidEjectionDebuff = GetSpellInfo(206936), GetSpellInfo(206464), GetSpellInfo(207143)
 local crabDebuff, dragonDebuff, hunterDebuff, wolfDebuff = GetSpellInfo(205429), GetSpellInfo(216344), GetSpellInfo(216345), GetSpellInfo(205445)
+local crabs = {}
+local dragons = {}
+local hunters = {}
+local wolves = {}
+local playerAffected = false
 local UnitDebuff = UnitDebuff
 local voidWarned = false
 local chilledFilter, tankFilter
@@ -163,65 +193,59 @@ do
 	end
 end
 
-local updateInfoFrame, sortInfoFrame
+local updateInfoFrame
 do
---	local playerName = UnitName("player")
 	local lines = {}
-	sortInfoFrame = function(a, b)
-		local a = lines[a]
-		local b = lines[b]
-		if not tonumber(a) then a = -1 end
-		if not tonumber(b) then b = -1 end
-		if a < b then return true else return false end
-	end
 	updateInfoFrame = function()
 		table.wipe(lines)
-		local total1, total2 = 0, 0
-		local crabs, dragons, hunters, wolves = 0, 0, 0, 0
+		local infoNeeded = false
 		--Star Signs Helper
-		for i = 1, DBM:GetNumRealGroupMembers() do
-			local unitID = 'raid'..i
-			if UnitDebuff(unitID, crabDebuff) then
-				crabs = crabs + 1
-				total1 = total1 + 1
+		--If player has debuff, find and show other players with same debuff as player
+		if UnitDebuff("player", crabDebuff) then
+			infoNeeded = true
+			for i = 1, #crabs do
+				local name = crabs[i]
+				lines[name] = ""
 			end
-			if UnitDebuff(unitID, dragonDebuff) then
-				dragons = dragons + 1
-				total1 = total1 + 1
+		elseif UnitDebuff("player", dragonDebuff) then
+			infoNeeded = true
+			for i = 1, #dragons do
+				local name = dragons[i]
+				lines[name] = ""
 			end
-			if UnitDebuff(unitID, hunterDebuff) then
-				hunters = hunters + 1
-				total1 = total1 + 1
+		elseif UnitDebuff("player", hunterDebuff) then
+			infoNeeded = true
+			for i = 1, #hunters do
+				local name = hunters[i]
+				lines[name] = ""
 			end
-			if UnitDebuff(unitID, wolfDebuff) then
-				wolves = wolves + 1
-				total1 = total1 + 1
+		elseif UnitDebuff("player", wolfDebuff) then
+			infoNeeded = true
+			for i = 1, #wolves do
+				local name = wolves[i]
+				lines[name] = ""
 			end
-		end
-		if total1 > 0 then
+		else--Player has no debuff, show overview frame with total debuff counts remaining
+			local crabsigns, dragonsigns, huntersigns, wolfsigns = #crabs, #dragons, #hunters, #wolves
 			--FIXME, figure out why colors are wrong
-			lines["|cff7d0aCD"..crabDebuff.."|r"] = crabs
-			lines["|c69ccf0CD"..dragonDebuff.."|r"] = dragons
-			lines["|cabd473CD"..hunterDebuff.."|r"] = hunters
-			lines["|cff0000CD"..wolfDebuff.."|r"] = wolves
-		end
-		--Absolute Zero Helper
-		for i = 1, #abZeroTargets do
-			local name = abZeroTargets[i]
-			local uId = DBM:GetRaidUnitId(name)
-			if not uId then break end
-			local _, _, _, currentStack = UnitDebuff(uId, abZeroDebuff)
-			if currentStack then
-				total2 = total2 + 1
-				lines[name] = currentStack
+			if crabsigns > 0 then
+				lines["|cff7d0aCD"..crabDebuff.."|r"] = crabsigns
+				infoNeeded = true
+			end
+			if dragonsigns > 0 then
+				lines["|c69ccf0CD"..dragonDebuff.."|r"] = dragonsigns
+				infoNeeded = true
+			end
+			if huntersigns > 0 then
+				lines["|cabd473CD"..hunterDebuff.."|r"] = huntersigns
+				infoNeeded = true
+			end
+			if wolfsigns > 0 then
+				lines["|cff0000CD"..wolfDebuff.."|r"] = wolfsigns
+				infoNeeded = true
 			end
 		end
-		if total2 > 0 then
-			--Displays whether or not player has chilled. if YES in red or NO in green
-			--Ths is displayed under the absolute zero name/stacks so they know there are still stacks to soak and if able.
-			lines[chilledDebuff] = UnitDebuff("player", chilledDebuff) and "|cFF1A1ACD"..YES.."|r" or "|c69CCF0CD"..NO.."|r"
-		end
-		if total1 == 0 and total2 == 0 then--Nothing left, hide infoframe
+		if not infoNeeded then--Nothing left, hide infoframe
 			DBM.InfoFrame:Hide()
 		end
 		return lines
@@ -245,83 +269,122 @@ local function updateRangeFrame(self, force)
 	end
 end
 
-local function cancelNotMine(self)
-	--Idea behind this is you should only see all targets same sign as you
-	if not UnitDebuff("player", crabDebuff) then
-		warnStarSignCrab:Cancel()
+--This function went from pretty to ugly but it should work
+local function showConjunction(self)
+	if UnitDebuff("player", crabDebuff) then
+		warnStarSignCrab:Show(table.concat(crabs, "<, >"))
+	elseif UnitDebuff("player", dragonDebuff) then
+		warnStarSignDragon:Show(table.concat(dragons, "<, >"))
+	elseif UnitDebuff("player", hunterDebuff) then
+		warnStarSignHunter:Show(table.concat(hunters, "<, >"))
+	elseif UnitDebuff("player", wolfDebuff) then
+		warnStarSignWolf:Show(table.concat(wolves, "<, >"))
 	end
-	if not UnitDebuff("player", dragonDebuff) then
-		warnStarSignDragon:Cancel()
-	end
-	if not UnitDebuff("player", hunterDebuff) then
-		warnStarSignHunter:Cancel()
-	end
-	if not UnitDebuff("player", wolfDebuff) then
-		warnStarSignWolf:Cancel()
+end
+
+local function updateConjunctionYell(self, spellName, icon)
+	if not self.Options.ConjunctionYellFilter then return end
+	if UnitDebuff("player", spellName) then
+		yellConjunctionSign:Yell(icon, "", icon)
+		self:Schedule(2, updateConjunctionYell, self, spellName, icon)
 	end
 end
 
 function mod:OnCombatStart(delay)
 	voidWarned = false
-	table.wipe(abZeroTargets)
+	playerAffected = false
 	self.vb.StarSigns = 0
 	self.vb.phase = 1
+	self.vb.isPhaseChanging = false
 	if self:IsMythic() then
-		timerCoronalEjectionCD:Start(12-delay)--Still could be health based
-		timerConjunctionCD:Start(15-delay)
+		self.vb.grandConCount = 0
+		self.vb.conActive = false
+		self.vb.worldDestroyingCount = 0
+--		timerCoronalEjectionCD:Start(12-delay)--Still could be health based
+		timerConjunctionCD:Start(15-delay, 1)
+		countdownConjunction:Start(15-delay)
 	else
-		timerCoronalEjectionCD:Start(12.9-delay)--Still could be health based
+--		timerCoronalEjectionCD:Start(12.9-delay)--Still could be health based
 	end
-	--berserkTimer:Start(-delay)
 end
 
 function mod:OnCombatEnd()
 	if self.Options.RangeFrame then
 		DBM.RangeCheck:Hide()
 	end
-	if self.Options.HudMapOnConjunction then
-		DBMHudMap:Disable()
+	if self.Options.InfoFrame then
+		DBM.InfoFrame:Hide()
 	end
 end
 
 function mod:SPELL_CAST_START(args)
 	local spellId = args.spellId
 	if spellId == 205408 then
+		self.vb.grandConCount = self.vb.grandConCount + 1
+		self.vb.conActive = true
+		C_Timer.After(19, function() self.vb.conActive = false end)
 		specWarnConjunction:Show()
 		voiceConjunction:Play("scatter")
-		--timerConjunctionCD:Start()
+		local timers
+		if self.vb.phase == 1 then
+			timers = ps1Grand[self.vb.grandConCount+1]
+		elseif self.vb.phase == 2 then
+			timers = ps2Grand[self.vb.grandConCount+1]
+		elseif self.vb.phase == 3 then
+			timers = ps3Grand[self.vb.grandConCount+1]
+		else
+			timers = ps4Grand[self.vb.grandConCount+1]
+		end
+		if timers then
+			timerConjunctionCD:Start(timers, self.vb.grandConCount+1)
+			countdownConjunction:Start(timers)
+		end
 		updateRangeFrame(self, true)
-		DBM:AddMsg("HUD ranges for this are still approximatinos until further testing.")
-		self:Schedule(5, cancelNotMine, self)
+		self:Schedule(4.5, showConjunction, self)
+		table.wipe(crabs)
+		table.wipe(dragons)
+		table.wipe(hunters)
+		table.wipe(wolves)
 	elseif spellId == 206949 then
+		self.vb.frostNovaCount = self.vb.frostNovaCount + 1
 		specWarnFrigidNova:Show()
 		voiceFrigidNova:Play("gathershare")
-		timerFrigidNovaCD:Start()
+		timerFrigidNovaCD:Start(nil, self.vb.frostNovaCount+1)
+		countdownFrigidNova:Start()
 	elseif spellId == 206517 then
 		self.vb.felNovaCount = self.vb.felNovaCount + 1
 		specWarnFelNova:Show()
 		voiceFelnova:Play("justrun")
 		if self.vb.felNovaCount < 3 then
-			timerFelNovaCD:Start(45, self.vb.felNovaCount+1)
+			timerFelNovaCD:Start(44, self.vb.felNovaCount+1)
+			countdownFelNova:Start(44)
 		else
 			timerFelNovaCD:Start(nil, self.vb.felNovaCount+1)
+			countdownFelNova:Start()
 		end
 	elseif spellId == 207720 then
 		specWarnWitnessVoid:Show()
 		voiceWitnessVoid:Play("turnaway")
-		if self:IsEasy() then
-			timerWitnessVoidCD:Start(14.5, args.sourceGUID)
+		timerWitnessVoid:Start(nil, args.sourceGUID)
+		if self:IsMythic() then
+			timerWitnessVoidCD:Start(13, args.sourceGUID)
 		else
-			timerWitnessVoidCD:Start(nil, args.sourceGUID)
+			timerWitnessVoidCD:Start(14.5, args.sourceGUID)
 		end
 	elseif spellId == 207439 then
+		self.vb.voidNovaCount = self.vb.voidNovaCount + 1
 		specWarnVoidNova:Show()
 		voiceVoidNova:Play("aesoon")
-		timerVoidNovaCD:Start()
+		timerVoidNovaCD:Start(nil, self.vb.voidNovaCount+1)
 	elseif spellId == 216909 then
+		self.vb.worldDestroyingCount = self.vb.worldDestroyingCount + 1
 		specWarnWorldDevouringForce:Show()
 		voiceWorldDevouringForce:Play("farfromline")
-		timerWorldDevouringForceCD:Start()
+		local timer = worldDestroyingTimers[self.vb.worldDestroyingCount+1]
+		if timer then
+			timerWorldDevouringForceCD:Start(timer, self.vb.worldDestroyingCount+1)
+			countWorldDevouringForce:Start(timer)
+		end
 	end
 end
 
@@ -329,28 +392,22 @@ function mod:SPELL_CAST_SUCCESS(args)
 	local spellId = args.spellId
 	if spellId == 206464 then
 		--timerCoronalEjectionCD:Start()
-	elseif spellId == 206936 then
+	elseif spellId == 206936 and not self.vb.isPhaseChanging then
 		self.vb.icyEjectionCount = self.vb.icyEjectionCount + 1
 		local timer = icyEjectionTimers[self.vb.icyEjectionCount+1]
 		if timer and timer >= 4 then--No sense in starting timers for the sub 4 second casts
 			timerIcyEjectionCD:Start(timer, self.vb.icyEjectionCount+1)
 		end
-	elseif spellId == 205649 and not self:IsMythic() then--Disabled on mythic, shits basically spammed there and doesn't match timers table.
+	elseif spellId == 205649 and not self.vb.isPhaseChanging then
 		self.vb.felEjectionCount = self.vb.felEjectionCount + 1
 		--10 after 4, 32 after 7, 22 after 12, 17 after 14, 18 after 18
+		--9.4 after 4, 31.2 after 7, 14 after 10 (Mythic)
 		--The rest are like sub 5 second timers with variations to boot so not worth timers
-		if self.vb.felEjectionCount == 4 then
-			timerFelEjectionCD:Start(10, self.vb.felEjectionCount+1)
-		elseif self.vb.felEjectionCount == 7 then
-			timerFelEjectionCD:Start(32, self.vb.felEjectionCount+1)
-		elseif self.vb.felEjectionCount == 12 then
-			timerFelEjectionCD:Start(22, self.vb.felEjectionCount+1)
-		elseif self.vb.felEjectionCount == 14 then
-			timerFelEjectionCD:Start(17, self.vb.felEjectionCount+1)
-		elseif self.vb.felEjectionCount == 18 then
-			timerFelEjectionCD:Start(18, self.vb.felEjectionCount+1)
+		local timer = self:IsMythic() and mythicfelEjectionTimers[self.vb.felEjectionCount+1] or felEjectionTimers[self.vb.felEjectionCount+1]
+		if timer and timer >= 4 then--No sense in starting timers for the sub 5 second casts
+			timerFelEjectionCD:Start(timer, self.vb.felEjectionCount+1)
 		end
-	elseif spellId == 207143 then
+	elseif spellId == 207143 and not self.vb.isPhaseChanging then
 		DBM:Debug("Void Ejection is back", 2)
 --[[		self.vb.voidEjectionCount = self.vb.voidEjectionCount + 1
 		local timer = voidEjectionTimers[self.vb.voidEjectionCount+1]
@@ -372,6 +429,8 @@ function mod:SPELL_CAST_SUCCESS(args)
 		else
 			warnGravitationalPull:Show(args.destName)
 		end
+	elseif spellId == 221875 then
+		self.vb.isPhaseChanging = false
 	end
 end
 
@@ -379,7 +438,7 @@ function mod:SPELL_SUMMON(args)
 	local spellId = args.spellId
 	if spellId == 207813 then
 		specWarnThing:Show()
-		voiceThing:Play("killmob")
+		voiceThing:Play("bigmob")
 		timerWitnessVoidCD:Start(10, args.destGUID)
 		timerThingCD:Start()
 	end
@@ -390,50 +449,54 @@ function mod:SPELL_AURA_APPLIED(args)
 	if spellId == 205429 or spellId == 216344 or spellId == 216345 or spellId == 205445 then--Star Signs
 		self.vb.StarSigns = self.vb.StarSigns + 1
 		if spellId == 205429 then--Crab
-			warnStarSignCrab:CombinedShow(2, args.destName)
-			if self.Options.HudMapOnConjunction then--Yellow
-				DBMHudMap:RegisterRangeMarkerOnPartyMember(spellId, "highlight", args.destName, 3.5, 17, 1, 1, 0, 0.5, nil, false):Appear():SetLabel(args.destName)
-			end
+			crabs[#crabs + 1] = args.destName
 			if args:IsPlayer() then
 				specWarnConjunctionSign:Show(args.spellName)
+				yellConjunctionSign:Yell(2, "", 2)--Orange Circle
+				self:Schedule(2, updateConjunctionYell, self, args.spellName, 2)
 				voiceConjunction:Play("205408c")
-				countdownConjunction:Start()
+				countdownConjunctionFades:Start()
+				timerConjunction:Start()
+				playerAffected = true
 			end
 		elseif spellId == 216344 then--Dragon
-			warnStarSignDragon:CombinedShow(2, args.destName)
-			if self.Options.HudMapOnConjunction then--Blue
-				DBMHudMap:RegisterRangeMarkerOnPartyMember(spellId, "highlight", args.destName, 3.5, 17, 0.28, 0.48, 0.9, 0.5, nil, false):Appear():SetLabel(args.destName)
-			end
+			dragons[#dragons + 1] = args.destName
 			if args:IsPlayer() then
 				specWarnConjunctionSign:Show(args.spellName)
+				yellConjunctionSign:Yell(6, "", 6)--Blue Square
+				self:Schedule(2, updateConjunctionYell, self, args.spellName, 6)
 				voiceConjunction:Play("205408d")
-				countdownConjunction:Start()
+				countdownConjunctionFades:Start()
+				timerConjunction:Start()
+				playerAffected = true
 			end
 		elseif spellId == 216345 then--Hunter
-			warnStarSignHunter:CombinedShow(2, args.destName)
-			if self.Options.HudMapOnConjunction then--Green
-				DBMHudMap:RegisterRangeMarkerOnPartyMember(spellId, "highlight", args.destName, 3.5, 17, 0, 1, 0, 0.5, nil, false):Appear():SetLabel(args.destName)
-			end
+			hunters[#hunters + 1] = args.destName
 			if args:IsPlayer() then
 				specWarnConjunctionSign:Show(args.spellName)
+				yellConjunctionSign:Yell(4, "", 4)--Green Triangle
+				self:Schedule(2, updateConjunctionYell, self, args.spellName, 4)
 				voiceConjunction:Play("205408h")
-				countdownConjunction:Start()
+				countdownConjunctionFades:Start()
+				timerConjunction:Start()
+				playerAffected = true
 			end
 		elseif spellId == 205445 then--Wolf
-			warnStarSignWolf:CombinedShow(2, args.destName)
-			if self.Options.HudMapOnConjunction then--Red
-				DBMHudMap:RegisterRangeMarkerOnPartyMember(spellId, "highlight", args.destName, 3.5, 17, 1, 0, 0, 0.5, nil, false):Appear():SetLabel(args.destName)
-			end
+			wolves[#wolves + 1] = args.destName
 			if args:IsPlayer() then
 				specWarnConjunctionSign:Show(args.spellName)
+				yellConjunctionSign:Yell(7, "", 7)--Red Cross
+				self:Schedule(2, updateConjunctionYell, self, args.spellName, 7)
 				voiceConjunction:Play("205408w")
-				countdownConjunction:Start()
+				countdownConjunctionFades:Start()
+				timerConjunction:Start()
+				playerAffected = true
 			end
 		end
 		if self.vb.StarSigns == 1 then
 			updateRangeFrame(self)
 			if self.Options.InfoFrame and not DBM.InfoFrame:IsShown() then
-				DBM.InfoFrame:Show(15, "function", updateInfoFrame, sortInfoFrame, true)
+				DBM.InfoFrame:Show(15, "function", updateInfoFrame, false, true)
 			end
 		end
 	elseif spellId == 206464 then
@@ -450,28 +513,21 @@ function mod:SPELL_AURA_APPLIED(args)
 			if expires then
 				local remaining = expires-GetTime()
 				countdownGravPull:Start(remaining)
+				if self.Options.ConjunctionYellFilter and self.vb.conActive then return end--No ejection yells during conjunction
 				yellGravitationalPull:Schedule(remaining-1, 1)
 				yellGravitationalPull:Schedule(remaining-2, 2)
 				yellGravitationalPull:Schedule(remaining-3, 3)
 			end
 		end
 	elseif spellId == 206585 then
-		if not tContains(abZeroTargets, args.destName) then
-			table.insert(abZeroTargets, args.destName)
-		end
-		if self.Options.InfoFrame and not DBM.InfoFrame:IsShown() then
-			DBM.InfoFrame:Show(15, "function", updateInfoFrame, sortInfoFrame, true)
-		end
 		updateRangeFrame(self)
-		if args:IsPlayer() then
-			updateRangeFrame(self)
-		end
 	elseif spellId == 206936 then
 		warnIcyEjection:CombinedShow(0.5, args.destName)--If only one, move this to else rule to filter from player
 		if args:IsPlayer() then
 			specWarnIcyEjection:Show()
 			voiceIcyEjection:Play("runout")
 			updateRangeFrame(self)
+			if self.Options.ConjunctionYellFilter and self.vb.conActive then return end--No ejection yells during conjunction
 			yellIcyEjection:Schedule(9, 1)
 			yellIcyEjection:Schedule(8, 2)
 			yellIcyEjection:Schedule(7, 3)
@@ -482,6 +538,15 @@ function mod:SPELL_AURA_APPLIED(args)
 			specWarnFelEjection:Show()
 			voiceFelEjection:Play("runout")
 			voiceFelEjection:Schedule(1, "keepmove")
+			warnFelEjectionPuddle:Schedule(2, 3)
+			warnFelEjectionPuddle:Schedule(4, 2)
+			warnFelEjectionPuddle:Schedule(6, 1)
+			warnFelEjectionPuddle:Schedule(8, 0)
+			if self.Options.ConjunctionYellFilter and self.vb.conActive then return end--No ejection yells during conjunction
+			yellFelEjection:Yell()
+			yellFelEjectionFade:Schedule(7, 1)
+			yellFelEjectionFade:Schedule(6, 2)
+			yellFelEjectionFade:Schedule(5, 3)
 		end
 	elseif spellId == 207143 then
 		--warnVoidEjection:CombinedShow(0.5, args.destName)
@@ -489,7 +554,7 @@ function mod:SPELL_AURA_APPLIED(args)
 			specWarnVoidEjection:Show()
 			voiceVoidEjection:Play("runout")
 		end
-	elseif spellId == 206398 and not self:IsTank() and self:AntiSpam(2, 1) then
+	elseif spellId == 206398 and args:IsPlayer() and self:AntiSpam(2, 1) and not UnitDebuff("Player", gravPullDebuff) then
 		specWarnFelFlame:Show()
 	end
 end
@@ -499,20 +564,21 @@ function mod:SPELL_AURA_REMOVED(args)
 	if spellId == 205429 or spellId == 216344 or spellId == 216345 or spellId == 205445 then--Star Signs
 		self.vb.StarSigns = self.vb.StarSigns - 1
 		if args:IsPlayer() then
-			countdownConjunction:Cancel()
+			countdownConjunctionFades:Cancel()
+			timerConjunction:Stop()
+			playerAffected = false
 		end
 		if self.vb.StarSigns == 0 then
 			updateRangeFrame(self)
-			if self.Options.HudMapOnConjunction then
-				--None left, clear all HUD circles
-				DBMHudMap:FreeEncounterMarkers()
-			end
-		else
-			if self.Options.HudMapOnConjunction and self.Options.ShowNeutralColor then
-				--Change circle color to a 5th, white color for unaffected players
-				DBMHudMap:FreeEncounterMarkerByTarget(spellId, args.destName)
-				DBMHudMap:RegisterRangeMarkerOnPartyMember(spellId, "highlight", args.destName, 4, 17, 1, 1, 1, 0.5, nil, true):Appear():SetLabel(args.destName)
-			end
+		end
+		if spellId == 205429 then--Crab
+			tDeleteItem(crabs, args.destName)
+		elseif spellId == 216344 then--Dragon
+			tDeleteItem(dragons, args.destName)
+		elseif spellId == 216345 then--Hunter
+			tDeleteItem(hunters, args.destName)
+		elseif spellId == 205445 then--Wolf
+			tDeleteItem(wolves, args.destName)
 		end
 	elseif spellId == 205984 or spellId == 214335 or spellId == 214167 then
 		if args:IsPlayer() then
@@ -521,23 +587,18 @@ function mod:SPELL_AURA_REMOVED(args)
 			countdownGravPull:Cancel()
 		end
 	elseif spellId == 206585 then
-		tDeleteItem(abZeroTargets, args.destName)
-		if args:IsPlayer() then
-			updateRangeFrame(self)
-		end
-	elseif spellId == 206464 then
-		if args:IsPlayer() then
-			updateRangeFrame(self)
-		end
-	elseif spellId == 206936 then
-		if args:IsPlayer() then
-			yellIcyEjection:Cancel()
-			updateRangeFrame(self)
-		end
-	elseif spellId == 207143 then
-		if args:IsPlayer() then
-			updateRangeFrame(self)
-		end
+		updateRangeFrame(self)
+	elseif spellId == 206464 and args:IsPlayer() then
+		updateRangeFrame(self)
+	elseif spellId == 206936 and args:IsPlayer() then
+		yellIcyEjection:Cancel()
+		updateRangeFrame(self)
+	elseif spellId == 205649 and args:IsPlayer() then
+		yellFelEjectionFade:Cancel()
+		warnFelEjectionPuddle:Cancel()
+		updateRangeFrame(self)
+	elseif spellId == 207143 and args:IsPlayer() then
+		updateRangeFrame(self)
 	end
 end
 
@@ -545,16 +606,19 @@ function mod:UNIT_DIED(args)
 	local cid = self:GetCIDFromGUID(args.destGUID)
 	if cid == 104880 then--Thing That Should Not Be
 		timerWitnessVoidCD:Cancel(args.destGUID)
+		timerWitnessVoid:Cancel(args.destGUID)
 	end
 end
 
+--[[
 function mod:SPELL_PERIODIC_DAMAGE(_, _, _, _, destGUID, _, _, _, spellId)
-	if spellId == 206398 and destGUID == UnitGUID("player") and self:AntiSpam(2, 1) then
+	if spellId == 206398 and destGUID == UnitGUID("player") and self:AntiSpam(2, 1) and not UnitDebuff("Player", gravPullDebuff) then
 		specWarnFelFlame:Show()
 		voiceFelFlame:Play("runaway")
 	end
 end
 mod.SPELL_PERIODIC_MISSED = mod.SPELL_PERIODIC_DAMAGE
+--]]
 
 --Phases can also be done with Nether Traversal (221875) with same timing.
 --However, this is more robust since unique spellids for each phase is better than same used for all 3
@@ -562,57 +626,88 @@ function mod:UNIT_SPELLCAST_SUCCEEDED(uId, _, _, spellGUID)
 	local spellId = tonumber(select(5, strsplit("-", spellGUID)), 10)
 	if spellId == 222130 then--Phase 2 Conversation
 		self.vb.phase = 2
+		self.vb.isPhaseChanging = true
+		self.vb.frostNovaCount = 0
 		self.vb.icyEjectionCount = 0
-		timerCoronalEjectionCD:Stop()
+--		timerCoronalEjectionCD:Stop()
 		timerConjunctionCD:Stop()
-		timerIcyEjectionCD:Start(23.3, 1)
+		countdownConjunction:Cancel()
 		timerGravPullCD:Start(30)
 		if not self:IsEasy() then
-			timerFrigidNovaCD:Start(49)
+			timerFrigidNovaCD:Start(49, 1)
+			countdownFrigidNova:Start(49)
 		end
 		if self:IsMythic() then
-			timerConjunctionCD:Start(48)
+			self:Unschedule(showConjunction)
+			self.vb.grandConCount = 0
+			timerIcyEjectionCD:Start(15, 1)
+			timerConjunctionCD:Start(27, 1)
+			countdownConjunction:Start(27)
+		else
+			timerIcyEjectionCD:Start(23.3, 1)
 		end
 	elseif spellId == 222133 then--Phase 3 Conversation
+		
 		self.vb.phase = 3
+		self.vb.isPhaseChanging = true
 		self.vb.felEjectionCount = 0
 		self.vb.felNovaCount = 0
 		timerIcyEjectionCD:Stop()
 		timerFrigidNovaCD:Stop()
+		countdownFrigidNova:Cancel()
 		timerGravPullCD:Stop()
 		timerConjunctionCD:Stop()
-		timerFelEjectionCD:Start(18.2, 1)
+		countdownConjunction:Cancel()
 		timerGravPullCD:Start(29)
-		if not self:IsEasy() then
-			timerFelNovaCD:Start(57.7, 1)
-		end
 		if self:IsMythic() then
-			timerConjunctionCD:Start(48)
+			self:Unschedule(showConjunction)
+			self.vb.grandConCount = 0
+			timerFelEjectionCD:Start(17.5, 1)
+			timerFelNovaCD:Start(50.4, 1)
+			countdownFelNova:Start(50.4)
+			timerConjunctionCD:Start(58, 1)
+			countdownConjunction:Start(58)
+		else
+			timerFelEjectionCD:Start(18.2, 1)
+			if not self:IsEasy() then
+				timerFelNovaCD:Start(57.7, 1)
+				countdownFelNova:Start(57.7)
+			end
 		end
 	elseif spellId == 222134 then--Phase 4 Conversation
 		self.vb.phase = 4
+		self.vb.isPhaseChanging = true
+		self.vb.voidNovaCount = 0
 		--self.vb.voidEjectionCount = 0
 		timerFelEjectionCD:Stop()
 		timerFelNovaCD:Stop()
+		countdownFelNova:Cancel()
 		timerGravPullCD:Stop()
 		timerConjunctionCD:Stop()
+		countdownConjunction:Cancel()
 		timerGravPullCD:Start(19.6)
 		timerThingCD:Start(31)
 		if not self:IsEasy() then--Was never used on normal, probably not LFR either then
 			--timerVoidEjectionCD:Start(24, 1)
-			timerVoidNovaCD:Start(41)
+			timerVoidNovaCD:Start(41, 1)
 		end
 		if self:IsMythic() then
-			timerWorldDevouringForceCD:Start(22)
-			timerConjunctionCD:Start(48)
+			self:Unschedule(showConjunction)
+			self.vb.grandConCount = 0
+			self.vb.worldDestroyingCount = 0
+			timerWorldDevouringForceCD:Start(22, 1)
+			countWorldDevouringForce:Start(22)
+			timerConjunctionCD:Start(46.5, 1)
+			countdownConjunction:Start(46.5)
+			berserkTimer:Start(201)
+		else
+			berserkTimer:Start(231)
 		end
 	end
 end
 
 do
 	local debuffName = GetSpellInfo(207143)
-	--Jumps didn't show in combat log during testing, only original casts. However, jumps need warnings too
-	--Check at later time if jumps are in combat log
 	function mod:UNIT_AURA(uId)
 		local hasDebuff = UnitDebuff("player", debuffName)
 		if hasDebuff and not voidWarned then

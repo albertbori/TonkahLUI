@@ -1,0 +1,10 @@
+lightweight tag 56c38ff5ef17f667a8023a15ad8133a0a5d7c78d v1.2.0
+Author:	Ketho <sghs17@outlook.com>
+Date:	Wed Apr 12 22:36:28 2017 +0200
+
+commit 56c38ff5ef17f667a8023a15ad8133a0a5d7c78d
+Author: Ketho <sghs17@outlook.com>
+Date:   Wed Apr 12 22:36:28 2017 +0200
+
+    Bump TOC, added koKR locale
+

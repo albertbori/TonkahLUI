@@ -1,4 +1,4 @@
--- English maintained by Strife.
+﻿-- English maintained by Strife.
 
 -------------
 -- ENGLISH --

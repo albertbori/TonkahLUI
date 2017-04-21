@@ -1,5 +1,5 @@
 --[[
-	Copyright (c) 2009-2016, Hendrik "Nevcairiel" Leppkes < h.leppkes at gmail dot com >
+	Copyright (c) 2009-2017, Hendrik "Nevcairiel" Leppkes < h.leppkes at gmail dot com >
 	All rights reserved.
 ]]
 local _, Bartender4 = ...
@@ -112,15 +112,17 @@ function MicroMenuBar:ApplyConfig(config)
 	self:UpdateButtonLayout()
 end
 
-function MicroMenuBar:UpdateButtonLayout()
-	ButtonBar.UpdateButtonLayout(self)
-	-- If the StoreButton is hidden we want to replace it with the Help button
-	if not StoreMicroButton:IsShown() then
-		HelpMicroButton:Show()
-		HelpMicroButton:ClearAllPoints()
-		HelpMicroButton:SetAllPoints(StoreMicroButton)
-	else
-		HelpMicroButton:Hide()
-		HelpMicroButton:ClearAllPoints()
+if HelpMicroButton then
+	function MicroMenuBar:UpdateButtonLayout()
+		ButtonBar.UpdateButtonLayout(self)
+		-- If the StoreButton is hidden we want to replace it with the Help button
+		if not StoreMicroButton:IsShown() then
+			HelpMicroButton:Show()
+			HelpMicroButton:ClearAllPoints()
+			HelpMicroButton:SetAllPoints(StoreMicroButton)
+		else
+			HelpMicroButton:Hide()
+			HelpMicroButton:ClearAllPoints()
+		end
 	end
 end

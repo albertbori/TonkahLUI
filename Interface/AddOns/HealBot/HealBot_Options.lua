@@ -465,6 +465,9 @@ function HealBot_Options_setLists()
         
         --Demon Hunter
         [HEALBOT_DEMON_SPIKES]=HEALBOT_DEMONHUNTER,
+        [HEALBOT_BLUR]=HEALBOT_DEMONHUNTER,
+        [HEALBOT_EMPOWER_WARDS]=HEALBOT_DEMONHUNTER,
+        [HEALBOT_METAMORPHOSIS]=HEALBOT_DEMONHUNTER,
         
         --Druid
         [HEALBOT_LIFEBLOOM]=HEALBOT_DRUID,
@@ -486,6 +489,8 @@ function HealBot_Options_setLists()
 		[HEALBOT_SPRING_BLOSSOMS]=HEALBOT_DRUID,               
 		[HEALBOT_CULTIVATION]=HEALBOT_DRUID,
         [HEALBOT_HARMONY]=HEALBOT_DRUID,
+        [HEALBOT_INNERVATE]=HEALBOT_DRUID,
+        [HEALBOT_ESSENCE_OF_GHANIR]=HEALBOT_DRUID,
         
         --Hunter
         [HEALBOT_MENDPET]=HEALBOT_HUNTER,
@@ -513,6 +518,7 @@ function HealBot_Options_setLists()
         [HEALBOT_EXTEND_LIFE]=HEALBOT_MONK,
         [HEALBOT_TOUCH_OF_KARMA]=HEALBOT_MONK,
 		--Legion Added
+        [HEALBOT_ESSENCE_FONT]=HEALBOT_MONK,
         
         --Paladin
         [HEALBOT_DIVINE_SHIELD]=HEALBOT_PALADIN,
@@ -570,6 +576,9 @@ function HealBot_Options_setLists()
         [HEALBOT_BLESSING_OF_TUURE]=HEALBOT_PRIEST,
         [HEALBOT_POWER_OF_THE_NAARU]=HEALBOT_PRIEST,
         [HEALBOT_POWER_OF_THE_DARK_SIDE]=HEALBOT_PRIEST,
+        [HEALBOT_ANGELIC_FEATHER]=HEALBOT_PRIEST,
+        [HEALBOT_ALMAIESH_THE_CORD_OF_HOPE]=HEALBOT_PRIEST,
+        [HEALBOT_VESTMANTS_OF_DISCIPLINE]=HEALBOT_PRIEST,
 		
 		--Rogue
         [HEALBOT_VANISH]=HEALBOT_ROGUE,
@@ -598,7 +607,6 @@ function HealBot_Options_setLists()
         [HEALBOT_VIGILANCE]=HEALBOT_WARRIOR,
         [HEALBOT_LAST_STAND]=HEALBOT_WARRIOR,
         [HEALBOT_SHIELD_WALL]=HEALBOT_WARRIOR,
-        [HEALBOT_SHIELD_BARRIER]=HEALBOT_WARRIOR,
     }
     
     HealBot_Options_FrameAliasList()
@@ -4867,7 +4875,8 @@ function HealBot_Options_SelectHealSpellsCombo_DDlist()
 			HEALBOT_LIGHT_OF_THE_MARTYR, 
             HEALBOT_BEACON_OF_VIRTUE,     
             HEALBOT_HAND_OF_THE_PROTECTOR,   
-            HEALBOT_ESSENCE_FONT,            
+            HEALBOT_ESSENCE_FONT,
+            HEALBOT_LIGHT_OF_TUURE, --Priest          
         }
     end
     local tmpHealDDlist={}
@@ -4960,6 +4969,11 @@ local function HealBot_Options_SelectOtherSpellsCombo_DDlist()
             HEALBOT_TREE_OF_LIFE,
             HEALBOT_ANCESTRALSPIRIT,
             HEALBOT_RESUSCITATE,
+            HEALBOT_ABSOLUTION,
+            HEALBOT_ANCESTRAL_VISION,
+            HEALBOT_MASS_RESURRECTION,
+            HEALBOT_REAWAKEN,
+            HEALBOT_REVITALIZE,
             HEALBOT_CLEANSE,
             HEALBOT_REMOVE_CURSE,
             HEALBOT_CLEANSE_TOXIN,

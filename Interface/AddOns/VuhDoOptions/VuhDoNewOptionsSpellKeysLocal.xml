@@ -96,7 +96,7 @@
 
 			<Frame name="VuhDoNewOptionsSpellKeysLocalPanel" inherits="VuhDoPanelTemplate">
 				<Size>
-					<AbsDimension x="469" y="365" />
+					<AbsDimension x="469" y="425" />
 				</Size>
 				<Anchors>
 					<Anchor point="TOPLEFT">
@@ -157,7 +157,7 @@
 
 					<ScrollFrame name="$parentScrollPanel" inherits="VuhDoScrollPanelTemplate">
 						<Size>
-							<AbsDimension x="475" y="277" />
+							<AbsDimension x="475" y="325" />
 						</Size>
 						<Anchors>
 							<Anchor point="TOPLEFT">
@@ -169,7 +169,7 @@
 						<ScrollChild>
 							<Frame name="$parentChild">
 								<Size>
-									<AbsDimension x="18" y="553" />
+									<AbsDimension x="18" y="588" />
 								</Size>
 								<Anchors>
 									<Anchor point="TOPLEFT">
@@ -278,7 +278,7 @@
 
 			<Frame name="VuhDoNewOptionsSpellKeysLocalMacroPanel" inherits="VuhDoPanelTemplate">
 				<Size>
-					<AbsDimension x="469" y="365" />
+					<AbsDimension x="469" y="425" />
 				</Size>
 				<Anchors>
 					<Anchor point="TOPLEFT">
@@ -319,7 +319,7 @@
 
 					<ScrollFrame name="$parentScrollFrame" inherits="VuhDoScrollPanelTemplate">
 						<Size>
-							<AbsDimension x="475" y="277"/>
+							<AbsDimension x="475" y="325"/>
 						</Size>
 						<Anchors>
 							<Anchor point="TOPLEFT" relativeTo="$parent" relativePoint="TOPLEFT">
@@ -331,7 +331,7 @@
 						<ScrollChild>
 							<EditBox name="$parentEditBox" multiLine="true" autoFocus="true">
 								<Size>
-									<AbsDimension x="460" y="277"/>
+									<AbsDimension x="460" y="325"/>
 								</Size>
 								<Color r="0" g="0" b="0" />
 								<Scripts>

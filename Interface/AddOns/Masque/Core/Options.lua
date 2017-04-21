@@ -3,7 +3,7 @@
 	please see the included License.txt file.
 
 	* File...: Core\Options.lua
-	* Date...: 2015-10-21T22:43:12Z
+	* Date...: 2015-10-22T3:43:12Z
 	* Hash...: 829af9f
 	* Author.: StormFX
 

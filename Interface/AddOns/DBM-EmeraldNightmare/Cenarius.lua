@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(1750, "DBM-EmeraldNightmare", nil, 768)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 15572 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 16089 $"):sub(12, -3))
 mod:SetCreatureID(104636)
 mod:SetEncounterID(1877)
 mod:SetZone()
@@ -90,7 +90,6 @@ local voiceScornedTouch				= mod:NewVoice(211471)--runout
 
 mod:AddRangeFrameOption(8, 211471)
 mod:AddSetIconOption("SetIconOnWisps", "ej13348", false, true)
-mod:AddHudMapOption("HudMapOnBreath", 211192)
 mod:AddInfoFrameOption(210279)
 
 mod.vb.phase = 1
@@ -104,10 +103,6 @@ function mod:BreathTarget(targetname, uId)
 	warnRottenBreath:Show(targetname)
 	if targetname == UnitName("player") then
 		yellRottenBreath:Yell()
-	end
-	if self.Options.HudMapOnBreath then
-		--Static marker, breath doesn't move once a target is picked. it's aimed at static location player WAS
-		DBMHudMap:RegisterStaticMarkerOnPartyMember(211192, "highlight", targetname, 5, 5.5, 1, 0, 0, 0.5, nil, 1):Pulse(0.5, 0.5)
 	end
 end
 
@@ -139,9 +134,6 @@ function mod:OnCombatEnd()
 	self:UnregisterShortTermEvents()
 	if self.Options.RangeFrame then
 		DBM.RangeCheck:Hide()
-	end
-	if self.Options.HudMapOnBreath then
-		DBMHudMap:Disable()
 	end
 	--DBM:AddMsg(L.BrambleMessage)
 	if self.Options.InfoFrame then
@@ -228,7 +220,7 @@ function mod:SPELL_AURA_APPLIED(args)
 --		voiceDreadThorns:Play("bossout")
 	elseif spellId == 211368 then
 		specWarnTouchofLifeDispel:Show(args.destName)
-		if self.Options.specwarn211368dispel then
+		if self.Options.SpecWarn211368dispel then
 			voiceTouchOfLife:Play("dispelnow")
 		end
 	elseif spellId == 211471 then--Original casts only. Jumps can't be warned this way as of 04-01-16 Testing

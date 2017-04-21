@@ -1,5 +1,5 @@
-## Interface: 70100
-## Version: v1.1.9
+## Interface: 70200
+## Version: v1.2.0
 ## Title: MoveTalkingHead
 ## Notes: Makes the message dialog movable
 ## Author: Ketho @ EU-Boulderfist
@@ -7,10 +7,6 @@
 ## LoadOnDemand: 1
 ## LoadWith: Blizzard_TalkingHeadUI
 ## Dependencies: Blizzard_TalkingHeadUI
-## X-Curse-Packaged-Version: v1.1.9
-## X-Curse-Project-Name: MoveTalkingHead
-## X-Curse-Project-ID: movetalkinghead
-## X-Curse-Repository-ID: wow/movetalkinghead/mainline
 
 Locales.lua
 MoveTalkingHead.lua

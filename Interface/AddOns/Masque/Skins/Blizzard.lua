@@ -3,7 +3,7 @@
 	please see the included License.txt file.
 
 	* File...: Skins\Blizzard.lua
-	* Date...: 2016-07-26T01:18:37Z
+	* Date...: 2016-07-26T6:18:37Z
 	* Hash...: 5979f17
 	* Author.: StormFX, Maul, Blizzard Entertainment
 
@@ -14,7 +14,7 @@ local _, Core = ...
 -- Improved Blizzard skin. Thanks to Maul for the reference!
 Core:AddSkin("Blizzard", {
 	Author = "Blizzard Entertainment",
-	Version = "7.1.0",
+	Version = "7.2.0",
 	Masque_Version = 60201,
 	Shape = "Square",
 	Backdrop = {

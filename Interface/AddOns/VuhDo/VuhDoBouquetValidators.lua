@@ -47,6 +47,8 @@ local VUHDO_getCurrentBouquetColor;
 local VUHDO_getIncHealOnUnit;
 local VUHDO_getUnitDebuffSchoolInfos;
 local VUHDO_getCurrentBouquetStacks;
+local VUHDO_getSpellTraceForUnit;
+local VUHDO_getSpellTraceTrailOfLightForUnit;
 local VUHDO_getAoeAdviceForUnit;
 local VUHDO_getCurrentBouquetTimer;
 local VUHDO_getRaidTargetIconTexture;
@@ -86,6 +88,8 @@ function VUHDO_bouquetValidatorsInitLocalOverrides()
 	VUHDO_getUnitDebuffSchoolInfos = _G["VUHDO_getUnitDebuffSchoolInfos"];
 	VUHDO_getCurrentBouquetStacks = _G["VUHDO_getCurrentBouquetStacks"];
 	VUHDO_getIsCurrentBouquetActive = _G["VUHDO_getIsCurrentBouquetActive"];
+	VUHDO_getSpellTraceForUnit = _G["VUHDO_getSpellTraceForUnit"];
+	VUHDO_getSpellTraceTrailOfLightForUnit = _G["VUHDO_getSpellTraceTrailOfLightForUnit"];
 	VUHDO_getAoeAdviceForUnit = _G["VUHDO_getAoeAdviceForUnit"];
 	VUHDO_getCurrentBouquetTimer = _G["VUHDO_getCurrentBouquetTimer"];
 	VUHDO_getRaidTargetIconTexture = _G["VUHDO_getRaidTargetIconTexture"];
@@ -143,6 +147,34 @@ end
 
 
 -- return tIsActive, tIcon, tTimer, tCounter, tDuration, tColor, tTimer2, clipLeft, clipRight, clipTop, clipBottom
+
+
+
+--
+local tInfo;
+local function VUHDO_spellTraceValidator(anInfo, _)
+	tInfo = VUHDO_getSpellTraceForUnit(anInfo["unit"]);
+
+	if tInfo then
+		return true, tInfo["icon"], -1, -1, -1;
+	else
+		return false, nil, -1, -1, -1;
+	end
+end
+
+
+
+--
+local tInfo;
+local function VUHDO_trailOfLightValidator(anInfo, _)
+	tInfo = VUHDO_getSpellTraceTrailOfLightForUnit(anInfo["unit"]);
+
+	if tInfo then
+		return true, tInfo["icon"], -1, -1, -1;
+	else
+		return false, nil, -1, -1, -1;
+	end
+end
 
 
 
@@ -629,6 +661,14 @@ end
 --
 local function VUHDO_statusManaValidator(anInfo, _)
 	return anInfo["powertype"] == 0, nil, anInfo["power"], -1,
+		anInfo["powermax"], VUHDO_copyColor(VUHDO_POWER_TYPE_COLORS[0]);
+end
+
+
+
+--
+local function VUHDO_statusManaHealerOnlyValidator(anInfo, _)
+	return (anInfo["powertype"] == 0 and anInfo["role"] == VUHDO_ID_RANGED_HEAL), nil, anInfo["power"], -1,
 		anInfo["powermax"], VUHDO_copyColor(VUHDO_POWER_TYPE_COLORS[0]);
 end
 
@@ -1467,6 +1507,14 @@ VUHDO_BOUQUET_BUFFS_SPECIAL = {
 		["interests"] = { VUHDO_UPDATE_MANA, VUHDO_UPDATE_DC },
 	},
 
+	["STATUS_MANA_HEALER_ONLY"] = {
+		["displayName"] = VUHDO_I18N_BOUQUET_STATUS_MANA_HEALER_ONLY,
+		["validator"] = VUHDO_statusManaHealerOnlyValidator,
+		["custom_type"] = VUHDO_BOUQUET_CUSTOM_TYPE_STATUSBAR,
+		["no_color"] = true,
+		["interests"] = { VUHDO_UPDATE_MANA, VUHDO_UPDATE_DC },
+	},
+
 	["STATUS_OTHER_POWERS"] = {
 		["displayName"] = VUHDO_I18N_BOUQUET_STATUS_OTHER_POWERS,
 		["validator"] = VUHDO_statusOtherPowersValidator,
@@ -1659,6 +1707,18 @@ VUHDO_BOUQUET_BUFFS_SPECIAL = {
 		["validator"] = VUHDO_enemyStateValidator,
 		["no_color"] = true,
 		["interests"] = { VUHDO_UPDATE_UNIT_TARGET },
+	},
+
+	["SPELL_TRACE"] = {
+		["displayName"] = VUHDO_I18N_SPELL_TRACE,
+		["validator"] = VUHDO_spellTraceValidator,
+		["interests"] = { VUHDO_UPDATE_SPELL_TRACE },
+	},
+
+	["TRAIL_OF_LIGHT"] = {
+		["displayName"] = VUHDO_I18N_TRAIL_OF_LIGHT,
+		["validator"] = VUHDO_trailOfLightValidator,
+		["interests"] = { VUHDO_UPDATE_SPELL_TRACE },
 	},
 
 	["AOE_ADVICE"] = {
